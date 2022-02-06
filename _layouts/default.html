@@ -1,9 +1,11 @@
----
-layout: substitute
----
-
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+	{% assign output = content
+		| replace: '-!', '<u>'
+		| replace: '!-', '</u>'
+	%}
+	{{output}}
 
   {%- include head.html -%}
 
