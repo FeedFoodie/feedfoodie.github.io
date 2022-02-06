@@ -18,13 +18,13 @@
 	{% for post in site.posts %}	
 		{% if post.url == page.url %}
 		{% elsif post.tags contains 'lnb' %}
-			{{ post }}
+			{{ post.url | post.title }}
 			{% break %}
 		{% endif %}				
 	{% endfor %}
 {% endcapture %}
 
-{{prevChap.url}}
+{{prevChap.title}}
 
 </div>
 
