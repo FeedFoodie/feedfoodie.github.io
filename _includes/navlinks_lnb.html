@@ -2,18 +2,6 @@
 
 <div>
 {% include chapter_tagging.html %}
-
-{%- if page.tags contains 'lnb' -%}
-	<p>print this</p>
-	{%- if page.previous.tags contains 'lnb' -%}
-		<p>print prev</p>
-	{%- else -%}
-		<p>fail</p>
-	{% endif %}
-{%- else -%}
-	<p>no tag</p>
-{%- endif -%}
-
 {% assign start = false %}
 {% for post in site.posts %}	
 	{% if start == true and post.tags contains 'lnb' %}
@@ -24,8 +12,18 @@
 		{% assign start = true %}
 	{% endif %}				
 {% endfor %}
+{% assign stop = false %}
+{% for post in site.posts reversed %}	
+	{% if stop == true and post.tags contains 'lnb' %}
+		{% assign nextChap = post %}
+		{% break %}
+	{% endif %}			
+	{% if post.url == page.url %}
+		{% assign stop = true %}
+	{% endif %}				
+{% endfor %}
 
-{{prevChap.url}}
+{{nextChap.url}}
 
 </div>
 
