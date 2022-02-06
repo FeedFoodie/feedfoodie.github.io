@@ -6,12 +6,20 @@
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
+  <a href="{{ 'feed.lnb.xml' | relative_url }}">
+	<svg class="svg-icon orange">
+	  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+	</svg><span>Subscribe to Legend of the Northern Blade</span>
+  </a>
+</p>
+
+<p class="feed-subscribe">
+  <a href="{{ 'feed.simb.xml' | relative_url }}">
+	<svg class="svg-icon orange">
+	  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+	</svg><span>Subscribe to Star Instructor Master Baek</span>
+  </a>
+</p>
       {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.name -%}
