@@ -5,23 +5,6 @@ img {
 	width: 50%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	color: #b6b5d4;
-}
-
-a:link {
-  color: white;
-}
-a:visited {
-  color: #c0d1ce;
-}
-a:hover {
-  color: darkgray;
-}
-a:active {
-  color: darkgray;
-} 
-
 .foodie {	}
 
 .darkColor {
@@ -43,3 +26,10 @@ a:active {
 	clip: rect(0,0,0,0);
 	border: 0;
 }
+
+<script>
+	function myFunction() {
+	  var number = "123";
+	  document.getElementById("myText").innerHTML = number;
+	}
+</script>
