@@ -17,9 +17,7 @@
 {% capture _site_tags %}
 	{% for post in site.posts %}
 	
-		{% if post.url == page.url %}
-			{% break %}
-		{% endif %}	
+
 		
 		{% if post.tags contains 'lnb' %}
 			<p>{{ post.title }}</p>
