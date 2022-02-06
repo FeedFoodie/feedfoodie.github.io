@@ -11,13 +11,10 @@
 	<main class="page-content" aria-label="Content">
       <div class="wrapper" style="background-color: #444444; color: white;">
 	  
-		<div id="randomText">
-		</div>
-	  
         {% assign output = content			
 			| replace: '-!', '<span class="past">'
 			| replace: '!-', '</span>'
-			| replace: '<p>aggAnnoy01', '<script>var r_text = new Array (); r_text[0] = "All the leaves are brown"; r_text[1] = "And the sky is grey"; r_text[2] = "I've been for a walk"; var i = Math.floor(3*Math.random());	document.write(r_text[i]);</script>'
+			| replace: '<p>aggAnnoy01', '<p class="ffoodie">Why aren′t you reading this at feedfoodie.github.io?'
 			| replace: '<p>aggAnnoy02', '<p class="fooodie">Why aren′t you reading this at feedfoodie.github.io?'
 			| replace: '<p>aggAnnoy03', '<p class="fooddie">Why aren′t you reading this at feedfoodie.github.io?'
 			| replace: '<p>aggAnnoy04', '<p class="foodiie">Why aren′t you reading this at feedfoodie.github.io?'
