@@ -21,9 +21,9 @@ Associated Names: 일타강사 백사부
 
 This is a Naver series so both the novel and manhwa are free-to-read. You need cookies to read the latest 5 chapters of the manhwa, though, which you can get by watching ads and downloading games on the Korean Naver Webtoons app (unless you have a Korean ID and credit card to buy cookies). There is no official translation as of yet.
 
-[Novel Raws](https://series.naver.com/novel/detail.series?productNo=5579750)
+[Novel Raws](https://series.naver.com/novel/detail.series?productNo=5579750){:target="_blank"}
 
-[Manhwa Raws](https://series.naver.com/comic/detail.series?productNo=6698881)
+[Manhwa Raws](https://series.naver.com/comic/detail.series?productNo=6698881){:target="_blank"}
 
 ## Chapters
 

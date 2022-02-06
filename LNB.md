@@ -19,13 +19,13 @@ Associated Names: 북검전기, 北剑江湖
 
 Please buy the official versions to support Woo-Gak, the author and Hae-Min, the artist. I understand that most of you won't have a Korean ID and credit card to buy the raws (I don't either), but you can support them by buying the English translations on Tappytoon even if their translations are inferior to the unofficial folks. Alternatively, if you live in Asia and can buy China's QQ credits then the official Chinese translation is actually good enough to be worth paying for.
 
-[Official English Translation (Tappytoon)](https://www.tappytoon.com/en/comics/legend-of-northern-blade)
+[Official English Translation (Tappytoon)](https://www.tappytoon.com/en/comics/legend-of-northern-blade){:target="_blank"}
 
-[Novel Raws](https://page.kakao.com/home?seriesId=47002791)
+[Novel Raws](https://page.kakao.com/home?seriesId=47002791){:target="_blank"}
 
-[Manhwa Raws](https://page.kakao.com/home?seriesId=54189843)
+[Manhwa Raws](https://page.kakao.com/home?seriesId=54189843){:target="_blank"}
 
-[Official Chinese Translation (QQ)](https://ac.qq.com/Comic/comicInfo/id/648162)
+[Official Chinese Translation (QQ)](https://ac.qq.com/Comic/comicInfo/id/648162){:target="_blank"}
 
 ## Chapters
 
