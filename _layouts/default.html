@@ -26,7 +26,7 @@
         {% assign output = content			
 			| replace: '-!', '<span class="past">'
 			| replace: '!-', '</span>'
-			| replace: '<p>aggAnnoy01', '<p class="ffoodie"><input type="text" id="randomText">'
+			| replace: '<p>aggAnnoy01', '<p class="ffoodie"><script>document.write(randomText)</script>'
 			| replace: '<p>aggAnnoy02', '<p class="fooodie">Why aren′t you reading this at feedfoodie.github.io?'
 			| replace: '<p>aggAnnoy03', '<p class="fooddie">Why aren′t you reading this at feedfoodie.github.io?'
 			| replace: '<p>aggAnnoy04', '<p class="foodiie">Why aren′t you reading this at feedfoodie.github.io?'

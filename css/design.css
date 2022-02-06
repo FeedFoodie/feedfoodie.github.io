@@ -9,3 +9,19 @@
   position: relative;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: #b6b5d4;
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: #c0d1ce;
+}
+a:hover {
+  color: darkgray;
+}
+a:active {
+  color: darkgray;
+} 
