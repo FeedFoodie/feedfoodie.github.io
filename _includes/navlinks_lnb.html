@@ -22,9 +22,6 @@
 		{% assign stop = true %}
 	{% endif %}				
 {% endfor %}
-
-{{nextChap.url}}
-
 </div>
 
 <div class="post_navi">
@@ -38,8 +35,8 @@
   </a>
   {%- endif -%}
   {%- if page.next.url -%}
-  <a class="post_navi-item nav_next" href="{{ page.next.url }}" title="{{ page.next.title }}">
-    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Chapter</div><div><span>{{ page.next.title }}</span></div>
+  <a class="post_navi-item nav_next" href="{{ nextChap.url }}" title="{{ nextChap.title }}">
+    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Chapter</div><div><span>{{ nextChap.title }}</span></div>
   </a>
   {%- else -%}
   <a class="post_navi-item nav_next" href="/LNB/" title="Chapters">
