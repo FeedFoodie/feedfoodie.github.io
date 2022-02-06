@@ -14,7 +14,7 @@ layout: null
         {% for post in site.tags["lnb"] %}
             <item>
                 <title>{{ post.title | xml_escape }}</title>
-				<author>somethingrandom@somethingrandom.com</author>
+				<author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
                 <description>{{ post.content | xml_escape }}</description>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
                 <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
