@@ -2,11 +2,13 @@
 
 <div>
 {% include chapter_tagging.html %}
-{% for tag in page.tags %}
-	<a href="#{{ tag | slugify }}"> {{ tag }} </a>
-{% endfor %}
-{% if page.tags contains 'lnb' %}
+{%- if page.tags contains 'lnb' -%}
 	<p>print this</p>
+	{%- if page.previous.url.tags contains 'lnb' -%}
+		<p>print prev</p>
+	{%- else -%}
+		<p>fail</p>
+	{% endif %}
 {%- else -%}
 	<p>no tag</p>
 {%- endif -%}
