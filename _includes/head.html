@@ -26,8 +26,9 @@
   
 <script>
 	function myFunction() {
-	  var number = "123";
-	  document.getElementById("myText").innerHTML = number;
+	  var items = ['Yes', 'No', 'Maybe'];
+	  var item = items[Math.floor(Math.random() * items.length)];
+	  document.getElementById("myText").innerHTML = item;
 	}
 </script>
   
