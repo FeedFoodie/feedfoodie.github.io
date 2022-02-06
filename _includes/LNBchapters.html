@@ -32,7 +32,6 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
-{% for tag in tags %}
 	<ul>
 	 {% for post in site.posts %}
 		 {% if post.tags contains 'lnb' %}
@@ -44,4 +43,3 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 		 {% endif %}
 	 {% endfor %}
 	</ul>
-{% endfor %}
