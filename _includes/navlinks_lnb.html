@@ -17,14 +17,16 @@
 {% capture prevChap %}
 	{% for post in site.posts %}	
 		{% if post.url == page.url %}
-		{% elsif post.tags contains 'lnb' %}
-			{{ post.url | post.title }}
+			{% assign start = true %}
+		{% endif %}			
+		{% if start == true and post.tags contains 'lnb'%}
+			{{ post }}
 			{% break %}
 		{% endif %}				
 	{% endfor %}
 {% endcapture %}
 
-{{prevChap.title}}
+{{prevChap[0].url}}
 
 </div>
 
