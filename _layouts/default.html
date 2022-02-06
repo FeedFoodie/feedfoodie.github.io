@@ -10,7 +10,6 @@
 	
 	<main class="page-content" aria-label="Content">
       <div class="wrapper" style="background-color:white;>
-		<p><br /><p>
         {% assign output = content			
 			| replace: '-!', '<span class="past">'
 			| replace: '!-', '</span>'
@@ -18,6 +17,8 @@
 			| replace: '<div class="footnotes" role="doc-endnotes">', '<hr><h3>Footnotes:</h3><div class="footnotes" role="doc-endnotes">'
 			| replace: '<p>', '<p class="foodie">'
 		%}
+		<p><br /><p>
+		<p><br /><p>
 		{{output}}
       </div>
     </main>
