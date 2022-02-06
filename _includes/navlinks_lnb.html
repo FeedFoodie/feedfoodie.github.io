@@ -17,7 +17,7 @@
 {% capture _site_tags %}
 	{% for post in site.posts %}	
 		{% if post.url == page.url %}
-		{% elseif post.tags contains 'lnb' %}
+		{% elsif post.tags contains 'lnb' %}
 			{{ post.url }}
 			{% break %}
 		{% endif %}				
