@@ -4,7 +4,7 @@
 {% include chapter_tagging.html %}
 {%- if page.tags contains 'lnb' -%}
 	<p>print this</p>
-	{%- if page.previous.url.tags contains 'lnb' -%}
+	{%- if page.previous.tags contains 'lnb' -%}
 		<p>print prev</p>
 	{%- else -%}
 		<p>fail</p>
