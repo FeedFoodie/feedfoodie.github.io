@@ -18,17 +18,17 @@
 
 {% capture prevChap %}
 	{% for post in site.posts %}	
+		{% if start == true and post.tags contains 'lnb' %}
+			{{post}}
+			{% break %}
+		{% endif %}			
 		{% if post.url == page.url %}
 			{% assign start = true %}
-		{% endif %}			
-		{% if start == true and post.tags contains 'lnb' %}
-			{{ post.url }}
-			{% break %}
 		{% endif %}				
 	{% endfor %}
 {% endcapture %}
 
-{{prevChap}}
+{{prevChap[0].url}}
 
 </div>
 
