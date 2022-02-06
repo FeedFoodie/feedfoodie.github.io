@@ -15,7 +15,7 @@ title: "Welcome to Northern Blade Translations!"
 
 Welcome to the new blog, with a minmalist design because Foodie will be fired as a web designer.
 
-## Suscribe to our Series Specific RSS Feeds
+## Subscribe to our Series Specific RSS Feeds!
 
 <p class="feed-subscribe">
   <a href="{{ 'feed.lnb.xml' | relative_url }}">
@@ -33,4 +33,4 @@ Welcome to the new blog, with a minmalist design because Foodie will be fired as
   </a>
 </p>
 
-## Latest Updates
+# Latest Updates
