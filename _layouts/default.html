@@ -10,11 +10,8 @@
 	<main class="page-content" aria-label="Content">
       <div class="wrapper">
         {% assign output = content
-			<!-- | replace: ':aggAnnoy1:', '<p class="fooodie">Why aren't you reading this at feedfoodie.github.io?</p>' -->
 			| replace: '-!', '<span class="past">'
 			| replace: '!-', '</span>'
-			<!-- | replace: '<div class="footnotes" role="doc-endnotes">', '<hr><div class="footnotes" role="doc-endnotes">' -->
-			<!-- | replace: '<p>', '<p class="foodie">' -->
 		%}
 		{{output}}
       </div>
