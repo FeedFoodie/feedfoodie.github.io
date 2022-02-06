@@ -17,7 +17,7 @@ TheGreatT20 is just a random dude who really likes the Northern Blade series and
 
 Remember to share this translation if you like our work!
 
-aggAnnoy
+aggAnnoy1
 
 text
 
