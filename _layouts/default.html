@@ -13,15 +13,6 @@
 	  
 		<div id="randomText">
 		</div>
-		<script type="text/javascript" charset="utf-8">
-			var texts = [
-			  "I am a sentence.",
-			  "Some nice stuff.",
-			  "I am random too!"
-			];
-
-			document.getElementById('randomText').value = texts[Math.floor(Math.random()*texts.length)];
-		</script>    
 	  
         {% assign output = content			
 			| replace: '-!', '<span class="past">'
