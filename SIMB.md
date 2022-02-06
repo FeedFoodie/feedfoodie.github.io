@@ -1,13 +1,12 @@
 ---
 layout: page
-title: SIMB
+title: Star Instructor Master Baek
 ---
-
-# Star Instructor Master Baek
 
 ## Synopsis
 
 Novel Author: Ganjajang 간짜장
+
 Manhwa Artist: Oliboli 오리보리
 
 After his qi center is destroyed, a martial arts instructor of the Blood Demon Cult is assigned to learn and research the martial arts of four captured murim masters. However, when the Cult betrays him and decides to kill him, he fights back and everyone in the Cult dies, including himself.
@@ -22,8 +21,9 @@ Associated Names: 일타강사 백사부
 
 This is a Naver series so both the novel and manhwa are free-to-read. You need cookies to read the latest 5 chapters of the manhwa, though, which you can get by watching ads and downloading games on the Korean Naver Webtoons app (unless you have a Korean ID and credit card to buy cookies). There is no official translation as of yet.
 
-Novel Raws: https://series.naver.com/novel/detail.series?productNo=5579750
-Manhwa Raws: https://series.naver.com/comic/detail.series?productNo=6698881
+[Novel Raws](https://series.naver.com/novel/detail.series?productNo=5579750)
+
+[Manhwa Raws](https://series.naver.com/comic/detail.series?productNo=6698881)
 
 ## Chapters
 
