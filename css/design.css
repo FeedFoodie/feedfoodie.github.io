@@ -67,3 +67,17 @@ a:active {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #8b89a4;} 
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #c0d1ce;
+  border-left: 4px solid $border-color-01;
+  padding-left: $spacing-unit / 2;
+  @include relative-font-size(1.125);
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
