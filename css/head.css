@@ -1,0 +1,28 @@
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.foodie {	}
+
+.darkColor {
+  background-color: black;
+  color: white;
+}
+
+.past {
+	color: darkgray;
+}
+
+.fooodie {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
