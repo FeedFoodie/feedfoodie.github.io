@@ -20,13 +20,14 @@
 			{% assign start = true %}
 		{% endif %}			
 		{% if start == true and post.tags contains 'lnb'%}
-			{{ post }}
+			{{ post.url }}
+			{{ post.title }}
 			{% break %}
 		{% endif %}				
 	{% endfor %}
 {% endcapture %}
 
-{{prevChap[0].url}}
+{{prevChap[0]}}
 
 </div>
 
