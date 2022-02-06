@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: postLNB
 title:  "Welcome to Jekyll!"
 categories: jekyll update
 comments: true
