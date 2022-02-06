@@ -18,27 +18,23 @@
 	{% for post in site.posts %}	
 		{% if post.url == page.url %}
 		{% elsif post.tags contains 'lnb' %}
-			{{ post.url }}
+			{{ post }}
 			{% break %}
 		{% endif %}				
 	{% endfor %}
 {% endcapture %}
 
-{{prevChap}}
-
-{% for url in prevChap %}
-  {{ url }}
-{% endfor %}
+{{prevChap.url}}
 
 </div>
 
 <div class="post_navi">
-  {%- if page.previous.url -%}
-  <a class="post_navi-item nav_prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Chapter</div><div><span>{{ page.previous.title }}</span></div>
+  {%- if prevChap.url -%}
+  <a class="post_navi-item nav_prev" href="{{prevChap.url}}" title="{{ prevChap.title }}">
+    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Chapter</div><div><span>{{ prevChap.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_prev" href="{{ 'archive.html' | absolute_url }}" title="Chapters">
+  <a class="post_navi-item nav_prev" href="/LNB/" title="Chapters">
     <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
   </a>
   {%- endif -%}
@@ -47,7 +43,7 @@
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Chapter</div><div><span>{{ page.next.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_next" href="{{ 'archive.html' | absolute_url }}" title="Chapters">
+  <a class="post_navi-item nav_next" href="/LNB/" title="Chapters">
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
   </a>
   {%- endif -%}
