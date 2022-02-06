@@ -13,19 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #b6b5d4;
 }
 
-a:link {
-  color: white;
-}
-a:visited {
-  color: white;
-}
-a:hover {
-  color: #c0d1ce;
-}
-a:active {
-  color: darkgray;
-} 
-
  /* Dropdown Button */
 .dropbtn {
   background-color: #b5b4c5;
@@ -67,6 +54,19 @@ a:active {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #8b89a4;} 
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #c0d1ce;
+}
+a:active {
+  color: darkgray;
+} 
 
 /**
  * Blockquotes
