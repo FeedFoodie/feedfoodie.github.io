@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{%- include head.html -%}
+{%- render head.html -%}
 
   <body style="background-color:black;">
 
-    {%- include header.html -%}
+    {%- render header.html -%}
 	{% include chapter_tagging.html %}
 	
 	<main class="page-content" aria-label="Content">
@@ -21,7 +21,7 @@
       </div>
     </main>
 
-    {%- include footer.html -%}
+    {%- render footer.html -%}
 
   </body>
 
