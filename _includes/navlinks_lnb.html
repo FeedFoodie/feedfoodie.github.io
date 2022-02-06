@@ -21,7 +21,7 @@
 		{% if post.url == page.url %}
 			{% assign start = true %}
 		{% endif %}			
-		{% if start == true and post.tags contains 'lnb'%}
+		{% if start == true and post.tags contains 'lnb' %}
 			{{ post.url }}
 			{% break %}
 		{% endif %}				
