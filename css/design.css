@@ -28,9 +28,9 @@ a:active {
 
  /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
+  /*background-color: #04AA6D;*/
+  color: black;
+  padding: 5px;
   font-size: 16px;
   border: none;
 }
@@ -60,10 +60,10 @@ a:active {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #b5b4c5;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+.dropdown:hover .dropbtn {background-color: #8b89a4;} 
