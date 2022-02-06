@@ -90,7 +90,7 @@
     position: static;
     float: right;
     border: none;
-    background-color: black;
+    background-color: inherit;
 
     label[for="nav-trigger"] {
       display: none;
@@ -102,7 +102,6 @@
 
     input ~ .trigger {
       display: block;
-	  background-color: black;
     }
 
     .page-link {
