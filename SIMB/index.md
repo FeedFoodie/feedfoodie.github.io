@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pageSIMB
 title: Star Instructor Master Baek
 ---
 
