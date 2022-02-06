@@ -15,16 +15,10 @@
 {%- endif -%}
 
 {% capture _site_tags %}
-	{% for post in site.posts %}
-	
-		{% if post.url == page.url %}
-			{% break %}
-		{% endif %}	
-		
+	{% for post in site.posts %}	
 		{% if post.tags contains 'lnb' %}
 			{{ post.url }}
-		{% endif %}	
-		
+		{% endif %}			
 	{% endfor %}
 {% endcapture %}
 
