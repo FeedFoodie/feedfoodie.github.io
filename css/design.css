@@ -28,10 +28,10 @@ a:active {
 
  /* Dropdown Button */
 .dropbtn {
-  /*background-color: #04AA6D;*/
+  background-color: #b5b4c5;
   color: black;
   padding: 5px;
-  font-size: 16px;
+  /*font-size: 16px;*/
   border: none;
 }
 
