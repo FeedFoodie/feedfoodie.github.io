@@ -1,274 +1,249 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+---
+layout: postLNB
+title:  "Chapter 1: Alone Under the Wavering, Endless Sky"
+comments: true
+tags: [lnb]
+---
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
-<head>
+Jin Mu-Won (陳武元)[^1] opened his eyes. Oddly, the world seemed to have become a blur. That was because a layer of moisture had covered his young eyes. Although he was trying his best to hold it in, the tears would not stop flowing, as if his tear ducts were damaged.
 
-<title>Legend of the Northern Blade: Volume 1</title>
+Jin Mu-Won wiped away the tears with his sleeve.
 
-<link href="../Styles/stylesheet.css" type="text/css" rel="stylesheet"/>
+*This is the last time I will cry. I will never shed tears ever again,* swore the thirteen-year-old teenager to himself.
 
-</head>
+Just then, a man stretched out a large hand and stroked Jin Mu-Won on the head. The boy raised his head to look at the man.
 
-<body>
-<h1>Chapter 1: Alone Under the Wavering, Endless Sky</h1>
+Behind the gentle smile on the man's face, one could faintly sense his sorrow and despair.
 
-<p>Jin Mu-Won (陳武元)<a href="#fn1" epub:type="noteref">[1]</a> opened his eyes. Oddly, the world seemed to have become a blur. That was because a layer of moisture had covered his young eyes. Although he was trying his best to hold it in, the tears would not stop flowing, as if his tear ducts were damaged.</p>
+The man knelt down and made eye contact with Jin Mu-Won.
 
-<p>Jin Mu-Won wiped away the tears with his sleeve.</p>
+“Son, from now on you will be alone.”
 
-<p><em>This is the last time I will cry. I will never shed tears ever again,</em> swore the thirteen-year-old teenager to himself.</p>
+“Father!”
 
-<p>Just then, a man stretched out a large hand and stroked Jin Mu-Won on the head. The boy raised his head to look at the man.</p>
+“I'm sorry.”
 
-<p>Behind the gentle smile on the man's face, one could faintly sense his sorrow and despair.</p>
+“Do you know why you have to apologize to me?”
 
-<p>The man knelt down and made eye contact with Jin Mu-Won.</p>
+The man nodded and grabbed Jin Mu-Won's shoulder.
 
-<p>“Son, from now on you will be alone.”</p>
+“So you do understand. I'm sorry, but from now on, you are the Lord of the Northern Army (北天門)[^2].”
 
-<p>“Father!”</p>
+Jin Mu-Won nodded in response as the man silently patted him on the shoulder.
 
-<p>“I'm sorry.”</p>
+The man could feel his son's shoulder shivering. No matter how mature the boy was, he was still a thirteen-year-old child who needed his parents' protection.
 
-<p>“Do you know why you have to apologize to me?”</p>
+Jin Mu-Won looked up at the sky and avoided the man's gaze, trying his hardest not to tear up again.
 
-<p>The man nodded and grabbed Jin Mu-Won's shoulder.</p>
+“Damnit! You're the last head of a family that has fallen apart. Just what kind of shitty inheritance are you leaving me, huh?”
 
-<p>“So you do understand. I'm sorry, but from now on, you are the Lord of the Northern Army (北天門)<a href="#fn2" epub:type="noteref">[2]</a>.”</p>
+“I'm sorry.”
 
-<p>Jin Mu-Won nodded in response as the man silently patted him on the shoulder.</p>
+“Don't apologize. Apologies don't suit a great man like my father.”
 
-<p>The man could feel his son's shoulder shivering. No matter how mature the boy was, he was still a thirteen-year-old child who needed his parents' protection.</p>
+“I see. It seems that for a moment, I forgot who I was.”
 
-<p>Jin Mu-Won looked up at the sky and avoided the man's gaze, trying his hardest not to tear up again.</p>
+The man stood up, back straight.
 
-<p>“Damnit! You're the last head of a family that has fallen apart. Just what kind of shitty inheritance are you leaving me, huh?”</p>
+His name was Jin Kwan-Ho, also known as the “Northern Wall”. To some, he was the wall of despair, but to others he was the most dependable shield. The word “sorry” did not suit a man like that.
 
-<p>“I'm sorry.”</p>
+“Do you hate me? This is all my fault.”
 
-<p>“Don't apologize. Apologies don't suit a great man like my father.”</p>
+“It's fine. At least, I no longer have to be restrained by duty. I'm free from all the responsibilities now.”
 
-<p>“I see. It seems that for a moment, I forgot who I was.”</p>
+“I’m glad you think that way.”
 
-<p>The man stood up, back straight.</p>
+Jin Kwan-Ho nodded and looked outside the room.
 
-<p>His name was Jin Kwan-Ho, also known as the “Northern Wall”. To some, he was the wall of despair, but to others he was the most dependable shield. The word “sorry” did not suit a man like that.</p>
+There were a lot of people in the central plaza. They were waiting for Jin Kwan-Ho to come out.
 
-<p>“Do you hate me? This is all my fault.”</p>
+“It's time. I shouldn't disappoint those people. If possible, I wish this was an illusion, but alas.”
 
-<p>“It's fine. At least, I no longer have to be restrained by duty. I'm free from all the responsibilities now.”</p>
+Jin Kwan-Ho's calm voice made Jin Mu-Won's eyes twitch.
 
-<p>“I’m glad you think that way.”</p>
+Jin Mu-Won bit his lip. His tender lips split open and blood flowed out from the wound, but he still stared at Jin Kwan-Ho as if it didn't hurt at all.
 
-<p>Jin Kwan-Ho nodded and looked outside the room.</p>
+*Father.*
 
-<p>There were a lot of people in the central plaza. They were waiting for Jin Kwan-Ho to come out.</p>
+As Jin Kwan-Ho walked out, Jin Mu-Won followed behind him.
 
-<p>“It's time. I shouldn't disappoint those people. If possible, I wish this was an illusion, but alas.”</p>
+Jin Kwan-Ho's back was wider and stronger than any other. Jin Mu-Won imprinted the image of his father's back in his mind.
 
-<p>Jin Kwan-Ho's calm voice made Jin Mu-Won's eyes twitch.</p>
+As he entered the central plaza, Jin Mu-Won looked at the army who had gathered there.
 
-<p>Jin Mu-Won bit his lip. His tender lips split open and blood flowed out from the wound, but he still stared at Jin Kwan-Ho as if it didn't hurt at all.</p>
+![001-insert.jpg](../Images/001-insert.jpg)
 
-<p><em>Father.</em></p>
+There were people of all ages and dressed in different styles of clothing. The only thing they had in common was the sharpness in their eyes, which was proof that they were all martial arts experts.
 
-<p>As Jin Kwan-Ho walked out, Jin Mu-Won followed behind him.</p>
+Right now, the only thing preventing these people from moving forward were a few warriors still loyal to the North. However, they were just candles in the wind in front of these experts.
 
-<p>Jin Kwan-Ho's back was wider and stronger than any other. Jin Mu-Won imprinted the image of his father's back in his mind.</p>
+Their sharp gazes fell on Jin Kwan-Ho.
 
-<p>As he entered the central plaza, Jin Mu-Won looked at the army who had gathered there.</p>
+Jin Kwan-Ho locked gazes with them one at a time. Among them were soldiers who immediately looked away, as if they were guilty of a grave crime. There were some, though, who glared back at Jin Kwan-Ho with killing intent. These included some people that Jin Kwan-Ho and Jin Mu-Won had been very close to.
 
-<center><img alt="001-insert" src="../Images/001-insert.jpg"/></center>
- <p><br/></p>
+Jin Kwan-Ho whispered to himself, “It seems that martial artists from all over have gathered here today. Should I think of this as an honor?”
 
-<p>There were people of all ages and dressed in different styles of clothing. The only thing they had in common was the sharpness in their eyes, which was proof that they were all martial arts experts.</p>
+It was true, all the strongest martial artists in the murim had gathered in the same plaza. Several stood out much more than others.
 
-<p>Right now, the only thing preventing these people from moving forward were a few warriors still loyal to the North. However, they were just candles in the wind in front of these experts.</p>
+Nine martial artists stood at the head of the army. The youngest was a warrior in his thirties and the oldest, a monk in his seventies. Overwhelming auras far exceeding the others could be felt emanating from their bodies. 
 
-<p>Their sharp gazes fell on Jin Kwan-Ho.</p>
+Only those who stood at the very top could possess such intimidating auras. Jin Kwan-Ho looked at them coldly and said, “As expected, Heaven's Summit (雲中天)[^3] is behind all of this. I can’t help but be impressed.”
 
-<p>Jin Kwan-Ho locked gazes with them one at a time. Among them were soldiers who immediately looked away, as if they were guilty of a grave crime. There were some, though, who glared back at Jin Kwan-Ho with killing intent. These included some people that Jin Kwan-Ho and Jin Mu-Won had been very close to.</p>
+“Jin Kwan-Ho.”
 
-<p>Jin Kwan-Ho whispered to himself, “It seems that martial artists from all over have gathered here today. Should I think of this as an honor?”</p>
+A man in his sixties stepped forward. He had an ordinary appearance that would blend perfectly into any crowd, but his eyes were as deep as the ocean.
 
-<p>It was true, all the strongest martial artists in the murim had gathered in the same plaza. Several stood out much more than others.</p>
+Most people dared not face this man’s gaze, because they’d feel like he could see right through them.
 
-<p>Nine martial artists stood at the head of the army. The youngest was a warrior in his thirties and the oldest, a monk in his seventies. Overwhelming auras far exceeding the others could be felt emanating from their bodies. </p>
+“Grand Elder of the Seo-Moon Clan, the renowned ‘Ghost of Zhuge Liang (鬼諸葛)[^4]’.”
 
-<p>Only those who stood at the very top could possess such intimidating auras. Jin Kwan-Ho looked at them coldly and said, “As expected, Heaven's Summit (雲中天)<a href="#fn3" epub:type="noteref">[3]</a> is behind all of this. I can’t help but be impressed.”</p>
+Jin Kwan-Ho recognized this old man immediately.
 
-<p>“Jin Kwan-Ho.”</p>
+The old man’s real name was Seo-Moon Hwa. He was a genius who had brought a clan of fallen nobles back to prominence. It was said that he had reached the limits of knowledge and understood every law of nature. All the wisdom of the world was contained within that tiny brain of his.
 
-<p>A man in his sixties stepped forward. He had an ordinary appearance that would blend perfectly into any crowd, but his eyes were as deep as the ocean.</p>
+He had passed the role of family head down to his son and became the Grand Elder of the clan as well as one of the Nine Skies of Heaven's Summit. This day, Seo-Moon Hwa and the other eight members of the Nine Skies overshadowed the Sky of the North.
 
-<p>Most people dared not face this man’s gaze, because they’d feel like he could see right through them.</p>
+“Why did you betray us, Jin Kwan-Ho?”
 
-<p>“Grand Elder of the Seo-Moon Clan, the renowned ‘Ghost of Zhuge Liang (鬼諸葛)<a href="#fn4" epub:type="noteref">[4]</a>’.”</p>
+“I have no idea what you mean, Elder Seo-Moon.”
 
-<p>Jin Kwan-Ho recognized this old man immediately.</p>
+“Are you going to keep denying what you’ve done? You colluded with our enemy, the Silent Night.”
 
-<p>The old man’s real name was Seo-Moon Hwa. He was a genius who had brought a clan of fallen nobles back to prominence. It was said that he had reached the limits of knowledge and understood every law of nature. All the wisdom of the world was contained within that tiny brain of his.</p>
+“Haha! Seo-Moon, how are you so proud of a life of corruption? You’re even falsely accusing me of colluding with the Silent Night (密夜)[^5]. That’s ridiculous.”
 
-<p>He had passed the role of family head down to his son and became the Grand Elder of the clan as well as one of the Nine Skies of Heaven's Summit. This day, Seo-Moon Hwa and the other eight members of the Nine Skies overshadowed the Sky of the North.</p>
+“The Four Pillars of the Northern Army have given their testimony. Are you still not going to confess?”
 
-<p>“Why did you betray us, Jin Kwan-Ho?”</p>
+Jin Kwan-Ho looked at the four men who stood at the very back of the army. Because of the crowd, he could not see their faces clearly, but he could sense their presence.
 
-<p>“I have no idea what you mean, Elder Seo-Moon.”</p>
+“Are you four so ashamed that you have to hide behind others?”
 
-<p>“Are you going to keep denying what you’ve done? You colluded with our enemy, the Silent Night.”</p>
+The Northern Generals.
 
-<p>“Haha! Seo-Moon, how are you so proud of a life of corruption? You’re even falsely accusing me of colluding with the Silent Night (密夜)<a href="#fn5" epub:type="noteref">[5]</a>. That’s ridiculous.”</p>
+Better known as the Four Pillars of the North.
 
-<p>“The Four Pillars of the Northern Army have given their testimony. Are you still not going to confess?”</p>
+Once, they had been Jin Kwan-Ho’s friends. He had trusted and relied on them more than any other, and they had been the North’s shields and spears. In the end though, they had chosen to betray Jin Kwan-Ho and the Northern Army. Many followers of the Northern Army had also joined them in betrayal.
 
-<p>Jin Kwan-Ho looked at the four men who stood at the very back of the army. Because of the crowd, he could not see their faces clearly, but he could sense their presence.</p>
+“You’re pathetic.”
 
-<p>“Are you four so ashamed that you have to hide behind others?”</p>
+Suddenly, Jin Kwan-Ho turned toward Jin Mu-Won, who stood beside him silently.
 
-<p>The Northern Generals.</p>
+His son was more composed and stood prouder than anyone else in the hall. However, Jin Kwan-Ho knew that this was all an act. Jin Mu-Won’s trembling shoulders was proof of that.
 
-<p>Better known as the Four Pillars of the North.</p>
+No matter how resolute he was, he was only thirteen. He was far too young to calmly accept the terrible misfortune that had befallen him out of nowhere.
 
-<p>Once, they had been Jin Kwan-Ho’s friends. He had trusted and relied on them more than any other, and they had been the North’s shields and spears. In the end though, they had chosen to betray Jin Kwan-Ho and the Northern Army. Many followers of the Northern Army had also joined them in betrayal.</p>
+Jin Kwan-Ho put a hand on Jin Mu-Won’s shoulder. Jin Mu-Won raised his head and looked up at his gentle father.
 
-<p>“You’re pathetic.”</p>
+His son’s deep black eyes spoke a thousand words.
 
-<p>Suddenly, Jin Kwan-Ho turned toward Jin Mu-Won, who stood beside him silently.</p>
+*I’m sorry, my son.*
 
-<p>His son was more composed and stood prouder than anyone else in the hall. However, Jin Kwan-Ho knew that this was all an act. Jin Mu-Won’s trembling shoulders was proof of that.</p>
+Jin Kwan-Ho let go of his son and took a step toward Seo-Moon Hwa. All the members of the Nine Skies, including Seo-Moon Hwa, flinched.
 
-<p>No matter how resolute he was, he was only thirteen. He was far too young to calmly accept the terrible misfortune that had befallen him out of nowhere.</p>
+“No matter how much I struggle, I can’t escape from your trap. Still, this is the Northern Army. If I give it up, a third of this desolate region will become truly unlivable.”
 
-<p>Jin Kwan-Ho put a hand on Jin Mu-Won’s shoulder. Jin Mu-Won raised his head and looked up at his gentle father.</p>
+“Are you planning to resist, Jin Kwan-Ho?”
 
-<p>His son’s deep black eyes spoke a thousand words.</p>
+A hint of anxiety appeared on Seo-Moon Hwa’s face. The others were just as nervous.
 
-<p><em>I’m sorry, my son.</em></p>
+Although it was on the verge of collapse, this was the headquarters of the Northern Army. This was the fortress that had defended against the Silent Night for a hundred years. It wouldn’t be surprising if there were death traps and formations everywhere. Just those were enough to wipe out a third of their forces.
 
-<p>Jin Kwan-Ho let go of his son and took a step toward Seo-Moon Hwa. All the members of the Nine Skies, including Seo-Moon Hwa, flinched.</p>
+Most importantly, the man called Jin Kwan-Ho was here.
 
-<p>“No matter how much I struggle, I can’t escape from your trap. Still, this is the Northern Army. If I give it up, a third of this desolate region will become truly unlivable.”</p>
+If the man known as the Northern Wall charged at them while prepared to die, the number of deaths he would cause was unimaginable.
 
-<p>“Are you planning to resist, Jin Kwan-Ho?”</p>
+The Four Pillars might have betrayed him, but there were still many experts loyal to the Northern Army. One word from Jin Kwan-Ho, and they would follow him to their deaths.
 
-<p>A hint of anxiety appeared on Seo-Moon Hwa’s face. The others were just as nervous.</p>
+Thus, Seo-Moon Hwa and the other Nine Skies of Heaven's Summit were more nervous than ever before. Unexpectedly, Jin Kwan-Ho was the one who broke the tension.
 
-<p>Although it was on the verge of collapse, this was the headquarters of the Northern Army. This was the fortress that had defended against the Silent Night for a hundred years. It wouldn’t be surprising if there were death traps and formations everywhere. Just those were enough to wipe out a third of their forces.</p>
+“I will disband the Northern Army.”
 
-<p>Most importantly, the man called Jin Kwan-Ho was here.</p>
+“Really?”
 
-<p>If the man known as the Northern Wall charged at them while prepared to die, the number of deaths he would cause was unimaginable.</p>
+“I no longer have any reason to lie.”
 
-<p>The Four Pillars might have betrayed him, but there were still many experts loyal to the Northern Army. One word from Jin Kwan-Ho, and they would follow him to their deaths.</p>
+Jin Kwan-Ho grinned smugly at Seo-Moon Hwa, who scowled back with suspicion. Jin Kwan-Ho looked as if he knew the whole truth, which made the Nine Skies’s faces turn red with anger and shame that they had been trying to hide.
 
-<p>Thus, Seo-Moon Hwa and the other Nine Skies of Heaven's Summit were more nervous than ever before. Unexpectedly, Jin Kwan-Ho was the one who broke the tension.</p>
+To Jin Kwan-Ho, this couldn't have been an easy decision. Although it was only for a moment, the Nine Skies were dumbfounded.
 
-<p>“I will disband the Northern Army.”</p>
+*“The Northern Army must be eradicated.”*
 
-<p>“Really?”</p>
+*“As long as the Northern Army exists, we will be unable to cement our control over the Central Plains.”*
 
-<p>“I no longer have any reason to lie.”</p>
+The Nine Skies exchanged thoughts. Regardless of whether he knew their true intentions, Jin Kwan-Ho cut right to the chase.
 
-<p>Jin Kwan-Ho grinned smugly at Seo-Moon Hwa, who scowled back with suspicion. Jin Kwan-Ho looked as if he knew the whole truth, which made the Nine Skies’s faces turn red with anger and shame that they had been trying to hide.</p>
+He announced, “From today onward, the Northern Army is no more! All warriors of the North, leave the Northern Army and live your lives as you please! This is my final order as your lord!”
 
-<p>To Jin Kwan-Ho, this couldn't have been an easy decision. Although it was only for a moment, the Nine Skies were dumbfounded.</p>
+“Milord!”
 
-<p><em>“The Northern Army must be eradicated.”</em></p>
+“Arghhh!”
 
-<p><em>“As long as the Northern Army exists, we will be unable to cement our control over the Central Plains.”</em></p>
+Many warriors of the Northern Army, who had been facing off against the murim’s forces, chose to commit suicide upon hearing Jin Kwan-Ho’s announcement. As they embraced their deaths, tears flooded uncontrollably from their eyes.
 
-<p>The Nine Skies exchanged thoughts. Regardless of whether he knew their true intentions, Jin Kwan-Ho cut right to the chase.</p>
+Jin Kwan-Ho turned back to look at Seo-Moon Hwa.
 
-<p>He announced, “From today onward, the Northern Army is no more! All warriors of the North, leave the Northern Army and live your lives as you please! This is my final order as your lord!”</p>
+“Are you satisfied now?”
 
-<p>“Milord!”</p>
+“……”
 
-<p>“Arghhh!”</p>
+“It seems that this still isn’t enough for you.”
 
-<p>Many warriors of the Northern Army, who had been facing off against the murim’s forces, chose to commit suicide upon hearing Jin Kwan-Ho’s announcement. As they embraced their deaths, tears flooded uncontrollably from their eyes.</p>
+Jin Kwan-Ho’s grin widened.
 
-<p>Jin Kwan-Ho turned back to look at Seo-Moon Hwa.</p>
+To these people, there was only one acceptable outcome. Jin Kwan-Ho decided to give them what they wanted.
 
-<p>“Are you satisfied now?”</p>
+*Hah!*
 
-<p>“……”</p>
+Jin Kwan-Ho released his aura and a powerful windstorm engulfed the area. The Nine Skies raised their weapons and prepared to work together to fight him.
 
-<p>“It seems that this still isn’t enough for you.”</p>
+Just as his aura reached its pinnacle, Jin Kwan-Ho suddenly turned his strength on himself. His body shook from the great impact.
 
-<p>Jin Kwan-Ho’s grin widened.</p>
+“Father!”
 
-<p>To these people, there was only one acceptable outcome. Jin Kwan-Ho decided to give them what they wanted.</p>
+Jin Mu-Won ran toward his fallen father and held him in his arms. His clothes were quickly drenched in Jin Kwan-Ho’s blood.
 
-<p><em>Hah!</em></p>
+“AHHHHHHH!”
 
-<p>Jin Kwan-Ho released his aura and a powerful windstorm engulfed the area. The Nine Skies raised their weapons and prepared to work together to fight him.</p>
+The Nine Skies heaved sighs of relief. They all knew what Jin Kwan-Ho had done to himself. By reversing the flow of his chi, all of Jin Kwan-Ho’s blood vessels had burst. With damaged coronary arteries, not even the gods could save Jin Kwan-Ho now.
 
-<p>Just as his aura reached its pinnacle, Jin Kwan-Ho suddenly turned his strength on himself. His body shook from the great impact.</p>
+Jin Kwan-Ho looked toward Seo-Moon Hwa with bloodshot eyes from the burst blood vessels.
 
-<p>“Father!”</p>
+“Satisfied…now?”
 
-<p>Jin Mu-Won ran toward his fallen father and held him in his arms. His clothes were quickly drenched in Jin Kwan-Ho’s blood.</p>
+Everyone in the murim army, including Seo-Moon Hwa, were stunned speechless by Jin Kwan-Ho’s bloodied appearance.
 
-<p>“AHHHHHHH!”</p>
+The man had chosen to end his own life rather than die fighting.
 
-<p>The Nine Skies heaved sighs of relief. They all knew what Jin Kwan-Ho had done to himself. By reversing the flow of his chi, all of Jin Kwan-Ho’s blood vessels had burst. With damaged coronary arteries, not even the gods could save Jin Kwan-Ho now.</p>
+Jin Kwan-Ho’s extreme decision made even toughened soldiers break down in shock. Even Seo-Moon Hwa bit his lip in consternation.
 
-<p>Jin Kwan-Ho looked toward Seo-Moon Hwa with bloodshot eyes from the burst blood vessels.</p>
+Seo-Moon Hwa’s eyes fell upon Jin Mu-Won.
 
-<p>“Satisfied…now?”</p>
+“I wish to die surrounded only by my family.”
 
-<p>Everyone in the murim army, including Seo-Moon Hwa, were stunned speechless by Jin Kwan-Ho’s bloodied appearance.</p>
+It was hard for Seo-Moon Hwa to look away, but if he did not, the soldiers would disapprove of him.
 
-<p>The man had chosen to end his own life rather than die fighting.</p>
+“All of you, get out!” cried Seo-Moon Hwa.
 
-<p>Jin Kwan-Ho’s extreme decision made even toughened soldiers break down in shock. Even Seo-Moon Hwa bit his lip in consternation.</p>
+Jin Kwan-Ho smiled weakly in his son’s arms. His heart had been torn to shreds and there was no sign of life on his pale face. He had persisted this far using his powerful chi, but he had finally reached his limit.
 
-<p>Seo-Moon Hwa’s eyes fell upon Jin Mu-Won.</p>
+“I’m sorry, my son.”
 
-<p>“I wish to die surrounded only by my family.”</p>
+“Father.”
 
-<p>It was hard for Seo-Moon Hwa to look away, but if he did not, the soldiers would disapprove of him.</p>
+“I hope you live freely.”
 
-<p>“All of you, get out!” cried Seo-Moon Hwa.</p>
+Jin Kwan-Ho passed away, smiling.
 
-<p>Jin Kwan-Ho smiled weakly in his son’s arms. His heart had been torn to shreds and there was no sign of life on his pale face. He had persisted this far using his powerful chi, but he had finally reached his limit.</p>
+Jin Mu-Won stared at his father’s face for a very long time. Although his father had died from a damaged heart, his face appeared the same in death as it did in life. Jin Mu-Won stretched out a trembling hand and closed his father’s eyes.
 
-<p>“I’m sorry, my son.”</p>
+Jin Mu-Won carried his father’s corpse and turned around. *I’m all alone now. Alone under the wavering, endless sky.*
 
-<p>“Father.”</p>
+The soldiers quietly stared at Jin Mu-Won’s lanky profile. This young man, who had not shed even a single teardrop at his father’s death, gave them a strange sense of trepidation.
+[^1]: Jin Mu-Won (陳武元): The name Mu-Won means Martial Origin.
 
-<p>“I hope you live freely.”</p>
+[^2]: Northern Army (北天門): literal translation, Northern Heavenly Gates. The manhwa TL uses Northern Heavenly Sect, but they are not a sect in the traditional sense. This faction is an army.
 
-<p>Jin Kwan-Ho passed away, smiling.</p>
+[^3]: Heaven's Summit (雲中天): literal translation, Heaven Among the Clouds or Standing Above the Rest. Manhwa TL: Central Heavenly Alliance. Heaven's Summit has a double meaning of "peak of heaven" and "gathering of leaders" which I think fits better with the literal translation.<br/>
 
-<p>Jin Mu-Won stared at his father’s face for a very long time. Although his father had died from a damaged heart, his face appeared the same in death as it did in life. Jin Mu-Won stretched out a trembling hand and closed his father’s eyes.</p>
+[^4]: Ghost of Zhuge Liang (鬼諸葛): literal translation, Ghost of Zhuge. Zhuge Liang was a genius military strategist who served Liu Bei of Shu Han during the Three Kingdoms era. A famous story is how Liu Bei, a king, couldn't summon Zhuge Liang to his court and had to personally visit Zhuge Liang at his cottage three times in order to recruit him. The nickname "Ghost of Zhuge Liang" shows just how smart Seo-Moon Hwa is, as Zhuge Liang is thought to be the most intelligent man of his era.
 
-<p>Jin Mu-Won carried his father’s corpse and turned around. <em>I’m all alone now. Alone under the wavering, endless sky.</em></p>
-
-<p>The soldiers quietly stared at Jin Mu-Won’s lanky profile. This young man, who had not shed even a single teardrop at his father’s death, gave them a strange sense of trepidation.</p>
-
-<p><br/></p>
-
-<hr/>
-
-<p><strong>Footnotes: </strong></p>
-
-<p id="fn1" epub:type="footnote">[1] Jin Mu-Won (陳武元): The name Mu-Won means Martial Origin.</p>
-
-<p id="fn2" epub:type="footnote">[2] Northern Army (北天門): literal translation, Northern Heavenly Gates. The manhwa TL uses Northern Heavenly Sect, but they are not a sect in the traditional sense. This faction is an army.</p>
-
-<p id="fn3" epub:type="footnote">[3] Heaven's Summit (雲中天): literal translation, Heaven Among the Clouds or Standing Above the Rest. Manhwa TL: Central Heavenly Alliance. Heaven's Summit has a double meaning of "peak of heaven" and "gathering of leaders" which I think fits better with the literal translation.<br/></p>
-
-<p id="fn4" epub:type="footnote">[4] Ghost of Zhuge Liang (鬼諸葛): literal translation, Ghost of Zhuge. Zhuge Liang was a genius military strategist who served Liu Bei of Shu Han during the Three Kingdoms era. A famous story is how Liu Bei, a king, couldn't summon Zhuge Liang to his court and had to personally visit Zhuge Liang at his cottage three times in order to recruit him. The nickname "Ghost of Zhuge Liang" shows just how smart Seo-Moon Hwa is, as Zhuge Liang is thought to be the most intelligent man of his era.</p>
-
-<p id="fn5" epub:type="footnote">[5] Silent Night (密夜): Can also be translated as Hidden Night, or Secret Night, but Silent Night sounds better.</p>
-
-<p><br/></p>
-
-<p style="color:gray;">Translator: FoodieMonster007</p>
-
-<p style="color:gray;">Proofreader: TheGreatT20</p>
-</body>
-</html>
+[^5]: Silent Night (密夜): Can also be translated as Hidden Night, or Secret Night, but Silent Night sounds better.
