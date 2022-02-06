@@ -14,6 +14,8 @@
 	<p>no tag</p>
 {%- endif -%}
 
+{% assign start = false %}
+
 {% capture prevChap %}
 	{% for post in site.posts %}	
 		{% if post.url == page.url %}
@@ -21,13 +23,12 @@
 		{% endif %}			
 		{% if start == true and post.tags contains 'lnb'%}
 			{{ post.url }}
-			{{ post.title }}
 			{% break %}
 		{% endif %}				
 	{% endfor %}
 {% endcapture %}
 
-{{prevChap[0]}}
+{{prevChap}}
 
 </div>
 
