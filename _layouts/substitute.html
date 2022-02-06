@@ -1,0 +1,11 @@
+{% comment %}
+<!-- This is the code block to define custom syntax -->
+{% endcomment %}
+{% assign output = content
+	| replace: '<past>', '<span style="color:gray">'
+	| replace: '</past>', '</span>'
+    | replace: '<aggAnnoy1>', '<p class="lnbb">Why aren't you reading this at feedfoodie.github.io?</p>'
+    | replace: '<creditsBottom>', '<p style="opacity: 0;">If you see this, you are at the wrong site. FoodieMonster007, TheGreatT20</p>'
+%}
+
+{{output}}
