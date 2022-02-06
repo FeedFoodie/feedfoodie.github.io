@@ -3,7 +3,7 @@
 
 {%- include head.html -%}
 
-  <body onload="cpFunc()" style="background-color: #121212;">
+  <body style="background-color: #121212;">
 
     {%- include header.html -%}
 	{% include chapter_tagging.html %}
@@ -14,18 +14,20 @@
         {% assign output = content			
 			| replace: '-!', '<span class="past">'
 			| replace: '!-', '</span>'
-			| replace: '<p>aggAnnoy01', '<p class="ffoodie" id="cpa">Why aren′t you reading this at feedfoodie.github.io?'
-			| replace: '<p>aggAnnoy02', '<p class="fooodie" id="cpa">Why aren′t you reading this at feedfoodie.github.io?'
-			| replace: '<p>aggAnnoy03', '<p class="fooddie" id="cpa">Why aren′t you reading this at feedfoodie.github.io?'
-			| replace: '<p>aggAnnoy04', '<p class="foodiie" id="cpa">Why aren′t you reading this at feedfoodie.github.io?'
-			| replace: '<p>aggAnnoy05', '<p class="foodiee" id="cpa">Why aren′t you reading this at feedfoodie.github.io?'
-			| replace: '<p>aggAnnoy06', '<p class="ffoodie" id="cpa">This is a non-profit translation. You should not be seeing ads.'
-			| replace: '<p>aggAnnoy07', '<p class="fooodie" id="cpa">This is a non-profit translation. You should not be seeing ads.'
-			| replace: '<p>aggAnnoy08', '<p class="fooddie" id="cpa">This is a non-profit translation. You should not be seeing ads.'
-			| replace: '<p>aggAnnoy09', '<p class="foodiie" id="cpa">This is a non-profit translation. You should not be seeing ads.'
-			| replace: '<p>aggAnnoy10', '<p class="foodiee" id="cpa">This is a non-profit translation. You should not be seeing ads.'
-			| replace: '<div class="footnotes" role="doc-endnotes" id="cpa">', '<hr><h3>Footnotes:</h3><div class="footnotes" role="doc-endnotes">'
-			| replace: '<p>', '<p class="foodie" id="cpa">'
+			| replace: '<p>aggAnnoy01', '<p class="ffoodie">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy02', '<p class="fooodie">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy03', '<p class="fooddie">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy04', '<p class="foodiie">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy05', '<p class="foodiee">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy06', '<p class="ffoodie">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<p>aggAnnoy07', '<p class="fooodie">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<p>aggAnnoy08', '<p class="fooddie">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<p>aggAnnoy09', '<p class="foodiie">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<p>aggAnnoy10', '<p class="foodiee">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<div class="footnotes" role="doc-endnotes">', '<hr><h3>Footnotes:</h3><div class="footnotes" role="doc-endnotes">'
+			| replace: 'creDits', '<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20'
+			| replace: 'creditS', '<p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!'
+			| replace: '<p>', '<p class="foodie">'
 		%}		
 		{{output}}
       </div>
