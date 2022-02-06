@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pageLNB
 title: Legend of the Northern Blade
 ---
 
