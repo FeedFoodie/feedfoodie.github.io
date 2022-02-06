@@ -1,7 +1,7 @@
 <hr>
 
 <div>
-{% render chapter_tagging.html %}
+{% include chapter_tagging.html %}
 {% assign start = false %}
 {% for post in site.posts %}	
 	{% if start == true and post.tags contains 'lnb' %}

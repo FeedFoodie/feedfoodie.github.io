@@ -1,7 +1,7 @@
 <hr>
 
 <div>
-{% render chapter_tagging.html %}
+{% include chapter_tagging.html %}
 {%- if page.tags contains 'lnb' -%}
 	<p>print this</p>
 	{%- if page.previous.tags contains 'lnb' -%}
