@@ -35,7 +35,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 {% for tag in tags %}
 	<ul>
 	 {% for post in site.posts %}
-		 {% if post.tags contains tag %}
+		 {% if post.tags contains lnb %}
 		 <li>
 			 <a href="{{ post.url }}">
 			 {{ post.title }}
