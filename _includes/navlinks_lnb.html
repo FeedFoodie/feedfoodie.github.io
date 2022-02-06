@@ -14,16 +14,13 @@
 	<p>no tag</p>
 {%- endif -%}
 
-{{ site.posts | reverse | join: ", " }}
-
 {% capture _site_tags %}
 	{% for post in site.posts %}	
-		{% if post.tags contains 'lnb' %}
-			{{ post.url }}
-		{% endif %}		
 		{% if post.url == page.url %}
+		{% elseif post.tags contains 'lnb' %}
+			{{ post.url }}
 			{% break %}
-		{% endif %}			
+		{% endif %}				
 	{% endfor %}
 {% endcapture %}
 
