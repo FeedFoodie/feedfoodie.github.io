@@ -26,10 +26,3 @@ img {
 	clip: rect(0,0,0,0);
 	border: 0;
 }
-
-<script>
-	function myFunction() {
-	  var number = "123";
-	  document.getElementById("myText").innerHTML = number;
-	}
-</script>
