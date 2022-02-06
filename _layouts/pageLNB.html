@@ -9,7 +9,10 @@ layout: default
 
   <div class="post-content">
     {{ content }}
-	{% for tag in tags %}
+  </div>
+  
+  <div>
+		{% for tag in tags %}
 		<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
 		<ul>
 		 {% for post in site.posts %}
@@ -29,6 +32,6 @@ layout: default
 		 {% endfor %}
 		</ul>
 	{% endfor %}
-  </div>
+ </div>
 
 </article>
