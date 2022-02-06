@@ -1,8 +1,9 @@
 ---
 layout: home
+title: "Welcome to Northern Blade Translations!"
 ---
 
-## DIsclaimer
+## Disclaimer
 
 1. Copyrights to Legend of the Northern Blade are held by the author, Woo-Gak, and the artist, Hae Min. 
 
