@@ -14,7 +14,7 @@
 	<p>no tag</p>
 {%- endif -%}
 
-{% capture _site_tags %}
+{% capture prevChap %}
 	{% for post in site.posts %}	
 		{% if post.url == page.url %}
 		{% elsif post.tags contains 'lnb' %}
@@ -24,7 +24,9 @@
 	{% endfor %}
 {% endcapture %}
 
-{% for url in _site_tags %}
+{{prevChap}}
+
+{% for url in prevChap %}
   {{ url }}
 {% endfor %}
 
