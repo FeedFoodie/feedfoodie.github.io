@@ -1,4 +1,13 @@
 <hr>
+
+<div>
+{% if post.tags contains 'lnb' %}
+	<p>print this</p>
+{%- else -%}
+	<p>no tag</p>
+{%- endif -%}
+</div>
+
 <div class="post_navi">
   {%- if page.previous.url -%}
   <a class="post_navi-item nav_prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
