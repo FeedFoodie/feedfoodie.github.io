@@ -10,10 +10,32 @@
 	
 	<main class="page-content" aria-label="Content">
       <div class="wrapper" style="background-color: #444444; color: white;">
+	  
+		<div id="myRandomDiv">
+		</div>
+		<script type="text/javascript" charset="utf-8">
+			var texts = [
+			  "I am a sentence.",
+			  "Some nice stuff.",
+			  "I am random too!"
+			];
+
+			document.getElementById('randomText').value = texts[Math.floor(Math.random()*texts.length)];
+		</script>    
+	  
         {% assign output = content			
 			| replace: '-!', '<span class="past">'
 			| replace: '!-', '</span>'
-			| replace: '<p>aggAnnoy1', '<p class="fooodie">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy01', '<p class="ffoodie"><input type="text" id="randomText">'
+			| replace: '<p>aggAnnoy02', '<p class="fooodie">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy03', '<p class="fooddie">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy04', '<p class="foodiie">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy05', '<p class="foodiee">Why aren′t you reading this at feedfoodie.github.io?'
+			| replace: '<p>aggAnnoy06', '<p class="ffoodie">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<p>aggAnnoy07', '<p class="fooodie">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<p>aggAnnoy08', '<p class="fooddie">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<p>aggAnnoy09', '<p class="foodiie">This is a non-profit translation. You should not be seeing ads.'
+			| replace: '<p>aggAnnoy10', '<p class="foodiee">This is a non-profit translation. You should not be seeing ads.'
 			| replace: '<div class="footnotes" role="doc-endnotes">', '<hr><h3>Footnotes:</h3><div class="footnotes" role="doc-endnotes">'
 			| replace: '<p>', '<p class="foodie">'
 		%}		

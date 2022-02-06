@@ -13,10 +13,10 @@ a:link {
   color: white;
 }
 a:visited {
-  color: darkgray;
+  color: #c0d1ce;
 }
 a:hover {
-  color: #c0d1ce;
+  color: darkgray;
 }
 a:active {
   color: darkgray;
@@ -33,7 +33,7 @@ a:active {
 	color: darkgray;
 }
 
-.fooodie {
+.fooodie, .ffoodie, .fooddie, .foodiie, .foodiee {
 	position: absolute;
 	width: 1px;
 	height: 1px;
