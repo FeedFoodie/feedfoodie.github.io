@@ -11,7 +11,7 @@
 	<main class="page-content" aria-label="Content">
       <div class="wrapper" style="background-color: #444444; color: white;">
 	  
-		<div id="myRandomDiv">
+		<div id="randomText">
 		</div>
 		<script type="text/javascript" charset="utf-8">
 			var texts = [
@@ -26,7 +26,19 @@
         {% assign output = content			
 			| replace: '-!', '<span class="past">'
 			| replace: '!-', '</span>'
-			| replace: '<p>aggAnnoy01', '<p class="ffoodie"><script>document.write(randomText)</script>'
+			| replace: '<p>aggAnnoy01', '<p class="ffoodie"><script>
+					var r_text = new Array ();
+					r_text[0] = "All the leaves are brown";
+					r_text[1] = "And the sky is grey";
+					r_text[2] = "I've been for a walk";
+					r_text[3] = "On a winter's day";
+					r_text[4] = "I'd be safe and warm";
+					r_text[5] = "If I was in L.A.";
+					r_text[6] = "California dreaming, On such a winter's day";
+					var i = Math.floor(7*Math.random())
+
+					document.write(r_text[i]);
+					</script>'
 			| replace: '<p>aggAnnoy02', '<p class="fooodie">Why aren′t you reading this at feedfoodie.github.io?'
 			| replace: '<p>aggAnnoy03', '<p class="fooddie">Why aren′t you reading this at feedfoodie.github.io?'
 			| replace: '<p>aggAnnoy04', '<p class="foodiie">Why aren′t you reading this at feedfoodie.github.io?'
