@@ -18,6 +18,9 @@
 	{% for post in site.posts %}	
 		{% if post.tags contains 'lnb' %}
 			{{ post.url }}
+		{% endif %}		
+		{% if post.url == page.url %}
+			{% break %}
 		{% endif %}			
 	{% endfor %}
 {% endcapture %}
