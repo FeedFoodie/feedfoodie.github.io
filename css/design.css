@@ -16,7 +16,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
-  color: lavender
+  color: lavender;
 
   @include media-query($on-palm) {
     padding-right: 45px;
