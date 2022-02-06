@@ -5,8 +5,8 @@
     <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Chapter</div><div><span>{{ page.previous.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_prev" href="{{ 'archive.html' | absolute_url }}" title="Chapters">
-    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
+  <a class="post_navi-item nav_prev" href="{{ 'archive.html' | absolute_url }}" title="Blog Archive">
+    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Chapters</div><div><span>Archive of all previous blog posts</span></div>
   </a>
   {%- endif -%}
   {%- if page.next.url -%}
@@ -14,8 +14,8 @@
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Chapter</div><div><span>{{ page.next.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_next" href="{{ 'archive.html' | absolute_url }}" title="Chapters">
-    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
+  <a class="post_navi-item nav_next" href="{{ 'archive.html' | absolute_url }}" title="Blog Archive">
+    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Blog Archive</div><div><span>Archive of all previous blog posts</span></div>
   </a>
   {%- endif -%}
 </div>
