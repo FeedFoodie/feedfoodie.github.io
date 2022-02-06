@@ -10,3 +10,27 @@ title: "Welcome to Northern Blade Translations!"
 2. Copyrights to -!Star Instructor Master Baek!- are held by the author, Ganjajang, and the artist, Oliboli. 
 
 3. Do not take credit or make a profit from our work. Our translations can be read for FREE, with NO ADS. We DO NOT ask for donations.
+
+## We have moved!
+
+Welcome to the new blog, with a minmalist design because Foodie will be fired as a web designer.
+
+## Suscribe to our Series Specific RSS Feeds
+
+<p class="feed-subscribe">
+  <a href="{{ 'feed.lnb.xml' | relative_url }}">
+	<svg class="svg-icon orange">
+	  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+	</svg><span>Subscribe to Legend of the Northern Blade</span>
+  </a>
+</p>
+
+<p class="feed-subscribe">
+  <a href="{{ 'feed.simb.xml' | relative_url }}">
+	<svg class="svg-icon orange">
+	  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+	</svg><span>Subscribe to Star Instructor Master Baek</span>
+  </a>
+</p>
+
+## Latest Updates
