@@ -21,8 +21,6 @@
 {% endfor %}
 
 <div class="centered">
- <label for="chapters">Chapter List:</label>
-
 <select name="chapters" id="chapters"  onchange="location = this.value;">
 	{% for post in site.posts reversed %}	
 		{% if post.tags contains 'lnb' %}
