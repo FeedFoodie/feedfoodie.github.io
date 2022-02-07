@@ -81,10 +81,17 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
-  
-select {
+
+.center {
+    text-align: center;
+    /*These options are for the div to be visible in the example, the important is the first*/
+    width: auto;
+    height: 50px;
+}
+
+.cmb {
     display: block;
-    margin: auto;
+	margin: 0 auto;
 }
 
 .footnote{
