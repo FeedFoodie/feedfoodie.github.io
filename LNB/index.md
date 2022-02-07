@@ -35,5 +35,11 @@ Please buy the official versions to support Woo-Gak, the author and Hae-Min, the
 
 [Legend of the Northern Blade Reddit](https://www.reddit.com/r/NorthernBlade/){:target="_blank"}
 
+## Epubs
+
+[Volume 1: Chapters 001-048 (with images)](/LNB/epubs/LNB-Volume _01.epub){:target="_blank"}
+
+[Volume 1: Chapters 001-048 (with images)](/LNB/epubs/LNB-Volume _01_noImages.epub){:target="_blank"}
+
 ## Chapters
 
