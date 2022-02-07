@@ -82,3 +82,8 @@ blockquote {
     margin-bottom: 0;
   }
   
+ .centered {
+	margin: 0 auto;
+    text-align: left;
+    width: 800px; 
+ }
