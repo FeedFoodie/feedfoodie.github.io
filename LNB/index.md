@@ -3,6 +3,8 @@ layout: pageLNB
 title: Legend of the Northern Blade
 ---
 
+![LNB](/Images/LNB.jpg)
+
 ## Synopsis
 
 Novel Author: Woo-Gak 우각
@@ -39,7 +41,7 @@ Please buy the official versions to support Woo-Gak, the author and Hae-Min, the
 
 [Volume 1: Chapters 001-048 (with images)](/LNB/epubs/LNB-Volume _01.epub){:target="_blank"}
 
-[Volume 1: Chapters 001-048 (with images)](/LNB/epubs/LNB-Volume _01_noImages.epub){:target="_blank"}
+[Volume 1: Chapters 001-048 (without images)](/LNB/epubs/LNB-Volume _01_noImages.epub){:target="_blank"}
 
-## Chapters
+# Chapters
 
