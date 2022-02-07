@@ -1,5 +1,3 @@
-<hr>
-
 <div>
 {% include chapter_tagging.html %}
 {% assign start = false %}
@@ -24,15 +22,19 @@
 {% endfor %}
 </div>
 
+<div>
  <label for="chapters">Chapter List:</label>
 
-<select name="chapters" id="chapters">
+<select name="chapters" id="chapters"  onchange="location = this.value;">
 	{% for post in site.posts reversed %}	
 		{% if post.tags contains 'lnb' %}
-			<option value="{{post.title}}"><a href="post.url">{{post.title}}</a></option>
+			<option value="{{post.url}}">{{post.title}}</option>
 		{% endif %}				
 	{% endfor %}
 </select> 
+</div>
+
+<p><br /></p>
 
 <div class="post_navi">
   {%- if prevChap.url -%}
