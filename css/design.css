@@ -81,3 +81,19 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
+  
+@media all and (max-width: 959px) {
+	 .desktop {
+	 display: block;
+	 }
+	 .mobile {
+	 display: none;
+	 }
+	}@media all and (max-width: 479px) {
+	 .desktop {
+	 display: none;
+	 }
+	 .mobile {
+	 display: block;
+	 }
+}
