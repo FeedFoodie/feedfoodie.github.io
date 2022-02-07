@@ -20,7 +20,6 @@
 	{% endif %}				
 {% endfor %}
 
-<div class="centered">
 <select name="chapters" id="chapters"  onchange="location = this.value;">
 	{% for post in site.posts reversed %}	
 		{% if post.tags contains 'lnb' %}
@@ -28,8 +27,6 @@
 		{% endif %}				
 	{% endfor %}
 </select> 
-</div>
-
 <p><br /></p>
 
 <div class="post_navi">
