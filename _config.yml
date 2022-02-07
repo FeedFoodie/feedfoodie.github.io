@@ -22,8 +22,9 @@ title: Northern Blade Translations
 description: >- # this means to ignore newlines until "baseurl:"
   Legend of the Northern Blade Novel Translation, Star Instructor Master Baek Novel Translation
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://feedfoodie.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://feedfoodie.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
+permalink: /:categories/:title:output_ext
 
 # Build settings
 theme: minima
