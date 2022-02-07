@@ -43,3 +43,15 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+.center {
+    text-align: center;
+    /*These options are for the div to be visible in the example, the important is the first*/
+    width: auto;
+    height: 50px;
+}
+
+.cmb {
+    display: block;
+	margin: 0 auto;
+}
