@@ -24,6 +24,16 @@
 {% endfor %}
 </div>
 
+ <label for="chapters">Chapter List:</label>
+
+<select name="chapters" id="chapters">
+	{% for post in site.posts reversed %}	
+		{% if post.tags contains 'lnb' %}
+			<option value="{{post.title}}"><a href="post.url">{{post.title}}</a></option>
+		{% endif %}				
+	{% endfor %}
+</select> 
+
 <div class="post_navi">
   {%- if prevChap.url -%}
   <a class="post_navi-item nav_prev" href="{{prevChap.url}}" title="{{ prevChap.title }}">
