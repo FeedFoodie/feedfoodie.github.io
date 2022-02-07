@@ -20,8 +20,8 @@
 	{% endif %}				
 {% endfor %}
 
-<div class="center">
-<select class="cmb"  onchange="location = this.value;">
+<div class="centersel">
+<select class="cmb"  onchange="location = this.value;" style="width: 400px">
 	{% for post in site.posts reversed %}	
 		{% if post.tags contains 'simb' %}
 			<option value="{{post.url}}">{{post.title}}</option>
