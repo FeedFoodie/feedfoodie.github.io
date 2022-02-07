@@ -27,5 +27,13 @@ Please buy the official versions to support Woo-Gak, the author and Hae-Min, the
 
 [Official Chinese Translation (QQ)](https://ac.qq.com/Comic/comicInfo/id/648162){:target="_blank"}
 
+## Other Links
+
+[Legend of the Northern Blade Wiki](https://legend-of-the-northern-blade.fandom.com/){:target="_blank"}
+
+[Legend of the Northern Blade Fan Discord Server](https://discord.gg/ewFQE7JpYA){:target="_blank"}
+
+[Legend of the Northern Blade Reddit](https://www.reddit.com/r/NorthernBlade/){:target="_blank"}
+
 ## Chapters
 
