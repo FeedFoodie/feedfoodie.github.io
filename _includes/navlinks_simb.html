@@ -22,7 +22,11 @@
 {% endfor %}
 </div>
 
-<div style="margin: auto">
+<div>{
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
  <label for="chapters">Chapter List:</label>
 
 <select name="chapters" id="chapters"  onchange="location = this.value;">
