@@ -21,7 +21,7 @@
 {% endfor %}
 
 <div class="centersel">
-<select class="cmb"  onchange="location = this.value;" style="width: 400px">
+<select class="cmb"  onchange="location = this.value;" style="width: 350px">
 	{% for post in site.posts reversed %}	
 		{% if post.tags contains 'lnb' %}
 			<option value="{{post.url}}">{{post.title}}</option>
