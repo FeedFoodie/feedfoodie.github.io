@@ -3,6 +3,8 @@ layout: pageSIMB
 title: Star Instructor Master Baek
 ---
 
+![SIMB](/Images/SIMB.jpg)
+
 ## Synopsis
 
 Novel Author: Ganjajang 간짜장
