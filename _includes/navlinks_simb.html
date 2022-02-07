@@ -20,7 +20,8 @@
 	{% endif %}				
 {% endfor %}
 
-<select name="chapters" id="chapters"  onchange="location = this.value;">
+<div class="center">
+<select class="cmb"  onchange="location = this.value;">
 	{% for post in site.posts reversed %}	
 		{% if post.tags contains 'simb' %}
 			<option value="{{post.url}}">{{post.title}}</option>
@@ -28,6 +29,7 @@
 	{% endfor %}
 </select> 
 <p><br /></p>
+<div>
 
 <div class="post_navi">
   {%- if prevChap.url -%}
