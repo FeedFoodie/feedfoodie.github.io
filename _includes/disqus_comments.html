@@ -1,11 +1,11 @@
-{% if page.comments != false and jekyll.environment == "production" %}
+{% if page.comments %}
+<div class="comments">
 <div id="disqus_thread"></div>
-<script type="text/javascript">
+<script>
 	var disqus_config = function () {
-		this.page.url = {{ page.url | prepend: site.baseurl | prepend: site.url  | escape }};
-		this.page.identifier = {{ page.title | escape }};
-		this.page.category_id = {{ page.tags[0] | escape }};
-	};    
+		this.page.url =  "{{ page.url | prepend: site.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier =  "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
 	(function() {
 		var d = document, s = d.createElement('script');
 		s.src = 'https://northbladetl.disqus.com/embed.js';
@@ -13,4 +13,5 @@
 		(d.head || d.body).appendChild(s);
 	})();
 </script>
+</div>
 {% endif %}
