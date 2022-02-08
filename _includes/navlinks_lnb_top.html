@@ -11,7 +11,7 @@
 	{% endif %}				
 {% endfor %}
 {% assign stop = false %}
-{% for post in site.posts reversed offset:revStart %}	
+{% for post in site.posts {{ offset:revStart | reversed }} %}	
 	{% if post.tags contains 'lnb' %}
 		{% assign nextChap = post %}
 		{% break %}
