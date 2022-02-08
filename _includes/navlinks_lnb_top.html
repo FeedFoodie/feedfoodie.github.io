@@ -7,7 +7,7 @@
 	{% endif %}			
 	{% if post.url == page.url %}
 		{% assign start = true %}
-		{% assign revStart = {{ forloop.rindex0 }} %}
+		{% assign revStart = {{ forloop.index0 }} %}
 	{% endif %}				
 {% endfor %}
 {% assign stop = false %}
