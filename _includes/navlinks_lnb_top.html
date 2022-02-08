@@ -7,11 +7,11 @@
 	{% endif %}			
 	{% if post.url == page.url %}
 		{% assign start = true %}
-		{% assign revStart = {{ forloop.index0 }} %}
+		{% assign revStart = {{ forloop.rindex0 }} %}
 	{% endif %}				
 {% endfor %}
 {% assign stop = false %}
-{% for post in site.posts {{ offset:revStart | reversed }} %}	
+{% for post in ( site.posts | reverse ) offset:revStart %}	
 	{% if post.tags contains 'lnb' %}
 		{% assign nextChap = post %}
 		{% break %}
