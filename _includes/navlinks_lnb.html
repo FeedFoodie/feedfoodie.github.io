@@ -1,25 +1,3 @@
-{% include chapter_tagging.html %}
-{% assign start = false %}
-{% for post in site.posts %}	
-	{% if start == true and post.tags contains 'lnb' %}
-		{% assign prevChap = post %}
-		{% break %}
-	{% endif %}			
-	{% if post.url == page.url %}
-		{% assign start = true %}
-	{% endif %}				
-{% endfor %}
-{% assign stop = false %}
-{% for post in site.posts reversed %}	
-	{% if stop == true and post.tags contains 'lnb' %}
-		{% assign nextChap = post %}
-		{% break %}
-	{% endif %}			
-	{% if post.url == page.url %}
-		{% assign stop = true %}
-	{% endif %}				
-{% endfor %}
-
 <div class="centersel">
 <select class="cmb"  onchange="location = this.value;" style="width: 350px">
 	{% for post in site.posts reversed %}	
