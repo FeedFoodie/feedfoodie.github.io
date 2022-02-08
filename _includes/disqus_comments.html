@@ -2,9 +2,9 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 	var disqus_config = function () {
-		this.page.url = String({{ page.url | prepend: site.baseurl | prepend: site.url  | escape }});
-		this.page.identifier = String({{ page.title | escape }});
-		this.page.category_id = String({{ page.tags[0] | escape }});
+		this.page.url = '{{ page.url | prepend: site.baseurl | prepend: site.url  | escape }}';
+		this.page.identifier = '{{ page.title | escape }}';
+		this.page.category_id = '{{ page.tags[0] | escape }}';
 	};    
 	(function() {
 		var d = document, s = d.createElement('script');
