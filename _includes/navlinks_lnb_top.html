@@ -7,17 +7,18 @@
 	{% endif %}			
 	{% if post.url == page.url %}
 		{% assign start = true %}
+		{% assign revStart = {{ forloop.rindex0 }} %}
 	{% endif %}				
 {% endfor %}
 {% assign stop = false %}
-{% for post in site.posts reversed %}	
-	{% if stop == true and post.tags contains 'lnb' %}
+{% for post in site.posts reversed offset:revStart %}	
+	{% if post.tags contains 'lnb' %}
 		{% assign nextChap = post %}
 		{% break %}
 	{% endif %}			
-	{% if post.url == page.url %}
-		{% assign stop = true %}
-	{% endif %}				
+	<-- stop == true and  {% if post.url == page.url %}
+		{% assign stop = true %} 
+	{% endif %}	-->			
 {% endfor %}
 
 <div class="post_navi">
