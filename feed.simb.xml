@@ -15,7 +15,7 @@ layout: null
             <item>
                 <title>SIMB {{ post.title | xml_escape }}</title>
 				<author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-                <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - {{post.url}}</description>
+                <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - {{ post.url | prepend: site.baseurl | prepend: site.url }}</description>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
                 <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
                 <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
