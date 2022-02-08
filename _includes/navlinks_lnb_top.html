@@ -1,0 +1,42 @@
+{% include chapter_tagging.html %}
+{% assign start = false %}
+{% for post in site.posts %}	
+	{% if start == true and post.tags contains 'lnb' %}
+		{% assign prevChap = post %}
+		{% break %}
+	{% endif %}			
+	{% if post.url == page.url %}
+		{% assign start = true %}
+	{% endif %}				
+{% endfor %}
+{% assign stop = false %}
+{% for post in site.posts reversed %}	
+	{% if stop == true and post.tags contains 'lnb' %}
+		{% assign nextChap = post %}
+		{% break %}
+	{% endif %}			
+	{% if post.url == page.url %}
+		{% assign stop = true %}
+	{% endif %}				
+{% endfor %}
+
+<div class="post_navi">
+  {%- if prevChap.url -%}
+  <a class="post_navi-item nav_prev" href="{{prevChap.url}}" title="{{ prevChap.title }}">
+    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Chapter</div><div><span>{{ prevChap.title }}</span></div>
+  </a>
+  {%- else -%}
+  <a class="post_navi-item nav_prev" href="/LNB/chapters.html" title="Chapters">
+    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
+  </a>
+  {%- endif -%}
+  {%- if nextChap.url -%}
+  <a class="post_navi-item nav_next" href="{{ nextChap.url }}" title="{{ nextChap.title }}">
+    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Chapter</div><div><span>{{ nextChap.title }}</span></div>
+  </a>
+  {%- else -%}
+  <a class="post_navi-item nav_next" href="/LNB/chapters.html" title="Chapters">
+    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
+  </a>
+  {%- endif -%}
+</div>
