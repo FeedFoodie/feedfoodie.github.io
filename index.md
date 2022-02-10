@@ -13,7 +13,7 @@ title: "Welcome to Northern Blade Translations!"
 
 ## We Have Moved
 
-Welcome to the new blog, with a minmalist design which hopefully provides a better reading experience.
+Welcome to the new blog, with a minmalist design which hopefully provides a better reading experience and faster load times. Comment if you find anything broken and/or have ideas to make the website better!
 
 ## Subscribe to our Series Specific RSS Feeds!
 
