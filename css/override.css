@@ -55,3 +55,7 @@ hr {
     display: block;
 	margin: 0 auto;
 }
+
+.inline {
+  display: inline-block; 
+}
