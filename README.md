@@ -20,7 +20,7 @@ Removed domain from repository to prevent people finding it. Link will auto-redi
 
 7. Navigate to the folder where you saved filename.md \/ filename.txt and double-click it or select it and click "open".
 
-8. Open filename.md \/ filename.txt in notepad. aggAnnoy should have been added randomly.
+8. Open filename.md in notepad. aggAnnoy should have been added randomly.
 
 9. Copy the text in filename into github, replacing all of the original text (ctrl-A, ctrl-V).
 
