@@ -1,9 +1,11 @@
 // Change Font Size
-var cont = document.getElementById("content");  
+var currentSize = 0;
 function changeFontSize(change) {  
-	if (change == 0) {
-		cont.style.fontSize = 16px;
-	} else {
-		cont.style.fontSize = cont.style.fontSize + change;
+	if (change == '0') {
+		document.getElementById("content").style.fontSize = "16px";
+	}
+     else {
+		currentSize = parseInt(document.getElementById("content").style.fontSize);
+        document.getElementById("content").style.fontSize = currentSize + change + 'px';
 	}	
 }
