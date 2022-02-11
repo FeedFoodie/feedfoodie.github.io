@@ -5,7 +5,9 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-  <p><br /><p>
+	<p><br /></p>
+	 {% include navlinks_lnb_top.html %}
+	<hr> 
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -18,11 +20,14 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-<hr>
- {% include navlinks_lnb_top.html %}
-<hr>
-		<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p><p><br /></p>
+  <div class="post-content e-content" itemprop="articleBody" style="font-size: 16px;" id="content">						
+		<p class="foodie" style="text-align:right"><b>Change Font Size:</b> 
+		<button type="button" onclick="changeFontSize(-1)" name="btn1">-A</button>  
+		<button type="button" onclick="changeFontSize(0)" name="btn2">A</button>  
+		<button type="button" onclick="changeFontSize(1)" name="btn3">A+</button>
+		</p>
+		<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
+		<p class="foodie"><br /></p>
 		{{ content }}
 <p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>
 <hr>
