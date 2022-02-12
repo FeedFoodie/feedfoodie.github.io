@@ -31,6 +31,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
   
 # Disqus Comments
 disqus:
