@@ -9,3 +9,8 @@ function changeFontSize(change) {
         document.getElementById("content").style.fontSize = currentSize + change + 'px';
 	}	
 }
+
+//Change Color
+function changeWrapColor() {
+	document.getElementById("wrappertext").classList.toggle("day-mode");
+}
