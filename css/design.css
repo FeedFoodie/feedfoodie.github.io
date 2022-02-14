@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.wrapper {
+.wrapperMain {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
