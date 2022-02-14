@@ -14,9 +14,17 @@
 	color: white;
 }
 
+.night-mode-quotes {
+	color: #fcd299;
+}
+
 .day-mode {
 	background-color: white;
 	color: #444444;
+}
+
+.day-mode-quotes {
+	color: #80b4fb;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,8 +90,7 @@ a:active {
  * Blockquotes
  */
 blockquote {
-  color: #fcd299;
-  background-color: #444444;
+  /* color: #fcd299; */
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
