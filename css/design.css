@@ -9,6 +9,15 @@
   position: relative;
 }
 
+.night-mode {
+	background-color: #444444;
+	color: white;
+}
+
+.day-mode {
+	background-color: white;
+	color: #444444;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	color: #b6b5d4;
