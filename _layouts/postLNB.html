@@ -22,14 +22,17 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">	
 <div style="font-size: 16px;" id="content">					
-		<p class="foodie" style="text-align:right"><b>Change Font Size:</b> 
+	<p class="foodie" style="text-align:right"><b>Day/Night Mode:</b> 
+		<button type="button" onclick="changeWrapColor()" name="btn4">Change Mode</button>		
+	</p>
+	<p class="foodie" style="text-align:right"><b>Change Font Size:</b> 
 		<button type="button" onclick="changeFontSize(-1)" name="btn1">-A</button>  
 		<button type="button" onclick="changeFontSize(0)" name="btn2">A</button>  
 		<button type="button" onclick="changeFontSize(1)" name="btn3">A+</button>
-		</p>
-		<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
-		<p class="foodie"><br /></p>
-		{{ content }}
+	</p>
+	<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
+	<p class="foodie"><br /></p>
+	{{ content }}
 <p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>
 </div>
 <hr>
