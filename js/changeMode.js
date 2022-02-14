@@ -5,7 +5,7 @@ function changeFontSize(change) {
 		document.getElementById("content").style.fontSize = "16px";
 		var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
-		  quote[i].style.fontSize = "16px";
+		  quote[i].style.fontSize = "18px";
 		}
 	}
      else {
@@ -13,7 +13,7 @@ function changeFontSize(change) {
         document.getElementById("content").style.fontSize = currentSize + change + 'px';
 		var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
-		  quote[i].style.fontSize = currentSize + change + 'px';
+		  quote[i].style.fontSize = currentSize + 2 + change + 'px';
 		}
 	}	
 }
