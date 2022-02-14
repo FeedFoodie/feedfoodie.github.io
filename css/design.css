@@ -82,7 +82,7 @@ a:active {
  * Blockquotes
  */
 blockquote {
-  color: #c0d1ce;
+  color: #fcd299;
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
