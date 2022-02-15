@@ -20,8 +20,7 @@
 
 title: Northern Blade Translations
 tagline: LNB/SIMB TL
-description: >- # this means to ignore newlines until "baseurl:"
-  Legend of the Northern Blade Novel and Star Instructor Master Baek Novel Translations. This is the translator's website!
+description: Legend of the Northern Blade Novel and Star Instructor Master Baek Novel English Translations. Welcome to the translator's website! Legend of the Northern Blade is a webnovel by author Woo-Gak, posted on Kakao Pages in 2014. Star Instructor Master Baek is a webnovel by Ganjanjang, posted on Naver Series in 2020.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://northbladetl.com" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
