@@ -32,6 +32,9 @@ body {
   min-height: 100vh;
   flex-direction: column;
   overflow-wrap: break-word;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
 }
 
 
