@@ -11,10 +11,6 @@ title: "Northern Blade Translations"
 
 3. Do not take credit or make a profit from our work. Our translations can be read for FREE, with NO ADS. We DO NOT ask for donations.
 
-## We Have Moved!
-
-Welcome to the new blog, with a minmalist design which hopefully provides a better reading experience and faster load times. Comment if you find anything broken and/or have ideas to make the website better!
-
 ## Subscribe to our Series Specific RSS Feeds!
 
 <p class="feed-subscribe">
