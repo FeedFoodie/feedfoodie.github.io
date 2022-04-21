@@ -11,6 +11,8 @@ title: "Northern Blade Translations"
 
 3. Do not take credit or make a profit from our work. Our translations can be read for FREE, with NO ADS. We DO NOT ask for donations.
 
+4. Enjoy reading from what is probably the simplest looking translator's website, because minimalist themes are awesome.
+
 ## Subscribe to our Series Specific RSS Feeds!
 
 <p class="feed-subscribe">
@@ -28,5 +30,9 @@ title: "Northern Blade Translations"
 	</svg><span>Subscribe to Star Instructor Master Baek</span>
   </a>
 </p>
+
+## Ebooks
+
+Epubs for LNB can be found on the series page. New epubs will be made every 50 chapters or so.
 
 # Latest Updates
