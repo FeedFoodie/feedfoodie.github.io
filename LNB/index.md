@@ -43,5 +43,9 @@ Please buy the official versions to support Woo-Gak, the author and Hae-Min, the
 
 [Volume 1: Chapters 001-048 (without images)](/LNB/epubs/LNB-Volume _01_noImages.epub){:target="_blank"}
 
+[Volume 2: Chapters 049-082 (with images)](/LNB/epubs/LNB-Volume _02.epub){:target="_blank"}
+
+[Volume 2: Chapters 049-082 (without images)](/LNB/epubs/LNB-Volume _02_noImages.epub){:target="_blank"}
+
 ## Chapters
 
