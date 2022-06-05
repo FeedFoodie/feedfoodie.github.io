@@ -1,10 +1,10 @@
 ---
 layout: postLNB
-title:  "Chapter 71: Yong Mu-Sung, The Commander of the Iron Brigade (3)"
+title:  "Chapter Title"
 comments: true
 tags: [lnb]
 categories: [lnb]
-date: 2022-02-11 11:00:00 -0800
+date: 2022-06-10 23:00:00 -0800
 published: false
 ---
 
