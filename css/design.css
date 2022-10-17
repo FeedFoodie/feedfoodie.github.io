@@ -102,3 +102,75 @@ blockquote {
 	color: #08a7e7;
 }
 
+/* Hover Footnotes */
+
+p input {
+  display: none;
+}
+
+/* Sup text */
+p input + label {
+  font: 0.7em / 1 system-ui, sans-serif;
+  vertical-align: super;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+p input + label:before {
+  content: "";
+}
+
+p input + label:after {
+  content: "";
+}
+
+p input + label:hover {
+  color: #838374;
+}
+
+/* Footnote text */
+
+small {
+  color: #838374;
+  font-size: 0.875em;
+}
+
+p input + label + small {
+  transition: opacity 0.2s 0.05s;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+p input:checked + label + small {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+/******* Flavors *******/
+
+/* hover reveal */
+
+p.hover input + label + small,
+p.hover input:checked + label + small {
+  display: none;
+}
+
+p.hover input + label:hover + small {
+  font-size:.8em;
+  z-index: 1;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  padding: 0.3em 0.8em 0.4em;
+  border-bottom: 1px;
+  right: 4ch;
+  left: 4ch;
+  background: #222222ee;
+  color: #eee;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  pointer-events: none;
+}
