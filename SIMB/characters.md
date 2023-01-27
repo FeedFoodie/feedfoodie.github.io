@@ -135,4 +135,4 @@ title: Star Instructor Master Baek
 
 **Four Kids:**
 
-Number 27’s (Baek Su-Ryong’s) best students who learned the Four Masters’ martial arts and were then turned into emotionless killing machines.
+- Number 27’s (Baek Su-Ryong’s) best students who learned the Four Masters’ martial arts and were then turned into emotionless killing machines.

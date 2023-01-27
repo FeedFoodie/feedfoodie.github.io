@@ -19,6 +19,10 @@ Baek Su-Ryong thus embarks on a journey to become the Star Instructor of the Azu
 
 Associated Names: 일타강사 백사부
 
+## Characters
+
+[SEE CHARACTER PAGE](/SIMB/characters.html)
+
 ## Raws
 
 This is a Naver series so both the novel and manhwa are free-to-read. You need cookies to read the latest 5 chapters of the manhwa, though, which you can get by watching ads and downloading games on the Korean Naver Webtoons app (unless you have a Korean ID and credit card to buy cookies). There is no official translation as of yet.
