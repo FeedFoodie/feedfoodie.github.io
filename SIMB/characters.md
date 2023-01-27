@@ -40,7 +40,7 @@ title: Star Instructor Master Baek
 
 **Myeong Il-Oh:**
 
-- Newbie staff instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A genuinely friendly, sociable dude from the Shandong Myeong Family Manor who gets along with everyone else.
+- Newbie staff instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A genuinely friendly, sociable dude from the Shandong Myeong Family Manor who gets along with everyone.
 
 **Kwak Cheol-Woo:**
 
