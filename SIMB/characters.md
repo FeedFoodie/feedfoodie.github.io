@@ -54,9 +54,7 @@ title: Star Instructor Master Baek
 **Dok-Go Jun:**
 
 - Title: Sword Dragon
-
 - Martial Arts: Nine Swords of Dugu
-
 - Student Council President of the Azure Dragon Academy. An intelligent, determined, hard-working boy who will do anything to remain top student of the Azure Dragon Academy. Starts out as a very upright kid…until he meets Master Baek. I used the Chinese name of his sword technique as it is a famous wuxia technique learned by Linghu Chong, the protagonist of Jin Yong’s “The Proud, Smiling Wanderer”.
 
 **Tang So-So:**
