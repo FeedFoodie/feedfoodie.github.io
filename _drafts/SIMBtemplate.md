@@ -1,6 +1,6 @@
 ---
 layout: postSIMB
-title:  "Chapter 11: Eighteen Strikes of the Outlaw"
+title:  "Chapter title"
 comments: true
 tags: [simb]
 categories: [simb]
