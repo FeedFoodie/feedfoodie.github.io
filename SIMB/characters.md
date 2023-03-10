@@ -12,6 +12,7 @@ title: Star Instructor Master Baek
 **Baek Su-Ryong:** 
 
 - Martial Arts: Heaven Defying Divine Art, Eighteen Strikes of the Viridian Forest, Unparalleled Sword, Asura Dark Heaven Blade, New Moon’s White Ice Dance, White Ice Divine Art
+- Age: 27
 - The protagonist and a reincarnated Blood Cult martial arts instructor (Name: Number 27). In his past life, he learned the world’s greatest martial arts from the Sword Saint Mo-Yong Hon, the Bandit King Maeng Ho-Ak, the Ice Moon Goddess Eun Ye-Rin, the Crazy Demon Hyon-Won Hu, and the Blood Demon. In this life, he has enrolled as a newbie instructor at the Azure Dragon Academy with the dream of becoming the Star Instructor.
 
 **Nam-Goong Su:** 
@@ -27,6 +28,7 @@ title: Star Instructor Master Baek
 
 **Ak Yeon-Ho:**
 
+- Age: 25
 - Newbie spear instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A happy-go-lucky son of the prestigious Shandong Ak Clan, or so it seems.
 
 **Noh Gun-Sang:**
@@ -40,6 +42,7 @@ title: Star Instructor Master Baek
 
 **Myeong Il-Oh:**
 
+- Age: 26
 - Newbie staff instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A genuinely friendly, sociable dude from the Shandong Myeong Family Manor who gets along with everyone.
 
 **Kwak Cheol-Woo:**
