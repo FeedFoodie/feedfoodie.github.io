@@ -102,12 +102,6 @@ blockquote {
 	color: #08a7e7;
 }
 
-/* Hover Footnotes */
-
-p input {
-  display: none;
-}
-
 /* Sup text */
 p input + label {
   font: 0.7em / 1 system-ui, sans-serif;
