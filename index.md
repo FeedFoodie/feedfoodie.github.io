@@ -37,4 +37,4 @@ title: "Northern Blade Translations"
 
 Epubs for LNB can be found on the series page. New epubs will be made every 50 chapters or so.
 
-# Latest Updates
+## Latest Updates
