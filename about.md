@@ -9,7 +9,7 @@ We do not have any Patreon pages or tip jars for people to donate to! We run thi
 
 ## Translator
 
-FoodieMonster007 is a bored translator who has translated various novels for fun since 2010. FoodieMonster007 is very into food. FoodieMonster007 works full-time and sometimes overtime so please don't ask Foodie to translate faster. Foodie also often has to answer to the girlfriend's demands and only has so much free time.
+FoodieMonster007 is a bored translator who has translated various novels for fun since 2010. FoodieMonster007 is very into food. FoodieMonster007 works full-time and sometimes overtime so please don't ask Foodie to translate faster. Foodie also often has to answer to the wife’s demands and only has so much free time.
 
 ## Proofreader
 
