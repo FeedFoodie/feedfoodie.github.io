@@ -11,11 +11,11 @@ title: Star Instructor Master Baek
 
 **Baek Su-Ryong:** 
 
-- Martial Arts: Heaven Defying Divine Art, Eighteen Strikes of the Viridian Forest, Unparalleled Sword, Asura Dark Heaven Blade, New Moon’s White Ice Dance, White Ice Divine Art
+- Martial Arts: Heaven Defying Divine Art, Eighteen Strikes of the Viridian Forest, Unlimited Sword, Asura Dark Heaven Blade, New Moon’s White Ice Dance, White Ice Divine Art
 - Age: 27
 - The protagonist and a reincarnated Blood Cult martial arts instructor (Name: Number 27). In his past life, he learned the world’s greatest martial arts from the Sword Saint Mo-Yong Hon, the Bandit King Maeng Ho-Ak, the Ice Moon Goddess Eun Ye-Rin, the Crazy Demon Hyon-Won Hu, and the Blood Demon. In this life, he has enrolled as a newbie instructor at the Azure Dragon Academy with the dream of becoming the Star Instructor.
 
-**Nam-Goong Su:** 
+**Namgoong Su:** 
 
 - Title: Three Absolutes Sword
 - Martial Arts: Lightning Sword
@@ -54,17 +54,22 @@ title: Star Instructor Master Baek
 
 #### STUDENTS
 
-**Hyon-Won Kang:**
+**Hyonwon Kang:**
 
 - Nickname: Wonkang
-- Martial Arts: Hyon-Won Clan Blade Arts
-- Current Number 1 Delinquent of the Azure Dragon Academy. A martial arts genius with the natural instincts of a beast, but seems to have only learned a degraded version of the Hyon-Won Clan’s Blade Arts?
+- Martial Arts: Hyonwon Clan Blade Arts
+- Current Number 1 Delinquent of the Azure Dragon Academy. A martial arts genius with the natural instincts of a beast, but seems to have only learned a degraded version of the Hyonwon Clan’s Blade Arts?
 
-**Dok-Go Jun:**
+**Wiji Cheon:**
+
+- Martial Arts: Unlimited Sword
+- A genius swordsman. He was tricked by a black-cloaked man into learning a fake Unlimited Sword and suffered from Qi Deviation, but was cured by Baek Su-Ryong and is now following him.
+
+**Dokgo Jun:**
 
 - Title: Sword Dragon
 - Martial Arts: Nine Swords of Dokgo
-- Student Council President of the Azure Dragon Academy. An intelligent, determined, hard-working boy who will do *anything* to remain top student of the Azure Dragon Academy. Starts out as a very upright kid…until he meets Master Baek. His sword technique is a classic wuxia technique that the protagonist of Jin Yong’s “The Proud, Smiling Wanderer”, Linghu Chong learned from Dugu Qiubai (whose name means “Please defeat this lonely, undefeated me”). The original translation of his technique is the “Nine Swords of Dugu”, but Dugu is read as Dokgo in Korean.
+- Student Council President of the Azure Dragon Academy. An intelligent, determined, hard-working boy who will do *anything* to remain top student of the Azure Dragon Academy. Starts out as a very upright kid…until he meets Master Baek. His sword technique is a classic wuxia technique that the protagonist of Jin Yong’s “The Proud, Smiling Wanderer”, Linghu Chong learned from Dugu Qiubai (whose name means “Please defeat me”). The original translation of his technique is the “Nine Swords of Dugu”, but Dugu is read as Dokgo in Korean.
 
 **Tang So-So:**
 
@@ -100,17 +105,17 @@ title: Star Instructor Master Baek
 - Martial Arts: Eighteen Strikes of the Viridian Forest
 - The Bandit King of the Viridian Forest (think Robin Hood and his Merry Men). A giant of a man who unified the 72 Bandit Strongholds into the largest Viridian Forest Bandit Union in history, and dreams of making the Viridian Forest acknowledged as a sect specializing in outer arts. He offered  Number 27 (Baek Su-Ryong) a new home in the Viridian Forest when they escaped.
 
-**Hyon-Won Hu:**
+**Hyonwon Hu:**
 
 - Title: Crazy Demon
-- Martial Arts: Asura Dark Heaven Blade, Hyon-Won Clan Heaven Shattering Blade
-- Once a famed hero and genius of the Hyon-Won Clan, he got himself into trouble by accidentally killing some of his opponents during his Hundred Duels Trial to perfect his unique martial art, the Asura Dark Heaven Blade. Later on, he was framed for the genocide of his own clan by the Blood Cult and had his title changed from the Heaven Shattering Blade to the Crazy Demon.
+- Martial Arts: Asura Dark Heaven Blade, Hyonwon Clan Heaven Shattering Blade
+- Once a famed hero and genius of the Hyonwon Clan, he got himself into trouble by accidentally killing some of his opponents during his Hundred Duels Trial to perfect his unique martial art, the Asura Dark Heaven Blade. Later on, he was framed for the genocide of his own clan by the Blood Cult and had his title changed from the Heaven Shattering Blade to the Crazy Demon.
 
-**Mo-Yong Hon:**
+**Moyong Hon:**
 
 - Title: Sword Saint
-- Martial Arts: Unparalleled Sword
-- The greatest swordmaster of the Mo-Yong Clan who left the clan after his only son was bullied and ostracized by his relatives. He wished to live in peace with his son, however, his son was kidnapped by the Blood Cult and used as a hostage to lure him into giving himself in. Probably the strongest member of the Four Supreme Masters.
+- Martial Arts: Unlimited Sword
+- The greatest swordmaster of the Moyong Clan who left the clan after his only son was bullied and ostracized by his relatives. He wished to live in peace with his son, however, his son was kidnapped by the Blood Cult and used as a hostage to lure him into giving himself in. Probably the strongest member of the Four Supreme Masters.
 
 **Eun Ye-Rin:**
 
@@ -127,6 +132,10 @@ title: Star Instructor Master Baek
 - Title: Handsome Prince
 - Martial Arts: Revolving Tempest Sword
 - Our protagonist’s dad. Loves his son to death and would do anything for him. Thirty years ago, when he was a student at the Azure Dragon Academy, he fell in love with Headmaster Mae Geuk-Lyom’s terminally ill daughter Mae Yak-Bing. Due to Mae Geuk-Lyom’s objection to the worst delinquent in academy history getting hitched with his daughter, however, he was forced to elope with her. In the following years, his guilt at his helplessness would pile up as his wife passed away after giving birth, and his son inherited his wife’s illness. After losing to his son in a duel though, he finally lets go of his past and moves on…though the father-in-law problem is yet to be resolved.
+
+**Wiji Cheon:**
+
+- The former Clan Head of the Wiji Clan in the Blood Cult, and a master blacksmith. Hired Baek Su-Ryong to kill his grandson, who was suffering from Qi Deviation as a result of practicing a fake martial art. Gave Baek Su-Ryong his first sword Moon Shadow, and promised to craft a new sword better than the Blood Demon Sword for him when Baek Su-Ryong instead saved his grandson’s life.
 
 
 
