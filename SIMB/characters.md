@@ -45,6 +45,11 @@ title: Star Instructor Master Baek
 - Age: 26
 - Newbie staff instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A genuinely friendly, sociable dude from the Shandong Myeong Family Manor who gets along with everyone.
 
+**Jaegal So-Young:**
+
+- Age: 20
+- Newbie engineering and history instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A top graduate of the Heavenly Martial Academy.
+
 **Kwak Cheol-Woo:**
 
 - Title:  Blazing Blade
@@ -133,7 +138,7 @@ title: Star Instructor Master Baek
 - Martial Arts: Revolving Tempest Sword
 - Our protagonist’s dad. Loves his son to death and would do anything for him. Thirty years ago, when he was a student at the Azure Dragon Academy, he fell in love with Headmaster Mae Geuk-Lyom’s terminally ill daughter Mae Yak-Bing. Due to Mae Geuk-Lyom’s objection to the worst delinquent in academy history getting hitched with his daughter, however, he was forced to elope with her. In the following years, his guilt at his helplessness would pile up as his wife passed away after giving birth, and his son inherited his wife’s illness. After losing to his son in a duel though, he finally lets go of his past and moves on…though the father-in-law problem is yet to be resolved.
 
-**Wiji Cheon:**
+**Wiji Yeol:**
 
 - The former Clan Head of the Wiji Clan in the Blood Cult, and a master blacksmith. Hired Baek Su-Ryong to kill his grandson, who was suffering from Qi Deviation as a result of practicing a fake martial art. Gave Baek Su-Ryong his first sword Moon Shadow, and promised to craft a new sword better than the Blood Demon Sword for him when Baek Su-Ryong instead saved his grandson’s life.
 
@@ -151,4 +156,4 @@ title: Star Instructor Master Baek
 
 **Four Kids:**
 
-- Number 27’s (Baek Su-Ryong’s) best students who learned the Four Masters’ martial arts and were then turned into emotionless killing machines.
+- Number 27’s (Baek Su-Ryong’s) best students who learned the Four Masters’ martial arts and were then turned into emotionless killing machines. Baek Su-Ryong has no idea if they survived…
