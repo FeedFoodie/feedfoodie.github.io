@@ -16,6 +16,7 @@
 
 .night-mode-quotes {
 	color: #fcd299;
+	font-size: 0.9em;
 }
 
 .day-mode {
@@ -25,6 +26,7 @@
 
 .day-mode-quotes {
 	color: #8095fb;
+	font-size: 0.9em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,9 +88,7 @@ a:active {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #8b89a4;} 
 
-/**
- * Blockquotes
- */
+/* Blockquotes */
 blockquote {
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit / 2;
