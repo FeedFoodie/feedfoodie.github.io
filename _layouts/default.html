@@ -12,8 +12,7 @@
       <div id="wrappertext" class="wrapper night-mode">
 	  
         {% assign output = content			
-			| replace: '-!', '<span class="past">'
-			| replace: '!-', '</span>'
+			| replace: '{sep}', '<img src="/Images/sep.png" alt="sep">'
 			| replace: '<p>aggAnnoy01', '<p class="ffoodie">Why aren′t you reading this at northbladetl.com?'
 			| replace: '<p>aggAnnoy02', '<p class="fooodie">Y aren′t you reading this at northbladetl.com?'
 			| replace: '<p>aggAnnoy03', '<p class="fooddie">You ought to read this at northbladetl.com.'
