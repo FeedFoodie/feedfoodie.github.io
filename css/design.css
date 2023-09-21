@@ -90,7 +90,7 @@ a:active {
 blockquote {
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit / 2;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 1.05em;
 
   > :last-child {
