@@ -11,9 +11,9 @@ title: Star Instructor Master Baek
 
 **Baek Su-Ryong:** 
 
-- Martial Arts: Heaven Defying Divine Art, Eighteen Strikes of the Viridian Forest, Unlimited Sword, Asura Dark Heaven Blade, New Moon’s White Ice Dance, White Ice Divine Art
+- Martial Arts: Heaven Defying Divine Art, Eighteen Strikes of the Viridian Forest, Unlimited Sword, Asura Blood Heaven Blade, New Moon’s White Ice Dance, White Ice Divine Art
 - Age: 27
-- The protagonist and a reincarnated Blood Cult martial arts instructor (Name: Number 27). In his past life, he learned the world’s greatest martial arts from the Sword Saint Mo-Yong Hon, the Bandit King Maeng Ho-Ak, the Ice Moon Goddess Eun Ye-Rin, the Crazy Demon Hyon-Won Hu, and the Blood Demon. In this life, he has enrolled as a newbie instructor at the Azure Dragon Academy with the dream of becoming the Star Instructor.
+- The protagonist and a reincarnated Blood Cult martial arts instructor (Name: Number 27). In his past life, he learned the world’s greatest martial arts from the Sword Saint Mo-Yong Hon, the Bandit King Maeng Ho-Ak, the Ice Moon Goddess Eun Ye-Rin, the Crazy Demon Hyonwon Hu, and the Blood Demon. In this life, he has enrolled as a newbie instructor at the Azure Dragon Academy with the dream of becoming the Star Instructor and earning a lot of money to treat his Heavenly Yin Blocked Meridians.
 
 **Namgoong Su:** 
 
@@ -43,7 +43,7 @@ title: Star Instructor Master Baek
 **Myeong Il-Oh:**
 
 - Age: 26
-- Newbie staff instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A genuinely friendly, sociable dude from the Shandong Myeong Family Manor who gets along with everyone.
+- Newbie staff instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A genuinely friendly, sociable dude from the Shandong Myeong Family who gets along with everyone.
 
 **Jaegal So-Young:**
 
@@ -55,20 +55,48 @@ title: Star Instructor Master Baek
 - Title:  Blazing Blade
 - Vice-Principal of the Azure Dragon Academy. Fantastic at administrative work, but otherwise a fairly submissive personality. Kwak Du-Yong’s uncle.
 
+**Sunwoo Jin:**
+
+- Senior instructor at the Azure Dragon Academy.
+
+**Yang Yi-Rak:**
+
+- Outer arts instructor at the Azure Dragon Academy. Was one-sidedly beaten up by Baek Su-Ryong during his practical exam.
+
+**Jin Eui-Hyeop:**
+
+- Newbie instructor at the Azure Dragon Academy.
+
+**Seol Su-Yeon:**
+
+- Newbie instructor at the Azure Dragon Academy.
+
 
 
 #### STUDENTS
 
+####Remedial Class
+
 **Hyonwon Kang:**
 
-- Nickname: Wonkang
-- Martial Arts: Hyonwon Clan Blade Arts
-- Current Number 1 Delinquent of the Azure Dragon Academy. A martial arts genius with the natural instincts of a beast, but seems to have only learned a degraded version of the Hyonwon Clan’s Blade Arts?
+- Nickname: Won-Kang
+- Martial Arts: Earth Shattering Blade (incomplete), Eighteen Strikes of the Viridian Forest (partial), Asura Blood Heaven Blade
+- Current Number 1 Delinquent of the Azure Dragon Academy. A martial arts prodigy with the natural instincts of a beast. Childhood friend and rival of Peng Sa-Hyuk.
 
 **Wiji Cheon:**
 
 - Martial Arts: Unlimited Sword
 - A genius swordsman. He was tricked by a black-cloaked man into learning a fake Unlimited Sword and suffered from Qi Deviation, but was cured by Baek Su-Ryong and is now following him.
+
+**Geo Sang-Woong:**
+
+- TBD
+
+**Yeo Min:**
+
+- TBD
+
+####Other Students
 
 **Dokgo Jun:**
 
@@ -80,6 +108,11 @@ title: Star Instructor Master Baek
 
 - Title: Cold-Blooded Poisoner
 - Vice-President of the Student Council. Falls in love with Baek Su-Ryong at first sight. The most intelligent, cunning strategist among the Azure Dragon Academy students by far.
+
+**Peng Sa-Hyuk:**
+
+- Martial Arts: Five Tiger Demolition Blade
+- President of the Club Union. Childhood friend and rival of Hyonwon Kang.
 
 
 
@@ -113,7 +146,7 @@ title: Star Instructor Master Baek
 **Hyonwon Hu:**
 
 - Title: Crazy Demon
-- Martial Arts: Asura Dark Heaven Blade, Hyonwon Clan Heaven Shattering Blade
+- Martial Arts: Asura Blood Heaven Blade, Heaven Splitting Blade, Earth Shattering Blade
 - Once a famed hero and genius of the Hyonwon Clan, he got himself into trouble by accidentally killing some of his opponents during his Hundred Duels Trial to perfect his unique martial art, the Asura Dark Heaven Blade. Later on, he was framed for the genocide of his own clan by the Blood Cult and had his title changed from the Heaven Shattering Blade to the Crazy Demon.
 
 **Moyong Hon:**
@@ -137,6 +170,10 @@ title: Star Instructor Master Baek
 - Title: Handsome Prince
 - Martial Arts: Revolving Tempest Sword
 - Our protagonist’s dad. Loves his son to death and would do anything for him. Thirty years ago, when he was a student at the Azure Dragon Academy, he fell in love with Headmaster Mae Geuk-Lyom’s terminally ill daughter Mae Yak-Bing. Due to Mae Geuk-Lyom’s objection to the worst delinquent in academy history getting hitched with his daughter, however, he was forced to elope with her. In the following years, his guilt at his helplessness would pile up as his wife passed away after giving birth, and his son inherited his wife’s illness. After losing to his son in a duel though, he finally lets go of his past and moves on…though the father-in-law problem is yet to be resolved.
+
+**Mae Yak-Bing:**
+
+- Our protagonist's mom who passed away during childbirth. Like her son, she suffers from the Heavenly Yin Blocked Meridians. Mae Geuk-Lyom’s daughter and a very energetic, cheerful person despite her medical condition.
 
 **Wiji Yeol:**
 
