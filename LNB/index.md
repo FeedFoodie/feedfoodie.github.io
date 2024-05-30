@@ -47,5 +47,7 @@ Please buy the official versions to support Woo-Gak, the author and Hae-Min, the
 
 [Volume 2: Swordsman from the North (Chapters 049-082) (without images)](/LNB/epubs/LNB-Volume_02_noImages.epub){:target="_blank"}
 
+[Volume 3: Turmoil in Yunnan (Chapters 083-125)](/LNB/epubs/LNB-Volume_03.epub){:target="_blank"}
+
 ## Chapters
 
