@@ -5,35 +5,13 @@ img {
 	width: 80%;
 }
 
-.ffoodie {	}
+.foodie {	}
 
 .past {
 	color: #fcd299;
 }
 
-.zeGreatT20 {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
-}
-
-.foodie, .fooodie, .fooddie, .foodiie, .foodiee, .ffooddie, .ffooodie, .fooddiie, .ffoodiie, .ffoodiee {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
-}
-
-.theGreatT20, .theGreatT2O, .zeGreatT20, .theAwesomeT20, .theGoatT20, .7heGreatT20, .7heGreatT2O, .zeGreatT2O, .theAwesomeT2O, .theGoatT2O {
+.fooodie, .ffoodie, .fooddie, .foodiie, .foodiee, .theGreatT20, .theGreatT2O, .zeGreatT20, .theAwesomeT20, .theGoatT20 {
 	position: absolute;
 	width: 1px;
 	height: 1px;
