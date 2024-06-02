@@ -3,7 +3,7 @@ layout: pageSIMB
 title: Star Instructor Master Baek
 ---
 
-![SIMB](/Images/SIMB.jpg)
+![SIMB](/Images/SIMB.png)
 
 ## Synopsis
 
