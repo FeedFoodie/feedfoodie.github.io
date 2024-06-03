@@ -80,11 +80,8 @@ a:active {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #b5b4c5;}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #8b89a4;} 
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 /* Blockquotes */
 blockquote {
@@ -140,31 +137,4 @@ p input:checked + label + small {
   position: relative;
   opacity: 1;
   visibility: visible;
-}
-
-/******* Flavors *******/
-
-/* hover reveal */
-
-p.hover input + label + small,
-p.hover input:checked + label + small {
-  display: none;
-}
-
-p.hover input + label:hover + small {
-  font-size:.8em;
-  z-index: 1;
-  position: absolute;
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  padding: 0.3em 0.8em 0.4em;
-  border-bottom: 1px;
-  right: 4ch;
-  left: 4ch;
-  background: #222222ee;
-  color: #eee;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  pointer-events: none;
 }
