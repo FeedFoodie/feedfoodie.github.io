@@ -3,8 +3,9 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}    
-	<a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="color:black; font-size:250%;"><strong>NorthBladeTL</strong></a>
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -17,31 +18,12 @@
         </label>
 
         <div class="trigger">
-			<div class="largeScreen">
-				 <div class="dropdown">
-					<button onclick="myFunction()" class="dropbtn" style="color: black;">Legend of the Northern Blade</button>
-					<div id="myDropdown" class="dropdown-content">
-						<a href="/LNB/">Synopsis</a>
-						<a href="/LNB/chapters.html">Chapters</a>
-						<a href="/LNB/epubs.html">Epubs</a>
-					</div>
-				</div> 
-				<div class="dropdown">
-					<button onclick="myFunction()" class="dropbtn" style="color: black;">Star Instructor Master Baek</button>
-					<div id="myDropdown" class="dropdown-content">
-						<a href="/SIMB/">Synopsis</a>
-						<a href="/SIMB/chapters.html">Chapters</a>
-					</div>
-				</div>
-				<div class="dropdown">
-				  <button class="dropbtn"><a href="../about.html" style="color: black;">About</a></button>
-				</div>
-			</div>
-			<div class="smallScreen">
-				<a class="page-link" href="/LNB/" style="color: black;">Legend of the Northern Blade</a>
-				<a class="page-link" href="/SIMB/" style="color: black;">Star Instructor Master Baek</a>
-				<a class="page-link" href="../about.html" style="color: black;">About</a>
-			</div>			
+          {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
         </div>
       </nav>
     {%- endif -%}
