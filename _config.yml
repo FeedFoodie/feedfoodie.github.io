@@ -34,7 +34,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
+  - jekyll-paginate-v2
   
 # Disqus Comments
 disqus:
