@@ -26,6 +26,7 @@ url: "https://northbladetl.com" # the base hostname & protocol for your site, e.
 markdown: kramdown
 permalink: /:categories/:title:output_ext
 logo: /android-chrome-512x512.png
+paginate: 10
 
 # Build settings
 theme: minima
@@ -33,6 +34,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
   
 # Disqus Comments
 disqus:
