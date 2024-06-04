@@ -8,7 +8,7 @@ title: "Northern Blade Translations"
 1. Copyrights to [Legend of the Northern Blade](/LNB/) are held by the author, Woo-Gak, and the artist, Hae Min. 
 2. Copyrights to [Star Instructor Master Baek](/SIMB/) are held by the author, Ganjajang, and the artist, Oliboli. 
 3. Do not take credit or make a profit from our work. Our translations can be read for FREE, with NO ADS. We DO NOT ask for donations.
-5. The translator is motivated purely by comments, but don't bother asking for faster releases since I have a full-time job with frequent overtime.
+5. The translator is motivated purely by comments, but don't bother asking for faster releases since he has a full-time job with frequent overtime.
 
 ## Subscribe to our Series Specific RSS Feeds!
 
