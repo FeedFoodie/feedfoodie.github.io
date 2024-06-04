@@ -10,7 +10,6 @@ layout: default
 
   {{ content }}
 
-
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
@@ -19,14 +18,11 @@ layout: default
 
 
   <ul class="post-list">
-    <!-- 
-        Here is the main paginator logic called.
-        All calls to site.posts should be replaced by paginator.posts 
-    -->
     {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} <h3>{% if post.tags %}Tags: {{ post.tags[0] | upcase }}{% endif %}</h3></span>
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {{ post.date | date: "%b %-d, %Y" }} 
+		<h3>{% if post.tags %}Tags: {{ post.tags[0] | upcase }}{% endif %}</h3> 
+         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </li>
     {% endfor %}
   </ul>
