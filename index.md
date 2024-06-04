@@ -1,7 +1,8 @@
 ---
 layout: home
 title: "Northern Blade Translations"
-pagination: enabled: true
+pagination: 
+	enabled: true
 ---
 
 ## Disclaimer
