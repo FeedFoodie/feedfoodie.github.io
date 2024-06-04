@@ -26,7 +26,13 @@ url: "https://northbladetl.com" # the base hostname & protocol for your site, e.
 markdown: kramdown
 permalink: /:categories/:title:output_ext
 logo: /android-chrome-512x512.png
-paginate: 10
+pagination:
+  enabled: true
+  per_page: 10
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 
 # Build settings
 theme: minima
