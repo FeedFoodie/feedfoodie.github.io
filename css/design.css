@@ -44,6 +44,11 @@ a:active {
   color: darkgray;
 } 
 
+ul.toc {
+    list-style: none;
+    padding-left: 0;
+}​
+
 .navbar {
   overflow: hidden;
   background-color: #b5b4c5;
