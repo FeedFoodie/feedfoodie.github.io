@@ -5,9 +5,7 @@ title: Star Instructor Master Baek
 
 ## Characters
 
-### Azure Dragon Academy
-
-#### STAFF
+### Azure Dragon Academy Staff
 
 **Baek Su-Ryong:** 
 
@@ -73,7 +71,7 @@ title: Star Instructor Master Baek
 
 
 
-#### STUDENTS
+### Azure Dragon Academy Students
 
 ####Remedial Class
 
