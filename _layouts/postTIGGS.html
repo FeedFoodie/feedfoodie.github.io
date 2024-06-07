@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<link href="/css/override.css" rel="stylesheet" type="text/css">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+	<p><br /></p>
+	 {% include navlinks_tiggs_top.html %}
+	<hr>  
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {% assign author = page.author | default: site.author %}
+      {%- if author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">	
+<div style="font-size: 16px;" id="content">
+	<p class="foodie" style="text-align:right"><b>Day/Night Mode:</b> 
+		<button type="button" onclick="changeWrapColor()" name="btn4">Change Mode</button>		
+	</p>
+	<p class="foodie" style="text-align:right"><b>Change Font Size:</b> 
+		<button type="button" onclick="changeFontSize(-1)" name="btn1">-A</button>  
+		<button type="button" onclick="changeFontSize(0)" name="btn2">A</button>  
+		<button type="button" onclick="changeFontSize(1)" name="btn3">A+</button>
+	</p>
+	<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
+	<p class="foodie"><br /></p>
+	{{ content }}
+<p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>
+</div>
+<hr>
+		{% include navlinks_tiggs.html %}
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+ {% include disqus_comments.html %}
