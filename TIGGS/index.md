@@ -13,7 +13,7 @@ Associated Names: 시한부 천재가 살아남는 법
 
 Not long after Jung Yeonsin was born, an elf physician examined him.
 
-"I'm sorry, but he won't live past twenty," the elf said. "Never in my life have I seen someone with such a dilated Baihui acupoint. It's like there's a large hole in his skull. We call this disease 'Sudden Celestial Ascension'."
+"I'm sorry, but he won't live past twenty," the elf said. "Never in my life have I seen someone with such a dilated Baihui acupoint. It's like there's a large hole in his head. We call this disease 'Sudden Celestial Ascension'."
 
 "Celestial Ascension? Isn't that when a highly skilled Taoist ascends to the heavens?" Jung Yeonsin's father asked.
 
