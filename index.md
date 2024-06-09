@@ -1,6 +1,9 @@
 ---
 layout: home
-title: "Northern Blade Translations"
 pagination:
   enabled: true
+title: >
+  Northern Blade Translations
 ---
+
+###asd
