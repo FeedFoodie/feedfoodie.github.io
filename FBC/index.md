@@ -1,13 +1,13 @@
 ---
-layout: pageTIGGS
-title: A Terminally Ill Genius's Guide to Survival
+layout: pageFBC
+title: The Fatebreaker's Codex: A Terminally Ill Genius's Guide to Survival
 ---
 
-![TIGGS](/Images/TIGGS.png)
+![FBC](/Images/TIGGS.png)
 
 Novel Author: Seesaw 청시소
 
-Associated Names: 시한부 천재가 살아남는 법
+Associated Names: 시한부 천재가 살아남는 법, A Terminally Ill Genius's Guide to Survival
 
 ## Synopsis
 
@@ -21,7 +21,7 @@ Not long after Jung Yeonsin was born, an elf physician examined him.
 
 ☆☆☆
 
-This is the story of a terminally ill martial arts genius in search of a path to survival.
+This is the story of country bumpkin Jung Yeonsin, who was born with a terminal illness that also makes him a martial arts genius. Can he find a way to survive?
 
 ☆☆☆
 

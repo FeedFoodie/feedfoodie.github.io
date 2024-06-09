@@ -1,7 +1,7 @@
 {% include chapter_tagging.html %}
 {% assign start = false %}
 {% for post in site.posts %}	
-	{% if start == true and post.tags contains 'tiggs' %}
+	{% if start == true and post.tags contains 'fbc' %}
 		{% assign prevChap = post %}
 		{% break %}
 	{% endif %}			
@@ -11,7 +11,7 @@
 {% endfor %}
 {% assign stop = false %}
 {% for post in site.posts reversed %}	
-	{% if stop == true and post.tags contains 'tiggs' %}
+	{% if stop == true and post.tags contains 'fbc' %}
 		{% assign nextChap = post %}
 		{% break %}
 	{% endif %}			
@@ -20,24 +20,13 @@
 	{% endif %}				
 {% endfor %}
 
-<div class="centersel">
-<select class="cmb"  onchange="location = this.value;" style="width: 350px">
-	{% for post in site.posts reversed %}	
-		{% if post.tags contains 'tiggs' %}
-			<option value="{{post.url}}">{{post.title}}</option>
-		{% endif %}				
-	{% endfor %}
-</select> 
-<p><br /></p>
-</div>
-
-<div class="post_navi" style="font-size: 16px;">
+<div class="post_navi">
   {%- if prevChap.url -%}
   <a class="post_navi-item nav_prev" href="{{prevChap.url}}" title="{{ prevChap.title }}">
     <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Chapter</div><div><span>{{ prevChap.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_prev" href="/TIGGS/chapters.html" title="Chapters">
+  <a class="post_navi-item nav_prev" href="/FBC/chapters.html" title="Chapters">
     <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
   </a>
   {%- endif -%}
@@ -46,7 +35,7 @@
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Chapter</div><div><span>{{ nextChap.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_next" href="/TIGGS/chapters.html" title="Chapters">
+  <a class="post_navi-item nav_next" href="/FBC/chapters.html" title="Chapters">
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
   </a>
   {%- endif -%}
