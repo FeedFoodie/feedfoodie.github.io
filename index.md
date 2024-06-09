@@ -6,4 +6,3 @@ title: >
   Northern Blade Translations
 ---
 
-###asd
