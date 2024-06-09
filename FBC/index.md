@@ -1,6 +1,7 @@
 ---
 layout: pageFBC
-title: 'The Fatebreaker's Codex: A Terminally Ill Genius's Guide to Survival'
+title: >
+  The Fatebreaker's Codex: A Terminally Ill Genius's Guide to Survival
 ---
 
 ![FBC](/Images/TIGGS.png)
