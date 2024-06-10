@@ -22,7 +22,7 @@ Not long after Jung Yeonsin was born, an elf physician examined him.
 
 ☆☆☆
 
-This is the story of country bumpkin Jung Yeonsin, who was born with a terminal illness that also makes him a martial arts genius. Can he find a way to survive?
+Country boy Jung Yeonsin was born with a terminal illness that also makes him a martial arts genius. Can he carve out a path to survival?
 
 ☆☆☆
 
