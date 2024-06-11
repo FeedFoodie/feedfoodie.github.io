@@ -14,22 +14,20 @@ pagination:
 
 ## Subscribe to our Series Specific RSS Feeds!
 
-<div>
-	<p class="feed-subscribe">
-	  <a href="{{ 'feed.lnb.xml' | relative_url }}">
-		<svg class="svg-icon orange">
-		  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-		</svg><span>Subscribe to Legend of the Northern Blade</span>
-	  </a>
-	</p>
+<p class="feed-subscribe">
+  <a href="{{ 'feed.lnb.xml' | relative_url }}">
+	<svg class="svg-icon orange">
+	  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+	</svg><span>Subscribe to Legend of the Northern Blade</span>
+  </a>
+</p>
 
-	<p class="feed-subscribe">
-	  <a href="{{ 'feed.simb.xml' | relative_url }}">
-		<svg class="svg-icon orange">
-		  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-		</svg><span>Subscribe to Star Instructor Master Baek</span>
-	  </a>
-	</p>
-</div>
+<p class="feed-subscribe">
+  <a href="{{ 'feed.simb.xml' | relative_url }}">
+	<svg class="svg-icon orange">
+	  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+	</svg><span>Subscribe to Star Instructor Master Baek</span>
+  </a>
+</p>
 
 ## Latest Updates
