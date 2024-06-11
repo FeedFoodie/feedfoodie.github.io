@@ -8,10 +8,16 @@ layout: default
     <h1 class="page-heading">Welcome to Northern Blade Translations!</h1>
   {%- endif -%}
 
+{% if site.paginate %}
+		{% assign posts = paginator.posts %}
+	{% else %}
+		{% assign posts = site.posts %}
+{% endif %}
+
 <div class="post-content">
     {{ content }}
   </div>
-  
+ 
 <ul class="post-list">
 	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     {% for post in paginator.posts %}
