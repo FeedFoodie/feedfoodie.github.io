@@ -8,6 +8,8 @@ layout: default
     <h1 class="page-heading">Welcome to Northern Blade Translations!</h1>
   {%- endif -%}
 
+<div markdown="1">{{ content }}</div>
+
 {% if site.paginate %}
 		{% assign posts = paginator.posts %}
 	{% else %}
