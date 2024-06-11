@@ -8,42 +8,10 @@ layout: default
     <h1 class="page-heading">Welcome to Northern Blade Translations!</h1>
   {%- endif -%}
 
-{{ content }}
-
-<h2 id="disclaimer">Disclaimer</h2>
-<ol>
-<li>Copyrights to <a href="/LNB/">Legend of the Northern Blade</a> are held by the author, Woo-Gak, and the artist, Hae Min. </li>
-<li>Copyrights to <a href="/SIMB/">Star Instructor Master Baek</a> are held by the author, Ganjajang, and the artist, Oliboli. </li>
-<li>Do not take credit or make a profit from our work. Our translations can be read for FREE, with NO ADS. We DO NOT ask for donations.</li>
-<li>The translator is motivated purely by comments, but don't bother asking for faster releases since he has a full-time job with frequent overtime.</li>
-</ol>
-<h2 id="subscribe-to-our-series-specific-rss-feeds-">Subscribe to our Series Specific RSS Feeds!</h2>
-<p class="feed-subscribe">
-  <a href="{{ 'feed.lnb.xml' | relative_url }}">
-    <svg class="svg-icon orange">
-      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-    </svg><span>Subscribe to Legend of the Northern Blade</span>
-  </a>
-</p>
-
-<p class="feed-subscribe">
-  <a href="{{ 'feed.simb.xml' | relative_url }}">
-    <svg class="svg-icon orange">
-      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-    </svg><span>Subscribe to Star Instructor Master Baek</span>
-  </a>
-</p>
-
-<h2 id="latest-updates">Latest Updates</h2>
-
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
+<div class="post-content">
+    {{ content }}
+  </div>
+  
 <ul class="post-list">
 	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     {% for post in paginator.posts %}
