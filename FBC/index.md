@@ -12,17 +12,17 @@ Associated Names: 시한부 천재가 살아남는 법, A Terminally Ill Genius'
 
 ## Synopsis
 
-Not long after Jung Yeonsin was born, an elf physician examined him.
+Not long after Jeong Yeonsin was born, an elf physician examined him.
 
 "I'm sorry, but he won't live past twenty," the elf said. "Never in my life have I seen someone with such a dilated Baihui Acupoint. It's like there's a large hole in his head. We call this disease 'Sudden Celestial Ascension'."
 
-"Celestial Ascension? Isn't that when a highly skilled Taoist ascends to the heavens?" Jung Yeonsin's father asked.
+"Celestial Ascension? Isn't that when a highly skilled Taoist ascends to the heavens?" Jeong Yeonsin's father asked.
 
 "Celestial Ascension is just a myth. When a martial master absorbs too much of nature's energy, the pressure build-up will cause their bodies to explode, sending them across the river to the afterlife."
 
 ☆☆☆
 
-Country boy Jung Yeonsin was born with a terminal illness that also makes him a martial arts genius. Can he carve out a path to survival?
+Country boy Jeong Yeonsin was born with a terminal illness that also makes him a martial arts genius. Can he carve out a path to survival?
 
 ☆☆☆
 
