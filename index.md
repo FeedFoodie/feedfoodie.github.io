@@ -1,9 +1,8 @@
 ---
 layout: home
-title: Northern Blade Translations
+title: "Northern Blade Translations"
 pagination:
-  enabled: true
+  enabled: "true"
 ---
-``` ```
 
 ##Header
