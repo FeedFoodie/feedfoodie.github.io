@@ -3,17 +3,17 @@ layout: default
 ---
 
 <div class="home">
-	<p><br /></p>
-  {%- if page.title -%}
-    <h1 class="page-heading">Welcome to Northern Blade Translations!</h1>
-  {%- endif -%}
+<p><br /></p>
+{%- if page.title -%}
+<h1 class="page-heading">Welcome to Northern Blade Translations!</h1>
+{%- endif -%}
 
-<div markdown="1">{{ content }}</div>
+<div markdown="1">{{content}}</div>
 
 {% if site.paginate %}
-		{% assign posts = paginator.posts %}
-	{% else %}
-		{% assign posts = site.posts %}
+{% assign posts = paginator.posts %}
+{% else %}
+{% assign posts = site.posts %}
 {% endif %}
 
 <h2 id="disclaimer">Disclaimer</h2>
@@ -43,12 +43,12 @@ layout: default
 <h2 id="latest-updates">Latest Updates</h2>
  
 <ul class="post-list">
-	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span> 
         <h3>
-			{{ post.tags[0] | upcase }} <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+{{ post.tags[0] | upcase }} <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h3>
       </li>
     {% endfor %}

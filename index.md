@@ -5,4 +5,4 @@ pagination:
   enabled: true
 ---
 
-##Disclaimer
+##Header
