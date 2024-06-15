@@ -20,11 +20,11 @@ Not long after Jeong Yeonsin was born, an elf physician examined him.
 
 "Celestial Ascension is just a myth. When a martial master absorbs too much of nature's energy, the pressure build-up will cause their bodies to explode, sending them across the river to the afterlife."
 
-─────────────────────{: style="text-align: center;"}
+
 
  Jeong Yeonsin was born with a terminal illness that also makes him a martial arts prodigy. Can he carve out a path to survival?
 
-─────────────────────{: style="text-align: center;"}
+
 
 "If that child had been born in the Demonic Cult, he would have become the Heavenly Demon. If he had been raised in Shaolin, he would have doubled the Seventy-Two Core Arts. Unfortunately, he was born here, in this remote place, as a hated child. He’ll die young with no way to change his fate. Unless… he awakens to his true potential on his own..."
 
