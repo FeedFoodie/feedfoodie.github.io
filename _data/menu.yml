@@ -17,5 +17,5 @@
           url: "/FBC/"
           weight: 2
     - name: "About"
-      url: "/about/"
+      url: "/about.html"
       weight: 3
