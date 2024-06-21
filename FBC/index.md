@@ -6,7 +6,7 @@ title: >
 
 ![FBC](/Images/FBC.png)
 
-Novel Author: Seesaw 청시소
+Novel Author: Cheongsiso 청시소
 
 Associated Names: 시한부 천재가 살아남는 법, A Terminally Ill Prodigy's Guide to Survival
 
