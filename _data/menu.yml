@@ -1,0 +1,21 @@
+- title: Main Menu
+  subfolderitems:
+    - name: "Home"
+      url: "../"
+      weight: 2
+    - name: "Novels"
+      url: "#"
+      weight: 3
+      subsubfolderitems:
+        - name: "Legend of the Northern Blade"
+          url: "/LNB/"
+          weight: 2
+        - name: "Star Instructor Master Baek"
+          url: "/SIMB/"
+          weight: 2
+        - name: "The Fatebreaker's Codex"
+          url: "/FBC/"
+          weight: 2
+    - name: "About"
+      url: "/about/"
+      weight: 3

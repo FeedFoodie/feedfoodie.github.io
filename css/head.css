@@ -1,3 +1,132 @@
+.header-link {
+	color: #444444 !important;
+	font-size: 16px;
+}
+
+.header-droplink {
+	color: #444444 !important;
+}
+
+.menu {
+	display: block;
+	line-height: 44px;
+	list-style: none;
+	margin-left: 0px;
+}
+
+.dropdown {
+	float: none;
+	overflow: hidden;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: none;
+	list-style: none;
+}
+
+.dropdown .dropbtn {
+	background: none;
+	font-size: 16px;
+	border: none;
+	text-align: center;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 10px 50px;
+	width: 250px;
+}
+
+.dropdown-content {
+	display: none;
+	right: 0;
+	float: none;
+	position: absolute;
+	background: #fdfdfd;
+	min-width: 250px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	padding: 5px 10px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown:hover .dropbtn, .dropbtn:focus {text-decoration: underline;}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {
+	display: block;
+}
+
+@media only screen and (min-width: 600px) {
+	.header-link {
+		font-size: 18px;
+	}
+
+	.header-droplink {
+		margin-left: 100px !important;
+		margin-right: 100px !important;
+	}
+
+	.menu {
+		display: flex;
+		line-height: 54px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+		list-style: none;
+	}
+
+	.dropdown {
+		float: none;
+		overflow: hidden;
+		margin-left: 0px;
+	}
+
+	.dropdown .dropbtn {
+		background-color: #b5b4c5;
+		color: #111;
+		border: none;
+		text-align: center;
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 18px;
+		padding: 0px;
+		width: unset;
+	}
+
+	.dropdown-content {
+		display: none;
+		right: unset;
+		float: center;
+		position: absolute;
+		background-color: #b5b4c5;
+		min-width: 250px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		float: center;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+	}
+
+	.dropdown:hover .dropbtn, .dropbtn:focus {text-decoration: underline;}
+
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.show {
+		display: block;
+	}
+}
+
+
 img {
 	display: block;
 	margin-left: auto;

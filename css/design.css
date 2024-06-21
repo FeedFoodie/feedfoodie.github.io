@@ -45,10 +45,10 @@ a:active {
 } 
 
 ul.toc {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 	margin-left: 0;
-}​
+}
 
 .navbar {
   overflow: hidden;
