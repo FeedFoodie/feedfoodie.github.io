@@ -6,7 +6,7 @@ layout: default
 
   <header class="post-header">
 	<br />
-	 {% include navlinks_fbc_top.html %}
+	 {% include navlinks_simb_top.html %}
 	<hr>  
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -30,15 +30,15 @@ layout: default
 		<button type="button" onclick="changeFontSize(0)" name="btn2">A</button>  
 		<button type="button" onclick="changeFontSize(1)" name="btn3">A+</button>
 	</p>
-	<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
+	<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
 	<p class="foodie"><br /></p>
 	{{ content }}
 <p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>
 </div>
 <hr>
-		{% include navlinks_fbc.html %}
+		{% include navlinks_simb.html %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
- {% include cusdis_comments.html %}
+ {% include disqus_comments.html %}
