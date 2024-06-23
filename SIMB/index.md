@@ -31,5 +31,15 @@ This is a Naver series so both the novel and manhwa are free-to-read. You need c
 
 [Manhwa Raws](https://series.naver.com/comic/detail.series?productNo=6698881){:target="_blank"}
 
+## Subscribe to Updates
+
+<p class="feed-subscribe">
+  <a href="{{ 'feed.simb.xml' | relative_url }}">
+    <svg class="svg-icon orange">
+      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+    </svg><span>Subscribe to Star Instructor Master Baek</span>
+  </a>
+</p>
+
 ## Chapters
 

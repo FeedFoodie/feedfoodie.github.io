@@ -47,5 +47,15 @@ Please buy the official versions to support Woo-Gak, the author and Hae-Min, the
 
 [Volume 3: Turmoil in Yunnan (Chapters 083-125)](/LNB/epubs/LNB-Volume_03.epub){:target="_blank"}
 
+## Subscribe to Updates
+
+<p class="feed-subscribe">
+  <a href="{{ 'feed.lnb.xml' | relative_url }}">
+    <svg class="svg-icon orange">
+      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+    </svg><span>Subscribe to Legend of the Northern Blade</span>
+  </a>
+</p>
+
 ## Chapters
 
