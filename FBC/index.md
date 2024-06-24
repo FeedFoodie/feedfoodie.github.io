@@ -34,15 +34,6 @@ Not long after Jeong Yeonsin was born, an elf physician examined him.
 
 [Novel Raws](https://series.naver.com/novel/detail.series?productNo=5896155){:target="_blank"}
 
-## Subscribe to Updates
-
-<p class="feed-subscribe">
-  <a href="{{ 'feed.fbc.xml' | relative_url }}">
-    <svg class="svg-icon orange">
-      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-    </svg><span>Subscribe to The Fatebreaker's Codex</span>
-  </a>
-</p>
 
 ## Chapters
 
