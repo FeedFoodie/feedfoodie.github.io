@@ -13,6 +13,9 @@
         - name: "Star Instructor Master Baek"
           url: "/SIMB/"
           weight: 2
+        - name: "Heroes"
+          url: "/HERO/"
+          weight: 2
         - name: "The Fatebreaker's Codex"
           url: "/FBC/"
           weight: 2
