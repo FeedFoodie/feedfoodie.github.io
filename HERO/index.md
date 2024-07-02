@@ -15,5 +15,15 @@ Wang Xiaoshi, a kind-hearted young swordsman, leaves the mountains to explore th
 
 By the author of "The Four Great Constables".
 
+## Subscribe to Updates
+
+<p class="feed-subscribe">
+  <a href="{{ 'feed.hero.xml' | relative_url }}">
+    <svg class="svg-icon orange">
+      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+    </svg><span>Subscribe to Heroes</span>
+  </a>
+</p>
+
 ## Chapters
 
