@@ -1,5 +1,5 @@
 ---
-layout: postSIMB
+layout: postHERO
 title: "Chapter title"
 comments: true
 tags: [hero]
