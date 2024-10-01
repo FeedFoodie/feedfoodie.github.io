@@ -27,6 +27,7 @@ markdown: kramdown
 markdown_ext: md
 kramdown:  
   parse_block_html: true
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 permalink: /:categories/:title:output_ext
 logo: /android-chrome-512x512.png
 pagination:
