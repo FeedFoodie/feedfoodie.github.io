@@ -7,7 +7,7 @@ title: Star Instructor Master Baek
 
 ### Azure Dragon Academy
 
-####Staff
+#### Staff
 
 **Baek Suryong:** 
 
@@ -76,7 +76,7 @@ title: Star Instructor Master Baek
 
 #### Students
 
-#####<u>White Dragon Manor</u>
+##### <u>White Dragon Manor</u>
 
 **Hyonwon Kang:**
 
@@ -114,7 +114,7 @@ title: Star Instructor Master Baek
 
 
 
-#####<u>Other Students</u>
+##### <u>Other Students</u>
 
 **Dokgo Jun:**
 
@@ -160,7 +160,7 @@ title: Star Instructor Master Baek
 
 
 
-####Associates and Graduates
+#### Associates and Graduates
 
 **Seo Ri'ae:**
 
