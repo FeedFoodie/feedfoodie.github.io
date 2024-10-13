@@ -5,112 +5,168 @@ title: Star Instructor Master Baek
 
 ## Characters
 
-### Azure Dragon Academy Staff
+### Azure Dragon Academy
 
-**Baek Su-Ryong:** 
+####Staff
 
-- Martial Arts: Heaven Defying Divine Art, Eighteen Strikes of the Viridian Forest, Unlimited Sword, Asura Blood Heaven Blade, New Moon’s White Ice Dance, White Ice Divine Art
+**Baek Suryong:** 
+
+- Title: Azure Dragon Hero, Handsome Playboy, Blood Demon
+- Martial Arts: Heaven Defying Divine Art, Eighteen Strikes of the Viridian Forest, Unlimited Sword, Asura Blood Heaven Blade, New Moon White Ice Dance, White Ice Divine Art
 - Age: 27
-- The protagonist and a reincarnated Blood Cult martial arts instructor (Name: Number 27). In his past life, he learned the world’s greatest martial arts from the Sword Saint Mo-Yong Hon, the Bandit King Maeng Ho-Ak, the Ice Moon Goddess Eun Ye-Rin, the Crazy Demon Hyonwon Hu, and the Blood Demon. In this life, he has enrolled as a newbie instructor at the Azure Dragon Academy with the dream of becoming the Star Instructor and earning a lot of money to treat his Heavenly Yin Blocked Meridians.
+- The protagonist and a reincarnated Blood Cult martial arts instructor (Name: Number 27). In his past life, he learned the world’s greatest martial arts from the Sword Saint Moyong Hon, the Bandit King Maeng Ho'ak, the Ice Moon Goddess Eun Yerin, the Crazy Demon Hyonwon Hu, and the Blood Demon. In this life, he has enrolled as a newbie instructor at the Azure Dragon Academy with the dream of becoming the Star Instructor and earning a lot of money to treat his Heavenly Yin Severed Meridians.
 
-**Namgoong Su:** 
+**Namgung Su:** 
 
 - Title: Three Absolutes Sword
-- Martial Arts: Lightning Sword
-- The current Star Instructor of the Azure Dragon Academy. Baek Su-Ryong’s worst rival, best friend, and fellow sufferer of severe workaholism. Has an overly serious and judgmental but extremely caring and attentive personality, which is usually overshadowed by his sharp, sarcastic tongue.
+- Martial Arts: Heavenly Lightning Sword Technique
+- The current Star Instructor of the Azure Dragon Academy. Baek Suryong’s worst rival, best friend, and fellow sufferer of severe workaholism. Has an overly serious and judgmental but extremely caring and attentive personality, which is usually overshadowed by his sharp, sarcastic tongue.
 
-**Mae Geuk-Lyom:**
+**Mae Geuklyom:**
 
 - Title: Sword Addict
-- The Headmaster of the Azure Dragon Academy and Baek Su-Ryong’s maternal grandfather. Loves his daughter and loathes her husband. Appears to be a very strict and stubborn old man on the surface, but…
+- The Headmaster of the Azure Dragon Academy and Baek Suryong’s maternal grandfather. Loves his daughter and loathes her husband. Appears to be a very strict and stubborn old man on the surface, but…
 
-**Ak Yeon-Ho:**
+**Ak Yeonho:**
 
 - Age: 25
-- Newbie spear instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A happy-go-lucky son of the prestigious Shandong Ak Clan, or so it seems.
+- Newbie spear instructor at the Azure Dragon Academy who joined together with Baek Suryong. A happy-go-lucky son of the prestigious Shandong Ak Clan, or so it seems.
 
-**Noh Gun-Sang:**
+**Noh Goonsang:**
 
 - Title: Thousand-Armed Bodhisattva
 - Principal of the Azure Dragon Academy. A jaded old man who has lost all hope in reviving the academy, until a very chaotic teacher shows up and declares he will make the impossible happen.
 
-**Kwak Du-Yong:**
+**Kwak Duyong:**
 
-- Newbie instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A graduate and former elite of the Vermillion Phoenix Academy, though a certain tragedy that happened during his student days resulted in severe PTSD that affects him to this very day and made him grow fat.
+- Newbie instructor at the Azure Dragon Academy who joined together with Baek Suryong. A graduate and former elite of the Vermillion Phoenix Academy, though a certain tragedy that happened during his student days resulted in severe PTSD that affects him to this very day and made him grow fat.
 
-**Myeong Il-Oh:**
+**Myeong Il'oh:**
 
 - Age: 26
-- Newbie staff instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A genuinely friendly, sociable dude from the Shandong Myeong Family who gets along with everyone.
+- Newbie staff instructor at the Azure Dragon Academy who joined together with Baek Suryong. A genuinely friendly, sociable dude from the Shandong Myeong Family who gets along with everyone.
 
-**Jaegal So-Young:**
+**Jaegal Soyoung:**
 
 - Age: 20
-- Newbie engineering and history instructor at the Azure Dragon Academy who joined together with Baek Su-Ryong. A top graduate of the Heavenly Martial Academy.
+- Newbie engineering and history instructor at the Azure Dragon Academy who joined together with Baek Suryong. A top graduate of the Heavenly Martial Academy.
 
-**Kwak Cheol-Woo:**
+**Kwak Cheolwoo:**
 
 - Title:  Blazing Blade
-- Vice-Principal of the Azure Dragon Academy. Fantastic at administrative work, but otherwise a fairly submissive personality. Kwak Du-Yong’s uncle.
+- Vice-Principal of the Azure Dragon Academy. Fantastic at administrative work, but otherwise a fairly submissive personality. Kwak Duyong’s uncle.
 
-**Sunwoo Jin:**
+**Pung Jinho:**
 
-- Senior instructor at the Azure Dragon Academy.
+- Senior instructor at the Azure Dragon Academy who will stoop to nothing for his own selfish benefits, including making shady deals with the Blood Cult and sexually assaulting his female students.
 
-**Yang Yi-Rak:**
+**Yang Yirak:**
 
-- Outer arts instructor at the Azure Dragon Academy. Was one-sidedly beaten up by Baek Su-Ryong during his practical exam.
+- Outer arts instructor at the Azure Dragon Academy. Was one-sidedly beaten up by Baek Suryong during his practical exam.
 
-**Jin Eui-Hyeop:**
-
-- Newbie instructor at the Azure Dragon Academy.
-
-**Seol Su-Yeon:**
+**Jin Euihyeop:**
 
 - Newbie instructor at the Azure Dragon Academy.
 
+**Seol Suyeon:**
+
+- Newbie instructor at the Azure Dragon Academy.
 
 
-### Azure Dragon Academy Students
 
-####Remedial Class
+#### Students
+
+#####<u>White Dragon Manor</u>
 
 **Hyonwon Kang:**
 
-- Nickname: Won-Kang
-- Martial Arts: Earth Shattering Blade (incomplete), Eighteen Strikes of the Viridian Forest (partial), Asura Blood Heaven Blade
+- Nickname: Wonkang
+- Title: Heaven Shattering Blade
+- Martial Arts: Earth Shattering Blade, Eighteen Strikes of the Viridian Forest (partial), Asura Blood Heaven Blade
 - Current Number 1 Delinquent of the Azure Dragon Academy. A martial arts prodigy with the natural instincts of a beast. Childhood friend and rival of Peng Sa-Hyuk.
 
 **Wiji Cheon:**
 
+- Title: Sword Wonder
 - Martial Arts: Unlimited Sword
 - A genius swordsman. He was tricked by a black-cloaked man into learning a fake Unlimited Sword and suffered from Qi Deviation, but was cured by Baek Su-Ryong and is now following him.
 
-**Geo Sang-Woong:**
+**Geo Sangwoong:**
 
-- TBD
+- Title: Monochrome Bears (White Bear), Monochrome Warriors
+- Martial Arts: Eighteen Strikes of the Viridian Forest
+- The crazy rich heir to the Golden Dragon Trading Company and a fourth year student who became addicted to binge eating and gambling after being sabotaged by the Blood Cult. He was saved by Baek Suryong and is currently being reformed.
+
+**Ya Suhyeok:**
+
+  - Title: Monochrome Bears (Black Bear), Monochrome Warriors
+  - Martial Arts: Eighteen Strikes of the Viridian Forest
+  - A first year student like a black bear who was raised by people who ran a "mountain business". He is simple-minded but fiercely loyal to his family and friends.
 
 **Yeo Min:**
 
-- TBD
+- Martial Arts:  White Ice Divine Art, New Moon White Ice Dance
+- A second year student obsessed with money and accused of having kleptomania. The only female in the Remedial Class, and the one with the highest agility and dexterity.
 
-####Other Students
+**Gongson Su:**
+
+- The Prime Minister, as well as the first 60 year old freshman in the history of the Azure Dragon Academy.
+
+
+
+#####<u>Other Students</u>
 
 **Dokgo Jun:**
 
 - Title: Sword Dragon
 - Martial Arts: Nine Swords of Dokgo
-- Student Council President of the Azure Dragon Academy. An intelligent, determined, hard-working boy who will do *anything* to remain top student of the Azure Dragon Academy. Starts out as a very upright kid…until he meets Master Baek. His sword technique is a classic wuxia technique that the protagonist of Jin Yong’s “The Proud, Smiling Wanderer”, Linghu Chong learned from Dugu Qiubai (whose name means “Please defeat me”). The original translation of his technique is the “Nine Swords of Dugu”, but Dugu is read as Dokgo in Korean.
+- Student Council President of the Azure Dragon Academy. An intelligent, determined, hard-working boy who will do *anything* to remain top student of the Azure Dragon Academy. Starts out as a very upright kid…until he meets Master Baek.
 
-**Tang So-So:**
+**Tang Soso:**
 
 - Title: Cold-Blooded Poisoner
 - Vice-President of the Student Council. Falls in love with Baek Su-Ryong at first sight. The most intelligent, cunning strategist among the Azure Dragon Academy students by far.
 
-**Peng Sa-Hyuk:**
+**Peng Sahyuk:**
 
 - Martial Arts: Five Tiger Demolition Blade
-- President of the Club Union. Childhood friend and rival of Hyonwon Kang.
+- Former President of the Club Union. Childhood friend and rival of Hyonwon Kang.
+
+**Namgung Seok:**
+
+- Relative of Namgung Su and freshman at the Azure Dragon Academy.
+
+**Jin Jin:**
+
+- Namgung Su's tutoring student and freshman at the Azure Dragon Academy.
+
+**Cho Maksaeng:**
+
+- Namgung Su's former tutoring student who turned out to be a pawn of the Blood Cult.
+
+**Seonwoo Jin:**
+
+- Title: Willow Blade
+- President of the Bladesmanship Research Society (BRS) and Vice-President of the Club Union.
+
+**Oh Jinyang:**
+
+- Executive member of the Club Union.
+
+**Yoo Yiran:**
+
+- Title: Sword Flower
+- President of the Swordsmanship Research Society (SRS).
+
+
+
+####Associates and Graduates
+
+**Seo Ri'ae:**
+
+- Title: Frost Spring Dame
+- Martial Arts: White Ice Divine Art
+- Chairwoman of the Azure Dragon Academy Parent Teacher Association (PTA) and the mother of the previous Student Council President, Bang Baekhyeon.
 
 
 
@@ -122,20 +178,40 @@ title: Star Instructor Master Baek
 - Martial Arts: Blood Rain Demonic Art
 - Head Constable of Nanchang City. An impartial government official who fights against corruption and injustice, just like his namesake. Baek Su-Ryong’s good friend and occasional teaching assistant.
 
-**Bok Man-Chun:**
+**Bok Manchun:**
 
 - Former bodyguard of the late loan shark Old Man Heo, now the administrator in charge of managing Baek Su-Ryong’s businesses and odd errands.
 
-**Go Ju-Yeol:**
+**Go Juyeol:**
 
 - Title: Flying Eagle
 - Branch Head of the Jiangxi Branch Murim Alliance and a good friend to Baek Su-Ryong’s father, Baek Mu-Heun.
+
+**Geo Ilsan:**
+
+- Chairman of the Golden Dragon Trading Company and Geo Sangwoong's father.
+
+**Geo Yisan:**
+
+- Executive of the Golden Dragon Trading Company and Geo Ilsan's younger brother.
+
+**Cheoldu:**
+
+- The former Boss of the Ironhead Gang and current Sect Leader of the Rehabilitation Sect.
+
+**Asam:**
+
+- The former strategist of the Ironhead Gang and current executive of the Rehabilitation Sect.
+
+**Old Woman:**
+
+- A Rogues' Guild executive pretending to be a deaf innkeeper.
 
 
 
 ### Four Supreme Masters (50 years ago)
 
-**Maeng Ho-Ak:**
+**Maeng Ho'ak:**
 
 - Title: Bandit King
 - Martial Arts: Eighteen Strikes of the Viridian Forest
@@ -153,7 +229,7 @@ title: Star Instructor Master Baek
 - Martial Arts: Unlimited Sword
 - The greatest swordmaster of the Moyong Clan who left the clan after his only son was bullied and ostracized by his relatives. He wished to live in peace with his son, however, his son was kidnapped by the Blood Cult and used as a hostage to lure him into giving himself in. Probably the strongest member of the Four Supreme Masters.
 
-**Eun Ye-Rin:**
+**Eun Yerin:**
 
 - Title: Ice Moon Goddess
 - Martial Arts: New Moon’s White Ice Dance, White Ice Divine Art
@@ -161,15 +237,24 @@ title: Star Instructor Master Baek
 
 
 
+### Namgung Clan
+
+**Namgung Jaehak:**
+
+- Title: Blue Sky Sword King
+- The strongest of the murim's Ten Supremes, Star Instuctor of the Heavenly Martial Academy, and Namgung Su's grandfather.
+
+
+
 ### Others
 
-**Baek Mu-Heun:**
+**Baek Muheun:**
 
 - Title: Handsome Prince
 - Martial Arts: Revolving Tempest Sword
 - Our protagonist’s dad. Loves his son to death and would do anything for him. Thirty years ago, when he was a student at the Azure Dragon Academy, he fell in love with Headmaster Mae Geuk-Lyom’s terminally ill daughter Mae Yak-Bing. Due to Mae Geuk-Lyom’s objection to the worst delinquent in academy history getting hitched with his daughter, however, he was forced to elope with her. In the following years, his guilt at his helplessness would pile up as his wife passed away after giving birth, and his son inherited his wife’s illness. After losing to his son in a duel though, he finally lets go of his past and moves on…though the father-in-law problem is yet to be resolved.
 
-**Mae Yak-Bing:**
+**Mae Yakbing:**
 
 - Our protagonist's mom who passed away during childbirth. Like her son, she suffers from the Heavenly Yin Blocked Meridians. Mae Geuk-Lyom’s daughter and a very energetic, cheerful person despite her medical condition.
 
@@ -177,7 +262,53 @@ title: Star Instructor Master Baek
 
 - The former Clan Head of the Wiji Clan in the Blood Cult, and a master blacksmith. Hired Baek Su-Ryong to kill his grandson, who was suffering from Qi Deviation as a result of practicing a fake martial art. Gave Baek Su-Ryong his first sword Moon Shadow, and promised to craft a new sword better than the Blood Demon Sword for him when Baek Su-Ryong instead saved his grandson’s life.
 
+**Shadow:**
 
+- A former member of the Royal Guard, currently the Prime Minister Gongsun Su's bodyguard and adopted daughter.
+
+**Skysword:**
+
+- Captain of the Royal Guard and a member of the murim's Ten Supremes.
+
+
+
+### Valley of Evil
+
+**Blue Eyed Freak:**
+
+- Martial Arts: Blue Eyes Demonic Art
+- Former head gatekeeper of the Valley of Evil, and the current Valley Lord.
+
+**Hell Axe:**
+
+- Gatekeeper of the Valley of Evil.
+
+**Wolf Fang Blade:**
+
+- Gatekeeper of the Valley of Evil.
+
+**Demon Doctor:**
+
+- Resident physician of the Valley of Evil.
+
+**Bloody Ripper:**
+
+- Martial Art: Blood Jade Claws
+- Former King of the Valley and one of the Ten Great Villains.
+
+**Nine Yin Witch:**
+
+- Martial Art: White Ice Divine Art (fake), Star Absorption Art
+- One of the Ten Great Villains and a friend of Yeo Min's mother who was driven mad by her faulty White Ice Divine Art.
+
+**White-Haired Demon:**
+
+- Martial Art: Blood Jade Claws
+- The Bloody Ripper's junior brother and the Boss of the Scarlet Tiger Gang.
+
+**Black Boar:**
+
+- Resident busybody of the Valley of Evil.
 
 ### Blood Cult
 
@@ -192,3 +323,17 @@ title: Star Instructor Master Baek
 **Four Kids:**
 
 - Number 27’s (Baek Su-Ryong’s) best students who learned the Four Masters’ martial arts and were then turned into emotionless killing machines. Baek Su-Ryong has no idea if they survived…
+
+**Choi Il:**
+
+- Title: Fist Tyrant
+- Martial Arts: Soul Reaping Demonic Art
+- A fourth year student at the Heavenly Martial Academy and a joint disciple of all the Blood Cult elders. The culprit who sabotaged Geo Sangwoong.
+
+**Smiling Grim Reaper:**
+
+- Captain of the Ghost Blood Unit.
+
+**Yang Jin:**
+
+- Blood Cult agent who was tasked with supervising Geo Sangwoong.
