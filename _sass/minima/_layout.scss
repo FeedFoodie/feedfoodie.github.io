@@ -273,11 +273,11 @@
   }
 
   h4 {
-    @include relative-font-size(1.25);
+    @include relative-font-size(1.4);
   }
 
   h5 {
-    @include relative-font-size(1.125);
+    @include relative-font-size(1.25);
   }
   h6 {
     @include relative-font-size(1.0625);
