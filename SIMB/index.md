@@ -15,9 +15,9 @@ Associated Names: 일타강사 백사부
 
 After his qi center is destroyed, a martial arts instructor of the Blood Demon Cult is assigned to learn and research the martial arts of four captured murim masters. However, when the Cult betrays him and decides to kill him, he fights back and everyone in the Cult dies, including himself.
 
-He then mysteriously wakes up in the body of Baek Su-Ryong, a young martial arts instructor in the rural countryside with a disease that will kill him within three years. He realizes that the martial arts he had learned holds the key to healing his new body’s illness, but in order to do that, he needed money. A LOT of money.
+He then mysteriously wakes up in the body of Baek Suryong, a young martial arts instructor in the rural countryside with a disease that will kill him within three years. He realizes that the martial arts he had learned holds the key to healing his new body’s illness, but in order to do that, he needed money. A LOT of money.
 
-Baek Su-Ryong thus embarks on a journey to become the Star Instructor of the Azure Dragon Martial Arts Academy, and earn enough money to save his own life! Perhaps he would even manage to educate some kids along the way…
+Baek Suryong thus embarks on a journey to become the Star Instructor of the Azure Dragon Martial Arts Academy, and earn enough money to save his own life! Perhaps he would even manage to educate some kids along the way…
 
 ## Characters
 

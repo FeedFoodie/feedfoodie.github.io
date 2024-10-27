@@ -89,7 +89,7 @@ title: Star Instructor Master Baek
 
 - Title: Sword Wonder
 - Martial Arts: Unlimited Sword
-- A genius swordsman. He was tricked by a black-cloaked man into learning a fake Unlimited Sword and suffered from Qi Deviation, but was cured by Baek Su-Ryong and is now following him.
+- A genius swordsman. He was tricked by a black-cloaked man into learning a fake Unlimited Sword and suffered from Qi Deviation, but was cured by Baek Suryong and is now following him.
 
 **Geo Sangwoong:**
 
@@ -125,7 +125,7 @@ title: Star Instructor Master Baek
 **Tang Soso:**
 
 - Title: Cold-Blooded Poisoner
-- Vice-President of the Student Council. Falls in love with Baek Su-Ryong at first sight. The most intelligent, cunning strategist among the Azure Dragon Academy students by far.
+- Vice-President of the Student Council. Falls in love with Baek Suryong at first sight. The most intelligent, cunning strategist among the Azure Dragon Academy students by far.
 
 **Peng Sahyuk:**
 
@@ -176,16 +176,16 @@ title: Star Instructor Master Baek
 
 - Title: Judge of Hell
 - Martial Arts: Blood Rain Demonic Art
-- Head Constable of Nanchang City. An impartial government official who fights against corruption and injustice, just like his namesake. Baek Su-Ryong’s good friend and occasional teaching assistant.
+- Head Constable of Nanchang City. An impartial government official who fights against corruption and injustice, just like his namesake. Baek Suryong’s good friend and occasional teaching assistant.
 
 **Bok Manchun:**
 
-- Former bodyguard of the late loan shark Old Man Heo, now the administrator in charge of managing Baek Su-Ryong’s businesses and odd errands.
+- Former bodyguard of the late loan shark Old Man Heo, now the administrator in charge of managing Baek Suryong’s businesses and odd errands.
 
 **Go Juyeol:**
 
 - Title: Flying Eagle
-- Branch Head of the Jiangxi Branch Murim Alliance and a good friend to Baek Su-Ryong’s father, Baek Mu-Heun.
+- Branch Head of the Jiangxi Branch Murim Alliance and a good friend to Baek Suryong’s father, Baek Mu-Heun.
 
 **Geo Ilsan:**
 
@@ -215,7 +215,7 @@ title: Star Instructor Master Baek
 
 - Title: Bandit King
 - Martial Arts: Eighteen Strikes of the Viridian Forest
-- The Bandit King of the Viridian Forest (think Robin Hood and his Merry Men). A giant of a man who unified the 72 Bandit Strongholds into the largest Viridian Forest Bandit Union in history, and dreams of making the Viridian Forest acknowledged as a sect specializing in outer arts. He offered  Number 27 (Baek Su-Ryong) a new home in the Viridian Forest when they escaped.
+- The Bandit King of the Viridian Forest (think Robin Hood and his Merry Men). A giant of a man who unified the 72 Bandit Strongholds into the largest Viridian Forest Bandit Union in history, and dreams of making the Viridian Forest acknowledged as a sect specializing in outer arts. He offered  Number 27 (Baek Suryong) a new home in the Viridian Forest when they escaped.
 
 **Hyonwon Hu:**
 
@@ -260,7 +260,7 @@ title: Star Instructor Master Baek
 
 **Wiji Yeol:**
 
-- The former Clan Head of the Wiji Clan in the Blood Cult, and a master blacksmith. Hired Baek Su-Ryong to kill his grandson, who was suffering from Qi Deviation as a result of practicing a fake martial art. Gave Baek Su-Ryong his first sword Moon Shadow, and promised to craft a new sword better than the Blood Demon Sword for him when Baek Su-Ryong instead saved his grandson’s life.
+- The former Clan Head of the Wiji Clan in the Blood Cult, and a master blacksmith. Hired Baek Suryong to kill his grandson, who was suffering from Qi Deviation as a result of practicing a fake martial art. Gave Baek Suryong his first sword Moon Shadow, and promised to craft a new sword better than the Blood Demon Sword for him when Baek Suryong instead saved his grandson’s life.
 
 **Shadow:**
 
@@ -322,7 +322,7 @@ title: Star Instructor Master Baek
 
 **Four Kids:**
 
-- Number 27’s (Baek Su-Ryong’s) best students who learned the Four Masters’ martial arts and were then turned into emotionless killing machines. Baek Su-Ryong has no idea if they survived…
+- Number 27’s (Baek Suryong’s) best students who learned the Four Masters’ martial arts and were then turned into emotionless killing machines. Baek Suryong has no idea if they survived…
 
 **Choi Il:**
 
