@@ -3,11 +3,11 @@ layout: pageSIMBnoChapters
 title: Star Instructor Master Baek
 ---
 
-## Characters
+# Characters
 
-### Azure Dragon Academy
+## Azure Dragon Academy
 
-#### Staff
+### Staff
 
 **Baek Suryong:** 
 
@@ -74,9 +74,9 @@ title: Star Instructor Master Baek
 
 
 
-#### Students
+### Students
 
-##### <u>White Dragon Manor</u>
+#### White Dragon Manor
 
 **Hyonwon Kang:**
 
@@ -114,7 +114,7 @@ title: Star Instructor Master Baek
 
 
 
-##### <u>Other Students</u>
+#### Other Students
 
 **Dokgo Jun:**
 
@@ -160,7 +160,7 @@ title: Star Instructor Master Baek
 
 
 
-#### Associates and Graduates
+### Associates and Graduates
 
 **Seo Ri'ae:**
 
@@ -170,7 +170,7 @@ title: Star Instructor Master Baek
 
 
 
-### Nanchang City
+## Nanchang City
 
 **Cheong Cheon:**
 
@@ -209,7 +209,7 @@ title: Star Instructor Master Baek
 
 
 
-### Four Supreme Masters (50 years ago)
+## Four Supreme Masters (50 years ago)
 
 **Maeng Ho'ak:**
 
@@ -237,7 +237,7 @@ title: Star Instructor Master Baek
 
 
 
-### Namgung Clan
+## Namgung Clan
 
 **Namgung Jaehak:**
 
@@ -246,7 +246,7 @@ title: Star Instructor Master Baek
 
 
 
-### Others
+## Others
 
 **Baek Muheun:**
 
@@ -272,7 +272,7 @@ title: Star Instructor Master Baek
 
 
 
-### Valley of Evil
+## Valley of Evil
 
 **Blue Eyed Freak:**
 
@@ -310,7 +310,7 @@ title: Star Instructor Master Baek
 
 - Resident busybody of the Valley of Evil.
 
-### Blood Cult
+## Blood Cult
 
 **Blood Demon:**
 
@@ -324,7 +324,7 @@ title: Star Instructor Master Baek
 
 - Number 27’s (Baek Suryong’s) best students who learned the Four Masters’ martial arts and were then turned into emotionless killing machines. Baek Suryong has no idea if they survived…
 
-**Choi Il:**
+**Cho Il:**
 
 - Title: Fist Tyrant
 - Martial Arts: Soul Reaping Demonic Art
