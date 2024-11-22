@@ -16,8 +16,8 @@
         - name: "Heroes"
           url: "/HERO/"
           weight: 2
-        - name: "The Fatebreaker's Codex"
-          url: "/FBC/"
+        - name: "Absolute Warrior"
+          url: "/ABSW/"
           weight: 2
     - name: "About"
       url: "/about.html"
