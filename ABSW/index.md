@@ -3,7 +3,7 @@ layout: pageABSW
 title: Absolute Warrior
 ---
 
-![ABSW](/Images/ABSW.png)
+![ABSW](/Images/ABSW.jpg)
 
 Novel Author: Jang Yeonghun, 장영훈
 
