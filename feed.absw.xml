@@ -13,7 +13,7 @@ layout: null
         <generator>Jekyll v{{ jekyll.version }}</generator>
         {% for post in site.tags["absw"] %}
             <item>
-                <title>TIGER {{ post.title | xml_escape }}</title>
+                <title>Absolute Warrior {{ post.title | xml_escape }}</title>
 				<author>admin@northbladetl.com (FoodieMonster007)</author>
                 <description>(NorthBladeTL) Absolute Warrior Chapter Update - {{ post.url | prepend: site.baseurl | prepend: site.url }}</description>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
