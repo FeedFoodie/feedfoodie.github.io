@@ -11,13 +11,13 @@ Associated Names: 절대강호, Absolute Kangho, Absolute Tiger, Absolute Jiangh
 
 ## Synopsis
 
-To combat the collective villainy of the Evil Coalition, the New Righteous Fellowship, symbol of the orthodox jianghu, has formed a secret corps known as the Twelve Phantoms. 
+To combat the collective villainy of the Evil Coalition, the New Righteous Association, symbol of the orthodox jianghu, has formed a secret corps known as the Twelve Phantoms. 
 
 Yet even among these twelve martial masters, one man stands unrivaled—Agent Crimson Tiger.
 
 "While we kill our own children for the sake of world domination... he fights the world for the sake of his child. Isn't it ironic?"
 
-Amid the fierce succession war between the First Young Master and the Third Young Lady of the Fellowship, one man's fight to protect his precious daughter begins!
+Amid the fierce succession war between the First Young Master and the Third Young Lady of the Association, one man's fight to protect his precious daughter begins!
 
 "I swear, if you lay a finger on my daughter... something unimaginable will befall you."
 
