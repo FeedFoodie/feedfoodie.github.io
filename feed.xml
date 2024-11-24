@@ -13,7 +13,7 @@ layout: null
         <generator>Jekyll v{{ jekyll.version }}</generator>
         {% for post in site.posts %}
             <item>
-                <title>{{ post.tags | xml_escape }} {{ post.title | xml_escape }}</title>
+                <title>{{ tag | xml_escape }} {{ post.title | xml_escape }}</title>
 				<author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
                 <description>(NorthBladeTL) Chapter Update - {{ post.url | prepend: site.baseurl | prepend: site.url }}</description>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
