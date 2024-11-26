@@ -17,7 +17,7 @@ Yet even among these twelve martial masters, one man stands unrivaled—Agent Cr
 
 "While we kill our own children for the sake of world domination... he fights the world for the sake of his child. Isn't it ironic?"
 
-Amid the fierce succession war between the First Young Master and the Third Young Lady of the Association, one man's fight to protect his precious daughter begins!
+Amid the fierce succession war between the First Young Lord and the Third Young Lady of the Association, one man's fight to protect his precious daughter begins!
 
 "I swear, if you lay a finger on my daughter... something unimaginable will befall you."
 
