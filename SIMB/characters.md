@@ -112,6 +112,10 @@ title: Star Instructor Master Baek
 
 - The Prime Minister, as well as the first 60 year old freshman in the history of the Azure Dragon Academy.
 
+**Silver Tiger Cub:**
+
+- Resident mascot.
+
 
 
 #### Other Students
@@ -207,6 +211,36 @@ title: Star Instructor Master Baek
 
 - A Rogues' Guild executive pretending to be a deaf innkeeper.
 
+  
+
+## Vermillion Phoenix Academy
+
+**Sama Yeong:**
+
+- Title: Blazing Rakshasa
+- New instructor at the Vermillion Phoenix Academy and the principal's granddaughter.
+
+**Fire King:**
+
+- Principal of the Vermillion Phoenix Academy
+
+
+
+## White Tiger Academy
+
+**Tang Baekho:**
+
+- New instructor at the White Tiger Academy and a member of the Tang Clan. Favors external arts instead of poison or hidden weapons arts.
+
+
+
+## Black Tortoise Academy
+
+**Dark Heaven Goddess:**
+
+- Principal of the Black Tortoise Academy. A master sorceror.
+
+
 
 
 ## Four Supreme Masters (50 years ago)
@@ -242,7 +276,24 @@ title: Star Instructor Master Baek
 **Namgung Jaehak:**
 
 - Title: Blue Sky Sword King
-- The strongest of the murim's Ten Supremes, Star Instuctor of the Heavenly Martial Academy, and Namgung Su's grandfather.
+- The strongest of the murim's Ten Supremes, Star Instructor of the Heavenly Martial Academy, and Namgung Su's grandfather.
+
+**Namgung Cheon:**
+
+- Title: Ironblood Swordsman
+- The Patriarch of the Namgung Clan and Namgung Su's father.
+
+**Namgung Mi:**
+
+- The youngest daughter of the Namgung Patriarch, Namgung Su's most precious little sister.
+
+**Namgung Hak:**
+
+- The eldest son of the Namgung Patriarch.
+
+**Namgung Heok:**
+
+- The second son of the Namgung Patriarch.
 
 
 
@@ -310,6 +361,8 @@ title: Star Instructor Master Baek
 
 - Resident busybody of the Valley of Evil.
 
+
+
 ## Blood Cult
 
 **Blood Demon:**
@@ -319,6 +372,18 @@ title: Star Instructor Master Baek
 **Demon Strategist:**
 
 - The strategist of the Blood Cult and a high-level sorcerer. He might or might not still be alive…
+
+**Bloody Spirit:**
+
+- The Eighth Elder of the Blood Cult.
+
+**Night Emperor:**
+
+- The Fifth Elder of the Blood Cult.
+
+**Apostles:**
+
+- The current leaders of the Blood Cult.
 
 **Four Kids:**
 
