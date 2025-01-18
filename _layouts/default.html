@@ -36,6 +36,8 @@
 			| replace: '<div class="footnotes" role="doc-endnotes">', '<hr><h3>Footnotes:</h3><div class="footnotes" role="doc-endnotes">'
 			| replace: '<p>', '<p class="foodie">'
 			| replace: '<blockquote>', '<blockquote class="night-mode-quotes">'
+			| replace: '@[', '<span class="night-mode-quotes">'
+			| replace: ']@', '</span>'
 		%}		
 		{{output}}
       </div>
