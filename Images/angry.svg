@@ -1,0 +1,19 @@
+<svg version="1.1" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient1002" x1="-296.91" x2="-161.11" y1="469.34" y2="499.08" gradientTransform="matrix(2.3797 0 0 2.3797 207.72 -1011.9)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fd5" offset="0"/>
+   <stop stop-color="#ff2a2a" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="matrix(.070167 0 0 .070167 -3.2844 -5.149)">
+  <circle transform="rotate(246.32)" cx="-320.7" cy="104.99" r="178.15" fill="url(#linearGradient1002)" fill-rule="evenodd" style="paint-order:stroke fill markers"/>
+  <g transform="matrix(.69522 0 0 .69522 51.15 65.205)" fill="#664f27" stroke-width="0">
+   <path d="m325.77 390.11c0.02-4.9236-7.2743-8.8954-16.351-8.9052 0 0-39.282-10.613-59.39-10.634-20.108-0.02-59.39 10.506-59.39 10.506-9.0764-8e-3 -16.398 3.9461-16.416 8.8698-0.018 4.9237 7.2743 8.8954 16.351 8.9052 0 0 39.282-10.527 59.39-10.506 20.108 0.02 59.39 10.634 59.39 10.634 9.0764 8e-3 16.398-3.9461 16.416-8.8698z" style="paint-order:stroke fill markers"/>
+   <ellipse cx="163.96" cy="270.08" rx="30.25" ry="33.935" style="paint-order:stroke fill markers"/>
+   <ellipse cx="163.96" cy="270.08" rx="30.25" ry="33.935" style="paint-order:stroke fill markers"/>
+   <path transform="rotate(195)" d="m-112.77-184.87a82.353 19.962 0 0 1-58.176 19.082 82.353 19.962 0 0 1-92.335-7.8777 82.353 19.962 0 0 1 3.9594-23.708l64.198 12.503z" style="paint-order:stroke fill markers"/>
+   <ellipse transform="scale(-1,1)" cx="-336.04" cy="270.08" rx="30.25" ry="33.935" style="paint-order:stroke fill markers"/>
+   <path transform="matrix(.96593 -.25882 -.25882 -.96593 0 0)" d="m370.2-314.27a82.353 19.962 0 0 1-58.176 19.082 82.353 19.962 0 0 1-92.335-7.8777 82.353 19.962 0 0 1 3.9594-23.708l64.198 12.503z" style="paint-order:stroke fill markers"/>
+  </g>
+ </g>
+</svg>
