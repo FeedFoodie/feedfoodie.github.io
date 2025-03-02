@@ -17,6 +17,28 @@
         },
     });
 
+    window.onload = function() {
+        if(localStorage.getItem('colorScheme')) {
+            var storedCommentColor = localStorage.getItem('colorScheme');
+            setCommentMode(storedCommentColor);
+        }
+    }
+
+    function setCommentMode(value) {
+        if (value == "day") {
+            const config = {
+                tenantId: 'eu-eFwXogixzsA',
+                hasLightBackground: false
+            };
+            const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
+            config.hasLightBackground = !config.hasLightBackground;
+            if (config.hasLightBackground) {
+                document.body.classList.add('day');
+            }
+            instance.update(config);
+        }
+    }
+
     (function() {
         const button = document.getElementById('setMode');
         const config = {
