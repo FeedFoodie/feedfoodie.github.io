@@ -2,54 +2,12 @@
 <script id="fastcomments" src="https://cdn-eu.fastcomments.com/js/embed-v2.min.js"></script>
 <div id="page-reacts-example"></div>
 <script>
-    /*window.FastCommentsUI(document.getElementById('page-reacts-example'), {
-        tenantId: "eu-eFwXogixzsA",
-        pageReactConfig: {
-            showUsers: true,
-            reacts: [
-                {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
-                {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
-                {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
-                {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
-                {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
-                {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' }
-            ]
-        },
-        hasLightBackground: false,
-    });*/
-
-    /*function setCommentMode(value) {
-        const config = {
-            tenantId: 'eu-eFwXogixzsA',
-            pageReactConfig: {
-                showUsers: true,
-                reacts: [
-                    {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
-                    {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
-                    {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
-                    {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
-                    {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
-                    {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' }
-                ]
-            },
-            hasLightBackground: false,
-        };
-        if (value == "day") {
-            const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
-            config.hasLightBackground = !config.hasLightBackground;
-            if (config.hasLightBackground) {
-                document.body.classList.add('day');
-            }
-            instance.update(config);
-        }
-    };*/
-
     (function() {
         const button = document.getElementById('setMode');
         const config = {
             tenantId: 'eu-eFwXogixzsA',
             pageReactConfig: {
-                showUsers: true,
+                showUsers: false,
                 reacts: [
                     {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
                     {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
@@ -64,7 +22,8 @@
         const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
         window.addEventListener('load', function() {
             config.hasLightBackground = !config.hasLightBackground;
-            if (config.hasLightBackground) {
+            const isDay = document.getElementById("wrappertext").classList.contains("day-mode");
+            if (isDay) {
                 document.body.classList.add('day');
             } else {
                 document.body.classList.remove('day');
