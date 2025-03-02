@@ -40,7 +40,7 @@
             hasLightBackground: false
         };
         const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
-        autoLoad.addEventListener('load', function() {
+        window.addEventListener('load', function() {
             config.hasLightBackground = !config.hasLightBackground;
             if (config.hasLightBackground) {
                 document.body.classList.add('day');
