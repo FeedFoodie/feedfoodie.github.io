@@ -1,4 +1,4 @@
-window.onload = function() {
+/*window.onload = function() {
   if(localStorage.getItem('fontSize')) {
 		var storedSize = localStorage.getItem('fontSize');
 		setFontSize(storedSize);
@@ -7,6 +7,15 @@ window.onload = function() {
 		var storedColor = localStorage.getItem('colorScheme');
 		setMode(storedColor);
 	}
+}*/
+
+if(localStorage.getItem('fontSize')) {
+	var storedSize = localStorage.getItem('fontSize');
+	setFontSize(storedSize);
+}
+if(localStorage.getItem('colorScheme')) {
+	var storedColor = localStorage.getItem('colorScheme');
+	setMode(storedColor);
 }
 
 // Set Font Size Automatically
