@@ -22,6 +22,7 @@ function setFontSize(value) {
 function setMode(value) {
 	if (value == "day") {
 		document.getElementById("wrappertext").classList.toggle("day-mode");
+		document.getElementById("chapterTitle").classList.toggle("day-mode-heading");
 		var quotes = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quotes.length; i++) {
 			quotes[i].classList.toggle("day-mode-quotes")
@@ -57,6 +58,7 @@ function changeFontSize(change) {
 //Change Color
 function changeWrapColor() {
 	document.getElementById("wrappertext").classList.toggle("day-mode");
+	document.getElementById("chapterTitle").classList.toggle("day-mode-heading");
 	var quotes = document.getElementsByClassName("night-mode-quotes");
 	for (var i = 0; i < quotes.length; i++) {
 		quotes[i].classList.toggle("day-mode-quotes")
