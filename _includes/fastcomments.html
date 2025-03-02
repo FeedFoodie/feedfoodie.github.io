@@ -17,11 +17,6 @@
         },
     });
 
-    if(localStorage.getItem('colorScheme')) {
-        var storedCommentColor = localStorage.getItem('colorScheme');
-        setCommentMode(storedCommentColor);
-    }
-
     function setCommentMode(value) {
         if (value == "day") {
             const config = {
@@ -39,11 +34,21 @@
 
     (function() {
         const button = document.getElementById('setMode');
+        const autoLoad = document.getElementById('wrappertext');
         const config = {
             tenantId: 'eu-eFwXogixzsA',
             hasLightBackground: false
         };
         const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
+        autoLoad.addEventListener('load', function() {
+            config.hasLightBackground = !config.hasLightBackground;
+            if (config.hasLightBackground) {
+                document.body.classList.add('day');
+            } else {
+                document.body.classList.remove('day');
+            }
+            instance.update(config);
+        });
         button.addEventListener('click', function() {
             config.hasLightBackground = !config.hasLightBackground;
             if (config.hasLightBackground) {
