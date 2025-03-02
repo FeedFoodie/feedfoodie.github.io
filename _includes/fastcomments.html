@@ -4,7 +4,7 @@
 <div id="page-reacts-example"></div>
 <script>
     (function() {
-        const button = document.getElementById('setMode');
+        const setCommentMode = document.getElementById('setMode');
         const config = {
             tenantId: 'eu-eFwXogixzsA',
             pageReactConfig: {
@@ -22,14 +22,12 @@
         };
         const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
         window.addEventListener('load', function() {
-            config.hasLightBackground = !config.hasLightBackground;
-            const isDay = document.getElementById("wrappertext").classList.contains("day-mode");
-            if (isDay) {
+            if (document.getElementById('wrappertext').classList.contains('day-mode')) {
                 document.body.classList.add('day');
             }
             instance.update(config);
         });
-        button.addEventListener('click', function() {
+        setCommentMode.addEventListener('click', function() {
             config.hasLightBackground = !config.hasLightBackground;
             if (config.hasLightBackground) {
                 document.body.classList.add('day');
@@ -43,7 +41,7 @@
 </script>
 
 <style>
-    body.day {
+    .day {
         background: #fff;
         color: #222;
     }
