@@ -1,9 +1,6 @@
 // Set Font Size Automatically
 function setFontSize(value) {
 	document.getElementById("content").style.fontSize = value;
-	document.getElementById("fast-comments").style.fontSize = value;
-	document.getElementById("username").style.fontSize = value;
-	document.getElementById("comment-text").style.fontSize = value;
 	var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
 			quote[i].style.fontSize = value;
@@ -51,11 +48,10 @@ function changeFontSize(change) {
 }
 
 //Change Color
-var quotes = 0;
 function changeWrapColor() {
 	document.getElementById("wrappertext").classList.toggle("day-mode");
 	document.getElementById("comment-area").classList.toggle("day-mode-comments");
-	quotes = document.getElementsByClassName("night-mode-quotes");
+	var quotes = document.getElementsByClassName("night-mode-quotes");
 	for (var i = 0; i < quotes.length; i++) {
 		quotes[i].classList.toggle("day-mode-quotes")
 	}
