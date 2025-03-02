@@ -19,13 +19,7 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">	
-<div style="font-size: 16px;" id="content">
-	{% include JS_buttons.html %}
-	<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
-	<p class="foodie"><br /></p>
-	{{ content }}
-<p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>
-</div>
+<div style="font-size: 16px;" id="content"></div>
 <hr>
 		{% include navlinks_hero.html %}
   </div>
@@ -33,3 +27,6 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 {% include fastcomments.html %}
+<script type="text/javascript">
+document.getElementById("content").innerHTML = "{% include JS_buttons2.html %} {{ content }} <p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>";
+</script>
