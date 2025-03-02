@@ -32,7 +32,7 @@ function changeFontSize(change) {
 			quote[i].style.fontSize = selectedSize;
 		}
 	}
-	localStorage.setItem('fontSize', selectedSize);
+	localStorage.setItem('fontSize', window.getComputedStyle(content).fontSize);
 }
 
 //Change Color
