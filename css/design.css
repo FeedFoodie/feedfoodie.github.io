@@ -18,6 +18,11 @@
 	color: #fcd299;
 }
 
+.night-mode-comments {
+  background: #444444;
+  color: white;
+}
+
 .day-mode {
 	background-color: white;
 	color: #222222;
