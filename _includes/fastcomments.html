@@ -21,12 +21,12 @@
         const button = document.getElementById('setMode');
         const config = {
             tenantId: 'eu-eFwXogixzsA',
-            hasDarkBackground: true
+            hasLightBackground: false
         };
         const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
         button.addEventListener('click', function() {
-            config.hasDarkBackground = !config.hasDarkBackground;
-            if (!config.hasDarkBackground) {
+            config.hasLightBackground = !config.hasLightBackground;
+            if (config.hasLightBackground) {
                 document.body.classList.add('day');
             } else {
                 document.body.classList.remove('day');
