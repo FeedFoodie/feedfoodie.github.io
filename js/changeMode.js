@@ -54,7 +54,7 @@ function changeFontSize(change) {
 //Change Color
 function changeWrapColor() {
 	document.getElementById("wrappertext").classList.toggle("day-mode");
-	document.getElementById("comment-area").classList.toggle("day-mode-comments");
+	//document.getElementById("comment-area").classList.toggle("day-mode-comments");
 	var quotes = document.getElementsByClassName("night-mode-quotes");
 	for (var i = 0; i < quotes.length; i++) {
 		quotes[i].classList.toggle("day-mode-quotes")
