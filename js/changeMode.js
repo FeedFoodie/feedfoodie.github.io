@@ -53,28 +53,16 @@ function changeFontSize(change) {
 //Change Color
 var quotes = 0;
 function changeWrapColor() {
-	if (document.getElementById("wrappertext").classList.contains("night-mode")) {
-		document.getElementById("wrappertext").classList.toggle("day-mode");
-		document.getElementById("wrappertext").classList.toggle("night-mode");
-		quotes = document.getElementsByClassName("night-mode-quotes");
-		for (var i = 0; i < quotes.length; i++) {
-			quotes[i].classList.toggle("day-mode-quotes")
-			quotes[i].classList.toggle("night-mode-quotes")
-		}
-		document.getElementById("comment-area").classList.toggle("day-mode-comments");
-		document.getElementById("comment-area").classList.toggle("night-mode-comments");
+	document.getElementById("wrappertext").classList.toggle("day-mode");
+	document.getElementById("comment-area").classList.toggle("day-mode-comments");
+	quotes = document.getElementsByClassName("night-mode-quotes");
+	for (var i = 0; i < quotes.length; i++) {
+		quotes[i].classList.toggle("day-mode-quotes")
+	}
+	if (document.getElementById("wrappertext").classList.contains("day-mode")) {
 		localStorage.setItem('colorScheme', "day");
 	}
 	else {
-		document.getElementById("wrappertext").classList.toggle("night-mode");
-		document.getElementById("wrappertext").classList.toggle("day-mode");
-		quotes = document.getElementsByClassName("day-mode-quotes");
-		for (var i = 0; i < quotes.length; i++) {
-			quotes[i].classList.toggle("night-mode-quotes")
-			quotes[i].classList.toggle("day-mode-quotes")
-		}
-		document.getElementById("comment-area").classList.toggle("night-mode-comments");
-		document.getElementById("comment-area").classList.toggle("day-mode-comments");
 		localStorage.setItem('colorScheme', "night");
 	}
 }
