@@ -12,6 +12,6 @@ for (let i = 4; i < paragraphs.length; i++) {
 // Show the Content Again
 window.addEventListener('load', function() {
   for (let i = 4; i < paragraphs.length; i++) {
-    paragraphs[i].removeProperty('style');
+    paragraphs[i].style.removeProperty('display');
   }
 });
