@@ -14,9 +14,11 @@ if(localStorage.getItem('fontSize')) {
 
 // Change Font Size
 var currentSize = 0;
+var selectedSize = 0;
 function changeFontSize(change) {	
 	if (change == '0') {
-		var selectedSize = "16px";
+		selectedSize = "16px";
+		localStorage.setItem('fontSize', selectedSize);
 		document.getElementById("content").style.fontSize = selectedSize;
 		var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
@@ -25,14 +27,14 @@ function changeFontSize(change) {
 	}
 	else {
 		currentSize = parseInt(document.getElementById("content").style.fontSize);
-		var selectedSize = currentSize + change + 'px';
+		selectedSize = currentSize + change + 'px';
+		localStorage.setItem('fontSize', selectedSize);
 		document.getElementById("content").style.fontSize = selectedSize;
 		var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
 			quote[i].style.fontSize = selectedSize;
 		}
 	}
-	localStorage.setItem('fontSize', window.getComputedStyle(content).fontSize);
 }
 
 //Change Color
