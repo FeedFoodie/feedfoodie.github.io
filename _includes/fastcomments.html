@@ -36,7 +36,18 @@
         const button = document.getElementById('setMode');
         const config = {
             tenantId: 'eu-eFwXogixzsA',
-            hasLightBackground: false
+            pageReactConfig: {
+                showUsers: true,
+                reacts: [
+                    {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
+                    {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
+                    {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
+                    {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
+                    {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
+                    {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' }
+                ]
+            },
+            hasLightBackground: false,
         };
         const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
         window.addEventListener('load', function() {
