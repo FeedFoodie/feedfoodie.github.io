@@ -1,21 +1,38 @@
+// Set Font Size
+function setFontSize(value) {
+	document.getElementById("content").style.fontSize = value;
+	var quote = document.getElementsByClassName("night-mode-quotes");
+		for (var i = 0; i < quote.length; i++) {
+			quote[i].style.fontSize = value;
+		}
+}
+if(localStorage.getItem('fontSize')) {
+	var storedSize = localStorage.getItem('fontSize');
+	setFontSize(storedSize);
+}
+
+
 // Change Font Size
 var currentSize = 0;
-function changeFontSize(change) {  
+function changeFontSize(change) {	
 	if (change == '0') {
-		document.getElementById("content").style.fontSize = "16px";
+		var selectedSize = "16px";
+		document.getElementById("content").style.fontSize = selectedSize;
 		var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
-		  quote[i].style.fontSize = "16px";
+			quote[i].style.fontSize = selectedSize;
 		}
 	}
-     else {
+	else {
 		currentSize = parseInt(document.getElementById("content").style.fontSize);
-        document.getElementById("content").style.fontSize = currentSize + change + 'px';
+		var selectedSize = currentSize + change + 'px';
+		document.getElementById("content").style.fontSize = selectedSize;
 		var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
-		  quote[i].style.fontSize = currentSize + change + 'px';
+			quote[i].style.fontSize = selectedSize;
 		}
-	}	
+	}
+	localStorage.setItem('fontSize', selectedSize);
 }
 
 //Change Color
@@ -29,16 +46,16 @@ function changeWrapColor() {
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 function navbarDropdown() {
-  document.getElementById("novelDropdown").classList.toggle("show");
+	document.getElementById("novelDropdown").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var novelDropdown = document.getElementById("novelDropdown");
-    if (novelDropdown.classList.contains('show')) {
-      novelDropdown.classList.remove('show');
-    }
-  }
+	if (!e.target.matches('.dropbtn')) {
+	var novelDropdown = document.getElementById("novelDropdown");
+		if (novelDropdown.classList.contains('show')) {
+			novelDropdown.classList.remove('show');
+		}
+	}
 }
 
