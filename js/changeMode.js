@@ -9,15 +9,6 @@
 	}
 }*/
 
-if(localStorage.getItem('fontSize')) {
-	var storedSize = localStorage.getItem('fontSize');
-	setFontSize(storedSize);
-}
-if(localStorage.getItem('colorScheme')) {
-	var storedColor = localStorage.getItem('colorScheme');
-	setMode(storedColor);
-}
-
 // Set Font Size Automatically
 function setFontSize(value) {
 	document.getElementById("content").style.fontSize = value;
