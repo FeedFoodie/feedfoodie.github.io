@@ -18,11 +18,12 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">	
-<div style="font-size: 16px;" id="content"></div>
 <script type="text/javascript">
 document.getElementById("content").innerHTML = "{% include JS_buttons2.html %} {{ content }} <p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>";
 </script>
+
+  <div class="post-content e-content" itemprop="articleBody">	
+<div style="font-size: 16px;" id="content"></div>
 <hr>
 		{% include navlinks_hero.html %}
   </div>
