@@ -15,12 +15,10 @@ if(localStorage.getItem('fontSize')) {
 function setMode(value) {
 	if (value == "day") {
 		document.getElementById("wrappertext").classList.toggle("day-mode");
-		document.getElementById("wrappertext").classList.toggle("night-mode");
 		//document.getElementById("comment-area").classList.toggle("day-mode-comments");
 		var quotes = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quotes.length; i++) {
 			quotes[i].classList.toggle("day-mode-quotes")
-			quotes[i].classList.toggle("night-mode-quotes")
 		}
 	}
 }
