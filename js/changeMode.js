@@ -1,4 +1,4 @@
-/*window.onload = function() {
+window.onload = function() {
   if(localStorage.getItem('fontSize')) {
 		var storedSize = localStorage.getItem('fontSize');
 		setFontSize(storedSize);
@@ -7,7 +7,7 @@
 		var storedColor = localStorage.getItem('colorScheme');
 		setMode(storedColor);
 	}
-}*/
+}
 
 // Set Font Size Automatically
 function setFontSize(value) {
