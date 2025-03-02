@@ -61,28 +61,12 @@ function changeWrapColor() {
 	for (var i = 0; i < quotes.length; i++) {
 		quotes[i].classList.toggle("day-mode-quotes")
 	}
-	reloadScript("fastcomments", "https://cdn-eu.fastcomments.com/js/embed-v2.min.js");
 	if (document.getElementById("wrappertext").classList.contains("day-mode")) {
 		localStorage.setItem('colorScheme', "day");
 	}
 	else {
 		localStorage.setItem('colorScheme', "night");
 	}
-}
-
-//Reload FastComments
-function reloadScript(scriptId, scriptSrc) {
-    let oldScript = document.getElementById(scriptId);
-    if (oldScript) {
-        oldScript.remove(); // Remove the old script
-    }
-
-    let newScript = document.createElement("script");
-    newScript.id = scriptId;
-    newScript.src = scriptSrc;
-    newScript.async = true;
-
-    document.head.appendChild(newScript);
 }
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content

@@ -16,6 +16,32 @@
             ]
         },
     });
+
+    (function() {
+        const button = document.getElementById('setMode');
+        const config = {
+            tenantId: 'eu-eFwXogixzsA',
+            hasDarkBackground: true
+        };
+        const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
+        button.addEventListener('click', function() {
+            config.hasDarkBackground = !config.hasDarkBackground;
+            if (!config.hasDarkBackground) {
+                document.body.classList.add('day');
+            } else {
+                document.body.classList.remove('day');
+            }
+            instance.update(config);
+        });
+    })();
+
 </script>
+
+<style>
+    body.day {
+        background: #fff;
+        color: #222;
+    }
+</style>
 
 {% endif %}
