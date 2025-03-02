@@ -1,9 +1,9 @@
 // Set Font Size Automatically
 function setFontSize(value) {
 	document.getElementById("content").style.fontSize = value;
-	document.getElementById("fast-comments").style.fontSize = value;
-	document.getElementById("username").style.fontSize = value;
-	document.getElementById("comment-text").style.fontSize = value;
+	//document.getElementById("fast-comments").style.fontSize = value;
+	//document.getElementById("username").style.fontSize = value;
+	//document.getElementById("comment-text").style.fontSize = value;
 	var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
 			quote[i].style.fontSize = value;
@@ -61,8 +61,8 @@ function changeWrapColor() {
 			quotes[i].classList.toggle("day-mode-quotes")
 			quotes[i].classList.toggle("night-mode-quotes")
 		}
-		document.getElementById("comment-area").classList.toggle("day-mode-comments");
-		document.getElementById("comment-area").classList.toggle("night-mode-comments");
+		//document.getElementById("comment-area").classList.toggle("day-mode-comments");
+		//document.getElementById("comment-area").classList.toggle("night-mode-comments");
 		localStorage.setItem('colorScheme', "day");
 	}
 	else {
@@ -73,8 +73,8 @@ function changeWrapColor() {
 			quotes[i].classList.toggle("night-mode-quotes")
 			quotes[i].classList.toggle("day-mode-quotes")
 		}
-		document.getElementById("comment-area").classList.toggle("night-mode-comments");
-		document.getElementById("comment-area").classList.toggle("day-mode-comments");
+		//document.getElementById("comment-area").classList.toggle("night-mode-comments");
+		//document.getElementById("comment-area").classList.toggle("day-mode-comments");
 		localStorage.setItem('colorScheme', "night");
 	}
 }
