@@ -2,21 +2,24 @@
 <script id="fastcomments" src="https://cdn-eu.fastcomments.com/js/embed-v2.min.js"></script>
 <div id="page-reacts-example"></div>
 <script>
+    window.FastCommentsUI(document.getElementById('page-reacts-example'), {
+        tenantId: "eu-eFwXogixzsA",
+        pageReactConfig: {
+            showUsers: true,
+            reacts: [
+                {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
+                {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
+                {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
+                {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
+                {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
+                {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' }
+            ]
+        },
+    });
+
     function setCommentMode(value) {
         if (value == "day") {
             const config = {
-                tenantId: 'eu-eFwXogixzsA',
-                pageReactConfig: {
-                    showUsers: true,
-                    reacts: [
-                        {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
-                        {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
-                        {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
-                        {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
-                        {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
-                        {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' }
-                    ]
-                },
                 hasLightBackground: false,
             };
             const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
@@ -54,21 +57,6 @@
             instance.update(config);
         });
     })();
-
-    window.FastCommentsUI(document.getElementById('page-reacts-example'), {
-        tenantId: "eu-eFwXogixzsA",
-        pageReactConfig: {
-            showUsers: true,
-            reacts: [
-                {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
-                {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
-                {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
-                {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
-                {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
-                {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' }
-            ]
-        },
-    });
 
 </script>
 
