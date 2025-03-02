@@ -18,7 +18,7 @@
                     {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' }
                 ]
             },
-            hasLightBackground: false,
+            //hasLightBackground: false,
         };
         const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
         window.addEventListener('load', function() {
@@ -28,7 +28,7 @@
             instance.update(config);
         });
         setCommentMode.addEventListener('click', function() {
-            config.hasLightBackground = !config.hasLightBackground;
+            //config.hasLightBackground = !config.hasLightBackground;
             if (document.body.classList.contains('day')) {
                 document.body.classList.remove('day');
             } else {
