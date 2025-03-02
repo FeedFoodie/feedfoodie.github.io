@@ -29,12 +29,12 @@
         });
         setCommentMode.addEventListener('click', function() {
             config.hasLightBackground = !config.hasLightBackground;
-            if (config.hasLightBackground) {
-                document.body.classList.add('day');
-            } else {
+            /*if (document.body.classList.contains('day')) {
                 document.body.classList.remove('day');
+            } else {
+                document.body.classList.add('day');
             }
-            instance.update(config);
+            instance.update(config);*/
         });
     })();
 
