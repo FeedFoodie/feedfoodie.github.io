@@ -1,4 +1,4 @@
-// Set Font Size
+// Set Font Size Automatically
 function setFontSize(value) {
 	document.getElementById("content").style.fontSize = value;
 	var quote = document.getElementsByClassName("night-mode-quotes");
@@ -11,6 +11,16 @@ if(localStorage.getItem('fontSize')) {
 	setFontSize(storedSize);
 }
 
+// Set Day/Night Mode Automatically
+function setMode(value) {
+	if (value == "day") {
+		changeWrapColor()
+	}
+}
+if(localStorage.getItem('colorScheme')) {
+	var storedColor = localStorage.getItem('colorScheme');
+	setMode(storedColor);
+}
 
 // Change Font Size
 var currentSize = 0;
@@ -43,6 +53,12 @@ function changeWrapColor() {
 	var quotes = document.getElementsByClassName("night-mode-quotes");
 	for (var i = 0; i < quotes.length; i++) {
 		quotes[i].classList.toggle("day-mode-quotes")
+	}
+	if (document.getElementById("wrappertext").classList.contains("day-mode")) {
+		localStorage.setItem('colorScheme', "day");
+	}
+	else {
+		localStorage.setItem('colorScheme', "night");
 	}
 }
 
