@@ -27,6 +27,11 @@
 	color: #4e6bf9;
 }
 
+.day-mode-comments {
+  background: white;
+  color: #222222;
+}
+
 h1, h2 {
 	color: #b6b5d4;
   text-align: center;
