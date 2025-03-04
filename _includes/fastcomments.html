@@ -1,7 +1,7 @@
 <script type="text/javascript" src="/js/changeMode.js"></script>
 {% if page.comments %}
 <script id="fastcomments" src="https://cdn-eu.fastcomments.com/js/embed-v2.min.js"></script>
-<div id="page-reacts-example"></div>
+<div id="fastcomments-widget"></div>
 <script>
     (function() {
         const setCommentMode = document.getElementById('setMode');
@@ -19,7 +19,7 @@
                 ]
             },
         };
-        const instance = window.FastCommentsUI(document.getElementById('page-reacts-example'), config);
+        const instance = window.FastCommentsUI(document.getElementById('fastcomments-widget'), config);
         window.addEventListener('load', function() {
             if (document.getElementById('wrappertext').classList.contains('day-mode')) {
                 document.body.classList.add('day');
