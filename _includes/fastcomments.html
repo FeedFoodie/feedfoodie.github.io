@@ -3,9 +3,23 @@
 <script id="fastcomments" src="https://cdn-eu.fastcomments.com/js/embed-v2.min.js"></script>
 <div id="fastcomments-widget"></div>
 <script>
+    FastCommentsUI(document.getElementById('fastcomments-widget'), {
+        tenantId: 'eu-eFwXogixzsA',
+        pageReactConfig: {
+            showUsers: false,
+            reacts: [
+                {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
+                {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
+                {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
+                {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
+                {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
+                {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' },
+            ]
+        }
+    });
     (function() {
         const setCommentMode = document.getElementById('setMode');
-        const config = {
+        /*const config = {
             tenantId: 'eu-eFwXogixzsA',
             pageReactConfig: {
                 showUsers: false,
@@ -15,10 +29,10 @@
                     {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
                     {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
                     {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
-                    {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' }
+                    {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' },
                 ]
             },
-        };
+        };*/
         const instance = window.FastCommentsUI(document.getElementById('fastcomments-widget'), config);
         window.addEventListener('load', function() {
             if (document.getElementById('wrappertext').classList.contains('day-mode')) {
