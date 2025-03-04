@@ -19,7 +19,7 @@
     });
     (function() {
         const setCommentMode = document.getElementById('setMode');
-        /*const config = {
+        const config = {
             tenantId: 'eu-eFwXogixzsA',
             pageReactConfig: {
                 showUsers: false,
@@ -32,7 +32,7 @@
                     {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' },
                 ]
             },
-        };*/
+        };
         const instance = window.FastCommentsUI(document.getElementById('fastcomments-widget'), config);
         window.addEventListener('load', function() {
             if (document.getElementById('wrappertext').classList.contains('day-mode')) {
