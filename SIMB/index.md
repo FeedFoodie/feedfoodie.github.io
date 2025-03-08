@@ -29,6 +29,8 @@ Baek Suryong thus embarks on a journey to become the Star Instructor of the Azur
 
 [Volume 2 (chapters 99 - 199)](/SIMB/epubs/SIMB_V02.epub)
 
+[Volume 3 (chapters 200 - 296)](/SIMB/epubs/SIMB_V03.epub)
+
 ## Raws
 
 [Novel Raws](https://series.naver.com/novel/detail.series?productNo=5579750){:target="_blank"}
