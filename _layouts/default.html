@@ -43,7 +43,17 @@
       </div>
     </main>
 
-    {%- include footer.html -%}
+    {% if page.tags == "simb" %}
+		  {%- include footer-simb.html -%}
+		{% elsif page.tags == "absw" %}
+		  {%- include footer-absw.html -%}
+		{% elsif page.tags == "lnb" %}
+		  {%- include footer-lnb.html -%}
+		{% else %}
+		  {%- include footer.html -%}
+		{% endif %}
+
+    
 
   </body>
 
