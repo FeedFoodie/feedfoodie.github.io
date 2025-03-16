@@ -35,26 +35,26 @@ Before you can subscribe to the feed, you will need an RSS reader app or browser
 	- [Subscribe to Star Instructor Master Baek](https://northbladetl.com/feed.simb.xml)
 	- [Subscribe to Absolute Warrior](https://northbladetl.com/feed.absw.xml)
 - Select "Add feed" on the RSS reader app and paste the feed url.
-- The app should now send you notifications when a chapter is uploaded
+- The app should now send you notifications when a chapter is uploaded.
 
 ### For Browser Extension
 
 - Click on the "Subscribe to Series" link above to open the feed url. 
 - Click on your browser extension icon, then select "Find Feeds in Current Tab".
-- Hit "Subscribe"
+- Hit "Subscribe".
 - The browser extension should send you a notification whenever a chapter is uploaded.
 
 ### If You Hate RSS Readers and Prefer Email, Discord, Telegram, or Slack Updates
 
-1. Go to [rss.app](https://rss.app/) and sign up for a new account
-2. If you want email alerts, skip to step
+1. Go to [rss.app](https://rss.app/) and sign up for a new account.
+2. If you want email alerts, skip to step 5.
 3. Click "Bots and Alerts" on the sidebar.
-4. Connect Bot to Discord, Telegram, Slack, whichever you prefer
-5. On the left sidebar, click "Add Feed"
-6. Open the feed url, i.e. the subscribe to series links above in a new tab
-7. Copy the feed url into rss.app's "Add Feed" page
+4. Connect Bot to Discord, Telegram, Slack, whichever you prefer.
+5. On the left sidebar, click "Add Feed".
+6. Open the feed url, i.e. the subscribe to series links above in a new tab.
+7. Copy the feed url into rss.app's "Add Feed" page.
 8. You should see an option to choose the Native RSS Feed or Alternative RSS Feed, pick whichever one you prefer the look of.
-9. Click "Save to my feeds"
-10. You should see a "Connect Bots" link on the right sidebar, click it
-11. Save the new bot
+9. Click "Save to my feeds".
+10. You should see a "Connect Bots" link on the right sidebar, click it.
+11. Save the new bot.
 12. Your new RSS bot should now update you via the method you prefer!
