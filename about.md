@@ -24,32 +24,16 @@ This website relies on RSS feeds to provide you with timely updates about chapte
 Before you can subscribe to the feed, you will need an RSS reader app or browser extension, such as the ones below:
 
 - iOS: [Feedly](https://apps.apple.com/us/app/feedly-smart-news-reader/id396069556)
-
 - Android: [Feedly](https://play.google.com/store/apps/details?id=com.devhd.feedly)
-
 - Firefox: [Feedbro](https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/)
-
 - Chrome: [Feedbro](https://chromewebstore.google.com/detail/feedbro/mefgmmbdailogpfhfblcnnjfmnpnmdfa)
-
 - Edge: [Feedbro](https://microsoftedge.microsoft.com/addons/detail/feedbro/pdfbckdfhgaohcfdkcgpggcifmalimfd)
 
 ### For Mobile Apps
 
 - Copy the feed url for the series you want:
-	- <p class="feed-subscribe">
-  <a href="{{ 'feed.simb.xml' | relative_url }}">
-    <svg class="svg-icon orange">
-      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-    </svg><span>Subscribe to Star Instructor Master Baek</span>
-  </a>
-	</p>
-	- <p class="feed-subscribe">
-  <a href="{{ 'feed.absw.xml' | relative_url }}">
-    <svg class="svg-icon orange">
-      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-    </svg><span>Subscribe to Absolute Warrior</span>
-  </a>
-	</p>
+	- [Star Instructor Master Baek](https://northbladetl.com/feed.simb.xml)
+	- [Absolute Warrior](https://northbladetl.com/feed.absw.xml)
 - Select "Add feed" on the RSS reader app and paste the feed url.
 - The app should now send you notifications when a chapter is uploaded
 
