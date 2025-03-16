@@ -34,7 +34,7 @@ Before you can subscribe to the feed, you will need an RSS reader app or browser
 - Copy the feed url for the series you want:
 	- [Subscribe to Star Instructor Master Baek](https://northbladetl.com/feed.simb.xml)
 	- [Subscribe to Absolute Warrior](https://northbladetl.com/feed.absw.xml)
-- Select "Add feed" on the RSS reader app and paste the feed url.
+- Select "Add Feed" or "Add Content" on the RSS reader app and paste the feed url.
 - The app should now send you notifications when a chapter is uploaded.
 
 ### For Browser Extension
