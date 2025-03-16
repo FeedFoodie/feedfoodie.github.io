@@ -39,7 +39,7 @@ Before you can subscribe to the feed, you will need an RSS reader app or browser
 
 ### For Browser Extension
 
-- Click on the "Subscribe" link to open the feed url. 
+- Click on the "Subscribe to Series" link above to open the feed url. 
 - Click on your browser extension icon, then select "Find Feeds in Current Tab".
 - Hit "Subscribe"
 - The browser extension should send you a notification whenever a chapter is uploaded.
