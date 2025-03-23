@@ -63,7 +63,7 @@
 
 @media only screen and (min-width: 600px) {
 	.header-link {
-		margin-left: 60px !important;
+		margin-left: 50px !important;
 		margin-right: 0px !important;
 	}
 
@@ -73,8 +73,8 @@
 
 	.header-droplink {
 		font-size: 18px;
-		margin-left: 130px !important;
-		margin-right: 130px !important;
+		margin-left: 140px !important;
+		margin-right: 140px !important;
 	}
 
 	.menu {
