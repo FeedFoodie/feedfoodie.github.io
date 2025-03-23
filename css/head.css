@@ -106,7 +106,7 @@
 	.dropdown-content {
 		display: none;
 		right: unset;
-		float: center;
+		text-align: center;
 		position: absolute;
 		background-color: #b5b4c5;
 		min-width: 250px;
