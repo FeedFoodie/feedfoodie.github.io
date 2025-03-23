@@ -1,7 +1,7 @@
 - title: Main Menu
   subfolderitems:
-    - name: "Home"
-      url: "../"
+    - name: "About"
+      url: "/about.html"
       weight: 2
     - name: "Novels"
       url: "#"
@@ -22,9 +22,6 @@
         - name: "Surviving as a Genius on Borrowed Time"
           url: "/FBC/"
           weight: 2
-    - name: "About"
-      url: "/about.html"
-      weight: 3
     - name: "Discord"
       url: "https://discord.gg/s3AsADMkNQ"
       weight: 3
