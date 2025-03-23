@@ -67,6 +67,10 @@
 		margin-right: 0px !important;
 	}
 
+	.header-dropcontent {
+		font-size: 18px;
+	}
+
 	.header-droplink {
 		font-size: 18px;
 		margin-left: 100px !important;
