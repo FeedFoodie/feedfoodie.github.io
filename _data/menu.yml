@@ -25,3 +25,6 @@
     - name: "About"
       url: "/about.html"
       weight: 3
+    - name: "Discord"
+      url: "https://discord.gg/s3AsADMkNQ"
+      weight: 3
