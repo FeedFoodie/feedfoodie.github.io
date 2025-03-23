@@ -3,6 +3,9 @@
     - name: "About"
       url: "/about.html"
       weight: 2
+    - name: "Discord"
+      url: "https://discord.gg/s3AsADMkNQ"
+      weight: 3
     - name: "Novels"
       url: "#"
       weight: 3
@@ -22,6 +25,3 @@
         - name: "Surviving as a Genius on Borrowed Time"
           url: "/FBC/"
           weight: 2
-    - name: "Discord"
-      url: "https://discord.gg/s3AsADMkNQ"
-      weight: 3

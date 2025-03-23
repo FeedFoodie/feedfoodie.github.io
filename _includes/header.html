@@ -28,14 +28,14 @@
                 <div id="novelDropdown" class="dropdown-content">
                   {% for subentry in entry.subsubfolderitems %}
                     <li>
-                       <a class="header-link" href="{{ subentry.url }}">{{ subentry.name }}</a>
+                       <a class="header-link" href="{{ subentry.url }}" target="_blank">{{ subentry.name }}</a>
                     </li>
                   {% endfor %}
                 </div>
                </ul>
             {% else %}
               <ul class="dropdown">
-                <button class="dropbtn header-link" onclick="location.href='{{ entry.url }}'" type="button">{{ entry.name }}</button>
+                <button class="dropbtn header-link" onclick="location.href='{{ entry.url }}'" type="button" target="_blank">{{ entry.name }}</button>
               </ul>              
             {% endif %}
           </li>
