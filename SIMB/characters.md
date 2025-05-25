@@ -11,14 +11,14 @@ title: Star Instructor Master Baek
 
 **Baek Suryong:** 
 
-- Title: Azure Dragon Hero, Handsome Playboy, Blood Demon
+- Title: Azure Dragon Hero, Handsome Playboy
 - Martial Arts: Heaven Defying Divine Art, Eighteen Strikes of the Viridian Forest, Unlimited Sword, Asura Blood Heaven Blade, New Moon White Ice Dance, White Ice Divine Art
 - Age: 27
 - The protagonist and a reincarnated Blood Cult martial arts instructor (Name: Number 27). In his past life, he learned the world’s greatest martial arts from the Sword Saint Moyong Hon, the Bandit King Maeng Ho'ak, the Ice Moon Goddess Eun Yerin, the Crazy Demon Hyonwon Hu, and the Blood Demon. In this life, he has enrolled as a newbie instructor at the Azure Dragon Academy with the dream of becoming the Star Instructor and earning a lot of money to treat his Heavenly Yin Severed Meridians.
 
 **Namgung Su:** 
 
-- Title: Three Absolutes Sword
+- Title: Three Absolutes Sword, Lightning Dragon Hero
 - Martial Arts: Heavenly Lightning Sword Technique
 - The current Star Instructor of the Azure Dragon Academy. Baek Suryong’s worst rival, best friend, and fellow sufferer of severe workaholism. Has an overly serious and judgmental but extremely caring and attentive personality, which is usually overshadowed by his sharp, sarcastic tongue.
 
@@ -238,7 +238,7 @@ title: Star Instructor Master Baek
 
 **Dark Heaven Goddess:**
 
-- Principal of the Black Tortoise Academy. A master sorceror.
+- Principal of the Black Tortoise Academy. A master sorcerer.
 
 
 
