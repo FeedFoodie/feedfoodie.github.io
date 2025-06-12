@@ -1,10 +1,18 @@
 <script type="text/javascript" src="/js/changeMode.js"></script>
+
 {% if page.comments %}
 <script id="fastcomments" src="https://cdn-eu.fastcomments.com/js/embed-v2.min.js"></script>
 <div id="fastcomments-widget"></div>
 <script>
-    FastCommentsUI(document.getElementById('fastcomments-widget'), {
+    // Define the configuration object once for cleanliness and consistency.
+    const fastcommentsConfig = {
         tenantId: 'eu-eFwXogixzsA',
+        
+        // --- THIS IS THE FIX ---
+        // Sets the permanent URL for the comment thread, ignoring any #hashes.
+        urlId: "{{ site.url }}{{ page.url }}",
+        
+        // Your custom reactions config
         pageReactConfig: {
             showUsers: false,
             reacts: [
@@ -16,40 +24,32 @@
                 {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' },
             ]
         }
-    });
+    };
+
+    // Initialize the widget with our new configuration.
+    const instance = FastCommentsUI(document.getElementById('fastcomments-widget'), fastcommentsConfig);
+
+    // This improved logic for your Day/Night mode toggle is more efficient.
     (function() {
         const setCommentMode = document.getElementById('setMode');
-        const config = {
-            tenantId: 'eu-eFwXogixzsA',
-            pageReactConfig: {
-                showUsers: false,
-                reacts: [
-                    {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
-                    {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
-                    {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
-                    {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
-                    {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
-                    {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' },
-                ]
-            },
-        };
-        const instance = window.FastCommentsUI(document.getElementById('fastcomments-widget'), config);
-        window.addEventListener('load', function() {
-            if (document.getElementById('wrappertext').classList.contains('day-mode')) {
+        const wrapper = document.getElementById('wrappertext');
+        
+        function syncCommentTheme() {
+            if (wrapper && wrapper.classList.contains('day-mode')) {
                 document.body.classList.add('day');
-            }
-            instance.update(config);
-        });
-        setCommentMode.addEventListener('click', function() {
-            if (document.body.classList.contains('day')) {
-                document.body.classList.remove('day');
             } else {
-                document.body.classList.add('day');
+                document.body.classList.remove('day');
             }
-            instance.update(config);
-        });
+        }
+        
+        window.addEventListener('load', syncCommentTheme);
+        
+        if (setCommentMode) {
+            setCommentMode.addEventListener('click', function() {
+                setTimeout(syncCommentTheme, 50);
+            });
+        }
     })();
-
 </script>
 
 <style>
