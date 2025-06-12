@@ -4,15 +4,9 @@
 <script id="fastcomments" src="https://cdn-eu.fastcomments.com/js/embed-v2.min.js"></script>
 <div id="fastcomments-widget"></div>
 <script>
-    // Define the configuration object once for cleanliness and consistency.
     const fastcommentsConfig = {
         tenantId: 'eu-eFwXogixzsA',
-        
-        // --- THIS IS THE FIX ---
-        // Sets the permanent URL for the comment thread, ignoring any #hashes.
-        urlId: "{{ site.url }}{{ page.url }}",
-        
-        // Your custom reactions config
+        urlId: "{{ site.url }}{{ page.url }}", // <-- The URL fix
         pageReactConfig: {
             showUsers: false,
             reacts: [
@@ -26,29 +20,27 @@
         }
     };
 
-    // Initialize the widget with our new configuration.
-    const instance = FastCommentsUI(document.getElementById('fastcomments-widget'), fastcommentsConfig);
-
-    // This improved logic for your Day/Night mode toggle is more efficient.
     (function() {
         const setCommentMode = document.getElementById('setMode');
-        const wrapper = document.getElementById('wrappertext');
-        
-        function syncCommentTheme() {
-            if (wrapper && wrapper.classList.contains('day-mode')) {
-                document.body.classList.add('day');
-            } else {
-                document.body.classList.remove('day');
-            }
-        }
-        
-        window.addEventListener('load', syncCommentTheme);
-        
+        const instance = window.FastCommentsUI(document.getElementById('fastcomments-widget'), fastcommentsConfig);
+
         if (setCommentMode) {
-            setCommentMode.addEventListener('click', function() {
-                setTimeout(syncCommentTheme, 50);
+             setCommentMode.addEventListener('click', function() {
+                if (document.body.classList.contains('day')) {
+                    document.body.classList.remove('day');
+                } else {
+                    document.body.classList.add('day');
+                }
+                instance.update(fastcommentsConfig); // This forces the theme to refresh
             });
         }
+
+        window.addEventListener('load', function() {
+            if (document.getElementById('wrappertext').classList.contains('day-mode')) {
+                document.body.classList.add('day');
+            }
+            instance.update(fastcommentsConfig);
+        });
     })();
 </script>
 
