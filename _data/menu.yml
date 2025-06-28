@@ -16,12 +16,9 @@
         - name: "Star Instructor Master Baek"
           url: "/SIMB/"
           weight: 2
-        - name: "Heroes"
-          url: "/HERO/"
-          weight: 2
         - name: "Absolute Warrior"
           url: "/ABSW/"
           weight: 2
-        - name: "Surviving as a Genius on Borrowed Time"
-          url: "/FBC/"
+        - name: "Heroes"
+          url: "/HERO/"
           weight: 2
