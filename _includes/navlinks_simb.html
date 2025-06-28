@@ -21,7 +21,6 @@
 {% endfor %}
 
 <div class="centersel">
-<p>Subscribe to Updates via <a href="{{ 'feed.simb.xml' | relative_url }}">RSS</a>, <a href="https://www.novelupdates.com/series/star-instructor-master-baek/">Novelupdates</a>, or <a href="https://discord.gg/s3AsADMkNQ">Discord</a>!</p>
 <select class="cmb"  onchange="location = this.value;" style="width: 350px">
 	{% for post in site.posts reversed %}	
 		{% if post.tags contains 'simb' %}
@@ -51,4 +50,8 @@
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
   </a>
   {%- endif -%}
+</div>
+
+<div class="centersel">
+<p>Subscribe to Updates via <a href="{{ 'feed.simb.xml' | relative_url }}">RSS</a>, <a href="https://www.novelupdates.com/series/star-instructor-master-baek/">Novelupdates</a>, or <a href="https://discord.gg/s3AsADMkNQ">Discord</a>!</p>
 </div>
