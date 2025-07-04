@@ -1,6 +1,6 @@
 ---
 layout: postHERO
-title: "Chapter title"
+title: "Chapter "
 comments: true
 tags: [hero]
 categories: [hero]

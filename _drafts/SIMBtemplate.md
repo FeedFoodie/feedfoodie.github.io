@@ -1,6 +1,6 @@
 ---
 layout: postSIMB
-title: "Chapter title"
+title: "Chapter "
 comments: true
 tags: [simb]
 categories: [simb]
