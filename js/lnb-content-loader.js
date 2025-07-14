@@ -1,12 +1,13 @@
-// Wait for the page's HTML to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   const contentContainer = document.getElementById('content-container');
+  const sourceFile = document.body.dataset.source;
 
-  // Check if the placeholder container exists on the page
+  // --- ADD THESE TWO DEBUGGING LINES ---
+  console.log("Content container found:", contentContainer);
+  console.log("Source file found:", sourceFile);
+  // ------------------------------------
+
   if (contentContainer) {
-    // Find the markdown source file name from the front matter
-    const sourceFile = document.body.dataset.source;
-
     if (sourceFile) {
       // Construct the path to the markdown file
       const filePath = `/LNB/chapters/${sourceFile}`;
