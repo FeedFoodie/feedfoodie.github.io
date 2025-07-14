@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const contentContainer = document.getElementById('content-container');
+  // Get the source file name from the body's data attribute
   const sourceFile = document.body.dataset.source;
 
+  // Log elements for debugging purposes
+  console.log("Content container found:", contentContainer);
+  console.log("Source file found:", sourceFile);
+
+  // Proceed only if both the container and source file name exist
   if (contentContainer && sourceFile) {
     // Construct the full path to the markdown file
     const filePath = `/ABSW/chapters/${sourceFile}`;
@@ -17,11 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
         return response.text();
       })
       .then(markdown => {
+        // --- DEBUGGING LOGS ---
+        console.log("1. Original markdown from fetch:", markdown);
+        // Check if {sep} exists in the fetched content
+        if (!markdown.includes('{sep}')) {
+            console.warn("Warning: The string '{sep}' was not found in the fetched markdown file.");
+        }
+
         // Use a regular expression with the 'g' flag to replace all occurrences of {sep}
         const updatedMarkdown = markdown.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep">');
-
+        console.log("2. Markdown after replacement:", updatedMarkdown);
+        
         // Use the 'marked' library to parse the modified markdown into HTML
         const htmlContent = marked.parse(updatedMarkdown);
+        console.log("3. Final HTML from marked:", htmlContent);
+        // ------------------------
         
         // Set the inner HTML of the container to the newly created HTML
         contentContainer.innerHTML = htmlContent;
