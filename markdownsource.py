@@ -2,14 +2,6 @@ import os
 import re
 
 def add_markdown_source_to_posts(directory="temp"):
-    """
-    Adds a 'markdown_source' field to the YAML front matter of all .md files
-    in a specified directory.
-
-    Args:
-        directory (str): The path to the directory containing the markdown posts.
-                         Defaults to "_posts".
-    """
     if not os.path.isdir(directory):
         print(f"Error: Directory '{directory}' not found.")
         print("Please run this script from the root of your Jekyll project.")
