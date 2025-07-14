@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const contentContainer = document.getElementById('content-container');
   const sourceFile = document.body.dataset.source;
 
+  marked.use(markedFootnote());
+
   if (contentContainer && sourceFile) {
     const filePath = `/LNB/chapters/${sourceFile}`;
 
