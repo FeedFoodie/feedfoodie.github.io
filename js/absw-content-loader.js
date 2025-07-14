@@ -2,7 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const contentContainer = document.getElementById('content-container');
   const sourceFile = document.body.dataset.source;
 
-  marked.use(markedFootnote());
+  // Define the custom options for the footnote header
+  const footnoteOptions = {
+    description: '<hr><h3>Footnotes</h3>'
+  };
+
+  // Pass the options object to the extension
+  marked.use(markedFootnote(footnoteOptions));
 
   if (contentContainer && sourceFile) {
     const filePath = `/ABSW/chapters/${sourceFile}`;
