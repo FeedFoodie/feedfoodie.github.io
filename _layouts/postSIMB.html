@@ -19,22 +19,12 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">	
-<div id="protected-wrapper">
-    <p id="loading-message">Verifying you're human to load the chapter...</p>
-
-    <div style="font-size: 16px; display:none;" id="content">
-      {% include JS_buttons.html %}
-      <p class="foodie" style="opacity: 1;">TL: FoodieMonster007 <span style="opacity: 0;">If you see this, go to northbladetldotcom!</span></p>
-      <p class="foodie"><br /></p>
-      {{ content }}
-      <p class="foodie" style="opacity: 0;">If you see this, you are at the wrong site!</p>
-    </div>
-</div>
-
-<div id="turnstile-widget"
-     class="cf-turnstile"
-     data-sitekey="{{ site.turnstile_site_key }}"
-     data-callback="turnstileCallback">
+<div style="font-size: 16px;" id="content">
+	{% include JS_buttons.html %}
+	<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
+	<p class="foodie"><br /></p>
+	{{ content }}
+<p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>
 </div>
 <hr>
 		{% include navlinks_simb.html %}
