@@ -10,6 +10,7 @@ function turnstileCallback(token) {
   if (contentToShow && loadingMessage) {
     // Hide the "Loading..." message
     loadingMessage.style.display = 'none';
+    turnstile-widget.style.display = 'none';
     
     // Show the protected content by changing its display style
     contentToShow.style.display = 'block';
