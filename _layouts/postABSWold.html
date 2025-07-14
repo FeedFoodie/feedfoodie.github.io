@@ -6,7 +6,7 @@ layout: default
 
   <header class="post-header">
 	<br />
-    <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">LNB {{ page.title | escape }}</h1>
+    <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">Absolute Warrior {{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -19,15 +19,15 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">	
-<div style="font-size: 16px;" id="content">					
+<div style="font-size: 16px;" id="content">
 	{% include JS_buttons.html %}
-	<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20 <span style="opacity: 0;">northbladetldotcom!</span></p>
+	<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
 	<p class="foodie"><br /></p>
 	{{ content }}
 <p class="foodie"  style="opacity: 0;">If you see this, you are at the wrong site!</p>
 </div>
 <hr>
-		{% include navlinks_lnb.html %}
+		{% include navlinks_absw.html %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
