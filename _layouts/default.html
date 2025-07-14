@@ -3,7 +3,7 @@
 
 {%- include head.html -%}
 
-  <body style="background-color: #121212;">
+  <body style="background-color: #121212;" data-source="{{ page.markdown_source }}">
 
     {%- include header.html -%}
 	{% include chapter_tagging.html %}
@@ -53,7 +53,7 @@
 		  {%- include footer.html -%}
 		{% endif %}
 
-    
+    {%- include protected_post.html -%}
 
   </body>
 

@@ -1,7 +1,7 @@
 import os
 import re
 
-def add_markdown_source_to_posts(directory="_posts"):
+def add_markdown_source_to_posts(directory="temp"):
     """
     Adds a 'markdown_source' field to the YAML front matter of all .md files
     in a specified directory.

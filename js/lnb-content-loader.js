@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (sourceFile) {
       // Construct the path to the markdown file
-      const filePath = `/protected_content/${sourceFile}`;
+      const filePath = `/LNB/chapters/${sourceFile}`;
 
       // Fetch the markdown file
       fetch(filePath)
