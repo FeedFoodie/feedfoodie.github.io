@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Define the custom options for the footnote header
   const footnoteOptions = {
-    description: '<hr><h3>Footnotes</h3>'
+    description: '<hr><h3>Footnotes:</h3>'
   };
 
   // Pass the options object to the extension
