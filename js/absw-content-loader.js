@@ -2,12 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const contentContainer = document.getElementById('content-container');
   const sourceFile = document.body.dataset.source;
 
-  // Define the custom options for the footnote header
   const footnoteOptions = {
     description: '<hr><h3>Footnotes:</h3>'
   };
 
-  // Pass the options object to the extension
   marked.use(markedFootnote(footnoteOptions));
 
   if (contentContainer && sourceFile) {
@@ -21,8 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
         return response.text();
       })
       .then(markdown => {
-        const updatedMarkdown = markdown.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep">');
-        const htmlContent = marked.parse(updatedMarkdown);
+        const updatedMarkdown = markdown
+          .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep">')
+          .replace(/@\[/g, '<span class="night-mode-quotes">')
+          .replace(/\]@/g, '</span>');
+
+        let htmlContent = marked.parse(updatedMarkdown);
+
+        htmlContent = htmlContent.replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">');
+
         contentContainer.innerHTML = htmlContent;
       })
       .catch(error => {
