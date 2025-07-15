@@ -43,6 +43,9 @@
       </div>
     </main>
 
+    <!-- Honeypot Trap: This link is hidden from users but visible to bots. -->
+		<a href="/trap-for-bots.html" style="position:absolute; left:-9999px; top:-9999px;"></a>
+
     {% if page.tags contains "simb" %}
 		  {%- include footer-simb.html -%}
 		{% elsif page.tags contains "absw" %}
