@@ -1,0 +1,44 @@
+# robots.txt for northbladetl.com
+# Last updated: July 15, 2024
+
+# Allow all search engines by default, but disallow specific chapter directories.
+User-agent: *
+Allow: /
+Disallow: /SIMB/chapters/
+Disallow: /ABSW/chapters/
+Disallow: /LNB/chapters/
+
+# Explicitly allow the Novel-Updates bot.
+User-agent: NUBot
+Allow: /
+
+# Block common scrapers, content aggregators, and AI data collectors.
+# Add or remove bots from this list as needed.
+
+# SEO/Marketing bots (can be aggressive)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# AI Crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Other aggressive crawlers
+User-agent: PetalBot
+Disallow: /
+
+# Common scraping frameworks
+User-agent: Scrapy
+Disallow: /
