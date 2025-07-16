@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 .replace(/\]@/g, '</span>')
         );
 
-        // Apply all replacements efficiently
+        // Apply all HTML replacements efficiently in a single chain
         htmlContent = htmlContent
             .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-            .replace(/<p>aggAnnoy(\d{2})/g, (match, key) => annoyReplacements[key] || match);
-            .replace(/<p>/g, '<p class="foodie">')
+            .replace(/<p>aggAnnoy(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+            .replace(/<p>/g, '<p class="foodie">');
 
         contentContainer.innerHTML = htmlContent;
 
