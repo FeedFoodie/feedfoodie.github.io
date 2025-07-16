@@ -1,37 +1,55 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const contentContainer = document.getElementById('content-container');
-  const sourceFile = document.body.dataset.source;
+document.addEventListener('DOMContentLoaded', async () => {
+    const contentContainer = document.getElementById('content-container');
+    const sourceFile = document.body.dataset.source;
 
-  const footnoteOptions = {
-    description: '<hr><h3>Footnotes:</h3>'
-  };
+    if (!contentContainer || !sourceFile) {
+        console.error("Content container or source file not specified.");
+        return;
+    }
 
-  marked.use(markedFootnote(footnoteOptions));
+    // Configure marked.js with the footnote extension
+    marked.use(markedFootnote({
+        description: '<hr><h3>Footnotes:</h3>'
+    }));
+    
+    // Define replacements for aggAnnoy patterns
+    const annoyReplacements = {
+        '01': '<p class="ffoodie">Why aren′t you reading this at northbladetldotcom?',
+        '02': '<p class="fooodie">Y aren′t you reading this at northbladetldotcom?',
+        '03': '<p class="fooddie">You ought to read this at northbladetldotcom.',
+        '04': '<p class="foodiie">Read this at northbladetldotcom, or else.',
+        '05': '<p class="foodiee">northbladetldotcom welcomes you.',
+        '06': '<p class="ffoodie">This is a non-profit translation. You should not be seeing ads.',
+        '07': '<p class="fooodie">This is a free translation. You should not be seeing ads.',
+        '08': '<p class="fooddie">This is a non-profit translation. There are no ads.',
+        '09': '<p class="foodiie">This is a non-profit translation. Ads? What ads?',
+        '10': '<p class="foodiee">If you′re seeing this, you are at the wrong place.'
+    };
 
-  if (contentContainer && sourceFile) {
-    const filePath = `/ABSW/chapters/${sourceFile}`;
-
-    fetch(filePath)
-      .then(response => {
+    try {
+        const response = await fetch(`/ABSW/chapters/${sourceFile}`);
         if (!response.ok) {
-          throw new Error(`Network response was not ok: ${response.statusText}`);
+            throw new Error(`Network response was not ok: ${response.statusText}`);
         }
-        return response.text();
-      })
-      .then(markdown => {
-        const updatedMarkdown = markdown
-          .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep">')
-          .replace(/@\[/g, '<span class="night-mode-quotes">')
-          .replace(/\]@/g, '</span>');
+        let markdown = await response.text();
 
-        let htmlContent = marked.parse(updatedMarkdown);
+        // Process markdown and convert to HTML
+        let htmlContent = marked.parse(
+            markdown
+                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep">')
+                .replace(/@\[/g, '<span class="night-mode-quotes">')
+                .replace(/\]@/g, '</span>')
+        );
 
-        htmlContent = htmlContent.replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">');
+        // Apply all replacements efficiently
+        htmlContent = htmlContent
+            .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
+            .replace(/<p>aggAnnoy(\d{2})/g, (match, key) => annoyReplacements[key] || match);
 
         contentContainer.innerHTML = htmlContent;
-      })
-      .catch(error => {
+
+    } catch (error) {
+        console.error("Failed to load chapter content:", error);
         contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content.</p>';
-      });
-  }
+    }
 });
