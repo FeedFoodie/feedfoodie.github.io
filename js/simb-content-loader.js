@@ -1,21 +1,12 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    // 1. DEFINE YOUR SECRET KEY HERE
+    const mySecretKey = 'foodiemonster007s-bunnies-pika-and-cotton-are-very-hungry'; 
+
     const contentContainer = document.getElementById('content-container');
-    // Assuming the source file is stored in a data attribute on the body
     const sourceFile = document.body.dataset.source;
 
     if (!contentContainer || !sourceFile) {
         console.error("Content container or source file not specified.");
-        // Display a user-friendly message if the container is missing
-        if (contentContainer) {
-            contentContainer.innerHTML = '<p style="color: red;">Error: Source file not specified.</p>';
-        }
-        return;
-    }
-
-    // It's good practice to check if the 'marked' library is available
-    if (typeof marked === 'undefined' || typeof markedFootnote === 'undefined') {
-        console.error('marked.js or marked-footnote not loaded.');
-        contentContainer.innerHTML = '<p style="color: red;">A required script (marked.js) failed to load.</p>';
         return;
     }
 
@@ -39,7 +30,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // Fetch the markdown content from the specified file
         const response = await fetch(`/SIMB/chapters/${sourceFile}`);
         if (!response.ok) {
             throw new Error(`Network response was not ok: ${response.statusText}`);
@@ -60,7 +50,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             .replace(/<p>aggAnnoy(\d{2})/g, (match, key) => annoyReplacements[key] || match)
             .replace(/<p>/g, '<p class="foodie">');
 
-        // Set the final HTML content
         contentContainer.innerHTML = htmlContent;
 
     } catch (error) {

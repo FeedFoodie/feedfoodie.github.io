@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    // 1. DEFINE YOUR SECRET KEY HERE
+    const mySecretKey = 'foodiemonster007s-bunnies-pika-and-cotton-are-very-hungry'; 
+
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
