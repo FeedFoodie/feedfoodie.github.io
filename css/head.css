@@ -159,6 +159,7 @@ img {
     z-index: -1;
     opacity: 0.1;
     font-size: 1px;
+    margin-bottom: 0px;
 }
 
 .day-mode .fooodie, 
