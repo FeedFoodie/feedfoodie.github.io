@@ -30,7 +30,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        const response = await fetch(`/LNB/chapters/${sourceFile}`);
+        const response = await fetch(`/LNB/chapters/${sourceFile}`, {
+            headers: {
+                'X-Internal-Request-Token': mySecretKey
+            }
+        });
+
         if (!response.ok) {
             throw new Error(`Network response was not ok: ${response.statusText}`);
         }
