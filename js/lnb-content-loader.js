@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    // 1. DEFINE YOUR SECRET KEY HERE
-    const mySecretKey = 'foodiemonster007s-bunnies-pika-and-cotton-are-very-hungry'; 
+    const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZC1jb3R0b24tYXJlLXZlcnktaHVuZ3J5';
 
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch(`/LNB/chapters/${sourceFile}`, {
             headers: {
-                'X-Internal-Request-Token': mySecretKey
+                'X-Internal-Request-Token': atob(htmlViewer)
             }
         });
 
