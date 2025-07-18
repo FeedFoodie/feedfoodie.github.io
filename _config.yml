@@ -48,32 +48,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate-v2
 
-defaults:
-  -
-    scope:
-      path: "SIMB/chapters"
-      type: pages
-    values:
-      sitemap: false
-  -
-    scope:
-      path: "LNB/chapters"
-      type: pages
-    values:
-      sitemap: false
-  -
-    scope:
-      path: "ABSW/chapters"
-      type: pages
-    values:
-      sitemap: false
-
-#  -
-#    scope:
-#      path: "HERO/chapters"
-#      type: pages
-#    values:
-#      sitemap: false
+jekyll-sitemap:
+  exclude:
+    - "SIMB/chapters/**"
+    - "LNB/chapters/**"
+    - "ABSW/chapters/**"
+    - "HERO/chapters/**"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
