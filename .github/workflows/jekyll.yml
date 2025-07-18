@@ -1,9 +1,4 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# Workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll site to Pages
 
 on:
@@ -40,22 +35,25 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems
           cache-version: 0
 
-      # 👇 ADD THIS STEP to cache the Jekyll build metadata
+      # Cache the Jekyll build metadata
       - name: Cache Jekyll metadata
         uses: actions/cache@v4
         with:
           path: |
             _site
             .jekyll-metadata
-          key: ${{ runner.os }}-jekyll-build-${{ hashFiles('**/Gemfile.lock') }}
+          # Use a unique key for saving based on the commit SHA
+          key: ${{ runner.os }}-jekyll-build-${{ github.sha }}
+          # Use a general key for restoring the most recent cache for this branch
           restore-keys: |
+            ${{ runner.os }}-jekyll-build-${{ github.ref_name }}-
             ${{ runner.os }}-jekyll-build-
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      # 👇 MODIFY THIS STEP to use the --incremental flag
+      # Use the --incremental flag
       - name: Build with Jekyll
         run: bundle exec jekyll build --incremental --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
