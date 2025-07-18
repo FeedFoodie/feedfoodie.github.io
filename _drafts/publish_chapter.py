@@ -6,25 +6,33 @@ from tkinter import filedialog
 import random
 
 def add_agg_annoy_markers(lines):
-    if not lines:
+    text_lines = lines[::2]
+    if not text_lines:
         return []
 
-    output_lines = []
+    output_items = []
     index = 0
-    while index < len(lines):
-        interval = random.choice(range(10, 31, 2))
-        output_lines.extend(lines[index:index + interval])
+    while index < len(text_lines):
+        interval = random.randint(6, 15)
+        output_items.extend(text_lines[index:index + interval])
         index += interval
         
-        if index < len(lines):
+        if index < len(text_lines):
             random_number = random.randint(1, 10)
-            random_string = f"\naggAnnoy{random_number:02d}\n\n"
-            output_lines.append(random_string)
-            
-    return output_lines
+            marker = f"aggAnnoy{random_number:02d}"
+            output_items.append(marker)
+
+    final_lines = []
+    for item in output_items:
+        final_lines.append(item.strip() + "\n")
+        final_lines.append("\n")
+
+    if final_lines:
+        final_lines.pop()
+        
+    return final_lines
 
 def process_markdown_files():
-    # Destination paths
     posts_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\_posts'
     absw_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\ABSW\chapters'
     simb_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\SIMB\chapters'
