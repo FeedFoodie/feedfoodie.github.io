@@ -47,7 +47,29 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate-v2
-  
+
+defaults:
+  -
+    scope:
+      path: "SIMB/chapters"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "LNB/chapters"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "ABSW/chapters"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "HERO/chapters"
+    values:
+      sitemap: false
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
