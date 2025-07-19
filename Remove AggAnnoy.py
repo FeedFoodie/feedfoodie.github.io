@@ -31,7 +31,7 @@ for directory in directories_to_process:
                         text = file.read()
 
                     # Conditionally remove the 'aggAnnoy' pattern if "ABSW" is not in the filename
-                    if "LNB" not in entry.name:
+                    if "ABSW" not in entry.name:
                         text = re.sub(r'aggAnnoy.*?\n\n', '', text, flags=re.DOTALL)
 
                     # Apply all other static replacements from the dictionary
