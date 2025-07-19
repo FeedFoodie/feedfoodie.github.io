@@ -1,3 +1,6 @@
+@use "sass:math";
+@use "sass:color";
+
 html {
   font-size: $base-font-size;
 }
@@ -46,7 +49,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: math.div($spacing-unit, 2);
 }
 
 hr {
@@ -143,7 +146,7 @@ a {
 blockquote {
   color: $brand-color;
   border-left: 4px solid $border-color-01;
-  padding-left: $spacing-unit / 2;
+  padding-left: math.div($spacing-unit, 2);
   @include relative-font-size(1.125);
   font-style: italic;
 
@@ -204,8 +207,8 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  padding-right: math.div($spacing-unit, 2);
+  padding-left: math.div($spacing-unit, 2);
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
@@ -266,7 +269,7 @@ table {
     }
   }
   th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: math.div($spacing-unit, 3) math.div($spacing-unit, 2);
   }
   th {
     background-color: $table-header-bg-color;
