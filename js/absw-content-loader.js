@@ -9,12 +9,9 @@ function _checkEnvProps() {
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
         if (gl) {
-            const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
-            if (debugInfo) {
-                const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
-                if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
-                    detected = true;
-                }
+            const renderer = gl.getParameter(gl.RENDERER);
+            if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
+                detected = true;
             }
         } else {
             detected = true;
@@ -31,15 +28,8 @@ function _checkEnvProps() {
         detected = true;
     }
 
-    if (navigator.hardwareConcurrency < 2) {
-        // This is highly prone to false positives for users on single-core CPUs, VMs, or older devices.
-        // I recommend commenting this out or removing it entirely unless you have specific reasons.
-        // detected = true;
-    }
-
     return detected;
 }
-
 
 document.addEventListener('DOMContentLoaded', async () => {
     const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZC1jb3R0b24tYXJlLXZlcnktaHVuZ3J5';
