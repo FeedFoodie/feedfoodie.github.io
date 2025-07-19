@@ -10,19 +10,8 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
 permalink: /:categories/:title:output_ext
 logo: /android-chrome-512x512.png
-pagination:
-  enabled: true
-  per_page: 20
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-archives:
-  - enabled: false
-    type: "paginated"
-    layouts: "home"
 
 turnstile_site_key: "0x4AAAAAABlBn5y8m8IJa-Vb"
-
 
 # Build settings
 # theme: minima
@@ -30,8 +19,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate-v2
-  - jekyll-archives
 
 jekyll-sitemap:
   exclude:
