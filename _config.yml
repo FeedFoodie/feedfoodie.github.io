@@ -45,7 +45,7 @@ turnstile_site_key: "0x4AAAAAABlBn5y8m8IJa-Vb"
 
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap

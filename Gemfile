@@ -3,9 +3,6 @@ source "https://rubygems.org"
 # Core Jekyll engine
 gem "jekyll"
 
-# Your site's theme
-gem "minima"
-
 # Required for 'jekyll serve' on Ruby 3.0+
 gem "webrick", "~> 1.8"
 
