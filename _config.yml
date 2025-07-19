@@ -17,7 +17,7 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 archives:
-  - enabled: true
+  - enabled: false
     type: "paginated"
     layouts: "home"
 
