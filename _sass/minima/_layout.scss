@@ -192,7 +192,7 @@
 
     &:last-child {
       padding-right: 0;
-      padding-left: $spacing-unit / 2;
+      padding-left: math.div($spacing-unit, 2);
     }
   }
 }
