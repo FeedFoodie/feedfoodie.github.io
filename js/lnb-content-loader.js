@@ -1,19 +1,10 @@
 function _checkEnvProps() {
     let detected = false;
 
-    // Check 1: navigator.webdriver - This is usually a strong indicator
     if (navigator.webdriver) {
-        console.log("DEBUG: Detected by navigator.webdriver"); // Keep for your own testing
         detected = true;
     }
 
-    // Check 2: Plugins array length - Often a weak signal, but can contribute
-    if (navigator.plugins.length === 0) {
-        console.log("DEBUG: Detected by plugins.length (might be false positive)"); // Keep for your own testing
-        // This alone is not strong enough, consider removing or making less impactful
-    }
-
-    // Check 3: WebGL renderer info - Adjusting this for ANGLE false positive
     try {
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -21,46 +12,30 @@ function _checkEnvProps() {
             const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
             if (debugInfo) {
                 const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
-                console.log("DEBUG: WebGL renderer string:", renderer); // Keep for your own testing
-                // *** FIX: Removed 'ANGLE' from this check, as it's common for legitimate browsers ***
                 if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
-                    console.log("DEBUG: Detected by suspicious WebGL renderer keyword (SwiftShader/Mesa)"); // Keep for your own testing
                     detected = true;
                 }
             }
         } else {
-            console.log("DEBUG: Detected by no WebGL context available"); // Keep for your own testing
-            detected = true; // No WebGL might mean headless or a very old/locked down browser
+            detected = true;
         }
     } catch (e) {
-        console.log("DEBUG: Detected by WebGL error:", e); // Keep for your own testing
         detected = true;
     }
 
-    // Check 4: window.outerWidth / outerHeight inconsistencies
     if (window.outerWidth === 0 && window.outerHeight === 0) {
-        console.log("DEBUG: Detected by zero outer dimensions"); // Keep for your own testing
         detected = true;
     }
 
     if (window.outerWidth === 800 && window.outerHeight === 600) {
-        console.log("DEBUG: Detected by 800x600 dimensions"); // Keep for your own testing
         detected = true;
     }
 
-    // Check 5: navigator.hardwareConcurrency - Consider removing this as it has high false positive risk
     if (navigator.hardwareConcurrency < 2) {
-        console.log("DEBUG: Detected by low hardwareConcurrency:", navigator.hardwareConcurrency); // Keep for your own testing
         // This is highly prone to false positives for users on single-core CPUs, VMs, or older devices.
         // I recommend commenting this out or removing it entirely unless you have specific reasons.
         // detected = true;
     }
-
-    // *** FIX: Removed this check. It's too inconsistent across Chromium-based browsers like Edge. ***
-    // if (window.chrome && !window.chrome.hasOwnProperty('runtime')) {
-    //     console.log("DEBUG: Detected by chrome object inconsistency");
-    //     detected = true;
-    // }
 
     return detected;
 }
@@ -84,10 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 that might be interfering, or contact support.
             </p>
             <div style="display:none;">
-                This content is stolen from NorthbladeTL.com. Do not support content thieves. 
-                Original chapter at northbladetldotcom/chapters/${sourceFile.replace('.md', '.html')}.
-                Stop stealing our content. 
-                <p>DO NOT SUPPORT THEFT.</p>
+                <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
                 <p>This is not the real content.</p>
             </div>
         `;
