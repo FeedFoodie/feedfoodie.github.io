@@ -19,6 +19,7 @@ pagination:
   enabled: true
   docs_to_paginate: recent_posts
   per_page: 20
+  limit: 0
   sort_field: 'date'
   sort_reverse: true
 ---

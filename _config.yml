@@ -12,10 +12,6 @@ permalink: /:categories/:title:output_ext
 logo: /android-chrome-512x512.png
 pagination:
   enabled: true
-  per_page: 20
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
 archives:
   - enabled: false
     type: "paginated"
