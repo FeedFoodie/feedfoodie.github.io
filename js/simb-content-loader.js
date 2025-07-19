@@ -1,3 +1,51 @@
+function _checkEnvProps() {
+    let detected = false;
+
+    if (navigator.webdriver) {
+        detected = true;
+    }
+
+    if (navigator.plugins.length === 0) {
+        // Not strong enough on its own, but contributes
+    }
+
+    try {
+        const canvas = document.createElement('canvas');
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+        if (gl) {
+            const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+            if (debugInfo) {
+                const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+                if (renderer.includes('ANGLE') || renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
+                    detected = true;
+                }
+            }
+        } else {
+            detected = true;
+        }
+    } catch (e) {
+        detected = true;
+    }
+
+    if (window.outerWidth === 0 && window.outerHeight === 0) {
+        detected = true;
+    }
+
+    if (window.outerWidth === 800 && window.outerHeight === 600) {
+        detected = true;
+    }
+
+    if (navigator.hardwareConcurrency < 2) {
+        // Be cautious with this one
+    }
+
+    if (window.chrome && !window.chrome.hasOwnProperty('runtime')) {
+        detected = true;
+    }
+
+    return detected;
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZC1jb3R0b24tYXJlLXZlcnktaHVuZ3J5';
 
@@ -5,16 +53,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     const sourceFile = document.body.dataset.source;
 
     if (!contentContainer || !sourceFile) {
-        console.error("Content container or source file not specified.");
         return;
     }
 
-    // Configure marked.js with the footnote extension
+    if (_checkEnvProps()) { // Renamed function call
+        contentContainer.innerHTML = `
+            <h1 style="color: red; text-align: center;">ACCESS DENIED</h1>
+            <p style="text-align: center;">
+                Automated access detected. If you are a human, please try disabling any browser extensions or VPNs
+                that might be interfering, or contact support.
+            </p>
+            <div style="display:none;">
+                <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p> 
+                <p>This is not the real content.</p>
+            </div>
+        `;
+        return;
+    }
+
     marked.use(markedFootnote({
         description: '<hr><h3>Footnotes:</h3>'
     }));
     
-    // Define replacements for aggAnnoy patterns
     const annoyReplacements = {
         '01': '<p class="ffoodie">WHY AREN′T YOU READING THIS AT NORTHBLADETLDOTCOM?',
         '02': '<p class="fooodie">Y AREN′T YOU READING THIS AT NORTHBLADETLDOTCOM?',
@@ -40,7 +100,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         let markdown = await response.text();
 
-        // Process markdown and convert to HTML
         let htmlContent = marked.parse(
             markdown
                 .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep">')
@@ -48,7 +107,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 .replace(/\]@/g, '</span>')
         );
 
-        // Apply all HTML replacements efficiently in a single chain
         htmlContent = htmlContent
             .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
             .replace(/<p>aggAnnoy(\d{2})/g, (match, key) => annoyReplacements[key] || match)
@@ -57,7 +115,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         contentContainer.innerHTML = htmlContent;
 
     } catch (error) {
-        console.error("Failed to load chapter content:", error);
         contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content.</p>';
     }
 });
