@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import filedialog
 import random
 import yaml
-from datetime import datetime
+from datetime import datetime, date
 
 # This function is unchanged
 def add_agg_annoy_markers(lines):
@@ -30,7 +30,6 @@ def add_agg_annoy_markers(lines):
         final_lines.pop()
     return final_lines
 
-# --- UPDATED FUNCTION to generate ONLY the index page ---
 def generate_index_page(posts_dir, site_root):
     print("\n--- Generating Index Page ---")
     try:
@@ -43,10 +42,40 @@ def generate_index_page(posts_dir, site_root):
                     try:
                         front_matter_text = re.match(r'---\s*\n(.*?)\n---', content, re.DOTALL).group(1)
                         front_matter = yaml.safe_load(front_matter_text) if front_matter_text else {}
-                        date_str = '-'.join(filename.split('-', 3)[:3])
-                        post_date = datetime.strptime(date_str, '%Y-%m-%d')
+                        
+                        # --- FINAL DATE LOGIC ---
+                        # Check if the date field exists. If not, skip this file entirely.
+                        if 'date' not in front_matter or not front_matter['date']:
+                            print(f"  - Warning: No 'date' in front matter for {filename}. Skipping.")
+                            continue
+
+                        post_date = None
+                        fm_date = front_matter['date']
+                        if isinstance(fm_date, datetime):
+                            post_date = fm_date
+                        elif isinstance(fm_date, date):
+                            post_date = datetime.combine(fm_date, datetime.min.time())
+                        elif isinstance(fm_date, str):
+                            try:
+                                post_date = datetime.strptime(fm_date, '%Y-%m-%d %H:%M:%S %z')
+                            except ValueError:
+                                try:
+                                    post_date = datetime.strptime(fm_date, '%Y-%m-%d %H:%M:%S')
+                                except ValueError:
+                                    try:
+                                        post_date = datetime.strptime(fm_date, '%Y-%m-%d')
+                                    except ValueError:
+                                        print(f"  - Warning: Could not parse date string '{fm_date}' in {filename}. Skipping.")
+                                        continue # Skip if date format is unreadable
+                        
+                        # Make all datetimes "naive" (remove timezone) to allow sorting
+                        if post_date and post_date.tzinfo is not None:
+                            post_date = post_date.replace(tzinfo=None)
+                        # --- END FINAL DATE LOGIC ---
+
                         slug = filename.split('-', 3)[3].replace('.md', '')
                         url = f"/{front_matter.get('categories', ['uncategorized'])[0]}/{slug}.html"
+                        
                         all_posts.append({
                             'title': front_matter.get('title', 'Untitled'),
                             'date': post_date,
@@ -57,13 +86,11 @@ def generate_index_page(posts_dir, site_root):
                         print(f"  - Warning: Could not parse {filename}. Skipping. Error: {e}")
 
         all_posts.sort(key=lambda p: p['date'], reverse=True)
-        print(f"  ✓ Found and sorted {len(all_posts)} posts.")
+        print(f"  ✓ Found and sorted {len(all_posts)} posts with valid dates.")
 
-        # Get the 20 most recent posts
         posts_per_page = 20
         latest_posts = all_posts[:posts_per_page]
 
-        # Generate HTML for the list of posts
         post_list_html = '<ul class="post-list">\n'
         for post in latest_posts:
             date_str = f"{post['date'].strftime('%b')} {post['date'].day}, {post['date'].year}"
@@ -84,7 +111,6 @@ def generate_index_page(posts_dir, site_root):
 <p><span style="color:#fcd299;"><strong>Chapters for all series only update from Friday to Sunday, UTC+8 timezone.</strong></span></p>
 """
 
-        # Create the full page content (no pagination links)
         page_content = f"""---
 layout: home
 ---
@@ -93,7 +119,6 @@ layout: home
 {post_list_html}
 """
 
-        # Write ONLY index.html
         output_path = os.path.join(site_root, 'index.html')
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(page_content)
@@ -163,7 +188,6 @@ def process_markdown_files():
         except Exception as e:
             print(f"  ✗ Error processing file {filename}: {e}\n")
     
-    # Call the updated function
     generate_index_page(posts_dest_dir, site_root_dir)
     
     print("--- Script finished ---")
