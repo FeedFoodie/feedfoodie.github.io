@@ -33,7 +33,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems
-          cache-version: 0
+          cache-version: 1
 
       # Cache the Jekyll build metadata
       - name: Cache Jekyll metadata

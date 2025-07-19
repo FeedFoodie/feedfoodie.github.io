@@ -36,6 +36,10 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+archives:
+  - enabled: true
+    type: "paginated"
+    layouts: "home"
 
 turnstile_site_key: "0x4AAAAAABlBn5y8m8IJa-Vb"
 
@@ -47,6 +51,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate-v2
+  - jekyll-archives
 
 jekyll-sitemap:
   exclude:
