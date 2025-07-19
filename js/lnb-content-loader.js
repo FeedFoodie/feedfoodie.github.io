@@ -2,10 +2,12 @@ function _checkEnvProps() {
     let detected = false;
 
     if (navigator.webdriver) {
+        console.log("DEBUG: Detected by navigator.webdriver");
         detected = true;
     }
 
     if (navigator.plugins.length === 0) {
+        console.log("DEBUG: Detected by plugins.length (might be false positive for some browsers)");
         // Not strong enough on its own, but contributes
     }
 
@@ -16,30 +18,38 @@ function _checkEnvProps() {
             const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
             if (debugInfo) {
                 const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+                console.log("DEBUG: WebGL renderer string:", renderer); // Log the actual renderer string
                 if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
+                    console.log("DEBUG: Detected by suspicious WebGL renderer keyword (SwiftShader/Mesa)");
                     detected = true;
                 }
             }
         } else {
+            console.log("DEBUG: Detected by no WebGL context available");
             detected = true;
         }
     } catch (e) {
+        console.log("DEBUG: Detected by WebGL error:", e);
         detected = true;
     }
 
     if (window.outerWidth === 0 && window.outerHeight === 0) {
+        console.log("DEBUG: Detected by zero outer dimensions");
         detected = true;
     }
 
     if (window.outerWidth === 800 && window.outerHeight === 600) {
+        console.log("DEBUG: Detected by 800x600 dimensions");
         detected = true;
     }
 
     if (navigator.hardwareConcurrency < 2) {
-        // Be cautious with this one - maybe remove or combine with other strong signals
+        console.log("DEBUG: Detected by low hardwareConcurrency:", navigator.hardwareConcurrency);
+        // Be cautious with this one - might be a false positive for low-end devices
     }
 
     if (window.chrome && !window.chrome.hasOwnProperty('runtime')) {
+        console.log("DEBUG: Detected by chrome object inconsistency");
         detected = true;
     }
 
