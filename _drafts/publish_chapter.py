@@ -7,6 +7,7 @@ import random
 import yaml
 from datetime import datetime
 
+# This function is unchanged
 def add_agg_annoy_markers(lines):
     text_lines = lines[::2]
     if not text_lines:
@@ -29,56 +30,47 @@ def add_agg_annoy_markers(lines):
         final_lines.pop()
     return final_lines
 
-def generate_paginated_index(posts_dir, site_root):
-    print("\n--- Generating Paginated Index ---")
-    all_posts = []
-    for filename in os.listdir(posts_dir):
-        if filename.endswith(".md"):
-            filepath = os.path.join(posts_dir, filename)
-            with open(filepath, 'r', encoding='utf-8') as f:
-                content = f.read()
-                try:
-                    front_matter = yaml.safe_load(re.match(r'---\s*\n(.*?)\n---', content, re.DOTALL).group(1))
-                    date_str = '-'.join(filename.split('-', 3)[:3])
-                    post_date = datetime.strptime(date_str, '%Y-%m-%d')
-                    slug = filename.split('-', 3)[3].replace('.md', '')
-                    url = f"/{front_matter.get('categories', ['uncategorized'])[0]}/{slug}.html"
-                    all_posts.append({
-                        'title': front_matter.get('title', 'Untitled'),
-                        'date': post_date,
-                        'tags': front_matter.get('tags', []),
-                        'url': url
-                    })
-                except Exception as e:
-                    print(f"  - Warning: Could not parse {filename}. Skipping. Error: {e}")
+# --- UPDATED FUNCTION to generate ONLY the index page ---
+def generate_index_page(posts_dir, site_root):
+    print("\n--- Generating Index Page ---")
+    try:
+        all_posts = []
+        for filename in os.listdir(posts_dir):
+            if filename.endswith(".md"):
+                filepath = os.path.join(posts_dir, filename)
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    try:
+                        front_matter_text = re.match(r'---\s*\n(.*?)\n---', content, re.DOTALL).group(1)
+                        front_matter = yaml.safe_load(front_matter_text) if front_matter_text else {}
+                        date_str = '-'.join(filename.split('-', 3)[:3])
+                        post_date = datetime.strptime(date_str, '%Y-%m-%d')
+                        slug = filename.split('-', 3)[3].replace('.md', '')
+                        url = f"/{front_matter.get('categories', ['uncategorized'])[0]}/{slug}.html"
+                        all_posts.append({
+                            'title': front_matter.get('title', 'Untitled'),
+                            'date': post_date,
+                            'tags': front_matter.get('tags', []),
+                            'url': url
+                        })
+                    except Exception as e:
+                        print(f"  - Warning: Could not parse {filename}. Skipping. Error: {e}")
 
-    all_posts.sort(key=lambda p: p['date'], reverse=True)
-    print(f"  ✓ Found and sorted {len(all_posts)} posts.")
+        all_posts.sort(key=lambda p: p['date'], reverse=True)
+        print(f"  ✓ Found and sorted {len(all_posts)} posts.")
 
-    posts_per_page = 20
-    total_pages = (len(all_posts) + posts_per_page - 1) // posts_per_page
+        # Get the 20 most recent posts
+        posts_per_page = 20
+        latest_posts = all_posts[:posts_per_page]
 
-    for page_num in range(1, total_pages + 1):
-        start_index = (page_num - 1) * posts_per_page
-        end_index = start_index + posts_per_page
-        page_posts = all_posts[start_index:end_index]
-
+        # Generate HTML for the list of posts
         post_list_html = '<ul class="post-list">\n'
-        for post in page_posts:
-            date_str = post['date'].strftime('%b %-d, %Y')
+        for post in latest_posts:
+            date_str = f"{post['date'].strftime('%b')} {post['date'].day}, {post['date'].year}"
             tag_html = f"{post['tags'][0].upper()} " if post['tags'] else ""
             post_list_html += f'  <li>\n    <span class="post-meta">{date_str}</span>\n    <h3>\n      {tag_html}<a href="{post["url"]}">{post["title"]}</a>\n    </h3>\n  </li>\n'
         post_list_html += '</ul>'
-        
-        pagination_links_html = '<div class="pagination">\n'
-        if page_num > 1:
-            prev_url = f"/page/{page_num - 1}" if page_num > 2 else "/"
-            pagination_links_html += f'  <a class="previous" href="{prev_url}">Newer Posts</a>\n'
-        if page_num < total_pages:
-            next_url = f"/page/{page_num + 1}"
-            pagination_links_html += f'  <a class="next" href="{next_url}">Older Posts</a>\n'
-        pagination_links_html += '</div>'
-        
+
         disclaimer_html = """
 <h2 id="disclaimer">Disclaimer</h2>
 <ol>
@@ -92,24 +84,23 @@ def generate_paginated_index(posts_dir, site_root):
 <p><span style="color:#fcd299;"><strong>Chapters for all series only update from Friday to Sunday, UTC+8 timezone.</strong></span></p>
 """
 
+        # Create the full page content (no pagination links)
         page_content = f"""---
 layout: home
 ---
 {disclaimer_html}
 <h2 id="latest-updates">Latest Updates</h2>
 {post_list_html}
-{pagination_links_html}
 """
-        if page_num == 1:
-            output_path = os.path.join(site_root, 'index.html')
-        else:
-            page_dir = os.path.join(site_root, 'page', str(page_num))
-            os.makedirs(page_dir, exist_ok=True)
-            output_path = os.path.join(page_dir, 'index.html')
 
+        # Write ONLY index.html
+        output_path = os.path.join(site_root, 'index.html')
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(page_content)
         print(f"  ✓ Generated: {output_path}")
+
+    except Exception as e:
+        print(f"--- A CRITICAL ERROR occurred in generate_index_page: {e} ---")
 
 def process_markdown_files():
     site_root_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io'
@@ -171,7 +162,10 @@ def process_markdown_files():
             print(f"  ✓ Moved original file to: {backup_filepath}\n")
         except Exception as e:
             print(f"  ✗ Error processing file {filename}: {e}\n")
-    generate_paginated_index(posts_dest_dir, site_root_dir)
+    
+    # Call the updated function
+    generate_index_page(posts_dest_dir, site_root_dir)
+    
     print("--- Script finished ---")
 
 if __name__ == "__main__":
