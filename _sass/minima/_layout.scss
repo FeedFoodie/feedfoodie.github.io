@@ -298,7 +298,7 @@
     &:last-of-type { margin-right: 0 }
     a {
       display: block;
-      padding: $spacing-unit / 4;
+      padding: math.div($spacing-unit, 4);
       border: 1px solid $border-color-01;
       &:hover { border-color: $border-color-02 }
     }
@@ -321,7 +321,7 @@
     }
     div {
       display: block;
-      padding: $spacing-unit / 4;
+      padding: math.div($spacing-unit, 4);
       border: 1px solid transparent;
 
       &.pager-edge {
