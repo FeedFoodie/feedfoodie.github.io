@@ -7,27 +7,52 @@ import random
 import yaml
 from datetime import datetime, date
 
-# This function is unchanged
 def add_agg_annoy_markers(lines):
     text_lines = lines[::2]
     if not text_lines:
         return []
+
     output_items = []
     index = 0
     while index < len(text_lines):
         interval = random.randint(6, 15)
         output_items.extend(text_lines[index:index + interval])
         index += interval
+
         if index < len(text_lines):
-            random_number = random.randint(1, 10)
-            marker = f"aggAnnoy{random_number:02d}"
-            output_items.append(marker)
+            prev_line = text_lines[index - 1].strip()
+            next_line = text_lines[index].strip()
+            
+            # Do not insert marker in the middle of a blockquote
+            if not (prev_line.startswith('>') and next_line.startswith('>')):
+                random_number = random.randint(1, 10)
+                marker = f"aggAnnoy{random_number:02d}"
+                output_items.append(marker)
+
     final_lines = []
-    for item in output_items:
-        final_lines.append(item.strip() + "\n")
-        final_lines.append("\n")
-    if final_lines:
+    i = 0
+    while i < len(output_items):
+        current_item = output_items[i].strip()
+        final_lines.append(current_item + "\n")
+
+        add_blank_line = True
+        is_last_item = (i + 1) == len(output_items)
+
+        # Add a blank line unless the next line is also a blockquote
+        if not is_last_item:
+            next_item = output_items[i + 1].strip()
+            if current_item.startswith('>') and next_item.startswith('>'):
+                add_blank_line = False
+        
+        if add_blank_line:
+            final_lines.append("\n")
+        
+        i += 1
+    
+    # Remove final trailing blank line if it exists
+    if final_lines and final_lines[-1] == "\n":
         final_lines.pop()
+        
     return final_lines
 
 def generate_index_page(posts_dir, site_root):
