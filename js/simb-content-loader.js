@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let htmlContent = marked.parse(
             markdown
-                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep">')
+                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-top: -15px;">')
                 .replace(/@\[/g, '<span class="night-mode-quotes">')
                 .replace(/\]@/g, '</span>')
         );
