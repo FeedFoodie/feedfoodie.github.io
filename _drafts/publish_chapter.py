@@ -8,7 +8,8 @@ import yaml
 from datetime import datetime, date
 
 def add_agg_annoy_markers(lines):
-    text_lines = lines[::2]
+    # Create a clean list of lines that contain actual text
+    text_lines = [line for line in lines if line.strip()]
     if not text_lines:
         return []
 
