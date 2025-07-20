@@ -1,8 +1,10 @@
 function _checkEnvProps() {
     let detected = false;
+    let detectionReason = [];
 
     if (navigator.webdriver) {
         detected = true;
+        detectionReason.push('webdriver');
     }
 
     try {
@@ -12,20 +14,53 @@ function _checkEnvProps() {
             const renderer = gl.getParameter(gl.RENDERER);
             if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
                 detected = true;
+                detectionReason.push('webgl-renderer');
             }
         } else {
             detected = true;
+            detectionReason.push('no-webgl');
         }
     } catch (e) {
         detected = true;
+        detectionReason.push('webgl-error');
     }
 
     if (window.outerWidth === 0 && window.outerHeight === 0) {
         detected = true;
+        detectionReason.push('outer-dims-zero');
     }
 
     if (window.outerWidth === 800 && window.outerHeight === 600) {
         detected = true;
+        detectionReason.push('outer-dims-800x600');
+    }
+
+    if (detected) {
+        const logData = {
+            userAgent: navigator.userAgent,
+            pageUrl: window.location.href,
+            detectedReason: detectionReason.join(',')
+        };
+
+        const workerUrl = 'https://bot-ip-logger.foodie-c7c.workers.dev/'; 
+
+        fetch(workerUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(logData),
+        })
+        .then(response => {
+            if (!response.ok) {
+                console.error('Worker responded with an error:', response.statusText);
+            } else {
+                console.log('Bot detection logged to Cloudflare Worker successfully.');
+            }
+        })
+        .catch(error => {
+            console.error('Error sending bot detection log to Worker:', error);
+        });
     }
 
     return detected;
