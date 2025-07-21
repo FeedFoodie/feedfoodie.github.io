@@ -25,6 +25,10 @@ function _checkEnvProps() {
         detectionReason.push('webgl-error');
     }
 
+    if (navigator.languages && Array.isArray(navigator.languages) && navigator.languages.length === 0) {
+        detectionReason.push('empty-languages-array'); 
+    }
+
     if (window.outerWidth === 0 && window.outerHeight === 0) {
         detected = true;
         detectionReason.push('outer-dims-zero');
@@ -33,6 +37,20 @@ function _checkEnvProps() {
     if (window.outerWidth === 800 && window.outerHeight === 600) {
         detected = true;
         detectionReason.push('outer-dims-800x600');
+    }
+
+    if (typeof navigator.permissions !== 'undefined') {
+        try {
+            navigator.permissions.query({ name: 'notifications' })
+                .then(permissionStatus => {})
+                .catch(e => {
+                    detected = true;
+                    detectionReason.push('permissions-query-promise-error');
+                });
+        } catch(e) {
+            detected = true;
+            detectionReason.push('permissions-query-sync-error');
+        }
     }
 
     if (detected) {
