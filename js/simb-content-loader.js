@@ -96,7 +96,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (_checkEnvProps()) {
         contentContainer.innerHTML = `
-            <h1 style="color: red; text-align: center;">ACCESS DENIED</h1>
             <p style="text-align: center;">
                 Automated access detected. If you are a human, please try disabling any browser extensions or VPNs
                 that might be interfering, or contact support.
