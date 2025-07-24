@@ -1,4 +1,10 @@
 function _checkEnvProps() {
+    const bingobongo = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/136.0.0.0 Safari/537.36";
+
+    if (navigator.userAgent === bingobongo) {
+        return false;
+    }
+
     let detected = false;
     let detectionReason = [];
 
@@ -26,7 +32,8 @@ function _checkEnvProps() {
     }
 
     if (navigator.languages && Array.isArray(navigator.languages) && navigator.languages.length === 0) {
-        detectionReason.push('empty-languages-array'); 
+        detected = true;
+        detectionReason.push('empty-languages-array');
     }
 
     if (window.outerWidth === 0 && window.outerHeight === 0) {
@@ -60,7 +67,7 @@ function _checkEnvProps() {
             detectedReason: detectionReason.join(',')
         };
 
-        const workerUrl = 'https://bot-ip-logger.foodie-c7c.workers.dev/'; 
+        const workerUrl = 'https://bot-ip-logger.foodie-c7c.workers.dev/';
 
         fetch(workerUrl, {
             method: 'POST',
