@@ -1,4 +1,4 @@
-function _checkEnvProps() {
+async function _checkEnvProps() {
     const finderskeepers = [
         "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
         "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/W.X.Y.Z Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
@@ -70,15 +70,10 @@ function _checkEnvProps() {
 
     if (typeof navigator.permissions !== 'undefined') {
         try {
-            navigator.permissions.query({ name: 'notifications' })
-                .then(permissionStatus => {})
-                .catch(e => {
-                    detected = true;
-                    detectionReason.push('permissions-query-promise-error');
-                });
-        } catch(e) {
+            await navigator.permissions.query({ name: 'notifications' });
+        } catch (e) {
             detected = true;
-            detectionReason.push('permissions-query-sync-error');
+            detectionReason.push('permissions-query-error');
         }
     }
 
@@ -98,13 +93,6 @@ function _checkEnvProps() {
             },
             body: JSON.stringify(logData),
         })
-        .then(response => {
-            if (!response.ok) {
-                console.error('Worker responded with an error:', response.statusText);
-            } else {
-                console.log('Bot detection logged to Cloudflare Worker successfully.');
-            }
-        })
         .catch(error => {
             console.error('Error sending bot detection log to Worker:', error);
         });
@@ -112,7 +100,6 @@ function _checkEnvProps() {
 
     return detected;
 }
-
 
 document.addEventListener('DOMContentLoaded', async () => {
     const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZC1jb3R0b24tYXJlLXZlcnktaHVuZ3J5';
@@ -124,7 +111,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    if (_checkEnvProps()) {
+    if (await _checkEnvProps()) {
         contentContainer.innerHTML = `
             <p style="text-align: center;">
                 Automated access detected. If you are a human, please try disabling any browser extensions or VPNs
