@@ -57,7 +57,6 @@ def add_agg_annoy_markers(lines):
     return final_lines
 
 def generate_index_page(posts_dir, site_root):
-    print("\n--- Generating Index Page ---")
     try:
         all_posts = []
         for filename in os.listdir(posts_dir):
@@ -69,10 +68,8 @@ def generate_index_page(posts_dir, site_root):
                         front_matter_text = re.match(r'---\s*\n(.*?)\n---', content, re.DOTALL).group(1)
                         front_matter = yaml.safe_load(front_matter_text) if front_matter_text else {}
                         
-                        # --- FINAL DATE LOGIC ---
                         # Check if the date field exists. If not, skip this file entirely.
                         if 'date' not in front_matter or not front_matter['date']:
-                            print(f"  - Warning: No 'date' in front matter for {filename}. Skipping.")
                             continue
 
                         post_date = None
@@ -91,13 +88,11 @@ def generate_index_page(posts_dir, site_root):
                                     try:
                                         post_date = datetime.strptime(fm_date, '%Y-%m-%d')
                                     except ValueError:
-                                        print(f"  - Warning: Could not parse date string '{fm_date}' in {filename}. Skipping.")
-                                        continue # Skip if date format is unreadable
+                                        continue
                         
                         # Make all datetimes "naive" (remove timezone) to allow sorting
                         if post_date and post_date.tzinfo is not None:
                             post_date = post_date.replace(tzinfo=None)
-                        # --- END FINAL DATE LOGIC ---
 
                         slug = filename.split('-', 3)[3].replace('.md', '')
                         url = f"/{front_matter.get('categories', ['uncategorized'])[0]}/{slug}.html"
@@ -109,10 +104,8 @@ def generate_index_page(posts_dir, site_root):
                             'url': url
                         })
                     except Exception as e:
-                        print(f"  - Warning: Could not parse {filename}. Skipping. Error: {e}")
 
         all_posts.sort(key=lambda p: p['date'], reverse=True)
-        print(f"  ✓ Found and sorted {len(all_posts)} posts with valid dates.")
 
         posts_per_page = 20
         latest_posts = all_posts[:posts_per_page]
@@ -148,10 +141,8 @@ layout: home
         output_path = os.path.join(site_root, 'index.html')
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(page_content)
-        print(f"  ✓ Generated: {output_path}")
 
     except Exception as e:
-        print(f"--- A CRITICAL ERROR occurred in generate_index_page: {e} ---")
 
 def process_markdown_files():
     site_root_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io'
@@ -167,24 +158,19 @@ def process_markdown_files():
     os.makedirs(simb_dest_dir, exist_ok=True)
     os.makedirs(lnb_dest_dir, exist_ok=True)
     os.makedirs(backup_dest_dir, exist_ok=True)
-    print("Opening file dialog to select Markdown files...")
     file_paths = filedialog.askopenfilenames(
         title="Select Markdown file(s) to process",
         filetypes=(("Markdown files", "*.md"), ("All files", "*.*"))
     )
     if not file_paths:
-        print("No files selected. Exiting script.")
         return
-    print(f"\nProcessing {len(file_paths)} selected file(s)...\n")
     for file_path in file_paths:
         filename = os.path.basename(file_path)
-        print(f"--- Processing: {filename} ---")
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             front_matter_match = re.match(r'---\s*\n(.*?)\n---', content, re.DOTALL)
             if not front_matter_match:
-                print(f"Warning: No YAML front matter found in {filename}. Skipping.")
                 continue
             front_matter_text = front_matter_match.group(1)
             main_content = content[front_matter_match.end():].lstrip()
@@ -193,13 +179,11 @@ def process_markdown_files():
             posts_filepath = os.path.join(posts_dest_dir, filename)
             with open(posts_filepath, 'w', encoding='utf-8') as f:
                 f.write(updated_front_matter)
-            print(f"  ✓ Saved front matter to: {posts_filepath}")
             content_dest_dir = None
             if "ABSW" in filename: content_dest_dir = absw_dest_dir
             elif "SIMB" in filename: content_dest_dir = simb_dest_dir
             elif "LNB" in filename: content_dest_dir = lnb_dest_dir
             else:
-                print(f"  ✗ Warning: No matching category found in '{filename}'. Content not saved.")
                 continue
             content_lines = main_content.splitlines(keepends=True)
             modified_content_lines = add_agg_annoy_markers(content_lines)
@@ -207,16 +191,11 @@ def process_markdown_files():
             content_filepath = os.path.join(content_dest_dir, filename)
             with open(content_filepath, 'w', encoding='utf-8') as f:
                 f.write(modified_main_content)
-            print(f"  ✓ Saved content to: {content_filepath}")
             backup_filepath = os.path.join(backup_dest_dir, filename)
             shutil.move(file_path, backup_filepath)
-            print(f"  ✓ Moved original file to: {backup_filepath}\n")
         except Exception as e:
-            print(f"  ✗ Error processing file {filename}: {e}\n")
     
     generate_index_page(posts_dest_dir, site_root_dir)
     
-    print("--- Script finished ---")
-
 if __name__ == "__main__":
     process_markdown_files()
