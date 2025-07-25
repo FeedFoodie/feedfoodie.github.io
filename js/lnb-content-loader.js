@@ -84,7 +84,7 @@ async function _checkEnvProps() {
             detectedReason: detectionReason.join(',')
         };
 
-        const workerUrl = 'https://bot-ip-logger.foodie-c7c.workers.dev/';
+        const workerUrl = '/api/log-bot';
 
         fetch(workerUrl, {
             method: 'POST',
@@ -103,7 +103,6 @@ async function _checkEnvProps() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZC1jb3R0b24tYXJlLXZlcnktaHVuZ3J5';
-
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
@@ -143,8 +142,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
+        const tokenResponse = await fetch('/api/get-token');
+        if (!tokenResponse.ok) {
+            throw new Error('Could not retrieve authorization token.');
+        }
+        const { token } = await tokenResponse.json();
+        if (!token) {
+            throw new Error('Authorization token was empty.');
+        }
+
         const response = await fetch(`/LNB/chapters/${sourceFile}`, {
             headers: {
+                'Authorization': `Bearer ${token}`,
                 'X-Internal-Request-Token': atob(htmlViewer)
             }
         });
@@ -169,6 +178,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         contentContainer.innerHTML = htmlContent;
 
     } catch (error) {
-        contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content.</p>';
+        console.error('Failed to load chapter:', error);
+        contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content. Authorization may have failed.</p>';
     }
 });
