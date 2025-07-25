@@ -8,7 +8,6 @@ import yaml
 from datetime import datetime, date
 
 def add_agg_annoy_markers(lines):
-    # Create a clean list of lines that contain actual text
     text_lines = [line for line in lines if line.strip()]
     if not text_lines:
         return []
@@ -24,36 +23,21 @@ def add_agg_annoy_markers(lines):
             prev_line = text_lines[index - 1].strip()
             next_line = text_lines[index].strip()
             
-            # Do not insert marker in the middle of a blockquote
             if not (prev_line.startswith('>') and next_line.startswith('>')):
                 random_number = random.randint(1, 10)
                 marker = f"aggAnnoy{random_number:02d}"
                 output_items.append(marker)
 
     final_lines = []
-    i = 0
-    while i < len(output_items):
-        current_item = output_items[i].strip()
-        final_lines.append(current_item + "\n")
+    for i, item in enumerate(output_items):
+        current_line_stripped = item.strip()
+        final_lines.append(current_line_stripped + "\n")
 
-        add_blank_line = True
-        is_last_item = (i + 1) == len(output_items)
-
-        # Add a blank line unless the next line is also a blockquote
-        if not is_last_item:
-            next_item = output_items[i + 1].strip()
-            if current_item.startswith('>') and next_item.startswith('>'):
-                add_blank_line = False
-        
-        if add_blank_line:
-            final_lines.append("\n")
-        
-        i += 1
-    
-    # Remove final trailing blank line if it exists
-    if final_lines and final_lines[-1] == "\n":
-        final_lines.pop()
-        
+        if i < len(output_items) - 1:
+            next_line_stripped = output_items[i + 1].strip()
+            if not (current_line_stripped.startswith('>') and next_line_stripped.startswith('>')):
+                final_lines.append("\n")
+                
     return final_lines
 
 def generate_index_page(posts_dir, site_root):
@@ -65,10 +49,13 @@ def generate_index_page(posts_dir, site_root):
                 with open(filepath, 'r', encoding='utf-8') as f:
                     content = f.read()
                     try:
-                        front_matter_text = re.match(r'---\s*\n(.*?)\n---', content, re.DOTALL).group(1)
+                        front_matter_match = re.match(r'---\s*\n(.*?)\n---', content, re.DOTALL)
+                        if not front_matter_match:
+                            continue
+                        
+                        front_matter_text = front_matter_match.group(1)
                         front_matter = yaml.safe_load(front_matter_text) if front_matter_text else {}
                         
-                        # Check if the date field exists. If not, skip this file entirely.
                         if 'date' not in front_matter or not front_matter['date']:
                             continue
 
@@ -79,18 +66,15 @@ def generate_index_page(posts_dir, site_root):
                         elif isinstance(fm_date, date):
                             post_date = datetime.combine(fm_date, datetime.min.time())
                         elif isinstance(fm_date, str):
-                            try:
-                                post_date = datetime.strptime(fm_date, '%Y-%m-%d %H:%M:%S %z')
-                            except ValueError:
+                            for fmt in ('%Y-%m-%d %H:%M:%S %z', '%Y-%m-%d %H:%M:%S', '%Y-%m-%d'):
                                 try:
-                                    post_date = datetime.strptime(fm_date, '%Y-%m-%d %H:%M:%S')
+                                    post_date = datetime.strptime(fm_date, fmt)
+                                    break
                                 except ValueError:
-                                    try:
-                                        post_date = datetime.strptime(fm_date, '%Y-%m-%d')
-                                    except ValueError:
-                                        continue
+                                    pass
+                            if not post_date:
+                                continue
                         
-                        # Make all datetimes "naive" (remove timezone) to allow sorting
                         if post_date and post_date.tzinfo is not None:
                             post_date = post_date.replace(tzinfo=None)
 
@@ -104,6 +88,7 @@ def generate_index_page(posts_dir, site_root):
                             'url': url
                         })
                     except Exception as e:
+                        pass
 
         all_posts.sort(key=lambda p: p['date'], reverse=True)
 
@@ -143,6 +128,7 @@ layout: home
             f.write(page_content)
 
     except Exception as e:
+        pass
 
 def process_markdown_files():
     site_root_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io'
@@ -194,6 +180,7 @@ def process_markdown_files():
             backup_filepath = os.path.join(backup_dest_dir, filename)
             shutil.move(file_path, backup_filepath)
         except Exception as e:
+            pass
     
     generate_index_page(posts_dest_dir, site_root_dir)
     
