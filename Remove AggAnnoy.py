@@ -14,7 +14,7 @@ replacements = {
     "”": "\"",
     "’": "'",
     "‘": "'",
-    "postLNBold": "postLNB"
+    "Natural Assimilation": "Origin Reversal"
 }
 
 # Loop through each directory in the list
