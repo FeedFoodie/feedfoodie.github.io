@@ -108,7 +108,7 @@ async function _checkEnvProps() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZC1jb3R0b24tYXJlLXZlcnktaHVuZ3J5';
+    const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
