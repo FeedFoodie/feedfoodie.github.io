@@ -135,16 +135,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     }));
     
     const annoyReplacements = {
-        '01': '<p class="ffoodie">WHY AREN′T YOU READING THIS AT NORTHBLADETLDOTCOM?',
-        '02': '<p class="fooodie">Y AREN′T YOU READING THIS AT NORTHBLADETLDOTCOM?',
-        '03': '<p class="fooddie">YOU OUGHT TO READ THIS AT NORTHBLADETLDOTCOM.',
-        '04': '<p class="foodiie">READ THIS AT NORTHBLADETLDOTCOM, OR ELSE.',
-        '05': '<p class="foodiee">NORTHBLADETLDOTCOM WELCOMES YOU.',
-        '06': '<p class="ffoodie">THIS IS A NON-PROFIT TRANSLATION. YOU SHOULD NOT BE SEEING ADS.',
-        '07': '<p class="fooodie">THIS IS A FREE TRANSLATION. YOU SHOULD NOT BE SEEING ADS.',
-        '08': '<p class="fooddie">THIS IS A NON-PROFIT TRANSLATION. THERE ARE NO ADS.',
-        '09': '<p class="foodiie">THIS IS A NON-PROFIT TRANSLATION. ADS? WHAT ADS?',
-        '10': '<p class="foodiee">IF YOU′RE SEEING THIS, YOU ARE AT THE WRONG PLACE.',
+        '01': '<p class="ffoodie">Read this at northbladetldotcom?',
+        '02': '<p class="fooodie">Y arent you reading this at northbladetldotcom?',
+        '03': '<p class="fooddie">How about reading this at northbladetldotcom.',
+        '04': '<p class="foodiie">Lorem ipsum sit dolor amet.',
+        '05': '<p class="foodiee">Northbladetldotcomwelcomesyou.',
+        '06': '<p class="ffoodie">This is a nonprofit translation. There are no ads.',
+        '07': '<p class="fooodie">This translation is free to read. No ads should be visible.',
+        '08': '<p class="fooddie">Ads? What ads?',
+        '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
+        '10': '<p class="foodiee">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore.',
     };
 
     try {
