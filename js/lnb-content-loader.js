@@ -136,13 +136,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
-        '02': '<p class="fooodie">Y arent you reading this at northbladetldotcom?',
-        '03': '<p class="fooddie">How about reading this at northbladetldotcom.',
-        '04': '<p class="foodiie">Lorem ipsum sit dolor amet.',
+        '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
+        '03': '<p class="fooddie">How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.',
+        '04': '<p class="foodiie">Hyonwon Kang was bonked again. Lorem ipsum sit dolor amet.',
         '05': '<p class="foodiee">Northbladetldotcomwelcomesyou.',
-        '06': '<p class="ffoodie">This is a nonprofit translation. There are no ads.',
+        '06': '<p class="ffoodie">This is a nonprofit translation. There are no ads. Do not make Mimi cry.',
         '07': '<p class="fooodie">This translation is free to read. No ads should be visible.',
-        '08': '<p class="fooddie">Ads? What ads?',
+        '08': '<p class="fooddie">Ads? Ak Yeonho complains. What ads?',
         '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
         '10': '<p class="foodiee">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore.',
     };
