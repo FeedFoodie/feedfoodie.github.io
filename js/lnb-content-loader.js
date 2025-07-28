@@ -31,6 +31,9 @@ async function _checkEnvProps() {
     let detected = false;
     let detectionReason = [];
 
+    const userAgent = navigator.userAgent;
+    const isChromiumBrowser = (ua) => ua.includes("Chrome/");
+
     if (navigator.webdriver) {
         detected = true;
         detectionReason.push('webdriver');
@@ -60,8 +63,12 @@ async function _checkEnvProps() {
     }
 
     if (window.outerWidth === 0 && window.outerHeight === 0) {
-        detected = true;
-        detectionReason.push('outer-dims-zero');
+        if (isChromiumBrowser(userAgent)) {
+            detectionReason.push('outer-dims-zero-chromium');
+        } else {
+            detected = true;
+            detectionReason.push('outer-dims-zero-non-chromium');
+        }
     }
 
     if (window.outerWidth === 800 && window.outerHeight === 600) {
@@ -80,7 +87,7 @@ async function _checkEnvProps() {
 
     if (detected) {
         const logData = {
-            userAgent: navigator.userAgent,
+            userAgent: userAgent,
             pageUrl: window.location.href,
             detectedReason: detectionReason.join(',')
         };
@@ -94,9 +101,7 @@ async function _checkEnvProps() {
             },
             body: JSON.stringify(logData),
         })
-        .catch(error => {
-            console.error('Error sending bot detection log to Worker:', error);
-        });
+        .catch(error => {});
     }
 
     return detected;
