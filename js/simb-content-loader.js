@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         htmlContent = htmlContent
             .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-            .replace(/<p>aggAnnoy(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+            .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
             .replace(/<p>/g, '<p class="foodie">');
 
         contentContainer.innerHTML = htmlContent;

@@ -14,7 +14,7 @@ replacements = {
     "”": "\"",
     "’": "'",
     "‘": "'",
-    "Natural Assimilation": "Origin Reversal"
+    "aggAnnoy": "SuandFriends"
 }
 
 # Loop through each directory in the list
