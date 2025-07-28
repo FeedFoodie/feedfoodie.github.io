@@ -108,7 +108,7 @@ async function _checkEnvProps() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
+    //const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch(`/LNB/chapters/${sourceFile}`, {
             headers: {
                 'Authorization': `Bearer ${token}`,
-                'X-Internal-Request-Token': atob(htmlViewer)
+                //'X-Internal-Request-Token': atob(htmlViewer)
             }
         });
 

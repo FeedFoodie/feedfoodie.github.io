@@ -108,7 +108,7 @@ async function _checkEnvProps() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
+    //const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
         '10': '<p class="foodiee">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore.',
     };
-    
+
     try {
         const tokenResponse = await fetch('/api/get-token');
         if (!tokenResponse.ok) {
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch(`/ABSW/chapters/${sourceFile}`, {
             headers: {
                 'Authorization': `Bearer ${token}`,
-                'X-Internal-Request-Token': atob(htmlViewer)
+                //'X-Internal-Request-Token': atob(htmlViewer)
             }
         });
 
