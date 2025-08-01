@@ -8,7 +8,24 @@ import yaml
 from datetime import datetime, date
 
 def add_agg_annoy_markers(lines):
-    text_lines = [line for line in lines if line.strip()]
+    # Define the text replacements for typographic characters
+    replacements = {
+        "“": "\"",
+        "”": "\"",
+        "’": "'",
+        "‘": "'",
+        "…": "...",
+    }
+
+    # Apply the replacements to each incoming line
+    processed_lines = []
+    for line in lines:
+        for old, new in replacements.items():
+            line = line.replace(old, new)
+        processed_lines.append(line)
+        
+    # Continue with the original logic using the processed lines
+    text_lines = [line for line in processed_lines if line.strip()]
     if not text_lines:
         return []
 
@@ -25,7 +42,7 @@ def add_agg_annoy_markers(lines):
             
             if not (prev_line.startswith('>') and next_line.startswith('>')):
                 random_number = random.randint(1, 10)
-                marker = f"aggAnnoy{random_number:02d}"
+                marker = f"SuandFriends{random_number:02d}"
                 output_items.append(marker)
 
     final_lines = []
