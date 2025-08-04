@@ -76,15 +76,6 @@ async function _checkEnvProps() {
         detectionReason.push('outer-dims-800x600');
     }
 
-    if (typeof navigator.permissions !== 'undefined') {
-        try {
-            await navigator.permissions.query({ name: 'notifications' });
-        } catch (e) {
-            detected = true;
-            detectionReason.push('permissions-query-error');
-        }
-    }
-
     if (detected) {
         const logData = {
             userAgent: userAgent,
