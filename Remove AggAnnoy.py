@@ -15,7 +15,9 @@ replacements = {
     "’": "'",
     "‘": "'",
     "…": "...",
-    "aggAnnoy": "SuandFriends"
+    "aggAnnoy": "SuandFriends",
+    "the Underworld Lord": "Hellfiend",
+    "The Underworld Lord": "Hellfiend"
 }
 
 # Loop through each directory in the list
