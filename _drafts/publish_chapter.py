@@ -189,7 +189,8 @@ def process_markdown_files():
             else:
                 continue
             content_lines = main_content.splitlines(keepends=True)
-            modified_content_lines = add_agg_annoy_markers(content_lines)
+            #modified_content_lines = add_agg_annoy_markers(content_lines)
+            modified_content_lines = content_lines
             modified_main_content = "".join(modified_content_lines)
             content_filepath = os.path.join(content_dest_dir, filename)
             with open(content_filepath, 'w', encoding='utf-8') as f:
