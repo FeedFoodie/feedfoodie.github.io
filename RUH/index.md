@@ -3,7 +3,7 @@ layout: pageRUH
 title: Reincarnated as an Unruly Heir
 ---
 
-![RUH](/Images/RUH.jpg)
+![RUH](/Images/RUH.png)
 
 Novel Author: Eunho
 
