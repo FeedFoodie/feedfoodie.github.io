@@ -126,6 +126,7 @@ def generate_index_page(posts_dir, site_root):
 <li>Copyrights to <a href="/SIMB/">Star Instructor Master Baek</a> are held by the author, Ganjajang. </li>
 <li>Copyrights to <a href="/HERO/">Heroes</a> are held by the author, Wen Rui'an. </li>
 <li>Copyrights to <a href="/ABSW/">Absolute Warrior</a> are held by the author, Jang Yeonghun. </li>
+<li>Copyrights to <a href="/RUH/">Reincarnated as an Unruly Heir</a> are held by the author, Dae Eunho. </li>
 <li>Do not take credit or make a profit from our work. Our translations can be read for free, with no ads. We do not ask for donations.</li>
 <li>The translator is motivated only by comments, but don't bother asking for faster releases.</li>
 </ol>
