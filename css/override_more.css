@@ -47,6 +47,7 @@ hr {
 .centersel {
     text-align: center;
     width: auto;
+    height: 100px;
 }
 
 .cmb {
