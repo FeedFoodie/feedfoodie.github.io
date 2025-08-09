@@ -22,3 +22,6 @@
         - name: "Heroes"
           url: "/HERO/"
           weight: 2
+        - name: "Reincarnated as an Unruly Heir"
+          url: "/RUH/"
+          weight: 2

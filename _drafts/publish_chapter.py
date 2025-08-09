@@ -153,6 +153,7 @@ def process_markdown_files():
     absw_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\ABSW\chapters'
     simb_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\SIMB\chapters'
     lnb_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\LNB\chapters'
+    ruh_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\RUH\chapters'
     backup_dest_dir = r'C:\Users\rebec\Documents\GitHub\post_backup'
     root = tk.Tk()
     root.withdraw()
@@ -186,6 +187,7 @@ def process_markdown_files():
             if "ABSW" in filename: content_dest_dir = absw_dest_dir
             elif "SIMB" in filename: content_dest_dir = simb_dest_dir
             elif "LNB" in filename: content_dest_dir = lnb_dest_dir
+            elif "RUH" in filename: content_dest_dir = ruh_dest_dir
             else:
                 continue
             content_lines = main_content.splitlines(keepends=True)

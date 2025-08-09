@@ -5,7 +5,7 @@ title: Reincarnated as an Unruly Heir
 
 ![RUH](/Images/RUH.png)
 
-Novel Author: Eunho
+Novel Author: Dae Eunho, 대은호
 
 Associated Names: I Reincarnated as the Crazed Heir
 
