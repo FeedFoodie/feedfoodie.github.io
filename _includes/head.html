@@ -8,7 +8,13 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
 
-  <meta name="description" content="We offer high-quality English fan translations of popular webnovels and novels, including Star Instructor Master Baek, Absolute Warrior, Legend of the Northern Blade, and Heroes.">
+  {%- if page.description -%}
+    <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}">
+  {%- elsif page.excerpt -%}
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  {%- else -%}
+    <meta name="description" content="{{ site.tagline | strip_html | strip_newlines | truncate: 160 }}">
+  {%- endif -%}
 
   <!-- highlight.js support -->
   <link rel="stylesheet" href="/js/highlightjs/styles/format.css">
