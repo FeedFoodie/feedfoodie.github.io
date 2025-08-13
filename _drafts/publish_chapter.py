@@ -135,6 +135,7 @@ def generate_index_page(posts_dir, site_root):
 
         page_content = f"""---
 layout: home
+description: "Read free English fan translations of novels like Legend of the Northern Blade, Star Instructor Master Baek & more. No ads, no paywalls. Updated regularly."
 ---
 {disclaimer_html}
 <h2 id="latest-updates">Latest Updates</h2>

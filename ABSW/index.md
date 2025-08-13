@@ -1,6 +1,7 @@
 ---
 layout: pageABSW
 title: Absolute Warrior
+description: "Free English fan translation of the novel Absolute Warrior. Read all chapters online with no ads or paywalls. Updated regularly."
 ---
 
 ![ABSW](/Images/ABSW.jpg)

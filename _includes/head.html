@@ -9,11 +9,11 @@
   {%- feed_meta -%}
 
   {%- if page.description -%}
-    <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
   {%- elsif page.excerpt -%}
-    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="description" content="{{ page.content | strip_html | strip_newlines | truncatewords: 25, '...' }}">
   {%- else -%}
-    <meta name="description" content="{{ site.tagline | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="description" content="{{ site.tagline | strip_html | strip_newlines | truncatewords: 25, '...' }}">
   {%- endif -%}
 
   <!-- highlight.js support -->

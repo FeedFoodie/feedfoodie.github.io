@@ -1,6 +1,7 @@
 ---
 layout: pageHERO
 title: Heroes
+description: "Free English fan translation of the novel Heroes. Read all chapters online with no ads or paywalls. Updated regularly."
 ---
 
 ![HERO](/Images/HERO.jpeg)
