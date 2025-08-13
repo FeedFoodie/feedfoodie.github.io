@@ -8,19 +8,33 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
 
-  {%- if page.description -%}
-    <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
-  {%- elsif page.excerpt -%}
-    <meta name="description" content="{{ page.content | strip_html | strip_newlines | truncatewords: 25, '...' }}">
-  {%- else -%}
-    <meta name="description" content="{{ site.tagline | strip_html | strip_newlines | truncatewords: 25, '...' }}">
+  {%- assign final_description = site.tagline -%}
+
+  {%- capture tag_based_description -%}
+    {%- case page.tags.first -%}
+      {%- when 'simb' -%}Star Instructor Master Baek {{ page.title }}
+      {%- when 'lnb' -%}Legend of the Northern Blade {{ page.title }}
+      {%- when 'absw' -%}Absolute Warrior {{ page.title }}
+      {%- when 'ruh' -%}Reincarnated as an Unruly Heir {{ page.title }}
+      {%- when 'hero' -%}Heroes {{ page.title }}
+    {%- endcase -%}
+  {%- endcapture -%}
+
+  {%- if tag_based_description and tag_based_description != "" -%}
+    {%- assign final_description = tag_based_description | strip -%}
   {%- endif -%}
+
+  {%- if page.description -%}
+    {%- assign final_description = page.description -%}
+  {%- endif -%}
+
+  <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
 
   <!-- highlight.js support -->
   <link rel="stylesheet" href="/js/highlightjs/styles/format.css">
   <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
   <link rel="stylesheet" href="/css/design.css">
-  <link rel="stylesheet" href="/css/head.css?version=1.09">
+  <link rel="stylesheet" href="/css/head.css?v=1.09">
   <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
   <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
   <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
