@@ -174,6 +174,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         contentContainer.innerHTML = htmlContent;
 
+        // Apply settings from localStorage only AFTER new content is loaded.
+        if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
+            setFontSize(localStorage.getItem('fontSize'));
+        }
+        if (typeof setMode === 'function' && localStorage.getItem('colorScheme')) {
+            setMode(localStorage.getItem('colorScheme'));
+        }
+
+
     } catch (error) {
         console.error('Failed to load chapter:', error);
         contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content. Authorization may have failed.</p>';

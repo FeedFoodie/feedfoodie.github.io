@@ -148,9 +148,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             throw new Error('Authorization token was empty.');
         }
 
-        const response = await fetch(`/LNB/chapters/${sourceFile}`, {
+        const response = await fetch(`/HERO/chapters/${sourceFile}`, {
             headers: {
-                'Authorization': `Bearer ${token}`,
+                'Authorization': `Bearer ${token}`
                 //'X-Internal-Request-Token': atob(htmlViewer)
             }
         });
@@ -181,7 +181,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (typeof setMode === 'function' && localStorage.getItem('colorScheme')) {
             setMode(localStorage.getItem('colorScheme'));
         }
-
 
     } catch (error) {
         console.error('Failed to load chapter:', error);
