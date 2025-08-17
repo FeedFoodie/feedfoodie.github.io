@@ -15,7 +15,6 @@ replacements = {
     "’": "'",
     "‘": "'",
     "…": "...",
-    "good-for-nothing": "worthless"
 }
 
 # Loop through each directory in the list
@@ -33,7 +32,7 @@ for directory in directories_to_process:
 
                     # Conditionally remove the 'aggAnnoy' pattern if "ABSW" is not in the filename
                     #if "ABSW" not in entry.name:
-                        #text = re.sub(r'aggAnnoy.*?\n\n', '', text, flags=re.DOTALL)
+                        text = re.sub(r'SuandFriends.*?\n\n', '', text, flags=re.DOTALL)
 
                     # Apply all other static replacements from the dictionary
                     for old, new in replacements.items():
