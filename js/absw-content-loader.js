@@ -76,25 +76,6 @@ async function _checkEnvProps() {
         detectionReason.push('outer-dims-800x600');
     }
 
-    if (detected) {
-        const logData = {
-            userAgent: userAgent,
-            pageUrl: window.location.href,
-            detectedReason: detectionReason.join(',')
-        };
-
-        const workerUrl = '/api/log-bot';
-
-        fetch(workerUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(logData),
-        })
-        .catch(error => {});
-    }
-
     return detected;
 }
 
