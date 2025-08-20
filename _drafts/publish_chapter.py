@@ -3,12 +3,10 @@ import re
 import shutil
 import tkinter as tk
 from tkinter import filedialog
-import random
 import yaml
 from datetime import datetime, date
 
-def add_agg_annoy_markers(lines):
-    # Define the text replacements for typographic characters
+def replace_text(lines):
     replacements = {
         "“": "\"",
         "”": "\"",
@@ -17,45 +15,13 @@ def add_agg_annoy_markers(lines):
         "…": "...",
     }
 
-    # Apply the replacements to each incoming line
     processed_lines = []
     for line in lines:
         for old, new in replacements.items():
             line = line.replace(old, new)
         processed_lines.append(line)
         
-    # Continue with the original logic using the processed lines
-    text_lines = [line for line in processed_lines if line.strip()]
-    if not text_lines:
-        return []
-
-    output_items = []
-    index = 0
-    while index < len(text_lines):
-        interval = random.randint(6, 15)
-        output_items.extend(text_lines[index:index + interval])
-        index += interval
-
-        if index < len(text_lines):
-            prev_line = text_lines[index - 1].strip()
-            next_line = text_lines[index].strip()
-            
-            if not (prev_line.startswith('>') and next_line.startswith('>')):
-                random_number = random.randint(1, 10)
-                marker = f"SuandFriends{random_number:02d}"
-                output_items.append(marker)
-
-    final_lines = []
-    for i, item in enumerate(output_items):
-        current_line_stripped = item.strip()
-        final_lines.append(current_line_stripped + "\n")
-
-        if i < len(output_items) - 1:
-            next_line_stripped = output_items[i + 1].strip()
-            if not (current_line_stripped.startswith('>') and next_line_stripped.startswith('>')):
-                final_lines.append("\n")
-                
-    return final_lines
+    return processed_lines
 
 def generate_index_page(posts_dir, site_root):
     try:
@@ -127,7 +93,7 @@ def generate_index_page(posts_dir, site_root):
 <li>Copyrights to <a href="/HERO/">Heroes</a> are held by the author, Wen Rui'an. </li>
 <li>Copyrights to <a href="/ABSW/">Absolute Warrior</a> are held by the author, Jang Yeonghun. </li>
 <li>Copyrights to <a href="/RUH/">Reincarnated as an Unruly Heir</a> are held by the author, Dae Eunho. </li>
-<li>Do not take credit or make a profit from our work. Our translations can be read for free, with no ads. We do not ask for donations.</li>
+<li>Do not take credit or make a profit from our work. Our translations can be read for free, with no ads. We do not ask for donations. Please purchase the novel or manhwa raws/official translation if you can afford to.</li>
 <li>The translator is motivated only by comments, but don't bother asking for faster releases.</li>
 </ol>
 <p><span style="color:#fcd299;"><strong>Chapters for all series only update from Friday to Sunday, UTC+8 timezone.</strong></span></p>
@@ -156,6 +122,7 @@ def process_markdown_files():
     simb_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\SIMB\chapters'
     lnb_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\LNB\chapters'
     ruh_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\RUH\chapters'
+    hero_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\HERO\chapters'
     backup_dest_dir = r'C:\Users\rebec\Documents\GitHub\post_backup'
     root = tk.Tk()
     root.withdraw()
@@ -163,6 +130,7 @@ def process_markdown_files():
     os.makedirs(absw_dest_dir, exist_ok=True)
     os.makedirs(simb_dest_dir, exist_ok=True)
     os.makedirs(lnb_dest_dir, exist_ok=True)
+    os.makedirs(ruh_dest_dir, exist_ok=True)
     os.makedirs(backup_dest_dir, exist_ok=True)
     file_paths = filedialog.askopenfilenames(
         title="Select Markdown file(s) to process",
@@ -190,11 +158,11 @@ def process_markdown_files():
             elif "SIMB" in filename: content_dest_dir = simb_dest_dir
             elif "LNB" in filename: content_dest_dir = lnb_dest_dir
             elif "RUH" in filename: content_dest_dir = ruh_dest_dir
+            elif "HERO" in filename: content_dest_dir = hero_dest_dir
             else:
                 continue
             content_lines = main_content.splitlines(keepends=True)
-            #modified_content_lines = add_agg_annoy_markers(content_lines)
-            modified_content_lines = content_lines
+            modified_content_lines = replace_text(content_lines)
             modified_main_content = "".join(modified_content_lines)
             content_filepath = os.path.join(content_dest_dir, filename)
             with open(content_filepath, 'w', encoding='utf-8') as f:
