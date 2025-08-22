@@ -20,7 +20,9 @@ replacements = {
     "Otherworlder": "otherworlder",
     "iron skin and strong bones": "Iron Skin Strong Bones",
     "inner arts": "inner qi",
-    "inner qi technique": "inner arts technique"
+    "inner qi technique": "inner arts technique",
+    ". goblin": ". Goblin",
+    ". orc": ". Orc"
 }
 
 # Loop through each directory in the list
