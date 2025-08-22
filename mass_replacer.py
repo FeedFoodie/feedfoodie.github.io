@@ -3,9 +3,11 @@ import re
 
 # List of all directories you want to process
 directories_to_process = [
-    r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\ABSW\chapters',
-    r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\SIMB\chapters',
-    r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\LNB\chapters'
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/ABSW/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/SIMB/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/LNB/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/WLRG/chapters',
+    r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/_posts/'
 ]
 
 # A dictionary for all the static text replacements
@@ -15,6 +17,10 @@ replacements = {
     "’": "'",
     "‘": "'",
     "…": "...",
+    "Otherworlder": "otherworlder",
+    "iron skin and strong bones": "Iron Skin Strong Bones",
+    "inner arts": "inner qi",
+    "inner qi technique": "inner arts technique"
 }
 
 # Loop through each directory in the list
