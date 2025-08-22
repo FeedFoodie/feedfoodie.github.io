@@ -9,6 +9,8 @@ Disallow: /ABSW/chapters/
 Disallow: /LNB/chapters/
 Disallow: /HERO/chapters/
 Disallow: /RUH/chapters/
+Disallow: /WLRG/
+Disallow: /WLRG/chapters/
 Disallow: /hunnypot.html
 
 # Explicitly allow the Novel-Updates bot.
