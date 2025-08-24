@@ -3,12 +3,12 @@ import re
 
 # List of all directories you want to process
 directories_to_process = [
-    r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/ABSW/chapters',
-    r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/SIMB/chapters',
-    r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/LNB/chapters',
-    r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/WLRG/chapters',
-    r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/RUH/chapters',
-    r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/HERO/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/ABSW/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/SIMB/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/LNB/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/WLRG/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/RUH/chapters',
+    #r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/HERO/chapters',
     r'C:/Users/rebec/Documents/GitHub/feedfoodie.github.io/_posts/'
 ]
 
@@ -19,6 +19,9 @@ replacements = {
     "’": "'",
     "‘": "'",
     "…": "...",
+    "First-Rate": "first-rate",
+    "Second-Rate": "second-rate",
+    "Third-Rate": "third-rate",
     #"Otherworlder": "otherworlder",
     #"iron skin and strong bones": "Iron Skin Strong Bones",
     #"inner arts": "inner qi",
