@@ -80,6 +80,7 @@ async function _checkEnvProps() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    //const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
@@ -119,8 +120,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // Fetch the chapter file directly without authorization
-        const response = await fetch(`/LCS/chapters/${sourceFile}`);
+        const tokenResponse = await fetch('/api/get-token');
+        if (!tokenResponse.ok) {
+            throw new Error('Could not retrieve authorization token.');
+        }
+        const { token } = await tokenResponse.json();
+        if (!token) {
+            throw new Error('Authorization token was empty.');
+        }
+
+        const response = await fetch(`/LCS/chapters/${sourceFile}`, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+                //'X-Internal-Request-Token': atob(htmlViewer)
+            }
+        });
 
         if (!response.ok) {
             throw new Error(`Network response was not ok: ${response.statusText}`);
@@ -151,6 +165,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (error) {
         console.error('Failed to load chapter:', error);
-        contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content. Check the file path and ensure it is accessible.</p>';
+        contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content. Authorization may have failed.</p>';
     }
 });
