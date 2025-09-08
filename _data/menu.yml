@@ -25,3 +25,6 @@
         - name: "Reincarnated as an Unruly Heir"
           url: "/RUH/"
           weight: 2
+        - name: "Chronicles of the Demon Faction"
+          url: "/LCS/"
+          weight: 2

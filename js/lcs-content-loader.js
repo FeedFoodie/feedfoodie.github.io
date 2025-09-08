@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         // Fetch the chapter file directly without authorization
-        const response = await fetch(`/chapters/${sourceFile}`);
+        const response = await fetch(`/LCS/chapters/${sourceFile}`);
 
         if (!response.ok) {
             throw new Error(`Network response was not ok: ${response.statusText}`);

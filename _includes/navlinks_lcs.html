@@ -1,7 +1,7 @@
 {% include chapter_tagging.html %}
 {% assign start = false %}
 {% for post in site.posts %}	
-	{% if start == true and post.tags contains 'wlrg' %}
+	{% if start == true and post.tags contains 'lcs' %}
 		{% assign prevChap = post %}
 		{% break %}
 	{% endif %}			
@@ -11,7 +11,7 @@
 {% endfor %}
 {% assign stop = false %}
 {% for post in site.posts reversed %}	
-	{% if stop == true and post.tags contains 'wlrg' %}
+	{% if stop == true and post.tags contains 'lcs' %}
 		{% assign nextChap = post %}
 		{% break %}
 	{% endif %}			
@@ -23,7 +23,7 @@
 <div class="centersel">
 <select class="cmb"  onchange="location = this.value;" style="width: 350px">
 	{% for post in site.posts reversed %}	
-		{% if post.tags contains 'wlrg' %}
+		{% if post.tags contains 'lcs' %}
 			<option value="{{post.url}}">{{post.title}}</option>
 		{% endif %}				
 	{% endfor %}
@@ -37,7 +37,7 @@
     <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Chapter</div><div><span>{{ prevChap.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_prev" href="/WLRG/" title="Chapters">
+  <a class="post_navi-item nav_prev" href="/LCS/" title="Chapters">
     <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
   </a>
   {%- endif -%}
@@ -46,7 +46,7 @@
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Chapter</div><div><span>{{ nextChap.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_next" href="/WLRG/" title="Chapters">
+  <a class="post_navi-item nav_next" href="/LCS/" title="Chapters">
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Chapters</div><div><span>Chapters</span></div>
   </a>
   {%- endif -%}
@@ -54,6 +54,6 @@
 
 <div class="centersel">
 	<p><br /></p>
-	<p style="font-size:0.8em;">Subscribe to Updates via <a href="{{ 'feed.wlrg.xml' | relative_url }}" target="_blank">RSS</a>, <a href="https://www.novelupdates.com/series/star-instructor-master-baek/" target="_blank">Novelupdates</a>, or <a href="https://discord.gg/s3AsADMkNQ" target="_blank">Discord</a>! Please leave a review on NU if you enjoyed reading!</p>
+	<p style="font-size:0.8em;">Subscribe to Updates via <a href="{{ 'feed.lcs.xml' | relative_url }}" target="_blank">RSS</a>, <a href="https://www.novelupdates.com/series/chronicles-of-the-demon-faction/" target="_blank">Novelupdates</a>, or <a href="https://discord.gg/s3AsADMkNQ" target="_blank">Discord</a>! Please leave a review on NU if you enjoyed reading!</p>
 	<p><br /></p>
 </div>

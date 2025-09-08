@@ -93,6 +93,7 @@ def generate_index_page(posts_dir, site_root):
 <li>Copyrights to <a href="/HERO/">Heroes</a> are held by the author, Wen Rui'an. </li>
 <li>Copyrights to <a href="/ABSW/">Absolute Warrior</a> are held by the author, Jang Yeonghun. </li>
 <li>Copyrights to <a href="/RUH/">Reincarnated as an Unruly Heir</a> are held by the author, Dae Eunho. </li>
+<li>Copyrights to <a href="/LCS/">Chronicles of the Demon Faction</a> are held by the author, Codezero. </li>
 <li>Do not take credit or make a profit from our work. Our translations can be read for free, with no ads. We do not ask for donations. Please purchase the novel or manhwa raws/official translation if you can afford to.</li>
 <li>The translator is motivated only by comments, but don't bother asking for faster releases.</li>
 </ol>
@@ -123,6 +124,7 @@ def process_markdown_files():
     lnb_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\LNB\chapters'
     ruh_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\RUH\chapters'
     hero_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\HERO\chapters'
+    lcs_dest_dir = r'C:\Users\rebec\Documents\GitHub\feedfoodie.github.io\LCS\chapters'
     backup_dest_dir = r'C:\Users\rebec\Documents\GitHub\post_backup'
     root = tk.Tk()
     root.withdraw()
@@ -131,6 +133,8 @@ def process_markdown_files():
     os.makedirs(simb_dest_dir, exist_ok=True)
     os.makedirs(lnb_dest_dir, exist_ok=True)
     os.makedirs(ruh_dest_dir, exist_ok=True)
+    os.makedirs(hero_dest_dir, exist_ok=True)
+    os.makedirs(lcs_dest_dir, exist_ok=True)
     os.makedirs(backup_dest_dir, exist_ok=True)
     file_paths = filedialog.askopenfilenames(
         title="Select Markdown file(s) to process",
@@ -159,6 +163,7 @@ def process_markdown_files():
             elif "LNB" in filename: content_dest_dir = lnb_dest_dir
             elif "RUH" in filename: content_dest_dir = ruh_dest_dir
             elif "HERO" in filename: content_dest_dir = hero_dest_dir
+            elif "LCS" in filename: content_dest_dir = lcs_dest_dir
             else:
                 continue
             content_lines = main_content.splitlines(keepends=True)
