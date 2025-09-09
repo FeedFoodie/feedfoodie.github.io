@@ -16,11 +16,11 @@ Chronicles of the Demon Faction Side Story:
 
 The Heavenly Demon Divine Cult, home to the demonic murim, is synonymous with fear itself.
 
-However, the cult leader suddenly died without naming a successor. The Divine Cult falls into a brutal power struggle, and the Violet Lightning Divine Demon Jo Baekcheon seizes the throne. Unfortunately, his inability to rule wisely ushers in an era of tyranny, plunging the Divine Cult into yet another era of chaos.
+Following the sudden death of the cult leader, the Divine Cult erupts into brutal civil war. Amid the chaos, the Violet Lightning Divine Demon Jo Baekcheon seizes the throne, but his tyrannical rule only worsens the chaos.
 
-It was in this era that the one absolute being who would later be revered as the Light began turning the wheel of fate bestowed upon him.
+During this dark era, an absolute being destined to be revered as the Light begins to turn the wheel of fate.
 
-This is the story of Lee Cheonsang, a rebel against the old era's tyranny and the Ninth Generation Heavenly Demon who would open the door to a new era.
+This is the story of Lee Cheonsang, a rebel who defies the tyranny of the old era, and a man destined to usher in a new age as the Ninth Generation Heavenly Demon.
 
 ## Raws
 
