@@ -20,7 +20,7 @@ Following the sudden death of the cult leader, the Divine Cult erupts into bruta
 
 During this dark era, an absolute being destined to be revered as the Light begins to turn the wheel of fate.
 
-This is the story of Lee Cheonsang, a rebel who defies the tyranny of the old era, and a man destined to usher in a new age as the Ninth Generation Heavenly Demon.
+This is the story of Lee Cheonsang, a rebel who defies the tyranny of the old era, and the Ninth Generation Heavenly Demon who would usher in a new age.
 
 ## Raws
 
