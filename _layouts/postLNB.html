@@ -13,10 +13,6 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-      {% assign author = page.author | default: site.author %}
-      {%- if author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">	
@@ -24,11 +20,9 @@ layout: default
 	{% include JS_buttons.html %}
 	<p class="foodie">TL: FoodieMonster007</p>
   <p class="foodie"><br /></p>
-  <p class="fooddie">Go to northbladetldotcom!</p>
   <div id="content-container">
     <p>Loading chapter...</p>
   </div>
-  <p class="ffoodie">If you see this, you are at the wrong site! Go to northbladetldotcom!</p>
 </div>
 <hr>
 		{% include navlinks_lnb.html %}
