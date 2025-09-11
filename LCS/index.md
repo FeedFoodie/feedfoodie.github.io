@@ -16,7 +16,7 @@ Chronicles of the Demon Faction Side Story:
 
 The Heavenly Demon Divine Cult, home to the demonic murim, is synonymous with fear itself.
 
-Following the sudden death of the cult leader, the Divine Cult erupts into brutal civil war. Amid the chaos, the Violet Lightning Divine Demon Jo Baekcheon seizes the throne, but his tyrannical rule only worsens the chaos.
+Following the sudden death of the cult leader, the Divine Cult erupts into brutal civil war. Amid the chaos, the Violet Lightning Divine Demon Jo Baekcheon seizes the throne, but his tyrannical rule only worsens the anarchy.
 
 During this dark era, an absolute being destined to be revered as the Light begins to turn the wheel of fate.
 
