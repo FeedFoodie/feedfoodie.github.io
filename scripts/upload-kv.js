@@ -1,7 +1,6 @@
 // scripts/upload-kv.js
 import fs from 'fs';
 import path from 'path';
-import fetch from 'node-fetch';
 import crypto from 'crypto';
 
 const accountId = process.env.CF_ACCOUNT_ID;
