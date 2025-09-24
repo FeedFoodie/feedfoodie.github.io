@@ -1,4 +1,4 @@
-// Runs _checkEnvProps first to block bots
+// --- Bot detection ---
 async function _checkEnvProps() {
     const finderskeepers = [
         "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
@@ -23,73 +23,52 @@ async function _checkEnvProps() {
         "YisouSpider"
     ];
 
-    for (let i = 0; i < finderskeepers.length; i++) {
-        if (navigator.userAgent === finderskeepers[i]) {
-            return false;
-        }
-    }
+    if (finderskeepers.includes(navigator.userAgent)) return true;
 
     let detected = false;
-    let detectionReason = [];
+    const isChromium = navigator.userAgent.includes("Chrome/");
 
-    const userAgent = navigator.userAgent;
-    const isChromiumBrowser = (ua) => ua.includes("Chrome/");
-
-    if (navigator.webdriver) {
-        detected = true;
-        detectionReason.push('webdriver');
-    }
+    if (navigator.webdriver) detected = true;
 
     try {
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
         if (gl) {
             const renderer = gl.getParameter(gl.RENDERER);
-            if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
-                detected = true;
-                detectionReason.push('webgl-renderer');
-            }
+            if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) detected = true;
         } else {
             detected = true;
-            detectionReason.push('no-webgl');
         }
-    } catch (e) {
+    } catch {
         detected = true;
-        detectionReason.push('webgl-error');
     }
 
-    if (navigator.languages && Array.isArray(navigator.languages) && navigator.languages.length === 0) {
-        detected = true;
-        detectionReason.push('empty-languages-array');
-    }
+    if (navigator.languages && navigator.languages.length === 0) detected = true;
+    if ((window.outerWidth === 0 && window.outerHeight === 0 && !isChromium) || (window.outerWidth === 800 && window.outerHeight === 600)) detected = true;
 
-    if (window.outerWidth === 0 && window.outerHeight === 0) {
-        if (isChromiumBrowser(userAgent)) {
-            detectionReason.push('outer-dims-zero-chromium');
-        } else {
-            detected = true;
-            detectionReason.push('outer-dims-zero-non-chromium');
-        }
-    }
-
-    if (window.outerWidth === 800 && window.outerHeight === 600) {
-        detected = true;
-        detectionReason.push('outer-dims-800x600');
-    }
-
-    return detected;
+    return detected; // true = bot detected, false = human
 }
 
+// --- Main loader ---
 document.addEventListener('DOMContentLoaded', async () => {
     const contentContainer = document.getElementById('content-container');
-    const sourceFile = document.body.dataset.source;
+    if (!contentContainer) return;
+
+    // Detect chapter number from <body> or <h1>
+    let sourceFile = document.body.dataset.source;
+    if (!sourceFile) {
+        const titleText = document.querySelector('h1')?.innerText || '';
+        const match = titleText.match(/Chapter (\d+)/i);
+        sourceFile = match ? match[1] : null;
+    }
+
     const prefix = document.body.dataset.prefix;
+    if (!sourceFile || !prefix) return;
 
-    if (!contentContainer || !sourceFile || !prefix) return;
-
+    // Block bots
     if (await _checkEnvProps()) {
         contentContainer.innerHTML = `
-            <p style="text-align: center;">
+            <p style="text-align:center;">
                 Automated access detected. Please disable VPNs/extensions or contact support.
             </p>
             <div style="display:none;">
@@ -102,7 +81,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
         '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
-        // ... all others ...
+        '03': '<p class="fooddie">How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.',
+        '04': '<p class="foodiie">Hyonwon Kang was bonked again. Lorem ipsum sit dolor amet.',
+        '05': '<p class="foodiee">Northbladetldotcomwelcomesyou.',
+        '06': '<p class="ffoodie">This is a nonprofit translation. There are no ads. Do not make Mimi cry.',
+        '07': '<p class="fooodie">This translation is free to read. No ads should be visible.',
+        '08': '<p class="fooddie">Ads? Ak Yeonho complains. What ads?',
+        '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
+        '10': '<p class="foodiee">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore.',
     };
 
     try {
@@ -113,11 +99,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch(`/chapters/${prefix}/${sourceFile}`, {
             headers: { 'Authorization': `Bearer ${token}` }
         });
+        if (!response.ok) throw new Error('Chapter fetch failed.');
         let markdown = await response.text();
 
         let htmlContent = marked.parse(
             markdown
-                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
+                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
                 .replace(/@\[/g, '<span class="night-mode-quotes">')
                 .replace(/\]@/g, '</span>')
         );
