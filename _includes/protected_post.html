@@ -8,22 +8,10 @@
 
 <script>
 function onTurnstileSuccess(token) {
-  // Send token to worker for verification
-  fetch('/api/verify', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ token })
-  })
-  .then(r => r.json())
-  .then(data => {
-    if (!data.ok) {
-      console.error("Turnstile verification failed");
-      return;
-    }
+    // Save token globally for loader
+    window.turnstileToken = token;
 
-    console.log("Turnstile passed, loading content loader");
-
-    // Map Jekyll layouts to loader scripts
+    // Dynamically inject the correct loader based on layout
     const layout = '{{ page.layout }}';
     const loaderMap = {
       'postLNB': 'lnb-content-loader.js?v=1.24',
@@ -33,15 +21,28 @@ function onTurnstileSuccess(token) {
       'postHERO': 'hero-content-loader.js?v=1.24',
       'postLCS': 'lcs-content-loader.js?v=1.23'
     };
-
     const loaderFile = loaderMap[layout];
     if (loaderFile) {
-      const script = document.createElement('script');
-      script.src = `http://northbladetl.com/js/${loaderFile}`;
-      document.body.appendChild(script);
-    } else {
-      console.error("No loader defined for layout:", layout);
+        const script = document.createElement('script');
+        script.src = `http://northbladetl.com/js/${loaderFile}`;
+        document.body.appendChild(script);
     }
-  });
 }
 </script>
+
+{%- comment -%}
+{% if page.layout == 'postLNB' %}
+<script src="http://northbladetl.com/js/lnb-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postSIMB' %}
+<script src="http://northbladetl.com/js/simb-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postABSW' %}
+<script src="http://northbladetl.com/js/absw-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postRUH' %}
+<script src="http://northbladetl.com/js/ruh-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postHERO' %}
+<script src="http://northbladetl.com/js/hero-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postLCS' %}
+<script src="http://northbladetl.com/js/lcs-content-loader.js?v=1.23"></script>
+{% endif %}
+{%- endcomment -%}
+</body>
