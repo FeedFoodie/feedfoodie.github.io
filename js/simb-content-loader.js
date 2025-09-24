@@ -79,15 +79,27 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        const resp = await fetch('/api/fetch-chapter', {
+        // --- Get single-use token from Worker ---
+        const tokenResp = await fetch('/api/get-token', {
             method: 'POST',
             credentials: 'include',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ turnstileToken: window.turnstileToken, sourceFile })
+            body: JSON.stringify({ turnstileToken: window.turnstileToken })
         });
 
-        if (!resp.ok) throw new Error('Chapter fetch failed.');
-        let markdown = await resp.text();
+        if (!tokenResp.ok) throw new Error('Authorization failed.');
+        const { token } = await tokenResp.json();
+        if (!token) throw new Error('Token empty.');
+
+        // --- Fetch chapter through Worker ---
+        const chapterResp = await fetch(`/chapters/${sourceFile}`, {
+            method: 'GET',
+            headers: { 'Authorization': `Bearer ${token}` },
+            credentials: 'include'
+        });
+
+        if (!chapterResp.ok) throw new Error('Chapter fetch failed.');
+        let markdown = await chapterResp.text();
 
         let htmlContent = marked.parse(
             markdown.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
