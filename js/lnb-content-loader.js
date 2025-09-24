@@ -80,7 +80,6 @@ async function _checkEnvProps() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    //const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
@@ -120,7 +119,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        const tokenResponse = await fetch('/api/get-token');
+        // --- 1. Get token from Worker (POST + credentials) ---
+        const tokenResponse = await fetch('/api/get-token', {
+            method: 'POST',
+            credentials: 'include'
+        });
+
         if (!tokenResponse.ok) {
             throw new Error('Could not retrieve authorization token.');
         }
@@ -129,11 +133,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             throw new Error('Authorization token was empty.');
         }
 
+        // --- 2. Fetch protected chapter with token ---
         const response = await fetch(`/LNB/chapters/${sourceFile}`, {
             headers: {
-                'Authorization': `Bearer ${token}`,
-                //'X-Internal-Request-Token': atob(htmlViewer)
-            }
+                'Authorization': `Bearer ${token}`
+            },
+            credentials: 'include'
         });
 
         if (!response.ok) {
@@ -141,6 +146,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         let markdown = await response.text();
 
+        // --- 3. Transform + inject content ---
         let htmlContent = marked.parse(
             markdown
                 .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
@@ -155,14 +161,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         contentContainer.innerHTML = htmlContent;
 
-        // Apply settings from localStorage only AFTER new content is loaded.
+        // --- 4. Apply user settings ---
         if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
             setFontSize(localStorage.getItem('fontSize'));
         }
         if (typeof setMode === 'function' && localStorage.getItem('colorScheme')) {
             setMode(localStorage.getItem('colorScheme'));
         }
-
 
     } catch (error) {
         console.error('Failed to load chapter:', error);
