@@ -10,6 +10,7 @@
 function onTurnstileSuccess(token) {
     window.turnstileToken = token;
 
+    // Dynamically load the page-specific loader script after CAPTCHA
     const layout = '{{ page.layout }}';
     const loaderMap = {
         'postLNB': 'lnb-content-loader.js?v=1.24',
@@ -20,7 +21,6 @@ function onTurnstileSuccess(token) {
         'postLCS': 'lcs-content-loader.js?v=1.23'
     };
     const loaderFile = loaderMap[layout];
-
     if (!loaderFile) return;
 
     const existing = document.querySelector(`script[src*="${loaderFile}"]`);
@@ -32,7 +32,6 @@ function onTurnstileSuccess(token) {
     document.body.appendChild(script);
 }
 </script>
-
 
 
 {%- comment -%}
