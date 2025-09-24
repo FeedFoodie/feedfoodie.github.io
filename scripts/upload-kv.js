@@ -9,7 +9,7 @@ const apiToken = process.env.CF_API_TOKEN;
 
 // Map folder names to KV namespace
 const folders = ["SIMB", "LNB", "ABSW", "RUH", "HERO", "LCS"];
-const kvNamespace = "TOKEN_KV"; // Replace with your actual KV namespace
+const kvNamespace = process.env.CF_KV_NAMESPACE; // pass the actual ID via GitHub Actions secrets
 const cacheFile = path.join(process.cwd(), '.kv-cache.json');
 
 // Load previous hashes
@@ -30,7 +30,8 @@ async function putKV(key, value) {
         headers: { "Authorization": `Bearer ${apiToken}`, "Content-Type": "text/plain" },
         body: value
     });
-    if (!res.ok) console.log(`❌ Failed KV write: ${key}`);
+    const text = await res.text();
+    if (!res.ok) console.log(`❌ Failed KV write: ${key} | ${res.status} | ${text}`);
     else console.log(`✅ KV write: ${key}`);
 }
 
