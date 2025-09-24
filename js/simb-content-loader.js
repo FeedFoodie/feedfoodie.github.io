@@ -83,9 +83,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
-    if (!contentContainer || !sourceFile) return;
+    if (!contentContainer || !sourceFile) {
+        return;
+    }
 
-    // --- Bot / automation detection ---
     if (await _checkEnvProps()) {
         contentContainer.innerHTML = `
             <p style="text-align: center;">
@@ -103,7 +104,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     marked.use(markedFootnote({
         description: '<hr><h3>Footnotes:</h3>'
     }));
-
+    
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
         '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
@@ -118,35 +119,34 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // --- Step 1: Request Turnstile verification if needed ---
-        if (!window.turnstileToken) {
-            console.log("Waiting for Turnstile completion...");
-            contentContainer.innerHTML = `<p>Please complete the CAPTCHA to view content.</p>`;
-            return;
-        }
-
-        // --- Step 2: Get token from Worker ---
+        // --- 1. Get token from Worker (POST + credentials) ---
         const tokenResponse = await fetch('/api/get-token', {
             method: 'POST',
-            credentials: 'include',   // Important: sends session cookie
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ turnstileToken: window.turnstileToken })
-        });
-
-        if (!tokenResponse.ok) throw new Error('Could not retrieve authorization token.');
-        const { token } = await tokenResponse.json();
-        if (!token) throw new Error('Authorization token was empty.');
-
-        // --- Step 3: Fetch protected chapter ---
-        const response = await fetch(`/SIMB/chapters/${sourceFile}`, {
-            headers: { 'Authorization': `Bearer ${token}` },
             credentials: 'include'
         });
 
-        if (!response.ok) throw new Error(`Network response was not ok: ${response.statusText}`);
+        if (!tokenResponse.ok) {
+            throw new Error('Could not retrieve authorization token.');
+        }
+        const { token } = await tokenResponse.json();
+        if (!token) {
+            throw new Error('Authorization token was empty.');
+        }
+
+        // --- 2. Fetch protected chapter with token ---
+        const response = await fetch(`/SIMB/chapters/${sourceFile}`, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            },
+            credentials: 'include'
+        });
+
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.statusText}`);
+        }
         let markdown = await response.text();
 
-        // --- Step 4: Transform Markdown to HTML ---
+        // --- 3. Transform + inject content ---
         let htmlContent = marked.parse(
             markdown
                 .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         contentContainer.innerHTML = htmlContent;
 
-        // --- Step 5: Apply user settings ---
+        // --- 4. Apply user settings ---
         if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
             setFontSize(localStorage.getItem('fontSize'));
         }
