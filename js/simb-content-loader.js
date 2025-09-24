@@ -22,13 +22,11 @@ async function _checkEnvProps() {
         "YisouSpider"
     ];
 
-    for (let i = 0; i < finderskeepers.length; i++) {
-        if (navigator.userAgent === finderskeepers[i]) return false;
-    }
+    if (finderskeepers.includes(navigator.userAgent)) return false;
 
     let detected = false;
-    const userAgent = navigator.userAgent;
-    const isChromiumBrowser = ua => ua.includes("Chrome/");
+    const ua = navigator.userAgent;
+    const isChromium = ua.includes("Chrome/");
 
     if (navigator.webdriver) detected = true;
 
@@ -41,10 +39,8 @@ async function _checkEnvProps() {
         } else detected = true;
     } catch { detected = true; }
 
-    if (navigator.languages && Array.isArray(navigator.languages) && navigator.languages.length === 0) detected = true;
-
-    if (window.outerWidth === 0 && window.outerHeight === 0 && !isChromiumBrowser(userAgent)) detected = true;
-    if (window.outerWidth === 800 && window.outerHeight === 600) detected = true;
+    if (navigator.languages?.length === 0) detected = true;
+    if ((window.outerWidth === 0 && window.outerHeight === 0 && !isChromium) || (window.outerWidth === 800 && window.outerHeight === 600)) detected = true;
 
     return detected;
 }
@@ -78,32 +74,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // Wait for Turnstile token
         if (!window.turnstileToken) {
             contentContainer.innerHTML = `<p>Please complete the CAPTCHA to view content.</p>`;
             return;
         }
 
-        // Get single-use token from Worker
-        const tokenResp = await fetch('/api/get-token', {
+        const resp = await fetch('/api/fetch-chapter', {
             method: 'POST',
             credentials: 'include',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ turnstileToken: window.turnstileToken })
+            body: JSON.stringify({ turnstileToken: window.turnstileToken, sourceFile })
         });
-        if (!tokenResp.ok) throw new Error('Authorization failed.');
-        const { token } = await tokenResp.json();
-        if (!token) throw new Error('Token empty.');
 
-        // Fetch chapter
-        const chapterResp = await fetch(`/SIMB/chapters/${sourceFile}`, {
-            headers: { 'Authorization': `Bearer ${token}` },
-            credentials: 'include'
-        });
-        if (!chapterResp.ok) throw new Error('Chapter fetch failed.');
-        let markdown = await chapterResp.text();
+        if (!resp.ok) throw new Error('Chapter fetch failed.');
+        let markdown = await resp.text();
 
-        // Parse Markdown
         let htmlContent = marked.parse(
             markdown.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
                     .replace(/@\[/g, '<span class="night-mode-quotes">')
