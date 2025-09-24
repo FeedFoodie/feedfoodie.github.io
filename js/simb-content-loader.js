@@ -49,7 +49,10 @@ async function _checkEnvProps() {
 document.addEventListener('DOMContentLoaded', async () => {
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
-    if (!contentContainer || !sourceFile) return;
+    if (!contentContainer || !sourceFile) {
+        console.log('[Loader] Missing content container or source file.');
+        return;
+    }
 
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
@@ -66,15 +69,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         // 1. Initialize session
-        await fetch('/api/init-session', { method: 'POST', credentials: 'include' });
+        console.log('[Loader] Initializing session...');
+        const initResp = await fetch('/api/init-session', { method: 'POST', credentials: 'include' });
+        console.log('[Loader] /api/init-session status:', initResp.status);
+        console.log('[Loader] /api/init-session headers:', [...initResp.headers]);
 
         // 2. Wait for Turnstile token
+        console.log('[Loader] Waiting for Turnstile token...');
         while (!window.turnstileToken) {
             await new Promise(resolve => setTimeout(resolve, 200));
         }
+        console.log('[Loader] Turnstile token obtained:', window.turnstileToken);
 
         // 3. Anti-bot check
         if (await _checkEnvProps()) {
+            console.log('[Loader] Automated access detected.');
             contentContainer.innerHTML = `
                 <p style="text-align:center;">Automated access detected. Complete CAPTCHA or contact support.</p>
                 <div style="display:none;">
@@ -83,30 +92,42 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // 4. Get server-issued token
+        // 4. Get single-use token
+        console.log('[Loader] Fetching single-use token...');
         const tokenResp = await fetch('/api/get-token', {
             method: 'POST',
             credentials: 'include',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ turnstileToken: window.turnstileToken })
         });
-        const { token } = await tokenResp.json();
+        console.log('[Loader] /api/get-token status:', tokenResp.status);
+        console.log('[Loader] /api/get-token headers:', [...tokenResp.headers]);
+        const tokenText = await tokenResp.text();
+        console.log('[Loader] /api/get-token response body:', tokenText);
+        if (!tokenResp.ok) throw new Error('Authorization failed.');
+        const { token } = JSON.parse(tokenText);
+        console.log('[Loader] Token received:', token);
         if (!token) throw new Error('Token empty.');
 
         // 5. Fetch chapter
+        console.log('[Loader] Fetching chapter:', sourceFile);
         const chapterResp = await fetch(`/chapters/${sourceFile}`, {
             method: 'GET',
             headers: { 'Authorization': `Bearer ${token}` },
             credentials: 'include'
         });
+        console.log('[Loader] /chapters fetch status:', chapterResp.status);
+        console.log('[Loader] /chapters fetch headers:', [...chapterResp.headers]);
         const chapterText = await chapterResp.text();
+        console.log('[Loader] /chapters response length:', chapterText.length);
+        if (!chapterResp.ok) throw new Error('Chapter fetch failed.');
 
-        // 6. Render markdown
+        // 6. Convert markdown to HTML
         marked.use(markedFootnote({ description: '<hr><h3>Footnotes:</h3>' }));
         let htmlContent = marked.parse(
             chapterText.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
-                       .replace(/@\[/g, '<span class="night-mode-quotes">')
-                       .replace(/\]@/g, '</span>')
+                    .replace(/@\[/g, '<span class="night-mode-quotes">')
+                    .replace(/\]@/g, '</span>')
         );
 
         htmlContent = htmlContent
@@ -115,11 +136,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             .replace(/<p>/g, '<p class="foodie">');
 
         contentContainer.innerHTML = htmlContent;
+        console.log('[Loader] Chapter rendered successfully.');
 
-        if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) setFontSize(localStorage.getItem('fontSize'));
-        if (typeof setMode === 'function' && localStorage.getItem('colorScheme')) setMode(localStorage.getItem('colorScheme'));
+        if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
+            setFontSize(localStorage.getItem('fontSize'));
+        }
+        if (typeof setMode === 'function' && localStorage.getItem('colorScheme')) {
+            setMode(localStorage.getItem('colorScheme'));
+        }
 
     } catch (err) {
+        console.error('[Loader] Error:', err);
         contentContainer.innerHTML = '<p style="color:red;">Failed to load content. Complete CAPTCHA or try again later.</p>';
     }
 });
