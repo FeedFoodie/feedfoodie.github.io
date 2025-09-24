@@ -6,7 +6,7 @@ import crypto from 'crypto';
 
 const accountId = process.env.CF_ACCOUNT_ID;
 const apiToken = process.env.CF_API_TOKEN;
-const kvNamespace = process.env.CF_KV_NAMESPACE; // GitHub Actions secret with KV namespace ID
+const kvNamespace = process.env.CF_KV_NAMESPACE; // GitHub Actions secret
 
 if (!accountId || !apiToken || !kvNamespace) {
     console.error("❌ Missing CF_ACCOUNT_ID, CF_API_TOKEN, or CF_KV_NAMESPACE!");
@@ -48,7 +48,7 @@ async function putKV(key, value) {
 }
 
 async function uploadFolder(folder) {
-    const dir = path.join(process.cwd(), '..', folder, 'chapters'); // <-- added '..'
+    const dir = path.join(process.cwd(), '..', folder, 'chapters'); // adjust depending on workflow
     if (!fs.existsSync(dir)) {
         console.log(`⚠️ Folder not found: ${dir}`);
         return;
@@ -59,7 +59,16 @@ async function uploadFolder(folder) {
         const filePath = path.join(dir, file);
         const content = fs.readFileSync(filePath, 'utf8');
         const fileHash = hashContent(content);
-        const key = `${folder}/${file}`;
+
+        // --- NEW KEY FORMAT ---
+        const baseName = path.basename(file, path.extname(file)); // e.g., 2024-11-23-ABSW00
+        const match = baseName.match(/[A-Z]+(\d+)$/); // extract digits after letters
+        if (!match) {
+            console.log(`⚠️ Skipping unrecognized filename: ${file}`);
+            continue;
+        }
+        const chapterNumber = match[1]; // e.g., "00" or "001"
+        const key = `${folder}-${chapterNumber}`; // ABSW-00, SIMB-001
 
         if (cache[key] === fileHash) {
             console.log(`⏭ Skipping unchanged: ${key}`);
@@ -70,6 +79,7 @@ async function uploadFolder(folder) {
         cache[key] = fileHash;
     }
 }
+
 async function main() {
     for (const folder of folders) {
         await uploadFolder(folder);

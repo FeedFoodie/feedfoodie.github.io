@@ -1,0 +1,16 @@
+<script src="http://northbladetl.com/js/marked.bundle.js"></script>
+
+{%- if page.layout == 'postLNB' -%}
+<script src="http://northbladetl.com/js/lnb-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postSIMB' %}
+<script src="http://northbladetl.com/js/simb-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postABSW' %}
+<script src="http://northbladetl.com/js/absw-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postRUH' %}
+<script src="http://northbladetl.com/js/ruh-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postHERO' %}
+<script src="http://northbladetl.com/js/hero-content-loader.js?v=1.24"></script>
+{% elsif page.layout == 'postLCS' %}
+<script src="http://northbladetl.com/js/lcs-content-loader.js?v=1.23"></script>
+{%- endif -%}
+</body>
