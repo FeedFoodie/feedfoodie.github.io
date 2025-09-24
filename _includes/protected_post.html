@@ -9,23 +9,30 @@
 <script>
 function onTurnstileSuccess(token) {
     window.turnstileToken = token;
+
     const layout = '{{ page.layout }}';
     const loaderMap = {
-      'postLNB': 'lnb-content-loader.js?v=1.24',
-      'postSIMB': 'simb-content-loader.js?v=1.25',
-      'postABSW': 'absw-content-loader.js?v=1.24',
-      'postRUH': 'ruh-content-loader.js?v=1.24',
-      'postHERO': 'hero-content-loader.js?v=1.24',
-      'postLCS': 'lcs-content-loader.js?v=1.23'
+        'postLNB': 'lnb-content-loader.js?v=1.24',
+        'postSIMB': 'simb-content-loader.js?v=1.25',
+        'postABSW': 'absw-content-loader.js?v=1.24',
+        'postRUH': 'ruh-content-loader.js?v=1.24',
+        'postHERO': 'hero-content-loader.js?v=1.24',
+        'postLCS': 'lcs-content-loader.js?v=1.23'
     };
     const loaderFile = loaderMap[layout];
-    if (loaderFile) {
-        const script = document.createElement('script');
-        script.src = `https://northbladetl.com/js/${loaderFile}`;
-        document.body.appendChild(script);
-    }
+
+    if (!loaderFile) return;
+
+    const existing = document.querySelector(`script[src*="${loaderFile}"]`);
+    if (existing) existing.remove();
+
+    const script = document.createElement('script');
+    script.src = `https://northbladetl.com/js/${loaderFile}`;
+    script.defer = true;
+    document.body.appendChild(script);
 }
 </script>
+
 
 
 {%- comment -%}
