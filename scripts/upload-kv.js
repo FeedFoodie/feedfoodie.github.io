@@ -1,6 +1,7 @@
 // scripts/upload-kv.js
 import fs from 'fs';
 import path from 'path';
+import fetch from 'node-fetch';
 import crypto from 'crypto';
 
 const accountId = process.env.CF_ACCOUNT_ID;
@@ -23,16 +24,15 @@ function hashContent(content) {
 }
 
 async function putKV(key, value) {
-  const url = `https://api.cloudflare.com/client/v4/accounts/${accountId}/storage/kv/namespaces/${kvNamespace}/values/${encodeURIComponent(key)}`;
-  const res = await globalThis.fetch(url, {
-    method: 'PUT',
-    headers: { "Authorization": `Bearer ${apiToken}`, "Content-Type": "text/plain" },
-    body: value
-  });
-  if (!res.ok) console.log(`❌ Failed KV write: ${key}`);
-  else console.log(`✅ KV write: ${key}`);
+    const url = `https://api.cloudflare.com/client/v4/accounts/${accountId}/storage/kv/namespaces/${kvNamespace}/values/${encodeURIComponent(key)}`;
+    const res = await fetch(url, {
+        method: 'PUT',
+        headers: { "Authorization": `Bearer ${apiToken}`, "Content-Type": "text/plain" },
+        body: value
+    });
+    if (!res.ok) console.log(`❌ Failed KV write: ${key}`);
+    else console.log(`✅ KV write: ${key}`);
 }
-
 
 async function uploadFolder(folder) {
     const dir = path.join(process.cwd(), folder, 'chapters');
