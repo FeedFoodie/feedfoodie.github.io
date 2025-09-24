@@ -80,6 +80,7 @@ async function _checkEnvProps() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    //const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
@@ -119,12 +120,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // --- 1. Get token from Worker (POST + credentials) ---
-        const tokenResponse = await fetch('/api/get-token', {
-            method: 'POST',
-            credentials: 'include'
-        });
-
+        const tokenResponse = await fetch('/api/get-token');
         if (!tokenResponse.ok) {
             throw new Error('Could not retrieve authorization token.');
         }
@@ -133,12 +129,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             throw new Error('Authorization token was empty.');
         }
 
-        // --- 2. Fetch protected chapter with token ---
         const response = await fetch(`/SIMB/chapters/${sourceFile}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
-            },
-            credentials: 'include'
+                //'X-Internal-Request-Token': atob(htmlViewer)
+            }
         });
 
         if (!response.ok) {
@@ -146,7 +141,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         let markdown = await response.text();
 
-        // --- 3. Transform + inject content ---
         let htmlContent = marked.parse(
             markdown
                 .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
@@ -161,7 +155,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         contentContainer.innerHTML = htmlContent;
 
-        // --- 4. Apply user settings ---
+        // Apply settings from localStorage only AFTER new content is loaded.
         if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
             setFontSize(localStorage.getItem('fontSize'));
         }
