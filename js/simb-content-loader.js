@@ -50,6 +50,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     const sourceFile = document.body.dataset.source;
     if (!contentContainer || !sourceFile) return;
 
+    async function _checkEnvProps() {
+        // Your full anti-bot checks here
+        return false;
+    }
+
+    // --- Wait for Turnstile token before proceeding ---
+    while (!window.turnstileToken) {
+        await new Promise(resolve => setTimeout(resolve, 200));
+    }
+
+    if (await _checkEnvProps()) {
+        contentContainer.innerHTML = `
+            <p style="text-align:center;">Automated access detected. Complete CAPTCHA or contact support.</p>
+            <div style="display:none;">
+                <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
+            </div>`;
+        return;
+    }
+
+    marked.use(markedFootnote({ description: '<hr><h3>Footnotes:</h3>' }));
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
         '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
@@ -64,25 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // --- 1. Initialize session first ---
-        await fetch('/api/init-session', { method: 'POST', credentials: 'include' });
-
-        // --- 2. Wait for Turnstile success ---
-        while (!window.turnstileToken) {
-            await new Promise(resolve => setTimeout(resolve, 200));
-        }
-
-        // --- 3. Check environment ---
-        if (await _checkEnvProps()) {
-            contentContainer.innerHTML = `
-                <p style="text-align:center;">Automated access detected. Complete CAPTCHA or contact support.</p>
-                <div style="display:none;">
-                    <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
-                </div>`;
-            return;
-        }
-
-        // --- 4. Get single-use token from Worker ---
+        // Get single-use token from Worker
         const tokenResp = await fetch('/api/get-token', {
             method: 'POST',
             credentials: 'include',
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const { token } = await tokenResp.json();
         if (!token) throw new Error('Token empty.');
 
-        // --- 5. Fetch chapter ---
+        // Fetch chapter
         const chapterResp = await fetch(`/chapters/${sourceFile}`, {
             method: 'GET',
             headers: { 'Authorization': `Bearer ${token}` },
@@ -103,9 +105,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (!chapterResp.ok) throw new Error('Chapter fetch failed.');
         let markdown = await chapterResp.text();
-
-        // --- 6. Convert markdown to HTML ---
-        marked.use(markedFootnote({ description: '<hr><h3>Footnotes:</h3>' }));
 
         let htmlContent = marked.parse(
             markdown.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
