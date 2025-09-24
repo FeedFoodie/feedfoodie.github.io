@@ -50,16 +50,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const sourceFile = document.body.dataset.source;
     if (!contentContainer || !sourceFile) return;
 
-    async function _checkEnvProps() {
-        // Your full anti-bot checks here
-        return false;
-    }
-
-    // --- Wait for Turnstile token before proceeding ---
-    while (!window.turnstileToken) {
-        await new Promise(resolve => setTimeout(resolve, 200));
-    }
-
     if (await _checkEnvProps()) {
         contentContainer.innerHTML = `
             <p style="text-align:center;">Automated access detected. Complete CAPTCHA or contact support.</p>
@@ -84,7 +74,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // Get single-use token from Worker
+        if (!window.turnstileToken) {
+            contentContainer.innerHTML = `<p>Please complete the CAPTCHA to view content.</p>`;
+            return;
+        }
+
+        // --- Get single-use token from Worker ---
         const tokenResp = await fetch('/api/get-token', {
             method: 'POST',
             credentials: 'include',
@@ -96,7 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const { token } = await tokenResp.json();
         if (!token) throw new Error('Token empty.');
 
-        // Fetch chapter
+        // --- Fetch chapter through Worker ---
         const chapterResp = await fetch(`/chapters/${sourceFile}`, {
             method: 'GET',
             headers: { 'Authorization': `Bearer ${token}` },
