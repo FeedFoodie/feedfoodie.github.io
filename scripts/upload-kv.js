@@ -48,7 +48,7 @@ async function putKV(key, value) {
 }
 
 async function uploadFolder(folder) {
-    const dir = path.join(process.cwd(), folder, 'chapters');
+    const dir = path.join(process.cwd(), '..', folder, 'chapters'); // <-- added '..'
     if (!fs.existsSync(dir)) {
         console.log(`⚠️ Folder not found: ${dir}`);
         return;
@@ -61,13 +61,15 @@ async function uploadFolder(folder) {
         const fileHash = hashContent(content);
         const key = `${folder}/${file}`;
 
-        // Force KV write for debugging/logging
-        console.log(`➡ Attempting KV write: ${key}`);
+        if (cache[key] === fileHash) {
+            console.log(`⏭ Skipping unchanged: ${key}`);
+            continue;
+        }
+
         await putKV(key, content);
         cache[key] = fileHash;
     }
 }
-
 async function main() {
     for (const folder of folders) {
         await uploadFolder(folder);
