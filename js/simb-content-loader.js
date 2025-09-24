@@ -42,13 +42,17 @@ async function _checkEnvProps() {
     if (navigator.languages?.length === 0) detected = true;
     if ((window.outerWidth === 0 && window.outerHeight === 0 && !isChromium) || (window.outerWidth === 800 && window.outerHeight === 600)) detected = true;
 
+    console.log('[EnvCheck] Detected automated environment:', detected);
     return detected;
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
-    if (!contentContainer || !sourceFile) return;
+    if (!contentContainer || !sourceFile) {
+        console.log('[Loader] Missing content container or source file.');
+        return;
+    }
 
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
@@ -64,16 +68,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // --- 1. Initialize session first ---
-        await fetch('/api/init-session', { method: 'POST', credentials: 'include' });
+        // 1. Initialize session
+        console.log('[Loader] Initializing session...');
+        const initResp = await fetch('/api/init-session', { method: 'POST', credentials: 'include' });
+        console.log('[Loader] /api/init-session status:', initResp.status);
+        console.log('[Loader] /api/init-session headers:', [...initResp.headers]);
 
-        // --- 2. Wait for Turnstile success ---
+        // 2. Wait for Turnstile token
+        console.log('[Loader] Waiting for Turnstile token...');
         while (!window.turnstileToken) {
             await new Promise(resolve => setTimeout(resolve, 200));
         }
+        console.log('[Loader] Turnstile token obtained:', window.turnstileToken);
 
-        // --- 3. Check environment ---
+        // 3. Anti-bot check
         if (await _checkEnvProps()) {
+            console.log('[Loader] Automated access detected.');
             contentContainer.innerHTML = `
                 <p style="text-align:center;">Automated access detected. Complete CAPTCHA or contact support.</p>
                 <div style="display:none;">
@@ -82,33 +92,40 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // --- 4. Get single-use token from Worker ---
+        // 4. Get single-use token
+        console.log('[Loader] Fetching single-use token...');
         const tokenResp = await fetch('/api/get-token', {
             method: 'POST',
             credentials: 'include',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ turnstileToken: window.turnstileToken })
         });
-
+        console.log('[Loader] /api/get-token status:', tokenResp.status);
+        console.log('[Loader] /api/get-token headers:', [...tokenResp.headers]);
+        const tokenText = await tokenResp.text();
+        console.log('[Loader] /api/get-token response body:', tokenText);
         if (!tokenResp.ok) throw new Error('Authorization failed.');
-        const { token } = await tokenResp.json();
+        const { token } = JSON.parse(tokenText);
+        console.log('[Loader] Token received:', token);
         if (!token) throw new Error('Token empty.');
 
-        // --- 5. Fetch chapter ---
+        // 5. Fetch chapter
+        console.log('[Loader] Fetching chapter:', sourceFile);
         const chapterResp = await fetch(`/chapters/${sourceFile}`, {
             method: 'GET',
             headers: { 'Authorization': `Bearer ${token}` },
             credentials: 'include'
         });
-
+        console.log('[Loader] /chapters fetch status:', chapterResp.status);
+        console.log('[Loader] /chapters fetch headers:', [...chapterResp.headers]);
+        const chapterText = await chapterResp.text();
+        console.log('[Loader] /chapters response length:', chapterText.length);
         if (!chapterResp.ok) throw new Error('Chapter fetch failed.');
-        let markdown = await chapterResp.text();
 
-        // --- 6. Convert markdown to HTML ---
+        // 6. Convert markdown to HTML
         marked.use(markedFootnote({ description: '<hr><h3>Footnotes:</h3>' }));
-
         let htmlContent = marked.parse(
-            markdown.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
+            chapterText.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
                     .replace(/@\[/g, '<span class="night-mode-quotes">')
                     .replace(/\]@/g, '</span>')
         );
@@ -119,6 +136,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             .replace(/<p>/g, '<p class="foodie">');
 
         contentContainer.innerHTML = htmlContent;
+        console.log('[Loader] Chapter rendered successfully.');
 
         if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
             setFontSize(localStorage.getItem('fontSize'));
@@ -128,7 +146,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
     } catch (err) {
-        console.error(err);
+        console.error('[Loader] Error:', err);
         contentContainer.innerHTML = '<p style="color:red;">Failed to load content. Complete CAPTCHA or try again later.</p>';
     }
 });
