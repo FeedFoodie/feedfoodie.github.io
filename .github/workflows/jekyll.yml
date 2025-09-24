@@ -76,7 +76,7 @@ jobs:
 
       - name: Upload chapters to KV
         run: node upload-kv.js
-        working-directory: ./scripts
+        working-directory: .
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
