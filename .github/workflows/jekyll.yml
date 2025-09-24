@@ -70,10 +70,6 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install dependencies
-        # run: npm install
-        # working-directory: ./scripts
-
       - name: Upload chapters to KV
         run: node upload-kv.js
         working-directory: ./scripts
