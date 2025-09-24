@@ -1,4 +1,4 @@
-<script src="http://northbladetl.com/js/marked.bundle.js"></script>
+<script src="https://northbladetl.com/js/marked.bundle.js"></script>
 
 <!-- Turnstile widget -->
 <div class="cf-challenge"
@@ -8,10 +8,7 @@
 
 <script>
 function onTurnstileSuccess(token) {
-    // Save token globally for loader
     window.turnstileToken = token;
-
-    // Dynamically inject the correct loader based on layout
     const layout = '{{ page.layout }}';
     const loaderMap = {
       'postLNB': 'lnb-content-loader.js?v=1.24',
@@ -24,11 +21,12 @@ function onTurnstileSuccess(token) {
     const loaderFile = loaderMap[layout];
     if (loaderFile) {
         const script = document.createElement('script');
-        script.src = `http://northbladetl.com/js/${loaderFile}`;
+        script.src = `https://northbladetl.com/js/${loaderFile}`;
         document.body.appendChild(script);
     }
 }
 </script>
+
 
 {%- comment -%}
 {% if page.layout == 'postLNB' %}
