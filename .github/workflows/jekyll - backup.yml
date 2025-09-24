@@ -1,7 +1,11 @@
-# Workflow for building and deploying a Jekyll site to GitHub Pages
-name: Full Deploy Jekyll site to Pages
+# Workflow for building, deploying, and submitting URLs to search engines
+name: Deploy Jekyll and Index Content
 
 on:
+  # Runs on pushes targeting the gh-pages branch
+  push:
+    branches: ["gh-pages"]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -11,40 +15,46 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
+# Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          #ruby-version: '3.2.2' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+          bundler-cache: true # runs 'bundle install' and caches installed gems
+          cache-version: 1
+
+      - name: Cache Jekyll metadata
+        uses: actions/cache@v4
+        with:
+          path: |
+            _site
+            .jekyll-metadata
+          key: ${{ runner.os }}-jekyll-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-jekyll-build-${{ github.ref_name }}-
+            ${{ runner.os }}-jekyll-build-
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      # --- ADDED JEKYLL CLEAN STEP ---
-      - name: Clean Jekyll build directory
-        run: bundle exec jekyll clean
-
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --incremental --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
 
   # Deployment job
@@ -58,3 +68,86 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Updated Job: Submit URLs to Search Engines
+  submit_urls:
+    runs-on: ubuntu-latest
+    needs: deploy # This job runs only after the 'deploy' job is successful
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch the full history to compare commits
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+      - name: Identify and Filter Changed URLs
+        id: changed_files
+        run: |
+          # Get the list of changed markdown/html files between the last two commits
+          FILES=$(git diff --name-only HEAD~1 HEAD | grep -E "\.(_posts|md|html)$" || true)
+          
+          if [ -z "$FILES" ]; then
+            echo "No relevant files changed. Exiting."
+            echo "URLS=" >> $GITHUB_ENV
+            exit 0
+          fi
+          
+          # IMPORTANT: Replace this with your actual site URL
+          SITE_URL="https://northbladetl.com"
+          URLS_TO_SUBMIT=""
+          
+          echo "--- Checking changed files ---"
+          for FILE in $FILES; do
+            # Get filename without directory and extension: e.g., 2025-08-13-ABSR729
+            FILENAME=$(basename "$FILE" .md)
+
+            # Remove the date part to get the slug: e.g., ABSR729
+            SLUG=$(echo "$FILENAME" | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//')
+
+            # Extract the letters part for the category: e.g., ABSR
+            CATEGORY_UPPER=$(echo "$SLUG" | sed -E 's/[0-9]+$//')
+
+            # Convert category to lowercase: e.g., absr
+            CATEGORY_LOWER=$(echo "$CATEGORY_UPPER" | tr '[:upper:]' '[:lower:]')
+
+            # Construct the final, correct URL
+            FULL_URL="$SITE_URL/$CATEGORY_LOWER/$SLUG.html"
+            
+            # --- ROBOTS.TXT FILTERING LOGIC ---
+            # Check if the generated URL matches any of your Disallow rules.
+            if [[ "$FULL_URL" == *"/SIMB/chapters/"* || \
+                  "$FULL_URL" == *"/ABSW/chapters/"* || \
+                  "$FULL_URL" == *"/LNB/chapters/"* || \
+                  "$FULL_URL" == *"/HERO/chapters/"* || \
+                  "$FULL_URL" == *"/RUH/chapters/"* || \
+                  "$FULL_URL" == *"/hunnypot.html"* ]]; then
+              echo "🚫 Filtering out disallowed URL: $FULL_URL"
+            else
+              echo "✅ Adding URL to submission list: $FULL_URL"
+              URLS_TO_SUBMIT="$URLS_TO_SUBMIT $FULL_URL"
+            fi
+          done
+          
+          echo "--- Final list ---"
+          echo "Final URLs to submit: $URLS_TO_SUBMIT"
+          # Set the final, filtered URLs as an environment variable for the next step
+          echo "URLS=$URLS_TO_SUBMIT" >> $GITHUB_ENV
+
+      - name: Run URL Submission Script
+        if: env.URLS != '' # Only run if the URLS variable is not empty
+        env:
+          # Pass the secrets to the Python script as environment variables
+          INDEXNOW_API_KEY: ${{ secrets.INDEXNOW_API_KEY }}
+          GOOGLE_SA_KEY_JSON: ${{ secrets.GOOGLE_SA_KEY_JSON }}
+        run: |
+          python scripts/submit_urls.py $URLS
