@@ -23,58 +23,28 @@ async function _checkEnvProps() {
     ];
 
     for (let i = 0; i < finderskeepers.length; i++) {
-        if (navigator.userAgent === finderskeepers[i]) {
-            return false;
-        }
+        if (navigator.userAgent === finderskeepers[i]) return false;
     }
 
     let detected = false;
-    let detectionReason = [];
-
     const userAgent = navigator.userAgent;
-    const isChromiumBrowser = (ua) => ua.includes("Chrome/");
+    const isChromiumBrowser = ua => ua.includes("Chrome/");
 
-    if (navigator.webdriver) {
-        detected = true;
-        detectionReason.push('webdriver');
-    }
+    if (navigator.webdriver) detected = true;
 
     try {
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
         if (gl) {
             const renderer = gl.getParameter(gl.RENDERER);
-            if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
-                detected = true;
-                detectionReason.push('webgl-renderer');
-            }
-        } else {
-            detected = true;
-            detectionReason.push('no-webgl');
-        }
-    } catch (e) {
-        detected = true;
-        detectionReason.push('webgl-error');
-    }
+            if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) detected = true;
+        } else detected = true;
+    } catch { detected = true; }
 
-    if (navigator.languages && Array.isArray(navigator.languages) && navigator.languages.length === 0) {
-        detected = true;
-        detectionReason.push('empty-languages-array');
-    }
+    if (navigator.languages && Array.isArray(navigator.languages) && navigator.languages.length === 0) detected = true;
 
-    if (window.outerWidth === 0 && window.outerHeight === 0) {
-        if (isChromiumBrowser(userAgent)) {
-            detectionReason.push('outer-dims-zero-chromium');
-        } else {
-            detected = true;
-            detectionReason.push('outer-dims-zero-non-chromium');
-        }
-    }
-
-    if (window.outerWidth === 800 && window.outerHeight === 600) {
-        detected = true;
-        detectionReason.push('outer-dims-800x600');
-    }
+    if (window.outerWidth === 0 && window.outerHeight === 0 && !isChromiumBrowser(userAgent)) detected = true;
+    if (window.outerWidth === 800 && window.outerHeight === 600) detected = true;
 
     return detected;
 }
@@ -82,35 +52,25 @@ async function _checkEnvProps() {
 document.addEventListener('DOMContentLoaded', async () => {
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
-
     if (!contentContainer || !sourceFile) return;
 
-    // --- Bot / automation detection ---
     if (await _checkEnvProps()) {
         contentContainer.innerHTML = `
-            <p style="text-align: center;">
-                Automated access detected. If you are a human, please try disabling any browser extensions or VPNs
-                that might be interfering, or contact support.
-            </p>
+            <p style="text-align:center;">Automated access detected. Complete CAPTCHA or contact support.</p>
             <div style="display:none;">
                 <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
-                <p>This is not the real content.</p>
-            </div>
-        `;
+            </div>`;
         return;
     }
 
-    marked.use(markedFootnote({
-        description: '<hr><h3>Footnotes:</h3>'
-    }));
-
+    marked.use(markedFootnote({ description: '<hr><h3>Footnotes:</h3>' }));
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
         '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
         '03': '<p class="fooddie">How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.',
         '04': '<p class="foodiie">Hyonwon Kang was bonked again. Lorem ipsum sit dolor amet.',
         '05': '<p class="foodiee">Northbladetldotcomwelcomesyou.',
-        '06': '<p class="ffoodie">This is a nonprofit translation. There are no ads. Do not make Mimi cry.',
+        '06': '<p class="ffoodie">This is a nonprofit translation. No ads. Do not make Mimi cry.',
         '07': '<p class="fooodie">This translation is free to read. No ads should be visible.',
         '08': '<p class="fooddie">Ads? Ak Yeonho complains. What ads?',
         '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
@@ -118,50 +78,45 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // --- Step 1: Request Turnstile verification if needed ---
+        // Wait for Turnstile token
         if (!window.turnstileToken) {
-            console.log("Waiting for Turnstile completion...");
             contentContainer.innerHTML = `<p>Please complete the CAPTCHA to view content.</p>`;
             return;
         }
 
-        // --- Step 2: Get token from Worker ---
-        const tokenResponse = await fetch('/api/get-token', {
+        // Get single-use token from Worker
+        const tokenResp = await fetch('/api/get-token', {
             method: 'POST',
-            credentials: 'include',   // Important: sends session cookie
+            credentials: 'include',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ turnstileToken: window.turnstileToken })
         });
+        if (!tokenResp.ok) throw new Error('Authorization failed.');
+        const { token } = await tokenResp.json();
+        if (!token) throw new Error('Token empty.');
 
-        if (!tokenResponse.ok) throw new Error('Could not retrieve authorization token.');
-        const { token } = await tokenResponse.json();
-        if (!token) throw new Error('Authorization token was empty.');
-
-        // --- Step 3: Fetch protected chapter ---
-        const response = await fetch(`/SIMB/chapters/${sourceFile}`, {
+        // Fetch chapter
+        const chapterResp = await fetch(`/SIMB/chapters/${sourceFile}`, {
             headers: { 'Authorization': `Bearer ${token}` },
             credentials: 'include'
         });
+        if (!chapterResp.ok) throw new Error('Chapter fetch failed.');
+        let markdown = await chapterResp.text();
 
-        if (!response.ok) throw new Error(`Network response was not ok: ${response.statusText}`);
-        let markdown = await response.text();
-
-        // --- Step 4: Transform Markdown to HTML ---
+        // Parse Markdown
         let htmlContent = marked.parse(
-            markdown
-                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
-                .replace(/@\[/g, '<span class="night-mode-quotes">')
-                .replace(/\]@/g, '</span>')
+            markdown.replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
+                    .replace(/@\[/g, '<span class="night-mode-quotes">')
+                    .replace(/\]@/g, '</span>')
         );
 
         htmlContent = htmlContent
             .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-            .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+            .replace(/<p>SuandFriends(\d{2})/g, (m,k) => annoyReplacements[k] || m)
             .replace(/<p>/g, '<p class="foodie">');
 
         contentContainer.innerHTML = htmlContent;
 
-        // --- Step 5: Apply user settings ---
         if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
             setFontSize(localStorage.getItem('fontSize'));
         }
@@ -169,8 +124,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             setMode(localStorage.getItem('colorScheme'));
         }
 
-    } catch (error) {
-        console.error('Failed to load chapter:', error);
-        contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content. Authorization may have failed.</p>';
+    } catch (err) {
+        console.error(err);
+        contentContainer.innerHTML = '<p style="color:red;">Failed to load content. Complete CAPTCHA or try again later.</p>';
     }
 });
