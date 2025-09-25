@@ -49,6 +49,19 @@ async function _checkEnvProps() {
     return detected; // true = bot detected, false = human
 }
 
+// --- Initialize Session First ---
+async function initializeSession() {
+    try {
+        const initResponse = await fetch('/api/init-session');
+        if (!initResponse.ok) {
+            console.error('Failed to initialize session');
+        }
+        // The SESSION_ID cookie is set automatically by the response
+    } catch (error) {
+        console.error('Error initializing session:', error);
+    }
+}
+
 // --- Main loader ---
 document.addEventListener('DOMContentLoaded', async () => {
     const contentContainer = document.getElementById('content-container');
