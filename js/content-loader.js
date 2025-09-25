@@ -55,11 +55,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!contentContainer) return;
 
     // Detect chapter number from <body> or <h1>
-    let sourceFile = document.body.dataset.source;
-    if (!sourceFile) {
-        const titleText = document.querySelector('h1')?.innerText || '';
-        const match = titleText.match(/Chapter (\d+)/i);
-        sourceFile = match ? match[1] : null;
+    let sourceFile = null;
+    try {
+        const url = window.location.href;
+        const match = url.match(/(\d+)\.html$/); // Match numbers before .html at the end of URL
+        if (match && match[1]) {
+            sourceFile = match[1]; // Keep the exact digits from the URL
+        }
+    } catch (e) {
+        console.error('Error parsing URL:', e);
     }
 
     const prefix = document.body.dataset.prefix;
