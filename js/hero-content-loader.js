@@ -114,6 +114,31 @@ async function ensureSession() {
     }
 }
 
+// Fetch the authorization token from the server
+async function fetchAuthToken() {
+    try {
+        const response = await fetch('/api/get-token', {
+            method: 'GET',
+            credentials: 'include' // Send the session cookie to authenticate the token request
+        });
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch token: ${response.status} ${response.statusText}`);
+        }
+
+        const result = await response.json();
+        if (!result.token) {
+            throw new Error('Token not found in response');
+        }
+
+        return result.token;
+
+    } catch (error) {
+        console.error('Failed to get auth token:', error);
+        throw error;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         console.log('Script is starting...');
@@ -139,11 +164,20 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // Initialize session before making token requests
+        // Initialize session
         try {
             await ensureSession();
         } catch (error) {
             contentContainer.innerHTML = '<p style="color: red;">Failed to initialize session. Please refresh the page.</p>';
+            return;
+        }
+
+        // Fetch the auth token
+        let authToken;
+        try {
+            authToken = await fetchAuthToken();
+        } catch (error) {
+            contentContainer.innerHTML = '<p style="color: red;">Failed to get authorization token. Please refresh the page.</p>';
             return;
         }
 
@@ -168,20 +202,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
 
         try {
-            // Request token with credentials to include session cookie
-            const tokenResponse = await fetch('/api/get-token', {
-                credentials: 'include'
-            });
-            
-            if (!tokenResponse.ok) {
-                throw new Error(`Could not retrieve authorization token: ${tokenResponse.status}`);
-            }
-            
-            const { token } = await tokenResponse.json();
-            if (!token) {
-                throw new Error('Authorization token was empty.');
-            }
-
             // --- RETRY LOGIC FOR CHAPTER FETCH ---
             let chapterResponse;
             let attempt = 0;
@@ -190,18 +210,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             while (attempt < maxAttempts) {
                 try {
+                    // Request chapter content with the Authorization header
                     chapterResponse = await fetch(`/HERO/chapters/${sourceFile}`, {
+                        credentials: 'include',
                         headers: {
-                            'Authorization': `Bearer ${token}`
-                        },
-                        credentials: 'include'
+                            'Authorization': `Bearer ${authToken}`
+                        }
                     });
 
                     // If response is successful, break the retry loop
                     if (chapterResponse.ok) {
                         break;
                     } else if (chapterResponse.status === 401 && attempt < maxAttempts - 1) {
-                        // Wait and retry on 401 to handle browser cookie timing issues
+                        // Wait and retry on 401 if needed
                         console.warn(`Attempt ${attempt + 1} failed with 401. Retrying...`);
                         await new Promise(res => setTimeout(res, retryDelay));
                     } else {
