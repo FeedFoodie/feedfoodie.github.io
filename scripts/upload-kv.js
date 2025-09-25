@@ -23,8 +23,7 @@ console.log("API Token length:", apiToken.length);
 
 const folders = ["SIMB", "LNB", "ABSW", "RUH", "HERO", "LCS"];
 
-// Use a logfile in the scripts folder for better reliability
-const logFile = path.join(__dirname, 'kv-upload.log');
+// Use a cache file in the scripts folder
 const cacheFile = path.join(__dirname, 'kv-cache.json');
 
 // Load previous hashes with better error handling
@@ -46,16 +45,6 @@ function saveCache(cache) {
         console.log('💾 Cache saved successfully');
     } catch (error) {
         console.error('❌ Failed to save cache:', error.message);
-    }
-}
-
-function logToFile(message) {
-    try {
-        const timestamp = new Date().toISOString();
-        const logMessage = `[${timestamp}] ${message}\n`;
-        fs.appendFileSync(logFile, logMessage);
-    } catch (error) {
-        console.warn('⚠️ Could not write to log file:', error.message);
     }
 }
 
@@ -81,18 +70,14 @@ async function putKV(key, value) {
         if (!res.ok) {
             const errorMsg = `KV write failed: ${key} | Status: ${res.status} | Response: ${text}`;
             console.log(`❌ ${errorMsg}`);
-            logToFile(`ERROR: ${errorMsg}`);
             return false;
         } else {
-            const successMsg = `KV write successful: ${key}`;
-            console.log(`✅ ${successMsg}`);
-            logToFile(`SUCCESS: ${successMsg}`);
+            console.log(`✅ KV write successful: ${key}`);
             return true;
         }
     } catch (err) {
         const errorMsg = `KV write exception: ${key} | Error: ${err.message}`;
         console.error(`❌ ${errorMsg}`);
-        logToFile(`EXCEPTION: ${errorMsg}`);
         return false;
     }
 }
@@ -113,12 +98,11 @@ function findChaptersDir(folder) {
     return null;
 }
 
-async function uploadFolder(folder) {
+async function uploadFolder(folder, cache) {  // Now accepts cache as parameter
     const dir = findChaptersDir(folder);
     
     if (!dir) {
         console.log(`⚠️ Chapters folder not found for: ${folder}`);
-        logToFile(`WARNING: Chapters folder not found for ${folder}`);
         return;
     }
 
@@ -129,7 +113,6 @@ async function uploadFolder(folder) {
         files = fs.readdirSync(dir).filter(f => f.endsWith('.md') || f.endsWith('.html'));
     } catch (error) {
         console.error(`❌ Error reading directory ${dir}:`, error.message);
-        logToFile(`ERROR: Could not read directory ${dir} - ${error.message}`);
         return;
     }
 
@@ -150,7 +133,6 @@ async function uploadFolder(folder) {
             content = fs.readFileSync(filePath, 'utf8');
         } catch (error) {
             console.error(`❌ Error reading file ${filePath}:`, error.message);
-            logToFile(`ERROR: Could not read file ${filePath} - ${error.message}`);
             errors++;
             continue;
         }
@@ -163,7 +145,6 @@ async function uploadFolder(folder) {
         
         if (!match) {
             console.log(`⚠️ Skipping unrecognized filename: ${file}`);
-            logToFile(`WARNING: Unrecognized filename format: ${file}`);
             continue;
         }
 
@@ -187,40 +168,26 @@ async function uploadFolder(folder) {
     }
 
     console.log(`📊 ${folder}: ${uploaded} uploaded, ${skipped} skipped, ${errors} errors`);
-    logToFile(`SUMMARY: ${folder} - Uploaded: ${uploaded}, Skipped: ${skipped}, Errors: ${errors}`);
 }
 
 async function main() {
     console.log('🚀 Starting KV upload process...');
-    logToFile('START: KV upload process started');
     
+    // Load cache at the start
     const cache = loadCache();
     console.log(`📋 Loaded ${Object.keys(cache).length} cached entries`);
 
-    let totalUploaded = 0;
-    let totalSkipped = 0;
-    let totalErrors = 0;
-
     for (const folder of folders) {
-        const beforeCount = Object.keys(cache).length;
-        await uploadFolder(folder);
-        const afterCount = Object.keys(cache).length;
-        totalUploaded += (afterCount - beforeCount);
+        await uploadFolder(folder, cache);  // Pass cache to each folder
     }
 
+    // Save cache at the end
     saveCache(cache);
     
-    const summary = `✅ KV upload complete! Total: ${totalUploaded} uploaded, ${totalSkipped} skipped, ${totalErrors} errors`;
-    console.log(summary);
-    logToFile(`COMPLETE: ${summary}`);
-    
-    // Clean up old cache entries for files that no longer exist?
-    // This would prevent cache bloat over time
+    console.log('✅ KV upload complete!');
 }
 
 main().catch(err => {
-    const errorMsg = `Upload failed: ${err.message}`;
-    console.error("❌", errorMsg);
-    logToFile(`FATAL: ${errorMsg}`);
+    console.error("❌ Upload failed:", err);
     process.exit(1);
 });
