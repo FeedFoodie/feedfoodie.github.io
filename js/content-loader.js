@@ -1,4 +1,4 @@
-// --- Bot detection ---
+/* eslint-disable */
 async function _checkEnvProps() {
     const finderskeepers = [
         "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
@@ -23,117 +23,257 @@ async function _checkEnvProps() {
         "YisouSpider"
     ];
 
-    if (finderskeepers.includes(navigator.userAgent)) return true;
+    for (let i = 0; i < finderskeepers.length; i++) {
+        if (navigator.userAgent === finderskeepers[i]) {
+            return false;
+        }
+    }
 
     let detected = false;
-    const isChromium = navigator.userAgent.includes("Chrome/");
+    let detectionReason = [];
 
-    if (navigator.webdriver) detected = true;
+    const userAgent = navigator.userAgent;
+    const isChromiumBrowser = (ua) => ua.includes("Chrome/");
+
+    if (navigator.webdriver) {
+        detected = true;
+        detectionReason.push('webdriver');
+    }
 
     try {
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
         if (gl) {
             const renderer = gl.getParameter(gl.RENDERER);
-            if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) detected = true;
+            if (renderer.includes('SwiftShader') || renderer.includes('Mesa')) {
+                detected = true;
+                detectionReason.push('webgl-renderer');
+            }
         } else {
             detected = true;
-        }
-    } catch {
-        detected = true;
-    }
-
-    if (navigator.languages && navigator.languages.length === 0) detected = true;
-    if ((window.outerWidth === 0 && window.outerHeight === 0 && !isChromium) || (window.outerWidth === 800 && window.outerHeight === 600)) detected = true;
-
-    return detected; // true = bot detected, false = human
-}
-
-// --- Initialize Session First ---
-async function initializeSession() {
-    try {
-        const initResponse = await fetch('/api/init-session');
-        if (!initResponse.ok) {
-            console.error('Failed to initialize session');
-        }
-        // The SESSION_ID cookie is set automatically by the response
-    } catch (error) {
-        console.error('Error initializing session:', error);
-    }
-}
-
-// --- Main loader ---
-document.addEventListener('DOMContentLoaded', async () => {
-    const contentContainer = document.getElementById('content-container');
-    if (!contentContainer) return;
-
-    // Detect chapter number from <body> or <h1>
-    let sourceFile = null;
-    try {
-        const url = window.location.href;
-        const match = url.match(/(\d+)\.html$/); // Match numbers before .html at the end of URL
-        if (match && match[1]) {
-            sourceFile = match[1]; // Keep the exact digits from the URL
+            detectionReason.push('no-webgl');
         }
     } catch (e) {
-        console.error('Error parsing URL:', e);
+        detected = true;
+        detectionReason.push('webgl-error');
     }
 
-    const prefix = document.body.dataset.prefix;
-    if (!sourceFile || !prefix) return;
-
-    // Block bots
-    if (await _checkEnvProps()) {
-        contentContainer.innerHTML = `
-            <p style="text-align:center;">
-                Automated access detected. Please disable VPNs/extensions or contact support.
-            </p>
-            <div style="display:none;">
-                <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
-            </div>
-        `;
-        return;
+    if (navigator.languages && Array.isArray(navigator.languages) && navigator.languages.length === 0) {
+        detected = true;
+        detectionReason.push('empty-languages-array');
     }
 
-    const annoyReplacements = {
-        '01': '<p class="ffoodie">Read this at northbladetldotcom?',
-        '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
-        '03': '<p class="fooddie">How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.',
-        '04': '<p class="foodiie">Hyonwon Kang was bonked again. Lorem ipsum sit dolor amet.',
-        '05': '<p class="foodiee">Northbladetldotcomwelcomesyou.',
-        '06': '<p class="ffoodie">This is a nonprofit translation. There are no ads. Do not make Mimi cry.',
-        '07': '<p class="fooodie">This translation is free to read. No ads should be visible.',
-        '08': '<p class="fooddie">Ads? Ak Yeonho complains. What ads?',
-        '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
-        '10': '<p class="foodiee">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore.',
-    };
+    if (window.outerWidth === 0 && window.outerHeight === 0) {
+        if (isChromiumBrowser(userAgent)) {
+            detectionReason.push('outer-dims-zero-chromium');
+        } else {
+            detected = true;
+            detectionReason.push('outer-dims-zero-non-chromium');
+        }
+    }
 
+    if (window.outerWidth === 800 && window.outerHeight === 600) {
+        detected = true;
+        detectionReason.push('outer-dims-800x600');
+    }
+
+    return detected;
+}
+
+// Helper function to get cookie value
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+// Initialize session if not exists
+async function ensureSession() {
+    if (!getCookie('SESSION_ID')) {
+        try {
+            const response = await fetch('/api/init-session', {
+                method: 'GET',
+                credentials: 'include'
+            });
+            
+            if (!response.ok) {
+                throw new Error('Failed to initialize session');
+            }
+            
+            const result = await response.json();
+            if (!result.ok) {
+                throw new Error('Session initialization failed');
+            }
+            
+        } catch (error) {
+            throw error;
+        }
+    }
+}
+
+// Fetch the authorization token from the server
+async function fetchAuthToken() {
     try {
-        const tokenResp = await fetch('/api/get-token');
-        if (!tokenResp.ok) throw new Error('Could not get auth token.');
-        const { token } = await tokenResp.json();
-
-        const response = await fetch(`/chapters/${prefix}/${sourceFile}`, {
-            headers: { 'Authorization': `Bearer ${token}` }
+        const response = await fetch('/api/get-token', {
+            method: 'GET',
+            credentials: 'include' // Send the session cookie to authenticate the token request
         });
-        if (!response.ok) throw new Error('Chapter fetch failed.');
-        let markdown = await response.text();
 
-        let htmlContent = marked.parse(
-            markdown
-                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom:15px;">')
-                .replace(/@\[/g, '<span class="night-mode-quotes">')
-                .replace(/\]@/g, '</span>')
-        );
+        if (!response.ok) {
+            throw new Error(`Failed to fetch token: ${response.status} ${response.statusText}`);
+        }
 
-        htmlContent = htmlContent
-            .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-            .replace(/<p>SuandFriends(\d{2})/g, (m, k) => annoyReplacements[k] || m)
-            .replace(/<p>/g, '<p class="foodie">');
+        const result = await response.json();
+        if (!result.token) {
+            throw new Error('Token not found in response');
+        }
 
-        contentContainer.innerHTML = htmlContent;
-    } catch (err) {
-        console.error(err);
-        contentContainer.innerHTML = '<p style="color:red;">Failed to load chapter content.</p>';
+        return result.token;
+
+    } catch (error) {
+        throw error;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const contentContainer = document.getElementById('content-container');
+        const sourceFile = document.body.dataset.source;
+        // Get the prefix from the body tag to determine the content folder
+        const chapterPrefix = document.body.dataset.prefix;
+
+        if (!contentContainer || !sourceFile || !chapterPrefix) {
+            return;
+        }
+
+        // Run bot detection first
+        if (await _checkEnvProps()) {
+            contentContainer.innerHTML = `
+                <p style="text-align: center;">
+                    Automated access detected. If you are a human, please try disabling any browser extensions or VPNs
+                    that might be interfering, or contact support.
+                </p>
+                <div style="display:none;">
+                    <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
+                    <p>This is not the real content.</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Initialize session
+        try {
+            await ensureSession();
+        } catch (error) {
+            contentContainer.innerHTML = '<p style="color: red;">Failed to initialize session. Please refresh the page.</p>';
+            return;
+        }
+
+        // Fetch the auth token
+        let authToken;
+        try {
+            authToken = await fetchAuthToken();
+        } catch (error) {
+            contentContainer.innerHTML = '<p style="color: red;">Failed to get authorization token. Please refresh the page.</p>';
+            return;
+        }
+
+        // Set up marked.js if needed
+        if (typeof marked !== 'undefined') {
+            marked.use(markedFootnote({
+                description: '<hr><h3>Footnotes:</h3>'
+            }));
+        }
+        
+        const annoyReplacements = {
+            '01': '<p class="ffoodie">Read this at northbladetldotcom?',
+            '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
+            '03': '<p class="fooddie">How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.',
+            '04': '<p class="foodiie">Hyonwon Kang was bonked again. Lorem ipsum sit dolor amet.',
+            '05': '<p class="foodiee">Northbladetldotcomwelcomesyou.',
+            '06': '<p class="ffoodie">This is a nonprofit translation. There are no ads. Do not make Mimi cry.',
+            '07': '<p class="fooodie">This translation is free to read. No ads should be visible.',
+            '08': '<p class="fooddie">Ads? Ak Yeonho complains. What ads?',
+            '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
+            '10': '<p class="foodiee">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore.',
+        };
+
+        try {
+            // --- RETRY LOGIC FOR CHAPTER FETCH ---
+            let chapterResponse;
+            let attempt = 0;
+            const maxAttempts = 3;
+            const retryDelay = 500; // milliseconds
+
+            while (attempt < maxAttempts) {
+                try {
+                    // Request chapter content with the Authorization header, using the dynamic prefix
+                    chapterResponse = await fetch(`/${chapterPrefix}/chapters/${sourceFile}`, {
+                        credentials: 'include',
+                        headers: {
+                            'Authorization': `Bearer ${authToken}`
+                        }
+                    });
+
+                    // If response is successful, break the retry loop
+                    if (chapterResponse.ok) {
+                        break;
+                    } else if (chapterResponse.status === 401 && attempt < maxAttempts - 1) {
+                        // Wait and retry on 401 if needed
+                        await new Promise(res => setTimeout(res, retryDelay));
+                    } else {
+                        // If another error occurs or max attempts reached, throw
+                        throw new Error(`Failed to load chapter: ${chapterResponse.status} ${chapterResponse.statusText}`);
+                    }
+                } catch (e) {
+                    if (attempt < maxAttempts - 1) {
+                        await new Promise(res => setTimeout(res, retryDelay));
+                    } else {
+                        throw e; // Re-throw the error on the final attempt
+                    }
+                }
+                attempt++;
+            }
+
+            // Check if we have a successful response after the loop
+            if (!chapterResponse || !chapterResponse.ok) {
+                throw new Error('Failed to load chapter after multiple retries.');
+            }
+            
+            let markdown = await chapterResponse.text();
+
+            // Process markdown if marked.js is available
+            let htmlContent;
+            if (typeof marked !== 'undefined') {
+                htmlContent = marked.parse(
+                    markdown
+                        .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
+                        .replace(/@\[/g, '<span class="night-mode-quotes">')
+                        .replace(/\]@/g, '</span>')
+                );
+
+                htmlContent = htmlContent
+                    .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
+                    .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+                    .replace(/<p>/g, '<p class="foodie">');
+            } else {
+                // Fallback: just display the raw markdown
+                htmlContent = `<pre>${markdown}</pre>`;
+            }
+
+            contentContainer.innerHTML = htmlContent;
+
+            // Apply settings from localStorage
+            if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
+                setFontSize(localStorage.getItem('fontSize'));
+            }
+            if (typeof setMode === 'function' && localStorage.getItem('colorScheme')) {
+                setMode(localStorage.getItem('colorScheme'));
+            }
+
+        } catch (error) {
+            contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content. Authorization may have failed.</p>';
+        }
+    } catch (e) {
     }
 });

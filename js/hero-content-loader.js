@@ -85,7 +85,6 @@ function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
-    console.log('Get cookie...');
 }
 
 // Initialize session if not exists
@@ -106,9 +105,7 @@ async function ensureSession() {
                 throw new Error('Session initialization failed');
             }
             
-            console.log('Session initialized');
         } catch (error) {
-            console.error('Session initialization failed:', error);
             throw error;
         }
     }
@@ -134,18 +131,18 @@ async function fetchAuthToken() {
         return result.token;
 
     } catch (error) {
-        console.error('Failed to get auth token:', error);
         throw error;
     }
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        console.log('Script is starting...');
         const contentContainer = document.getElementById('content-container');
         const sourceFile = document.body.dataset.source;
+        // Get the prefix from the body tag to determine the content folder
+        const chapterPrefix = document.body.dataset.prefix;
 
-        if (!contentContainer || !sourceFile) {
+        if (!contentContainer || !sourceFile || !chapterPrefix) {
             return;
         }
 
@@ -210,8 +207,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             while (attempt < maxAttempts) {
                 try {
-                    // Request chapter content with the Authorization header
-                    chapterResponse = await fetch(`/HERO/chapters/${sourceFile}`, {
+                    // Request chapter content with the Authorization header, using the dynamic prefix
+                    chapterResponse = await fetch(`/${chapterPrefix}/chapters/${sourceFile}`, {
                         credentials: 'include',
                         headers: {
                             'Authorization': `Bearer ${authToken}`
@@ -223,7 +220,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                         break;
                     } else if (chapterResponse.status === 401 && attempt < maxAttempts - 1) {
                         // Wait and retry on 401 if needed
-                        console.warn(`Attempt ${attempt + 1} failed with 401. Retrying...`);
                         await new Promise(res => setTimeout(res, retryDelay));
                     } else {
                         // If another error occurs or max attempts reached, throw
@@ -231,7 +227,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     }
                 } catch (e) {
                     if (attempt < maxAttempts - 1) {
-                        console.error(`Attempt ${attempt + 1} failed with an error. Retrying...`, e);
                         await new Promise(res => setTimeout(res, retryDelay));
                     } else {
                         throw e; // Re-throw the error on the final attempt
@@ -277,10 +272,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
         } catch (error) {
-            console.error('Failed to load chapter:', error);
             contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content. Authorization may have failed.</p>';
         }
     } catch (e) {
-        console.error('An unexpected error occurred during script execution:', e);
     }
 });
