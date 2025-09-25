@@ -87,20 +87,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    // Run bot detection first
-    if (await _checkEnvProps()) {
-        contentContainer.innerHTML = `
-            <p style="text-align: center;">
-                Automated access detected. If you are a human, please try disabling any browser extensions or VPNs
-                that might be interfering, or contact support.
-            </p>
-            <div style="display:none;">
-                <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
-                <p>This is not the real content.</p>
-            </div>
-        `;
-        return;
-    }
+    // Temporarily comment out bot detection to debug token issue
+    // if (await _checkEnvProps()) {
+    //     contentContainer.innerHTML = `
+    //         <p style="text-align: center;">
+    //             Automated access detected. If you are a human, please try disabling any browser extensions or VPNs
+    //             that might be interfering, or contact support.
+    //         </p>
+    //         <div style="display:none;">
+    //             <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
+    //             <p>This is not the real content.</p>
+    //         </div>
+    //     `;
+    //     return;
+    // }
 
     // Set up marked.js if needed
     if (typeof marked !== 'undefined') {
