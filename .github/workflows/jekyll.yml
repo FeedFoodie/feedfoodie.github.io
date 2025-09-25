@@ -31,7 +31,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true
+          bundler-cache: true # runs 'bundle install' and caches installed gems
           cache-version: 1
 
       - name: Cache Jekyll metadata
@@ -57,51 +57,27 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
-# KV Upload job
-  kv_upload:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./scripts
-
-      - name: Upload chapters to KV
-        run: node upload-kv.js
-        working-directory: ./scripts
-        env:
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_KV_NAMESPACE: ${{ secrets.CF_KV_NAMESPACE }}
-
-# Deployment job
+  # Deployment job
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: kv_upload
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
-# Updated Job: Submit URLs to Search Engines
+  # Updated Job: Submit URLs to Search Engines
   submit_urls:
     runs-on: ubuntu-latest
-    needs: deploy
+    needs: deploy # This job runs only after the 'deploy' job is successful
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          # Fetch the full history to compare commits
           fetch-depth: 0
 
       - name: Set up Python
@@ -117,6 +93,7 @@ jobs:
       - name: Identify and Filter Changed URLs
         id: changed_files
         run: |
+          # Get the list of changed markdown/html files between the last two commits
           FILES=$(git diff --name-only HEAD~1 HEAD | grep -E "\.(_posts|md|html)$" || true)
           
           if [ -z "$FILES" ]; then
@@ -125,17 +102,29 @@ jobs:
             exit 0
           fi
           
+          # IMPORTANT: Replace this with your actual site URL
           SITE_URL="https://northbladetl.com"
           URLS_TO_SUBMIT=""
           
           echo "--- Checking changed files ---"
           for FILE in $FILES; do
+            # Get filename without directory and extension: e.g., 2025-08-13-ABSR729
             FILENAME=$(basename "$FILE" .md)
+
+            # Remove the date part to get the slug: e.g., ABSR729
             SLUG=$(echo "$FILENAME" | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//')
+
+            # Extract the letters part for the category: e.g., ABSR
             CATEGORY_UPPER=$(echo "$SLUG" | sed -E 's/[0-9]+$//')
+
+            # Convert category to lowercase: e.g., absr
             CATEGORY_LOWER=$(echo "$CATEGORY_UPPER" | tr '[:upper:]' '[:lower:]')
+
+            # Construct the final, correct URL
             FULL_URL="$SITE_URL/$CATEGORY_LOWER/$SLUG.html"
             
+            # --- ROBOTS.TXT FILTERING LOGIC ---
+            # Check if the generated URL matches any of your Disallow rules.
             if [[ "$FULL_URL" == *"/SIMB/chapters/"* || \
                   "$FULL_URL" == *"/ABSW/chapters/"* || \
                   "$FULL_URL" == *"/LNB/chapters/"* || \
@@ -151,11 +140,13 @@ jobs:
           
           echo "--- Final list ---"
           echo "Final URLs to submit: $URLS_TO_SUBMIT"
+          # Set the final, filtered URLs as an environment variable for the next step
           echo "URLS=$URLS_TO_SUBMIT" >> $GITHUB_ENV
 
       - name: Run URL Submission Script
-        if: env.URLS != ''
+        if: env.URLS != '' # Only run if the URLS variable is not empty
         env:
+          # Pass the secrets to the Python script as environment variables
           INDEXNOW_API_KEY: ${{ secrets.INDEXNOW_API_KEY }}
           GOOGLE_SA_KEY_JSON: ${{ secrets.GOOGLE_SA_KEY_JSON }}
         run: |
