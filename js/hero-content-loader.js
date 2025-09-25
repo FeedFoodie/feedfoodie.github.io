@@ -164,17 +164,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // Initialize session and wait for it to complete before continuing
+        // Initialize session
         try {
             await ensureSession();
-            // Add a small delay to ensure the browser has fully saved the cookie
-            await new Promise(res => setTimeout(res, 50));
         } catch (error) {
             contentContainer.innerHTML = '<p style="color: red;">Failed to initialize session. Please refresh the page.</p>';
             return;
         }
 
-        // Fetch the auth token after the session is guaranteed to be initialized
+        // Fetch the auth token
         let authToken;
         try {
             authToken = await fetchAuthToken();
