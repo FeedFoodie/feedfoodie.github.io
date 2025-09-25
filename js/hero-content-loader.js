@@ -85,6 +85,7 @@ function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
+    console.log('Get cookie...');
 }
 
 // Initialize session if not exists
@@ -181,19 +182,49 @@ document.addEventListener('DOMContentLoaded', async () => {
                 throw new Error('Authorization token was empty.');
             }
 
-            // Request chapter content with token
-            const response = await fetch(`/HERO/chapters/${sourceFile}`, {
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                },
-                credentials: 'include'
-            });
+            // --- RETRY LOGIC FOR CHAPTER FETCH ---
+            let chapterResponse;
+            let attempt = 0;
+            const maxAttempts = 3;
+            const retryDelay = 500; // milliseconds
 
-            if (!response.ok) {
-                throw new Error(`Failed to load chapter: ${response.status} ${response.statusText}`);
+            while (attempt < maxAttempts) {
+                try {
+                    chapterResponse = await fetch(`/HERO/chapters/${sourceFile}`, {
+                        headers: {
+                            'Authorization': `Bearer ${token}`
+                        },
+                        credentials: 'include'
+                    });
+
+                    // If response is successful, break the retry loop
+                    if (chapterResponse.ok) {
+                        break;
+                    } else if (chapterResponse.status === 401 && attempt < maxAttempts - 1) {
+                        // Wait and retry on 401 to handle browser cookie timing issues
+                        console.warn(`Attempt ${attempt + 1} failed with 401. Retrying...`);
+                        await new Promise(res => setTimeout(res, retryDelay));
+                    } else {
+                        // If another error occurs or max attempts reached, throw
+                        throw new Error(`Failed to load chapter: ${chapterResponse.status} ${chapterResponse.statusText}`);
+                    }
+                } catch (e) {
+                    if (attempt < maxAttempts - 1) {
+                        console.error(`Attempt ${attempt + 1} failed with an error. Retrying...`, e);
+                        await new Promise(res => setTimeout(res, retryDelay));
+                    } else {
+                        throw e; // Re-throw the error on the final attempt
+                    }
+                }
+                attempt++;
+            }
+
+            // Check if we have a successful response after the loop
+            if (!chapterResponse || !chapterResponse.ok) {
+                throw new Error('Failed to load chapter after multiple retries.');
             }
             
-            let markdown = await response.text();
+            let markdown = await chapterResponse.text();
 
             // Process markdown if marked.js is available
             let htmlContent;
