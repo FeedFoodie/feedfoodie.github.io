@@ -141,19 +141,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
         
         if (!tokenResponse.ok) {
+            // This is the specific error that was likely causing the 401.
             const errorData = await tokenResponse.text();
             throw new Error(`Could not retrieve authorization token: ${tokenResponse.status} - ${errorData}`);
         }
         
-        let token;
-        try {
-            const result = await tokenResponse.json();
-            token = result.token;
-            console.log('Received token:', token);
-        } catch (jsonError) {
-            throw new Error(`Failed to parse token response as JSON: ${jsonError.message}`);
-        }
-
+        const { token } = await tokenResponse.json();
         if (!token) {
             throw new Error('Authorization token was empty.');
         }
