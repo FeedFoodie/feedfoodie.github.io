@@ -79,8 +79,41 @@ async function _checkEnvProps() {
     return detected;
 }
 
+// Helper function to get cookie value
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+// Initialize session if not exists
+async function ensureSession() {
+    if (!getCookie('SESSION_ID')) {
+        try {
+            const response = await fetch('/api/init-session', {
+                method: 'GET',
+                credentials: 'include'
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to initialize session');
+            }
+
+            const result = await response.json();
+            if (!result.ok) {
+                throw new Error('Session initialization failed');
+            }
+
+            console.log('Session initialized');
+        } catch (error) {
+            console.error('Session initialization failed:', error);
+            throw error;
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
-    //const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
+    console.log('Script is starting...');
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
@@ -88,6 +121,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
+    // Run bot detection first
     if (await _checkEnvProps()) {
         contentContainer.innerHTML = `
             <p style="text-align: center;">
@@ -102,10 +136,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    marked.use(markedFootnote({
-        description: '<hr><h3>Footnotes:</h3>'
-    }));
-    
+    // Initialize session before making token requests
+    try {
+        await ensureSession();
+    } catch (error) {
+        contentContainer.innerHTML = '<p style="color: red;">Failed to initialize session. Please refresh the page.</p>';
+        return;
+    }
+
+    // Set up marked.js if needed
+    if (typeof marked !== 'undefined') {
+        marked.use(markedFootnote({
+            description: '<hr><h3>Footnotes:</h3>'
+        }));
+    }
+
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
         '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
@@ -120,42 +165,56 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        const tokenResponse = await fetch('/api/get-token');
+        // Request token with credentials to include session cookie
+        const tokenResponse = await fetch('/api/get-token', {
+            credentials: 'include'
+        });
+
         if (!tokenResponse.ok) {
-            throw new Error('Could not retrieve authorization token.');
+            throw new Error(`Could not retrieve authorization token: ${tokenResponse.status}`);
         }
+
         const { token } = await tokenResponse.json();
         if (!token) {
             throw new Error('Authorization token was empty.');
         }
 
-        const response = await fetch(`/HERO/chapters/${sourceFile}`, {
+        // Request chapter content with token
+        const response = await fetch(`/chapters/SIMB/${sourceFile}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
-                //'X-Internal-Request-Token': atob(htmlViewer)
-            }
+            },
+            credentials: 'include'
         });
 
         if (!response.ok) {
-            throw new Error(`Network response was not ok: ${response.statusText}`);
+            throw new Error(`Failed to load chapter: ${response.status} ${response.statusText}`);
         }
+
         let markdown = await response.text();
 
-        let htmlContent = marked.parse(
-            markdown
-                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
-                .replace(/@\[/g, '<span class="night-mode-quotes">')
-                .replace(/\]@/g, '</span>')
-        );
+        // Process markdown if marked.js is available
+        let htmlContent;
+        if (typeof marked !== 'undefined') {
+            htmlContent = marked.parse(
+                markdown
+                    .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
+                    .replace(/@\[/g, '<span class="night-mode-quotes">')
+                    .replace(/\]@/g, '</span>')
+            );
 
-        htmlContent = htmlContent
-            .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-            .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
-            .replace(/<p>/g, '<p class="foodie">');
+            htmlContent = htmlContent
+                .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
+                .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+                .replace(/<p>/g, '<p class="foodie">');
+        } else {
+            // Fallback: just display the raw markdown
+            htmlContent = `<pre>${markdown}</pre>`;
+        }
 
         contentContainer.innerHTML = htmlContent;
 
-        // Apply settings from localStorage only AFTER new content is loaded.
+        // Apply settings from localStorage
         if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
             setFontSize(localStorage.getItem('fontSize'));
         }
