@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             // Request chapter content with token
-            const response = await fetch(`/chapters/SIMB/${sourceFile}`, {
+            const response = await fetch(`/chapters/HERO/${sourceFile}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 },
