@@ -80,6 +80,7 @@ async function _checkEnvProps() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    //const htmlViewer = 'Zm9vZGllbW9uc3RlcjAwN3MtYnVubmllcy1waWthLWFuZGNvdHRvbi1hcmUtdmVyeS10aGlyc3R5';
     const contentContainer = document.getElementById('content-container');
     const sourceFile = document.body.dataset.source;
 
@@ -87,7 +88,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    // Run bot detection first
     if (await _checkEnvProps()) {
         contentContainer.innerHTML = `
             <p style="text-align: center;">
@@ -102,12 +102,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    // Set up marked.js if needed
-    if (typeof marked !== 'undefined') {
-        marked.use(markedFootnote({
-            description: '<hr><h3>Footnotes:</h3>'
-        }));
-    }
+    marked.use(markedFootnote({
+        description: '<hr><h3>Footnotes:</h3>'
+    }));
     
     const annoyReplacements = {
         '01': '<p class="ffoodie">Read this at northbladetldotcom?',
@@ -123,72 +120,42 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     try {
-        // Step 1: Initialize session. This call sets the session cookie.
-        const sessionResponse = await fetch('/api/init-session', {
-            method: 'GET',
-            credentials: 'include'
-        });
-
-        if (!sessionResponse.ok) {
-            throw new Error('Failed to initialize session');
-        }
-        
-        console.log('Session initialized. Now getting authorization token.');
-
-        // Step 2: Request token with credentials to include session cookie
-        const tokenResponse = await fetch('/api/get-token', {
-            credentials: 'include'
-        });
-        
+        const tokenResponse = await fetch('/api/get-token');
         if (!tokenResponse.ok) {
-            // This is the specific error that was likely causing the 401.
-            const errorData = await tokenResponse.text();
-            throw new Error(`Could not retrieve authorization token: ${tokenResponse.status} - ${errorData}`);
+            throw new Error('Could not retrieve authorization token.');
         }
-        
         const { token } = await tokenResponse.json();
         if (!token) {
             throw new Error('Authorization token was empty.');
         }
 
-        console.log('Token received. Now fetching chapter content.');
-
-        // Step 3: Request chapter content with token
-        const response = await fetch(`/chapters/SIMB/${sourceFile}`, {
+        const response = await fetch(`/SIMB/chapters/${sourceFile}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
-            },
-            credentials: 'include'
+                //'X-Internal-Request-Token': atob(htmlViewer)
+            }
         });
 
         if (!response.ok) {
-            throw new Error(`Failed to load chapter: ${response.status} ${response.statusText}`);
+            throw new Error(`Network response was not ok: ${response.statusText}`);
         }
-        
         let markdown = await response.text();
 
-        // Process markdown if marked.js is available
-        let htmlContent;
-        if (typeof marked !== 'undefined') {
-            htmlContent = marked.parse(
-                markdown
-                    .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
-                    .replace(/@\[/g, '<span class="night-mode-quotes">')
-                    .replace(/\]@/g, '</span>')
-            );
+        let htmlContent = marked.parse(
+            markdown
+                .replace(/{sep}/g, '<img src="/Images/sep.png" alt="sep" style="margin-bottom: 15px;">')
+                .replace(/@\[/g, '<span class="night-mode-quotes">')
+                .replace(/\]@/g, '</span>')
+        );
 
-            htmlContent = htmlContent
-                .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-                .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
-                .replace(/<p>/g, '<p class="foodie">');
-        } else {
-            // Fallback: just display the raw markdown
-            htmlContent = `<pre>${markdown}</pre>`;
-        }
+        htmlContent = htmlContent
+            .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
+            .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+            .replace(/<p>/g, '<p class="foodie">');
 
         contentContainer.innerHTML = htmlContent;
 
-        // Apply settings from localStorage
+        // Apply settings from localStorage only AFTER new content is loaded.
         if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
             setFontSize(localStorage.getItem('fontSize'));
         }
