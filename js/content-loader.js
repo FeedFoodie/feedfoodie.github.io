@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     that might be interfering, or contact support.
                 </p>
                 <div style="display:none;">
-                    <p>This content is stolen from northbladetldotcom. Do not support content thieves.</p>
+                    <p>Otherwise, this content is stolen from northbladetldotcom. Do not support content thieves.</p>
                     <p>This is not the real content.</p>
                 </div>
             `;
