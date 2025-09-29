@@ -3,8 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="yandex-verification" content="d7fc7dd733bf4b0b" />
+  <meta name="yandex-verification" content="d7fc7dd733bf4b0b" />
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   {%- assign final_description = site.tagline -%}
 
   {%- capture tag_based_description -%}
@@ -24,10 +25,13 @@
   {%- if page.description -%}
     {%- assign final_description = page.description -%}
   {%- endif -%}
-  {%- assign page.description = final_description | strip_html | strip_newlines | truncatewords: 25, '...' -%}
-  {%- seo -%}
+  <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+
   {%- feed_meta -%}
-  <!-- <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}"> -->
 
   <!-- highlight.js support -->
   <link rel="stylesheet" href="/js/highlightjs/styles/format.css">

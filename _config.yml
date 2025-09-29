@@ -16,7 +16,7 @@ turnstile_site_key: "0x4AAAAAABlBn5y8m8IJa-Vb"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag
+  #- jekyll-seo-tag
 
 jekyll-sitemap:
   exclude:
