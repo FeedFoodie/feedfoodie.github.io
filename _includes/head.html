@@ -24,8 +24,7 @@
   {%- if page.description -%}
     {%- assign final_description = page.description -%}
   {%- endif -%}
-  {%- capture page_description -%}{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}{%- endcapture -%}
-  {%- assign page.description = page_description -%}
+  {%- assign page.description = final_description | strip_html | strip_newlines | truncatewords: 25, '...' -%}
   {%- seo -%}
   {%- feed_meta -%}
   <!-- <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}"> -->
