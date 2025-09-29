@@ -185,6 +185,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }));
         }
         
+        /*
         const annoyReplacements = {
             '01': '<p class="ffoodie">Read this at northbladetldotcom?',
             '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
@@ -197,6 +198,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
             '10': '<p class="foodiee">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore.',
         };
+        */
 
         try {
             // --- RETRY LOGIC FOR CHAPTER FETCH ---
@@ -254,7 +256,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 htmlContent = htmlContent
                     .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-                    .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+                    // .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
                     .replace(/<p>/g, '<p class="foodie">');
             } else {
                 // Fallback: just display the raw markdown
