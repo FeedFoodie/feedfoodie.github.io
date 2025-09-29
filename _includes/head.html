@@ -3,11 +3,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo description=false -%}
-  <meta name="yandex-verification" content="d7fc7dd733bf4b0b" />
+    <meta name="yandex-verification" content="d7fc7dd733bf4b0b" />
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {%- feed_meta -%}
-
   {%- assign final_description = site.tagline -%}
 
   {%- capture tag_based_description -%}
@@ -27,8 +24,11 @@
   {%- if page.description -%}
     {%- assign final_description = page.description -%}
   {%- endif -%}
-
-  <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
+  {%- capture page_description -%}{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}{%- endcapture -%}
+  {%- assign page.description = page_description -%}
+  {%- seo -%}
+  {%- feed_meta -%}
+  <!-- <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}"> -->
 
   <!-- highlight.js support -->
   <link rel="stylesheet" href="/js/highlightjs/styles/format.css">
