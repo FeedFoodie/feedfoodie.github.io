@@ -184,8 +184,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             while (attempt < maxAttempts) {
                 try {
-                    // --- Use signed URL + token query ---
-                    chapterResponse = await fetch(`${signedPath}?token=${encodeURIComponent(token)}`, {
+                    // --- Use signed URL with Authorization header ---
+                    chapterResponse = await fetch(signedPath, {
+                        headers: {
+                            'Authorization': `Bearer ${token}`
+                        },
                         credentials: 'include'
                     });
                     if (chapterResponse.ok) break;
