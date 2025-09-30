@@ -1,68 +1,76 @@
 import base64
-import binascii
-import hmac
-import hashlib
 import sys
+from Crypto.Cipher import AES
+from Crypto.Protocol.KDF import PBKDF2
+from Crypto.Hash import HMAC, SHA256
 
-# must match the worker's key exactly
-WATERMARK_KEY = "foodie-catches-thieves"
+WATERMARK_KEY = 'foodie-catches-thieves'
 
-def base64url_to_b64(s):
-    # transform base64url (no padding) back to standard base64 with padding
+def base64url_to_bytes(s):
     s2 = s.replace('-', '+').replace('_', '/')
     padding = (-len(s2)) % 4
     s2 += '=' * padding
-    return s2
+    return base64.b64decode(s2)
 
-def decode_b64_utf8(s):
+def decrypt_identifier(identifier):
     try:
-        raw = base64.b64decode(s)
-        return raw.decode('utf-8')
-    except Exception:
-        return None
-
-def verify_hmac(ip_str, sig_b64url, key=WATERMARK_KEY):
-    # recompute HMAC-SHA256 over the plain IP string
-    key_bytes = key.encode('utf-8')
-    hm = hmac.new(key_bytes, ip_str.encode('utf-8'), hashlib.sha256).digest()
-    # encode to base64url without padding to compare
-    hm_b64 = base64.b64encode(hm).decode('ascii')
-    hm_b64url = hm_b64.replace('+', '-').replace('/', '_').rstrip('=')
-    return hm_b64url == sig_b64url
+        # Split the identifier into encrypted part and signature
+        parts = identifier.split('.')
+        if len(parts) != 2:
+            raise ValueError("Invalid identifier format")
+        
+        encrypted_b64url, signature_b64url = parts
+        
+        # Convert from base64url to bytes
+        encrypted_data = base64url_to_bytes(encrypted_b64url)
+        signature = base64url_to_bytes(signature_b64url)
+        
+        # Derive AES key using PBKDF2 (same as JavaScript)
+        salt = b'watermark-salt'
+        key = PBKDF2(WATERMARK_KEY.encode('utf-8'), salt, 32, count=100000, hmac_hash_module=SHA256)
+        
+        # Create fixed IV (same as JavaScript)
+        iv = (WATERMARK_KEY.encode('utf-8') + b'\0' * 16)[:16]  # Exactly 16 bytes
+        
+        # Decrypt using AES-CBC
+        cipher = AES.new(key, AES.MODE_CBC, iv)
+        decrypted = cipher.decrypt(encrypted_data)
+        
+        # Remove PKCS7 padding
+        padding_length = decrypted[-1]
+        if padding_length > 16 or padding_length < 1:
+            raise ValueError("Invalid padding")
+        ip_bytes = decrypted[:-padding_length]
+        
+        ip_address = ip_bytes.decode('utf-8')
+        
+        # Verify HMAC signature against the original IP string (not bytes)
+        hmac_key = (WATERMARK_KEY + '-hmac').encode('utf-8')
+        hmac_obj = HMAC.new(hmac_key, digestmod=SHA256)
+        hmac_obj.update(ip_address.encode('utf-8'))  # Sign the string, not bytes
+        
+        try:
+            hmac_obj.verify(signature)
+            return ip_address
+        except ValueError:
+            # Try alternative: maybe the JavaScript is using a different approach
+            # Let's also try with PBKDF2-derived HMAC key
+            hmac_key_derived = PBKDF2((WATERMARK_KEY + '-hmac').encode('utf-8'), salt, 32, count=100000, hmac_hash_module=SHA256)
+            hmac_obj2 = HMAC.new(hmac_key_derived, digestmod=SHA256)
+            hmac_obj2.update(ip_address.encode('utf-8'))
+            hmac_obj2.verify(signature)
+            return ip_address
+            
+    except Exception as e:
+        raise Exception(f"Decryption failed: {str(e)}")
 
 def main():
     ident = input("Enter the identifier to decode: ").strip()
-    if '.' not in ident:
-        print("Identifier must be in format: <base64_ip>.<base64url_hmac>")
-        return
-
-    b64ip_part, sig_part = ident.split('.', 1)
-
-    # decode the IP
-    ip = None
     try:
-        ip_bytes = base64.b64decode(b64ip_part)
-        ip = ip_bytes.decode('utf-8')
-    except Exception:
-        # try base64url conversion if needed
-        try:
-            b64 = base64url_to_b64(b64ip_part)
-            ip = base64.b64decode(b64).decode('utf-8')
-        except Exception:
-            ip = None
-
-    if ip is None:
-        print("Failed to decode IP part.")
-        return
-
-    # verify signature
-    valid = verify_hmac(ip, sig_part)
-    if valid:
-        print("Signature: VALID")
-        print("decoded IP ->", ip)
-    else:
-        print("Signature: INVALID! The identifier was not signed with the expected key or was tampered.")
-        print("Decoded IP (unchecked) ->", ip)
+        ip = decrypt_identifier(ident)
+        print("Decoded IP ->", ip)
+    except Exception as e:
+        print("Failed to decrypt identifier:", e)
 
 if __name__ == "__main__":
     main()
