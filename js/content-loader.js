@@ -80,14 +80,12 @@ async function _checkEnvProps() {
     return detected;
 }
 
-// Helper function to get cookie value
 function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
-// Initialize session if not exists
 async function ensureSession() {
     if (!getCookie('SESSION_ID')) {
         try {
@@ -95,41 +93,25 @@ async function ensureSession() {
                 method: 'GET',
                 credentials: 'include'
             });
-            
-            if (!response.ok) {
-                throw new Error('Failed to initialize session');
-            }
-            
+            if (!response.ok) throw new Error('Failed to initialize session');
             const result = await response.json();
-            if (!result.ok) {
-                throw new Error('Session initialization failed');
-            }
-            
+            if (!result.ok) throw new Error('Session initialization failed');
         } catch (error) {
             throw error;
         }
     }
 }
 
-// Fetch the authorization token from the server
-async function fetchAuthToken() {
+async function fetchSignedInfo(filePath) {
     try {
-        const response = await fetch('/api/get-token', {
+        const response = await fetch(`/api/get-token?file=${encodeURIComponent(filePath)}`, {
             method: 'GET',
-            credentials: 'include' // Send the session cookie to authenticate the token request
+            credentials: 'include'
         });
-
-        if (!response.ok) {
-            throw new Error(`Failed to fetch token: ${response.status} ${response.statusText}`);
-        }
-
+        if (!response.ok) throw new Error(`Failed to fetch token: ${response.status} ${response.statusText}`);
         const result = await response.json();
-        if (!result.token) {
-            throw new Error('Token not found in response');
-        }
-
-        return result.token;
-
+        if (!result.token || !result.signedPath) throw new Error('Signed token or path missing');
+        return result; // { token, signedPath }
     } catch (error) {
         throw error;
     }
@@ -139,14 +121,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         const contentContainer = document.getElementById('content-container');
         const sourceFile = document.body.dataset.source;
-        // Get the prefix from the body tag to determine the content folder
         const chapterPrefix = document.body.dataset.prefix;
 
-        if (!contentContainer || !sourceFile || !chapterPrefix) {
-            return;
-        }
+        if (!contentContainer || !sourceFile || !chapterPrefix) return;
 
-        // Run bot detection first
         if (await _checkEnvProps()) {
             contentContainer.innerHTML = `
                 <p style="text-align: center;">
@@ -161,7 +139,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // Initialize session
         try {
             await ensureSession();
         } catch (error) {
@@ -169,23 +146,23 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // Fetch the auth token
-        let authToken;
+        // --- Fetch signed token + path ---
+        let signedInfo;
         try {
-            authToken = await fetchAuthToken();
+            signedInfo = await fetchSignedInfo(`/${chapterPrefix}/chapters/${sourceFile}`);
         } catch (error) {
             contentContainer.innerHTML = '<p style="color: red;">Failed to get authorization token. Please refresh the page.</p>';
             return;
         }
 
-        // Set up marked.js if needed
+        const { token, signedPath } = signedInfo;
+
         if (typeof marked !== 'undefined') {
             marked.use(markedFootnote({
                 description: '<hr><h3>Footnotes:</h3>'
             }));
         }
-        
-        /*
+
         const annoyReplacements = {
             '01': '<p class="ffoodie">Read this at northbladetldotcom?',
             '02': '<p class="fooodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
@@ -198,53 +175,38 @@ document.addEventListener('DOMContentLoaded', async () => {
             '09': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you.',
             '10': '<p class="foodiee">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore.',
         };
-        */
 
         try {
-            // --- RETRY LOGIC FOR CHAPTER FETCH ---
             let chapterResponse;
             let attempt = 0;
             const maxAttempts = 3;
-            const retryDelay = 500; // milliseconds
+            const retryDelay = 500;
 
             while (attempt < maxAttempts) {
                 try {
-                    // Request chapter content with the Authorization header, using the dynamic prefix
-                    chapterResponse = await fetch(`/${chapterPrefix}/chapters/${sourceFile}`, {
-                        credentials: 'include',
-                        headers: {
-                            'Authorization': `Bearer ${authToken}`
-                        }
+                    // --- Use signed URL + token query ---
+                    chapterResponse = await fetch(`${signedPath}?token=${encodeURIComponent(token)}`, {
+                        credentials: 'include'
                     });
-
-                    // If response is successful, break the retry loop
-                    if (chapterResponse.ok) {
-                        break;
-                    } else if (chapterResponse.status === 401 && attempt < maxAttempts - 1) {
-                        // Wait and retry on 401 if needed
+                    if (chapterResponse.ok) break;
+                    else if (chapterResponse.status === 401 && attempt < maxAttempts - 1) {
                         await new Promise(res => setTimeout(res, retryDelay));
                     } else {
-                        // If another error occurs or max attempts reached, throw
                         throw new Error(`Failed to load chapter: ${chapterResponse.status} ${chapterResponse.statusText}`);
                     }
                 } catch (e) {
                     if (attempt < maxAttempts - 1) {
                         await new Promise(res => setTimeout(res, retryDelay));
                     } else {
-                        throw e; // Re-throw the error on the final attempt
+                        throw e;
                     }
                 }
                 attempt++;
             }
 
-            // Check if we have a successful response after the loop
-            if (!chapterResponse || !chapterResponse.ok) {
-                throw new Error('Failed to load chapter after multiple retries.');
-            }
+            if (!chapterResponse || !chapterResponse.ok) throw new Error('Failed to load chapter after multiple retries.');
             
             let markdown = await chapterResponse.text();
-
-            // Process markdown if marked.js is available
             let htmlContent;
             if (typeof marked !== 'undefined') {
                 htmlContent = marked.parse(
@@ -253,19 +215,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                         .replace(/@\[/g, '<span class="night-mode-quotes">')
                         .replace(/\]@/g, '</span>')
                 );
-
                 htmlContent = htmlContent
                     .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-                    // .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+                    .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
                     .replace(/<p>/g, '<p class="foodie">');
             } else {
-                // Fallback: just display the raw markdown
                 htmlContent = `<pre>${markdown}</pre>`;
             }
-
             contentContainer.innerHTML = htmlContent;
 
-            // Apply settings from localStorage
             if (typeof setFontSize === 'function' && localStorage.getItem('fontSize')) {
                 setFontSize(localStorage.getItem('fontSize'));
             }
@@ -276,6 +234,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         } catch (error) {
             contentContainer.innerHTML = '<p style="color: red;">Failed to load chapter content. Authorization may have failed.</p>';
         }
-    } catch (e) {
-    }
+    } catch (e) {}
 });
