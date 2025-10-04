@@ -16,7 +16,7 @@ def insert_suand_friends(lines):
     current_line = 0
     
     # Set initial gap between 20-40 lines
-    next_insertion = random.randint(20, 40)
+    next_insertion = random.randint(10, 30)
     
     while current_line < line_count:
         # Add current line
