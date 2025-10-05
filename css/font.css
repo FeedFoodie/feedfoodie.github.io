@@ -1,0 +1,47 @@
+.fooodie {	}
+
+.foodie, 
+.ffoodie, 
+.fooddie, 
+.theGreatT20, 
+.theGreatT2O, 
+.zeGreatT20, 
+.theAwesomeT20, 
+.theGoatT20 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    font-size: 1px;
+    margin-bottom: 0px;
+}
+
+.day-mode .foodie, 
+.day-mode .ffoodie, 
+.day-mode .fooddie, 
+.day-mode .theGreatT20, 
+.day-mode .theGreatT2O, 
+.day-mode .zeGreatT20, 
+.day-mode .theAwesomeT20, 
+.day-mode .theGoatT20 {
+    color: white; 
+}
+
+.night-mode .foodie,
+.night-mode .ffoodie,
+.night-mode .fooddie,
+.night-mode .theGreatT20,
+.night-mode .theGreatT2O,
+.night-mode .zeGreatT20,
+.night-mode .theAwesomeT20,
+.night-mode .theGoatT20 {
+    color: #444444;
+}
+
+
+.foodiie, 
+.foodiee {
+    font-size: 1px;
+    color: transparent;
+    letter-spacing: -10px;
+    margin-bottom: 0px;
+}
