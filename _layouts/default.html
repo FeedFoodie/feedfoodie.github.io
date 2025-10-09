@@ -31,6 +31,12 @@
 		  {%- include footer-absw.html -%}
 		{% elsif page.tags contains "lnb" %}
 		  {%- include footer-lnb.html -%}
+		{% elsif page.tags contains "ruh" %}
+		  {%- include footer-ruh.html -%}
+		{% elsif page.tags contains "lcs" %}
+		  {%- include footer-lcs.html -%}
+		{% elsif page.tags contains "hero" %}
+		  {%- include footer-hero.html -%}
 		{% else %}
 		  {%- include footer.html -%}
 		{% endif %}
