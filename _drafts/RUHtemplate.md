@@ -1,6 +1,6 @@
 ---
 layout: postRUH
-title: "Chapter "
+title: ""
 comments: true
 tags: [ruh]
 categories: [ruh]

@@ -1,6 +1,6 @@
 ---
 layout: postLNB
-title: "Chapter "
+title: ""
 comments: true
 tags: [lnb]
 categories: [lnb]
