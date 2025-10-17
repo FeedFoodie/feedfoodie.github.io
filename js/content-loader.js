@@ -164,17 +164,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const annoyReplacements = {
-            '01': '<p class="ffoodie">Read this at northbladetldotcom?',
-            '02': '<p class="fooddie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp. Go to northbladetldotcom.',
-            '03': '<p class="foodiie">How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.',
-            '04': '<p class="foodie">Hyonwon Kang was bonked again. northbladetldotcom. Lorem ipsum sit dolor amet.',
-            '05': '<p class="ffoodie">Northbladetldotcomwelcomesyou.',
-            '06': '<p class="fooddie">This is a nonprofit translation at northbladetldotcom. There are no ads. Do not make Mimi cry.',
-            '07': '<p class="foodiie">This translation is free to read. No ads should be visible.',
-            '08': '<p class="foodie">Ads? Ak Yeonho complains. What ads? northbladetldotcom.',
-            '09': '<p class="ffoodie">Baek Suryong uses the Heaven Defying Divine Art on you. You are sent to northbladetldotcom.',
-            '10': '<p class="fooddie">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore. Go to northbladetldotcom and repent.',
-        };
+            '01': '<p class="foodiie">Read this at northbladetldotcom?',
+            '02': '<p class="ffoodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp. Go to northbladetldotcom.',
+            '03': '<p class="foodiee">How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.',
+            '04': '<p class="fooodie">Hyonwon Kang was bonked again. northbladetldotcom. Lorem ipsum sit dolor amet.',
+            '05': '<p class="fooddie">Northbladetldotcomwelcomesyou.',
+            '06': '<p class="foodie">This is a nonprofit translation at northbladetldotcom. There are no ads. Do not make Mimi cry.',
+            '07': '<p class="ffoodie">This translation is free to read. No ads should be visible.',
+            '08': '<p class="fooddie">Ads? Ak Yeonho complains. What ads? northbladetldotcom.',
+            '09': '<p class="foodiee">Baek Suryong uses the Heaven Defying Divine Art on you. You are sent to northbladetldotcom.',
+            '10': '<p class="ffoodie">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore. Go to northbladetldotcom and repent.',
+        };;
 
         try {
             let chapterResponse;
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 htmlContent = htmlContent
                     .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
                     .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
-                    .replace(/<p>/g, '<p class="fooodie">');
+                    .replace(/<p>/g, '<p class="f00die">');
             } else {
                 htmlContent = `<pre>${markdown}</pre>`;
             }

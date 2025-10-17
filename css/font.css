@@ -1,6 +1,7 @@
-.fooodie {  }
+.f00die {  }
 
 /*Z section*/
+.fooodie,
 .foodie,
 .ffoodie,
 .fooddie {
@@ -12,6 +13,7 @@
 }
 
 /*Day Mode*/
+.day-mode .fooodie,
 .day-mode .foodie,
 .day-mode .ffoodie,
 .day-mode .fooddie {
@@ -19,6 +21,7 @@
 }
 
 /*Night Mode*/
+.night-mode .fooodie,
 .night-mode .foodie,
 .night-mode .ffoodie,
 .night-mode .fooddie {
