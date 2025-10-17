@@ -1,5 +1,6 @@
-.fooodie {	}
+.fooodie {  }
 
+/*Z section*/
 .foodie,
 .ffoodie,
 .fooddie {
@@ -10,19 +11,21 @@
     margin-bottom: 0px;
 }
 
+/*Day Mode*/
 .day-mode .foodie,
 .day-mode .ffoodie,
 .day-mode .fooddie {
     color: white; 
 }
 
+/*Night Mode*/
 .night-mode .foodie,
 .night-mode .ffoodie,
 .night-mode .fooddie {
     color: #444444;
 }
 
-
+/*Invisible Text*/
 .foodiie,
 .foodiee {
     font-size: 1px;
