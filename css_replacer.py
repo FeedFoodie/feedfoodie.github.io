@@ -20,21 +20,40 @@ def get_current_class_name(css_file_path):
         return "fooodie"
 
 def extract_decoy_classes(css_file_path):
-    """Extract all decoy class names from the Z section in font.css"""
+    """Extract all decoy class names from the Z section and Invisible Text section in font.css"""
     try:
         with open(css_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # Find the Z section using the comment as anchor
+        decoy_classes = []
+        
+        # Extract classes from Z section
         z_section_match = re.search(r'/\*Z section\*/(.*?)\}', content, re.DOTALL)
         if z_section_match:
             z_section = z_section_match.group(1)
-            selector_part = z_section.split('{')[0]
-            classes = re.findall(r'\.([a-zA-Z_][a-zA-Z0-9_-]*)', selector_part)
-            return classes
+            # Extract only class names that are in the selector part (before the opening brace)
+            selector_part = z_section.split('{')[0]  # Get only the part before CSS properties
+            # Extract class names (words that start with dot and are valid CSS identifiers)
+            z_classes = re.findall(r'\.([a-zA-Z_][a-zA-Z0-9_-]*)', selector_part)
+            decoy_classes.extend(z_classes)
+            print(f"  Found {len(z_classes)} classes in Z section: {', '.join(z_classes)}")
         else:
             print("⚠️  Could not extract decoy classes from Z section")
-            return []
+        
+        # Extract classes from Invisible Text section
+        invisible_section_match = re.search(r'/\*Invisible Text\*/(.*?)\}', content, re.DOTALL)
+        if invisible_section_match:
+            invisible_section = invisible_section_match.group(1)
+            # Extract only class names that are in the selector part (before the opening brace)
+            selector_part = invisible_section.split('{')[0]  # Get only the part before CSS properties
+            # Extract class names (words that start with dot and are valid CSS identifiers)
+            invisible_classes = re.findall(r'\.([a-zA-Z_][a-zA-Z0-9_-]*)', selector_part)
+            decoy_classes.extend(invisible_classes)
+            print(f"  Found {len(invisible_classes)} classes in Invisible Text section: {', '.join(invisible_classes)}")
+        else:
+            print("⚠️  Could not extract decoy classes from Invisible Text section")
+        
+        return decoy_classes
     except Exception as e:
         print(f"✗ Error extracting decoy classes: {e}")
         return []
