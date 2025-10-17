@@ -1,16 +1,3 @@
-/*
-window.onload = function() {
-  if(localStorage.getItem('fontSize')) {
-		var storedSize = localStorage.getItem('fontSize');
-		setFontSize(storedSize);
-	}
-	if(localStorage.getItem('colorScheme')) {
-		var storedColor = localStorage.getItem('colorScheme');
-		setMode(storedColor);
-	}
-}
-*/
-
 // Set Font Size Automatically
 function setFontSize(value) {
     const contentElement = document.getElementById("content");
@@ -39,13 +26,17 @@ function setMode(value) {
 function changeFontSize(change) {
     const contentElement = document.getElementById("content");
     if (!contentElement) return;
+
+    const delta = Number(change);
     let newSize;
-    if (change === '0') {
+
+    if (delta === 0) {
         newSize = "16px";
     } else {
         const currentSize = parseInt(window.getComputedStyle(contentElement).fontSize);
-        newSize = (currentSize + change) + 'px';
+        newSize = (currentSize + delta) + 'px';
     }
+
     localStorage.setItem('fontSize', newSize);
     setFontSize(newSize);
 }
