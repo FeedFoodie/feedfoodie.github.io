@@ -234,9 +234,9 @@ def main():
     old_class_name = get_current_class_name(css_file_path)
     print(f"Current class name detected: {old_class_name}")
     
-    # Extract decoy classes from CSS (from the Z section)
-    decoy_classes = extract_decoy_classes(css_file_path)
-    print(f"Decoy classes found: {', '.join(decoy_classes)}")
+    # Extract current decoy classes from CSS (from the Z section and Invisible Text section)
+    current_decoy_classes = extract_decoy_classes(css_file_path)
+    print(f"Current decoy classes found: {', '.join(current_decoy_classes)}")
     
     # Get new class name from user
     new_class_name = input(f"Enter the new class name to replace '{old_class_name}': ").strip()
@@ -299,25 +299,29 @@ def main():
     else:
         print(f"✗ File not found: {file3_path}")
     
-    # File 4: content-loader.js - update the main replacement
+    # File 5: font.css - use the special update function
+    update_css_file(css_file_path, old_class_name, new_class_name)
+    
+    # Now extract decoy classes again AFTER updating CSS to include the newly added old class
+    updated_decoy_classes = extract_decoy_classes(css_file_path)
+    print(f"Updated decoy classes (including {old_class_name}): {', '.join(updated_decoy_classes)}")
+    
+    # File 4: content-loader.js - update the main replacement AND annoyReplacements
     file4_path = os.path.join("js", "content-loader.js")
     if os.path.exists(file4_path):
         update_file_content(file4_path, f'.replace(/<p>/g, \'<p class="{old_class_name}">\');', f'.replace(/<p>/g, \'<p class="{new_class_name}">\');')
         
-        # Now update the annoyReplacements with random decoy classes
-        update_annoy_replacements(file4_path, decoy_classes)
+        # Now update the annoyReplacements with the UPDATED decoy classes (including the old class)
+        update_annoy_replacements(file4_path, updated_decoy_classes)
     else:
         print(f"✗ File not found: {file4_path}")
-    
-    # File 5: font.css - use the special update function
-    update_css_file(css_file_path, old_class_name, new_class_name)
     
     print("\n" + "=" * 40)
     print("Update process completed!")
     print(f"All occurrences of '{old_class_name}' have been replaced with '{new_class_name}'")
     print(f"'{old_class_name}' has been added to three sections in font.css")
     print("Version numbers have been incremented")
-    print("annoyReplacements have been randomized with decoy classes")
+    print("annoyReplacements have been randomized with updated decoy classes")
 
 if __name__ == "__main__":
     main()
