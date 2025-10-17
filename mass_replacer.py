@@ -26,7 +26,6 @@ replacements = {
     "’": "'",
     "‘": "'",
     "…": "...",
-    "Beggars' Sect": "Beggars' Gang",
 }
 
 # Loop through each directory in the list
