@@ -15,7 +15,7 @@ directories_to_process = [
 ]
 
 # Calculate the cutoff time (1 month ago)
-one_month_ago = datetime.now() - timedelta(days=30)
+one_month_ago = datetime.now() - timedelta(days=1)
 # Convert to timestamp for comparison with file modification time
 cutoff_timestamp = time.mktime(one_month_ago.timetuple())
 
