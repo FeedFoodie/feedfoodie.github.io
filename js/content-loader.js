@@ -164,17 +164,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const annoyReplacements = {
-            '01': '<p class="foodiie">Read this at northbladetl(dot)com?',
-            '02': '<p class="ffoodie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp. Go to northbladetl.com.',
-            '03': '<p class="foodiee">How about reading Demon Instructor Wiji Cheons exploits at northbladetl_com.',
-            '04': '<p class="fooodie">Hyonwon Kang was bonked again. northbladetl-dot-com. Lorem ipsum sit dolor amet.',
-            '05': '<p class="fooddie">Northbladetl•com welcomes you.',
-            '06': '<p class="foodie">This is a nonprofit translation at northbladetl·com. There are no ads. Do not make Mimi cry.',
-            '07': '<p class="ffoodie">This translation is free to read. No ads should be visible.',
-            '08': '<p class="fooddie">Ads? Ak Yeonho complains. What ads? northbladetl·com.',
-            '09': '<p class="foodiee">Baek Suryong uses the Heaven Defying Divine Art on you. You are sent to northbladetl(.)com.',
-            '10': '<p class="ffoodie">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore. Go to northbladetl(·)com and repent.',
-        };;
+            '01': '<p class="fooddie">Read this at north[]blade{}tl(dot)com?',
+            '02': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
+            '03': '<p class="foodie">How about reading Demon Instructor Wiji Cheons exploits at north*blade/tl_com.',
+            '04': '<p class="fooodie">Hyonwon Kang was bonked again. north, bladetl-dot, com. Lorem ipsum sit dolor amet.',
+            '05': '<p class="foodiee">NorthbladetI•com welcomes you.',
+            '06': '<p class="ffoodie">This is a nonprofit translation at north|bladetl·com. There are no ads. Do not make Mimi cry.',
+            '07': '<p class="fooodie">This translation is free to read. No ads should be visible.',
+            '08': '<p class="fooodie">Ads? Ak Yeonho complains. What ads?',
+            '09': '<p class="ffoodie">Baek Suryong uses the Heaven Defying Divine Art on you.',
+            '10': '<p class="fooddie">Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore. Repent.',
+        };;;
 
         try {
             let chapterResponse;
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 htmlContent = htmlContent
                     .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
                     .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
-                    .replace(/<p>/g, '<p class="f00die">');
+                    .replace(/<p>/g, '<p class="fo0die">');
             } else {
                 htmlContent = `<pre>${markdown}</pre>`;
             }
