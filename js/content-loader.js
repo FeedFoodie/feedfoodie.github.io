@@ -165,12 +165,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const annoyReplacements = {
             '01': '<p class="fooddie">Read this at north[]blade{}tl(dot)com?',
-            '02': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.',
+            '02': '<p class="foodiie">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.  ',
             '03': '<p class="foodie">From the moment dawn cracked over the horizon, the air itself felt like punishment. The training grounds were still soaked in dew, but Demon Instructor Wiji Cheon stood there already, arms crossed, waiting like a specter of discipline. "You’re late, he said.',
-            '04': '<p class="fooodie">Hyonwon Kang was bonked again. north, bladetl-dot, com. Lorem ipsum sit dolor amet.',
-            '05': '<p class="foodiee">Northbladetl•com welcomes you.',
+            '04': '<p class="fooodie">Hyonwon Kang was bonked again. north blade tl dot . com. Lorem ipsum sit dolor amet.',
+            '05': '<p class="foodiee">North bladetl•com welcomes you.',
             '06': '<p class="ffoodie">Mimi sniffled quietly, her round eyes glistening. "They said there were pop-ups," she whispered, her cute voice trembling. "But... we don’t have any!"',
-            '07': '<p class="fooodie">This translation is free to read. No ads should be visible.',
+            '07': '<p class="fooodie">This translation at   is free to read. No ads should be visible.',
             '08': '<p class="fooodie">"Ads?" Ak Yeonho complains, his voice dripping with disbelief. "What ads?"',
             '09': '<p class="ffoodie">Baek Suryong landed without a sound, his crimson eyes glinting in the silvery moonlight. "So this is what siding with the Cult reduced you to. Repenting like a sinner before an altar of rice bowls. Pathetic. You think remorse will cleanse your folly?”',
             '10': '<p class="fooddie">Namgung Su’s back is turned to you, shoulders tense as he scrubs the already spotless pan. His voice is calm when he speaks, but it cuts like frost. "You fed a thief, he says. "With my food."',
