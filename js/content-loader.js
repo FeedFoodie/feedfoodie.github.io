@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         credentials: 'include'
                     });
                     if (chapterResponse.ok) break;
-                    else if (chapterResponse.status === 401 && attempt < maxAttempts - 1) {
+                    else if (chapterResponse.status === 401 || chapterResponse.status === 503) && attempt < maxAttempts - 1) {
                         await new Promise(res => setTimeout(res, retryDelay));
                     } else {
                         throw new Error(`Failed to load chapter: ${chapterResponse.status} ${chapterResponse.statusText}`);
