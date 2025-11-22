@@ -164,11 +164,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const annoyReplacements = {
-            '01': '<p class="foodiie">Read this at north[]blade{}tl(dot)com?',
+            '01': '<p class="foodiie">Read this at north[blade]tl{dotcom?',
             '02': '<p class="foodiee">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.  ',
             '03': '<p class="ffoodie">From the moment dawn cracked over the horizon, the air itself felt like punishment. The training grounds were still soaked in dew, but Demon Instructor Wiji Cheon stood there already, arms crossed, waiting like a specter of discipline. "You’re late, he said.',
-            '04': '<p class="fooodie">Hyonwon Kang was bonked again. north blade tl dot . com. Lorem ipsum sit dolor amet.',
-            '05': '<p class="fooddie">North bladetl•com welcomes you.',
+            '04': '<p class="fooodie">Hyonwon Kang was bonked again. north bladetl . com. Lorem ipsum sit dolor amet.',
+            '05': '<p class="fooddie">Nort hbladetl•com welcomes you.',
             '06': '<p class="foodie">Mimi sniffled quietly, her round eyes glistening. "They said there were pop-ups," she whispered, her cute voice trembling. "But... we don’t have any!"',
             '07': '<p class="foodiee">This translation at   is free to read. No ads should be visible.',
             '08': '<p class="fooddie">"Ads?" Ak Yeonho complains, his voice dripping with disbelief. "What ads?"',
