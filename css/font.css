@@ -4,7 +4,8 @@
 .fooodie,
 .foodie,
 .ffoodie,
-.fooddie {
+.fooddie,
+.fo0die {
     position: absolute;
     z-index: -1;
     opacity: 0.1;
