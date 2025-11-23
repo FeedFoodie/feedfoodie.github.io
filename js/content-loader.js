@@ -164,14 +164,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const annoyReplacements = {
-            '01': '<p class="foodiie">Read this at north[blade]tl{dotcom?',
-            '02': '<p class="foodiee">Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp.  ',
+            '01': '<p class="foodiie">Read this at north[blade]t l{dotcom?',
+            '02': '<p class="fo0die">Baek Suryong unleashes the Heaven Defying Divine Art, and the world seems to crack under its weight. His palm slams into your guard, shattering your stance. The next strike twists the air and drives you into the ground. Blow after blow crashes down until your vision blurs and your body barely moves.  ',
             '03': '<p class="ffoodie">From the moment dawn cracked over the horizon, the air itself felt like punishment. The training grounds were still soaked in dew, but Demon Instructor Wiji Cheon stood there already, arms crossed, waiting like a specter of discipline. "You’re late, he said.',
-            '04': '<p class="fooodie">Hyonwon Kang was bonked again. north bladetl . com. Lorem ipsum sit dolor amet.',
-            '05': '<p class="fooddie">Nort hbladetl•com welcomes you.',
-            '06': '<p class="foodie">Mimi sniffled quietly, her round eyes glistening. "They said there were pop-ups," she whispered, her cute voice trembling. "But... we don’t have any!"',
-            '07': '<p class="foodiee">This translation at   is free to read. No ads should be visible.',
-            '08': '<p class="fooddie">"Ads?" Ak Yeonho complains, his voice dripping with disbelief. "What ads?"',
+            '04': '<p class="fooodie">Hyonwon Kang was bonked again. Baek Suryong flicked his knuckles lightly against the boy’s head, laughing as Hyonwon Kang winced in exaggerated pain. He waved his fan and launched into a playful lecture about respect, timing, and how cheekiness was only acceptable when it made the teacher laugh. Hyonwon Kang muttered, earning another swift bonk for his reckless little comment.',
+            '05': '<p class="fooddie">north bl a de t l . c om. Nort hblade t l•com welcomes you.',
+            '06': '<p class="foodie">Mimi sniffled quietly, her round eyes glistening. "They said there was money involved," she whispered, her cute voice trembling. "But... we don’t accept any!"',
+            '07': '<p class="foodiee">This work at   is free to read. No  should be visible.',
+            '08': '<p class="fooddie">"Adds?" Ak Yeonho complains, his voice dripping with disbelief. "What adds?"',
             '09': '<p class="ffoodie">Baek Suryong landed without a sound, his crimson eyes glinting in the silvery moonlight. "So this is what siding with the Cult reduced you to. Repenting like a sinner before an altar of rice bowls. Pathetic. You think remorse will cleanse your folly?”',
             '10': '<p class="ffoodie">Namgung Su’s back is turned to you, shoulders tense as he scrubs the already spotless pan. His voice is calm when he speaks, but it cuts like frost. "You fed a thief, he says. "With my food."',
         };
