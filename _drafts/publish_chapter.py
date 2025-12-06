@@ -7,40 +7,6 @@ import yaml
 from datetime import datetime, date
 # import random
 
-'''
-def insert_suand_friends(lines):
-    if not lines:
-        return lines
-    
-    processed_lines = []
-    line_count = len(lines)
-    current_line = 0
-    
-    # Set initial gap between 20-40 lines
-    next_insertion = random.randint(10, 30)
-    
-    while current_line < line_count:
-        # Add current line
-        processed_lines.append(lines[current_line])
-        
-        # Check if we should insert SuandFriends on this odd-numbered line
-        # and if we've reached the insertion point
-        if (current_line + 1) % 2 == 1 and (current_line + 1) >= next_insertion:
-            # Generate random SuandFriends number (01-10)
-            friend_num = random.randint(1, 10)
-            friend_text = f"\nSuandFriends{friend_num:02d}\n"
-            
-            # Insert after current line
-            processed_lines.append(friend_text)
-            
-            # Set next insertion point (20-40 lines from current position)
-            next_insertion = (current_line + 1) + random.randint(20, 40)
-        
-        current_line += 1
-    
-    return processed_lines
-'''
-
 def replace_text(lines):
     replacements = {
         "“": "\"",
@@ -48,6 +14,7 @@ def replace_text(lines):
         "’": "'",
         "‘": "'",
         "…": "...",
+        "\\>": ">",
     }
 
     return [replace_in_line(line, replacements) for line in lines]
