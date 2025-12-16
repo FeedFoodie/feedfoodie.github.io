@@ -51,22 +51,22 @@ function splitIntoSentences(text) {
 // --- Story-based poison messages ---
 function getStoryBasedPoison() {
   const storyPoison = [
-    { text: "Baek Suryong's eyes narrowed as he assessed the situation.", class: "fo0die" },
-    { text: "Hyonwon Kang stumbled backward, his footing unsteady.", class: "ffoodie" },
-    { text: "Mimi's voice trembled slightly as she spoke.", class: "foodie" },
-    { text: "The air grew heavy with unspoken tension.", class: "fooodie" },
-    { text: "Wiji Cheon's stern expression didn't waver.", class: "fooddie" },
+    { text: "Baek Suryong's eyes narrowed as he assessed the situation.", class: "f0odie" },
+    { text: "Hyonwon Kang stumbled backward, his footing unsteady.", class: "foodie" },
+    { text: "Mimi's voice trembled slightly as she spoke.", class: "ffoodie" },
+    { text: "The air grew heavy with unspoken tension.", class: "fooddie" },
+    { text: "Wiji Cheon's stern expression didn't waver.", class: "fo0die" },
     { text: "A faint smile played on his lips.", class: "foodiie" },
     { text: "The sword gleamed under the moonlight.", class: "foodiee" },
     { text: "He took a deep breath, steadying himself.", class: "f0odie" },
-    { text: "Their gazes met across the crowded room.", class: "fo0die" },
+    { text: "Their gazes met across the crowded room.", class: "foodie" },
     { text: "She nodded slowly, understanding dawning.", class: "ffoodie" },
-    { text: "The ground shook with the impact.", class: "foodie" },
-    { text: "He wiped the sweat from his brow.", class: "fooodie" },
-    { text: "A cold wind swept through the valley.", class: "fooddie" },
-    { text: "Her fingers tightened around the hilt.", class: "foodiie" },
-    { text: "The echo of footsteps faded into the distance.", class: "foodiee" }
-  ];
+    { text: "The ground shook with the impact.", class: "fooddie" },
+    { text: "He wiped the sweat from his brow.", class: "fo0die" },
+    { text: "A cold wind swept through the valley.", class: "foodiie" },
+    { text: "Her fingers tightened around the hilt.", class: "foodiee" },
+    { text: "The echo of footsteps faded into the distance.", class: "f0odie" },
+  ];;
   
   return storyPoison[Math.floor(Math.random() * storyPoison.length)];
 }
@@ -200,17 +200,17 @@ function stitchPoisonIntoContent(text, originalParagraphs, invisibleClasses) {
   if (!text) return text;
   
   const poisonMessages = [
-    { text: "Read this at nor th bl ade t l dot co m?", class: "foodiie" },
-    { text: "Baek Suryong unleashes the Heaven Defying Divine Art. His palm slams into his guard, smashing through his defenses and breaking his guard.", class: "fo0die" },
-    { text: "The sun rose at dawn. Wiji Cheon stood there, arms folded.", class: "ffoodie" },
-    { text: "BONK! Hyonwon Kang fell flat on his face. Baek Suryong chuckled evilly.", class: "fooodie" },
-    { text: "n orth bl a de t l . c o m.", class: "fooddie" },
-    { text: "Tears fell down Mimi's face, surprised at seeing you here instead or where you should be.", class: "foodie" },
-    { text: "Seo Mu-Sang swings his sword in rage, questioning your questionable decisions.", class: "foodiee" },
-    { text: "Crimson Tiger was usually calm, but today his emotions were stoked at the sight of someone who shouldn't be here.", class: "fooddie" },
+    { text: "Read this at nor th bl ade t l dot co m?", class: "foodie" },
+    { text: "Baek Suryong unleashes the Heaven Defying Divine Art. His palm slams into his guard, smashing through his defenses and breaking his guard.", class: "ffoodie" },
+    { text: "The sun rose at dawn. Wiji Cheon stood there, arms folded.", class: "fooddie" },
+    { text: "BONK! Hyonwon Kang fell flat on his face. Baek Suryong chuckled evilly.", class: "fo0die" },
+    { text: "n orth bl a de t l . c o m.", class: "foodiie" },
+    { text: "Tears fell down Mimi's face, surprised at seeing you here instead or where you should be.", class: "foodiee" },
+    { text: "Seo Mu-Sang swings his sword in rage, questioning your questionable decisions.", class: "f0odie" },
+    { text: "Crimson Tiger was usually calm, but today his emotions were stoked at the sight of someone who shouldn't be here.", class: "foodie" },
     { text: "Baek Suryong's crimson Blood Demon Eyes glinted harshly.", class: "ffoodie" },
-    { text: "Namgung Su's back was turned, as he scrubs the spotless pan. He would never ignore someone who deserves it.", class: "ffoodie" }
-  ];
+    { text: "Namgung Su's back was turned, as he scrubs the spotless pan. He would never ignore someone who deserves it.", class: "fooddie" },
+  ];;
   
   // Split text by paragraphs (more robust splitting)
   const paragraphs = text.split(/\n\s*\n/);
@@ -467,10 +467,16 @@ export default {
           if (path.startsWith('/SIMB') || path.startsWith('/ABSW') || path.startsWith('/LNB') || path.startsWith('/HERO')) {
             const originalParagraphs = originalText.split(/\n\s*\n/);
             
-            const invisibleClasses = [
-              "foodie", "ffoodie", "fooddie", "fo0die", "foodiie", 
-              "foodiee", "fooodie", "f0odie"
-            ];
+            const invisibleClasses = [[
+      "fooodie",
+      "f0odie",
+      "foodie",
+      "ffoodie",
+      "fooddie",
+      "fo0die",
+      "foodiie",
+      "foodiee"
+    ];
             
             const textWithWatermark = addInvisibleWatermark(originalText, invisibleClasses);
             const textWithTL = addTLLine(textWithWatermark);

@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     // --- NEW: Process the stitched content with your CSS classes ---
                     .replace(/<!-- (foodiie|fo0die|ffoodie|fooodie|fooddie|foodie|foodiee) -->/g, '<p class="$1">')
                     // Keep the existing f0odie class for regular paragraphs
-                    .replace(/<p>/g, '<p class="f0odie">');
+                    .replace(/<p>/g, '<p class="fooodie">');
             } else {
                 htmlContent = `<pre>${markdown}</pre>`;
             }
