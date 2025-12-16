@@ -1,110 +1,146 @@
 import os
 import re
-import random
+import datetime
 
-def get_current_class_name(css_file_path):
-    """Extract the current visible class name from the first rule in font.css"""
+def create_initial_log(log_file_path):
+    """Create initial log file with current state"""
     try:
-        with open(css_file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
-        # Look for the first CSS rule pattern: .className { 
-        # Exclude .f0odie since that's for regular paragraphs
-        match = re.search(r'^\.(?!f0odie)(\w+)\s*\{', content, re.MULTILINE)
-        if match:
-            return match.group(1)
-        else:
-            print("⚠️  Could not find current visible class name in CSS file")
-            return None
+        # Current state as per your description
+        initial_state = f"""CSS Class Rotation Log
+========================
+{timestamp} - Initial State
+Visible class: f0odie (no CSS rule)
+Z section (5 classes): foodie, ffoodie, fooddie, fo0die, foodiie
+Invisible Text section (2 classes): foodiee, fooodie
+
+Full rotation order (8 classes):
+1. f0odie (current visible)
+2. foodie
+3. ffoodie
+4. fooddie
+5. fo0die
+6. foodiie
+7. foodiee
+8. fooodie
+
+Rotation logic:
+- Each rotation moves EVERY class forward by 1 position
+- Last class becomes new visible
+- Previous visible goes to Z section position 1
+- All others shift down
+- Classes rotate through: Visible → Z section → Invisible Text → Visible
+"""
+        
+        with open(log_file_path, 'w', encoding='utf-8') as file:
+            file.write(initial_state)
+        
+        print(f"✓ Created initial log at {log_file_path}")
+        return True
     except Exception as e:
-        print(f"✗ Error reading CSS file: {e}")
-        return None
+        print(f"✗ Error creating initial log: {e}")
+        return False
 
-def get_invisible_classes(css_file_path):
-    """Extract all invisible class names from the Z section and Invisible Text section in font.css"""
+def read_current_state(log_file_path):
+    """Read current state from log file"""
     try:
-        with open(css_file_path, 'r', encoding='utf-8') as file:
+        if not os.path.exists(log_file_path):
+            print("⚠️  Log file not found, creating initial log...")
+            create_initial_log(log_file_path)
+        
+        with open(log_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        invisible_classes = []
+        # Find the latest state
+        lines = content.strip().split('\n')
         
-        # Extract classes from Z section
-        z_section_match = re.search(r'/\*Z section\*/(.*?)\}', content, re.DOTALL)
-        if z_section_match:
-            z_section = z_section_match.group(1)
-            # Get just the selector part (before opening brace)
-            selector_part = z_section.split('{')[0].strip()
-            # Extract individual class names
-            class_matches = re.findall(r'\.(\w+)', selector_part)
-            invisible_classes.extend(class_matches)
-            print(f"  Found {len(class_matches)} classes in Z section: {', '.join(class_matches)}")
+        # Get visible class (look for "Visible class:" in recent lines)
+        visible_class = None
+        z_classes = []
+        invisible_text_classes = []
         
-        # Extract classes from Invisible Text section
-        invisible_section_match = re.search(r'/\*Invisible Text\*/(.*?)\}', content, re.DOTALL)
-        if invisible_section_match:
-            invisible_section = invisible_section_match.group(1)
-            # Get just the selector part (before opening brace)
-            selector_part = invisible_section.split('{')[0].strip()
-            # Extract individual class names
-            class_matches = re.findall(r'\.(\w+)', selector_part)
-            invisible_classes.extend(class_matches)
-            print(f"  Found {len(class_matches)} classes in Invisible Text section: {', '.join(class_matches)}")
+        # Read from bottom up to find most recent state
+        for line in reversed(lines):
+            if "Visible class:" in line:
+                visible_match = re.search(r'Visible class:\s*(\w+)', line)
+                if visible_match:
+                    visible_class = visible_match.group(1)
+            
+            elif "Z section" in line and "classes" in line:
+                z_match = re.search(r'Z section.*?:\s*([\w\s,]+)', line)
+                if z_match:
+                    z_str = z_match.group(1)
+                    z_classes = [c.strip() for c in z_str.split(',')]
+            
+            elif "Invisible Text section" in line:
+                invisible_match = re.search(r'Invisible Text section.*?:\s*([\w\s,]+)', line)
+                if invisible_match:
+                    invisible_str = invisible_match.group(1)
+                    invisible_text_classes = [c.strip() for c in invisible_str.split(',')]
+            
+            if visible_class and z_classes and invisible_text_classes:
+                break
         
-        return invisible_classes
+        if not visible_class:
+            # Default to initial state
+            visible_class = "f0odie"
+            z_classes = ["foodie", "ffoodie", "fooddie", "fo0die", "foodiie"]
+            invisible_text_classes = ["foodiee", "fooodie"]
+            print("⚠️  Could not parse log, using default state")
+        
+        print(f"  Current visible: {visible_class}")
+        print(f"  Z section: {', '.join(z_classes)}")
+        print(f"  Invisible Text: {', '.join(invisible_text_classes)}")
+        
+        return visible_class, z_classes, invisible_text_classes
+        
     except Exception as e:
-        print(f"✗ Error extracting invisible classes: {e}")
-        return []
+        print(f"✗ Error reading log: {e}")
+        return "f0odie", ["foodie", "ffoodie", "fooddie", "fo0die", "foodiie"], ["foodiee", "fooodie"]
 
-def rotate_classes(current_visible, invisible_classes):
-    """Rotate classes: make current visible invisible, and make oldest invisible visible"""
-    if not invisible_classes:
-        print("⚠️  No invisible classes found")
-        return None, []
+def rotate_classes(visible_class, z_classes, invisible_text_classes):
+    """Rotate all 8 classes by 1 position"""
+    # Combine all classes in rotation order
+    all_classes = [visible_class] + z_classes + invisible_text_classes
     
-    # Find the oldest invisible class (first in the list)
-    new_visible = invisible_classes[0]
+    # Rotate: move last to first, everything shifts right
+    new_all_classes = [all_classes[-1]] + all_classes[:-1]
     
-    # Remove the new visible from invisible list
-    updated_invisible = invisible_classes[1:]
+    # Split back into positions
+    new_visible = new_all_classes[0]
+    new_z = new_all_classes[1:6]  # Next 5 classes
+    new_invisible = new_all_classes[6:]  # Last 2 classes
     
-    # Add the current visible to the end of invisible list
-    updated_invisible.append(current_visible)
+    print(f"  Rotation:")
+    print(f"    Old visible: {visible_class} → New visible: {new_visible}")
+    print(f"    Old Z: {', '.join(z_classes)}")
+    print(f"    New Z: {', '.join(new_z)}")
+    print(f"    Old Invisible: {', '.join(invisible_text_classes)}")
+    print(f"    New Invisible: {', '.join(new_invisible)}")
     
-    print(f"  Rotation: {current_visible} -> becomes invisible")
-    print(f"  Rotation: {new_visible} -> becomes visible")
-    print(f"  Updated invisible classes: {', '.join(updated_invisible)}")
-    
-    return new_visible, updated_invisible
+    return new_visible, new_z, new_invisible
 
-def update_css_file(css_file_path, old_visible, new_visible, updated_invisible):
-    """Update the CSS file with rotated classes"""
+def update_css_file(css_file_path, z_classes, invisible_text_classes):
+    """Update CSS file with new class assignments"""
     try:
         with open(css_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # Step 1: Replace the visible class rule
-        first_rule_pattern = rf'\.{re.escape(old_visible)}\s*{{'
-        if re.search(first_rule_pattern, content, re.MULTILINE):
-            content = re.sub(first_rule_pattern, f'.{new_visible} {{', content, count=1)
-            print(f"✓ Replaced visible class: .{old_visible} -> .{new_visible}")
-        
-        # Step 2: Update Z section and Invisible Text section
-        # We need to split the invisible classes between the two sections
-        # First 5 go to Z section, rest go to Invisible Text section
-        z_section_classes = updated_invisible[:5]
-        invisible_text_classes = updated_invisible[5:]
+        # Remove any visible class rule (empty {})
+        content = re.sub(r'^\.\w+\s*\{\s*\}\s*\n?', '', content, flags=re.MULTILINE)
         
         # Update Z section
-        z_section_rule = f"/*Z section*/\n"
-        if z_section_classes:
-            z_section_rule += ",\n".join([f".{cls}" for cls in z_section_classes])
+        z_section_rule = "/*Z section*/\n"
+        if z_classes:
+            z_section_rule += ",\n".join([f".{cls}" for cls in z_classes])
         z_section_rule += " {\n    position: absolute;\n    z-index: -1;\n    opacity: 0.1;\n    font-size: 1px;\n    margin-bottom: 0px;\n}\n"
         
         z_section_pattern = r'/\*Z section\*/(.*?)\}'
         content = re.sub(z_section_pattern, z_section_rule, content, flags=re.DOTALL)
         
         # Update Invisible Text section
-        invisible_text_rule = f"/*Invisible Text*/\n"
+        invisible_text_rule = "/*Invisible Text*/\n"
         if invisible_text_classes:
             invisible_text_rule += ",\n".join([f".{cls}" for cls in invisible_text_classes])
         invisible_text_rule += " {\n    font-size: 1px;\n    color: transparent;\n    letter-spacing: -10px;\n    margin-bottom: 0px;\n}\n"
@@ -112,19 +148,19 @@ def update_css_file(css_file_path, old_visible, new_visible, updated_invisible):
         invisible_text_pattern = r'/\*Invisible Text\*/(.*?)\}'
         content = re.sub(invisible_text_pattern, invisible_text_rule, content, flags=re.DOTALL)
         
-        # Step 3: Update Day Mode section
-        day_mode_rule = f"/*Day Mode*/\n"
-        if z_section_classes:
-            day_mode_rule += ",\n".join([f".day-mode .{cls}" for cls in z_section_classes])
+        # Update Day Mode section
+        day_mode_rule = "/*Day Mode*/\n"
+        if z_classes:
+            day_mode_rule += ",\n".join([f".day-mode .{cls}" for cls in z_classes])
         day_mode_rule += " {\n    color: white; \n}\n"
         
         day_mode_pattern = r'/\*Day Mode\*/(.*?)\}'
         content = re.sub(day_mode_pattern, day_mode_rule, content, flags=re.DOTALL)
         
-        # Step 4: Update Night Mode section
-        night_mode_rule = f"/*Night Mode*/\n"
-        if z_section_classes:
-            night_mode_rule += ",\n".join([f".night-mode .{cls}" for cls in z_section_classes])
+        # Update Night Mode section
+        night_mode_rule = "/*Night Mode*/\n"
+        if z_classes:
+            night_mode_rule += ",\n".join([f".night-mode .{cls}" for cls in z_classes])
         night_mode_rule += " {\n    color: #444444;\n}\n"
         
         night_mode_pattern = r'/\*Night Mode\*/(.*?)\}'
@@ -140,45 +176,37 @@ def update_css_file(css_file_path, old_visible, new_visible, updated_invisible):
         print(f"✗ Error updating CSS file: {e}")
         return False
 
-def update_worker_file(worker_file_path, old_visible, new_visible, all_invisible_classes):
-    """Update the Cloudflare worker file with new class rotation"""
+def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
+    """Update worker.js with new class assignments"""
     try:
         with open(worker_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # Update the poison messages with new classes
-        # We need to update both poisonMessages and naturalPoison arrays
+        # All invisible classes for poison
+        all_invisible = z_classes + invisible_text_classes
         
-        # First, create a mapping of old poison messages to new classes
-        # We'll rotate through the invisible classes
-        
-        # Update poisonMessages array
+        # Update poisonMessages
         poison_pattern = r"const poisonMessages = \[(.*?)\]"
         poison_match = re.search(poison_pattern, content, re.DOTALL)
         
         if poison_match:
             poison_text = poison_match.group(1)
-            # Count how many poison messages we have
             messages = re.findall(r'\{.*?\}', poison_text, re.DOTALL)
             
-            # Assign classes to messages in order
             updated_poison = "const poisonMessages = [\n"
             for i, msg in enumerate(messages):
-                # Get the message text
                 text_match = re.search(r'text:\s*"([^"]+)"', msg)
-                class_match = re.search(r'class:\s*"([^"]+)"', msg)
-                
-                if text_match and class_match:
-                    # Use next invisible class in rotation
-                    class_idx = i % len(all_invisible_classes)
-                    new_class = all_invisible_classes[class_idx]
-                    updated_poison += f'    {{ text: "{text_match.group(1)}", class: "{new_class}" }},\n'
+                if text_match:
+                    # Assign classes from all_invisible in order
+                    class_idx = i % len(all_invisible)
+                    poison_class = all_invisible[class_idx]
+                    updated_poison += f'    {{ text: "{text_match.group(1)}", class: "{poison_class}" }},\n'
             
             updated_poison += "  ];"
             content = content.replace(poison_match.group(0), updated_poison)
-            print(f"✓ Updated poisonMessages with new classes")
+            print(f"✓ Updated poisonMessages with {len(all_invisible)} invisible classes")
         
-        # Update naturalPoison array
+        # Update naturalPoison with offset
         natural_pattern = r"const naturalPoison = \[(.*?)\]"
         natural_match = re.search(natural_pattern, content, re.DOTALL)
         
@@ -189,158 +217,152 @@ def update_worker_file(worker_file_path, old_visible, new_visible, all_invisible
             updated_natural = "const naturalPoison = [\n"
             for i, msg in enumerate(messages):
                 text_match = re.search(r'text:\s*"([^"]+)"', msg)
-                class_match = re.search(r'class:\s*"([^"]+)"', msg)
-                
-                if text_match and class_match:
-                    # Use different classes for natural poison
-                    class_idx = (i + 3) % len(all_invisible_classes)  # Offset by 3
-                    new_class = all_invisible_classes[class_idx]
-                    updated_natural += f'    {{ text: "{text_match.group(1)}", class: "{new_class}" }},\n'
+                if text_match:
+                    # Offset by 2 for variety
+                    class_idx = (i + 2) % len(all_invisible)
+                    poison_class = all_invisible[class_idx]
+                    updated_natural += f'    {{ text: "{text_match.group(1)}", class: "{poison_class}" }},\n'
             
             updated_natural += "  ];"
             content = content.replace(natural_match.group(0), updated_natural)
-            print(f"✓ Updated naturalPoison with new classes")
+            print(f"✓ Updated naturalPoison")
+        
+        # Update watermark to use one of the invisible classes
+        # Find which class to use for watermark (should be from Invisible Text section)
+        watermark_class = invisible_text_classes[0] if invisible_text_classes else "foodiie"
+        
+        # Find and update watermark
+        watermark_pattern = r'const watermark = .*?`(.*?)`'
+        watermark_match = re.search(watermark_pattern, content, re.DOTALL)
+        
+        if watermark_match:
+            old_watermark = watermark_match.group(0)
+            new_watermark = f'const watermark = `\n\n<!-- {watermark_class} -->NorthBladeTL:${{watermarkId}}\n\n`;'
+            content = content.replace(old_watermark, new_watermark)
+            print(f"✓ Updated watermark to use {watermark_class} class")
         
         with open(worker_file_path, 'w', encoding='utf-8') as file:
             file.write(content)
         
-        print(f"✓ Updated worker file")
+        print(f"✓ Updated worker.js")
         return True
         
     except Exception as e:
         print(f"✗ Error updating worker file: {e}")
         return False
 
-def update_noscript_file(js_file_path, old_visible, new_visible):
-    """Update the noscript.js file with new visible class"""
+def update_noscript_file(noscript_path, visible_class):
+    """Update noscript.js with new visible class"""
     try:
-        with open(js_file_path, 'r', encoding='utf-8') as file:
+        with open(noscript_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # Update the regex replacement for regular paragraphs
-        old_pattern = rf'\.replace\(/<p>/g,\s*[\'"`]<p class="{re.escape(old_visible)}">[\'"`]\)'
-        new_replacement = f'.replace(/<p>/g, \'<p class="{new_visible}">\')'
+        # Update the regular paragraph class
+        old_pattern = r'\.replace\(/<p>/g,\s*[\'"`]<p class="\w+">[\'"`]\)'
+        new_replacement = f'.replace(/<p>/g, \'<p class="{visible_class}">\')'
         
         content = re.sub(old_pattern, new_replacement, content)
-        print(f"✓ Updated noscript.js: .{old_visible} -> .{new_visible}")
         
-        with open(js_file_path, 'w', encoding='utf-8') as file:
+        # Update the poison class regex to include ALL classes (visible + invisible)
+        # First get all classes from the current CSS patterns
+        poison_regex_pattern = r'\.replace\(/<!-- \(([\w|]+)\) -->/g'
+        poison_match = re.search(poison_regex_pattern, content)
+        
+        if poison_match:
+            current_classes = poison_match.group(1).split('|')
+            # We need to update this to include the new invisible classes
+            # But this should be done after we know all classes
+            # For now, we'll keep it as is and update manually if needed
+            print(f"  Note: Poison regex currently includes classes: {current_classes}")
+        
+        with open(noscript_path, 'w', encoding='utf-8') as file:
             file.write(content)
         
+        print(f"✓ Updated noscript.js with visible class: {visible_class}")
         return True
     except Exception as e:
         print(f"✗ Error updating noscript.js: {e}")
         return False
 
-def increment_version(file_path, pattern):
-    """Increment version number in a file"""
+def update_css_log(log_file_path, new_visible, new_z, new_invisible, old_visible):
+    """Update CSS log with new rotation"""
     try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
-        for i, line in enumerate(lines):
-            if pattern in line:
-                # Find and increment version
-                version_match = re.search(r'v=(\d+\.\d+)', line)
-                if version_match:
-                    version = float(version_match.group(1))
-                    new_version = round(version + 0.01, 2)
-                    lines[i] = line.replace(f"v={version_match.group(1)}", f"v={new_version:.2f}")
-                    print(f"✓ Incremented version: {version} -> {new_version}")
-                    break
+        log_entry = f"\n{timestamp} - Rotation: {old_visible} → {new_visible}\n"
+        log_entry += f"Visible class: {new_visible} (no CSS rule)\n"
+        log_entry += f"Z section (5 classes): {', '.join(new_z)}\n"
+        log_entry += f"Invisible Text section (2 classes): {', '.join(new_invisible)}\n"
         
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.writelines(lines)
+        # Add full order for reference
+        all_classes = [new_visible] + new_z + new_invisible
+        log_entry += f"Full order (8 classes): {', '.join(all_classes)}\n"
         
+        with open(log_file_path, 'a', encoding='utf-8') as file:
+            file.write(log_entry)
+        
+        print(f"✓ Updated CSS log")
         return True
     except Exception as e:
-        print(f"✗ Error incrementing version: {e}")
+        print(f"✗ Error updating CSS log: {e}")
         return False
 
 def main():
-    print("CSS Class Rotator for Content Stitching System")
+    print("CSS 8-Class Rotator")
     print("=" * 50)
     
     # File paths
     css_file_path = os.path.join("css", "font.css")
-    worker_file_path = os.path.join("js", "worker.js")  # Your local worker copy
+    worker_file_path = os.path.join("js", "worker.js")
     noscript_path = os.path.join("js", "noscript.js")
-    head_html_path = os.path.join("_includes", "head.html")
+    css_log_path = os.path.join("css", "csslog.txt")
     
-    # Check if files exist
-    if not os.path.exists(css_file_path):
-        print(f"✗ CSS file not found: {css_file_path}")
-        return
+    # Step 1: Read current state from log
+    print("\nReading current state from log...")
+    visible_class, z_classes, invisible_text_classes = read_current_state(css_log_path)
     
-    if not os.path.exists(worker_file_path):
-        print(f"⚠️ Worker file not found: {worker_file_path}")
-        print("  Will update CSS only")
+    # Step 2: Rotate all 8 classes by 1 position
+    print("\nRotating all 8 classes...")
+    new_visible, new_z, new_invisible = rotate_classes(visible_class, z_classes, invisible_text_classes)
     
-    # Get current visible class
-    current_visible = get_current_class_name(css_file_path)
-    if not current_visible:
-        print("✗ Could not determine current visible class")
-        return
+    # Step 3: Update CSS file (remove visible class, update Z and Invisible sections)
+    print("\nUpdating CSS file...")
+    if not update_css_file(css_file_path, new_z, new_invisible):
+        print("⚠️ Failed to update CSS file")
     
-    print(f"Current visible class: {current_visible}")
-    
-    # Get all invisible classes
-    invisible_classes = get_invisible_classes(css_file_path)
-    if not invisible_classes:
-        print("✗ No invisible classes found")
-        return
-    
-    print(f"Current invisible classes: {', '.join(invisible_classes)}")
-    
-    # Rotate classes
-    new_visible, updated_invisible = rotate_classes(current_visible, invisible_classes)
-    if not new_visible:
-        return
-    
-    print("\n" + "=" * 50)
-    print("Starting rotation...")
-    print(f"New visible class: {new_visible}")
-    print(f"All invisible classes after rotation: {', '.join(updated_invisible)}")
-    
-    # Update CSS file
-    if not update_css_file(css_file_path, current_visible, new_visible, updated_invisible):
-        print("✗ Failed to update CSS file")
-        return
-    
-    # Update worker file (if exists)
+    # Step 4: Update worker.js
+    print("\nUpdating worker.js...")
     if os.path.exists(worker_file_path):
-        all_classes = [new_visible] + updated_invisible
-        if not update_worker_file(worker_file_path, current_visible, new_visible, all_classes):
-            print("⚠️ Failed to update worker file")
+        all_invisible = new_z + new_invisible
+        if not update_worker_file(worker_file_path, new_z, new_invisible):
+            print("⚠️ Failed to update worker.js")
     else:
-        print("⚠️ Skipping worker file update (file not found)")
+        print("⚠️ worker.js not found, skipping")
     
-    # Update noscript.js
+    # Step 5: Update noscript.js with new visible class
+    print("\nUpdating noscript.js...")
     if os.path.exists(noscript_path):
-        if not update_noscript_file(noscript_path, current_visible, new_visible):
+        if not update_noscript_file(noscript_path, new_visible):
             print("⚠️ Failed to update noscript.js")
     else:
-        print("⚠️ noscript.js not found")
+        print("⚠️ noscript.js not found, skipping")
     
-    # Increment versions to bust cache
-    if os.path.exists(head_html_path):
-        increment_version(head_html_path, "font.css?v=")
-    
-    # Also increment noscript version if it has one
-    if os.path.exists(noscript_path):
-        # Check if noscript has a version in its URL
-        with open(noscript_path, 'r', encoding='utf-8') as f:
-            if '?ver=' in f.read():
-                # This would need to be updated in the HTML file that loads it
-                print("Note: noscript.js has version parameter - update manually in HTML")
+    # Step 6: Update CSS log
+    print("\nUpdating CSS log...")
+    update_css_log(css_log_path, new_visible, new_z, new_invisible, visible_class)
     
     print("\n" + "=" * 50)
-    print("Rotation completed successfully!")
-    print("\nNext steps:")
-    print(f"1. Copy the updated worker.js content to Cloudflare Workers")
-    print(f"2. Clear Cloudflare cache if needed")
-    print(f"3. Test a chapter to ensure new class '{new_visible}' is working")
-    print(f"4. Old class '{current_visible}' is now invisible")
+    print("ROTATION COMPLETED SUCCESSFULLY!")
+    print(f"\nSummary of changes:")
+    print(f"  New visible class (no CSS rule): {new_visible}")
+    print(f"  Z section (position:absolute): {', '.join(new_z)}")
+    print(f"  Invisible Text (transparent): {', '.join(new_invisible)}")
+    print(f"\nImportant notes:")
+    print(f"  1. Class '{new_visible}' is NOT in font.css - it's only in noscript.js and csslog.txt")
+    print(f"  2. Regular paragraphs will use class '{new_visible}' (invisible to scrapers)")
+    print(f"  3. Watermark uses class '{new_invisible[0] if new_invisible else 'foodiie'}'")
+    print(f"  4. Copy worker.js to Cloudflare Workers manually")
+    print(f"\nNext rotation will move '{new_invisible[-1] if new_invisible else 'fooodie'}' to visible position")
 
 if __name__ == "__main__":
     main()
