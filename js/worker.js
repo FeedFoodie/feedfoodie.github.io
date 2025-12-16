@@ -23,7 +23,11 @@ function splitIntoSentences(text) {
     if (!inQuote && (char === '.' || char === '!' || char === '?')) {
       const lastWord = current.trim().split(/\s+/).pop().toLowerCase();
       const isAbbreviation = lastWord.endsWith('mr.') || 
-                            lastWord.endsWith('ms.') || 
+                            lastWord.endsWith('dr.') || 
+                            lastWord.endsWith('prof.') ||
+                            lastWord.endsWith('st.') ||
+                            lastWord.includes('etc.') ||
+                            lastWord.includes('viz.') ||
                             lastWord.includes('e.g.') ||
                             lastWord.includes('i.e.');
       
@@ -275,8 +279,7 @@ function stitchPoisonIntoContent(text, originalParagraphs, invisibleClasses) {
       }
       
       if (poisonMarkdown) {
-        // FIX: Don't trim! This removes the paragraph separation
-        stitchedParagraphs.push(poisonMarkdown);
+        stitchedParagraphs.push(poisonMarkdown.trim());
       }
     }
   }
@@ -285,15 +288,10 @@ function stitchPoisonIntoContent(text, originalParagraphs, invisibleClasses) {
   return stitchedParagraphs.join('\n\n');
 }
 
-// --- FIXED: Invisible Watermark ---
+// --- Invisible Watermark ---
 function addInvisibleWatermark(text, invisibleClasses) {
   const watermarkId = Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
-  let watermarkClass;
-  if (invisibleClasses && invisibleClasses.length >= 8) {
-    watermarkClass = invisibleClasses[0];
-  } else {
-    watermarkClass = "foodiee"; // Fallback to a known invisible class
-  }
+  const watermarkClass = invisibleClasses && invisibleClasses.length > 0 ? invisibleClasses[0] : "foodiie";
   
   const storyWatermarks = [
     `The scene unfolded, marked by identifier ${watermarkId}.`,
@@ -304,11 +302,10 @@ function addInvisibleWatermark(text, invisibleClasses) {
   ];
   
   const randomWatermark = storyWatermarks[Math.floor(Math.random() * storyWatermarks.length)];
-  // FIX: Use insertPoisonAsParagraph to ensure proper paragraph separation for watermark too
-  const watermark = insertPoisonAsParagraph(randomWatermark, watermarkClass);
+  const watermark = `<!-- ${watermarkClass} -->${randomWatermark}`;
   
-  // Add watermark at the beginning of the text
-  return watermark + text;
+  // Add watermark as a separate paragraph at the beginning
+  return watermark + '\n\n' + text;
 }
 
 // --- Add TL line ---
@@ -472,10 +469,9 @@ export default {
             
             const invisibleClasses = [
               "foodie", "ffoodie", "fooddie", "fo0die", "foodiie", 
-              "foodiee", "fooodie"
+              "foodiee", "fooodie", "f0odie"
             ];
             
-            // FIX: Process in correct order: watermark -> TL -> poison
             const textWithWatermark = addInvisibleWatermark(originalText, invisibleClasses);
             const textWithTL = addTLLine(textWithWatermark);
             processedText = stitchPoisonIntoContent(textWithTL, originalParagraphs, invisibleClasses);
