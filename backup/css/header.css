@@ -1,0 +1,42 @@
+/*Z section*/
+.f0odie,
+.foodie,
+.ffoodie,
+.fooddie,
+.fo0die {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    font-size: 1px;
+    margin-bottom: 0px;
+}
+
+
+/*Day Mode*/
+.day-mode .f0odie,
+.day-mode .foodie,
+.day-mode .ffoodie,
+.day-mode .fooddie,
+.day-mode .fo0die {
+    color: white; 
+}
+
+
+/*Night Mode*/
+.night-mode .f0odie,
+.night-mode .foodie,
+.night-mode .ffoodie,
+.night-mode .fooddie,
+.night-mode .fo0die {
+    color: #444444;
+}
+
+
+/*Invisible Text*/
+.foodiie,
+.foodiee {
+    font-size: 1px;
+    color: transparent;
+    letter-spacing: -10px;
+    margin-bottom: 0px;
+}
