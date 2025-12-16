@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -22,7 +23,7 @@ class AssetMinifier:
         required_tools = ["node", "npm"]
         for tool in required_tools:
             try:
-                subprocess.run([tool, "--version"], capture_output=True, check=True, shell=True)
+                subprocess.run([tool, "--version"], capture_output=True, check=True)
                 print(f"✅ {tool} is installed")
             except (subprocess.CalledProcessError, FileNotFoundError):
                 print(f"❌ {tool} is NOT installed")
@@ -173,6 +174,77 @@ class AssetMinifier:
             bytes /= 1024.0
         return f"{bytes:.1f} GB"
 
+    def update_version_numbers(self):
+        """Increment version numbers in specific HTML files."""
+        print("\n🔢 UPDATING VERSION NUMBERS")
+        print("-" * 40)
+
+        # Define the files and patterns to update
+        files_to_update = {
+            '_includes/protected_post.html': [
+                (r'(<script src="[^"]+noscript\.js\?v=)(\d+\.\d+)', 2)  # Pattern for noscript.js
+            ],
+            '_includes/head.html': [
+                (r'(<link rel="stylesheet" href="[^"]+designs\.css\?v=)(\d+\.\d+)', 2),   # designs.css
+                (r'(<link rel="stylesheet" href="[^"]+head\.css\?v=)(\d+\.\d+)', 2),      # head.css
+                (r'(<link rel="stylesheet" href="[^"]+header\.css\?v=)(\d+\.\d+)', 2)     # header.css
+            ]
+        }
+
+        updated_count = 0
+
+        for html_file, patterns in files_to_update.items():
+            file_path = self.project_root / html_file
+
+            if not file_path.exists():
+                print(f"⚠️  File not found, skipping: {html_file}")
+                continue
+
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+
+                original_content = content
+
+                for pattern, part_to_increment in patterns:
+                    # Find all matches
+                    def increment_version(match):
+                        prefix = match.group(1)
+                        version_str = match.group(2)
+                        # Split version into parts
+                        parts = list(map(int, version_str.split('.')))
+                        # Increment the specified part (0-based index)
+                        # part_to_increment: 1 for minor, 2 for patch in "major.minor.patch"
+                        index = part_to_increment - 1
+                        if 0 <= index < len(parts):
+                            parts[index] += 1
+                            # Reset more specific parts to 0 (e.g., 1.02 -> 1.03, not 1.13)
+                            for i in range(index + 1, len(parts)):
+                                parts[i] = 0
+                        new_version = '.'.join(map(str, parts))
+                        print(f"   🔄 Incremented {match.group(0)} -> {prefix}{new_version}")
+                        return prefix + new_version
+
+                    # Apply replacement
+                    content = re.sub(pattern, increment_version, content)
+
+                # Write back only if changes were made
+                if content != original_content:
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        f.write(content)
+                    updated_count += 1
+                    print(f"✅ Updated: {html_file}")
+                else:
+                    print(f"ℹ️  No changes needed: {html_file}")
+
+            except Exception as e:
+                print(f"❌ Error processing {html_file}: {e}")
+
+        if updated_count > 0:
+            print(f"\n📊 Version update complete. Files updated: {updated_count}")
+        else:
+            print("ℹ️  No files required version updates.")
+
     def run(self):
         """Main execution method."""
         print("=" * 60)
@@ -193,6 +265,7 @@ class AssetMinifier:
             return False
 
         self.create_backup()
+        self.update_version_numbers()
         self.minify_javascript_safely()
         self.minify_css()
 
