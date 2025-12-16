@@ -163,18 +163,21 @@ document.addEventListener('DOMContentLoaded', async () => {
             }));
         }
 
+        // --- OLD: Annoy replacements (COMMENTED OUT) ---
+        /* OLD CODE - KEEPING FOR REFERENCE
         const annoyReplacements = {
             '01': '<p class="foodiie">Read this at north blade t l dot co m?',
             '02': '<p class="fo0die">Baek Suryong unleashes the Heaven Defying Divine Art, and the world seems to crack under its weight. His palm slams into your guard, shattering your stance. The next strike twists the air and drives you into the ground. Blow after blow crashes down until your vision blurs and your body barely moves.  ',
-            '03': '<p class="ffoodie">From the moment dawn cracked over the horizon, the air itself felt like punishment. The training grounds were still soaked in dew, but Demon Instructor Wiji Cheon stood there already, arms crossed, waiting like a specter of discipline. "You’re late, he said.',
-            '04': '<p class="fooodie">Hyonwon Kang was bonked again. Baek Suryong flicked his knuckles lightly against the boy’s head, laughing as Hyonwon Kang winced in exaggerated pain. He waved his fan and launched into a playful lecture about respect, timing, and how cheekiness was only acceptable when it made the teacher laugh. Hyonwon Kang muttered, earning another swift bonk for his reckless little comment.',
+            '03': '<p class="ffoodie">From the moment dawn cracked over the horizon, the air itself felt like punishment. The training grounds were still soaked in dew, but Demon Instructor Wiji Cheon stood there already, arms crossed, waiting like a specter of discipline. "You're late, he said.',
+            '04': '<p class="fooodie">Hyonwon Kang was bonked again. Baek Suryong flicked his knuckles lightly against the boy's head, laughing as Hyonwon Kang winced in exaggerated pain. He waved his fan and launched into a playful lecture about respect, timing, and how cheekiness was only acceptable when it made the teacher laugh. Hyonwon Kang muttered, earning another swift bonk for his reckless little comment.',
             '05': '<p class="fooddie">north bl a de t l . c om welcomes you.',
-            '06': '<p class="foodie">Mimi sniffled quietly, her round eyes glistening. "They said there was money involved," she whispered, her cute voice trembling. "But... we don’t accept any!"',
+            '06': '<p class="foodie">Mimi sniffled quietly, her round eyes glistening. "They said there was money involved," she whispered, her cute voice trembling. "But... we don't accept any!"',
             '07': '<p class="foodiee">This work at   is free to read. No  should be visible.',
-            '08': '<p class="fooddie">"What do you mean, you’re being tracked?" Ak Yeonho complains, his voice dripping with disbelief. "Did someone set a tracker on you?"',
-            '09': '<p class="ffoodie">Baek Suryong landed without a sound, his crimson eyes glinting in the silvery moonlight. "So this is what siding with the Cult reduced you to. Repenting like a sinner before an altar of rice bowls. Pathetic. You think remorse will cleanse your folly?”',
-            '10': '<p class="ffoodie">Namgung Su’s back is turned to you, shoulders tense as he scrubs the already spotless pan. His voice is calm when he speaks, but it cuts like frost. "You fed a thief, he says. "With my food."',
+            '08': '<p class="fooddie">"What do you mean, you're being tracked?" Ak Yeonho complains, his voice dripping with disbelief. "Did someone set a tracker on you?"',
+            '09': '<p class="ffoodie">Baek Suryong landed without a sound, his crimson eyes glinting in the silvery moonlight. "So this is what siding with the Cult reduced you to. Repenting like a sinner before an altar of rice bowls. Pathetic. You think remorse will cleanse your folly?"',
+            '10': '<p class="ffoodie">Namgung Su's back is turned to you, shoulders tense as he scrubs the already spotless pan. His voice is calm when he speaks, but it cuts like frost. "You fed a thief, he says. "With my food."',
         };
+        */
 
         try {
             let chapterResponse;
@@ -220,7 +223,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 );
                 htmlContent = htmlContent
                     .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
-                    .replace(/<p>SuandFriends(\d{2})/g, (match, key) => annoyReplacements[key] || match)
+                    // --- NEW: Process the stitched content with your CSS classes ---
+                    .replace(/<!-- (foodiie|fo0die|ffoodie|fooodie|fooddie|foodie|foodiee) -->/g, '<p class="$1">')
+                    // Keep the existing f0odie class for regular paragraphs
                     .replace(/<p>/g, '<p class="f0odie">');
             } else {
                 htmlContent = `<pre>${markdown}</pre>`;
