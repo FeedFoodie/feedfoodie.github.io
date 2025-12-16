@@ -274,7 +274,7 @@ def update_worker_invisible_classes(worker_file_path, z_classes, invisible_text_
         def replace_invisible_classes(match):
             indent = match.group(1)
             # Create new array with proper formatting (7 classes)
-            new_classes = '[\n      ' + ',\n      '.join([f'"{cls}"' for cls in all_invisible]) + '\n    '
+            new_classes = '\n      ' + ',\n      '.join([f'"{cls}"' for cls in all_invisible]) + '\n    '
             return indent + new_classes + match.group(3)
         
         # Use re.sub with a function for replacement

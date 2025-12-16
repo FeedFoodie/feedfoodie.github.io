@@ -30,7 +30,15 @@ function splitIntoSentences(text) {
       const nextChar = i + 1 < text.length ? text[i + 1] : '';
       const nextIsCapital = nextChar && nextChar === nextChar.toUpperCase() && nextChar !== ' ';
       
-      if (!isAbbreviation && (nextIsCapital || nextChar === ' ' || nextChar === '\n')) {
+      const isLookAheadException = nextChar === '*' || 
+                           nextChar === '_' || 
+                           nextChar === '~' ||
+                           nextChar === '^' ||
+                           nextChar === ']' ||
+                           nextChar === '\"' ||
+                           nextChar === '\'';
+      
+      if (!isAbbreviation && !isLookAheadException && (nextIsCapital || nextChar === ' ' || nextChar === '\n')) {
         sentences.push(current.trim());
         current = '';
       }
@@ -470,7 +478,7 @@ export default {
           if (path.startsWith('/SIMB') || path.startsWith('/ABSW') || path.startsWith('/LNB') || path.startsWith('/HERO')) {
             const originalParagraphs = originalText.split(/\n\s*\n/);
             
-            const invisibleClasses = [[
+            const invisibleClasses = [
       "f0odie",
       "foodie",
       "ffoodie",
