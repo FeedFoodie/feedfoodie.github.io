@@ -165,6 +165,8 @@ Full rotation order (8 classes):
 7. foodiee
 8. fooodie
 
+Worker invisibleClasses (7 classes): foodie, ffoodie, fooddie, fo0die, foodiie, foodiee, fooodie
+
 Rotation logic:
 - Each rotation moves EVERY class forward by 1 position
 - Last class becomes new visible
@@ -309,7 +311,7 @@ def update_css_file(css_file_path, z_classes, invisible_text_classes):
         return False
 
 def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
-    """Update worker.js with new class assignments - UPDATED for new worker code"""
+    """Update worker.js with new class assignments"""
     try:
         with open(worker_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
@@ -328,7 +330,6 @@ def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
             updated_story = "const storyPoison = [\n"
             for i, msg in enumerate(messages):
                 text_match = re.search(r'text:\s*"([^"]+)"', msg)
-                class_match = re.search(r'class:\s*"(\w+)"', msg)
                 if text_match:
                     # Assign classes from all_invisible in rotation
                     class_idx = i % len(all_invisible)
@@ -363,27 +364,29 @@ def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
         with open(worker_file_path, 'w', encoding='utf-8') as file:
             file.write(content)
         
-        print(f"✓ Updated worker.js")
+        print(f"✓ Updated worker.js poison assignments")
         return True
         
     except Exception as e:
         print(f"✗ Error updating worker file: {e}")
         return False
 
-def update_worker_invisible_classes(worker_file_path, full_class_order):
-    """Specifically update the invisibleClasses array in worker.js with full 8-class order"""
+def update_worker_invisible_classes(worker_file_path, z_classes, invisible_text_classes):
+    """Specifically update the invisibleClasses array in worker.js with only 7 invisible classes"""
     try:
         with open(worker_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # Find and replace the invisibleClasses array
-        # Look for the pattern: const invisibleClasses = [ ... 8 classes ... ];
+        # Combine Z and Invisible Text classes (7 total)
+        all_invisible = z_classes + invisible_text_classes
+        
+        # Find and replace the invisibleClasses array (7 classes only, no visible class)
         pattern = r'(const invisibleClasses = \[)([^\]]+)(\])'
         
         def replace_invisible_classes(match):
             indent = match.group(1)
-            # Create new array with proper formatting
-            new_classes = '[\n      ' + ',\n      '.join([f'"{cls}"' for cls in full_class_order]) + '\n    '
+            # Create new array with proper formatting (7 classes)
+            new_classes = '[\n      ' + ',\n      '.join([f'"{cls}"' for cls in all_invisible]) + '\n    '
             return indent + new_classes + match.group(3)
         
         # Use re.sub with a function for replacement
@@ -391,15 +394,16 @@ def update_worker_invisible_classes(worker_file_path, full_class_order):
         
         # If pattern not found, try another approach
         if new_content == content:
-            # Try matching the exact array definition
-            exact_pattern = r'const invisibleClasses = \[\s*"foodie",\s*"ffoodie",\s*"fooddie",\s*"fo0die",\s*"foodiie",\s*"foodiee",\s*"fooodie",\s*"f0odie"\s*\]'
-            exact_replacement = f'const invisibleClasses = [\n      "{full_class_order[0]}",\n      "{full_class_order[1]}",\n      "{full_class_order[2]}",\n      "{full_class_order[3]}",\n      "{full_class_order[4]}",\n      "{full_class_order[5]}",\n      "{full_class_order[6]}",\n      "{full_class_order[7]}"\n    ]'
+            # Try matching the exact array definition from your new worker code
+            exact_pattern = r'const invisibleClasses = \[\s*"foodie",\s*"ffoodie",\s*"fooddie",\s*"fo0die",\s*"foodiie",\s*"foodiee",\s*"fooodie"\s*\]'
+            exact_replacement = f'const invisibleClasses = [\n      "{all_invisible[0]}",\n      "{all_invisible[1]}",\n      "{all_invisible[2]}",\n      "{all_invisible[3]}",\n      "{all_invisible[4]}",\n      "{all_invisible[5]}",\n      "{all_invisible[6]}"\n    ]'
             new_content = re.sub(exact_pattern, exact_replacement, content, flags=re.DOTALL)
         
         with open(worker_file_path, 'w', encoding='utf-8') as file:
             file.write(new_content)
         
-        print(f"✓ Updated worker.js invisibleClasses array with new rotation")
+        print(f"✓ Updated worker.js invisibleClasses array with 7 classes")
+        print(f"  New invisibleClasses: {', '.join(all_invisible)}")
         return True
         
     except Exception as e:
@@ -438,29 +442,29 @@ def update_css_log(log_file_path, new_visible, new_z, new_invisible, old_visible
         log_entry += f"Invisible Text section (2 classes): {', '.join(new_invisible)}\n"
         
         all_classes = [new_visible] + new_z + new_invisible
-        log_entry += f"Full order (8 classes): {', '.join(all_classes)}\n"
+        worker_invisible = new_z + new_invisible  # 7 classes for worker
+        log_entry += f"Full rotation order (8 classes): {', '.join(all_classes)}\n"
+        log_entry += f"Worker invisibleClasses (7 classes): {', '.join(worker_invisible)}\n"
         
         with open(log_file_path, 'a', encoding='utf-8') as file:
             file.write(log_entry)
         
         print(f"✓ Updated CSS log")
-        return all_classes
+        return all_classes, worker_invisible
     except Exception as e:
         print(f"✗ Error updating CSS log: {e}")
-        return []
+        return [], []
 
 def update_html_files(visible_class, new_visible_class):
     """Update HTML files with new class and increment versions"""
     # File 1: default.html
     default_path = os.path.join("_layouts", "default.html")
     if os.path.exists(default_path):
-        # Look for class attribute in body tag or specific pattern
         try:
             with open(default_path, 'r', encoding='utf-8') as file:
                 content = file.read()
             
             # Replace class in body tag or specific location
-            # Look for pattern: class="current_class"
             pattern = rf'class="\s*{visible_class}\s*"'
             new_content = re.sub(pattern, f'class="{new_visible_class}"', content)
             
@@ -533,8 +537,8 @@ def main():
     print("\nRotating all 8 classes...")
     new_visible, new_z, new_invisible = rotate_classes(visible_class, z_classes, invisible_text_classes)
     
-    # Create full class order for worker update
-    full_class_order = [new_visible] + new_z + new_invisible
+    # Create invisible classes list for worker (7 classes: Z + Invisible Text)
+    worker_invisible_classes = new_z + new_invisible
     
     # Step 3: Update CSS file
     print("\nUpdating CSS file...")
@@ -548,12 +552,12 @@ def main():
     # Step 5: Update worker.js with new classes
     print("\nUpdating worker.js...")
     if os.path.exists(worker_file_path):
-        # Update general worker classes
+        # Update poison message class assignments
         if not update_worker_file(worker_file_path, new_z, new_invisible):
-            print("⚠️ Failed to update worker.js classes")
+            print("⚠️ Failed to update worker.js poison assignments")
         
-        # Update the invisibleClasses array with full rotation
-        if not update_worker_invisible_classes(worker_file_path, full_class_order):
+        # Update the invisibleClasses array with 7 classes only (no visible class)
+        if not update_worker_invisible_classes(worker_file_path, new_z, new_invisible):
             print("⚠️ Failed to update worker.js invisibleClasses array")
     else:
         print("⚠️ worker.js not found, skipping")
@@ -577,22 +581,23 @@ def main():
     
     # Step 8: Update CSS log and get full class order
     print("\nUpdating CSS log...")
-    all_classes = update_css_log(css_log_path, new_visible, new_z, new_invisible, visible_class)
+    all_classes, worker_invisible = update_css_log(css_log_path, new_visible, new_z, new_invisible, visible_class)
     
     print("\n" + "=" * 50)
     print("ROTATION COMPLETED SUCCESSFULLY!")
     print(f"\nSummary of changes:")
     print(f"  New visible class (no CSS rule): {new_visible}")
-    print(f"  Z section (position:absolute): {', '.join(new_z)}")
-    print(f"  Invisible Text (transparent): {', '.join(new_invisible)}")
-    print(f"  Full 8-class order: {', '.join(all_classes)}")
+    print(f"  Z section (5 classes, position:absolute): {', '.join(new_z)}")
+    print(f"  Invisible Text (2 classes, transparent): {', '.join(new_invisible)}")
+    print(f"  Worker invisibleClasses (7 classes): {', '.join(worker_invisible)}")
     print(f"\nImportant notes:")
     print(f"  1. Class '{new_visible}' is NOT in font.css - it's only in noscript.js and csslog.txt")
     print(f"  2. Regular paragraphs will use class '{new_visible}' (invisible to scrapers)")
-    print(f"  3. Versions incremented in head.html and protected_post.html for cache busting")
-    print(f"  4. Default.html updated with new class (if found)")
-    print(f"  5. Worker.js has been updated with new 8-class rotation")
-    print(f"  6. Copy worker.js to Cloudflare Workers manually")
+    print(f"  3. Worker uses only 7 invisible classes (Z + Invisible Text)")
+    print(f"  4. Watermark uses first class from invisibleClasses: '{worker_invisible[0] if worker_invisible else 'foodie'}'")
+    print(f"  5. Versions incremented in head.html and protected_post.html for cache busting")
+    print(f"  6. Default.html updated with new class (if found)")
+    print(f"  7. Copy worker.js to Cloudflare Workers manually")
     print(f"\nNext rotation will move '{new_invisible[-1] if new_invisible else 'fooodie'}' to visible position")
 
 if __name__ == "__main__":
