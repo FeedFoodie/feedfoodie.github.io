@@ -7,7 +7,6 @@ def create_initial_log(log_file_path):
     try:
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
-        # Current state as per your description
         initial_state = f"""CSS Class Rotation Log
 ========================
 {timestamp} - Initial State
@@ -52,15 +51,12 @@ def read_current_state(log_file_path):
         with open(log_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # Find the latest state
         lines = content.strip().split('\n')
         
-        # Get visible class (look for "Visible class:" in recent lines)
         visible_class = None
         z_classes = []
         invisible_text_classes = []
         
-        # Read from bottom up to find most recent state
         for line in reversed(lines):
             if "Visible class:" in line:
                 visible_match = re.search(r'Visible class:\s*(\w+)', line)
@@ -83,7 +79,6 @@ def read_current_state(log_file_path):
                 break
         
         if not visible_class:
-            # Default to initial state
             visible_class = "f0odie"
             z_classes = ["foodie", "ffoodie", "fooddie", "fo0die", "foodiie"]
             invisible_text_classes = ["foodiee", "fooodie"]
@@ -101,16 +96,12 @@ def read_current_state(log_file_path):
 
 def rotate_classes(visible_class, z_classes, invisible_text_classes):
     """Rotate all 8 classes by 1 position"""
-    # Combine all classes in rotation order
     all_classes = [visible_class] + z_classes + invisible_text_classes
-    
-    # Rotate: move last to first, everything shifts right
     new_all_classes = [all_classes[-1]] + all_classes[:-1]
     
-    # Split back into positions
     new_visible = new_all_classes[0]
-    new_z = new_all_classes[1:6]  # Next 5 classes
-    new_invisible = new_all_classes[6:]  # Last 2 classes
+    new_z = new_all_classes[1:6]
+    new_invisible = new_all_classes[6:]
     
     print(f"  Rotation:")
     print(f"    Old visible: {visible_class} → New visible: {new_visible}")
@@ -177,68 +168,85 @@ def update_css_file(css_file_path, z_classes, invisible_text_classes):
         return False
 
 def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
-    """Update worker.js with new class assignments"""
+    """Update worker.js with new class assignments - UPDATED for new worker code"""
     try:
         with open(worker_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # All invisible classes for poison
-        all_invisible = z_classes + invisible_text_classes
+        # All 8 classes in rotation order (visible + z + invisible)
+        # Note: In the new worker code, we need ALL 8 classes for invisibleClasses array
+        # The visible class is included in the rotation for worker poison
+        # But we need to get the current visible class from elsewhere
+        # We'll use all classes from Z + Invisible + assume visible is first of next rotation
+        # Actually, we need to get the visible class from the caller
         
-        # Update poisonMessages
-        poison_pattern = r"const poisonMessages = \[(.*?)\]"
-        poison_match = re.search(poison_pattern, content, re.DOTALL)
+        # First, let's find where to insert the visible class
+        # The worker code expects all 8 classes in invisibleClasses array
+        # We need to reconstruct the full order
         
-        if poison_match:
-            poison_text = poison_match.group(1)
-            messages = re.findall(r'\{.*?\}', poison_text, re.DOTALL)
+        # For now, we'll update only what we can without the visible class
+        # The worker code has a fixed array, so we need to update it
+        
+        # Find and update the invisibleClasses array in the worker code
+        all_classes_pattern = r'const invisibleClasses = \[(.*?)\]'
+        all_classes_match = re.search(all_classes_pattern, content, re.DOTALL)
+        
+        if all_classes_match:
+            # Create new array with all 8 classes
+            # We need to know the full order: visible + z_classes + invisible_text_classes
+            # But we don't have the visible class in this function
+            # We'll need to modify the function signature or get it from the main
             
-            updated_poison = "const poisonMessages = [\n"
+            # For now, let's update the getStoryBasedPoison function which uses specific classes
+            # This needs to be updated separately
+            
+            print(f"  Note: Found invisibleClasses array, but need full 8-class rotation to update")
+        
+        # Update getStoryBasedPoison function with new classes
+        story_poison_pattern = r'const storyPoison = \[(.*?)\]'
+        story_poison_match = re.search(story_poison_pattern, content, re.DOTALL)
+        
+        if story_poison_match:
+            story_text = story_poison_match.group(1)
+            messages = re.findall(r'\{.*?\}', story_text, re.DOTALL)
+            
+            # All 7 invisible classes (z + invisible_text) for poison assignment
+            all_invisible = z_classes + invisible_text_classes
+            
+            updated_story = "const storyPoison = [\n"
             for i, msg in enumerate(messages):
                 text_match = re.search(r'text:\s*"([^"]+)"', msg)
+                class_match = re.search(r'class:\s*"(\w+)"', msg)
                 if text_match:
-                    # Assign classes from all_invisible in order
+                    # Assign classes from all_invisible in rotation
                     class_idx = i % len(all_invisible)
                     poison_class = all_invisible[class_idx]
-                    updated_poison += f'    {{ text: "{text_match.group(1)}", class: "{poison_class}" }},\n'
+                    updated_story += f'    {{ text: "{text_match.group(1)}", class: "{poison_class}" }},\n'
             
-            updated_poison += "  ];"
-            content = content.replace(poison_match.group(0), updated_poison)
-            print(f"✓ Updated poisonMessages with {len(all_invisible)} invisible classes")
+            updated_story += "  ];"
+            content = content.replace(story_poison_match.group(0), updated_story)
+            print(f"✓ Updated getStoryBasedPoison with {len(all_invisible)} classes")
         
-        # Update naturalPoison with offset
-        natural_pattern = r"const naturalPoison = \[(.*?)\]"
-        natural_match = re.search(natural_pattern, content, re.DOTALL)
+        # Update the invisibleClasses array definition (found in stitchPoisonIntoContent or main processing)
+        # Look for the specific array definition pattern
+        invisible_def_pattern = r'const invisibleClasses = \[\s*"foodie",\s*"ffoodie",\s*"fooddie",\s*"fo0die",\s*"foodiie",\s*"foodiee",\s*"fooodie",\s*"f0odie"\s*\]'
+        invisible_def_match = re.search(invisible_def_pattern, content, re.DOTALL)
         
-        if natural_match:
-            natural_text = natural_match.group(1)
-            messages = re.findall(r'\{.*?\}', natural_text, re.DOTALL)
-            
-            updated_natural = "const naturalPoison = [\n"
-            for i, msg in enumerate(messages):
-                text_match = re.search(r'text:\s*"([^"]+)"', msg)
-                if text_match:
-                    # Offset by 2 for variety
-                    class_idx = (i + 2) % len(all_invisible)
-                    poison_class = all_invisible[class_idx]
-                    updated_natural += f'    {{ text: "{text_match.group(1)}", class: "{poison_class}" }},\n'
-            
-            updated_natural += "  ];"
-            content = content.replace(natural_match.group(0), updated_natural)
-            print(f"✓ Updated naturalPoison")
+        if invisible_def_match:
+            # We need the full 8-class order for the worker
+            # Since we're rotating, we need to pass the visible class from main
+            print(f"  Note: Found fixed invisibleClasses array - will be updated by main function")
         
-        # Update watermark to use one of the invisible classes
-        # Find which class to use for watermark (should be from Invisible Text section)
+        # Update watermark to use first of invisible_text_classes
         watermark_class = invisible_text_classes[0] if invisible_text_classes else "foodiie"
         
-        # Find and update watermark
-        watermark_pattern = r'const watermark = .*?`(.*?)`'
-        watermark_match = re.search(watermark_pattern, content, re.DOTALL)
+        # Find watermark function and update
+        watermark_pattern = r'const watermarkClass = invisibleClasses && invisibleClasses\.length > 0 \? invisibleClasses\[0\] : "foodiie";'
+        watermark_match = re.search(watermark_pattern, content)
         
         if watermark_match:
-            old_watermark = watermark_match.group(0)
-            new_watermark = f'const watermark = `\n\n<!-- {watermark_class} -->NorthBladeTL:${{watermarkId}}\n\n`;'
-            content = content.replace(old_watermark, new_watermark)
+            new_watermark = f'const watermarkClass = "{watermark_class}";'
+            content = content.replace(watermark_match.group(0), new_watermark)
             print(f"✓ Updated watermark to use {watermark_class} class")
         
         with open(worker_file_path, 'w', encoding='utf-8') as file:
@@ -263,18 +271,6 @@ def update_noscript_file(noscript_path, visible_class):
         
         content = re.sub(old_pattern, new_replacement, content)
         
-        # Update the poison class regex to include ALL classes (visible + invisible)
-        # First get all classes from the current CSS patterns
-        poison_regex_pattern = r'\.replace\(/<!-- \(([\w|]+)\) -->/g'
-        poison_match = re.search(poison_regex_pattern, content)
-        
-        if poison_match:
-            current_classes = poison_match.group(1).split('|')
-            # We need to update this to include the new invisible classes
-            # But this should be done after we know all classes
-            # For now, we'll keep it as is and update manually if needed
-            print(f"  Note: Poison regex currently includes classes: {current_classes}")
-        
         with open(noscript_path, 'w', encoding='utf-8') as file:
             file.write(content)
         
@@ -282,6 +278,42 @@ def update_noscript_file(noscript_path, visible_class):
         return True
     except Exception as e:
         print(f"✗ Error updating noscript.js: {e}")
+        return False
+
+def update_worker_invisible_classes(worker_file_path, full_class_order):
+    """Specifically update the invisibleClasses array in worker.js with full 8-class order"""
+    try:
+        with open(worker_file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        # Find and replace the invisibleClasses array
+        # Look for the pattern: const invisibleClasses = [ ... 8 classes ... ];
+        pattern = r'(const invisibleClasses = \[)([^\]]+)(\])'
+        
+        def replace_invisible_classes(match):
+            indent = match.group(1)
+            # Create new array with proper formatting
+            new_classes = '[\n      ' + ',\n      '.join([f'"{cls}"' for cls in full_class_order]) + '\n    '
+            return indent + new_classes + match.group(3)
+        
+        # Use re.sub with a function for replacement
+        new_content = re.sub(pattern, replace_invisible_classes, content, flags=re.DOTALL)
+        
+        # If pattern not found, try another approach
+        if new_content == content:
+            # Try matching the exact array definition
+            exact_pattern = r'const invisibleClasses = \[\s*"foodie",\s*"ffoodie",\s*"fooddie",\s*"fo0die",\s*"foodiie",\s*"foodiee",\s*"fooodie",\s*"f0odie"\s*\]'
+            exact_replacement = f'const invisibleClasses = [\n      "{full_class_order[0]}",\n      "{full_class_order[1]}",\n      "{full_class_order[2]}",\n      "{full_class_order[3]}",\n      "{full_class_order[4]}",\n      "{full_class_order[5]}",\n      "{full_class_order[6]}",\n      "{full_class_order[7]}"\n    ]'
+            new_content = re.sub(exact_pattern, exact_replacement, content, flags=re.DOTALL)
+        
+        with open(worker_file_path, 'w', encoding='utf-8') as file:
+            file.write(new_content)
+        
+        print(f"✓ Updated worker.js invisibleClasses array with new rotation")
+        return True
+        
+    except Exception as e:
+        print(f"✗ Error updating worker invisible classes: {e}")
         return False
 
 def update_css_log(log_file_path, new_visible, new_z, new_invisible, old_visible):
@@ -294,7 +326,6 @@ def update_css_log(log_file_path, new_visible, new_z, new_invisible, old_visible
         log_entry += f"Z section (5 classes): {', '.join(new_z)}\n"
         log_entry += f"Invisible Text section (2 classes): {', '.join(new_invisible)}\n"
         
-        # Add full order for reference
         all_classes = [new_visible] + new_z + new_invisible
         log_entry += f"Full order (8 classes): {', '.join(all_classes)}\n"
         
@@ -302,10 +333,10 @@ def update_css_log(log_file_path, new_visible, new_z, new_invisible, old_visible
             file.write(log_entry)
         
         print(f"✓ Updated CSS log")
-        return True
+        return all_classes
     except Exception as e:
         print(f"✗ Error updating CSS log: {e}")
-        return False
+        return []
 
 def main():
     print("CSS 8-Class Rotator")
@@ -325,17 +356,24 @@ def main():
     print("\nRotating all 8 classes...")
     new_visible, new_z, new_invisible = rotate_classes(visible_class, z_classes, invisible_text_classes)
     
-    # Step 3: Update CSS file (remove visible class, update Z and Invisible sections)
+    # Create full class order for worker update
+    full_class_order = [new_visible] + new_z + new_invisible
+    
+    # Step 3: Update CSS file
     print("\nUpdating CSS file...")
     if not update_css_file(css_file_path, new_z, new_invisible):
         print("⚠️ Failed to update CSS file")
     
-    # Step 4: Update worker.js
+    # Step 4: Update worker.js with new classes
     print("\nUpdating worker.js...")
     if os.path.exists(worker_file_path):
-        all_invisible = new_z + new_invisible
+        # First update general worker classes
         if not update_worker_file(worker_file_path, new_z, new_invisible):
-            print("⚠️ Failed to update worker.js")
+            print("⚠️ Failed to update worker.js classes")
+        
+        # Then specifically update the invisibleClasses array with full rotation
+        if not update_worker_invisible_classes(worker_file_path, full_class_order):
+            print("⚠️ Failed to update worker.js invisibleClasses array")
     else:
         print("⚠️ worker.js not found, skipping")
     
@@ -347,9 +385,9 @@ def main():
     else:
         print("⚠️ noscript.js not found, skipping")
     
-    # Step 6: Update CSS log
+    # Step 6: Update CSS log and get full class order
     print("\nUpdating CSS log...")
-    update_css_log(css_log_path, new_visible, new_z, new_invisible, visible_class)
+    all_classes = update_css_log(css_log_path, new_visible, new_z, new_invisible, visible_class)
     
     print("\n" + "=" * 50)
     print("ROTATION COMPLETED SUCCESSFULLY!")
@@ -357,11 +395,13 @@ def main():
     print(f"  New visible class (no CSS rule): {new_visible}")
     print(f"  Z section (position:absolute): {', '.join(new_z)}")
     print(f"  Invisible Text (transparent): {', '.join(new_invisible)}")
+    print(f"  Full 8-class order: {', '.join(all_classes)}")
     print(f"\nImportant notes:")
     print(f"  1. Class '{new_visible}' is NOT in font.css - it's only in noscript.js and csslog.txt")
     print(f"  2. Regular paragraphs will use class '{new_visible}' (invisible to scrapers)")
     print(f"  3. Watermark uses class '{new_invisible[0] if new_invisible else 'foodiie'}'")
-    print(f"  4. Copy worker.js to Cloudflare Workers manually")
+    print(f"  4. Worker.js has been updated with new 8-class rotation")
+    print(f"  5. Copy worker.js to Cloudflare Workers manually")
     print(f"\nNext rotation will move '{new_invisible[-1] if new_invisible else 'fooodie'}' to visible position")
 
 if __name__ == "__main__":
