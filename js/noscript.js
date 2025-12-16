@@ -119,7 +119,7 @@ async function fetchSignedInfo(filePath) {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const contentContainer = document.getElementById('ferkenstrong');
+        const contentContainer = document.getElementById('navibar');
         const sourceFile = document.body.dataset.source;
         const chapterPrefix = document.body.dataset.prefix;
 
