@@ -1,6 +1,147 @@
 import os
 import re
 import datetime
+import random
+
+# --- Version Increment Functions ---
+def increment_version(version_string):
+    """Increment version number by 0.01"""
+    match = re.search(r'v=(\d+\.\d+)', version_string)
+    if match:
+        version = float(match.group(1))
+        new_version = round(version + 0.01, 2)
+        new_version = round(new_version, 2)
+        return version_string.replace(f"v={match.group(1)}", f"v={new_version:.2f}")
+    return version_string
+
+def update_file_content(file_path, old_content, new_content):
+    """Update content in a file"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        updated_content = content.replace(old_content, new_content)
+        
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(updated_content)
+        
+        print(f"✓ Updated {file_path}")
+        return True
+    except Exception as e:
+        print(f"✗ Error updating {file_path}: {e}")
+        return False
+
+def extract_decoy_classes(css_file_path):
+    """Extract all decoy class names from the Z section and Invisible Text section in font.css"""
+    try:
+        with open(css_file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        decoy_classes = []
+        
+        # Extract classes from Z section
+        z_section_match = re.search(r'/\*Z section\*/(.*?)\}', content, re.DOTALL)
+        if z_section_match:
+            z_section = z_section_match.group(1)
+            selector_part = z_section.split('{')[0]
+            z_classes = re.findall(r'\.([a-zA-Z_][a-zA-Z0-9_-]*)', selector_part)
+            decoy_classes.extend(z_classes)
+            print(f"  Found {len(z_classes)} classes in Z section: {', '.join(z_classes)}")
+        else:
+            print("⚠️  Could not extract decoy classes from Z section")
+        
+        # Extract classes from Invisible Text section
+        invisible_section_match = re.search(r'/\*Invisible Text\*/(.*?)\}', content, re.DOTALL)
+        if invisible_section_match:
+            invisible_section = invisible_section_match.group(1)
+            selector_part = invisible_section.split('{')[0]
+            invisible_classes = re.findall(r'\.([a-zA-Z_][a-zA-Z0-9_-]*)', selector_part)
+            decoy_classes.extend(invisible_classes)
+            print(f"  Found {len(invisible_classes)} classes in Invisible Text section: {', '.join(invisible_classes)}")
+        else:
+            print("⚠️  Could not extract decoy classes from Invisible Text section")
+        
+        return decoy_classes
+    except Exception as e:
+        print(f"✗ Error extracting decoy classes: {e}")
+        return []
+
+def update_annoy_replacements(js_file_path, decoy_classes):
+    """Update the annoyReplacements object with random decoy classes"""
+    try:
+        with open(js_file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        # Find the annoyReplacements object
+        pattern = r"(const annoyReplacements = \{.*?\});"
+        match = re.search(pattern, content, re.DOTALL)
+        
+        if not match:
+            print("⚠️  Could not find annoyReplacements object")
+            return False
+        
+        old_replacements = match.group(1)
+        
+        if not decoy_classes:
+            print("⚠️  No decoy classes available for annoyReplacements")
+            return False
+        
+        # Create new replacements with random decoy classes
+        new_replacements = "const annoyReplacements = {"
+        
+        # We have 10 keys (01 to 10)
+        keys = [f"{i:02d}" for i in range(1, 11)]
+        
+        # Ensure every decoy class is used at least once
+        shuffled_decoys = decoy_classes.copy()
+        random.shuffle(shuffled_decoys)
+        
+        # Assign decoy classes to keys
+        for i, key in enumerate(keys):
+            if i < len(shuffled_decoys):
+                decoy_class = shuffled_decoys[i]
+            else:
+                decoy_class = random.choice(decoy_classes)
+            
+            # Get the original message text (preserve everything after the class)
+            key_pattern = rf"'{key}': '<p class=\"[^\"]*\">([^']*)'"
+            key_match = re.search(key_pattern, old_replacements)
+            
+            if key_match:
+                message = key_match.group(1)
+                new_replacements += f"\n            '{key}': '<p class=\"{decoy_class}\">{message}',"
+            else:
+                # Fallback if we can't extract the message
+                default_messages = [
+                    "Read this at northbladetldotcom?",
+                    "Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp. Go to northbladetldotcom.",
+                    "How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.",
+                    "Hyonwon Kang was bonked again. northbladetldotcom. Lorem ipsum sit dolor amet.",
+                    "Northbladetldotcomwelcomesyou.",
+                    "This is a nonprofit translation at northbladetldotcom. There are no ads. Do not make Mimi cry.",
+                    "This translation is free to read. No ads should be visible.",
+                    "Ads? Ak Yeonho complains. What ads? northbladetldotcom.",
+                    "Baek Suryong uses the Heaven Defying Divine Art on you. You are sent to northbladetldotcom.",
+                    "Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore. Go to northbladetldotcom and repent."
+                ]
+                message = default_messages[i]
+                new_replacements += f"\n            '{key}': '<p class=\"{decoy_class}\">{message}',"
+        
+        new_replacements += "\n        };"
+        
+        # Replace the old annoyReplacements with the new one
+        updated_content = content.replace(old_replacements, new_replacements)
+        
+        with open(js_file_path, 'w', encoding='utf-8') as file:
+            file.write(updated_content)
+        
+        print(f"✓ Updated annoyReplacements in {js_file_path}")
+        print(f"  Used decoy classes: {', '.join(shuffled_decoys)}")
+        return True
+        
+    except Exception as e:
+        print(f"✗ Error updating annoyReplacements: {e}")
+        return False
 
 def create_initial_log(log_file_path):
     """Create initial log file with current state"""
@@ -173,34 +314,8 @@ def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
         with open(worker_file_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # All 8 classes in rotation order (visible + z + invisible)
-        # Note: In the new worker code, we need ALL 8 classes for invisibleClasses array
-        # The visible class is included in the rotation for worker poison
-        # But we need to get the current visible class from elsewhere
-        # We'll use all classes from Z + Invisible + assume visible is first of next rotation
-        # Actually, we need to get the visible class from the caller
-        
-        # First, let's find where to insert the visible class
-        # The worker code expects all 8 classes in invisibleClasses array
-        # We need to reconstruct the full order
-        
-        # For now, we'll update only what we can without the visible class
-        # The worker code has a fixed array, so we need to update it
-        
-        # Find and update the invisibleClasses array in the worker code
-        all_classes_pattern = r'const invisibleClasses = \[(.*?)\]'
-        all_classes_match = re.search(all_classes_pattern, content, re.DOTALL)
-        
-        if all_classes_match:
-            # Create new array with all 8 classes
-            # We need to know the full order: visible + z_classes + invisible_text_classes
-            # But we don't have the visible class in this function
-            # We'll need to modify the function signature or get it from the main
-            
-            # For now, let's update the getStoryBasedPoison function which uses specific classes
-            # This needs to be updated separately
-            
-            print(f"  Note: Found invisibleClasses array, but need full 8-class rotation to update")
+        # All 7 invisible classes (z + invisible_text) for poison assignment
+        all_invisible = z_classes + invisible_text_classes
         
         # Update getStoryBasedPoison function with new classes
         story_poison_pattern = r'const storyPoison = \[(.*?)\]'
@@ -209,9 +324,6 @@ def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
         if story_poison_match:
             story_text = story_poison_match.group(1)
             messages = re.findall(r'\{.*?\}', story_text, re.DOTALL)
-            
-            # All 7 invisible classes (z + invisible_text) for poison assignment
-            all_invisible = z_classes + invisible_text_classes
             
             updated_story = "const storyPoison = [\n"
             for i, msg in enumerate(messages):
@@ -227,27 +339,26 @@ def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
             content = content.replace(story_poison_match.group(0), updated_story)
             print(f"✓ Updated getStoryBasedPoison with {len(all_invisible)} classes")
         
-        # Update the invisibleClasses array definition (found in stitchPoisonIntoContent or main processing)
-        # Look for the specific array definition pattern
-        invisible_def_pattern = r'const invisibleClasses = \[\s*"foodie",\s*"ffoodie",\s*"fooddie",\s*"fo0die",\s*"foodiie",\s*"foodiee",\s*"fooodie",\s*"f0odie"\s*\]'
-        invisible_def_match = re.search(invisible_def_pattern, content, re.DOTALL)
+        # Update the poisonMessages array
+        poison_messages_pattern = r"const poisonMessages = \[(.*?)\]"
+        poison_messages_match = re.search(poison_messages_pattern, content, re.DOTALL)
         
-        if invisible_def_match:
-            # We need the full 8-class order for the worker
-            # Since we're rotating, we need to pass the visible class from main
-            print(f"  Note: Found fixed invisibleClasses array - will be updated by main function")
-        
-        # Update watermark to use first of invisible_text_classes
-        watermark_class = invisible_text_classes[0] if invisible_text_classes else "foodiie"
-        
-        # Find watermark function and update
-        watermark_pattern = r'const watermarkClass = invisibleClasses && invisibleClasses\.length > 0 \? invisibleClasses\[0\] : "foodiie";'
-        watermark_match = re.search(watermark_pattern, content)
-        
-        if watermark_match:
-            new_watermark = f'const watermarkClass = "{watermark_class}";'
-            content = content.replace(watermark_match.group(0), new_watermark)
-            print(f"✓ Updated watermark to use {watermark_class} class")
+        if poison_messages_match:
+            poison_text = poison_messages_match.group(1)
+            messages = re.findall(r'\{.*?\}', poison_text, re.DOTALL)
+            
+            updated_poison = "const poisonMessages = [\n"
+            for i, msg in enumerate(messages):
+                text_match = re.search(r'text:\s*"([^"]+)"', msg)
+                if text_match:
+                    # Assign classes from all_invisible in rotation, offset by 1 for variety
+                    class_idx = (i + 1) % len(all_invisible)
+                    poison_class = all_invisible[class_idx]
+                    updated_poison += f'    {{ text: "{text_match.group(1)}", class: "{poison_class}" }},\n'
+            
+            updated_poison += "  ];"
+            content = content.replace(poison_messages_match.group(0), updated_poison)
+            print(f"✓ Updated poisonMessages with {len(all_invisible)} classes")
         
         with open(worker_file_path, 'w', encoding='utf-8') as file:
             file.write(content)
@@ -257,27 +368,6 @@ def update_worker_file(worker_file_path, z_classes, invisible_text_classes):
         
     except Exception as e:
         print(f"✗ Error updating worker file: {e}")
-        return False
-
-def update_noscript_file(noscript_path, visible_class):
-    """Update noscript.js with new visible class"""
-    try:
-        with open(noscript_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-        
-        # Update the regular paragraph class
-        old_pattern = r'\.replace\(/<p>/g,\s*[\'"`]<p class="\w+">[\'"`]\)'
-        new_replacement = f'.replace(/<p>/g, \'<p class="{visible_class}">\')'
-        
-        content = re.sub(old_pattern, new_replacement, content)
-        
-        with open(noscript_path, 'w', encoding='utf-8') as file:
-            file.write(content)
-        
-        print(f"✓ Updated noscript.js with visible class: {visible_class}")
-        return True
-    except Exception as e:
-        print(f"✗ Error updating noscript.js: {e}")
         return False
 
 def update_worker_invisible_classes(worker_file_path, full_class_order):
@@ -316,6 +406,27 @@ def update_worker_invisible_classes(worker_file_path, full_class_order):
         print(f"✗ Error updating worker invisible classes: {e}")
         return False
 
+def update_noscript_file(noscript_path, visible_class):
+    """Update noscript.js with new visible class"""
+    try:
+        with open(noscript_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        # Update the regular paragraph class replacement
+        old_pattern = r'\.replace\(/<p>/g,\s*[\'"`]<p class="\w+">[\'"`]\)'
+        new_replacement = f'.replace(/<p>/g, \'<p class="{visible_class}">\')'
+        
+        content = re.sub(old_pattern, new_replacement, content)
+        
+        with open(noscript_path, 'w', encoding='utf-8') as file:
+            file.write(content)
+        
+        print(f"✓ Updated noscript.js with visible class: {visible_class}")
+        return True
+    except Exception as e:
+        print(f"✗ Error updating noscript.js: {e}")
+        return False
+
 def update_css_log(log_file_path, new_visible, new_z, new_invisible, old_visible):
     """Update CSS log with new rotation"""
     try:
@@ -338,8 +449,74 @@ def update_css_log(log_file_path, new_visible, new_z, new_invisible, old_visible
         print(f"✗ Error updating CSS log: {e}")
         return []
 
+def update_html_files(visible_class, new_visible_class):
+    """Update HTML files with new class and increment versions"""
+    # File 1: default.html
+    default_path = os.path.join("_layouts", "default.html")
+    if os.path.exists(default_path):
+        # Look for class attribute in body tag or specific pattern
+        try:
+            with open(default_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+            
+            # Replace class in body tag or specific location
+            # Look for pattern: class="current_class"
+            pattern = rf'class="\s*{visible_class}\s*"'
+            new_content = re.sub(pattern, f'class="{new_visible_class}"', content)
+            
+            with open(default_path, 'w', encoding='utf-8') as file:
+                file.write(new_content)
+            
+            print(f"✓ Updated default.html with new class: {new_visible_class}")
+        except Exception as e:
+            print(f"✗ Error updating default.html: {e}")
+    else:
+        print(f"⚠️ default.html not found, skipping")
+    
+    # File 2: head.html - increment version for font.css
+    head_path = os.path.join("_includes", "head.html")
+    if os.path.exists(head_path):
+        try:
+            with open(head_path, 'r', encoding='utf-8') as file:
+                lines = file.readlines()
+            
+            for i, line in enumerate(lines):
+                if 'font.css?v=' in line:
+                    lines[i] = increment_version(line)
+                    break
+            
+            with open(head_path, 'w', encoding='utf-8') as file:
+                file.writelines(lines)
+            
+            print(f"✓ Updated head.html (font.css version incremented)")
+        except Exception as e:
+            print(f"✗ Error updating head.html: {e}")
+    else:
+        print(f"⚠️ head.html not found, skipping")
+    
+    # File 3: protected_post.html - increment version for noscript.js
+    protected_post_path = os.path.join("_includes", "protected_post.html")
+    if os.path.exists(protected_post_path):
+        try:
+            with open(protected_post_path, 'r', encoding='utf-8') as file:
+                lines = file.readlines()
+            
+            for i, line in enumerate(lines):
+                if 'noscript.js?v=' in line:
+                    lines[i] = increment_version(line)
+                    break
+            
+            with open(protected_post_path, 'w', encoding='utf-8') as file:
+                file.writelines(lines)
+            
+            print(f"✓ Updated protected_post.html (noscript.js version incremented)")
+        except Exception as e:
+            print(f"✗ Error updating protected_post.html: {e}")
+    else:
+        print(f"⚠️ protected_post.html not found, skipping")
+
 def main():
-    print("CSS 8-Class Rotator")
+    print("CSS 8-Class Rotator with Version Incrementing")
     print("=" * 50)
     
     # File paths
@@ -364,28 +541,41 @@ def main():
     if not update_css_file(css_file_path, new_z, new_invisible):
         print("⚠️ Failed to update CSS file")
     
-    # Step 4: Update worker.js with new classes
+    # Step 4: Extract decoy classes for annoyReplacements
+    print("\nExtracting decoy classes for annoyReplacements...")
+    decoy_classes = extract_decoy_classes(css_file_path)
+    
+    # Step 5: Update worker.js with new classes
     print("\nUpdating worker.js...")
     if os.path.exists(worker_file_path):
-        # First update general worker classes
+        # Update general worker classes
         if not update_worker_file(worker_file_path, new_z, new_invisible):
             print("⚠️ Failed to update worker.js classes")
         
-        # Then specifically update the invisibleClasses array with full rotation
+        # Update the invisibleClasses array with full rotation
         if not update_worker_invisible_classes(worker_file_path, full_class_order):
             print("⚠️ Failed to update worker.js invisibleClasses array")
     else:
         print("⚠️ worker.js not found, skipping")
     
-    # Step 5: Update noscript.js with new visible class
+    # Step 6: Update noscript.js with new visible class
     print("\nUpdating noscript.js...")
     if os.path.exists(noscript_path):
         if not update_noscript_file(noscript_path, new_visible):
             print("⚠️ Failed to update noscript.js")
+        
+        # Update annoyReplacements in noscript.js if it exists
+        if decoy_classes:
+            if not update_annoy_replacements(noscript_path, decoy_classes):
+                print("⚠️ Failed to update annoyReplacements in noscript.js")
     else:
         print("⚠️ noscript.js not found, skipping")
     
-    # Step 6: Update CSS log and get full class order
+    # Step 7: Update HTML files and increment versions
+    print("\nUpdating HTML files and incrementing versions...")
+    update_html_files(visible_class, new_visible)
+    
+    # Step 8: Update CSS log and get full class order
     print("\nUpdating CSS log...")
     all_classes = update_css_log(css_log_path, new_visible, new_z, new_invisible, visible_class)
     
@@ -399,9 +589,10 @@ def main():
     print(f"\nImportant notes:")
     print(f"  1. Class '{new_visible}' is NOT in font.css - it's only in noscript.js and csslog.txt")
     print(f"  2. Regular paragraphs will use class '{new_visible}' (invisible to scrapers)")
-    print(f"  3. Watermark uses class '{new_invisible[0] if new_invisible else 'foodiie'}'")
-    print(f"  4. Worker.js has been updated with new 8-class rotation")
-    print(f"  5. Copy worker.js to Cloudflare Workers manually")
+    print(f"  3. Versions incremented in head.html and protected_post.html for cache busting")
+    print(f"  4. Default.html updated with new class (if found)")
+    print(f"  5. Worker.js has been updated with new 8-class rotation")
+    print(f"  6. Copy worker.js to Cloudflare Workers manually")
     print(f"\nNext rotation will move '{new_invisible[-1] if new_invisible else 'fooodie'}' to visible position")
 
 if __name__ == "__main__":
