@@ -31,118 +31,6 @@ def update_file_content(file_path, old_content, new_content):
         print(f"✗ Error updating {file_path}: {e}")
         return False
 
-def extract_decoy_classes(css_file_path):
-    """Extract all decoy class names from the Z section and Invisible Text section in header.css"""
-    try:
-        with open(css_file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-        
-        decoy_classes = []
-        
-        # Extract classes from Z section
-        z_section_match = re.search(r'/\*Z section\*/(.*?)\}', content, re.DOTALL)
-        if z_section_match:
-            z_section = z_section_match.group(1)
-            selector_part = z_section.split('{')[0]
-            z_classes = re.findall(r'\.([a-zA-Z_][a-zA-Z0-9_-]*)', selector_part)
-            decoy_classes.extend(z_classes)
-            print(f"  Found {len(z_classes)} classes in Z section: {', '.join(z_classes)}")
-        else:
-            print("⚠️  Could not extract decoy classes from Z section")
-        
-        # Extract classes from Invisible Text section
-        invisible_section_match = re.search(r'/\*Invisible Text\*/(.*?)\}', content, re.DOTALL)
-        if invisible_section_match:
-            invisible_section = invisible_section_match.group(1)
-            selector_part = invisible_section.split('{')[0]
-            invisible_classes = re.findall(r'\.([a-zA-Z_][a-zA-Z0-9_-]*)', selector_part)
-            decoy_classes.extend(invisible_classes)
-            print(f"  Found {len(invisible_classes)} classes in Invisible Text section: {', '.join(invisible_classes)}")
-        else:
-            print("⚠️  Could not extract decoy classes from Invisible Text section")
-        
-        return decoy_classes
-    except Exception as e:
-        print(f"✗ Error extracting decoy classes: {e}")
-        return []
-
-def update_annoy_replacements(js_file_path, decoy_classes):
-    """Update the annoyReplacements object with random decoy classes"""
-    try:
-        with open(js_file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-        
-        # Find the annoyReplacements object
-        pattern = r"(const annoyReplacements = \{.*?\});"
-        match = re.search(pattern, content, re.DOTALL)
-        
-        if not match:
-            print("⚠️  Could not find annoyReplacements object")
-            return False
-        
-        old_replacements = match.group(1)
-        
-        if not decoy_classes:
-            print("⚠️  No decoy classes available for annoyReplacements")
-            return False
-        
-        # Create new replacements with random decoy classes
-        new_replacements = "const annoyReplacements = {"
-        
-        # We have 10 keys (01 to 10)
-        keys = [f"{i:02d}" for i in range(1, 11)]
-        
-        # Ensure every decoy class is used at least once
-        shuffled_decoys = decoy_classes.copy()
-        random.shuffle(shuffled_decoys)
-        
-        # Assign decoy classes to keys
-        for i, key in enumerate(keys):
-            if i < len(shuffled_decoys):
-                decoy_class = shuffled_decoys[i]
-            else:
-                decoy_class = random.choice(decoy_classes)
-            
-            # Get the original message text (preserve everything after the class)
-            key_pattern = rf"'{key}': '<p class=\"[^\"]*\">([^']*)'"
-            key_match = re.search(key_pattern, old_replacements)
-            
-            if key_match:
-                message = key_match.group(1)
-                new_replacements += f"\n            '{key}': '<p class=\"{decoy_class}\">{message}',"
-            else:
-                # Fallback if we can't extract the message
-                default_messages = [
-                    "Read this at northbladetldotcom?",
-                    "Baek Suryong uses the Heaven Defying Divine Art on you and beats you to a pulp. Go to northbladetldotcom.",
-                    "How about reading Demon Instructor Wiji Cheons exploits at northbladetldotcom.",
-                    "Hyonwon Kang was bonked again. northbladetldotcom. Lorem ipsum sit dolor amet.",
-                    "Northbladetldotcomwelcomesyou.",
-                    "This is a nonprofit translation at northbladetldotcom. There are no ads. Do not make Mimi cry.",
-                    "This translation is free to read. No ads should be visible.",
-                    "Ads? Ak Yeonho complains. What ads? northbladetldotcom.",
-                    "Baek Suryong uses the Heaven Defying Divine Art on you. You are sent to northbladetldotcom.",
-                    "Namgung Su is mad at you for feeding a thief. You are not allowed to eat his cooking anymore. Go to northbladetldotcom and repent."
-                ]
-                message = default_messages[i]
-                new_replacements += f"\n            '{key}': '<p class=\"{decoy_class}\">{message}',"
-        
-        new_replacements += "\n        };"
-        
-        # Replace the old annoyReplacements with the new one
-        updated_content = content.replace(old_replacements, new_replacements)
-        
-        with open(js_file_path, 'w', encoding='utf-8') as file:
-            file.write(updated_content)
-        
-        print(f"✓ Updated annoyReplacements in {js_file_path}")
-        print(f"  Used decoy classes: {', '.join(shuffled_decoys)}")
-        return True
-        
-    except Exception as e:
-        print(f"✗ Error updating annoyReplacements: {e}")
-        return False
-
 def create_initial_log(log_file_path):
     """Create initial log file with current state"""
     try:
@@ -410,22 +298,56 @@ def update_worker_invisible_classes(worker_file_path, z_classes, invisible_text_
         print(f"✗ Error updating worker invisible classes: {e}")
         return False
 
-def update_noscript_file(noscript_path, visible_class):
-    """Update noscript.js with new visible class"""
+def update_noscript_file(noscript_path, visible_class, z_classes, invisible_text_classes):
+    """Update noscript.js with new visible class and ALL invisible text classes"""
     try:
         with open(noscript_path, 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # Update the regular paragraph class replacement
+        # Update the regular paragraph class replacement: .replace(/<p>/g, '<p class="f0odie">')
         old_pattern = r'\.replace\(/<p>/g,\s*[\'"`]<p class="\w+">[\'"`]\)'
         new_replacement = f'.replace(/<p>/g, \'<p class="{visible_class}">\')'
-        
         content = re.sub(old_pattern, new_replacement, content)
+        
+        # Update the invisible text class regex pattern
+        # Get all 7 invisible classes (5 from Z section + 2 from Invisible Text)
+        all_invisible_classes = z_classes + invisible_text_classes
+        
+        # Create regex pattern with pipe-separated classes
+        classes_pattern = '|'.join(all_invisible_classes)
+        
+        # Find and replace the pattern: .replace(/<!-- (foodiie|fo0die|ffoodie|fooodie|fooddie|foodie|foodiee) -->/g, '<p class="$1">')
+        # Look for any pattern that matches this format
+        invisible_pattern = r'\.replace\(/<!-- \([\w\|]+\) -->/g,\s*[\'"`]<p class="\$1">[\'"`]\)'
+        
+        # Try to replace with the new pattern
+        new_invisible_replacement = f'.replace(/<!-- ({classes_pattern}) -->/g, \'<p class="$1">\')'
+        
+        # First attempt: direct pattern replacement
+        new_content = re.sub(invisible_pattern, new_invisible_replacement, content)
+        
+        # If pattern didn't match, try line-by-line replacement
+        if new_content == content:
+            lines = content.split('\n')
+            for i, line in enumerate(lines):
+                if '.replace(/<!--' in line and '-->' in line and '$1' in line:
+                    # Extract the part before and after the class list
+                    parts = line.split('(')
+                    if len(parts) > 1:
+                        # Rebuild the line with new class list
+                        new_line = parts[0] + f'(/<!-- ({classes_pattern}) -->/g, \'<p class="$1">\')'
+                        lines[i] = new_line
+                        break
+            content = '\n'.join(lines)
+        else:
+            content = new_content
         
         with open(noscript_path, 'w', encoding='utf-8') as file:
             file.write(content)
         
-        print(f"✓ Updated noscript.js with visible class: {visible_class}")
+        print(f"✓ Updated noscript.js")
+        print(f"  Visible class: {visible_class}")
+        print(f"  Invisible classes in regex: {classes_pattern}")
         return True
     except Exception as e:
         print(f"✗ Error updating noscript.js: {e}")
@@ -545,11 +467,7 @@ def main():
     if not update_css_file(css_file_path, new_z, new_invisible):
         print("⚠️ Failed to update CSS file")
     
-    # Step 4: Extract decoy classes for annoyReplacements
-    print("\nExtracting decoy classes for annoyReplacements...")
-    decoy_classes = extract_decoy_classes(css_file_path)
-    
-    # Step 5: Update worker.js with new classes
+    # Step 4: Update worker.js with new classes
     print("\nUpdating worker.js...")
     if os.path.exists(worker_file_path):
         # Update poison message class assignments
@@ -562,24 +480,20 @@ def main():
     else:
         print("⚠️ worker.js not found, skipping")
     
-    # Step 6: Update noscript.js with new visible class
+    # Step 5: Update noscript.js with new visible class AND invisible text classes
     print("\nUpdating noscript.js...")
     if os.path.exists(noscript_path):
-        if not update_noscript_file(noscript_path, new_visible):
+        # Pass both visible class and all invisible classes (Z + Invisible Text)
+        if not update_noscript_file(noscript_path, new_visible, new_z, new_invisible):
             print("⚠️ Failed to update noscript.js")
-        
-        # Update annoyReplacements in noscript.js if it exists
-        if decoy_classes:
-            if not update_annoy_replacements(noscript_path, decoy_classes):
-                print("⚠️ Failed to update annoyReplacements in noscript.js")
     else:
         print("⚠️ noscript.js not found, skipping")
     
-    # Step 7: Update HTML files and increment versions
+    # Step 6: Update HTML files and increment versions
     print("\nUpdating HTML files and incrementing versions...")
     update_html_files(visible_class, new_visible)
     
-    # Step 8: Update CSS log and get full class order
+    # Step 7: Update CSS log and get full class order
     print("\nUpdating CSS log...")
     all_classes, worker_invisible = update_css_log(css_log_path, new_visible, new_z, new_invisible, visible_class)
     
@@ -599,6 +513,9 @@ def main():
     print(f"  6. Default.html updated with new class (if found)")
     print(f"  7. Copy worker.js to Cloudflare Workers manually")
     print(f"\nNext rotation will move '{new_invisible[-1] if new_invisible else 'fooodie'}' to visible position")
+    
+    # Keep window open
+    input("\nPress Enter to exit...")
 
 if __name__ == "__main__":
     main()
