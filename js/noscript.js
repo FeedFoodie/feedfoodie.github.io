@@ -208,9 +208,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 htmlContent = htmlContent
                     .replace(/<blockquote>/g, '<blockquote class="night-mode-quotes">')
                     // --- NEW: Process the stitched content with your CSS classes ---
-                    .replace(/<!-- (foodiie|fo0die|ffoodie|fooodie|fooddie|foodie|foodiee) -->/g, '<p class="$1">')
+                    .replace(/<!-- (f0odie|foodie|ffoodie|fooddie|fo0die|foodiie|foodiee) -->/g, '<p class="$1">')
                     // Keep the existing f0odie class for regular paragraphs
-                    .replace(/<p>/g, '<p class="f0odie">');
+                    .replace(/<p>/g, '<p class="fooodie">');
             } else {
                 htmlContent = `<pre>${markdown}</pre>`;
             }

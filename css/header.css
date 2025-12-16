@@ -1,5 +1,5 @@
 /*Z section*/
-.fooodie,
+.f0odie,
 .foodie,
 .ffoodie,
 .fooddie,
@@ -11,21 +11,26 @@
     margin-bottom: 0px;
 }
 
+
 /*Day Mode*/
-.day-mode .fooodie,
+.day-mode .f0odie,
 .day-mode .foodie,
 .day-mode .ffoodie,
-.day-mode .fooddie {
+.day-mode .fooddie,
+.day-mode .fo0die {
     color: white; 
 }
 
+
 /*Night Mode*/
-.night-mode .fooodie,
+.night-mode .f0odie,
 .night-mode .foodie,
 .night-mode .ffoodie,
-.night-mode .fooddie {
+.night-mode .fooddie,
+.night-mode .fo0die {
     color: #444444;
 }
+
 
 /*Invisible Text*/
 .foodiie,
