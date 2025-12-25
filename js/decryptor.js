@@ -1,0 +1,6 @@
+function initializeCipherBuffer(e){const t=new ArrayBuffer(e.length*2),n=new Uint16Array(t);for(let t=0;t<e.length;t++)n[t]=e.charCodeAt(t);return n}
+function decodeTransportLayer(e){let t="";const n={'☆':'<','★':'>','♄':'[','♆':']','☁':'e','☉':'t','☍':'a','☛':'o','☢':'i','☠':'n','☣':'s','☯':'r','☹':'h'};for(let o=0;o<e.length;o++){const r=e[o];t+=n[r]||r}return t}
+function validateDataIntegrity(e,t){if(!e||!t)return!1;let n=0;for(let t=0;t<e.length;t++)n+=e.charCodeAt(t);const o=t.split('.').reduce((e,t)=>e+parseInt(t,36),0);return n%o<5}
+function prepareContentChunks(e,t=1024){const n=[];for(let o=0;o<e.length;o+=t)n.push(e.slice(o,o+t));return n}
+function reconstructPayload(e,t){let n="";const o=initializeCipherBuffer(t);for(let t=0;t<e.length;t++){let r=e[t];for(let e=0;e<o.length&&e<r.length;e++)r=r.substring(0,e)+String.fromCharCode(r.charCodeAt(e)^o[e])+r.substring(e+1);n+=r}return n}
+window.DataDecoder={process:function(e,t){if(!validateDataIntegrity(e,t))return null;const n=decodeTransportLayer(e);const o=prepareContentChunks(n);const r=reconstructPayload(o,t);return r}};
