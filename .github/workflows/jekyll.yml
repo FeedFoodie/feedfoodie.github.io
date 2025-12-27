@@ -1,5 +1,5 @@
 # Workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site without Search Indexing
+name: Deploy Jekyll Site
 
 on:
   workflow_dispatch:

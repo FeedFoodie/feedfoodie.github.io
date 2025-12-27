@@ -1,5 +1,5 @@
 # Workflow for building, deploying, and submitting URLs to search engines
-name: Deploy Jekyll and Index Content
+name: Deploy Jekyll and Index backup
 
 on:
   # Runs on pushes targeting the gh-pages branch
