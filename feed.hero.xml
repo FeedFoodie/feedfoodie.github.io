@@ -5,24 +5,47 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Heroes</title>
-        <description>{{ site.description | xml_escape }}</description>
-        <link>{{ site.url }}{{ site.baseurl }}</link>
-        <atom:link href="{{ "/feed.hero.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        <generator>Jekyll v{{ jekyll.version }}</generator>
-        {% for post in site.tags["hero"] %}
-            <item>
-                <title>HERO {{ post.title | xml_escape }}</title>
-				<author>admin@northbladetl.com (FoodieMonster007)</author>
-                <description>(NorthBladeTL) Heroes Chapter Update - {{ post.url | prepend: site.baseurl | prepend: site.url }}</description>
-                <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-                <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-                <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-                {% for tag in post.tags %}
-                <category>{{ tag | xml_escape }}</category>
-                {% endfor %}
-            </item>
-        {% endfor %}
+        <description>NorthBladeTL - Heroes Chapter Updates</description>
+        <link>https://northbladetl.com/hero/</link>
+        <atom:link href="https://northbladetl.com/feed.hero.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 28 Dec 2025 16:57:50 +0000</pubDate>
+        <lastBuildDate>Sun, 28 Dec 2025 16:57:50 +0000</lastBuildDate>
+        <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>HERO V1C4: Who Are These People?</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Heroes Chapter Update - https://northbladetl.com/hero/HERO004.html</description>
+            <pubDate>Sun, 24 Aug 2025 14:09:00 +0000</pubDate>
+            <link>https://northbladetl.com/hero/HERO004.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/hero/HERO004.html</guid>
+            <category>hero</category>
+        </item>
+        <item>
+            <title>HERO V1C3: A Third Person</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Heroes Chapter Update - https://northbladetl.com/hero/HERO003.html</description>
+            <pubDate>Sun, 07 Jul 2024 12:58:00 +0000</pubDate>
+            <link>https://northbladetl.com/hero/HERO003.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/hero/HERO003.html</guid>
+            <category>hero</category>
+        </item>
+        <item>
+            <title>HERO V1C2: The People in the Closet</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Heroes Chapter Update - https://northbladetl.com/hero/HERO002.html</description>
+            <pubDate>Tue, 02 Jul 2024 14:20:00 +0000</pubDate>
+            <link>https://northbladetl.com/hero/HERO002.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/hero/HERO002.html</guid>
+            <category>hero</category>
+        </item>
+        <item>
+            <title>HERO V1C1: Humans Who Do Not Look Human</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Heroes Chapter Update - https://northbladetl.com/hero/HERO001.html</description>
+            <pubDate>Mon, 01 Jul 2024 19:15:00 +0000</pubDate>
+            <link>https://northbladetl.com/hero/HERO001.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/hero/HERO001.html</guid>
+            <category>hero</category>
+        </item>
     </channel>
 </rss>

@@ -5,24 +5,101 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Reincarnated as an Unruly Heir</title>
-        <description>{{ site.description | xml_escape }}</description>
-        <link>{{ site.url }}{{ site.baseurl }}</link>
-        <atom:link href="{{ "/feed.ruh.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        <generator>Jekyll v{{ jekyll.version }}</generator>
-        {% for post in site.tags["ruh"] %}
-            <item>
-                <title>Reincarnated as an Unruly Heir {{ post.title | xml_escape }}</title>
-				<author>admin@northbladetl.com (FoodieMonster007)</author>
-                <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - {{ post.url | prepend: site.baseurl | prepend: site.url }}</description>
-                <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-                <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-                <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-                {% for tag in post.tags %}
-                <category>{{ tag | xml_escape }}</category>
-                {% endfor %}
-            </item>
-        {% endfor %}
+        <description>NorthBladeTL - Reincarnated as an Unruly Heir Chapter Updates</description>
+        <link>https://northbladetl.com/ruh/</link>
+        <atom:link href="https://northbladetl.com/feed.ruh.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 28 Dec 2025 16:57:50 +0000</pubDate>
+        <lastBuildDate>Sun, 28 Dec 2025 16:57:50 +0000</lastBuildDate>
+        <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>RUH Chapter 43: I&apos;ll Trust You</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH043.html</description>
+            <pubDate>Sat, 27 Dec 2025 09:46:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH043.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH043.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 42: You Ask Why I Came Alone?</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH042.html</description>
+            <pubDate>Wed, 26 Nov 2025 20:41:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH042.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH042.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 41. The Blood Asura&apos;s Recruitment Method</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH041.html</description>
+            <pubDate>Wed, 19 Nov 2025 18:15:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH041.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH041.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 40: You Really Gotta Hand It to the Crazy Ones</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH040.html</description>
+            <pubDate>Sat, 25 Oct 2025 22:40:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH040.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH040.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 39: What Does Your Father Do?</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH039.html</description>
+            <pubDate>Wed, 22 Oct 2025 21:47:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH039.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH039.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 38: The Chant of Euphoric Spirits</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH038.html</description>
+            <pubDate>Sun, 19 Oct 2025 12:23:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH038.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH038.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 37: The Lady of Bliss, White Serpent Flower Han Soso</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH037.html</description>
+            <pubDate>Tue, 14 Oct 2025 22:21:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH037.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH037.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 36: The Demonic Blades of Sacred Flames</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH036.html</description>
+            <pubDate>Fri, 10 Oct 2025 23:05:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH036.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH036.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 35: The Shadow of Misfortune</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH035.html</description>
+            <pubDate>Wed, 08 Oct 2025 22:10:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH035.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH035.html</guid>
+            <category>ruh</category>
+        </item>
+        <item>
+            <title>RUH Chapter 34: I Have Returned</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH034.html</description>
+            <pubDate>Wed, 01 Oct 2025 16:33:00 +0000</pubDate>
+            <link>https://northbladetl.com/ruh/RUH034.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH034.html</guid>
+            <category>ruh</category>
+        </item>
     </channel>
 </rss>

@@ -17,10 +17,3 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   #- jekyll-seo-tag
-
-jekyll-sitemap:
-  exclude:
-    - "SIMB/chapters/**"
-    - "LNB/chapters/**"
-    - "ABSW/chapters/**"
-    - "HERO/chapters/**"
