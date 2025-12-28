@@ -1,78 +1,68 @@
 import os
 import re
+from pathlib import Path
 
-POSTS_DIR = "_posts"
+def update_timezone_in_front_matter(folder_path):
+    """
+    Update timezone from +0800 to +0000 in YAML front matter of markdown files.
+    
+    Args:
+        folder_path (str): Path to the _posts folder
+    """
+    folder = Path(folder_path)
+    
+    # Check if folder exists
+    if not folder.exists():
+        print(f"Error: Folder '{folder_path}' does not exist.")
+        return
+    
+    # Find all .md files in the folder
+    md_files = list(folder.glob("*.md"))
+    
+    if not md_files:
+        print(f"No .md files found in '{folder_path}'")
+        return
+    
+    print(f"Found {len(md_files)} markdown files.")
+    
+    # Regex pattern to match date lines with +0800 timezone
+    # This pattern looks for lines starting with "date:" and containing the timezone
+    pattern = re.compile(r'(date:\s*\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}\s+)\+0800')
+    
+    files_modified = 0
+    
+    for md_file in md_files:
+        try:
+            # Read the file content
+            with open(md_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Use regex to find and replace +0800 with +0000
+            # We'll replace in the entire content but the pattern ensures we only
+            # match date lines in front matter
+            new_content, replacements = pattern.subn(r'\1+0000', content)
+            
+            # If replacements were made, write the file back
+            if replacements > 0:
+                with open(md_file, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                
+                print(f"Modified {md_file.name}: {replacements} date(s) updated")
+                files_modified += 1
+                
+        except Exception as e:
+            print(f"Error processing {md_file.name}: {e}")
+    
+    print(f"\nSummary: Modified {files_modified} out of {len(md_files)} files.")
 
-FM_RE = re.compile(r"---\s*\n(.*?)\n---\s*", re.S)
-DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
-FM_DATE_RE = re.compile(r"^date:\s*(.+)$", re.M)
-FM_LAYOUT_RE = re.compile(r"^layout:\s*(.+)$", re.M)
-FM_MD_SOURCE_RE = re.compile(r"^markdown_source:.*$\n?", re.M)
+def main():
+    # Set the path to your _posts folder
+    posts_folder = "_posts"  # Change this if your folder has a different path
+    
+    # Call the function to update files
+    update_timezone_in_front_matter(posts_folder)
+    
+    print("\nDone!")
 
-changed = []
-
-def extract_filename_date(filename):
-    m = DATE_RE.match(filename)
-    return m.group(1) if m else None
-
-def normalize_date(existing, file_date):
-    parts = existing.split()
-    tz = parts[-1] if parts and parts[-1].startswith(("+", "-")) else "+0800"
-    time_part = parts[1] if len(parts) >= 2 else "00:00:01"
-    return f"{file_date} {time_part} {tz}"
-
-def remove_markdown_source(front_matter):
-    return FM_MD_SOURCE_RE.sub("", front_matter)
-
-for name in os.listdir(POSTS_DIR):
-    if not name.endswith(".md"):
-        continue
-
-    file_date = extract_filename_date(name)
-    if not file_date:
-        continue
-
-    path = os.path.join(POSTS_DIR, name)
-    with open(path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    fm_match = FM_RE.search(content)
-    if not fm_match:
-        continue
-
-    front_matter = fm_match.group(1)
-    body = content[fm_match.end():]
-
-    updated = False
-
-    date_match = FM_DATE_RE.search(front_matter)
-    if date_match:
-        existing_date = date_match.group(1)
-        if not existing_date.startswith(file_date):
-            front_matter = FM_DATE_RE.sub(
-                f"date: {normalize_date(existing_date, file_date)}",
-                front_matter
-            )
-            updated = True
-    else:
-        front_matter += f"\ndate: {file_date} 00:00:01 +0800"
-        updated = True
-
-    layout_match = FM_LAYOUT_RE.search(front_matter)
-    if layout_match and layout_match.group(1).strip() != "post":
-        front_matter = FM_LAYOUT_RE.sub("layout: post", front_matter)
-        updated = True
-
-    cleaned = remove_markdown_source(front_matter)
-    if cleaned != front_matter:
-        front_matter = cleaned
-        updated = True
-
-    if updated:
-        new_content = f"---\n{front_matter.strip()}\n---\n{body}"
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(new_content)
-        changed.append(name)
-
-for f in changed:
-    print(f"CHANGED: {f}")
+if __name__ == "__main__":
+    main()
