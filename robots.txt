@@ -4,14 +4,6 @@
 # Allow all search engines by default, but disallow specific chapter directories.
 User-agent: *
 Allow: /
-Disallow: /SIMB/chapters/
-Disallow: /ABSW/chapters/
-Disallow: /LNB/chapters/
-Disallow: /HERO/chapters/
-Disallow: /RUH/chapters/
-Disallow: /LCS/chapters/
-Disallow: /simb/
-Disallow: /lnb/
 Disallow: /hunnypot.html
 
 # Explicitly allow the Novel-Updates bot.
