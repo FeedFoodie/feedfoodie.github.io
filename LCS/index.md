@@ -1,5 +1,6 @@
 ---
 layout: pageLCS
+tag: [lcs]
 title: Chronicles of the Demon Faction - Lee Cheonsang
 description: "Free English fan translation of the side stories for the novel Chronicles of the Demon Faction. Read all chapters online with no ads or paywalls."
 ---

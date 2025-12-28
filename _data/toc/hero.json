@@ -1,0 +1,50 @@
+[
+  {
+    "title": "V1C1: Humans Who Do Not Look Human",
+    "chapter_id": "HERO001",
+    "date": "2024-07-01 19:15:00",
+    "date_for_sorting": "2024-07-01",
+    "filename": "2024-07-01-HERO001.md",
+    "url": "/hero/HERO001.html",
+    "prev_url": null,
+    "prev_title": null,
+    "next_url": "/hero/HERO002.html",
+    "next_title": "V1C2: The People in the Closet"
+  },
+  {
+    "title": "V1C2: The People in the Closet",
+    "chapter_id": "HERO002",
+    "date": "2024-07-02 14:20:00",
+    "date_for_sorting": "2024-07-02",
+    "filename": "2024-07-02-HERO002.md",
+    "url": "/hero/HERO002.html",
+    "prev_url": "/hero/HERO001.html",
+    "prev_title": "V1C1: Humans Who Do Not Look Human",
+    "next_url": "/hero/HERO003.html",
+    "next_title": "V1C3: A Third Person"
+  },
+  {
+    "title": "V1C3: A Third Person",
+    "chapter_id": "HERO003",
+    "date": "2024-07-07 12:58:00",
+    "date_for_sorting": "2024-07-07",
+    "filename": "2024-07-07-HERO003.md",
+    "url": "/hero/HERO003.html",
+    "prev_url": "/hero/HERO002.html",
+    "prev_title": "V1C2: The People in the Closet",
+    "next_url": "/hero/HERO004.html",
+    "next_title": "V1C4: Who Are These People?"
+  },
+  {
+    "title": "V1C4: Who Are These People?",
+    "chapter_id": "HERO004",
+    "date": "2025-08-24 14:09:00",
+    "date_for_sorting": "2025-08-24",
+    "filename": "2025-08-24-HERO004.md",
+    "url": "/hero/HERO004.html",
+    "prev_url": "/hero/HERO003.html",
+    "prev_title": "V1C3: A Third Person",
+    "next_url": null,
+    "next_title": null
+  }
+]
