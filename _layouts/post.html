@@ -18,6 +18,8 @@ layout: default
   {% endfor %}
 {% endif %}
 
+{% assign datetime_iso = current_post.date | replace: ' ', 'T' | replace: '+0', '+0:' | replace: '-0', '-0:' | replace: '+1', '+1:' | ... %}
+
 <header class="post-header">
   <br />
   {% case series_tag %}
@@ -41,9 +43,9 @@ layout: default
     {{ current_post.title | escape }}
   </h1>
   <p class="post-meta">
-      <time class="dt-published" datetime="{{ current_post.date }}" itemprop="datePublished">
-        {{ current_post.date | date: '%Y-%m-%d' }}
-      </time>
+    <time class="dt-published" datetime="{{ current_post.date | replace: ' ', 'T' | replace: '+0', '+0:' | replace: '+1', '+1:' | replace: '+2', '+2:' | replace: '+3', '+3:' | replace: '+4', '+4:' | replace: '+5', '+5:' | replace: '+6', '+6:' | replace: '+7', '+7:' | replace: '+8', '+8:' | replace: '+9', '+9:' | replace: '-0', '-0:' | replace: '-1', '-1:' | replace: '-2', '-2:' | replace: '-3', '-3:' | replace: '-4', '-4:' | replace: '-5', '-5:' | replace: '-6', '-6:' | replace: '-7', '-7:' | replace: '-8', '-8:' | replace: '-9', '-9:' }}" itemprop="datePublished">
+      {{ current_post.date | split: ' ' | first }}
+    </time>
   </p>
 </header>
 
