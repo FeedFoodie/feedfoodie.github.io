@@ -5,12 +5,12 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Star Instructor Master Baek</title>
-        <description>NorthBladeTL - Star Instructor Master Baek Chapter Updates</description>
-        <link>https://northbladetl.com/simb/</link>
+        <description></description>
+        <link>https://northbladetl.com</link>
         <atom:link href="https://northbladetl.com/feed.simb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 28 Dec 2025 16:57:50 +0000</pubDate>
-        <lastBuildDate>Sun, 28 Dec 2025 16:57:50 +0000</lastBuildDate>
-        <generator>NorthBladeTL RSS Generator</generator>
+        <pubDate>Sun, 28 Dec 2025 17:15:59 +0000</pubDate>
+        <lastBuildDate>Sun, 28 Dec 2025 17:15:59 +0000</lastBuildDate>
+        <generator>Jekyll v4.3.2</generator>
         <item>
             <title>SIMB Chapter 478: Fortunately, I Learned That Phrase Today</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>

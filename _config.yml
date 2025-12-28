@@ -14,6 +14,6 @@ turnstile_site_key: "0x4AAAAAABlBn5y8m8IJa-Vb"
 
 # Build settings
 plugins:
-  - jekyll-feed
+  #- jekyll-feed
   - jekyll-sitemap
   #- jekyll-seo-tag
