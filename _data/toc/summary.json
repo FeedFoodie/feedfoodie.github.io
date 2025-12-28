@@ -1,7 +1,7 @@
 {
+  "generated_at": "2025-12-28T13:14:41.355908",
   "total_files_processed": 811,
-  "total_tags_found": 6,
-  "tags_with_post_counts": {
+  "tags": {
     "lnb": 212,
     "simb": 477,
     "hero": 4,
@@ -9,36 +9,5 @@
     "ruh": 43,
     "lcs": 17
   },
-  "date_range_by_tag": {
-    "lnb": {
-      "oldest": "2021-08-12 00:00:01",
-      "newest": "2025-11-16 21:39:00",
-      "count": 212
-    },
-    "simb": {
-      "oldest": "2021-11-11 22:00:00",
-      "newest": "2025-12-26 19:31:00",
-      "count": 477
-    },
-    "hero": {
-      "oldest": "2024-07-01 19:15:00",
-      "newest": "2025-08-24 14:09:00",
-      "count": 4
-    },
-    "absw": {
-      "oldest": "2024-11-23 02:14:00",
-      "newest": "2025-12-13 00:25:00",
-      "count": 58
-    },
-    "ruh": {
-      "oldest": "2025-08-09 10:45:00",
-      "newest": "2025-12-27 09:46:00",
-      "count": 43
-    },
-    "lcs": {
-      "oldest": "2025-09-08 18:15:00",
-      "newest": "2025-11-12 17:06:00",
-      "count": 17
-    }
-  }
+  "skipped_files": 0
 }

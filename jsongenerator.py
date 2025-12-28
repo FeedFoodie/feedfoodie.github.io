@@ -3,154 +3,89 @@ import re
 import json
 import yaml
 from pathlib import Path
-from datetime import datetime
-from collections import defaultdict
-import logging
-
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(message)s')
-logger = logging.getLogger(__name__)
 
 def extract_yaml_frontmatter(file_content):
-    """Extract YAML frontmatter from markdown file, handling various formats"""
-    try:
-        pattern = r'^---\s*\n(.*?)\n---\s*\n(.*)$'
-        match = re.match(pattern, file_content, re.DOTALL | re.MULTILINE)
-        if match:
-            yaml_str = match.group(1)
+    """Extract YAML frontmatter from markdown file - handles both formats"""
+    # Try two patterns:
+    # 1. With newline after second ---
+    pattern1 = r'^---\s*\n(.*?)\n---\s*\n(.*)$'
+    # 2. Without newline after second --- (end of file)
+    pattern2 = r'^---\s*\n(.*?)\n---\s*$'
+    
+    match1 = re.match(pattern1, file_content, re.DOTALL)
+    if match1:
+        yaml_str = match1.group(1)
+        try:
             return yaml.safe_load(yaml_str)
-        else:
-            # Try alternative pattern without trailing newline
-            pattern2 = r'^---\s*\n(.*?)\n---\s*(.*)$'
-            match2 = re.match(pattern2, file_content, re.DOTALL | re.MULTILINE)
-            if match2:
-                yaml_str = match2.group(1)
-                return yaml.safe_load(yaml_str)
-    except Exception as e:
-        logger.warning(f"YAML parsing error: {e}")
+        except:
+            return None
+    
+    match2 = re.match(pattern2, file_content, re.DOTALL)
+    if match2:
+        yaml_str = match2.group(1)
+        try:
+            return yaml.safe_load(yaml_str)
+        except:
+            return None
     
     return None
 
 def extract_chapter_id(filename):
     """Extract chapter ID from filename like 2025-12-26-SIMB477.md"""
-    try:
-        base_name = os.path.splitext(filename)[0]
-        # Remove date part (YYYY-MM-DD-)
-        chapter_id = re.sub(r'^\d{4}-\d{2}-\d{2}-', '', base_name)
-        return chapter_id
-    except:
-        return filename
+    base = os.path.splitext(filename)[0]
+    # Remove date part (YYYY-MM-DD-)
+    return re.sub(r'^\d{4}-\d{2}-\d{2}-', '', base)
 
-def extract_date_from_filename(filename):
-    """Extract date from filename like 2025-12-26-SIMB477.md"""
-    try:
-        match = re.match(r'^(\d{4})-(\d{2})-(\d{2})-(.*)\.md$', filename)
-        if match:
-            year, month, day = match.groups()[:3]
-            # Create a datetime object with default time 00:00:01
-            return f"{year}-{month}-{day} 00:00:01"
-    except:
-        pass
-    return None
+def extract_chapter_number(chapter_id):
+    """Extract numeric part from chapter ID (SIMB477 -> 477)"""
+    # Extract all digits at the end of the string
+    match = re.search(r'(\d+)$', chapter_id)
+    return int(match.group(1)) if match else 0
 
 def generate_url(tag, chapter_id):
     """Generate URL based on tag and chapter ID"""
     return f"/{tag.lower()}/{chapter_id}.html"
 
-def parse_date(date_str, filename):
-    """Parse date string with multiple fallback strategies"""
-    if not date_str:
-        # Try to extract from filename
-        filename_date = extract_date_from_filename(filename)
-        if filename_date:
-            return filename_date
-        return "1970-01-01 00:00:01"  # Ultimate fallback
+def main():
+    POSTS_DIR = "_posts"
+    OUTPUT_DIR = "_data/toc"
     
-    # If date_str is already a datetime object
-    if isinstance(date_str, datetime):
-        return date_str.strftime("%Y-%m-%d %H:%M:%S")
+    # Clean output directory
+    import shutil
+    if os.path.exists(OUTPUT_DIR):
+        shutil.rmtree(OUTPUT_DIR)
+    os.makedirs(OUTPUT_DIR)
     
-    # Clean up the date string
-    date_str = str(date_str).strip()
+    print("Processing ALL markdown files...")
     
-    # Remove timezone info if present (like +0800)
-    date_str = re.sub(r'\s*[+-]\d{4}$', '', date_str)
+    # Track all posts by tag
+    posts_by_tag = {}
+    file_count = 0
+    skipped_files = []
     
-    # Try multiple date formats
-    date_formats = [
-        "%Y-%m-%d %H:%M:%S",
-        "%Y-%m-%dT%H:%M:%S",
-        "%Y-%m-%d %H:%M",
-        "%Y-%m-%d",
-        "%Y/%m/%d %H:%M:%S",
-        "%Y/%m/%d"
-    ]
+    # Get ALL markdown files
+    all_md_files = list(Path(POSTS_DIR).glob("*.md"))
+    print(f"Found {len(all_md_files)} total markdown files")
     
-    for fmt in date_formats:
-        try:
-            dt = datetime.strptime(date_str, fmt)
-            return dt.strftime("%Y-%m-%d %H:%M:%S")
-        except ValueError:
-            continue
+    # Sort by filename (which includes date)
+    all_md_files.sort()
     
-    # Try extracting date from any string that looks like a date
-    date_match = re.search(r'(\d{4})[-/](\d{1,2})[-/](\d{1,2})', date_str)
-    if date_match:
-        year, month, day = date_match.groups()
-        month = month.zfill(2)
-        day = day.zfill(2)
-        return f"{year}-{month}-{day} 00:00:01"
-    
-    # Last resort: extract from filename
-    filename_date = extract_date_from_filename(filename)
-    if filename_date:
-        return filename_date
-    
-    return "1970-01-01 00:00:01"
-
-def process_posts(posts_dir, output_dir):
-    """Process ALL markdown posts and generate JSON files in chronological order"""
-    posts_dir = Path(posts_dir)
-    output_dir = Path(output_dir)
-    output_dir.mkdir(exist_ok=True, parents=True)
-    
-    # Dictionary to track all posts by tag
-    all_posts_by_tag = defaultdict(list)
-    all_tags = set()
-    processed_files = 0
-    skipped_files = 0
-    files_with_date_issues = []
-    
-    logger.info(f"Scanning directory: {posts_dir}")
-    logger.info(f"Found {len(list(posts_dir.glob('*.md')))} markdown files")
-    
-    # Get all markdown files
-    md_files = list(posts_dir.glob("*.md"))
-    
-    # Sort files by filename (which includes date) as initial order
-    md_files.sort(key=lambda x: x.name)
-    
-    for md_file in md_files:
+    # Process every single markdown file
+    for md_file in all_md_files:
         try:
             with open(md_file, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # Check if file has content
-            if not content.strip():
-                logger.warning(f"Skipping empty file: {md_file.name}")
-                skipped_files += 1
-                continue
+            # Debug: Check file structure
+            first_100 = content[:100].replace('\n', '\\n')
             
             frontmatter = extract_yaml_frontmatter(content)
             if not frontmatter:
-                logger.warning(f"No YAML frontmatter found in: {md_file.name}")
-                skipped_files += 1
+                skipped_files.append((md_file.name, "No frontmatter"))
                 continue
             
-            # Get tags ONLY (ignore categories completely)
+            # Get tags only
             tags = frontmatter.get('tags', [])
-            
-            # Handle different tag formats
             if isinstance(tags, str):
                 if ',' in tags:
                     tags = [t.strip() for t in tags.split(',')]
@@ -159,90 +94,74 @@ def process_posts(posts_dir, output_dir):
             elif tags is None:
                 tags = []
             
-            # Clean and normalize tags
+            # Clean tags
             cleaned_tags = []
             for tag in tags:
                 if tag and str(tag).strip():
-                    tag_lower = str(tag).lower().strip()
-                    if tag_lower and tag_lower not in cleaned_tags:
-                        cleaned_tags.append(tag_lower)
+                    tag_clean = str(tag).strip()
+                    if tag_clean not in cleaned_tags:
+                        cleaned_tags.append(tag_clean)
             
             if not cleaned_tags:
-                logger.warning(f"No valid tags found in: {md_file.name}")
-                skipped_files += 1
+                skipped_files.append((md_file.name, "No tags"))
                 continue
             
-            # Extract chapter ID from filename
+            # Extract chapter ID (e.g., SIMB477)
             chapter_id = extract_chapter_id(md_file.name)
             
+            # Extract chapter number for sorting (e.g., 477)
+            chapter_num = extract_chapter_number(chapter_id)
+            
             # Get title
-            title = frontmatter.get('title', '')
-            if not title:
-                title = chapter_id  # Fallback to chapter ID if no title
+            title = frontmatter.get('title', chapter_id)
             
-            # Parse date with multiple fallbacks
-            date_str = frontmatter.get('date', '')
-            parsed_date = parse_date(date_str, md_file.name)
+            # Get date exactly as-is
+            date_value = frontmatter.get('date', '')
+            date_str = str(date_value) if date_value else ''
             
-            # Extract just the date part for sorting
-            date_for_sorting = parsed_date.split()[0] if ' ' in parsed_date else parsed_date
-            
-            # Log if we had to extract date from filename
-            if not date_str and extract_date_from_filename(md_file.name):
-                files_with_date_issues.append(md_file.name)
-                logger.info(f"Extracted date from filename for: {md_file.name}")
-            
+            # Create post data
             post_data = {
                 'title': title,
                 'chapter_id': chapter_id,
-                'date': parsed_date,
-                'date_for_sorting': date_for_sorting,
+                'chapter_num': chapter_num,
+                'date': date_str,
                 'filename': md_file.name,
-                'url': '',  # Will be set per tag
+                'url': ''
             }
             
             # Add to each tag's collection
             for tag in cleaned_tags:
-                all_tags.add(tag)
+                if tag not in posts_by_tag:
+                    posts_by_tag[tag] = []
                 
-                # Check if this post already exists for this tag
-                existing_ids = [p['chapter_id'] for p in all_posts_by_tag[tag]]
-                if chapter_id not in existing_ids:
-                    post_copy = post_data.copy()
-                    post_copy['url'] = generate_url(tag, chapter_id)
-                    all_posts_by_tag[tag].append(post_copy)
-                else:
-                    logger.info(f"Duplicate chapter_id {chapter_id} for tag '{tag}', skipping")
+                post_copy = post_data.copy()
+                post_copy['url'] = generate_url(tag, chapter_id)
+                posts_by_tag[tag].append(post_copy)
             
-            processed_files += 1
+            file_count += 1
             
-            # Progress indicator
-            if processed_files % 100 == 0:
-                logger.info(f"Processed {processed_files} files...")
+            # Show progress for large batches
+            if file_count % 50 == 0:
+                print(f"  Processed {file_count} files...")
                 
         except Exception as e:
-            logger.error(f"Error processing {md_file.name}: {str(e)}")
-            skipped_files += 1
+            skipped_files.append((md_file.name, f"Error: {str(e)[:50]}"))
+            continue
     
-    logger.info(f"\n{'='*60}")
-    logger.info(f"PROCESSING SUMMARY:")
-    logger.info(f"  Total files found: {len(md_files)}")
-    logger.info(f"  Successfully processed: {processed_files}")
-    logger.info(f"  Skipped/Failed: {skipped_files}")
+    print(f"\n✓ Successfully processed: {file_count} files")
+    if skipped_files:
+        print(f"⚠️  Skipped {len(skipped_files)} files:")
+        for i, (filename, reason) in enumerate(skipped_files[:10]):
+            print(f"   {filename}: {reason}")
+        if len(skipped_files) > 10:
+            print(f"   ... and {len(skipped_files) - 10} more")
     
-    if files_with_date_issues:
-        logger.info(f"  Files with date extracted from filename: {len(files_with_date_issues)}")
-        for f in files_with_date_issues[:10]:  # Show first 10
-            logger.info(f"    - {f}")
-        if len(files_with_date_issues) > 10:
-            logger.info(f"    ... and {len(files_with_date_issues) - 10} more")
+    print(f"\nUnique tags found: {len(posts_by_tag)}")
     
-    logger.info(f"{'='*60}\n")
-    
-    # Process each tag's posts
-    for tag, posts in all_posts_by_tag.items():
+    # Process each tag
+    for tag, posts in posts_by_tag.items():
         try:
-            # Remove any duplicates by chapter_id
+            # Remove duplicates by chapter_id
             unique_posts = []
             seen_ids = set()
             for post in posts:
@@ -250,177 +169,60 @@ def process_posts(posts_dir, output_dir):
                     seen_ids.add(post['chapter_id'])
                     unique_posts.append(post)
             
-            # Sort by date in CHRONOLOGICAL order (oldest to newest)
-            # This is for TOC display
-            sorted_posts = sorted(
-                unique_posts,
-                key=lambda x: x['date_for_sorting']
-            )
+            # Sort by chapter number (ascending)
+            sorted_posts = sorted(unique_posts, key=lambda x: x['chapter_num'])
             
-            # Add previous/next references for navigation
-            # IMPORTANT: For chronological TOC (oldest to newest):
-            # - "prev" should point to OLDER chapter (lower index)
-            # - "next" should point to NEWER chapter (higher index)
+            # Add prev/next navigation
             for i, post in enumerate(sorted_posts):
-                # Previous chapter (older)
-                if i > 0:
+                if i > 0:  # Has previous (lower chapter number)
                     post['prev_url'] = sorted_posts[i-1]['url']
                     post['prev_title'] = sorted_posts[i-1]['title']
                 else:
                     post['prev_url'] = None
                     post['prev_title'] = None
                 
-                # Next chapter (newer)
-                if i < len(sorted_posts) - 1:
+                if i < len(sorted_posts) - 1:  # Has next (higher chapter number)
                     post['next_url'] = sorted_posts[i+1]['url']
                     post['next_title'] = sorted_posts[i+1]['title']
                 else:
                     post['next_url'] = None
                     post['next_title'] = None
             
-            all_posts_by_tag[tag] = sorted_posts
-            
-            # Write individual tag JSON file
-            tag_file = output_dir / f"{tag}.json"
-            with open(tag_file, 'w', encoding='utf-8') as f:
+            # Save JSON file
+            output_file = Path(OUTPUT_DIR) / f"{tag}.json"
+            with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(sorted_posts, f, indent=2, ensure_ascii=False)
             
-            # Log the date range for this tag
+            # Show stats
             if sorted_posts:
-                first_date = sorted_posts[0]['date_for_sorting']
-                last_date = sorted_posts[-1]['date_for_sorting']
-                logger.info(f"✓ {tag}: {len(sorted_posts)} posts from {first_date} to {last_date}")
-            else:
-                logger.info(f"✓ {tag}: 0 posts")
+                first_chapter = sorted_posts[0]['chapter_num']
+                last_chapter = sorted_posts[-1]['chapter_num']
+                print(f"  ✅ {tag}: {len(sorted_posts)} chapters ({first_chapter} to {last_chapter})")
             
         except Exception as e:
-            logger.error(f"Error processing tag '{tag}': {e}")
+            print(f"  ❌ Error processing tag {tag}: {e}")
     
-    # Create index of all tags
-    tags_index = {
-        'all_tags': sorted(list(all_tags)),
-        'tag_counts': {tag: len(posts) for tag, posts in all_posts_by_tag.items()},
-        'generated_at': datetime.now().isoformat(),
-        'total_posts': processed_files,
-        'note': 'Posts sorted chronologically (oldest to newest) for TOC'
-    }
-    
-    with open(output_dir / 'tags_index.json', 'w', encoding='utf-8') as f:
-        json.dump(tags_index, f, indent=2, ensure_ascii=False)
-    
-    # Create a detailed summary file
+    # Create summary
+    import datetime
     summary = {
-        'total_files_processed': processed_files,
-        'total_tags_found': len(all_tags),
-        'tags_with_post_counts': {tag: len(posts) for tag, posts in all_posts_by_tag.items()},
-        'date_range_by_tag': {}
+        'generated_at': datetime.datetime.now().isoformat(),
+        'total_files_processed': file_count,
+        'tags': {tag: len(posts) for tag, posts in posts_by_tag.items()},
+        'skipped_files': len(skipped_files)
     }
     
-    for tag, posts in all_posts_by_tag.items():
-        if posts:
-            summary['date_range_by_tag'][tag] = {
-                'oldest': posts[0]['date'] if posts else None,
-                'newest': posts[-1]['date'] if posts else None,
-                'count': len(posts)
-            }
-    
-    with open(output_dir / 'summary.json', 'w', encoding='utf-8') as f:
+    with open(Path(OUTPUT_DIR) / 'summary.json', 'w', encoding='utf-8') as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
     
-    logger.info(f"\n{'='*60}")
-    logger.info("FINAL SUMMARY:")
-    logger.info(f"  Unique tags found: {len(all_tags)}")
+    print(f"\n✅ Done! JSON files saved to {OUTPUT_DIR}/")
     
-    # Show detailed tag counts
-    for tag in sorted(all_tags):
-        count = len(all_posts_by_tag[tag])
-        posts = all_posts_by_tag[tag]
+    # Quick verification
+    print("\nVerification:")
+    for tag in sorted(posts_by_tag.keys()):
+        posts = posts_by_tag[tag]
         if posts:
-            date_range = f"({posts[0]['date_for_sorting']} to {posts[-1]['date_for_sorting']})"
-            logger.info(f"    {tag}: {count:4d} posts {date_range}")
-        else:
-            logger.info(f"    {tag}: {count:4d} posts")
-    
-    total_posts = sum(len(posts) for posts in all_posts_by_tag.values())
-    logger.info(f"  Total post entries: {total_posts}")
-    logger.info(f"  JSON files saved to: {output_dir}/")
-    logger.info(f"{'='*60}")
-    
-    return all_posts_by_tag
-
-def debug_specific_posts(posts_dir, tag_to_check):
-    """Debug function to check specific posts"""
-    posts_dir = Path(posts_dir)
-    
-    logger.info(f"\n{'='*60}")
-    logger.info(f"DEBUG: Checking for posts with tag '{tag_to_check}'")
-    logger.info(f"{'='*60}")
-    
-    for md_file in posts_dir.glob("*.md"):
-        try:
-            with open(md_file, 'r', encoding='utf-8') as f:
-                content = f.read()
-            
-            frontmatter = extract_yaml_frontmatter(content)
-            if not frontmatter:
-                continue
-            
-            tags = frontmatter.get('tags', [])
-            if isinstance(tags, str):
-                if ',' in tags:
-                    tags = [t.strip() for t in tags.split(',')]
-                else:
-                    tags = [tags.strip()]
-            elif tags is None:
-                tags = []
-            
-            tags = [t.lower() for t in tags if t]
-            
-            if tag_to_check in tags:
-                date_str = frontmatter.get('date', 'NONE')
-                title = frontmatter.get('title', 'NO TITLE')
-                logger.info(f"{md_file.name}")
-                logger.info(f"  Title: {title}")
-                logger.info(f"  Date in YAML: {date_str}")
-                
-                # Extract date from filename
-                filename_date = extract_date_from_filename(md_file.name)
-                logger.info(f"  Date from filename: {filename_date}")
-                
-                # Parse it
-                parsed = parse_date(date_str, md_file.name)
-                logger.info(f"  Parsed date: {parsed}")
-                logger.info("")
-                
-        except Exception as e:
-            pass
+            unique_ids = set(p['chapter_id'] for p in posts)
+            print(f"  {tag}: {len(unique_ids)} unique chapters")
 
 if __name__ == "__main__":
-    # Configuration
-    POSTS_DIR = "_posts"
-    OUTPUT_DIR = "_data/toc"
-    
-    # First, clean the output directory
-    if os.path.exists(OUTPUT_DIR):
-        import shutil
-        shutil.rmtree(OUTPUT_DIR)
-    
-    logger.info("Starting comprehensive JSON generation from Jekyll posts...")
-    logger.info("This version:")
-    logger.info("  1. Processes ALL posts (including after July 2025)")
-    logger.info("  2. Extracts dates from filenames when YAML date is missing")
-    logger.info("  3. Sorts chronologically (oldest to newest) for TOC")
-    logger.info("  4. Sets proper prev/next navigation")
-    logger.info("-" * 60)
-    
-    # Optional: Debug a specific tag
-    # debug_specific_posts(POSTS_DIR, "simb")
-    
-    # Process all posts
-    process_posts(POSTS_DIR, OUTPUT_DIR)
-    
-    logger.info("\n" + "="*60)
-    logger.info("VERIFICATION COMMANDS:")
-    logger.info(f"  Check simb.json: python -c \"import json; data=json.load(open('{OUTPUT_DIR}/simb.json')); print(f'Total simb posts: {{len(data)}}'); print('First 3:', json.dumps(data[:3], indent=2)); print('Last 3:', json.dumps(data[-3:], indent=2))\"")
-    logger.info(f"  Check summary: cat {OUTPUT_DIR}/summary.json")
-    logger.info("="*60)
+    main()

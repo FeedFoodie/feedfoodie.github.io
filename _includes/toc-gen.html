@@ -1,0 +1,13 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign series_tag = url_parts[1] | downcase %}
+{% assign toc_data = site.data.toc[series_tag] %}
+
+<ul class="toc">
+  {% for post in toc_data %}
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

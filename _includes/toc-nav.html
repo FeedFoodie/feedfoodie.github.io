@@ -1,0 +1,42 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign series_tag = url_parts[1] | downcase %}
+{% assign toc_data = site.data.toc[series_tag] %}
+{% assign current_chapter_id = page.name | remove: '.html' | remove: '.md' %}
+{% assign current_post = nil %}
+
+{% for post in toc_data %}
+  {% if post.chapter_id == current_chapter_id %}
+    {% assign current_post = post %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div class="post_navi" style="font-size: 16px;">
+  {% if current_post.prev_url %}
+    <a class="post_navi-item nav_prev" href="{{ current_post.prev_url }}" title="{{ current_post.prev_title }}">
+      <div class="post_navi-arrow">&lt;</div>
+      <div class="post_navi-label">Previous Chapter</div>
+      <div><span>{{ current_post.prev_title }}</span></div>
+    </a>
+  {% else %}
+    <a class="post_navi-item nav_prev" href="/{{ series_tag | upcase }}/" title="Chapters">
+      <div class="post_navi-arrow">&lt;</div>
+      <div class="post_navi-label">Chapters</div>
+      <div><span>Chapters</span></div>
+    </a>
+  {% endif %}
+  
+  {% if current_post.next_url %}
+    <a class="post_navi-item nav_next" href="{{ current_post.next_url }}" title="{{ current_post.next_title }}">
+      <div class="post_navi-arrow">&gt;</div>
+      <div class="post_navi-label">Next Chapter</div>
+      <div><span>{{ current_post.next_title }}</span></div>
+    </a>
+  {% else %}
+    <a class="post_navi-item nav_next" href="/{{ series_tag | upcase }}/" title="Chapters">
+      <div class="post_navi-arrow">&gt;</div>
+      <div class="post_navi-label">Chapters</div>
+      <div><span>Chapters</span></div>
+    </a>
+  {% endif %}
+</div>

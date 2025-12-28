@@ -1,0 +1,12 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign series_tag = url_parts[1] | downcase %}
+{% assign toc_data = site.data.toc[series_tag] %}
+{% assign current_chapter_id = page.name | remove: '.html' | remove: '.md' %}
+{% assign current_post = nil %}
+
+{% for post in toc_data %}
+  {% if post.chapter_id == current_chapter_id %}
+    {% assign current_post = post %}
+    {% break %}
+  {% endif %}
+{% endfor %}

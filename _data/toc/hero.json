@@ -2,8 +2,8 @@
   {
     "title": "V1C1: Humans Who Do Not Look Human",
     "chapter_id": "HERO001",
-    "date": "2024-07-01 19:15:00",
-    "date_for_sorting": "2024-07-01",
+    "chapter_num": 1,
+    "date": "2024-07-01 19:15:00 +0800",
     "filename": "2024-07-01-HERO001.md",
     "url": "/hero/HERO001.html",
     "prev_url": null,
@@ -14,8 +14,8 @@
   {
     "title": "V1C2: The People in the Closet",
     "chapter_id": "HERO002",
-    "date": "2024-07-02 14:20:00",
-    "date_for_sorting": "2024-07-02",
+    "chapter_num": 2,
+    "date": "2024-07-02 14:20:00 +0800",
     "filename": "2024-07-02-HERO002.md",
     "url": "/hero/HERO002.html",
     "prev_url": "/hero/HERO001.html",
@@ -26,8 +26,8 @@
   {
     "title": "V1C3: A Third Person",
     "chapter_id": "HERO003",
-    "date": "2024-07-07 12:58:00",
-    "date_for_sorting": "2024-07-07",
+    "chapter_num": 3,
+    "date": "2024-07-07 12:58:00 +0800",
     "filename": "2024-07-07-HERO003.md",
     "url": "/hero/HERO003.html",
     "prev_url": "/hero/HERO002.html",
@@ -38,8 +38,8 @@
   {
     "title": "V1C4: Who Are These People?",
     "chapter_id": "HERO004",
-    "date": "2025-08-24 14:09:00",
-    "date_for_sorting": "2025-08-24",
+    "chapter_num": 4,
+    "date": "2025-08-24 14:09:00 +0800",
     "filename": "2025-08-24-HERO004.md",
     "url": "/hero/HERO004.html",
     "prev_url": "/hero/HERO003.html",
