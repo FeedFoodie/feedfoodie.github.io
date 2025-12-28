@@ -8,12 +8,12 @@ layout: default
   <header class="post-header">
   <br />
     <h2>Star Instructor Master Baek</h2>
-    <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">{{ current_post.title | escape }}</h1>
+    <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
   <p class="post-meta">
-    <time class="dt-published" datetime="{{ current_post.date | date_to_xmlschema }}" itemprop="datePublished">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {{ current_post.date | date: date_format }}
-    </time>
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
   </p>
 </header>
 
