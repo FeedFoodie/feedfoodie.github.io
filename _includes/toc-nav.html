@@ -1,18 +1,3 @@
-{% assign url_parts = page.url | split: '/' %}
-{% assign series_tag = url_parts[1] | downcase %}
-{% assign chapter_from_url = url_parts[2] | remove: '.html' %}
-{% assign toc_data = site.data.toc[series_tag] %}
-{% assign current_post = nil %}
-
-{% if toc_data %}
-  {% for post in toc_data %}
-    {% if post.chapter_id == chapter_from_url %}
-      {% assign current_post = post %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
 <div class="post_navi" style="font-size: 16px;">
   {% comment %} Previous = Lower chapter number {% endcomment %}
   {% if current_post and current_post.prev_url %}

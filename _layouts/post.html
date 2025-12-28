@@ -38,24 +38,13 @@ layout: default
   {% endcase %}
   
   <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">
-    {% if current_post %}
-      {{ current_post.title | escape }}
-    {% else %}
-      {{ page.title | escape }}
-    {% endif %}
+    {{ current_post.title | escape }}
   </h1>
   <p class="post-meta">
-    {% if current_post and current_post.date %}
       <time class="dt-published" datetime="{{ current_post.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ current_post.date | date: date_format }}
       </time>
-    {% else %}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-    {% endif %}
   </p>
 </header>
 
