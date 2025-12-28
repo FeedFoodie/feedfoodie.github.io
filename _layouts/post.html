@@ -41,9 +41,8 @@ layout: default
     {{ current_post.title | escape }}
   </h1>
   <p class="post-meta">
-      <time class="dt-published" datetime="{{ current_post.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ current_post.date | date: date_format }}
+      <time class="dt-published" datetime="{{ current_post.date }}" itemprop="datePublished">
+        {{ current_post.date | date: '%Y-%m-%d' }}
       </time>
   </p>
 </header>
