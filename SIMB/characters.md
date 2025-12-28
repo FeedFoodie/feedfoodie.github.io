@@ -1,5 +1,5 @@
 ---
-layout: pageSIMBnoChapters
+layout: pageNoTOC
 title: Star Instructor Master Baek
 ---
 
