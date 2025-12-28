@@ -1,39 +1,63 @@
 ---
 layout: default
 ---
-<link href="/css/override.css" rel="stylesheet" type="text/css">
+<link href="/css/override.css?v=1.00" rel="stylesheet" type="text/css">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+{% assign url_parts = page.url | split: '/' %}
+{% assign series_tag = url_parts[1] | downcase %}
+{% assign toc_data = site.data.toc[series_tag] %}
+{% assign current_chapter_id = page.name | remove: '.html' | remove: '.md' %}
+{% assign current_post = nil %}
 
-  <header class="post-header">
-  <p><br /><p>
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {% assign author = page.author | default: site.author %}
-      {%- if author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+{% for post in toc_data %}
+  {% if post.chapter_id == current_chapter_id %}
+    {% assign current_post = post %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
-  <div class="post-content e-content" itemprop="articleBody">
-	<div style="font-size: 16px;" id="content">					
-		<p class="foodie" style="text-align:right"><b>Day/Night Mode:</b> 
-			<button type="button" onclick="changeWrapColor()" name="btn4">Change Mode</button>		
-		</p>
-		<p class="foodie" style="text-align:right"><b>Change Font Size:</b> 
-			<button type="button" onclick="changeFontSize(-1)" name="btn1">-A</button>  
-			<button type="button" onclick="changeFontSize(0)" name="btn2">A</button>  
-			<button type="button" onclick="changeFontSize(1)" name="btn3">A+</button>
-		</p>
-		<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
-		<p class="foodie"><br /></p>
-		{{ content }}
-	</div>
+	<header class="post-header">
+	  <br />
+	  {% case series_tag %}
+	    {% when 'simb' %}
+	      <h2>Star Instructor Master Baek</h2>
+	    {% when 'absw' %}
+	      <h2>Absolute Warrior</h2>
+	    {% when 'lnb' %}
+	      <h2>Legend of the Northern Blade</h2>
+	    {% when 'lcs' %}
+	      <h2>Chronicles of the Demon Faction — Lee Cheonsang</h2>
+	    {% when 'ruh' %}
+	      <h2>Reincarnated as an Unruly Heir</h2>
+	    {% when 'hero' %}
+	      <h2>Heroes</h2>
+	    {% else %}
+	      <h2>{{ series_tag | upcase }}</h2>
+	  {% endcase %}
+	  
+	  <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">
+	    {{ current_post.title | escape }}
+	  </h1>
+	  <p class="post-meta">
+	    <time class="dt-published" datetime="{{ current_post.date | date_to_xmlschema }}" itemprop="datePublished">
+	      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+	      {{ current_post.date | date: date_format }}
+	    </time>
+	  </p>
+	</header>
+
+  <div class="post-content e-content" itemprop="articleBody"> 
+    <div style="font-size: 16px;" id="content">
+      {% include JS_buttons.html %}
+      <div id="navibar">
+        <p>Loading chapter...</p>
+      </div>
+    </div>
+  <hr>
+    {% include toc-dropdown.html %}
+    {% include toc-nav.html %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
- {% include disqus_comments.html %}
+{% include fastcomments.html %}
