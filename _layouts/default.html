@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% assign first_tag = page.tags | first %}
+{% assign series_data = nil %}
+{% if first_tag and site.data.series[first_tag] %}
+  {% assign series_data = site.data.series[first_tag] %}
+{% endif %}
 
 {%- include head.html -%}
 
@@ -24,13 +29,7 @@
 
 		<a href="/hunnypot.html" style="position:absolute; left:-9999px; top:-9999px;"></a>
 
-		{% assign first_tag = page.tags | first %}
-		{% if first_tag %}
-		  {%- include footer-{{ first_tag }}.html -%}
-		{% else %}
-		  {%- include footer.html -%}
-		{% endif %}
-
+		{%- include footer.html -%}
     {%- include protected_post.html -%}
 
   </body>

@@ -2,20 +2,29 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-
     <div class="footer-col-wrapper">
       <div class="footer-col">
-<p class="feed-subscribe">
-  <a href="{{ 'feed.xml' | relative_url }}">
-	<svg class="svg-icon orange">
-	  <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-	</svg><span>Subscribe to all NorthBladeTL updates!</span>
-  </a>
-</p>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+        <p class="feed-subscribe">
+          {% assign first_tag = page.tags | first %}
+          {% if first_tag and site.data.series[first_tag] %}
+            {% assign series = site.data.series[first_tag] %}
+            Subscribe to Updates via 
+            <a href="{{ 'feed.' | append: first_tag | append: '.xml' | relative_url }}">RSS</a>, 
+            <a href="https://www.novelupdates.com/series/{{ series.nu_slug }}/">Novelupdates</a>, 
+            or <a href="https://discord.gg/s3AsADMkNQ">Discord</a>!
+          {% else %}
+            <a href="{{ 'feed.xml' | relative_url }}">
+              <svg class="svg-icon orange">
+                <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+              </svg>
+              <span>Subscribe to all NorthBladeTL updates!</span>
+            </a>
+          {% endif %}
+        </p>
+        <div class="footer-col">
+          <p>{{ site.description | escape }}</p>        
+        </div>
       </div>
     </div>
   </div>
-
 </footer>
