@@ -24,8 +24,9 @@
 
 		<a href="/hunnypot.html" style="position:absolute; left:-9999px; top:-9999px;"></a>
 
-		{% if page.tags[0] %}
-		  {%- include footer-{{ page.tags[0] }}.html -%}
+		{% assign first_tag = page.tags | first %}
+		{% if first_tag %}
+		  {%- include footer-{{ first_tag }}.html -%}
 		{% else %}
 		  {%- include footer.html -%}
 		{% endif %}
