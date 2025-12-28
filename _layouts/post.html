@@ -18,7 +18,13 @@ layout: default
   {% endfor %}
 {% endif %}
 
-{% assign datetime_iso = current_post.date | replace: ' ', 'T' | replace: '+0', '+0:' | replace: '-0', '-0:' | replace: '+1', '+1:' | ... %}
+{% assign date_parts = current_post.date | split: ' ' %}
+{% assign date_only = date_parts[0] %}
+{% assign time_only = date_parts[1] %}
+{% assign tz_raw = date_parts[2] %}
+{% assign tz_hours = tz_raw | slice: 0, 3 %}
+{% assign tz_minutes = tz_raw | slice: 3, 2 %}
+{% assign tz_formatted = tz_hours | append: ':' | append: tz_minutes %}
 
 <header class="post-header">
   <br />
@@ -43,8 +49,8 @@ layout: default
     {{ current_post.title | escape }}
   </h1>
   <p class="post-meta">
-    <time class="dt-published" datetime="{{ current_post.date | replace: ' ', 'T' | replace: '+0', '+0:' | replace: '+1', '+1:' | replace: '+2', '+2:' | replace: '+3', '+3:' | replace: '+4', '+4:' | replace: '+5', '+5:' | replace: '+6', '+6:' | replace: '+7', '+7:' | replace: '+8', '+8:' | replace: '+9', '+9:' | replace: '-0', '-0:' | replace: '-1', '-1:' | replace: '-2', '-2:' | replace: '-3', '-3:' | replace: '-4', '-4:' | replace: '-5', '-5:' | replace: '-6', '-6:' | replace: '-7', '-7:' | replace: '-8', '-8:' | replace: '-9', '-9:' }}" itemprop="datePublished">
-      {{ current_post.date | split: ' ' | first }}
+    <time class="dt-published" datetime="{{ date_only }}T{{ time_only }}{{ tz_formatted }}" itemprop="datePublished">
+      {{ date_only }}
     </time>
   </p>
 </header>
