@@ -5,46 +5,59 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 {% assign url_parts = page.url | split: '/' %}
 {% assign series_tag = url_parts[1] | downcase %}
+{% assign chapter_from_url = url_parts[2] | remove: '.html' %}
 {% assign toc_data = site.data.toc[series_tag] %}
-{% assign current_chapter_id = page.name | remove: '.html' | remove: '.md' %}
 {% assign current_post = nil %}
 
-{% for post in toc_data %}
-  {% if post.chapter_id == current_chapter_id %}
-    {% assign current_post = post %}
-    {% break %}
-  {% endif %}
-{% endfor %}
+{% if toc_data %}
+  {% for post in toc_data %}
+    {% if post.chapter_id == chapter_from_url %}
+      {% assign current_post = post %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
-	<header class="post-header">
-	  <br />
-	  {% case series_tag %}
-	    {% when 'simb' %}
-	      <h2>Star Instructor Master Baek</h2>
-	    {% when 'absw' %}
-	      <h2>Absolute Warrior</h2>
-	    {% when 'lnb' %}
-	      <h2>Legend of the Northern Blade</h2>
-	    {% when 'lcs' %}
-	      <h2>Chronicles of the Demon Faction — Lee Cheonsang</h2>
-	    {% when 'ruh' %}
-	      <h2>Reincarnated as an Unruly Heir</h2>
-	    {% when 'hero' %}
-	      <h2>Heroes</h2>
-	    {% else %}
-	      <h2>{{ series_tag | upcase }}</h2>
-	  {% endcase %}
-	  
-	  <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">
-	    {{ page.title | escape }}
-	  </h1>
-	  <p class="post-meta">
-	    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+<header class="post-header">
+  <br />
+  {% case series_tag %}
+    {% when 'simb' %}
+      <h2>Star Instructor Master Baek</h2>
+    {% when 'absw' %}
+      <h2>Absolute Warrior</h2>
+    {% when 'lnb' %}
+      <h2>Legend of the Northern Blade</h2>
+    {% when 'lcs' %}
+      <h2>Chronicles of the Demon Faction — Lee Cheonsang</h2>
+    {% when 'ruh' %}
+      <h2>Reincarnated as an Unruly Heir</h2>
+    {% when 'hero' %}
+      <h2>Heroes</h2>
+    {% else %}
+      <h2>{{ series_tag | upcase }}</h2>
+  {% endcase %}
+  
+  <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">
+    {% if current_post %}
+      {{ current_post.title | escape }}
+    {% else %}
+      {{ page.title | escape }}
+    {% endif %}
+  </h1>
+  <p class="post-meta">
+    {% if current_post and current_post.date %}
+      <time class="dt-published" datetime="{{ current_post.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ current_post.date | date: date_format }}
+      </time>
+    {% else %}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-	  </p>
-	</header>
+    {% endif %}
+  </p>
+</header>
 
   <div class="post-content e-content" itemprop="articleBody"> 
     <div style="font-size: 16px;" id="content">
