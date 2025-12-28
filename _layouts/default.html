@@ -24,18 +24,8 @@
 
 		<a href="/hunnypot.html" style="position:absolute; left:-9999px; top:-9999px;"></a>
 
-    {% if page.tags contains "simb" %}
-		  {%- include footer-simb.html -%}
-		{% elsif page.tags contains "absw" %}
-		  {%- include footer-absw.html -%}
-		{% elsif page.tags contains "lnb" %}
-		  {%- include footer-lnb.html -%}
-		{% elsif page.tags contains "ruh" %}
-		  {%- include footer-ruh.html -%}
-		{% elsif page.tags contains "lcs" %}
-		  {%- include footer-lcs.html -%}
-		{% elsif page.tags contains "hero" %}
-		  {%- include footer-hero.html -%}
+		{% if page.tags[0] %}
+		  {%- include footer-{{ page.tags[0] }}.html -%}
 		{% else %}
 		  {%- include footer.html -%}
 		{% endif %}
