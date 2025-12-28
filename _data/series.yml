@@ -1,0 +1,35 @@
+simb:
+  full_name: "Star Instructor Master Baek"
+  nu_slug: "star-instructor-master-baek"
+  extra_html: ""
+  needs_extra_height: false
+  
+lnb:
+  full_name: "Legend of the Northern Blade"
+  nu_slug: "the-legend-of-the-northern-blade"
+  extra_html: ""
+  needs_extra_height: false
+  
+hero:
+  full_name: "Heroes"
+  nu_slug: "heroes"
+  extra_html: ""
+  needs_extra_height: false
+  
+absw:
+  full_name: "Absolute Warrior"
+  nu_slug: "absolute-warrior"
+  extra_html: ""
+  needs_extra_height: false
+  
+ruh:
+  full_name: "Reincarnated as an Unruly Heir"
+  nu_slug: "reincarnated-as-an-unruly-heir"
+  extra_html: "<p style=\"font-size:0.8em;\">Visit the Editor's <a href=\"https://www.fanelorn.net\" target=\"_blank\">Website</a> or <a href=\"https://elanorpam.tumblr.com\" target=\"_blank\">Tumblr!</a></p>"
+  needs_extra_height: true
+  
+lcs:
+  full_name: "Chronicles of the Demon Faction — Lee Cheonsang"
+  nu_slug: "chronicles-of-the-demon-faction"
+  extra_html: ""
+  needs_extra_height: false
