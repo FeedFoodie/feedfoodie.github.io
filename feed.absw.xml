@@ -5,17 +5,26 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Absolute Warrior</title>
-        <description></description>
-        <link>https://northbladetl.com</link>
+        <description>NorthBladeTL - Absolute Warrior Chapter Updates</description>
+        <link>https://northbladetl.com/absw/</link>
         <atom:link href="https://northbladetl.com/feed.absw.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 28 Dec 2025 17:15:59 +0000</pubDate>
-        <lastBuildDate>Sun, 28 Dec 2025 17:15:59 +0000</lastBuildDate>
-        <generator>Jekyll v4.3.2</generator>
+        <pubDate>Wed, 31 Dec 2025 17:05:48 +0800</pubDate>
+        <lastBuildDate>Wed, 31 Dec 2025 17:05:48 +0800</lastBuildDate>
+        <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V6C8: Taming the Tiger</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW58.html</description>
+            <pubDate>Wed, 31 Dec 2025 17:05:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW58.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW58.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>ABSW V6C7: The Great Asura Illusory Life Needles</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW57.html</description>
-            <pubDate>Sat, 13 Dec 2025 00:25:00 +0000</pubDate>
+            <pubDate>Sat, 13 Dec 2025 00:25:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW57.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW57.html</guid>
             <category>absw</category>
@@ -24,7 +33,7 @@ layout: null
             <title>ABSW V6C6: Alliance of Phantoms</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW56.html</description>
-            <pubDate>Tue, 09 Dec 2025 19:48:00 +0000</pubDate>
+            <pubDate>Tue, 09 Dec 2025 19:48:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW56.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW56.html</guid>
             <category>absw</category>
@@ -33,7 +42,7 @@ layout: null
             <title>ABSW V6C5: The Association Protection Order</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW55.html</description>
-            <pubDate>Fri, 21 Nov 2025 17:36:00 +0000</pubDate>
+            <pubDate>Fri, 21 Nov 2025 17:36:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW55.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW55.html</guid>
             <category>absw</category>
@@ -42,7 +51,7 @@ layout: null
             <title>ABSW V6C4: The Evil Blade</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW54.html</description>
-            <pubDate>Fri, 14 Nov 2025 17:20:00 +0000</pubDate>
+            <pubDate>Fri, 14 Nov 2025 17:20:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW54.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW54.html</guid>
             <category>absw</category>
@@ -51,7 +60,7 @@ layout: null
             <title>ABSW V6C3: The Heavenly Spirit Possession Art</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW53.html</description>
-            <pubDate>Tue, 11 Nov 2025 18:28:00 +0000</pubDate>
+            <pubDate>Tue, 11 Nov 2025 18:28:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW53.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW53.html</guid>
             <category>absw</category>
@@ -60,7 +69,7 @@ layout: null
             <title>ABSW V6C2: The Game is Afoot</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW52.html</description>
-            <pubDate>Sat, 01 Nov 2025 13:22:00 +0000</pubDate>
+            <pubDate>Sat, 01 Nov 2025 13:22:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW52.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW52.html</guid>
             <category>absw</category>
@@ -69,7 +78,7 @@ layout: null
             <title>ABSW V6C1: A Plot in Motion</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW51.html</description>
-            <pubDate>Fri, 24 Oct 2025 20:00:00 +0000</pubDate>
+            <pubDate>Fri, 24 Oct 2025 20:00:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW51.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW51.html</guid>
             <category>absw</category>
@@ -78,7 +87,7 @@ layout: null
             <title>ABSW V5C10: The Wedding</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW50.html</description>
-            <pubDate>Fri, 17 Oct 2025 23:00:00 +0000</pubDate>
+            <pubDate>Fri, 17 Oct 2025 23:00:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW50.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW50.html</guid>
             <category>absw</category>
@@ -87,18 +96,9 @@ layout: null
             <title>ABSW V5C9: Flying Dragon Strikes</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW49.html</description>
-            <pubDate>Mon, 13 Oct 2025 20:53:00 +0000</pubDate>
+            <pubDate>Mon, 13 Oct 2025 20:53:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW49.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW49.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V5C8: A Mud-Slinging Fight</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW48.html</description>
-            <pubDate>Fri, 03 Oct 2025 22:44:00 +0000</pubDate>
-            <link>https://northbladetl.com/absw/ABSW48.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW48.html</guid>
             <category>absw</category>
         </item>
     </channel>

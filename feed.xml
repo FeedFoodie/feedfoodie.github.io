@@ -4,18 +4,27 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Northern Blade Translations</title>
-        <description></description>
-        <link>https://northbladetl.com</link>
+        <title>NorthBladeTL - All Series</title>
+        <description>Latest chapter updates from NorthBladeTL translations</description>
+        <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 28 Dec 2025 17:15:59 +0000</pubDate>
-        <lastBuildDate>Sun, 28 Dec 2025 17:15:59 +0000</lastBuildDate>
-        <generator>Jekyll v4.3.2</generator>
+        <pubDate>Wed, 31 Dec 2025 17:05:48 +0800</pubDate>
+        <lastBuildDate>Wed, 31 Dec 2025 17:05:48 +0800</lastBuildDate>
+        <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V6C8: Taming the Tiger</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW58.html</description>
+            <pubDate>Wed, 31 Dec 2025 17:05:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW58.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW58.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>SIMB Chapter 478: Fortunately, I Learned That Phrase Today</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB478.html</description>
-            <pubDate>Sun, 28 Dec 2025 14:35:00 +0000</pubDate>
+            <pubDate>Sun, 28 Dec 2025 14:35:00 +0800</pubDate>
             <link>https://northbladetl.com/simb/SIMB478.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB478.html</guid>
             <category>simb</category>
@@ -24,7 +33,7 @@ layout: null
             <title>RUH Chapter 43: I&apos;ll Trust You</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH043.html</description>
-            <pubDate>Sat, 27 Dec 2025 09:46:00 +0000</pubDate>
+            <pubDate>Sat, 27 Dec 2025 09:46:00 +0800</pubDate>
             <link>https://northbladetl.com/ruh/RUH043.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH043.html</guid>
             <category>ruh</category>
@@ -33,7 +42,7 @@ layout: null
             <title>SIMB Chapter 477: You&apos;re Gravely Mistaken</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB477.html</description>
-            <pubDate>Fri, 26 Dec 2025 19:31:00 +0000</pubDate>
+            <pubDate>Fri, 26 Dec 2025 19:31:00 +0800</pubDate>
             <link>https://northbladetl.com/simb/SIMB477.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB477.html</guid>
             <category>simb</category>
@@ -42,7 +51,7 @@ layout: null
             <title>SIMB Chapter 476: Isn&apos;t This Too Much?</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB476.html</description>
-            <pubDate>Thu, 25 Dec 2025 15:57:00 +0000</pubDate>
+            <pubDate>Thu, 25 Dec 2025 15:57:00 +0800</pubDate>
             <link>https://northbladetl.com/simb/SIMB476.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB476.html</guid>
             <category>simb</category>
@@ -51,7 +60,7 @@ layout: null
             <title>ABSW V6C7: The Great Asura Illusory Life Needles</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW57.html</description>
-            <pubDate>Sat, 13 Dec 2025 00:25:00 +0000</pubDate>
+            <pubDate>Sat, 13 Dec 2025 00:25:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW57.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW57.html</guid>
             <category>absw</category>
@@ -60,7 +69,7 @@ layout: null
             <title>ABSW V6C6: Alliance of Phantoms</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW56.html</description>
-            <pubDate>Tue, 09 Dec 2025 19:48:00 +0000</pubDate>
+            <pubDate>Tue, 09 Dec 2025 19:48:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW56.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW56.html</guid>
             <category>absw</category>
@@ -69,25 +78,16 @@ layout: null
             <title>RUH Chapter 42: You Ask Why I Came Alone?</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH042.html</description>
-            <pubDate>Wed, 26 Nov 2025 20:41:00 +0000</pubDate>
+            <pubDate>Wed, 26 Nov 2025 20:41:00 +0800</pubDate>
             <link>https://northbladetl.com/ruh/RUH042.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH042.html</guid>
             <category>ruh</category>
         </item>
         <item>
-            <title>ABSW V6C5: The Association Protection Order</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW55.html</description>
-            <pubDate>Fri, 21 Nov 2025 17:36:00 +0000</pubDate>
-            <link>https://northbladetl.com/absw/ABSW55.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW55.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
             <title>RUH Chapter 41. The Blood Asura&apos;s Recruitment Method</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH041.html</description>
-            <pubDate>Wed, 19 Nov 2025 18:15:00 +0000</pubDate>
+            <pubDate>Wed, 19 Nov 2025 18:15:00 +0800</pubDate>
             <link>https://northbladetl.com/ruh/RUH041.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH041.html</guid>
             <category>ruh</category>
@@ -96,7 +96,7 @@ layout: null
             <title>LNB Chapter 211: Some Encounters Bring a Storm (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB211.html</description>
-            <pubDate>Sun, 16 Nov 2025 21:39:00 +0000</pubDate>
+            <pubDate>Sun, 16 Nov 2025 21:39:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB211.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB211.html</guid>
             <category>lnb</category>
