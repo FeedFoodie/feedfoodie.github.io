@@ -702,8 +702,19 @@
     "date": "2025-12-31 17:10:00 +0800",
     "url": "/absw/ABSW58.html",
     "prev_url": "/absw/ABSW57.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW59.html",
     "prev_title": "V6C7: The Great Asura Illusory Life Needles",
+    "next_title": "V6C9: The Tiger Pounces"
+  },
+  {
+    "title": "V6C9: The Tiger Pounces",
+    "chapter_id": "ABSW59",
+    "chapter_num": 59,
+    "date": "2026-01-02 17:05:00 +0800",
+    "url": "/absw/ABSW59.html",
+    "prev_url": "/absw/ABSW58.html",
+    "next_url": null,
+    "prev_title": "V6C8: Taming the Tiger",
     "next_title": null
   }
 ]
