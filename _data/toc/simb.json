@@ -5742,8 +5742,19 @@
     "date": "2026-01-02 21:08:00 +0800",
     "url": "/simb/SIMB479.html",
     "prev_url": "/simb/SIMB478.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB480.html",
     "prev_title": "Chapter 478: Fortunately, I Learned That Phrase Today",
+    "next_title": "Chapter 480: What is this Place?"
+  },
+  {
+    "title": "Chapter 480: What is this Place?",
+    "chapter_id": "SIMB480",
+    "chapter_num": 480,
+    "date": "2026-01-03 12:18:00 +0800",
+    "url": "/simb/SIMB480.html",
+    "prev_url": "/simb/SIMB479.html",
+    "next_url": null,
+    "prev_title": "Chapter 479: Someday",
     "next_title": null
   }
 ]
