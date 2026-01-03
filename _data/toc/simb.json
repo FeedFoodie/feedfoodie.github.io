@@ -5753,8 +5753,19 @@
     "date": "2026-01-03 12:18:00 +0800",
     "url": "/simb/SIMB480.html",
     "prev_url": "/simb/SIMB479.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB481.html",
     "prev_title": "Chapter 479: Someday",
+    "next_title": "Chapter 481: The Worst Duo"
+  },
+  {
+    "title": "Chapter 481: The Worst Duo",
+    "chapter_id": "SIMB481",
+    "chapter_num": 481,
+    "date": "2026-01-03 22:50:00 +0800",
+    "url": "/simb/SIMB481.html",
+    "prev_url": "/simb/SIMB480.html",
+    "next_url": null,
+    "prev_title": "Chapter 480: What is this Place?",
     "next_title": null
   }
 ]
