@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 06 Jan 2026 19:24:28 +0800</pubDate>
-        <lastBuildDate>Tue, 06 Jan 2026 19:24:28 +0800</lastBuildDate>
+        <pubDate>Tue, 06 Jan 2026 19:38:22 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Jan 2026 19:38:22 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LCS SS 18: Yaksha&apos;s Journey (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS18.html</description>
+            <pubDate>Tue, 06 Jan 2026 19:37:00 +0800</pubDate>
+            <link>https://northbladetl.com/lcs/LCS18.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS18.html</guid>
+            <category>lcs</category>
+        </item>
         <item>
             <title>RUH Chapter 44: Eradication of the Demonic Path</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/ruh/RUH042.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH042.html</guid>
             <category>ruh</category>
-        </item>
-        <item>
-            <title>LNB Chapter 211: Some Encounters Bring a Storm (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB211.html</description>
-            <pubDate>Sun, 16 Nov 2025 21:39:00 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB211.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB211.html</guid>
-            <category>lnb</category>
         </item>
     </channel>
 </rss>
