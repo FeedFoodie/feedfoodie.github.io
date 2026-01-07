@@ -522,8 +522,19 @@
     "date": "2026-01-06 19:24:00 +0800",
     "url": "/ruh/RUH044.html",
     "prev_url": "/ruh/RUH043.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH045.html",
     "prev_title": "Chapter 43: I'll Trust You",
+    "next_title": "Chapter 45: You're the Child, Being So Wimpy"
+  },
+  {
+    "title": "Chapter 45: You're the Child, Being So Wimpy",
+    "chapter_id": "RUH045",
+    "chapter_num": 45,
+    "date": "2026-01-07 18:33:00 +0800",
+    "url": "/ruh/RUH045.html",
+    "prev_url": "/ruh/RUH044.html",
+    "next_url": null,
+    "prev_title": "Chapter 44: Eradication of the Demonic Path",
     "next_title": null
   }
 ]
