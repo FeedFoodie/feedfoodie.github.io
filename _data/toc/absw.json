@@ -713,8 +713,19 @@
     "date": "2026-01-02 17:05:00 +0800",
     "url": "/absw/ABSW59.html",
     "prev_url": "/absw/ABSW58.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW60.html",
     "prev_title": "V6C8: Taming the Tiger",
+    "next_title": "V6C10: Reunion"
+  },
+  {
+    "title": "V6C10: Reunion",
+    "chapter_id": "ABSW60",
+    "chapter_num": 60,
+    "date": "2026-01-09 17:09:00 +0800",
+    "url": "/absw/ABSW60.html",
+    "prev_url": "/absw/ABSW59.html",
+    "next_url": null,
+    "prev_title": "V6C9: The Tiger Pounces",
     "next_title": null
   }
 ]
