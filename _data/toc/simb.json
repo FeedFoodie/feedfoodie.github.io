@@ -5786,8 +5786,19 @@
     "date": "2026-01-10 13:06:00 +0800",
     "url": "/simb/SIMB483.html",
     "prev_url": "/simb/SIMB482.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB484.html",
     "prev_title": "Chapter 482: The Strange Guy",
+    "next_title": "Chapter 484: Why?"
+  },
+  {
+    "title": "Chapter 484: Why?",
+    "chapter_id": "SIMB484",
+    "chapter_num": 484,
+    "date": "2026-01-10 22:50:00 +0800",
+    "url": "/simb/SIMB484.html",
+    "prev_url": "/simb/SIMB483.html",
+    "next_url": null,
+    "prev_title": "Chapter 483: You're Amazing",
     "next_title": null
   }
 ]
