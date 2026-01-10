@@ -533,8 +533,19 @@
     "date": "2026-01-07 18:33:00 +0800",
     "url": "/ruh/RUH045.html",
     "prev_url": "/ruh/RUH044.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH046.html",
     "prev_title": "Chapter 44: Eradication of the Demonic Path",
+    "next_title": "Chapter 46: I Don't Hate You"
+  },
+  {
+    "title": "Chapter 46: I Don't Hate You",
+    "chapter_id": "RUH046",
+    "chapter_num": 46,
+    "date": "2026-01-10 22:49:00 +0800",
+    "url": "/ruh/RUH046.html",
+    "prev_url": "/ruh/RUH045.html",
+    "next_url": null,
+    "prev_title": "Chapter 45: You're the Child, Being So Wimpy",
     "next_title": null
   }
 ]
