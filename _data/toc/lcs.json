@@ -210,8 +210,19 @@
     "date": "2026-01-06 19:37:00 +0800",
     "url": "/lcs/LCS18.html",
     "prev_url": "/lcs/LCS17.html",
-    "next_url": null,
+    "next_url": "/lcs/LCS019.html",
     "prev_title": "SS 17: Yaksha's Journey (2)",
+    "next_title": "Chapter 19: Yaksha's Journey (4)"
+  },
+  {
+    "title": "Chapter 19: Yaksha's Journey (4)",
+    "chapter_id": "LCS019",
+    "chapter_num": 19,
+    "date": "2026-01-10 22:52:00 +0800",
+    "url": "/lcs/LCS019.html",
+    "prev_url": "/lcs/LCS18.html",
+    "next_url": null,
+    "prev_title": "SS 18: Yaksha's Journey (3)",
     "next_title": null
   }
 ]

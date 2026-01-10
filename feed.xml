@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 10 Jan 2026 22:50:30 +0800</pubDate>
-        <lastBuildDate>Sat, 10 Jan 2026 22:50:30 +0800</lastBuildDate>
+        <pubDate>Sat, 10 Jan 2026 22:52:47 +0800</pubDate>
+        <lastBuildDate>Sat, 10 Jan 2026 22:52:47 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LCS Chapter 19: Yaksha&apos;s Journey (4)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS019.html</description>
+            <pubDate>Sat, 10 Jan 2026 22:52:00 +0800</pubDate>
+            <link>https://northbladetl.com/lcs/LCS019.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS019.html</guid>
+            <category>lcs</category>
+        </item>
         <item>
             <title>SIMB Chapter 484: Why?</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 02 Jan 2026 17:05:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW59.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW59.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V6C8: Taming the Tiger</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW58.html</description>
-            <pubDate>Wed, 31 Dec 2025 17:10:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW58.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW58.html</guid>
             <category>absw</category>
         </item>
     </channel>

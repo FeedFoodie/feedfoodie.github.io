@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Chronicles of the Demon Faction — Lee Cheonsang Chapter Updates</description>
         <link>https://northbladetl.com/lcs/</link>
         <atom:link href="https://northbladetl.com/feed.lcs.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 06 Jan 2026 19:38:22 +0800</pubDate>
-        <lastBuildDate>Tue, 06 Jan 2026 19:38:22 +0800</lastBuildDate>
+        <pubDate>Sat, 10 Jan 2026 22:52:47 +0800</pubDate>
+        <lastBuildDate>Sat, 10 Jan 2026 22:52:47 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LCS Chapter 19: Yaksha&apos;s Journey (4)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS019.html</description>
+            <pubDate>Sat, 10 Jan 2026 22:52:00 +0800</pubDate>
+            <link>https://northbladetl.com/lcs/LCS019.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS019.html</guid>
+            <category>lcs</category>
+        </item>
         <item>
             <title>LCS SS 18: Yaksha&apos;s Journey (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sun, 19 Oct 2025 13:33:00 +0800</pubDate>
             <link>https://northbladetl.com/lcs/LCS010.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lcs/LCS010.html</guid>
-            <category>lcs</category>
-        </item>
-        <item>
-            <title>LCS SS 9: Flower Blooming from the Mud (4)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS009.html</description>
-            <pubDate>Sun, 19 Oct 2025 13:22:00 +0800</pubDate>
-            <link>https://northbladetl.com/lcs/LCS009.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS009.html</guid>
             <category>lcs</category>
         </item>
     </channel>
