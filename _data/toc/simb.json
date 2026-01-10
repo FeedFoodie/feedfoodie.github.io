@@ -5775,8 +5775,19 @@
     "date": "2026-01-10 00:01:00 +0800",
     "url": "/simb/SIMB482.html",
     "prev_url": "/simb/SIMB481.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB483.html",
     "prev_title": "Chapter 481: The Worst Duo",
+    "next_title": "Chapter 483: You're Amazing"
+  },
+  {
+    "title": "Chapter 483: You're Amazing",
+    "chapter_id": "SIMB483",
+    "chapter_num": 483,
+    "date": "2026-01-10 13:06:00 +0800",
+    "url": "/simb/SIMB483.html",
+    "prev_url": "/simb/SIMB482.html",
+    "next_url": null,
+    "prev_title": "Chapter 482: The Strange Guy",
     "next_title": null
   }
 ]
