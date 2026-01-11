@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Chronicles of the Demon Faction — Lee Cheonsang Chapter Updates</description>
         <link>https://northbladetl.com/lcs/</link>
         <atom:link href="https://northbladetl.com/feed.lcs.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 10 Jan 2026 22:52:47 +0800</pubDate>
-        <lastBuildDate>Sat, 10 Jan 2026 22:52:47 +0800</lastBuildDate>
+        <pubDate>Sun, 11 Jan 2026 11:22:51 +0800</pubDate>
+        <lastBuildDate>Sun, 11 Jan 2026 11:22:51 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LCS Chapter 20: Yaksha&apos;s Journey (5)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS020.html</description>
+            <pubDate>Sun, 11 Jan 2026 11:22:00 +0800</pubDate>
+            <link>https://northbladetl.com/lcs/LCS020.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS020.html</guid>
+            <category>lcs</category>
+        </item>
         <item>
             <title>LCS Chapter 19: Yaksha&apos;s Journey (4)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -23,28 +32,28 @@ layout: null
         <item>
             <title>LCS SS 18: Yaksha&apos;s Journey (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS18.html</description>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS018.html</description>
             <pubDate>Tue, 06 Jan 2026 19:37:00 +0800</pubDate>
-            <link>https://northbladetl.com/lcs/LCS18.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS18.html</guid>
+            <link>https://northbladetl.com/lcs/LCS018.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS018.html</guid>
             <category>lcs</category>
         </item>
         <item>
             <title>LCS SS 17: Yaksha&apos;s Journey (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS17.html</description>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS017.html</description>
             <pubDate>Wed, 12 Nov 2025 17:06:00 +0800</pubDate>
-            <link>https://northbladetl.com/lcs/LCS17.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS17.html</guid>
+            <link>https://northbladetl.com/lcs/LCS017.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS017.html</guid>
             <category>lcs</category>
         </item>
         <item>
             <title>LCS SS 16: Yaksha&apos;s Journey (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS16.html</description>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS016.html</description>
             <pubDate>Wed, 12 Nov 2025 16:57:00 +0800</pubDate>
-            <link>https://northbladetl.com/lcs/LCS16.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS16.html</guid>
+            <link>https://northbladetl.com/lcs/LCS016.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS016.html</guid>
             <category>lcs</category>
         </item>
         <item>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sun, 19 Oct 2025 13:58:00 +0800</pubDate>
             <link>https://northbladetl.com/lcs/LCS011.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lcs/LCS011.html</guid>
-            <category>lcs</category>
-        </item>
-        <item>
-            <title>LCS SS 10: Flower Blooming from the Mud (5)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS010.html</description>
-            <pubDate>Sun, 19 Oct 2025 13:33:00 +0800</pubDate>
-            <link>https://northbladetl.com/lcs/LCS010.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS010.html</guid>
             <category>lcs</category>
         </item>
     </channel>

@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 10 Jan 2026 22:52:47 +0800</pubDate>
-        <lastBuildDate>Sat, 10 Jan 2026 22:52:47 +0800</lastBuildDate>
+        <pubDate>Sun, 11 Jan 2026 11:22:51 +0800</pubDate>
+        <lastBuildDate>Sun, 11 Jan 2026 11:22:51 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LCS Chapter 20: Yaksha&apos;s Journey (5)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS020.html</description>
+            <pubDate>Sun, 11 Jan 2026 11:22:00 +0800</pubDate>
+            <link>https://northbladetl.com/lcs/LCS020.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS020.html</guid>
+            <category>lcs</category>
+        </item>
         <item>
             <title>LCS Chapter 19: Yaksha&apos;s Journey (4)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -77,10 +86,10 @@ layout: null
         <item>
             <title>LCS SS 18: Yaksha&apos;s Journey (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS18.html</description>
+            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS018.html</description>
             <pubDate>Tue, 06 Jan 2026 19:37:00 +0800</pubDate>
-            <link>https://northbladetl.com/lcs/LCS18.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS18.html</guid>
+            <link>https://northbladetl.com/lcs/LCS018.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS018.html</guid>
             <category>lcs</category>
         </item>
         <item>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/ruh/RUH044.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH044.html</guid>
             <category>ruh</category>
-        </item>
-        <item>
-            <title>ABSW V6C9: The Tiger Pounces</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW59.html</description>
-            <pubDate>Fri, 02 Jan 2026 17:05:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW59.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW59.html</guid>
-            <category>absw</category>
         </item>
     </channel>
 </rss>
