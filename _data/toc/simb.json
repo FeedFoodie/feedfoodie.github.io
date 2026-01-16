@@ -5797,8 +5797,19 @@
     "date": "2026-01-10 22:50:00 +0800",
     "url": "/simb/SIMB484.html",
     "prev_url": "/simb/SIMB483.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB485.html",
     "prev_title": "Chapter 483: You're Amazing",
+    "next_title": "Chapter 485: Little by Little"
+  },
+  {
+    "title": "Chapter 485: Little by Little",
+    "chapter_id": "SIMB485",
+    "chapter_num": 485,
+    "date": "2026-01-16 17:13:00 +0800",
+    "url": "/simb/SIMB485.html",
+    "prev_url": "/simb/SIMB484.html",
+    "next_url": null,
+    "prev_title": "Chapter 484: Why?",
     "next_title": null
   }
 ]
