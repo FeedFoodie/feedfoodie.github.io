@@ -5808,8 +5808,19 @@
     "date": "2026-01-16 17:13:00 +0800",
     "url": "/simb/SIMB485.html",
     "prev_url": "/simb/SIMB484.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB486.html",
     "prev_title": "Chapter 484: Why?",
+    "next_title": "Chapter 486: You Expect Me to Believe That?"
+  },
+  {
+    "title": "Chapter 486: You Expect Me to Believe That?",
+    "chapter_id": "SIMB486",
+    "chapter_num": 486,
+    "date": "2026-01-17 12:32:00 +0800",
+    "url": "/simb/SIMB486.html",
+    "prev_url": "/simb/SIMB485.html",
+    "next_url": null,
+    "prev_title": "Chapter 485: Little by Little",
     "next_title": null
   }
 ]
