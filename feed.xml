@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 17 Jan 2026 12:33:15 +0800</pubDate>
-        <lastBuildDate>Sat, 17 Jan 2026 12:33:15 +0800</lastBuildDate>
+        <pubDate>Sat, 17 Jan 2026 19:16:45 +0800</pubDate>
+        <lastBuildDate>Sat, 17 Jan 2026 19:16:45 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 212: Some Encounters Bring a Storm (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB212.html</description>
+            <pubDate>Sat, 17 Jan 2026 19:15:00 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB212.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB212.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>SIMB Chapter 486: You Expect Me to Believe That?</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/lcs/LCS018.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lcs/LCS018.html</guid>
             <category>lcs</category>
-        </item>
-        <item>
-            <title>RUH Chapter 44: Eradication of the Demonic Path</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH044.html</description>
-            <pubDate>Tue, 06 Jan 2026 19:24:00 +0800</pubDate>
-            <link>https://northbladetl.com/ruh/RUH044.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH044.html</guid>
-            <category>ruh</category>
         </item>
     </channel>
 </rss>

@@ -5,17 +5,26 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Legend of the Northern Blade</title>
-        <description></description>
-        <link>https://northbladetl.com</link>
+        <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
+        <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 28 Dec 2025 17:15:59 +0000</pubDate>
-        <lastBuildDate>Sun, 28 Dec 2025 17:15:59 +0000</lastBuildDate>
-        <generator>Jekyll v4.3.2</generator>
+        <pubDate>Sat, 17 Jan 2026 19:16:45 +0800</pubDate>
+        <lastBuildDate>Sat, 17 Jan 2026 19:16:45 +0800</lastBuildDate>
+        <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 212: Some Encounters Bring a Storm (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB212.html</description>
+            <pubDate>Sat, 17 Jan 2026 19:15:00 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB212.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB212.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 211: Some Encounters Bring a Storm (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB211.html</description>
-            <pubDate>Sun, 16 Nov 2025 21:39:00 +0000</pubDate>
+            <pubDate>Sun, 16 Nov 2025 21:39:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB211.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB211.html</guid>
             <category>lnb</category>
@@ -24,7 +33,7 @@ layout: null
             <title>LNB Chapter 210: Some Encounters Bring a Storm (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB210.html</description>
-            <pubDate>Sun, 16 Nov 2025 16:54:00 +0000</pubDate>
+            <pubDate>Sun, 16 Nov 2025 16:54:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB210.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB210.html</guid>
             <category>lnb</category>
@@ -33,7 +42,7 @@ layout: null
             <title>LNB Chapter 209: If You Can Kill, You Can Also Be Killed (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB209.html</description>
-            <pubDate>Fri, 07 Nov 2025 21:20:00 +0000</pubDate>
+            <pubDate>Fri, 07 Nov 2025 21:20:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB209.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB209.html</guid>
             <category>lnb</category>
@@ -42,7 +51,7 @@ layout: null
             <title>LNB Chapter 208: If You Can Kill, You Can Also Be Killed (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB208.html</description>
-            <pubDate>Tue, 21 Oct 2025 21:16:00 +0000</pubDate>
+            <pubDate>Tue, 21 Oct 2025 21:16:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB208.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB208.html</guid>
             <category>lnb</category>
@@ -51,7 +60,7 @@ layout: null
             <title>LNB Chapter 207: If You Can Kill, You Can Also Be Killed (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB207.html</description>
-            <pubDate>Tue, 21 Oct 2025 19:55:00 +0000</pubDate>
+            <pubDate>Tue, 21 Oct 2025 19:55:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB207.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB207.html</guid>
             <category>lnb</category>
@@ -60,7 +69,7 @@ layout: null
             <title>LNB Chapter 206: When A Boy Becomes A Man (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB206.html</description>
-            <pubDate>Tue, 21 Oct 2025 18:33:00 +0000</pubDate>
+            <pubDate>Tue, 21 Oct 2025 18:33:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB206.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB206.html</guid>
             <category>lnb</category>
@@ -69,7 +78,7 @@ layout: null
             <title>LNB Chapter 205: When A Boy Becomes A Man (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB205.html</description>
-            <pubDate>Sun, 19 Oct 2025 14:11:00 +0000</pubDate>
+            <pubDate>Sun, 19 Oct 2025 14:11:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB205.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB205.html</guid>
             <category>lnb</category>
@@ -78,7 +87,7 @@ layout: null
             <title>LNB Chapter 204: When A Boy Becomes A Man (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB204.html</description>
-            <pubDate>Sat, 04 Oct 2025 19:55:00 +0000</pubDate>
+            <pubDate>Sat, 04 Oct 2025 19:55:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB204.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB204.html</guid>
             <category>lnb</category>
@@ -87,18 +96,9 @@ layout: null
             <title>LNB Chapter 203: Crisis and Ill-Fated Encounters (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB203.html</description>
-            <pubDate>Fri, 19 Sep 2025 20:08:00 +0000</pubDate>
+            <pubDate>Fri, 19 Sep 2025 20:08:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB203.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB203.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 202: Crisis and Ill-Fated Encounters (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB202.html</description>
-            <pubDate>Sun, 31 Aug 2025 20:12:00 +0000</pubDate>
-            <link>https://northbladetl.com/lnb/LNB202.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB202.html</guid>
             <category>lnb</category>
         </item>
     </channel>

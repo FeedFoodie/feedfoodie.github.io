@@ -2540,7 +2540,18 @@
     "url": "/lnb/LNB211.html",
     "prev_url": "/lnb/LNB210.html",
     "prev_title": "Chapter 210: Some Encounters Bring a Storm (1)",
+    "next_url": "/lnb/LNB212.html",
+    "next_title": "Chapter 212: Some Encounters Bring a Storm (3)"
+  },
+  {
+    "title": "Chapter 212: Some Encounters Bring a Storm (3)",
+    "chapter_id": "LNB212",
+    "chapter_num": 212,
+    "date": "2026-01-17 19:15:00 +0800",
+    "url": "/lnb/LNB212.html",
+    "prev_url": "/lnb/LNB211.html",
     "next_url": null,
+    "prev_title": "Chapter 211: Some Encounters Bring a Storm (2)",
     "next_title": null
   }
 ]
