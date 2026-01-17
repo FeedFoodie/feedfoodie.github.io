@@ -724,8 +724,19 @@
     "date": "2026-01-09 17:09:00 +0800",
     "url": "/absw/ABSW60.html",
     "prev_url": "/absw/ABSW59.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW61.html",
     "prev_title": "V6C9: The Tiger Pounces",
+    "next_title": "V7C1: Acupoint Metamorphosis"
+  },
+  {
+    "title": "V7C1: Acupoint Metamorphosis",
+    "chapter_id": "ABSW61",
+    "chapter_num": 61,
+    "date": "2026-01-17 19:53:00 +0800",
+    "url": "/absw/ABSW61.html",
+    "prev_url": "/absw/ABSW60.html",
+    "next_url": null,
+    "prev_title": "V6C10: Reunion",
     "next_title": null
   }
 ]
