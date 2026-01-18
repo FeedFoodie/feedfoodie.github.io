@@ -5830,8 +5830,19 @@
     "date": "2026-01-17 21:27:00 +0800",
     "url": "/simb/SIMB487.html",
     "prev_url": "/simb/SIMB486.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB488.html",
     "prev_title": "Chapter 486: You Expect Me to Believe That?",
+    "next_title": "Chapter 488: What's the Problem?"
+  },
+  {
+    "title": "Chapter 488: What's the Problem?",
+    "chapter_id": "SIMB488",
+    "chapter_num": 488,
+    "date": "2026-01-18 11:29:00 +0800",
+    "url": "/simb/SIMB488.html",
+    "prev_url": "/simb/SIMB487.html",
+    "next_url": null,
+    "prev_title": "Chapter 487: If Only We Had Met Here As Children",
     "next_title": null
   }
 ]
