@@ -6,10 +6,19 @@ layout: null
     <channel>
         <title>Peerless Dad</title>
         <description>NorthBladeTL - Peerless Dad Chapter Updates</description>
-        <link>https://northbladetl.com/PD/</link>
+        <link>https://northbladetl.com/pd/</link>
         <atom:link href="https://northbladetl.com/feed.pd.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 20 Jan 2026 11:22:51 +0800</pubDate>
-        <lastBuildDate>Wed, 20 Jan 2026 11:22:51 +0800</lastBuildDate>
+        <pubDate>Tue, 20 Jan 2026 19:33:48 +0800</pubDate>
+        <lastBuildDate>Tue, 20 Jan 2026 19:33:48 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>PD Prologue</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Peerless Dad Chapter Update - https://northbladetl.com/pd/PD000.html</description>
+            <pubDate>Tue, 20 Jan 2026 18:58:00 +0800</pubDate>
+            <link>https://northbladetl.com/pd/PD000.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/pd/PD000.html</guid>
+            <category>pd</category>
+        </item>
     </channel>
 </rss>
