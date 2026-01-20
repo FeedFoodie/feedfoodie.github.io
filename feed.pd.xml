@@ -1,0 +1,15 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Peerless Dad</title>
+        <description>NorthBladeTL - Peerless Dad Chapter Updates</description>
+        <link>https://northbladetl.com/PD/</link>
+        <atom:link href="https://northbladetl.com/feed.pd.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 20 Jan 2026 11:22:51 +0800</pubDate>
+        <lastBuildDate>Wed, 20 Jan 2026 11:22:51 +0800</lastBuildDate>
+        <generator>NorthBladeTL RSS Generator</generator>
+    </channel>
+</rss>
