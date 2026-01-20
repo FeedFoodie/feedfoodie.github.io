@@ -33,3 +33,9 @@ lcs:
   nu_slug: "chronicles-of-the-demon-faction"
   extra_html: ""
   needs_extra_height: false
+
+pd:
+  full_name: "Peerless Dad"
+  nu_slug: "peerless-dad"
+  extra_html: ""
+  needs_extra_height: false

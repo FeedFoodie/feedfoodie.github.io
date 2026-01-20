@@ -28,3 +28,6 @@
         - name: "Chronicles of the Demon Faction"
           url: "/LCS/"
           weight: 2
+        - name: "Peerless Dad"
+          url: "/PD/"
+          weight: 2
