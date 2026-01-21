@@ -544,8 +544,19 @@
     "date": "2026-01-10 22:49:00 +0800",
     "url": "/ruh/RUH046.html",
     "prev_url": "/ruh/RUH045.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH047.html",
     "prev_title": "Chapter 45: You're the Child, Being So Wimpy",
+    "next_title": "Chapter 47: The Sword Demon Dan Jeonghak"
+  },
+  {
+    "title": "Chapter 47: The Sword Demon Dan Jeonghak",
+    "chapter_id": "RUH047",
+    "chapter_num": 47,
+    "date": "2026-01-21 17:32:00 +0800",
+    "url": "/ruh/RUH047.html",
+    "prev_url": "/ruh/RUH046.html",
+    "next_url": null,
+    "prev_title": "Chapter 46: I Don't Hate You",
     "next_title": null
   }
 ]
