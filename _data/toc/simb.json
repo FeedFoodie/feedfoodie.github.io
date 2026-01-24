@@ -5863,8 +5863,19 @@
     "date": "2026-01-24 12:14:00 +0800",
     "url": "/simb/SIMB490.html",
     "prev_url": "/simb/SIMB489.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB491.html",
     "prev_title": "Chapter 489: Just Like You",
+    "next_title": "Chapter 491: A Better Way (2)"
+  },
+  {
+    "title": "Chapter 491: A Better Way (2)",
+    "chapter_id": "SIMB491",
+    "chapter_num": 491,
+    "date": "2026-01-24 21:07:00 +0800",
+    "url": "/simb/SIMB491.html",
+    "prev_url": "/simb/SIMB490.html",
+    "next_url": null,
+    "prev_title": "Chapter 490: A Better Way (1)",
     "next_title": null
   }
 ]

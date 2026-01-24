@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 24 Jan 2026 12:14:49 +0800</pubDate>
-        <lastBuildDate>Sat, 24 Jan 2026 12:14:49 +0800</lastBuildDate>
+        <pubDate>Sat, 24 Jan 2026 21:08:00 +0800</pubDate>
+        <lastBuildDate>Sat, 24 Jan 2026 21:08:00 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 491: A Better Way (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB491.html</description>
+            <pubDate>Sat, 24 Jan 2026 21:07:00 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB491.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB491.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>SIMB Chapter 490: A Better Way (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -46,15 +55,6 @@ layout: null
             <link>https://northbladetl.com/pd/PD000.html</link>
             <guid isPermaLink="true">https://northbladetl.com/pd/PD000.html</guid>
             <category>pd</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 488: What&apos;s the Problem?</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB488.html</description>
-            <pubDate>Sun, 18 Jan 2026 11:29:00 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB488.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB488.html</guid>
-            <category>simb</category>
         </item>
         <item>
             <title>ABSW V7C1: Acupoint Metamorphosis</title>
