@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Absolute Warrior Chapter Updates</description>
         <link>https://northbladetl.com/absw/</link>
         <atom:link href="https://northbladetl.com/feed.absw.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 17 Jan 2026 19:54:20 +0800</pubDate>
-        <lastBuildDate>Sat, 17 Jan 2026 19:54:20 +0800</lastBuildDate>
+        <pubDate>Fri, 30 Jan 2026 17:53:29 +0800</pubDate>
+        <lastBuildDate>Fri, 30 Jan 2026 17:53:29 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V7C2: The North Sea Ice Palace</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW62.html</description>
+            <pubDate>Fri, 30 Jan 2026 17:52:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW62.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW62.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>ABSW V7C1: Acupoint Metamorphosis</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Tue, 11 Nov 2025 18:28:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW53.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW53.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V6C2: The Game is Afoot</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW52.html</description>
-            <pubDate>Sat, 01 Nov 2025 13:22:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW52.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW52.html</guid>
             <category>absw</category>
         </item>
     </channel>
