@@ -5874,8 +5874,19 @@
     "date": "2026-01-24 21:07:00 +0800",
     "url": "/simb/SIMB491.html",
     "prev_url": "/simb/SIMB490.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB492.html",
     "prev_title": "Chapter 490: A Better Way (1)",
+    "next_title": "Chapter 492: A Better Way (3)"
+  },
+  {
+    "title": "Chapter 492: A Better Way (3)",
+    "chapter_id": "SIMB492",
+    "chapter_num": 492,
+    "date": "2026-01-30 19:00:00 +0800",
+    "url": "/simb/SIMB492.html",
+    "prev_url": "/simb/SIMB491.html",
+    "next_url": null,
+    "prev_title": "Chapter 491: A Better Way (2)",
     "next_title": null
   }
 ]
