@@ -555,8 +555,19 @@
     "date": "2026-01-21 17:32:00 +0800",
     "url": "/ruh/RUH047.html",
     "prev_url": "/ruh/RUH046.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH048.html",
     "prev_title": "Chapter 46: I Don't Hate You",
+    "next_title": "Chapter 48: Getting Involved is Out of Question"
+  },
+  {
+    "title": "Chapter 48: Getting Involved is Out of Question",
+    "chapter_id": "RUH048",
+    "chapter_num": 48,
+    "date": "2026-01-30 10:03:00 +0800",
+    "url": "/ruh/RUH048.html",
+    "prev_url": "/ruh/RUH047.html",
+    "next_url": null,
+    "prev_title": "Chapter 47: The Sword Demon Dan Jeonghak",
     "next_title": null
   }
 ]
