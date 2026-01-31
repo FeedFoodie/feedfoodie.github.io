@@ -5896,8 +5896,19 @@
     "date": "2026-01-31 09:55:00 +0800",
     "url": "/simb/SIMB493.html",
     "prev_url": "/simb/SIMB492.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB494.html",
     "prev_title": "Chapter 492: A Better Way (3)",
+    "next_title": "Chapter 494: You'll Know When You Get There"
+  },
+  {
+    "title": "Chapter 494: You'll Know When You Get There",
+    "chapter_id": "SIMB494",
+    "chapter_num": 494,
+    "date": "2026-01-31 20:06:00 +0800",
+    "url": "/simb/SIMB494.html",
+    "prev_url": "/simb/SIMB493.html",
+    "next_url": null,
+    "prev_title": "Chapter 493: Why Are You Running Off Without Me?",
     "next_title": null
   }
 ]
