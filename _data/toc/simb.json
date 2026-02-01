@@ -5918,8 +5918,19 @@
     "date": "2026-02-01 10:42:00 +0800",
     "url": "/simb/SIMB495.html",
     "prev_url": "/simb/SIMB494.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB496.html",
     "prev_title": "Chapter 494: You'll Know When You Get There",
+    "next_title": "Chapter 496: Why?"
+  },
+  {
+    "title": "Chapter 496: Why?",
+    "chapter_id": "SIMB496",
+    "chapter_num": 496,
+    "date": "2026-02-01 21:55:00 +0800",
+    "url": "/simb/SIMB496.html",
+    "prev_url": "/simb/SIMB495.html",
+    "next_url": null,
+    "prev_title": "Chapter 495: I Wish You Luck in Battle",
     "next_title": null
   }
 ]
