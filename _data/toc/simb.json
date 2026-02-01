@@ -5907,8 +5907,19 @@
     "date": "2026-01-31 20:06:00 +0800",
     "url": "/simb/SIMB494.html",
     "prev_url": "/simb/SIMB493.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB495.html",
     "prev_title": "Chapter 493: Why Are You Running Off Without Me?",
+    "next_title": "Chapter 495: I Wish You Luck in Battle"
+  },
+  {
+    "title": "Chapter 495: I Wish You Luck in Battle",
+    "chapter_id": "SIMB495",
+    "chapter_num": 495,
+    "date": "2026-02-01 10:42:00 +0800",
+    "url": "/simb/SIMB495.html",
+    "prev_url": "/simb/SIMB494.html",
+    "next_url": null,
+    "prev_title": "Chapter 494: You'll Know When You Get There",
     "next_title": null
   }
 ]
