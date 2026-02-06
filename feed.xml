@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 06 Feb 2026 23:12:52 +0800</pubDate>
-        <lastBuildDate>Fri, 06 Feb 2026 23:12:52 +0800</lastBuildDate>
+        <pubDate>Fri, 06 Feb 2026 23:15:58 +0800</pubDate>
+        <lastBuildDate>Fri, 06 Feb 2026 23:15:58 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V7C3: The Case of the Missing Young Master</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW63.html</description>
+            <pubDate>Fri, 06 Feb 2026 23:14:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW63.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW63.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>SIMB Chapter 497: State Your Name</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/lnb/LNB212.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB212.html</guid>
             <category>lnb</category>
-        </item>
-        <item>
-            <title>LCS Chapter 20: Yaksha&apos;s Journey (5)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Chronicles of the Demon Faction — Lee Cheonsang Chapter Update - https://northbladetl.com/lcs/LCS020.html</description>
-            <pubDate>Sun, 11 Jan 2026 11:22:00 +0800</pubDate>
-            <link>https://northbladetl.com/lcs/LCS020.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lcs/LCS020.html</guid>
-            <category>lcs</category>
         </item>
     </channel>
 </rss>

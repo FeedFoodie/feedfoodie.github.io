@@ -746,8 +746,19 @@
     "date": "2026-01-30 17:52:00 +0800",
     "url": "/absw/ABSW62.html",
     "prev_url": "/absw/ABSW61.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW63.html",
     "prev_title": "V7C1: Acupoint Metamorphosis",
+    "next_title": "V7C3: The Case of the Missing Young Master"
+  },
+  {
+    "title": "V7C3: The Case of the Missing Young Master",
+    "chapter_id": "ABSW63",
+    "chapter_num": 63,
+    "date": "2026-02-06 23:14:00 +0800",
+    "url": "/absw/ABSW63.html",
+    "prev_url": "/absw/ABSW62.html",
+    "next_url": null,
+    "prev_title": "V7C2: The North Sea Ice Palace",
     "next_title": null
   }
 ]
