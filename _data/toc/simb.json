@@ -5929,8 +5929,19 @@
     "date": "2026-02-01 21:55:00 +0800",
     "url": "/simb/SIMB496.html",
     "prev_url": "/simb/SIMB495.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB497.html",
     "prev_title": "Chapter 495: I Wish You Luck in Battle",
+    "next_title": "Chapter 497: State Your Name"
+  },
+  {
+    "title": "Chapter 497: State Your Name",
+    "chapter_id": "SIMB497",
+    "chapter_num": 497,
+    "date": "2026-02-06 23:09:00 +0800",
+    "url": "/simb/SIMB497.html",
+    "prev_url": "/simb/SIMB496.html",
+    "next_url": null,
+    "prev_title": "Chapter 496: Why?",
     "next_title": null
   }
 ]
