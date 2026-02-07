@@ -5951,8 +5951,19 @@
     "date": "2026-02-07 10:29:00 +0800",
     "url": "/simb/SIMB498.html",
     "prev_url": "/simb/SIMB497.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB499.html",
     "prev_title": "Chapter 497: State Your Name",
+    "next_title": "Chapter 499: What Is He Hiding?"
+  },
+  {
+    "title": "Chapter 499: What Is He Hiding?",
+    "chapter_id": "SIMB499",
+    "chapter_num": 499,
+    "date": "2026-02-07 21:20:00 +0800",
+    "url": "/simb/SIMB499.html",
+    "prev_url": "/simb/SIMB498.html",
+    "next_url": null,
+    "prev_title": "Chapter 498: The Highest Praise",
     "next_title": null
   }
 ]
