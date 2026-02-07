@@ -5940,8 +5940,19 @@
     "date": "2026-02-06 23:09:00 +0800",
     "url": "/simb/SIMB497.html",
     "prev_url": "/simb/SIMB496.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB498.html",
     "prev_title": "Chapter 496: Why?",
+    "next_title": "Chapter 498: The Highest Praise"
+  },
+  {
+    "title": "Chapter 498: The Highest Praise",
+    "chapter_id": "SIMB498",
+    "chapter_num": 498,
+    "date": "2026-02-07 10:29:00 +0800",
+    "url": "/simb/SIMB498.html",
+    "prev_url": "/simb/SIMB497.html",
+    "next_url": null,
+    "prev_title": "Chapter 497: State Your Name",
     "next_title": null
   }
 ]
