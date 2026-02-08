@@ -5962,8 +5962,19 @@
     "date": "2026-02-07 21:20:00 +0800",
     "url": "/simb/SIMB499.html",
     "prev_url": "/simb/SIMB498.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB500.html",
     "prev_title": "Chapter 498: The Highest Praise",
+    "next_title": "Chapter 500: Drawing the Line"
+  },
+  {
+    "title": "Chapter 500: Drawing the Line",
+    "chapter_id": "SIMB500",
+    "chapter_num": 500,
+    "date": "2026-02-08 12:08:00 +0800",
+    "url": "/simb/SIMB500.html",
+    "prev_url": "/simb/SIMB499.html",
+    "next_url": null,
+    "prev_title": "Chapter 499: What Is He Hiding?",
     "next_title": null
   }
 ]
