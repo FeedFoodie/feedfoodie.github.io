@@ -2550,8 +2550,19 @@
     "date": "2026-01-17 19:15:00 +0800",
     "url": "/lnb/LNB212.html",
     "prev_url": "/lnb/LNB211.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB213.html",
     "prev_title": "Chapter 211: Some Encounters Bring a Storm (2)",
+    "next_title": "Chapter 213: Even So, It's Fine (1)"
+  },
+  {
+    "title": "Chapter 213: Even So, It's Fine (1)",
+    "chapter_id": "LNB213",
+    "chapter_num": 213,
+    "date": "2026-02-08 22:24:00 +0800",
+    "url": "/lnb/LNB213.html",
+    "prev_url": "/lnb/LNB212.html",
+    "next_url": null,
+    "prev_title": "Chapter 212: Some Encounters Bring a Storm (3)",
     "next_title": null
   }
 ]

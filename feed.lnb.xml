@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
         <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 17 Jan 2026 19:16:45 +0800</pubDate>
-        <lastBuildDate>Sat, 17 Jan 2026 19:16:45 +0800</lastBuildDate>
+        <pubDate>Sun, 08 Feb 2026 22:24:59 +0800</pubDate>
+        <lastBuildDate>Sun, 08 Feb 2026 22:24:59 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 213: Even So, It&apos;s Fine (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB213.html</description>
+            <pubDate>Sun, 08 Feb 2026 22:24:00 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB213.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB213.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 212: Some Encounters Bring a Storm (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sat, 04 Oct 2025 19:55:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB204.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB204.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 203: Crisis and Ill-Fated Encounters (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB203.html</description>
-            <pubDate>Fri, 19 Sep 2025 20:08:00 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB203.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB203.html</guid>
             <category>lnb</category>
         </item>
     </channel>
