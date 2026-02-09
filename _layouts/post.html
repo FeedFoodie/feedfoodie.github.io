@@ -27,7 +27,7 @@ layout: default
 {% assign tz_minutes = tz_raw | slice: 3, 2 %}
 {% assign tz_formatted = tz_hours | append: ':' | append: tz_minutes %}
 
-<header class="post-header">
+<header id="chapter-title" class="post-header">
   <br />
   {% if series_data %}
     <h2>{{ series_data.full_name }}</h2>
