@@ -1,2 +1,14 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+@font-face {
+    font-family: 'LiterataF';
+    src: url('/assets/fonts/Literata-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; // This helps text appear faster
+}
+
+#navibar, #navibar * {
+    font-family: 'LiterataF', sans-serif !important;
+}
