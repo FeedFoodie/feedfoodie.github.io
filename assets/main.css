@@ -42,6 +42,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  font-variant-ligatures: none;
 }
 
 /* Define Literata font */
@@ -51,6 +52,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  font-variant-ligatures: none;
 }
 
 /* Font classes */
@@ -64,10 +66,12 @@ body {
 
 .font-notosans {
   font-family: 'NotoSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-variant-ligatures: none;
 }
 
 .font-literata {
   font-family: 'Literata', Georgia, 'Times New Roman', serif !important;
+  font-variant-ligatures: none;
 }
 
 .font-default {
