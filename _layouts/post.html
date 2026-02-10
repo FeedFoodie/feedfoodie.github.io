@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<link href="/css/override.css?v=1.00" rel="stylesheet" type="text/css">
+<link href="/css/override.css?v=1.01" rel="stylesheet" type="text/css">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 {% assign url_parts = page.url | split: '/' %}
 {% assign series_tag = url_parts[1] | downcase %}
@@ -107,7 +107,7 @@ layout: default
         <div class="centersel">
       {% endif %}
         <p><br /></p>
-        <p style="font-size:0.8em; margin-bottom: 15px;">Subscribe to Updates via <a href="{{ 'feed.' | append: series_tag | append: '.xml' | relative_url }}" target="_blank">RSS</a>, <a href="https://www.novelupdates.com/series/{{ series_data.nu_slug }}/" target="_blank">Novelupdates</a>, or <a href="https://discord.gg/s3AsADMkNQ" target="_blank">Discord</a>! Please leave a review on NU if you enjoyed reading!</p>
+        <p>Subscribe to Updates via <a href="{{ 'feed.' | append: series_tag | append: '.xml' | relative_url }}" target="_blank">RSS</a>, <a href="https://www.novelupdates.com/series/{{ series_data.nu_slug }}/" target="_blank">Novelupdates</a>, or <a href="https://discord.gg/s3AsADMkNQ" target="_blank">Discord</a>! Please leave a review on NU if you enjoyed reading!</p>
         {{ series_data.extra_html }}
         <p><br /></p>
       </div>

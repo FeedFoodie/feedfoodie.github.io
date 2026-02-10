@@ -25,7 +25,7 @@ absw:
 ruh:
   full_name: "Reincarnated as an Unruly Heir"
   nu_slug: "reincarnated-as-an-unruly-heir"
-  extra_html: "<p style=\"font-size:0.8em;\">Visit the Editor's <a href=\"https://www.fanelorn.net\" target=\"_blank\">Website</a> or <a href=\"https://elanorpam.tumblr.com\" target=\"_blank\">Tumblr!</a></p>"
+  extra_html: "<p>Visit the Editor's <a href=\"https://www.fanelorn.net\" target=\"_blank\">Website</a> or <a href=\"https://elanorpam.tumblr.com\" target=\"_blank\">Tumblr!</a></p>"
   needs_extra_height: true
   
 lcs:
