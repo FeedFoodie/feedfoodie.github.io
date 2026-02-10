@@ -199,9 +199,9 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-.collapsible { cursor: pointer; padding: 18px; width: 100%; border: none; outline: none; text-align:right; }
-.active, .collapsible:hover {  }
+.collapsible { cursor: pointer; padding: 12px 18px; border: none; outline: none; text-align: right; display: inline-block; float: right; margin: 10px 0; border-radius: 4px; background-color: #333; color: white; transition: background-color 0.3s ease; }
+.active, .collapsible:hover { background-color: #555; }
 .collapsible:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px; }
 .active:after { content: "\2212"; }
-.site-settings { padding: 0 18px; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
-.site-settings p { text-align:right; }
+.site-settings { padding: 0 18px; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; clear: both; /* This clears the float from the button */ }
+.site-settings p { text-align: right; }
