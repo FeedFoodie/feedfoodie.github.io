@@ -4,9 +4,9 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 /** Basic styling */
 body { font: 400 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
 
-@font-face { font-family: 'LiterataF'; src: url('/assets/fonts/Literata-Regular.woff2') format('woff2'); font-weight: 350; font-style: normal; font-display: swap; }
+/** @font-face { font-family: 'LiterataF'; src: url('/assets/fonts/Literata-Regular.woff2') format('woff2'); font-weight: 350; font-style: normal; font-display: swap; }
 
-#chapter-title, #chapter-title *, #navibar, #navibar * { font-family: 'LiterataF'; margin-bottom: 20px !important}
+#chapter-title, #chapter-title *, #navibar, #navibar * { font-family: 'LiterataF'; margin-bottom: 20px !important} */
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -198,3 +198,10 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+
+.collapsible { background-color: #777; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; outline: none; text-align:right; }
+.active, .collapsible:hover { background-color: #555; }
+.collapsible:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px; }
+.active:after { content: "\2212"; }
+.site-settings { padding: 0 18px; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
+.site-settings p { text-align:right; }

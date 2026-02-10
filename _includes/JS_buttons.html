@@ -1,3 +1,4 @@
+<!--
 <p style="text-align:right"><b>Day/Night Mode:</b> 
     <button type="button" onclick="changeWrapColor()" id="setMode">Change Mode</button>      
 </p>
@@ -6,3 +7,25 @@
     <button type="button" onclick="changeFontSize(0)" id="resetFontSize">A</button>  
     <button type="button" onclick="changeFontSize(1)" id="increaseFontSize">A+</button>
 </p>
+-->
+
+<button class="collapsible">Reader Settings</button>
+<div class="site-settings">
+<p><b>Day/Night Mode:</b> 
+    <button type="button" onclick="changeWrapColor()" id="setMode">Change Mode</button>      
+</p>
+<!--
+<form name="myForm" action="your_server_script.php" method="post" style="text-align:right">
+  <label for="cars"><b>Change Font:</b></label>
+  <select name="selection" onchange="this.form.submit()">
+    <option value="1">Literata</option>
+    <option value="2">Noto Sans</option>
+  </select>
+</form>
+-->
+<p><b>Change Font Size:</b> 
+    <button type="button" onclick="changeFontSize(-1)" id="reduceFontSize">-A</button>  
+    <button type="button" onclick="changeFontSize(0)" id="resetFontSize">A</button>  
+    <button type="button" onclick="changeFontSize(1)" id="increaseFontSize">A+</button>
+</p>
+</div>
