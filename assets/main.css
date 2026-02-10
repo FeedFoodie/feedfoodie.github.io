@@ -199,8 +199,8 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-.collapsible { background-color: #777; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; outline: none; text-align:right; }
-.active, .collapsible:hover { background-color: #555; }
+.collapsible { cursor: pointer; padding: 18px; width: 100%; border: none; outline: none; text-align:right; }
+.active, .collapsible:hover {  }
 .collapsible:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px; }
 .active:after { content: "\2212"; }
 .site-settings { padding: 0 18px; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
