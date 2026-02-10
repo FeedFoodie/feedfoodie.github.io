@@ -29,7 +29,7 @@ body {
 /* Define Selawik font */
 @font-face {
   font-family: 'Selawik';
-  src: url('/assets/fonts/SelawikF.otf') format('opentype');
+  src: url('/assets/fonts/SelawikF.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@ body {
 /* Define NotoSans font */
 @font-face {
   font-family: 'NotoSans';
-  src: url('/assets/fonts/NotoSansF.otf') format('opentype');
+  src: url('/assets/fonts/NotoSansF.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -47,7 +47,7 @@ body {
 /* Define Literata font */
 @font-face {
   font-family: 'Literata';
-  src: url('/assets/fonts/LiterataF.otf') format('opentype');
+  src: url('/assets/fonts/LiterataF.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -68,26 +68,8 @@ body {
 
 .font-literata {
   font-family: 'Literata', Georgia, 'Times New Roman', serif !important;
-  
-  /* Enable common ligatures (like fi, fl, ffi, ffl) */
-  font-variant-ligatures: common-ligatures;
-  -webkit-font-variant-ligatures: common-ligatures;
-  -moz-font-feature-settings: "liga" 1, "clig" 1;
-  -webkit-font-feature-settings: "liga" 1, "clig" 1;
-  font-feature-settings: "liga" 1, "clig" 1;
-  
-  /* If your font has discretionary ligatures, enable them too */
-  font-variant-ligatures: discretionary-ligatures;
-  -webkit-font-variant-ligatures: discretionary-ligatures;
-  -moz-font-feature-settings: "dlig" 1;
-  -webkit-font-feature-settings: "dlig" 1;
-  font-feature-settings: "dlig" 1;
-  
-  /* Enable other typographic features for better rendering */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
+
 .font-default {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
