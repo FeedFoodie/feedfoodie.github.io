@@ -47,7 +47,7 @@ body {
 /* Define Literata font */
 @font-face {
   font-family: 'Literata';
-  src: url('/assets/fonts/LiterataF.otf') format('opentype');
+  src: url('/assets/fonts/LiterataF.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
