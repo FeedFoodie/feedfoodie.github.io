@@ -34,10 +34,10 @@ function setSelectedFont(fontName) {
 
     let fontFamily = 'inherit';
     switch(fontName) {
-        case 'default': fontFamily = 'Arial, sans-serif'; break;
-        case 'SFProText': fontFamily = '"SF Pro Text", sans-serif'; break;
+        case 'default': fontFamily = 'Helvetica, sans-serif'; break;
+        case 'SFProText': fontFamily = '"SFProText", sans-serif'; break;
         case 'Selawik': fontFamily = '"Selawik", sans-serif'; break;
-        case 'NotoSans': fontFamily = '"Noto Sans", sans-serif'; break;
+        case 'NotoSans': fontFamily = '"NotoSans", sans-serif'; break;
         case 'Literata': fontFamily = '"Literata", serif'; break;
     }
 
