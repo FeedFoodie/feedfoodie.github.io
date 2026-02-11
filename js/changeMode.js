@@ -73,6 +73,13 @@ function changeWrapColor(){
     e.classList.contains("day-mode")?localStorage.setItem("colorScheme","day"):localStorage.setItem("colorScheme","night");
 }
 
+function changeFontFamily(fontName) {
+    localStorage.setItem("selectedFont", fontName);    
+    setSelectedFont(fontName);
+    const fontSelect = document.getElementById("fontSelect");
+    if (fontSelect) fontSelect.value = fontName;
+}
+
 // Helper function to apply font to specific elements (keeping for compatibility)
 function applyFont(fontName) {
     // For backward compatibility, just call setSelectedFont
