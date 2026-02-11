@@ -57,20 +57,20 @@ body {
 
 /* Font classes */
 .font-sfprotext {
-  font-family: 'SFProText', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-family: 'SFProText', sans-serif !important;
 }
 
 .font-selawik {
-  font-family: 'Selawik', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-family: 'Selawik', sans-serif !important;
 }
 
 .font-notosans {
-  font-family: 'NotoSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-family: 'NotoSans', sans-serif !important;
   font-variant-ligatures: none;
 }
 
 .font-literata {
-  font-family: 'Literata', Georgia, 'Times New Roman', serif !important;
+  font-family: 'Literata', serif !important;
   font-variant-ligatures: none;
 }
 
