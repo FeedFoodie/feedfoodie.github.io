@@ -28,21 +28,20 @@ function setMode(e){
 
 // Font family functions
 function setSelectedFont(fontName) {
-    const content = document.getElementById("content");
+    //const content = document.getElementById("navibar");
     const wrapper = document.getElementById("wrappertext");
-    const chapterTitle = document.getElementById("chapterTitle");
+    //const chapterTitle = document.getElementById("chapterTitle");
 
     let fontFamily = 'inherit';
     switch(fontName) {
-        case '': fontFamily = 'Helvetica, sans-serif'; break;
-        case 'default': fontFamily = 'Helvetica, sans-serif'; break;
+        case 'default': fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
         case 'SFProText': fontFamily = '"SFProText", sans-serif'; break;
         case 'Selawik': fontFamily = '"Selawik", sans-serif'; break;
         case 'NotoSans': fontFamily = '"NotoSans", sans-serif'; break;
         case 'Literata': fontFamily = '"Literata", serif'; break;
     }
 
-    [content, wrapper, chapterTitle].forEach(el => {
+    [wrapper].forEach(el => {
         if(el) el.style.fontFamily = fontFamily;
     });
 
@@ -95,7 +94,7 @@ function applySavedSettings() {
     }
     
     // Apply saved font
-    const savedFont = localStorage.getItem("selectedFont");
+    const savedFont = localStorage.getItem("selectedFont") || "default";
     if (savedFont) {
         setSelectedFont(savedFont);
         const fontSelect = document.getElementById("fontSelect");
