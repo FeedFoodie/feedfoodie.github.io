@@ -26,7 +26,6 @@ body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  font-variant-ligatures: none;
 }
 
 @font-face {
@@ -35,7 +34,6 @@ body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  font-variant-ligatures: none;
 }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
