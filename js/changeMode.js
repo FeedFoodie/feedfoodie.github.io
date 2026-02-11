@@ -34,6 +34,7 @@ function setSelectedFont(fontName) {
 
     let fontFamily = 'inherit';
     switch(fontName) {
+        case '': fontFamily = 'Helvetica, sans-serif'; break;
         case 'default': fontFamily = 'Helvetica, sans-serif'; break;
         case 'SFProText': fontFamily = '"SFProText", sans-serif'; break;
         case 'Selawik': fontFamily = '"Selawik", sans-serif'; break;
@@ -73,18 +74,6 @@ function changeWrapColor(){
     e.classList.contains("day-mode")?localStorage.setItem("colorScheme","day"):localStorage.setItem("colorScheme","night");
 }
 
-function changeFontFamily(fontName) {
-    // Save the selected font to localStorage
-    localStorage.setItem("selectedFont", fontName);    
-    // Apply the font to the content
-    setSelectedFont(fontName);
-    // Update the dropdown selection
-    const fontSelect = document.getElementById("fontSelect");
-    if (fontSelect) {
-        fontSelect.value = fontName;
-    }
-}
-
 // Helper function to apply font to specific elements (keeping for compatibility)
 function applyFont(fontName) {
     // For backward compatibility, just call setSelectedFont
@@ -109,7 +98,6 @@ function applySavedSettings() {
     const savedFont = localStorage.getItem("selectedFont");
     if (savedFont) {
         setSelectedFont(savedFont);
-        // Update dropdown
         const fontSelect = document.getElementById("fontSelect");
         if (fontSelect) {
             fontSelect.value = savedFont;
