@@ -51,54 +51,6 @@ body {
   font-variant-ligatures: none;
 }
 
-/* Font classes */
-.font-sfprotext {
-  font-family: 'SFProText', sans-serif !important;
-}
-
-.font-selawik {
-  font-family: 'Selawik', sans-serif !important;
-}
-
-.font-notosans {
-  font-family: 'NotoSans', sans-serif !important;
-  font-variant-ligatures: none;
-}
-
-.font-literata {
-  font-family: 'Literata', serif !important;
-  font-variant-ligatures: none;
-}
-
-.font-default {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-}
-
-#wrappertext.font-default *:not(pre):not(code),
-#content.font-default *:not(pre):not(code) {
-  font-family: inherit !important;
-}
-
-#wrappertext.font-sfprotext *:not(pre):not(code),
-#content.font-sfprotext *:not(pre):not(code) {
-  font-family: inherit !important;
-}
-
-#wrappertext.font-selawik *:not(pre):not(code),
-#content.font-selawik *:not(pre):not(code) {
-  font-family: inherit !important;
-}
-
-#wrappertext.font-notosans *:not(pre):not(code),
-#content.font-notosans *:not(pre):not(code) {
-  font-family: inherit !important;
-}
-
-#wrappertext.font-literata *:not(pre):not(code),
-#content.font-literata *:not(pre):not(code) {
-  font-family: inherit !important;
-}
-
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
 
