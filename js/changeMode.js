@@ -28,81 +28,25 @@ function setMode(e){
 
 // Font family functions
 function setSelectedFont(fontName) {
-    // Apply font to the main content container
     const content = document.getElementById("content");
     const wrapper = document.getElementById("wrappertext");
-    
-    if (content || wrapper) {
-        // Remove all font classes
-        const fontClasses = ['font-default', 'font-sfprotext', 'font-selawik', 'font-notosans', 'font-literata'];
-        
-        // Apply to content if it exists
-        if (content) {
-            content.classList.remove(...fontClasses);
-            switch(fontName) {
-                case 'default':
-                    content.classList.add('font-default');
-                    break;
-                case 'SFProText':
-                    content.classList.add('font-sfprotext');
-                    break;
-                case 'Selawik':
-                    content.classList.add('font-selawik');
-                    break;
-                case 'NotoSans':
-                    content.classList.add('font-notosans');
-                    break;
-                case 'Literata':
-                    content.classList.add('font-literata');
-                    break;
-            }
-        }
-        
-        // Apply to wrapper if it exists (for broader coverage)
-        if (wrapper) {
-            wrapper.classList.remove(...fontClasses);
-            switch(fontName) {
-                case 'default':
-                    wrapper.classList.add('font-default');
-                    break;
-                case 'SFProText':
-                    wrapper.classList.add('font-sfprotext');
-                    break;
-                case 'Selawik':
-                    wrapper.classList.add('font-selawik');
-                    break;
-                case 'NotoSans':
-                    wrapper.classList.add('font-notosans');
-                    break;
-                case 'Literata':
-                    wrapper.classList.add('font-literata');
-                    break;
-            }
-        }
-        
-        // Also apply to any chapter titles
-        const chapterTitle = document.getElementById("chapterTitle");
-        if (chapterTitle) {
-            chapterTitle.classList.remove(...fontClasses);
-            switch(fontName) {
-                case 'default':
-                    chapterTitle.classList.add('font-default');
-                    break;
-                case 'SFProText':
-                    chapterTitle.classList.add('font-sfprotext');
-                    break;
-                case 'Selawik':
-                    chapterTitle.classList.add('font-selawik');
-                    break;
-                case 'NotoSans':
-                    chapterTitle.classList.add('font-notosans');
-                    break;
-                case 'Literata':
-                    chapterTitle.classList.add('font-literata');
-                    break;
-            }
-        }
+    const chapterTitle = document.getElementById("chapterTitle");
+
+    let fontFamily = 'inherit';
+    switch(fontName) {
+        case 'default': fontFamily = 'Arial, sans-serif'; break;
+        case 'SFProText': fontFamily = '"SF Pro Text", sans-serif'; break;
+        case 'Selawik': fontFamily = '"Selawik", sans-serif'; break;
+        case 'NotoSans': fontFamily = '"Noto Sans", sans-serif'; break;
+        case 'Literata': fontFamily = '"Literata", serif'; break;
     }
+
+    [content, wrapper, chapterTitle].forEach(el => {
+        if(el) el.style.fontFamily = fontFamily;
+    });
+
+    // Save font selection
+    localStorage.setItem("selectedFont", fontName);
 }
 
 // Change functions
