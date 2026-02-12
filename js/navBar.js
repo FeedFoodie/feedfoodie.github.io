@@ -1,1 +1,1 @@
-function navbarDropdown(){document.getElementById("novelDropdown").classList.toggle("show")}window.onclick=function(o){if(!o.target.matches(".dropbtn")){var n=document.getElementById("novelDropdown");n.classList.contains("show")&&n.classList.remove("show")}};
+function navbarDropdown(id){document.getElementById(id).classList.toggle("show");}window.onclick=function(o){if(!o.target.matches(".dropbtn")){var n=document.getElementById("novelDropdown");n.classList.contains("show")&&n.classList.remove("show")}};
