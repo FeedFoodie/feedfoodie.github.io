@@ -1,7 +1,11 @@
 function navbarDropdown(id) {
+  // On desktop, do nothing – hover handles it
+  if (window.innerWidth >= 601) {
+    return;
+  }
+  // Mobile: toggle dropdown
   var dropdown = document.getElementById(id);
   dropdown.classList.toggle("show");
-  // Optional: close others
   document.querySelectorAll('.dropdown-content.show').forEach(function(el) {
     if (el.id !== id) el.classList.remove('show');
   });
