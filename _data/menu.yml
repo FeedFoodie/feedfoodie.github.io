@@ -3,9 +3,19 @@
     - name: "About"
       url: "/about.html"
       weight: 2
-    - name: "Discord"
-      url: "https://discord.gg/s3AsADMkNQ"
+    - name: "Notifications"
+      url: "#"
       weight: 3
+      subsubfolderitems:
+        - name: "Discord"
+          url: "https://discord.gg/s3AsADMkNQ"
+          weight: 2
+        - name: "Telegram"
+          url: "https://t.me/+BlyKhQ3IYu9jNGI1"
+          weight: 2
+        - name: "NTFY"
+          url: "https://ntfy.sh/NorthBladeTL"
+          weight: 2
     - name: "Novels"
       url: "#"
       weight: 3
