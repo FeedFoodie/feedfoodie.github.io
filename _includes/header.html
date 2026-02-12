@@ -3,6 +3,11 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <!-- Standalone site title – visible on mobile left of hamburger -->
+    <a href="../" class="site-title" style="font-weight: bold; color: #444444;">
+      NorthBladeTL
+    </a>
+
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
@@ -15,8 +20,8 @@
 
       <div class="trigger">
         <ul class="menu">
-          <!-- SITE TITLE – YOUR EXACT STYLES, UNTOUCHED -->
-          <li class="site-title-item">
+          <!-- DESKTOP SITE TITLE – hidden on mobile -->
+          <li class="site-title-item desktop-only">
             <a href="../" class="site-title" style="font-weight: bold; color: #444444;">
               NorthBladeTL
             </a>
