@@ -3,7 +3,6 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" style="font-weight: bold; color: #444444;" href="../">NorthBladeTL</a>
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
@@ -15,31 +14,37 @@
       </label>
 
       <div class="trigger">
-        {% for item in site.data.menu %}
-          <ul class="menu">
+        <ul class="menu">
+          <!-- SITE TITLE – YOUR EXACT STYLES, UNTOUCHED -->
+          <li class="site-title-item">
+            <a href="../" class="site-title" style="font-weight: bold; color: #444444;">
+              NorthBladeTL
+            </a>
+          </li>
+
+          {% for item in site.data.menu %}
             {% for entry in item.subfolderitems %}
               <li>
                 {% if entry.subsubfolderitems[0] %}
-                  <!-- DROPDOWN (with unique ID) -->
+                  <!-- DROPDOWN -->
                   {% capture dropdown_id %}dropdown-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}{% endcapture %}
                   <div class="dropdown">
-                    <button class="dropbtn header-droplink"
+                    <button class="dropbtn {% if entry.name == 'Notifications' %}btn-notifications{% elsif entry.name == 'Novels' %}btn-novels{% endif %}"
                             onclick="navbarDropdown('{{ dropdown_id }}')">
                       {{ entry.name }}
                     </button>
                     <ul class="dropdown-content" id="{{ dropdown_id }}">
                       {% for subentry in entry.subsubfolderitems %}
                         <li>
-                          <a class="header-dropcontent" href="{{ subentry.url }}" target="_blank">
-                            {{ subentry.name }}
-                          </a>
+                          <a href="{{ subentry.url }}" target="_blank">{{ subentry.name }}</a>
                         </li>
                       {% endfor %}
                     </ul>
                   </div>
                 {% else %}
+                  <!-- SIMPLE LINK (About) -->
                   <div class="dropdown">
-                    <button class="dropbtn header-link"
+                    <button class="dropbtn btn-about"
                             onclick="window.open('{{ entry.url }}', '_blank')" type="button">
                       {{ entry.name }}
                     </button>
@@ -47,8 +52,8 @@
                 {% endif %}
               </li>
             {% endfor %}
-          </ul>
-        {% endfor %}
+          {% endfor %}
+        </ul>
       </div>
     </nav>
   </div>
