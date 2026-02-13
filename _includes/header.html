@@ -48,9 +48,7 @@
                 {% else %}
                   <!-- SIMPLE LINK (About) -->
                   <div class="dropdown">
-                    <button class="dropbtn btn-about" type="button">
-                      {{ entry.name }}
-                    </button>
+                      <a href="{{ entry.url }}" class="dropbtn btn-about" target="_blank">{{ entry.name }}</a>
                   </div>
                 {% endif %}
               </li>
