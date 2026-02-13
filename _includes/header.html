@@ -35,7 +35,7 @@
                   {% capture dropdown_id %}dropdown-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}{% endcapture %}
                   <div class="dropdown">
                     <button class="dropbtn {% if entry.name == 'Notifications' %}btn-notifications{% elsif entry.name == 'Novels' %}btn-novels{% endif %}"
-                            onclick="navbarDropdown('{{ dropdown_id }}')">
+                            onclick="navbarDropdown('{{ dropdown_id }}', event)">
                       {{ entry.name }}
                     </button>
                     <ul class="dropdown-content" id="{{ dropdown_id }}">
