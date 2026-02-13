@@ -1,28 +1,25 @@
-
-// Single source of truth for mobile dropdowns
+// Mobile dropdowns toggle on mousedown
 document.addEventListener('DOMContentLoaded', function() {
-  // Desktop hover already works via CSS – do nothing on desktop
+  // Desktop: do nothing (hover works via CSS)
   if (window.innerWidth >= 601) return;
 
   const trigger = document.querySelector('.trigger');
   if (!trigger) return;
 
-  // Use event delegation on the menu container
-  trigger.addEventListener('click', function(event) {
+  // Use mousedown, not click, to avoid moving‑target problem
+  trigger.addEventListener('mousedown', function(event) {
     const button = event.target.closest('.dropbtn');
-    if (!button) return; // not a dropdown button
+    if (!button) return;
 
-    // Stop the click from reaching any other listener
+    // Stop all other handlers and prevent click from firing
     event.stopPropagation();
-    event.stopImmediatePropagation(); // kills ALL other handlers on this event
+    event.stopImmediatePropagation();
+    event.preventDefault(); // crucial – suppresses the subsequent click event
 
-    // Prevent any default action (just in case)
-    event.preventDefault();
-
-    // Find the dropdown-content via the button's next sibling (ul)
+    // Toggle the dropdown
     const dropdown = button.nextElementSibling;
     if (dropdown && dropdown.classList.contains('dropdown-content')) {
       dropdown.classList.toggle('show');
     }
-  }, true); // Use capturing phase to fire before anything else
+  }, true); // capturing phase – fires before anything else
 });
