@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Absolute Warrior Chapter Updates</description>
         <link>https://northbladetl.com/absw/</link>
         <atom:link href="https://northbladetl.com/feed.absw.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 06 Feb 2026 23:15:58 +0800</pubDate>
-        <lastBuildDate>Fri, 06 Feb 2026 23:15:58 +0800</lastBuildDate>
+        <pubDate>Fri, 13 Feb 2026 22:52:07 +0800</pubDate>
+        <lastBuildDate>Fri, 13 Feb 2026 22:52:07 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V7C4: The First Young Lord&apos;s Counterattack</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW64.html</description>
+            <pubDate>Fri, 13 Feb 2026 22:51:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW64.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW64.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>ABSW V7C3: The Case of the Missing Young Master</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 21 Nov 2025 17:36:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW55.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW55.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V6C4: The Evil Blade</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW54.html</description>
-            <pubDate>Fri, 14 Nov 2025 17:20:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW54.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW54.html</guid>
             <category>absw</category>
         </item>
     </channel>

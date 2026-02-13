@@ -757,8 +757,19 @@
     "date": "2026-02-06 23:14:00 +0800",
     "url": "/absw/ABSW63.html",
     "prev_url": "/absw/ABSW62.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW64.html",
     "prev_title": "V7C2: The North Sea Ice Palace",
+    "next_title": "V7C4: The First Young Lord's Counterattack"
+  },
+  {
+    "title": "V7C4: The First Young Lord's Counterattack",
+    "chapter_id": "ABSW64",
+    "chapter_num": 64,
+    "date": "2026-02-13 22:51:00 +0800",
+    "url": "/absw/ABSW64.html",
+    "prev_url": "/absw/ABSW63.html",
+    "next_url": null,
+    "prev_title": "V7C3: The Case of the Missing Young Master",
     "next_title": null
   }
 ]

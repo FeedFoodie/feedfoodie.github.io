@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 13 Feb 2026 18:04:14 +0800</pubDate>
-        <lastBuildDate>Fri, 13 Feb 2026 18:04:14 +0800</lastBuildDate>
+        <pubDate>Fri, 13 Feb 2026 22:52:07 +0800</pubDate>
+        <lastBuildDate>Fri, 13 Feb 2026 22:52:07 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V7C4: The First Young Lord&apos;s Counterattack</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW64.html</description>
+            <pubDate>Fri, 13 Feb 2026 22:51:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW64.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW64.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>SIMB Chapter 501: I Don&apos;t Care</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/pd/PD000.html</link>
             <guid isPermaLink="true">https://northbladetl.com/pd/PD000.html</guid>
             <category>pd</category>
-        </item>
-        <item>
-            <title>ABSW V7C1: Acupoint Metamorphosis</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW61.html</description>
-            <pubDate>Sat, 17 Jan 2026 19:53:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW61.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW61.html</guid>
-            <category>absw</category>
         </item>
     </channel>
 </rss>
