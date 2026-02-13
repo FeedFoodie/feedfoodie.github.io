@@ -1,25 +1,36 @@
-// Mobile dropdowns toggle on mousedown
-document.addEventListener('DOMContentLoaded', function() {
-  // Desktop: do nothing (hover works via CSS)
+(function() {
+  // Only run on mobile
   if (window.innerWidth >= 601) return;
 
+  let lastClickTime = 0;
+  const COOLDOWN_MS = 200; // 0.2 seconds
+
+  // Use event delegation on the trigger container
   const trigger = document.querySelector('.trigger');
   if (!trigger) return;
 
-  // Use mousedown, not click, to avoid moving‑target problem
-  trigger.addEventListener('mousedown', function(event) {
+  trigger.addEventListener('click', function(event) {
     const button = event.target.closest('.dropbtn');
     if (!button) return;
 
-    // Stop all other handlers and prevent click from firing
+    // Cooldown check
+    const now = Date.now();
+    if (now - lastClickTime < COOLDOWN_MS) {
+      event.stopPropagation();
+      event.preventDefault();
+      return; // Ignore this click
+    }
+    lastClickTime = now;
+
+    // Stop other handlers
     event.stopPropagation();
     event.stopImmediatePropagation();
-    event.preventDefault(); // crucial – suppresses the subsequent click event
+    event.preventDefault();
 
     // Toggle the dropdown
     const dropdown = button.nextElementSibling;
     if (dropdown && dropdown.classList.contains('dropdown-content')) {
       dropdown.classList.toggle('show');
     }
-  }, true); // capturing phase – fires before anything else
-});
+  }, true); // capturing phase
+})();
