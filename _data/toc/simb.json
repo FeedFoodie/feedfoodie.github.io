@@ -5973,8 +5973,19 @@
     "date": "2026-02-08 12:08:00 +0800",
     "url": "/simb/SIMB500.html",
     "prev_url": "/simb/SIMB499.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB501.html",
     "prev_title": "Chapter 499: What Is He Hiding?",
+    "next_title": "Chapter 501: I Don't Care"
+  },
+  {
+    "title": "Chapter 501: I Don't Care",
+    "chapter_id": "SIMB501",
+    "chapter_num": 501,
+    "date": "2026-02-13 18:02:00 +0800",
+    "url": "/simb/SIMB501.html",
+    "prev_url": "/simb/SIMB500.html",
+    "next_url": null,
+    "prev_title": "Chapter 500: Drawing the Line",
     "next_title": null
   }
 ]
