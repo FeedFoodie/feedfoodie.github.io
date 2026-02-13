@@ -34,8 +34,7 @@
                   <!-- DROPDOWN -->
                   {% capture dropdown_id %}dropdown-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}{% endcapture %}
                   <div class="dropdown">
-                    <button class="dropbtn {% if entry.name == 'Notifications' %}btn-notifications{% elsif entry.name == 'Novels' %}btn-novels{% endif %}"
-                            onclick="navbarDropdown('{{ dropdown_id }}', event)">
+                    <button class="dropbtn {% if entry.name == 'Notifications' %}btn-notifications{% elsif entry.name == 'Novels' %}btn-novels{% endif %}">
                       {{ entry.name }}
                     </button>
                     <ul class="dropdown-content" id="{{ dropdown_id }}">
@@ -49,8 +48,7 @@
                 {% else %}
                   <!-- SIMPLE LINK (About) -->
                   <div class="dropdown">
-                    <button class="dropbtn btn-about"
-                            onclick="window.open('{{ entry.url }}', '_blank')" type="button">
+                    <button class="dropbtn btn-about" type="button">
                       {{ entry.name }}
                     </button>
                   </div>
