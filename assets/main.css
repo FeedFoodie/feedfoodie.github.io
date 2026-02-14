@@ -6,7 +6,7 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 
 @font-face {
   font-family: 'Helvetica';
-  src: url('/assets/fonts/HelveticaF.otf?v=1.01') format('otf');
+  src: url('/assets/fonts/HelveticaF.otf?v=1.01') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
