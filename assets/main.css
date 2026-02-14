@@ -14,7 +14,7 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 
 @font-face {
   font-family: 'SFProText';
-  src: url('/assets/fonts/SFProTextF.woff2') format('woff2');
+  src: url('/assets/fonts/SFProTextF.otf?v=1.00') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 
 @font-face {
   font-family: 'Selawik';
-  src: url('/assets/fonts/SelawikF.woff2') format('woff2');
+  src: url('/assets/fonts/SelawikF.otf?v=1.00') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 
 @font-face {
   font-family: 'NotoSans';
-  src: url('/assets/fonts/NotoSansF.woff2') format('woff2');
+  src: url('/assets/fonts/NotoSansF.otf?v=1.00') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 
 @font-face {
   font-family: 'Literata';
-  src: url('/assets/fonts/LiterataF.woff2') format('woff2');
+  src: url('/assets/fonts/LiterataF.otf?v=1.00') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
