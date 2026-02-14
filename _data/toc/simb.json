@@ -5984,8 +5984,19 @@
     "date": "2026-02-13 18:02:00 +0800",
     "url": "/simb/SIMB501.html",
     "prev_url": "/simb/SIMB500.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB502.html",
     "prev_title": "Chapter 500: Drawing the Line",
+    "next_title": "Chapter 502: I'm Telling You, I Didn't Do Anything!"
+  },
+  {
+    "title": "Chapter 502: I'm Telling You, I Didn't Do Anything!",
+    "chapter_id": "SIMB502",
+    "chapter_num": 502,
+    "date": "2026-02-14 18:03:00 +0800",
+    "url": "/simb/SIMB502.html",
+    "prev_url": "/simb/SIMB501.html",
+    "next_url": null,
+    "prev_title": "Chapter 501: I Don't Care",
     "next_title": null
   }
 ]
