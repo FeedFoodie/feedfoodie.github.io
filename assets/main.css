@@ -2,7 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; display: flex; min-height: 100vh; flex-direction: column; }
 
 @font-face {
   font-family: 'Helvetica';
@@ -14,10 +14,12 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 
 @font-face {
   font-family: 'SFProText';
-  src: url('/assets/fonts/SFProTextF.otf?v=1.01') format('opentype');
-  /**font-weight: normal;
+  src: url('/assets/fonts/SFProTextF.ttf?v=1.00') format('truetype'),
+       url('/assets/fonts/SFProTextF.otf?v=1.02') format('opentype'),
+       url('/assets/fonts/SFProTextF.woff?v=1.00') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;**/
+  font-display: swap;
 }
 
 @font-face {
@@ -30,10 +32,12 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 
 @font-face {
   font-family: 'NotoSans';
-  src: url('/assets/fonts/NotoSansF.otf?v=1.01') format('opentype');
-  /**font-weight: normal;
+  src: url('/assets/fonts/NotoSansF.ttf?v=1.00') format('truetype'),
+       url('/assets/fonts/NotoSansF.otf?v=1.02') format('opentype'),
+       url('/assets/fonts/NotoSansF.woff?v=1.00') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;**/
+  font-display: swap;
 }
 
 @font-face {
