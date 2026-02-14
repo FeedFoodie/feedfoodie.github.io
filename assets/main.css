@@ -2,7 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; word-break: keep-all; -webkit-text-size-adjust: 100%; display: flex; min-height: 100vh; flex-direction: column; }
+body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; word-break: keep-all; line-break: strict; -webkit-text-size-adjust: 100%; display: flex; min-height: 100vh; flex-direction: column; }
 
 @font-face {
   font-family: 'Helvetica';
