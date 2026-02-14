@@ -15,9 +15,9 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 @font-face {
   font-family: 'SFProText';
   src: url('/assets/fonts/SFProTextF.otf?v=1.01') format('opentype');
-  font-weight: normal;
+  /**font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: swap;**/
 }
 
 @font-face {
@@ -31,9 +31,9 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 @font-face {
   font-family: 'NotoSans';
   src: url('/assets/fonts/NotoSansF.otf?v=1.01') format('opentype');
-  font-weight: normal;
+  /**font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: swap;**/
 }
 
 @font-face {
