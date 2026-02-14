@@ -34,11 +34,11 @@ function setSelectedFont(fontName) {
 
     let fontFamily = 'inherit';
     switch(fontName) {
-        case 'default': fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
-        case 'SFProText': fontFamily = '"SFProText", sans-serif'; break;
-        case 'Selawik': fontFamily = '"Selawik", sans-serif'; break;
-        case 'NotoSans': fontFamily = '"NotoSans", sans-serif'; break;
-        case 'Literata': fontFamily = '"Literata", serif'; break;
+        case 'Helvetica': fontFamily = '"Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'NotoSans': fontFamily = '"NotoSans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'Literata': fontFamily = '"Literata", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'SFProText': fontFamily = '"SFProText", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'Selawik': fontFamily = '"Selawik", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
     }
 
     [wrapper].forEach(el => {
@@ -101,7 +101,7 @@ function applySavedSettings() {
     }
     
     // Apply saved font
-    const savedFont = localStorage.getItem("selectedFont") || "default";
+    const savedFont = localStorage.getItem("selectedFont") || "Helvetica";
     if (savedFont) {
         setSelectedFont(savedFont);
         const fontSelect = document.getElementById("fontSelect");
