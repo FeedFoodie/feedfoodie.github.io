@@ -6006,8 +6006,19 @@
     "date": "2026-02-15 11:24:00 +0800",
     "url": "/simb/SIMB503.html",
     "prev_url": "/simb/SIMB502.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB504.html",
     "prev_title": "Chapter 502: I'm Telling You, I Didn't Do Anything!",
+    "next_title": "Chapter 504: What About Now?"
+  },
+  {
+    "title": "Chapter 504: What About Now?",
+    "chapter_id": "SIMB504",
+    "chapter_num": 504,
+    "date": "2026-02-15 23:10:00 +0800",
+    "url": "/simb/SIMB504.html",
+    "prev_url": "/simb/SIMB503.html",
+    "next_url": null,
+    "prev_title": "Chapter 503: I Knew This Would Happen",
     "next_title": null
   }
 ]
