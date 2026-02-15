@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 14 Feb 2026 18:04:17 +0800</pubDate>
-        <lastBuildDate>Sat, 14 Feb 2026 18:04:17 +0800</lastBuildDate>
+        <pubDate>Sun, 15 Feb 2026 11:26:31 +0800</pubDate>
+        <lastBuildDate>Sun, 15 Feb 2026 11:26:31 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 503: I Knew This Would Happen</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB503.html</description>
+            <pubDate>Sun, 15 Feb 2026 11:24:00 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB503.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB503.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>SIMB Chapter 502: I&apos;m Telling You, I Didn&apos;t Do Anything!</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -46,15 +55,6 @@ layout: null
             <link>https://northbladetl.com/lnb/LNB213.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB213.html</guid>
             <category>lnb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 500: Drawing the Line</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB500.html</description>
-            <pubDate>Sun, 08 Feb 2026 12:08:00 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB500.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB500.html</guid>
-            <category>simb</category>
         </item>
         <item>
             <title>ABSW V7C3: The Case of the Missing Young Master</title>
