@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
         <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 16 Feb 2026 19:18:56 +0800</pubDate>
-        <lastBuildDate>Mon, 16 Feb 2026 19:18:56 +0800</lastBuildDate>
+        <pubDate>Mon, 16 Feb 2026 22:06:42 +0800</pubDate>
+        <lastBuildDate>Mon, 16 Feb 2026 22:06:42 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 215: Even So, It&apos;s Fine (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB215.html</description>
+            <pubDate>Mon, 16 Feb 2026 22:05:00 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB215.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB215.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 214: Even So, It&apos;s Fine (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Tue, 21 Oct 2025 18:33:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB206.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB206.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 205: When A Boy Becomes A Man (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB205.html</description>
-            <pubDate>Sun, 19 Oct 2025 14:11:00 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB205.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB205.html</guid>
             <category>lnb</category>
         </item>
     </channel>
