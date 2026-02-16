@@ -6017,8 +6017,19 @@
     "date": "2026-02-15 23:10:00 +0800",
     "url": "/simb/SIMB504.html",
     "prev_url": "/simb/SIMB503.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB505.html",
     "prev_title": "Chapter 503: I Knew This Would Happen",
+    "next_title": "Chapter 505: I Know Him!"
+  },
+  {
+    "title": "Chapter 505: I Know Him!",
+    "chapter_id": "SIMB505",
+    "chapter_num": 505,
+    "date": "2026-02-16 14:16:00 +0800",
+    "url": "/simb/SIMB505.html",
+    "prev_url": "/simb/SIMB504.html",
+    "next_url": null,
+    "prev_title": "Chapter 504: What About Now?",
     "next_title": null
   }
 ]
