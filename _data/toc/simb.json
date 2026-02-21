@@ -6039,8 +6039,19 @@
     "date": "2026-02-17 18:14:00 +0800",
     "url": "/simb/SIMB506.html",
     "prev_url": "/simb/SIMB505.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB507.html",
     "prev_title": "Chapter 505: I Know Him!",
+    "next_title": "Chapter 507: We Just Have To Hold On Until Then"
+  },
+  {
+    "title": "Chapter 507: We Just Have To Hold On Until Then",
+    "chapter_id": "SIMB507",
+    "chapter_num": 507,
+    "date": "2026-02-21 10:18:00 +0800",
+    "url": "/simb/SIMB507.html",
+    "prev_url": "/simb/SIMB506.html",
+    "next_url": null,
+    "prev_title": "Chapter 506: By Any Chance...",
     "next_title": null
   }
 ]
