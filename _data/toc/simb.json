@@ -6050,8 +6050,19 @@
     "date": "2026-02-21 10:18:00 +0800",
     "url": "/simb/SIMB507.html",
     "prev_url": "/simb/SIMB506.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB508.html",
     "prev_title": "Chapter 506: By Any Chance...",
+    "next_title": "Chapter 508: Do Me A Favor"
+  },
+  {
+    "title": "Chapter 508: Do Me A Favor",
+    "chapter_id": "SIMB508",
+    "chapter_num": 508,
+    "date": "2026-02-21 17:52:00 +0800",
+    "url": "/simb/SIMB508.html",
+    "prev_url": "/simb/SIMB507.html",
+    "next_url": null,
+    "prev_title": "Chapter 507: We Just Have To Hold On Until Then",
     "next_title": null
   }
 ]
