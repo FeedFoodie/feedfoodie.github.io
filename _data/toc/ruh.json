@@ -566,8 +566,19 @@
     "date": "2026-01-30 10:03:00 +0800",
     "url": "/ruh/RUH048.html",
     "prev_url": "/ruh/RUH047.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH049.html",
     "prev_title": "Chapter 47: The Sword Demon Dan Jeonghak",
+    "next_title": "Chapter 49: Dan Yarang"
+  },
+  {
+    "title": "Chapter 49: Dan Yarang",
+    "chapter_id": "RUH049",
+    "chapter_num": 49,
+    "date": "2026-02-21 23:19:00 +0800",
+    "url": "/ruh/RUH049.html",
+    "prev_url": "/ruh/RUH048.html",
+    "next_url": null,
+    "prev_title": "Chapter 48: Getting Involved is Out of Question",
     "next_title": null
   }
 ]
