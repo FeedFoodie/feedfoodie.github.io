@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Peerless Dad Chapter Updates</description>
         <link>https://northbladetl.com/pd/</link>
         <atom:link href="https://northbladetl.com/feed.pd.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 20 Jan 2026 19:33:48 +0800</pubDate>
-        <lastBuildDate>Tue, 20 Jan 2026 19:33:48 +0800</lastBuildDate>
+        <pubDate>Sun, 22 Feb 2026 11:25:56 +0800</pubDate>
+        <lastBuildDate>Sun, 22 Feb 2026 11:25:56 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>PD Chapter 1: Gajang</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Peerless Dad Chapter Update - https://northbladetl.com/pd/PD001.html</description>
+            <pubDate>Sun, 22 Feb 2026 11:22:00 +0800</pubDate>
+            <link>https://northbladetl.com/pd/PD001.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/pd/PD001.html</guid>
+            <category>pd</category>
+        </item>
         <item>
             <title>PD Prologue</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>

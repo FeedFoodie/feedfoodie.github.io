@@ -6,8 +6,19 @@
     "date": "2026-01-20 18:58:00 +0800",
     "url": "/pd/PD000.html",
     "prev_url": null,
-    "next_url": null,
+    "next_url": "/pd/PD001.html",
     "prev_title": null,
+    "next_title": "Chapter 1: Gajang"
+  },
+  {
+    "title": "Chapter 1: Gajang",
+    "chapter_id": "PD001",
+    "chapter_num": 1,
+    "date": "2026-02-22 11:22:00 +0800",
+    "url": "/pd/PD001.html",
+    "prev_url": "/pd/PD000.html",
+    "next_url": null,
+    "prev_title": "Prologue",
     "next_title": null
   }
 ]

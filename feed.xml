@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 21 Feb 2026 23:22:12 +0800</pubDate>
-        <lastBuildDate>Sat, 21 Feb 2026 23:22:12 +0800</lastBuildDate>
+        <pubDate>Sun, 22 Feb 2026 11:25:56 +0800</pubDate>
+        <lastBuildDate>Sun, 22 Feb 2026 11:25:56 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>PD Chapter 1: Gajang</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Peerless Dad Chapter Update - https://northbladetl.com/pd/PD001.html</description>
+            <pubDate>Sun, 22 Feb 2026 11:22:00 +0800</pubDate>
+            <link>https://northbladetl.com/pd/PD001.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/pd/PD001.html</guid>
+            <category>pd</category>
+        </item>
         <item>
             <title>RUH Chapter 49: Dan Yarang</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 06 Feb 2026 23:14:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW63.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW63.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V7C2: The North Sea Ice Palace</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW62.html</description>
-            <pubDate>Fri, 30 Jan 2026 17:52:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW62.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW62.html</guid>
             <category>absw</category>
         </item>
     </channel>
