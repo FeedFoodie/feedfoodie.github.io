@@ -6061,8 +6061,19 @@
     "date": "2026-02-21 17:52:00 +0800",
     "url": "/simb/SIMB508.html",
     "prev_url": "/simb/SIMB507.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB509.html",
     "prev_title": "Chapter 507: We Just Have To Hold On Until Then",
+    "next_title": "Chapter 509: Whatever Your Choice May Be"
+  },
+  {
+    "title": "Chapter 509: Whatever Your Choice May Be",
+    "chapter_id": "SIMB509",
+    "chapter_num": 509,
+    "date": "2026-02-27 23:06:00 +0800",
+    "url": "/simb/SIMB509.html",
+    "prev_url": "/simb/SIMB508.html",
+    "next_url": null,
+    "prev_title": "Chapter 508: Do Me A Favor",
     "next_title": null
   }
 ]
