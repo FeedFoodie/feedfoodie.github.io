@@ -6094,8 +6094,19 @@
     "date": "2026-03-01 17:42:00 +0800",
     "url": "/simb/SIMB511.html",
     "prev_url": "/simb/SIMB510.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB512.html",
     "prev_title": "Chapter 510: You Need Not Worry",
+    "next_title": "Chapter 512: I Wonder"
+  },
+  {
+    "title": "Chapter 512: I Wonder",
+    "chapter_id": "SIMB512",
+    "chapter_num": 512,
+    "date": "2026-03-01 23:19:00 +0800",
+    "url": "/simb/SIMB512.html",
+    "prev_url": "/simb/SIMB511.html",
+    "next_url": null,
+    "prev_title": "Chapter 511: Mistakes and Coincidences",
     "next_title": null
   }
 ]
