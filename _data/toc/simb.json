@@ -6083,8 +6083,19 @@
     "date": "2026-02-28 09:11:00 +0800",
     "url": "/simb/SIMB510.html",
     "prev_url": "/simb/SIMB509.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB511.html",
     "prev_title": "Chapter 509: Whatever Your Choice May Be",
+    "next_title": "Chapter 511: Mistakes and Coincidences"
+  },
+  {
+    "title": "Chapter 511: Mistakes and Coincidences",
+    "chapter_id": "SIMB511",
+    "chapter_num": 511,
+    "date": "2026-03-01 17:42:00 +0800",
+    "url": "/simb/SIMB511.html",
+    "prev_url": "/simb/SIMB510.html",
+    "next_url": null,
+    "prev_title": "Chapter 510: You Need Not Worry",
     "next_title": null
   }
 ]
