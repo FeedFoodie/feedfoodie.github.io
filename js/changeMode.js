@@ -35,9 +35,9 @@ function setSelectedFont(fontName) {
 
     switch(fontName) {
         case 'Helvetica': fontFamily = '"Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
-        //case 'NotoSans': fontFamily = '"NotoSans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'NotoSans': fontFamily = '"NotoSans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
         case 'Literata': fontFamily = '"Literata", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
-        //case 'SFProText': fontFamily = '"SFProText", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'SFProText': fontFamily = '"SFProText", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
         case 'Selawik': fontFamily = '"Selawik", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
         default: fontName = 'Helvetica'; break;
     }
