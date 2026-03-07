@@ -6116,8 +6116,19 @@
     "date": "2026-03-06 17:07:00 +0800",
     "url": "/simb/SIMB513.html",
     "prev_url": "/simb/SIMB512.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB514.html",
     "prev_title": "Chapter 512: I Wonder",
+    "next_title": "Chapter 514: What Are You Going to Bet?"
+  },
+  {
+    "title": "Chapter 514: What Are You Going to Bet?",
+    "chapter_id": "SIMB514",
+    "chapter_num": 514,
+    "date": "2026-03-07 12:43:00 +0800",
+    "url": "/simb/SIMB514.html",
+    "prev_url": "/simb/SIMB513.html",
+    "next_url": null,
+    "prev_title": "Chapter 513: What Are You So Happy About?",
     "next_title": null
   }
 ]
