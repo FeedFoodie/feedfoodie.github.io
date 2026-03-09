@@ -6149,8 +6149,19 @@
     "date": "2026-03-08 10:28:00 +0800",
     "url": "/simb/SIMB516.html",
     "prev_url": "/simb/SIMB515.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB517.html",
     "prev_title": "Chapter 515: President Vs. President",
+    "next_title": "Chapter 517: There's Something You Should Know"
+  },
+  {
+    "title": "Chapter 517: There's Something You Should Know",
+    "chapter_id": "SIMB517",
+    "chapter_num": 517,
+    "date": "2026-03-09 12:02:00 +0800",
+    "url": "/simb/SIMB517.html",
+    "prev_url": "/simb/SIMB516.html",
+    "next_url": null,
+    "prev_title": "Chapter 516: The White Ice Flash",
     "next_title": null
   }
 ]
