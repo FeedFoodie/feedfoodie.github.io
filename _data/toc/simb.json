@@ -6160,8 +6160,19 @@
     "date": "2026-03-09 12:02:00 +0800",
     "url": "/simb/SIMB517.html",
     "prev_url": "/simb/SIMB516.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB518.html",
     "prev_title": "Chapter 516: The White Ice Flash",
+    "next_title": "Chapter 518: You've Changed a Lot"
+  },
+  {
+    "title": "Chapter 518: You've Changed a Lot",
+    "chapter_id": "SIMB518",
+    "chapter_num": 518,
+    "date": "2026-03-13 20:55:00 +0800",
+    "url": "/simb/SIMB518.html",
+    "prev_url": "/simb/SIMB517.html",
+    "next_url": null,
+    "prev_title": "Chapter 517: There's Something You Should Know",
     "next_title": null
   }
 ]
