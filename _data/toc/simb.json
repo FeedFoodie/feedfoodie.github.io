@@ -6171,8 +6171,19 @@
     "date": "2026-03-13 20:55:00 +0800",
     "url": "/simb/SIMB518.html",
     "prev_url": "/simb/SIMB517.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB519.html",
     "prev_title": "Chapter 517: There's Something You Should Know",
+    "next_title": "Chapter 519: I Knew"
+  },
+  {
+    "title": "Chapter 519: I Knew",
+    "chapter_id": "SIMB519",
+    "chapter_num": 519,
+    "date": "2026-03-14 10:38:00 +0800",
+    "url": "/simb/SIMB519.html",
+    "prev_url": "/simb/SIMB518.html",
+    "next_url": null,
+    "prev_title": "Chapter 518: You've Changed a Lot",
     "next_title": null
   }
 ]
