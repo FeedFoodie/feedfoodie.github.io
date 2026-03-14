@@ -8,16 +8,16 @@ layout: null
         <description>NorthBladeTL - Absolute Warrior Chapter Updates</description>
         <link>https://northbladetl.com/absw/</link>
         <atom:link href="https://northbladetl.com/feed.absw.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 14 Mar 2026 11:47:57 +0800</pubDate>
-        <lastBuildDate>Sat, 14 Mar 2026 11:47:57 +0800</lastBuildDate>
+        <pubDate>Sat, 14 Mar 2026 14:45:38 +0800</pubDate>
+        <lastBuildDate>Sat, 14 Mar 2026 14:45:38 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
         <item>
-            <title>ABSW V7C6: The Secret of the Stone Chamber</title>
+            <title>ABSW V7C8: Devastating News</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW66.html</description>
-            <pubDate>Sat, 14 Mar 2026 11:47:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW66.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW66.html</guid>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW68.html</description>
+            <pubDate>Sat, 14 Mar 2026 14:45:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW68.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW68.html</guid>
             <category>absw</category>
         </item>
         <item>
@@ -27,6 +27,15 @@ layout: null
             <pubDate>Fri, 13 Mar 2026 17:54:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW67.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW67.html</guid>
+            <category>absw</category>
+        </item>
+        <item>
+            <title>ABSW V7C6: The Secret of the Stone Chamber</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW66.html</description>
+            <pubDate>Sat, 14 Mar 2026 11:47:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW66.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW66.html</guid>
             <category>absw</category>
         </item>
         <item>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 02 Jan 2026 17:05:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW59.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW59.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V6C8: Taming the Tiger</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW58.html</description>
-            <pubDate>Wed, 31 Dec 2025 17:10:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW58.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW58.html</guid>
             <category>absw</category>
         </item>
     </channel>

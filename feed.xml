@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 14 Mar 2026 11:47:57 +0800</pubDate>
-        <lastBuildDate>Sat, 14 Mar 2026 11:47:57 +0800</lastBuildDate>
+        <pubDate>Sat, 14 Mar 2026 14:45:38 +0800</pubDate>
+        <lastBuildDate>Sat, 14 Mar 2026 14:45:38 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V7C8: Devastating News</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW68.html</description>
+            <pubDate>Sat, 14 Mar 2026 14:45:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW68.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW68.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>ABSW V7C6: The Secret of the Stone Chamber</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -55,15 +64,6 @@ layout: null
             <link>https://northbladetl.com/simb/SIMB517.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB517.html</guid>
             <category>simb</category>
-        </item>
-        <item>
-            <title>ABSW V7C5: Black Smoke Sand</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW65.html</description>
-            <pubDate>Fri, 27 Feb 2026 16:57:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW65.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW65.html</guid>
-            <category>absw</category>
         </item>
         <item>
             <title>PD Chapter 1: Gajang</title>

@@ -801,8 +801,19 @@
     "date": "2026-03-13 17:54:00 +0800",
     "url": "/absw/ABSW67.html",
     "prev_url": "/absw/ABSW66.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW68.html",
     "prev_title": "V7C6: The Secret of the Stone Chamber",
+    "next_title": "V7C8: Devastating News"
+  },
+  {
+    "title": "V7C8: Devastating News",
+    "chapter_id": "ABSW68",
+    "chapter_num": 68,
+    "date": "2026-03-14 14:45:00 +0800",
+    "url": "/absw/ABSW68.html",
+    "prev_url": "/absw/ABSW67.html",
+    "next_url": null,
+    "prev_title": "V7C7: A Close Call",
     "next_title": null
   }
 ]
