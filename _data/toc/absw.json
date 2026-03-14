@@ -790,8 +790,19 @@
     "date": "2026-03-13 17:54:00 +0800",
     "url": "/absw/ABSW67.html",
     "prev_url": "/absw/ABSW65.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW66.html",
     "prev_title": "V7C5: Black Smoke Sand",
+    "next_title": "V7C6: The Secret of the Stone Chamber"
+  },
+  {
+    "title": "V7C6: The Secret of the Stone Chamber",
+    "chapter_id": "ABSW66",
+    "chapter_num": 66,
+    "date": "2026-03-14 11:47:00 +0800",
+    "url": "/absw/ABSW66.html",
+    "prev_url": "/absw/ABSW67.html",
+    "next_url": null,
+    "prev_title": "V7C7: A Close Call",
     "next_title": null
   }
 ]
