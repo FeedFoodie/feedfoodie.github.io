@@ -812,8 +812,19 @@
     "date": "2026-03-14 14:45:00 +0800",
     "url": "/absw/ABSW68.html",
     "prev_url": "/absw/ABSW67.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW69.html",
     "prev_title": "V7C7: A Close Call",
+    "next_title": "V7C9: Resurrection"
+  },
+  {
+    "title": "V7C9: Resurrection",
+    "chapter_id": "ABSW69",
+    "chapter_num": 69,
+    "date": "2026-03-15 23:11:00 +0800",
+    "url": "/absw/ABSW69.html",
+    "prev_url": "/absw/ABSW68.html",
+    "next_url": null,
+    "prev_title": "V7C8: Devastating News",
     "next_title": null
   }
 ]
