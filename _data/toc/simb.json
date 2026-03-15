@@ -6182,8 +6182,19 @@
     "date": "2026-03-14 10:38:00 +0800",
     "url": "/simb/SIMB519.html",
     "prev_url": "/simb/SIMB518.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB520.html",
     "prev_title": "Chapter 518: You've Changed a Lot",
+    "next_title": "Chapter 520: Cornered"
+  },
+  {
+    "title": "Chapter 520: Cornered",
+    "chapter_id": "SIMB520",
+    "chapter_num": 520,
+    "date": "2026-03-15 11:53:00 +0800",
+    "url": "/simb/SIMB520.html",
+    "prev_url": "/simb/SIMB519.html",
+    "next_url": null,
+    "prev_title": "Chapter 519: I Knew",
     "next_title": null
   }
 ]
