@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Reincarnated as an Unruly Heir Chapter Updates</description>
         <link>https://northbladetl.com/ruh/</link>
         <atom:link href="https://northbladetl.com/feed.ruh.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 21 Feb 2026 23:22:12 +0800</pubDate>
-        <lastBuildDate>Sat, 21 Feb 2026 23:22:12 +0800</lastBuildDate>
+        <pubDate>Tue, 17 Mar 2026 22:14:37 +0800</pubDate>
+        <lastBuildDate>Tue, 17 Mar 2026 22:14:37 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>RUH Chapter 50: The Bronze Demons</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH050.html</description>
+            <pubDate>Tue, 17 Mar 2026 22:14:00 +0800</pubDate>
+            <link>https://northbladetl.com/ruh/RUH050.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH050.html</guid>
+            <category>ruh</category>
+        </item>
         <item>
             <title>RUH Chapter 49: Dan Yarang</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Wed, 19 Nov 2025 18:15:00 +0800</pubDate>
             <link>https://northbladetl.com/ruh/RUH041.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH041.html</guid>
-            <category>ruh</category>
-        </item>
-        <item>
-            <title>RUH Chapter 40: You Really Gotta Hand It to the Crazy Ones</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH040.html</description>
-            <pubDate>Sat, 25 Oct 2025 22:40:00 +0800</pubDate>
-            <link>https://northbladetl.com/ruh/RUH040.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH040.html</guid>
             <category>ruh</category>
         </item>
     </channel>

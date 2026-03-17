@@ -577,8 +577,19 @@
     "date": "2026-02-21 23:19:00 +0800",
     "url": "/ruh/RUH049.html",
     "prev_url": "/ruh/RUH048.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH050.html",
     "prev_title": "Chapter 48: Getting Involved is Out of Question",
+    "next_title": "Chapter 50: The Bronze Demons"
+  },
+  {
+    "title": "Chapter 50: The Bronze Demons",
+    "chapter_id": "RUH050",
+    "chapter_num": 50,
+    "date": "2026-03-17 22:14:00 +0800",
+    "url": "/ruh/RUH050.html",
+    "prev_url": "/ruh/RUH049.html",
+    "next_url": null,
+    "prev_title": "Chapter 49: Dan Yarang",
     "next_title": null
   }
 ]
