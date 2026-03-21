@@ -6193,8 +6193,19 @@
     "date": "2026-03-15 11:53:00 +0800",
     "url": "/simb/SIMB520.html",
     "prev_url": "/simb/SIMB519.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB521.html",
     "prev_title": "Chapter 519: I Knew",
+    "next_title": "Chapter 521: The Crimson Meteor"
+  },
+  {
+    "title": "Chapter 521: The Crimson Meteor",
+    "chapter_id": "SIMB521",
+    "chapter_num": 521,
+    "date": "2026-03-21 12:47:00 +0800",
+    "url": "/simb/SIMB521.html",
+    "prev_url": "/simb/SIMB520.html",
+    "next_url": null,
+    "prev_title": "Chapter 520: Cornered",
     "next_title": null
   }
 ]
