@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 21 Mar 2026 21:46:36 +0800</pubDate>
-        <lastBuildDate>Sat, 21 Mar 2026 21:46:36 +0800</lastBuildDate>
+        <pubDate>Tue, 24 Mar 2026 17:30:09 +0800</pubDate>
+        <lastBuildDate>Tue, 24 Mar 2026 17:30:09 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>RUH Chapter 51: Guyang Ryung</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH051.html</description>
+            <pubDate>Tue, 24 Mar 2026 17:29:00 +0800</pubDate>
+            <link>https://northbladetl.com/ruh/RUH051.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH051.html</guid>
+            <category>ruh</category>
+        </item>
         <item>
             <title>SIMB Chapter 522: Now This Is More Like the Ak Clan I Know and Love</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/ruh/RUH049.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH049.html</guid>
             <category>ruh</category>
-        </item>
-        <item>
-            <title>LNB Chapter 215: Even So, It&apos;s Fine (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB215.html</description>
-            <pubDate>Mon, 16 Feb 2026 22:05:00 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB215.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB215.html</guid>
-            <category>lnb</category>
         </item>
     </channel>
 </rss>

@@ -588,8 +588,19 @@
     "date": "2026-03-17 22:14:00 +0800",
     "url": "/ruh/RUH050.html",
     "prev_url": "/ruh/RUH049.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH051.html",
     "prev_title": "Chapter 49: Dan Yarang",
+    "next_title": "Chapter 51: Guyang Ryung"
+  },
+  {
+    "title": "Chapter 51: Guyang Ryung",
+    "chapter_id": "RUH051",
+    "chapter_num": 51,
+    "date": "2026-03-24 17:29:00 +0800",
+    "url": "/ruh/RUH051.html",
+    "prev_url": "/ruh/RUH050.html",
+    "next_url": null,
+    "prev_title": "Chapter 50: The Bronze Demons",
     "next_title": null
   }
 ]
