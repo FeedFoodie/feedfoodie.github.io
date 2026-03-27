@@ -823,8 +823,19 @@
     "date": "2026-03-15 23:11:00 +0800",
     "url": "/absw/ABSW69.html",
     "prev_url": "/absw/ABSW68.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW70.html",
     "prev_title": "V7C8: Devastating News",
+    "next_title": "V7C10: A Single-Minded Pursuit"
+  },
+  {
+    "title": "V7C10: A Single-Minded Pursuit",
+    "chapter_id": "ABSW70",
+    "chapter_num": 70,
+    "date": "2026-03-27 23:27:00 +0800",
+    "url": "/absw/ABSW70.html",
+    "prev_url": "/absw/ABSW69.html",
+    "next_url": null,
+    "prev_title": "V7C9: Resurrection",
     "next_title": null
   }
 ]
