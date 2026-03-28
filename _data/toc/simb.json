@@ -6215,8 +6215,19 @@
     "date": "2026-03-21 21:46:00 +0800",
     "url": "/simb/SIMB522.html",
     "prev_url": "/simb/SIMB521.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB523.html",
     "prev_title": "Chapter 521: The Crimson Meteor",
+    "next_title": "Chapter 523: Walking Into A Death Trap"
+  },
+  {
+    "title": "Chapter 523: Walking Into A Death Trap",
+    "chapter_id": "SIMB523",
+    "chapter_num": 523,
+    "date": "2026-03-28 12:46:00 +0800",
+    "url": "/simb/SIMB523.html",
+    "prev_url": "/simb/SIMB522.html",
+    "next_url": null,
+    "prev_title": "Chapter 522: Now This Is More Like the Ak Clan I Know and Love",
     "next_title": null
   }
 ]

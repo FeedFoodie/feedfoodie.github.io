@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 27 Mar 2026 23:28:17 +0800</pubDate>
-        <lastBuildDate>Fri, 27 Mar 2026 23:28:17 +0800</lastBuildDate>
+        <pubDate>Sat, 28 Mar 2026 12:47:59 +0800</pubDate>
+        <lastBuildDate>Sat, 28 Mar 2026 12:47:59 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 523: Walking Into A Death Trap</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB523.html</description>
+            <pubDate>Sat, 28 Mar 2026 12:46:00 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB523.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB523.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>ABSW V7C10: A Single-Minded Pursuit</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -64,15 +73,6 @@ layout: null
             <link>https://northbladetl.com/absw/ABSW69.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW69.html</guid>
             <category>absw</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 520: Cornered</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB520.html</description>
-            <pubDate>Sun, 15 Mar 2026 11:53:00 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB520.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB520.html</guid>
-            <category>simb</category>
         </item>
         <item>
             <title>ABSW V7C8: Devastating News</title>

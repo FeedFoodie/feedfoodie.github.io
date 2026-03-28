@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Star Instructor Master Baek Chapter Updates</description>
         <link>https://northbladetl.com/simb/</link>
         <atom:link href="https://northbladetl.com/feed.simb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 21 Mar 2026 21:46:36 +0800</pubDate>
-        <lastBuildDate>Sat, 21 Mar 2026 21:46:36 +0800</lastBuildDate>
+        <pubDate>Sat, 28 Mar 2026 12:47:59 +0800</pubDate>
+        <lastBuildDate>Sat, 28 Mar 2026 12:47:59 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 523: Walking Into A Death Trap</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB523.html</description>
+            <pubDate>Sat, 28 Mar 2026 12:46:00 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB523.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB523.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>SIMB Chapter 522: Now This Is More Like the Ak Clan I Know and Love</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sat, 07 Mar 2026 12:43:00 +0800</pubDate>
             <link>https://northbladetl.com/simb/SIMB514.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB514.html</guid>
-            <category>simb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 513: What Are You So Happy About?</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB513.html</description>
-            <pubDate>Fri, 06 Mar 2026 17:07:00 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB513.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB513.html</guid>
             <category>simb</category>
         </item>
     </channel>
