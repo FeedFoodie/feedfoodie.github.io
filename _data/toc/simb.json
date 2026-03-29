@@ -6237,8 +6237,19 @@
     "date": "2026-03-29 10:29:00 +0800",
     "url": "/simb/SIMB524.html",
     "prev_url": "/simb/SIMB523.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB525.html",
     "prev_title": "Chapter 523: Walking Into A Death Trap",
+    "next_title": "Chapter 525: You Guys Haven't Changed at All"
+  },
+  {
+    "title": "Chapter 525: You Guys Haven't Changed at All",
+    "chapter_id": "SIMB525",
+    "chapter_num": 525,
+    "date": "2026-03-29 21:11:00 +0800",
+    "url": "/simb/SIMB525.html",
+    "prev_url": "/simb/SIMB524.html",
+    "next_url": null,
+    "prev_title": "Chapter 524: So Familiar That It's Sickening",
     "next_title": null
   }
 ]
