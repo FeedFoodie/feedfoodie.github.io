@@ -1,5 +1,12 @@
-{% assign url_parts = page.url | split: '/' %}
-{% assign series_tag = url_parts[1] | downcase %}
+{% assign series_tag = nil %}
+
+{% if page.tag and page.tag.size > 0 %}
+  {% assign series_tag = page.tag[0] | downcase %}
+{% else %}
+  {% assign url_parts = page.url | split: '/' %}
+  {% assign series_tag = url_parts[1] | downcase %}
+{% endif %}
+
 {% assign toc_data = site.data.toc[series_tag] %}
 
 <ul class="toc">
