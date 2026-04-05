@@ -6281,8 +6281,19 @@
     "date": "2026-04-05 16:27:00 +0800",
     "url": "/simb/SIMB528.html",
     "prev_url": "/simb/SIMB527.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB529.html",
     "prev_title": "Chapter 527: Not Bad",
+    "next_title": "Chapter 529: Students, Assemble!"
+  },
+  {
+    "title": "Chapter 529: Students, Assemble!",
+    "chapter_id": "SIMB529",
+    "chapter_num": 529,
+    "date": "2026-04-05 22:55:00 +0800",
+    "url": "/simb/SIMB529.html",
+    "prev_url": "/simb/SIMB528.html",
+    "next_url": null,
+    "prev_title": "Chapter 528: Who Do I Seem Like?",
     "next_title": null
   }
 ]
