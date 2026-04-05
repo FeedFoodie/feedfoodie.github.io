@@ -6270,8 +6270,19 @@
     "date": "2026-04-04 19:30:00 +0800",
     "url": "/simb/SIMB527.html",
     "prev_url": "/simb/SIMB526.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB528.html",
     "prev_title": "Chapter 526: The Samsara Hell",
+    "next_title": "Chapter 528: Who Do I Seem Like?"
+  },
+  {
+    "title": "Chapter 528: Who Do I Seem Like?",
+    "chapter_id": "SIMB528",
+    "chapter_num": 528,
+    "date": "2026-04-05 16:27:00 +0800",
+    "url": "/simb/SIMB528.html",
+    "prev_url": "/simb/SIMB527.html",
+    "next_url": null,
+    "prev_title": "Chapter 527: Not Bad",
     "next_title": null
   }
 ]
