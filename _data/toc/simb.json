@@ -6303,8 +6303,19 @@
     "date": "2026-04-10 22:47:00 +0800",
     "url": "/simb/SIMB530.html",
     "prev_url": "/simb/SIMB529.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB531.html",
     "prev_title": "Chapter 529: Students, Assemble!",
+    "next_title": "Chapter 531: It's Only Natural to be Scared"
+  },
+  {
+    "title": "Chapter 531: It's Only Natural to be Scared",
+    "chapter_id": "SIMB531",
+    "chapter_num": 531,
+    "date": "2026-04-11 12:47:00 +0800",
+    "url": "/simb/SIMB531.html",
+    "prev_url": "/simb/SIMB530.html",
+    "next_url": null,
+    "prev_title": "Chapter 530: To a Higher Realm",
     "next_title": null
   }
 ]
