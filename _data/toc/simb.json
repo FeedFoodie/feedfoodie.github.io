@@ -6314,8 +6314,19 @@
     "date": "2026-04-11 12:47:00 +0800",
     "url": "/simb/SIMB531.html",
     "prev_url": "/simb/SIMB530.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB532.html",
     "prev_title": "Chapter 530: To a Higher Realm",
+    "next_title": "Chapter 532: What Rotten Luck"
+  },
+  {
+    "title": "Chapter 532: What Rotten Luck",
+    "chapter_id": "SIMB532",
+    "chapter_num": 532,
+    "date": "2026-04-11 20:14:00 +0800",
+    "url": "/simb/SIMB532.html",
+    "prev_url": "/simb/SIMB531.html",
+    "next_url": null,
+    "prev_title": "Chapter 531: It's Only Natural to be Scared",
     "next_title": null
   }
 ]
