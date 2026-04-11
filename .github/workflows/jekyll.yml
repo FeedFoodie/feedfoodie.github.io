@@ -1,6 +1,9 @@
 # Workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll Site
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   workflow_dispatch:
     inputs:
