@@ -599,8 +599,19 @@
     "date": "2026-03-24 17:29:00 +0800",
     "url": "/ruh/RUH051.html",
     "prev_url": "/ruh/RUH050.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH052.html",
     "prev_title": "Chapter 50: The Bronze Demons",
+    "next_title": "Chapter 52: The Martial Sword Corps' Assassination Squad"
+  },
+  {
+    "title": "Chapter 52: The Martial Sword Corps' Assassination Squad",
+    "chapter_id": "RUH052",
+    "chapter_num": 52,
+    "date": "2026-04-11 21:09:00 +0800",
+    "url": "/ruh/RUH052.html",
+    "prev_url": "/ruh/RUH051.html",
+    "next_url": null,
+    "prev_title": "Chapter 51: Guyang Ryung",
     "next_title": null
   }
 ]
