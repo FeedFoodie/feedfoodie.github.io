@@ -845,8 +845,19 @@
     "date": "2026-04-04 17:05:00 +0800",
     "url": "/absw/ABSW71.html",
     "prev_url": "/absw/ABSW70.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW72.html",
     "prev_title": "V7C10: A Single-Minded Pursuit",
+    "next_title": "V8C2: The Successor of the New Righteous Association"
+  },
+  {
+    "title": "V8C2: The Successor of the New Righteous Association",
+    "chapter_id": "ABSW72",
+    "chapter_num": 72,
+    "date": "2026-04-17 21:21:00 +0800",
+    "url": "/absw/ABSW72.html",
+    "prev_url": "/absw/ABSW71.html",
+    "next_url": null,
+    "prev_title": "V8C1: The Final Conspiracy",
     "next_title": null
   }
 ]
