@@ -6325,8 +6325,19 @@
     "date": "2026-04-11 20:14:00 +0800",
     "url": "/simb/SIMB532.html",
     "prev_url": "/simb/SIMB531.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB533.html",
     "prev_title": "Chapter 531: It's Only Natural to be Scared",
+    "next_title": "Chapter 533: Why Are You Here?"
+  },
+  {
+    "title": "Chapter 533: Why Are You Here?",
+    "chapter_id": "SIMB533",
+    "chapter_num": 533,
+    "date": "2026-04-17 20:38:00 +0800",
+    "url": "/simb/SIMB533.html",
+    "prev_url": "/simb/SIMB532.html",
+    "next_url": null,
+    "prev_title": "Chapter 532: What Rotten Luck",
     "next_title": null
   }
 ]
