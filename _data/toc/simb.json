@@ -6347,8 +6347,19 @@
     "date": "2026-04-18 12:29:00 +0800",
     "url": "/simb/SIMB534.html",
     "prev_url": "/simb/SIMB533.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB535.html",
     "prev_title": "Chapter 533: Why Are You Here?",
+    "next_title": "Chapter 535: You're Late"
+  },
+  {
+    "title": "Chapter 535: You're Late",
+    "chapter_id": "SIMB535",
+    "chapter_num": 535,
+    "date": "2026-04-18 22:26:00 +0800",
+    "url": "/simb/SIMB535.html",
+    "prev_url": "/simb/SIMB534.html",
+    "next_url": null,
+    "prev_title": "Chapter 534: No More Hesitation",
     "next_title": null
   }
 ]
