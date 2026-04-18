@@ -610,8 +610,19 @@
     "date": "2026-04-11 21:09:00 +0800",
     "url": "/ruh/RUH052.html",
     "prev_url": "/ruh/RUH051.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH053.html",
     "prev_title": "Chapter 51: Guyang Ryung",
+    "next_title": "Chapter 53: Masterstroke"
+  },
+  {
+    "title": "Chapter 53: Masterstroke",
+    "chapter_id": "RUH053",
+    "chapter_num": 53,
+    "date": "2026-04-18 12:15:00 +0800",
+    "url": "/ruh/RUH053.html",
+    "prev_url": "/ruh/RUH052.html",
+    "next_url": null,
+    "prev_title": "Chapter 52: The Martial Sword Corps' Assassination Squad",
     "next_title": null
   }
 ]
