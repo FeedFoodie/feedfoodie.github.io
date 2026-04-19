@@ -6358,8 +6358,19 @@
     "date": "2026-04-18 22:26:00 +0800",
     "url": "/simb/SIMB535.html",
     "prev_url": "/simb/SIMB534.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB536.html",
     "prev_title": "Chapter 534: No More Hesitation",
+    "next_title": "Chapter 536: Based on My Experience"
+  },
+  {
+    "title": "Chapter 536: Based on My Experience",
+    "chapter_id": "SIMB536",
+    "chapter_num": 536,
+    "date": "2026-04-19 22:12:00 +0800",
+    "url": "/simb/SIMB536.html",
+    "prev_url": "/simb/SIMB535.html",
+    "next_url": null,
+    "prev_title": "Chapter 535: You're Late",
     "next_title": null
   }
 ]

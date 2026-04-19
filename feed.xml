@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 18 Apr 2026 22:26:46 +0800</pubDate>
-        <lastBuildDate>Sat, 18 Apr 2026 22:26:46 +0800</lastBuildDate>
+        <pubDate>Sun, 19 Apr 2026 22:12:33 +0800</pubDate>
+        <lastBuildDate>Sun, 19 Apr 2026 22:12:33 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 536: Based on My Experience</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB536.html</description>
+            <pubDate>Sun, 19 Apr 2026 22:12:00 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB536.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB536.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>SIMB Chapter 535: You&apos;re Late</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -46,15 +55,6 @@ layout: null
             <link>https://northbladetl.com/absw/ABSW72.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW72.html</guid>
             <category>absw</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 533: Why Are You Here?</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB533.html</description>
-            <pubDate>Fri, 17 Apr 2026 20:38:00 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB533.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB533.html</guid>
-            <category>simb</category>
         </item>
         <item>
             <title>RUH Chapter 52: The Martial Sword Corps&apos; Assassination Squad</title>
