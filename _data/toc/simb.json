@@ -6369,8 +6369,19 @@
     "date": "2026-04-19 22:12:00 +0800",
     "url": "/simb/SIMB536.html",
     "prev_url": "/simb/SIMB535.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB537.html",
     "prev_title": "Chapter 535: You're Late",
+    "next_title": "Chapter 537: There's One More"
+  },
+  {
+    "title": "Chapter 537: There's One More",
+    "chapter_id": "SIMB537",
+    "chapter_num": 537,
+    "date": "2026-04-25 00:11:00 +0800",
+    "url": "/simb/SIMB537.html",
+    "prev_url": "/simb/SIMB536.html",
+    "next_url": null,
+    "prev_title": "Chapter 536: Based on My Experience",
     "next_title": null
   }
 ]
