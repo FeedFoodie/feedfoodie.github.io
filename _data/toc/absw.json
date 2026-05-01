@@ -856,8 +856,19 @@
     "date": "2026-04-17 21:21:00 +0800",
     "url": "/absw/ABSW72.html",
     "prev_url": "/absw/ABSW71.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW73.html",
     "prev_title": "V8C1: The Final Conspiracy",
+    "next_title": "V8C3: Provocation"
+  },
+  {
+    "title": "V8C3: Provocation",
+    "chapter_id": "ABSW73",
+    "chapter_num": 73,
+    "date": "2026-05-01 18:04:00 +0800",
+    "url": "/absw/ABSW73.html",
+    "prev_url": "/absw/ABSW72.html",
+    "next_url": null,
+    "prev_title": "V8C2: The Successor of the New Righteous Association",
     "next_title": null
   }
 ]
