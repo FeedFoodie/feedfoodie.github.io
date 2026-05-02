@@ -6413,8 +6413,19 @@
     "date": "2026-05-02 11:22:00 +0800",
     "url": "/simb/SIMB540.html",
     "prev_url": "/simb/SIMB539.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB541.html",
     "prev_title": "Chapter 539: No Need to Apologize",
+    "next_title": "Chapter 541: Never Forget"
+  },
+  {
+    "title": "Chapter 541: Never Forget",
+    "chapter_id": "SIMB541",
+    "chapter_num": 541,
+    "date": "2026-05-02 23:50:00 +0800",
+    "url": "/simb/SIMB541.html",
+    "prev_url": "/simb/SIMB540.html",
+    "next_url": null,
+    "prev_title": "Chapter 540: I'll Be Sure to Tell Them",
     "next_title": null
   }
 ]
