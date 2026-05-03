@@ -6435,8 +6435,19 @@
     "date": "2026-05-03 15:43:00 +0800",
     "url": "/simb/SIMB542.html",
     "prev_url": "/simb/SIMB541.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB543.html",
     "prev_title": "Chapter 541: Never Forget",
+    "next_title": "Chapter 543: What Does It Matter?"
+  },
+  {
+    "title": "Chapter 543: What Does It Matter?",
+    "chapter_id": "SIMB543",
+    "chapter_num": 543,
+    "date": "2026-05-03 20:09:00 +0800",
+    "url": "/simb/SIMB543.html",
+    "prev_url": "/simb/SIMB542.html",
+    "next_url": null,
+    "prev_title": "Chapter 542: If You're Okay With It",
     "next_title": null
   }
 ]
