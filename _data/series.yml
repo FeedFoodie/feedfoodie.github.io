@@ -39,3 +39,9 @@ pd:
   nu_slug: "peerless-dad"
   extra_html: ""
   needs_extra_height: false
+
+cob:
+  full_name: "City of Blades"
+  nu_slug: "city-of-blades"
+  extra_html: ""
+  needs_extra_height: false

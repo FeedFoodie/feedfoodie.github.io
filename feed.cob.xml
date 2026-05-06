@@ -1,0 +1,15 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>City of Blades</title>
+        <description>NorthBladeTL - City of Blades Chapter Updates</description>
+        <link>https://northbladetl.com/COB/</link>
+        <atom:link href="https://northbladetl.com/feed.cob.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 6 May 2026 23:25:56 +0800</pubDate>
+        <lastBuildDate>Wed, 6 May 2026 23:25:56 +0800</lastBuildDate>
+        <generator>NorthBladeTL RSS Generator</generator>
+    </channel>
+</rss>
