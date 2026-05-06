@@ -41,3 +41,5 @@
         - name: "Peerless Dad"
           url: "/PD/"
           weight: 2
+        - name: "City of Blades"
+          url: "/COB/"
