@@ -6457,8 +6457,19 @@
     "date": "2026-05-08 07:26:00 +0800",
     "url": "/simb/SIMB544.html",
     "prev_url": "/simb/SIMB543.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB545.html",
     "prev_title": "Chapter 543: What Does It Matter?",
+    "next_title": "Chapter 545: You Only Won Because..."
+  },
+  {
+    "title": "Chapter 545: You Only Won Because...",
+    "chapter_id": "SIMB545",
+    "chapter_num": 545,
+    "date": "2026-05-10 01:15:00 +0800",
+    "url": "/simb/SIMB545.html",
+    "prev_url": "/simb/SIMB544.html",
+    "next_url": null,
+    "prev_title": "Chapter 544: A Fine Sword",
     "next_title": null
   }
 ]
