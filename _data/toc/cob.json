@@ -28,8 +28,19 @@
     "date": "2026-05-09 09:46:00 +0800",
     "url": "/cob/COB003.html",
     "prev_url": "/cob/COB002.html",
-    "next_url": null,
+    "next_url": "/cob/COB004.html",
     "prev_title": "Chapter 2: The Martial Artist Who Arrived in First Class (2)",
+    "next_title": "Chapter 4: The Martial Artist Who Arrived in First Class (4)"
+  },
+  {
+    "title": "Chapter 4: The Martial Artist Who Arrived in First Class (4)",
+    "chapter_id": "COB004",
+    "chapter_num": 4,
+    "date": "2026-05-10 00:06:00 +0800",
+    "url": "/cob/COB004.html",
+    "prev_url": "/cob/COB003.html",
+    "next_url": null,
+    "prev_title": "Chapter 3: The Martial Artist Who Arrived in First Class (3)",
     "next_title": null
   }
 ]
