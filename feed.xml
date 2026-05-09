@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 08 May 2026 23:11:55 +0800</pubDate>
-        <lastBuildDate>Fri, 08 May 2026 23:11:55 +0800</lastBuildDate>
+        <pubDate>Sat, 09 May 2026 09:40:07 +0800</pubDate>
+        <lastBuildDate>Sat, 09 May 2026 09:40:07 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 1: The Martial Artist Who Arrived in First Class (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB001.html</description>
+            <pubDate>Sat, 09 May 2026 09:39:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB001.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB001.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>SIMB Chapter 544: A Fine Sword</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/ruh/RUH051.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH051.html</guid>
             <category>ruh</category>
-        </item>
-        <item>
-            <title>PD Chapter 1: Gajang</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Peerless Dad Chapter Update - https://northbladetl.com/pd/PD001.html</description>
-            <pubDate>Sun, 22 Feb 2026 11:22:00 +0800</pubDate>
-            <link>https://northbladetl.com/pd/PD001.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/pd/PD001.html</guid>
-            <category>pd</category>
         </item>
     </channel>
 </rss>

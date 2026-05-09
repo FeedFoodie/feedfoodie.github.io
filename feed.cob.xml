@@ -6,10 +6,19 @@ layout: null
     <channel>
         <title>City of Blades</title>
         <description>NorthBladeTL - City of Blades Chapter Updates</description>
-        <link>https://northbladetl.com/COB/</link>
+        <link>https://northbladetl.com/cob/</link>
         <atom:link href="https://northbladetl.com/feed.cob.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 6 May 2026 23:25:56 +0800</pubDate>
-        <lastBuildDate>Wed, 6 May 2026 23:25:56 +0800</lastBuildDate>
+        <pubDate>Sat, 09 May 2026 09:40:07 +0800</pubDate>
+        <lastBuildDate>Sat, 09 May 2026 09:40:07 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 1: The Martial Artist Who Arrived in First Class (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB001.html</description>
+            <pubDate>Sat, 09 May 2026 09:39:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB001.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB001.html</guid>
+            <category>cob</category>
+        </item>
     </channel>
 </rss>
