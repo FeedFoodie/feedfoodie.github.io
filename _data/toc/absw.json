@@ -867,8 +867,19 @@
     "date": "2026-05-01 18:04:00 +0800",
     "url": "/absw/ABSW73.html",
     "prev_url": "/absw/ABSW72.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW74.html",
     "prev_title": "V8C2: The Successor of the New Righteous Association",
+    "next_title": "V8C4: Human Affairs"
+  },
+  {
+    "title": "V8C4: Human Affairs",
+    "chapter_id": "ABSW74",
+    "chapter_num": 74,
+    "date": "2026-05-08 07:25:00 +0800",
+    "url": "/absw/ABSW74.html",
+    "prev_url": "/absw/ABSW73.html",
+    "next_url": null,
+    "prev_title": "V8C3: Provocation",
     "next_title": null
   }
 ]
