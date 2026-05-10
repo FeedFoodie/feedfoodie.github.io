@@ -6490,8 +6490,19 @@
     "date": "2026-05-10 18:18:00 +0800",
     "url": "/simb/SIMB547.html",
     "prev_url": "/simb/SIMB546.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB548.html",
     "prev_title": "Chapter 546: Let's Go Home",
+    "next_title": "Chapter 548: We'll Know Soon Enough"
+  },
+  {
+    "title": "Chapter 548: We'll Know Soon Enough",
+    "chapter_id": "SIMB548",
+    "chapter_num": 548,
+    "date": "2026-05-11 00:16:00 +0800",
+    "url": "/simb/SIMB548.html",
+    "prev_url": "/simb/SIMB547.html",
+    "next_url": null,
+    "prev_title": "Chapter 547: Just As I Thought",
     "next_title": null
   }
 ]
