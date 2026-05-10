@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 10 May 2026 17:40:38 +0800</pubDate>
-        <lastBuildDate>Sun, 10 May 2026 17:40:38 +0800</lastBuildDate>
+        <pubDate>Sun, 10 May 2026 17:42:17 +0800</pubDate>
+        <lastBuildDate>Sun, 10 May 2026 17:42:17 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 9: The Year-End Party (5)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB009.html</description>
+            <pubDate>Sun, 10 May 2026 17:41:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB009.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB009.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 8: The Year-End Party (4)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -46,15 +55,6 @@ layout: null
             <link>https://northbladetl.com/simb/SIMB545.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB545.html</guid>
             <category>simb</category>
-        </item>
-        <item>
-            <title>COB Chapter 6: The Year-End Party (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB006.html</description>
-            <pubDate>Sun, 10 May 2026 00:10:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB006.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB006.html</guid>
-            <category>cob</category>
         </item>
         <item>
             <title>SIMB Chapter 544: A Fine Sword</title>

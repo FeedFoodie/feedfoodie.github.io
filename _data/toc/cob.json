@@ -83,8 +83,19 @@
     "date": "2026-05-10 17:39:00 +0800",
     "url": "/cob/COB008.html",
     "prev_url": "/cob/COB007.html",
-    "next_url": null,
+    "next_url": "/cob/COB009.html",
     "prev_title": "Chapter 7: The Year-End Party (3)",
+    "next_title": "Chapter 9: The Year-End Party (5)"
+  },
+  {
+    "title": "Chapter 9: The Year-End Party (5)",
+    "chapter_id": "COB009",
+    "chapter_num": 9,
+    "date": "2026-05-10 17:41:00 +0800",
+    "url": "/cob/COB009.html",
+    "prev_url": "/cob/COB008.html",
+    "next_url": null,
+    "prev_title": "Chapter 8: The Year-End Party (4)",
     "next_title": null
   }
 ]
