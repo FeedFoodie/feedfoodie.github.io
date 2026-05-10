@@ -6468,8 +6468,19 @@
     "date": "2026-05-10 01:15:00 +0800",
     "url": "/simb/SIMB545.html",
     "prev_url": "/simb/SIMB544.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB546.html",
     "prev_title": "Chapter 544: A Fine Sword",
+    "next_title": "Chapter 546: Let's Go Home"
+  },
+  {
+    "title": "Chapter 546: Let's Go Home",
+    "chapter_id": "SIMB546",
+    "chapter_num": 546,
+    "date": "2026-05-10 14:20:00 +0800",
+    "url": "/simb/SIMB546.html",
+    "prev_url": "/simb/SIMB545.html",
+    "next_url": null,
+    "prev_title": "Chapter 545: You Only Won Because...",
     "next_title": null
   }
 ]
