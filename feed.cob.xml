@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - City of Blades Chapter Updates</description>
         <link>https://northbladetl.com/cob/</link>
         <atom:link href="https://northbladetl.com/feed.cob.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 10 May 2026 00:10:59 +0800</pubDate>
-        <lastBuildDate>Sun, 10 May 2026 00:10:59 +0800</lastBuildDate>
+        <pubDate>Sun, 10 May 2026 17:35:51 +0800</pubDate>
+        <lastBuildDate>Sun, 10 May 2026 17:35:51 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 7: The Year-End Party (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB007.html</description>
+            <pubDate>Sun, 10 May 2026 17:33:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB007.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB007.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 6: The Year-End Party (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
