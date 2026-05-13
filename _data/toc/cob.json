@@ -116,8 +116,19 @@
     "date": "2026-05-14 06:44:00 +0800",
     "url": "/cob/COB011.html",
     "prev_url": "/cob/COB010.html",
-    "next_url": null,
+    "next_url": "/cob/COB012.html",
     "prev_title": "Chapter 10: From Within (1)",
+    "next_title": "Chapter 12: From Within (3)"
+  },
+  {
+    "title": "Chapter 12: From Within (3)",
+    "chapter_id": "COB012",
+    "chapter_num": 12,
+    "date": "2026-05-14 06:47:00 +0800",
+    "url": "/cob/COB012.html",
+    "prev_url": "/cob/COB011.html",
+    "next_url": null,
+    "prev_title": "Chapter 11: From Within (2)",
     "next_title": null
   }
 ]
