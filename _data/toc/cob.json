@@ -138,8 +138,19 @@
     "date": "2026-05-14 06:49:00 +0800",
     "url": "/cob/COB013.html",
     "prev_url": "/cob/COB012.html",
-    "next_url": null,
+    "next_url": "/cob/COB014.html",
     "prev_title": "Chapter 12: From Within (3)",
+    "next_title": "Chapter 14: The Mafia Never Changes (2)"
+  },
+  {
+    "title": "Chapter 14: The Mafia Never Changes (2)",
+    "chapter_id": "COB014",
+    "chapter_num": 14,
+    "date": "2026-05-14 06:51:00 +0800",
+    "url": "/cob/COB014.html",
+    "prev_url": "/cob/COB013.html",
+    "next_url": null,
+    "prev_title": "Chapter 13: The Mafia Never Changes (1)",
     "next_title": null
   }
 ]
