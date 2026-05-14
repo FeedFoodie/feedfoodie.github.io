@@ -292,8 +292,19 @@
     "date": "2026-05-15 07:40:00 +0800",
     "url": "/cob/COB027.html",
     "prev_url": "/cob/COB026.html",
-    "next_url": null,
+    "next_url": "/cob/COB028.html",
     "prev_title": "Chapter 26: Knight (1)",
+    "next_title": "Chapter 28: Knight (3)"
+  },
+  {
+    "title": "Chapter 28: Knight (3)",
+    "chapter_id": "COB028",
+    "chapter_num": 28,
+    "date": "2026-05-15 07:46:00 +0800",
+    "url": "/cob/COB028.html",
+    "prev_url": "/cob/COB027.html",
+    "next_url": null,
+    "prev_title": "Chapter 27: Knight (2)",
     "next_title": null
   }
 ]
