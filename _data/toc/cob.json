@@ -270,8 +270,19 @@
     "date": "2026-05-14 23:51:00 +0800",
     "url": "/cob/COB025.html",
     "prev_url": "/cob/COB024.html",
-    "next_url": null,
+    "next_url": "/cob/COB026.html",
     "prev_title": "Chapter 24: Black Sky (3)",
+    "next_title": "Chapter 26: Knight (1)"
+  },
+  {
+    "title": "Chapter 26: Knight (1)",
+    "chapter_id": "COB026",
+    "chapter_num": 26,
+    "date": "2026-05-15 07:38:00 +0800",
+    "url": "/cob/COB026.html",
+    "prev_url": "/cob/COB025.html",
+    "next_url": null,
+    "prev_title": "Chapter 25: Black Sky (4)",
     "next_title": null
   }
 ]
