@@ -237,8 +237,19 @@
     "date": "2026-05-14 21:21:00 +0800",
     "url": "/cob/COB022.html",
     "prev_url": "/cob/COB021.html",
-    "next_url": null,
+    "next_url": "/cob/COB023.html",
     "prev_title": "Chapter 21: The Clean Company (2)",
+    "next_title": "Chapter 23: Black Sky (2)"
+  },
+  {
+    "title": "Chapter 23: Black Sky (2)",
+    "chapter_id": "COB023",
+    "chapter_num": 23,
+    "date": "2026-05-14 21:28:00 +0800",
+    "url": "/cob/COB023.html",
+    "prev_url": "/cob/COB022.html",
+    "next_url": null,
+    "prev_title": "Chapter 22: Black Sky (1)",
     "next_title": null
   }
 ]
