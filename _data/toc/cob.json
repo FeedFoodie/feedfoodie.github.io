@@ -303,8 +303,19 @@
     "date": "2026-05-15 07:46:00 +0800",
     "url": "/cob/COB028.html",
     "prev_url": "/cob/COB027.html",
-    "next_url": null,
+    "next_url": "/cob/COB029.html",
     "prev_title": "Chapter 27: Knight (2)",
+    "next_title": "Chapter 29: One-Day Manager (1)"
+  },
+  {
+    "title": "Chapter 29: One-Day Manager (1)",
+    "chapter_id": "COB029",
+    "chapter_num": 29,
+    "date": "2026-05-15 07:48:00 +0800",
+    "url": "/cob/COB029.html",
+    "prev_url": "/cob/COB028.html",
+    "next_url": null,
+    "prev_title": "Chapter 28: Knight (3)",
     "next_title": null
   }
 ]
