@@ -171,8 +171,19 @@
     "date": "2026-05-14 20:11:00 +0800",
     "url": "/cob/COB016.html",
     "prev_url": "/cob/COB015.html",
-    "next_url": null,
+    "next_url": "/cob/COB017.html",
     "prev_title": "Chapter 15: Phone Express (1)",
+    "next_title": "Chapter 17: Pawn Express (3)"
+  },
+  {
+    "title": "Chapter 17: Pawn Express (3)",
+    "chapter_id": "COB017",
+    "chapter_num": 17,
+    "date": "2026-05-14 20:13:00 +0800",
+    "url": "/cob/COB017.html",
+    "prev_url": "/cob/COB016.html",
+    "next_url": null,
+    "prev_title": "Chapter 16: Pawn Express (2)",
     "next_title": null
   }
 ]

@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 14 May 2026 20:12:08 +0800</pubDate>
-        <lastBuildDate>Thu, 14 May 2026 20:12:08 +0800</lastBuildDate>
+        <pubDate>Thu, 14 May 2026 20:14:03 +0800</pubDate>
+        <lastBuildDate>Thu, 14 May 2026 20:14:03 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 17: Pawn Express (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB017.html</description>
+            <pubDate>Thu, 14 May 2026 20:13:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB017.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB017.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 16: Pawn Express (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -27,15 +36,6 @@ layout: null
             <pubDate>Thu, 14 May 2026 06:58:00 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB015.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB015.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 14: The Mafia Never Changes (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB014.html</description>
-            <pubDate>Thu, 14 May 2026 06:51:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB014.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB014.html</guid>
             <category>cob</category>
         </item>
         <item>
