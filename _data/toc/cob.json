@@ -160,8 +160,19 @@
     "date": "2026-05-14 06:58:00 +0800",
     "url": "/cob/COB015.html",
     "prev_url": "/cob/COB014.html",
-    "next_url": null,
+    "next_url": "/cob/COB016.html",
     "prev_title": "Chapter 14: The Mafia Never Changes (2)",
+    "next_title": "Chapter 16: Pawn Express (2)"
+  },
+  {
+    "title": "Chapter 16: Pawn Express (2)",
+    "chapter_id": "COB016",
+    "chapter_num": 16,
+    "date": "2026-05-14 20:11:00 +0800",
+    "url": "/cob/COB016.html",
+    "prev_url": "/cob/COB015.html",
+    "next_url": null,
+    "prev_title": "Chapter 15: Phone Express (1)",
     "next_title": null
   }
 ]
