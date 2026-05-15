@@ -632,8 +632,19 @@
     "date": "2026-05-15 23:39:00 +0800",
     "url": "/ruh/RUH054.html",
     "prev_url": "/ruh/RUH053.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH055.html",
     "prev_title": "Chapter 53: Masterstroke",
+    "next_title": "Chapter 55: Decently Nutritious"
+  },
+  {
+    "title": "Chapter 55: Decently Nutritious",
+    "chapter_id": "RUH055",
+    "chapter_num": 55,
+    "date": "2026-05-15 23:41:00 +0800",
+    "url": "/ruh/RUH055.html",
+    "prev_url": "/ruh/RUH054.html",
+    "next_url": null,
+    "prev_title": "Chapter 54: The Bewitching Peak",
     "next_title": null
   }
 ]
