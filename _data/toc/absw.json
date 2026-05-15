@@ -878,8 +878,19 @@
     "date": "2026-05-08 07:25:00 +0800",
     "url": "/absw/ABSW74.html",
     "prev_url": "/absw/ABSW73.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW75.html",
     "prev_title": "V8C3: Provocation",
+    "next_title": "V8C5: Orthodox and Unorthodox"
+  },
+  {
+    "title": "V8C5: Orthodox and Unorthodox",
+    "chapter_id": "ABSW75",
+    "chapter_num": 75,
+    "date": "2026-05-15 23:27:00 +0800",
+    "url": "/absw/ABSW75.html",
+    "prev_url": "/absw/ABSW74.html",
+    "next_url": null,
+    "prev_title": "V8C4: Human Affairs",
     "next_title": null
   }
 ]
