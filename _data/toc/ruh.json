@@ -621,8 +621,19 @@
     "date": "2026-04-18 12:15:00 +0800",
     "url": "/ruh/RUH053.html",
     "prev_url": "/ruh/RUH052.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH054.html",
     "prev_title": "Chapter 52: The Martial Sword Corps' Assassination Squad",
+    "next_title": "Chapter 54: The Bewitching Peak"
+  },
+  {
+    "title": "Chapter 54: The Bewitching Peak",
+    "chapter_id": "RUH054",
+    "chapter_num": 54,
+    "date": "2026-05-15 23:39:00 +0800",
+    "url": "/ruh/RUH054.html",
+    "prev_url": "/ruh/RUH053.html",
+    "next_url": null,
+    "prev_title": "Chapter 53: Masterstroke",
     "next_title": null
   }
 ]
