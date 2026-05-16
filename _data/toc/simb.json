@@ -6512,8 +6512,19 @@
     "date": "2026-05-15 23:27:00 +0800",
     "url": "/simb/SIMB549.html",
     "prev_url": "/simb/SIMB548.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB550.html",
     "prev_title": "Chapter 548: We'll Know Soon Enough",
+    "next_title": "Chapter 550: Everything That Happened Here"
+  },
+  {
+    "title": "Chapter 550: Everything That Happened Here",
+    "chapter_id": "SIMB550",
+    "chapter_num": 550,
+    "date": "2026-05-16 22:20:00 +0800",
+    "url": "/simb/SIMB550.html",
+    "prev_url": "/simb/SIMB549.html",
+    "next_url": null,
+    "prev_title": "Chapter 549: May I Use It Now?",
     "next_title": null
   }
 ]
