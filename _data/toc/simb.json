@@ -6534,8 +6534,19 @@
     "date": "2026-05-17 16:37:00 +0800",
     "url": "/simb/SIMB551.html",
     "prev_url": "/simb/SIMB550.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB552.html",
     "prev_title": "Chapter 550: Everything That Happened Here",
+    "next_title": "Chapter 552: Will It Be Alright?"
+  },
+  {
+    "title": "Chapter 552: Will It Be Alright?",
+    "chapter_id": "SIMB552",
+    "chapter_num": 552,
+    "date": "2026-05-17 19:51:00 +0800",
+    "url": "/simb/SIMB552.html",
+    "prev_url": "/simb/SIMB551.html",
+    "next_url": null,
+    "prev_title": "Chapter 551: Did You Find Anything?",
     "next_title": null
   }
 ]
