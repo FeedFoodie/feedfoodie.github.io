@@ -391,8 +391,19 @@
     "date": "2026-05-20 21:17:00 +0800",
     "url": "/cob/COB036.html",
     "prev_url": "/cob/COB035.html",
-    "next_url": null,
+    "next_url": "/cob/COB037.html",
     "prev_title": "Chapter 35: When the News Is Delivered (2)",
+    "next_title": "Chapter 37: One Step Closer to the Chairman (2)"
+  },
+  {
+    "title": "Chapter 37: One Step Closer to the Chairman (2)",
+    "chapter_id": "COB037",
+    "chapter_num": 37,
+    "date": "2026-05-20 21:20:00 +0800",
+    "url": "/cob/COB037.html",
+    "prev_url": "/cob/COB036.html",
+    "next_url": null,
+    "prev_title": "Chapter 36: One Step Closer to the Chairman (1)",
     "next_title": null
   }
 ]
