@@ -347,8 +347,19 @@
     "date": "2026-05-20 19:42:00 +0800",
     "url": "/cob/COB032.html",
     "prev_url": "/cob/COB031.html",
-    "next_url": null,
+    "next_url": "/cob/COB033.html",
     "prev_title": "Chapter 31: Geommyeong Corporation (1)",
+    "next_title": "Chapter 33: Geommyeong Corporation (3)"
+  },
+  {
+    "title": "Chapter 33: Geommyeong Corporation (3)",
+    "chapter_id": "COB033",
+    "chapter_num": 33,
+    "date": "2026-05-20 19:45:00 +0800",
+    "url": "/cob/COB033.html",
+    "prev_url": "/cob/COB032.html",
+    "next_url": null,
+    "prev_title": "Chapter 32: Geommyeong Corporation (2)",
     "next_title": null
   }
 ]
