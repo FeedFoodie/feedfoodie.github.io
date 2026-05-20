@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - City of Blades Chapter Updates</description>
         <link>https://northbladetl.com/cob/</link>
         <atom:link href="https://northbladetl.com/feed.cob.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 20 May 2026 19:48:15 +0800</pubDate>
-        <lastBuildDate>Wed, 20 May 2026 19:48:15 +0800</lastBuildDate>
+        <pubDate>Wed, 20 May 2026 19:50:13 +0800</pubDate>
+        <lastBuildDate>Wed, 20 May 2026 19:50:13 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 35: When the News Is Delivered (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB035.html</description>
+            <pubDate>Wed, 20 May 2026 19:49:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB035.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB035.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 34: When the News Is Delivered (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 15 May 2026 07:38:00 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB026.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB026.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 25: Black Sky (4)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB025.html</description>
-            <pubDate>Thu, 14 May 2026 23:51:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB025.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB025.html</guid>
             <category>cob</category>
         </item>
     </channel>
