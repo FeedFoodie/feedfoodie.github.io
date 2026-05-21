@@ -534,8 +534,19 @@
     "date": "2026-05-22 07:50:00 +0800",
     "url": "/cob/COB049.html",
     "prev_url": "/cob/COB048.html",
-    "next_url": null,
+    "next_url": "/cob/COB050.html",
     "prev_title": "Chapter 48: REAL Championship (2)",
+    "next_title": "Chapter 50: Death (2)"
+  },
+  {
+    "title": "Chapter 50: Death (2)",
+    "chapter_id": "COB050",
+    "chapter_num": 50,
+    "date": "2026-05-22 07:52:00 +0800",
+    "url": "/cob/COB050.html",
+    "prev_url": "/cob/COB049.html",
+    "next_url": null,
+    "prev_title": "Chapter 49: Death (1)",
     "next_title": null
   }
 ]
