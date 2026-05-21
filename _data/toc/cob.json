@@ -457,8 +457,19 @@
     "date": "2026-05-21 20:51:00 +0800",
     "url": "/cob/COB042.html",
     "prev_url": "/cob/COB041.html",
-    "next_url": null,
+    "next_url": "/cob/COB043.html",
     "prev_title": "Chapter 41: BST (2)",
+    "next_title": "Chapter 43: Dr. Woo (2)"
+  },
+  {
+    "title": "Chapter 43: Dr. Woo (2)",
+    "chapter_id": "COB043",
+    "chapter_num": 43,
+    "date": "2026-05-21 20:53:00 +0800",
+    "url": "/cob/COB043.html",
+    "prev_url": "/cob/COB042.html",
+    "next_url": null,
+    "prev_title": "Chapter 42: Dr. Woo (1)",
     "next_title": null
   }
 ]
