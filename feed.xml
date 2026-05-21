@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 21 May 2026 21:01:42 +0800</pubDate>
-        <lastBuildDate>Thu, 21 May 2026 21:01:42 +0800</lastBuildDate>
+        <pubDate>Thu, 21 May 2026 21:04:44 +0800</pubDate>
+        <lastBuildDate>Thu, 21 May 2026 21:04:44 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 45: The Ultimate Reward (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB045.html</description>
+            <pubDate>Thu, 21 May 2026 21:04:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB045.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB045.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 44: The Ultimate Reward (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -27,15 +36,6 @@ layout: null
             <pubDate>Thu, 21 May 2026 20:53:00 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB043.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB043.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 42: Dr. Woo (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB042.html</description>
-            <pubDate>Thu, 21 May 2026 20:51:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB042.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB042.html</guid>
             <category>cob</category>
         </item>
         <item>
