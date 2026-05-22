@@ -6545,8 +6545,19 @@
     "date": "2026-05-17 19:51:00 +0800",
     "url": "/simb/SIMB552.html",
     "prev_url": "/simb/SIMB551.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB553.html",
     "prev_title": "Chapter 551: Did You Find Anything?",
+    "next_title": "Chapter 553: I Didn't Expect Her to Come in Person"
+  },
+  {
+    "title": "Chapter 553: I Didn't Expect Her to Come in Person",
+    "chapter_id": "SIMB553",
+    "chapter_num": 553,
+    "date": "2026-05-23 00:32:00 +0800",
+    "url": "/simb/SIMB553.html",
+    "prev_url": "/simb/SIMB552.html",
+    "next_url": null,
+    "prev_title": "Chapter 552: Will It Be Okay?",
     "next_title": null
   }
 ]

@@ -8,11 +8,20 @@ layout: null
         <description>NorthBladeTL - Star Instructor Master Baek Chapter Updates</description>
         <link>https://northbladetl.com/simb/</link>
         <atom:link href="https://northbladetl.com/feed.simb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 17 May 2026 19:51:32 +0800</pubDate>
-        <lastBuildDate>Sun, 17 May 2026 19:51:32 +0800</lastBuildDate>
+        <pubDate>Sat, 23 May 2026 00:32:54 +0800</pubDate>
+        <lastBuildDate>Sat, 23 May 2026 00:32:54 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
         <item>
-            <title>SIMB Chapter 552: Will It Be Alright?</title>
+            <title>SIMB Chapter 553: I Didn&apos;t Expect Her to Come in Person</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB553.html</description>
+            <pubDate>Sat, 23 May 2026 00:32:00 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB553.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB553.html</guid>
+            <category>simb</category>
+        </item>
+        <item>
+            <title>SIMB Chapter 552: Will It Be Okay?</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB552.html</description>
             <pubDate>Sun, 17 May 2026 19:51:00 +0800</pubDate>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 08 May 2026 07:26:00 +0800</pubDate>
             <link>https://northbladetl.com/simb/SIMB544.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB544.html</guid>
-            <category>simb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 543: What Does It Matter?</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB543.html</description>
-            <pubDate>Sun, 03 May 2026 20:09:00 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB543.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB543.html</guid>
             <category>simb</category>
         </item>
     </channel>
