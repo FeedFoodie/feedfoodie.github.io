@@ -6556,8 +6556,19 @@
     "date": "2026-05-23 00:32:00 +0800",
     "url": "/simb/SIMB553.html",
     "prev_url": "/simb/SIMB552.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB554.html",
     "prev_title": "Chapter 552: Will It Be Okay?",
+    "next_title": "Chapter 554: I Came Here To Settle Things With You"
+  },
+  {
+    "title": "Chapter 554: I Came Here To Settle Things With You",
+    "chapter_id": "SIMB554",
+    "chapter_num": 554,
+    "date": "2026-05-23 01:42:00 +0800",
+    "url": "/simb/SIMB554.html",
+    "prev_url": "/simb/SIMB553.html",
+    "next_url": null,
+    "prev_title": "Chapter 553: I Didn't Expect Her to Come in Person",
     "next_title": null
   }
 ]
