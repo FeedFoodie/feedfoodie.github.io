@@ -6578,8 +6578,19 @@
     "date": "2026-05-23 13:59:00 +0800",
     "url": "/simb/SIMB555.html",
     "prev_url": "/simb/SIMB554.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB556.html",
     "prev_title": "Chapter 554: I Came Here To Settle Things With You",
+    "next_title": "Chapter 556: Aren't You a Bunch of Scammers?"
+  },
+  {
+    "title": "Chapter 556: Aren't You a Bunch of Scammers?",
+    "chapter_id": "SIMB556",
+    "chapter_num": 556,
+    "date": "2026-05-23 16:03:00 +0800",
+    "url": "/simb/SIMB556.html",
+    "prev_url": "/simb/SIMB555.html",
+    "next_url": null,
+    "prev_title": "Chapter 555: The Most Trustworthy",
     "next_title": null
   }
 ]
