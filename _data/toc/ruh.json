@@ -643,8 +643,19 @@
     "date": "2026-05-15 23:41:00 +0800",
     "url": "/ruh/RUH055.html",
     "prev_url": "/ruh/RUH054.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH056.html",
     "prev_title": "Chapter 54: The Bewitching Peak",
+    "next_title": "Chapter 56: Cliff Wind"
+  },
+  {
+    "title": "Chapter 56: Cliff Wind",
+    "chapter_id": "RUH056",
+    "chapter_num": 56,
+    "date": "2026-05-26 08:06:00 +0800",
+    "url": "/ruh/RUH056.html",
+    "prev_url": "/ruh/RUH055.html",
+    "next_url": null,
+    "prev_title": "Chapter 55: Decently Nutritious",
     "next_title": null
   }
 ]
