@@ -6589,8 +6589,19 @@
     "date": "2026-05-23 16:03:00 +0800",
     "url": "/simb/SIMB556.html",
     "prev_url": "/simb/SIMB555.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB557.html",
     "prev_title": "Chapter 555: The Most Trustworthy",
+    "next_title": "Chapter 557: There Isn't Much Time Left"
+  },
+  {
+    "title": "Chapter 557: There Isn't Much Time Left",
+    "chapter_id": "SIMB557",
+    "chapter_num": 557,
+    "date": "2026-05-27 12:22:00 +0800",
+    "url": "/simb/SIMB557.html",
+    "prev_url": "/simb/SIMB556.html",
+    "next_url": null,
+    "prev_title": "Chapter 556: Aren't You a Bunch of Scammers?",
     "next_title": null
   }
 ]
