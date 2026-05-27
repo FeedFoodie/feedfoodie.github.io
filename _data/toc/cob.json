@@ -556,8 +556,19 @@
     "date": "2026-05-27 11:54:00 +0800",
     "url": "/cob/COB051.html",
     "prev_url": "/cob/COB050.html",
-    "next_url": null,
+    "next_url": "/cob/COB052.html",
     "prev_title": "Chapter 50: Death (2)",
+    "next_title": "Chapter 52: Death (4)"
+  },
+  {
+    "title": "Chapter 52: Death (4)",
+    "chapter_id": "COB052",
+    "chapter_num": 52,
+    "date": "2026-05-27 11:59:00 +0800",
+    "url": "/cob/COB052.html",
+    "prev_url": "/cob/COB051.html",
+    "next_url": null,
+    "prev_title": "Chapter 51: Death (3)",
     "next_title": null
   }
 ]
