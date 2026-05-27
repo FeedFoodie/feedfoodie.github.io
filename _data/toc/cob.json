@@ -589,8 +589,19 @@
     "date": "2026-05-27 12:09:00 +0800",
     "url": "/cob/COB054.html",
     "prev_url": "/cob/COB053.html",
-    "next_url": null,
+    "next_url": "/cob/COB055.html",
     "prev_title": "Chapter 53: How to Borrow a Sword (1)",
+    "next_title": "Chapter 55: How to Borrow a Sword (3)"
+  },
+  {
+    "title": "Chapter 55: How to Borrow a Sword (3)",
+    "chapter_id": "COB055",
+    "chapter_num": 55,
+    "date": "2026-05-27 12:17:00 +0800",
+    "url": "/cob/COB055.html",
+    "prev_url": "/cob/COB054.html",
+    "next_url": null,
+    "prev_title": "Chapter 54: How to Borrow a Sword (2)",
     "next_title": null
   }
 ]
