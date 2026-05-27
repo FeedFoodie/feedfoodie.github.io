@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 27 May 2026 12:23:15 +0800</pubDate>
-        <lastBuildDate>Wed, 27 May 2026 12:23:15 +0800</lastBuildDate>
+        <pubDate>Wed, 27 May 2026 13:02:50 +0800</pubDate>
+        <lastBuildDate>Wed, 27 May 2026 13:02:50 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V8C6: The Five-Layered Blockade</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW76.html</description>
+            <pubDate>Wed, 27 May 2026 13:02:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW76.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW76.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>SIMB Chapter 557: There Isn&apos;t Much Time Left</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/ruh/RUH054.html</link>
             <guid isPermaLink="true">https://northbladetl.com/ruh/RUH054.html</guid>
             <category>ruh</category>
-        </item>
-        <item>
-            <title>ABSW V8C5: Orthodox and Unorthodox</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW75.html</description>
-            <pubDate>Fri, 15 May 2026 23:27:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW75.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW75.html</guid>
-            <category>absw</category>
         </item>
     </channel>
 </rss>

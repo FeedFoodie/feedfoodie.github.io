@@ -889,8 +889,19 @@
     "date": "2026-05-15 23:27:00 +0800",
     "url": "/absw/ABSW75.html",
     "prev_url": "/absw/ABSW74.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW76.html",
     "prev_title": "V8C4: Human Affairs",
+    "next_title": "V8C6: The Five-Layered Blockade"
+  },
+  {
+    "title": "V8C6: The Five-Layered Blockade",
+    "chapter_id": "ABSW76",
+    "chapter_num": 76,
+    "date": "2026-05-27 13:02:00 +0800",
+    "url": "/absw/ABSW76.html",
+    "prev_url": "/absw/ABSW75.html",
+    "next_url": null,
+    "prev_title": "V8C5: Orthodox and Unorthodox",
     "next_title": null
   }
 ]
