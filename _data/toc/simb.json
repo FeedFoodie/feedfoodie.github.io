@@ -6611,8 +6611,19 @@
     "date": "2026-05-27 19:33:00 +0800",
     "url": "/simb/SIMB558.html",
     "prev_url": "/simb/SIMB557.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB559.html",
     "prev_title": "Chapter 557: There Isn't Much Time Left",
+    "next_title": "Chapter 559: The Azure Dragon Academy"
+  },
+  {
+    "title": "Chapter 559: The Azure Dragon Academy",
+    "chapter_id": "SIMB559",
+    "chapter_num": 559,
+    "date": "2026-05-29 20:50:00 +0800",
+    "url": "/simb/SIMB559.html",
+    "prev_url": "/simb/SIMB558.html",
+    "next_url": null,
+    "prev_title": "Chapter 558: So? How Do You Feel?",
     "next_title": null
   }
 ]
