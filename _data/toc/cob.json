@@ -611,8 +611,19 @@
     "date": "2026-05-29 16:52:00 +0800",
     "url": "/cob/COB056.html",
     "prev_url": "/cob/COB055.html",
-    "next_url": null,
+    "next_url": "/cob/COB057.html",
     "prev_title": "Chapter 55: How to Borrow a Sword (3)",
+    "next_title": "Chapter 57: Which Report to Believe? (2)"
+  },
+  {
+    "title": "Chapter 57: Which Report to Believe? (2)",
+    "chapter_id": "COB057",
+    "chapter_num": 57,
+    "date": "2026-05-29 16:54:00 +0800",
+    "url": "/cob/COB057.html",
+    "prev_url": "/cob/COB056.html",
+    "next_url": null,
+    "prev_title": "Chapter 56: Which Report to Believe? (1)",
     "next_title": null
   }
 ]
