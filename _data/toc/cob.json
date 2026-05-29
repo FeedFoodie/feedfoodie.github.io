@@ -633,8 +633,19 @@
     "date": "2026-05-29 16:56:00 +0800",
     "url": "/cob/COB058.html",
     "prev_url": "/cob/COB057.html",
-    "next_url": null,
+    "next_url": "/cob/COB059.html",
     "prev_title": "Chapter 57: Which Report to Believe? (2)",
+    "next_title": "Chapter 59: The Joy of Watching (2)"
+  },
+  {
+    "title": "Chapter 59: The Joy of Watching (2)",
+    "chapter_id": "COB059",
+    "chapter_num": 59,
+    "date": "2026-05-29 16:57:00 +0800",
+    "url": "/cob/COB059.html",
+    "prev_url": "/cob/COB058.html",
+    "next_url": null,
+    "prev_title": "Chapter 58: The Joy of Watching (1)",
     "next_title": null
   }
 ]
