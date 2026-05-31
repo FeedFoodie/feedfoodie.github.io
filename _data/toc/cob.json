@@ -710,8 +710,19 @@
     "date": "2026-05-31 12:22:00 +0800",
     "url": "/cob/COB065.html",
     "prev_url": "/cob/COB064.html",
-    "next_url": null,
+    "next_url": "/cob/COB066.html",
     "prev_title": "Chapter 64: The Two Tigers of Korea (2)",
+    "next_title": "Chapter 66: Queen (2)"
+  },
+  {
+    "title": "Chapter 66: Queen (2)",
+    "chapter_id": "COB066",
+    "chapter_num": 66,
+    "date": "2026-05-31 12:58:00 +0800",
+    "url": "/cob/COB066.html",
+    "prev_url": "/cob/COB065.html",
+    "next_url": null,
+    "prev_title": "Chapter 65: Queen (1)",
     "next_title": null
   }
 ]
