@@ -666,8 +666,19 @@
     "date": "2026-05-31 12:02:00 +0800",
     "url": "/cob/COB061.html",
     "prev_url": "/cob/COB060.html",
-    "next_url": null,
+    "next_url": "/cob/COB062.html",
     "prev_title": "Chapter 60: The Villainess's True Colors (1)",
+    "next_title": "Chapter 62: The True Nature of a Villainess (3)"
+  },
+  {
+    "title": "Chapter 62: The True Nature of a Villainess (3)",
+    "chapter_id": "COB062",
+    "chapter_num": 62,
+    "date": "2026-05-31 12:04:00 +0800",
+    "url": "/cob/COB062.html",
+    "prev_url": "/cob/COB061.html",
+    "next_url": null,
+    "prev_title": "Chapter 61: The Villainess's True Colors (2)",
     "next_title": null
   }
 ]
