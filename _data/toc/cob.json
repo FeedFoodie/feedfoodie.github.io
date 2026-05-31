@@ -688,8 +688,19 @@
     "date": "2026-05-31 12:18:00 +0800",
     "url": "/cob/COB063.html",
     "prev_url": "/cob/COB062.html",
-    "next_url": null,
+    "next_url": "/cob/COB064.html",
     "prev_title": "Chapter 62: The True Nature of a Villainess (3)",
+    "next_title": "Chapter 64: The Two Tigers of Korea (2)"
+  },
+  {
+    "title": "Chapter 64: The Two Tigers of Korea (2)",
+    "chapter_id": "COB064",
+    "chapter_num": 64,
+    "date": "2026-05-31 12:21:00 +0800",
+    "url": "/cob/COB064.html",
+    "prev_url": "/cob/COB063.html",
+    "next_url": null,
+    "prev_title": "Chapter 63: The Two Tigers of Korea (1)",
     "next_title": null
   }
 ]
