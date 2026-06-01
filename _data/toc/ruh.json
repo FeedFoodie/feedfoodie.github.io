@@ -654,8 +654,19 @@
     "date": "2026-05-26 08:06:00 +0800",
     "url": "/ruh/RUH056.html",
     "prev_url": "/ruh/RUH055.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH057.html",
     "prev_title": "Chapter 55: Decently Nutritious",
+    "next_title": "Chapter 57: Perpetual and Immutable"
+  },
+  {
+    "title": "Chapter 57: Perpetual and Immutable",
+    "chapter_id": "RUH057",
+    "chapter_num": 57,
+    "date": "2026-06-01 11:29:00 +0800",
+    "url": "/ruh/RUH057.html",
+    "prev_url": "/ruh/RUH056.html",
+    "next_url": null,
+    "prev_title": "Chapter 56: Cliff Wind",
     "next_title": null
   }
 ]
