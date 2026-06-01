@@ -900,8 +900,19 @@
     "date": "2026-05-27 13:02:00 +0800",
     "url": "/absw/ABSW76.html",
     "prev_url": "/absw/ABSW75.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW77.html",
     "prev_title": "V8C5: Orthodox and Unorthodox",
+    "next_title": "V8C7: Accomplishing the Impossible"
+  },
+  {
+    "title": "V8C7: Accomplishing the Impossible",
+    "chapter_id": "ABSW77",
+    "chapter_num": 77,
+    "date": "2026-06-01 16:37:00 +0800",
+    "url": "/absw/ABSW77.html",
+    "prev_url": "/absw/ABSW76.html",
+    "next_url": null,
+    "prev_title": "V8C6: The Five-Layered Blockade",
     "next_title": null
   }
 ]
