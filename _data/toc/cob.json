@@ -765,8 +765,19 @@
     "date": "2026-05-31 13:23:00 +0800",
     "url": "/cob/COB070.html",
     "prev_url": "/cob/COB069.html",
-    "next_url": null,
+    "next_url": "/cob/COB071.html",
     "prev_title": "Chapter 69: Jang Cheon's Ransom (2)",
+    "next_title": "Chapter 71: Jang Cheon's Ransom (4)"
+  },
+  {
+    "title": "Chapter 71: Jang Cheon's Ransom (4)",
+    "chapter_id": "COB071",
+    "chapter_num": 71,
+    "date": "2026-06-08 15:05:00 +0800",
+    "url": "/cob/COB071.html",
+    "prev_url": "/cob/COB070.html",
+    "next_url": null,
+    "prev_title": "Chapter 70: Jang Cheon's Ransom (3)",
     "next_title": null
   }
 ]
