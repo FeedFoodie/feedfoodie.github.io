@@ -787,8 +787,19 @@
     "date": "2026-06-08 15:07:00 +0800",
     "url": "/cob/COB072.html",
     "prev_url": "/cob/COB071.html",
-    "next_url": null,
+    "next_url": "/cob/COB073.html",
     "prev_title": "Chapter 71: Jang Cheon's Ransom (4)",
+    "next_title": "Chapter 73: The Beginning of Change (2)"
+  },
+  {
+    "title": "Chapter 73: The Beginning of Change (2)",
+    "chapter_id": "COB073",
+    "chapter_num": 73,
+    "date": "2026-06-08 15:08:00 +0800",
+    "url": "/cob/COB073.html",
+    "prev_url": "/cob/COB072.html",
+    "next_url": null,
+    "prev_title": "Chapter 72: The Beginning of Change (1)",
     "next_title": null
   }
 ]
