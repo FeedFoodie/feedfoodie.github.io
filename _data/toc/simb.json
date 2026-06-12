@@ -6666,8 +6666,19 @@
     "date": "2026-05-31 15:49:00 +0800",
     "url": "/simb/SIMB563.html",
     "prev_url": "/simb/SIMB562.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB564.html",
     "prev_title": "Chapter 562: Let's Go Together!",
+    "next_title": "Chapter 564: Every Possible Method"
+  },
+  {
+    "title": "Chapter 564: Every Possible Method",
+    "chapter_id": "SIMB564",
+    "chapter_num": 564,
+    "date": "2026-06-12 22:51:00 +0800",
+    "url": "/simb/SIMB564.html",
+    "prev_url": "/simb/SIMB563.html",
+    "next_url": null,
+    "prev_title": "Chapter 563: Draw Your Sword",
     "next_title": null
   }
 ]
