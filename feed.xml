@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 12 Jun 2026 22:51:58 +0800</pubDate>
-        <lastBuildDate>Fri, 12 Jun 2026 22:51:58 +0800</lastBuildDate>
+        <pubDate>Fri, 12 Jun 2026 22:58:20 +0800</pubDate>
+        <lastBuildDate>Fri, 12 Jun 2026 22:58:20 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V8C8: Crimson Tiger and Martial God</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW78.html</description>
+            <pubDate>Fri, 12 Jun 2026 22:52:00 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW78.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW78.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>SIMB Chapter 564: Every Possible Method</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/absw/ABSW76.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW76.html</guid>
             <category>absw</category>
-        </item>
-        <item>
-            <title>RUH Chapter 56: Cliff Wind</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH056.html</description>
-            <pubDate>Tue, 26 May 2026 08:06:00 +0800</pubDate>
-            <link>https://northbladetl.com/ruh/RUH056.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH056.html</guid>
-            <category>ruh</category>
         </item>
     </channel>
 </rss>
