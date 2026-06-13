@@ -6677,8 +6677,19 @@
     "date": "2026-06-12 22:51:00 +0800",
     "url": "/simb/SIMB564.html",
     "prev_url": "/simb/SIMB563.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB565.html",
     "prev_title": "Chapter 563: Draw Your Sword",
+    "next_title": "Chapter 565: Their Respective Goals"
+  },
+  {
+    "title": "Chapter 565: Their Respective Goals",
+    "chapter_id": "SIMB565",
+    "chapter_num": 565,
+    "date": "2026-06-13 23:03:00 +0800",
+    "url": "/simb/SIMB565.html",
+    "prev_url": "/simb/SIMB564.html",
+    "next_url": null,
+    "prev_title": "Chapter 564: Every Possible Method",
     "next_title": null
   }
 ]
