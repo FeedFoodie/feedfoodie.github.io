@@ -908,8 +908,19 @@
     "date": "2026-06-15 07:26:00 +0800",
     "url": "/cob/COB083.html",
     "prev_url": "/cob/COB082.html",
-    "next_url": null,
+    "next_url": "/cob/COB084.html",
     "prev_title": "Chapter 82: The Necromantic Art of Immortality (2)",
+    "next_title": "Chapter 84: The Old Monster's Rooftop Room (2)"
+  },
+  {
+    "title": "Chapter 84: The Old Monster's Rooftop Room (2)",
+    "chapter_id": "COB084",
+    "chapter_num": 84,
+    "date": "2026-06-15 07:40:00 +0800",
+    "url": "/cob/COB084.html",
+    "prev_url": "/cob/COB083.html",
+    "next_url": null,
+    "prev_title": "Chapter 83: The Old Monster's Rooftop Room (1)",
     "next_title": null
   }
 ]
