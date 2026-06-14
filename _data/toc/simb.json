@@ -6688,8 +6688,19 @@
     "date": "2026-06-13 23:03:00 +0800",
     "url": "/simb/SIMB565.html",
     "prev_url": "/simb/SIMB564.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB566.html",
     "prev_title": "Chapter 564: Every Possible Method",
+    "next_title": "Chapter 566: Let Us Join You"
+  },
+  {
+    "title": "Chapter 566: Let Us Join You",
+    "chapter_id": "SIMB566",
+    "chapter_num": 566,
+    "date": "2026-06-14 19:44:00 +0800",
+    "url": "/simb/SIMB566.html",
+    "prev_url": "/simb/SIMB565.html",
+    "next_url": null,
+    "prev_title": "Chapter 565: Their Respective Goals",
     "next_title": null
   }
 ]
