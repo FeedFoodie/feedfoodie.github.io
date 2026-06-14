@@ -864,8 +864,19 @@
     "date": "2026-06-14 20:16:00 +0800",
     "url": "/cob/COB079.html",
     "prev_url": "/cob/COB078.html",
-    "next_url": null,
+    "next_url": "/cob/COB080.html",
     "prev_title": "Chapter 78: Club Upheaval (2)",
+    "next_title": "Chapter 80: Club Upheaval (4)"
+  },
+  {
+    "title": "Chapter 80: Club Upheaval (4)",
+    "chapter_id": "COB080",
+    "chapter_num": 80,
+    "date": "2026-06-14 20:32:00 +0800",
+    "url": "/cob/COB080.html",
+    "prev_url": "/cob/COB079.html",
+    "next_url": null,
+    "prev_title": "Chapter 79: Club Upheaval (3)",
     "next_title": null
   }
 ]
