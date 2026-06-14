@@ -820,8 +820,19 @@
     "date": "2026-06-08 19:47:00 +0800",
     "url": "/cob/COB075.html",
     "prev_url": "/cob/COB074.html",
-    "next_url": null,
+    "next_url": "/cob/COB076.html",
     "prev_title": "Chapter 74: The Beginning of Change (3)",
+    "next_title": "Chapter 76: The Great Demon's Return (2)"
+  },
+  {
+    "title": "Chapter 76: The Great Demon's Return (2)",
+    "chapter_id": "COB076",
+    "chapter_num": 76,
+    "date": "2026-06-14 19:45:00 +0800",
+    "url": "/cob/COB076.html",
+    "prev_url": "/cob/COB075.html",
+    "next_url": null,
+    "prev_title": "Chapter 75: The Great Demon's Return (1)",
     "next_title": null
   }
 ]
