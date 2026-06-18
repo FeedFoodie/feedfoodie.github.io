@@ -26,14 +26,14 @@ jobs:
     if: ${{ github.event.inputs.skip_build == 'false' }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5  # updated from v4
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true # runs 'bundle install' and caches installed gems
           cache-version: 1
       - name: Cache Jekyll metadata
-        uses: actions/cache@v4
+        uses: actions/cache@v5  # updated from v4
         with:
           path: |
             _site
@@ -44,7 +44,7 @@ jobs:
             ${{ runner.os }}-jekyll-build-
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6  # updated from v5
       - name: Build with Jekyll
         run: bundle exec jekyll build --incremental --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
