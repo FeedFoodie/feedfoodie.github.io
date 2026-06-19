@@ -6710,8 +6710,19 @@
     "date": "2026-06-15 22:47:00 +0800",
     "url": "/simb/SIMB567.html",
     "prev_url": "/simb/SIMB566.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB568.html",
     "prev_title": "Chapter 566: Let Us In On That",
+    "next_title": "Chapter 568: How Surprising!"
+  },
+  {
+    "title": "Chapter 568: How Surprising!",
+    "chapter_id": "SIMB568",
+    "chapter_num": 568,
+    "date": "2026-06-19 16:04:00 +0800",
+    "url": "/simb/SIMB568.html",
+    "prev_url": "/simb/SIMB567.html",
+    "next_url": null,
+    "prev_title": "Chapter 567: All I Did Was Watch Quietly",
     "next_title": null
   }
 ]
