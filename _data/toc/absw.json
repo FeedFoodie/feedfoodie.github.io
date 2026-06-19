@@ -922,8 +922,19 @@
     "date": "2026-06-12 22:52:00 +0800",
     "url": "/absw/ABSW78.html",
     "prev_url": "/absw/ABSW77.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW79.html",
     "prev_title": "V8C7: Accomplishing the Impossible",
+    "next_title": "V8C9: Feint to the East and Attack in the West"
+  },
+  {
+    "title": "V8C9: Feint to the East and Attack in the West",
+    "chapter_id": "ABSW79",
+    "chapter_num": 79,
+    "date": "2026-06-19 16:02:00 +0800",
+    "url": "/absw/ABSW79.html",
+    "prev_url": "/absw/ABSW78.html",
+    "next_url": null,
+    "prev_title": "V8C8: Crimson Tiger and Martial God",
     "next_title": null
   }
 ]
