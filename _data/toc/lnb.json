@@ -2583,8 +2583,19 @@
     "date": "2026-02-16 22:05:00 +0800",
     "url": "/lnb/LNB215.html",
     "prev_url": "/lnb/LNB214.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB216.html",
     "prev_title": "Chapter 214: Even So, It's Fine (2)",
+    "next_title": "Chapter 216: The World Changes, and People Easily Forget the Past (1)"
+  },
+  {
+    "title": "Chapter 216: The World Changes, and People Easily Forget the Past (1)",
+    "chapter_id": "LNB216",
+    "chapter_num": 216,
+    "date": "2026-06-20 12:35:00 +0800",
+    "url": "/lnb/LNB216.html",
+    "prev_url": "/lnb/LNB215.html",
+    "next_url": null,
+    "prev_title": "Chapter 215: Even So, It's Fine (3)",
     "next_title": null
   }
 ]

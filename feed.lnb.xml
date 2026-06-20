@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
         <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 16 Feb 2026 22:06:42 +0800</pubDate>
-        <lastBuildDate>Mon, 16 Feb 2026 22:06:42 +0800</lastBuildDate>
+        <pubDate>Sat, 20 Jun 2026 12:37:25 +0800</pubDate>
+        <lastBuildDate>Sat, 20 Jun 2026 12:37:25 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 216: The World Changes, and People Easily Forget the Past (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB216.html</description>
+            <pubDate>Sat, 20 Jun 2026 12:35:00 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB216.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB216.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 215: Even So, It&apos;s Fine (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Tue, 21 Oct 2025 19:55:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB207.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB207.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 206: When A Boy Becomes A Man (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB206.html</description>
-            <pubDate>Tue, 21 Oct 2025 18:33:00 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB206.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB206.html</guid>
             <category>lnb</category>
         </item>
     </channel>
