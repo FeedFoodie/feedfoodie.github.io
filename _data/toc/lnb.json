@@ -2616,8 +2616,19 @@
     "date": "2026-06-20 13:24:00 +0800",
     "url": "/lnb/LNB218.html",
     "prev_url": "/lnb/LNB217.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB219.html",
     "prev_title": "Chapter 217: The World Changes, and People Easily Forget the Past (2)",
+    "next_title": "Chapter 219: Those Who Want to Fight Enter, Those Who Want to Sell Leave (1)"
+  },
+  {
+    "title": "Chapter 219: Those Who Want to Fight Enter, Those Who Want to Sell Leave (1)",
+    "chapter_id": "LNB219",
+    "chapter_num": 219,
+    "date": "2026-06-20 13:59:00 +0800",
+    "url": "/lnb/LNB219.html",
+    "prev_url": "/lnb/LNB218.html",
+    "next_url": null,
+    "prev_title": "Chapter 218: The World Changes, and People Easily Forget the Past (3)",
     "next_title": null
   }
 ]
