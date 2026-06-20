@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
         <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 20 Jun 2026 13:59:45 +0800</pubDate>
-        <lastBuildDate>Sat, 20 Jun 2026 13:59:45 +0800</lastBuildDate>
+        <pubDate>Sat, 20 Jun 2026 19:51:56 +0800</pubDate>
+        <lastBuildDate>Sat, 20 Jun 2026 19:51:56 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 220: Those Who Want to Fight Enter, Those Who Want to Sell Leave (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB220.html</description>
+            <pubDate>Sat, 20 Jun 2026 19:51:00 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB220.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB220.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 219: Those Who Want to Fight Enter, Those Who Want to Sell Leave (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sun, 16 Nov 2025 21:39:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB211.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB211.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 210: Some Encounters Bring a Storm (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB210.html</description>
-            <pubDate>Sun, 16 Nov 2025 16:54:00 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB210.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB210.html</guid>
             <category>lnb</category>
         </item>
     </channel>
