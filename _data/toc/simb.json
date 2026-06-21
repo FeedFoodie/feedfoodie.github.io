@@ -6754,8 +6754,19 @@
     "date": "2026-06-20 22:59:00 +0800",
     "url": "/simb/SIMB571.html",
     "prev_url": "/simb/SIMB570.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB572.html",
     "prev_title": "Chapter 570: The Correct Decision",
+    "next_title": "Chapter 572: Who Is That Man?"
+  },
+  {
+    "title": "Chapter 572: Who Is That Man?",
+    "chapter_id": "SIMB572",
+    "chapter_num": 572,
+    "date": "2026-06-21 09:26:00 +0800",
+    "url": "/simb/SIMB572.html",
+    "prev_url": "/simb/SIMB571.html",
+    "next_url": null,
+    "prev_title": "Chapter 571: I Will Gather Them Here",
     "next_title": null
   }
 ]
