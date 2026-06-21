@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 21 Jun 2026 09:27:00 +0800</pubDate>
-        <lastBuildDate>Sun, 21 Jun 2026 09:27:00 +0800</lastBuildDate>
+        <pubDate>Sun, 21 Jun 2026 18:59:53 +0800</pubDate>
+        <lastBuildDate>Sun, 21 Jun 2026 18:59:53 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 573: No Matter How I Think About It</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB573.html</description>
+            <pubDate>Sun, 21 Jun 2026 18:57:00 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB573.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB573.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>SIMB Chapter 572: Who Is That Man?</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -37,15 +46,6 @@ layout: null
             <link>https://northbladetl.com/lnb/LNB220.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB220.html</guid>
             <category>lnb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 570: The Correct Decision</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB570.html</description>
-            <pubDate>Sat, 20 Jun 2026 17:43:00 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB570.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB570.html</guid>
-            <category>simb</category>
         </item>
         <item>
             <title>LNB Chapter 219: Those Who Want to Fight Enter, Those Who Want to Sell Leave (1)</title>
