@@ -952,8 +952,19 @@
     "date": "2026-06-21 19:03:00 +0800",
     "url": "/cob/COB087.html",
     "prev_url": "/cob/COB086.html",
-    "next_url": null,
+    "next_url": "/cob/COB088.html",
     "prev_title": "Chapter 86: Sowing Discord (2)",
+    "next_title": "Chapter 88: Director Jo (2)"
+  },
+  {
+    "title": "Chapter 88: Director Jo (2)",
+    "chapter_id": "COB088",
+    "chapter_num": 88,
+    "date": "2026-06-21 19:05:00 +0800",
+    "url": "/cob/COB088.html",
+    "prev_url": "/cob/COB087.html",
+    "next_url": null,
+    "prev_title": "Chapter 87: Director Jo (1)",
     "next_title": null
   }
 ]
