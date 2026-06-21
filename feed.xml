@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 21 Jun 2026 19:37:48 +0800</pubDate>
-        <lastBuildDate>Sun, 21 Jun 2026 19:37:48 +0800</lastBuildDate>
+        <pubDate>Sun, 21 Jun 2026 19:40:20 +0800</pubDate>
+        <lastBuildDate>Sun, 21 Jun 2026 19:40:20 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 92: The Hunt Begins (4)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB092.html</description>
+            <pubDate>Sun, 21 Jun 2026 19:39:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB092.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB092.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 91: The Hunt Begins (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -27,15 +36,6 @@ layout: null
             <pubDate>Sun, 21 Jun 2026 19:07:00 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB090.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB090.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 89: The Hunt Begins (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB089.html</description>
-            <pubDate>Sun, 21 Jun 2026 19:06:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB089.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB089.html</guid>
             <category>cob</category>
         </item>
         <item>
