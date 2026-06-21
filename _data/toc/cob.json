@@ -1029,8 +1029,19 @@
     "date": "2026-06-21 20:09:00 +0800",
     "url": "/cob/COB094.html",
     "prev_url": "/cob/COB093.html",
-    "next_url": null,
+    "next_url": "/cob/COB095.html",
     "prev_title": "Chapter 93: The Hunt Begins (5)",
+    "next_title": "Chapter 95: Who Will Go? (2)"
+  },
+  {
+    "title": "Chapter 95: Who Will Go? (2)",
+    "chapter_id": "COB095",
+    "chapter_num": 95,
+    "date": "2026-06-21 21:21:00 +0800",
+    "url": "/cob/COB095.html",
+    "prev_url": "/cob/COB094.html",
+    "next_url": null,
+    "prev_title": "Chapter 94: Who Will Go? (1)",
     "next_title": null
   }
 ]
