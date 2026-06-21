@@ -930,8 +930,19 @@
     "date": "2026-06-15 08:06:00 +0800",
     "url": "/cob/COB085.html",
     "prev_url": "/cob/COB084.html",
-    "next_url": null,
+    "next_url": "/cob/COB086.html",
     "prev_title": "Chapter 84: The Old Monster's Rooftop Room (2)",
+    "next_title": "Chapter 86: Sowing Discord (2)"
+  },
+  {
+    "title": "Chapter 86: Sowing Discord (2)",
+    "chapter_id": "COB086",
+    "chapter_num": 86,
+    "date": "2026-06-21 19:01:00 +0800",
+    "url": "/cob/COB086.html",
+    "prev_url": "/cob/COB085.html",
+    "next_url": null,
+    "prev_title": "Chapter 85: Sowing Discord (1)",
     "next_title": null
   }
 ]

@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 21 Jun 2026 18:59:53 +0800</pubDate>
-        <lastBuildDate>Sun, 21 Jun 2026 18:59:53 +0800</lastBuildDate>
+        <pubDate>Sun, 21 Jun 2026 19:01:34 +0800</pubDate>
+        <lastBuildDate>Sun, 21 Jun 2026 19:01:34 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 86: Sowing Discord (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB086.html</description>
+            <pubDate>Sun, 21 Jun 2026 19:01:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB086.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB086.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>SIMB Chapter 573: No Matter How I Think About It</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Mon, 15 Jun 2026 07:40:00 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB084.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB084.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 83: The Old Monster&apos;s Rooftop Room (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB083.html</description>
-            <pubDate>Mon, 15 Jun 2026 07:26:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB083.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB083.html</guid>
             <category>cob</category>
         </item>
     </channel>
