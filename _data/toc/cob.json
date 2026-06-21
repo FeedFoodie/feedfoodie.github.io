@@ -1007,8 +1007,19 @@
     "date": "2026-06-21 19:39:00 +0800",
     "url": "/cob/COB092.html",
     "prev_url": "/cob/COB091.html",
-    "next_url": null,
+    "next_url": "/cob/COB093.html",
     "prev_title": "Chapter 91: The Hunt Begins (3)",
+    "next_title": "Chapter 93: The Hunt Begins (5)"
+  },
+  {
+    "title": "Chapter 93: The Hunt Begins (5)",
+    "chapter_id": "COB093",
+    "chapter_num": 93,
+    "date": "2026-06-21 19:41:00 +0800",
+    "url": "/cob/COB093.html",
+    "prev_url": "/cob/COB092.html",
+    "next_url": null,
+    "prev_title": "Chapter 92: The Hunt Begins (4)",
     "next_title": null
   }
 ]
