@@ -8,9 +8,54 @@ layout: null
         <description>NorthBladeTL - City of Blades Chapter Updates</description>
         <link>https://northbladetl.com/cob/</link>
         <atom:link href="https://northbladetl.com/feed.cob.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 21 Jun 2026 21:22:18 +0800</pubDate>
-        <lastBuildDate>Sun, 21 Jun 2026 21:22:18 +0800</lastBuildDate>
+        <pubDate>Tue, 23 Jun 2026 19:23:14 +0800</pubDate>
+        <lastBuildDate>Tue, 23 Jun 2026 19:23:14 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 100: Tai Tianqi (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB100.html</description>
+            <pubDate>Tue, 23 Jun 2026 19:22:04 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB100.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB100.html</guid>
+            <category>cob</category>
+        </item>
+        <item>
+            <title>COB Chapter 99: Tai Tianqi (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB099.html</description>
+            <pubDate>Tue, 23 Jun 2026 19:21:36 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB099.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB099.html</guid>
+            <category>cob</category>
+        </item>
+        <item>
+            <title>COB Chapter 98: The Chairmen (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB098.html</description>
+            <pubDate>Tue, 23 Jun 2026 19:21:15 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB098.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB098.html</guid>
+            <category>cob</category>
+        </item>
+        <item>
+            <title>COB Chapter 97: The Chairmen (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB097.html</description>
+            <pubDate>Tue, 23 Jun 2026 19:20:41 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB097.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB097.html</guid>
+            <category>cob</category>
+        </item>
+        <item>
+            <title>COB Chapter 96: The Chairmen (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB096.html</description>
+            <pubDate>Tue, 23 Jun 2026 19:19:00 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB096.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB096.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 95: Who Will Go? (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -54,51 +99,6 @@ layout: null
             <pubDate>Sun, 21 Jun 2026 19:31:00 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB091.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB091.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 90: The Hunt Begins (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB090.html</description>
-            <pubDate>Sun, 21 Jun 2026 19:07:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB090.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB090.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 89: The Hunt Begins (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB089.html</description>
-            <pubDate>Sun, 21 Jun 2026 19:06:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB089.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB089.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 88: Director Jo (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB088.html</description>
-            <pubDate>Sun, 21 Jun 2026 19:05:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB088.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB088.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 87: Director Jo (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB087.html</description>
-            <pubDate>Sun, 21 Jun 2026 19:03:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB087.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB087.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 86: Sowing Discord (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB086.html</description>
-            <pubDate>Sun, 21 Jun 2026 19:01:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB086.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB086.html</guid>
             <category>cob</category>
         </item>
     </channel>

@@ -1040,8 +1040,63 @@
     "date": "2026-06-21 21:21:00 +0800",
     "url": "/cob/COB095.html",
     "prev_url": "/cob/COB094.html",
-    "next_url": null,
+    "next_url": "/cob/COB096.html",
     "prev_title": "Chapter 94: Who Will Go? (1)",
+    "next_title": "Chapter 96: The Chairmen (1)"
+  },
+  {
+    "title": "Chapter 96: The Chairmen (1)",
+    "chapter_id": "COB096",
+    "chapter_num": 96,
+    "date": "2026-06-23 19:19:00 +0800",
+    "url": "/cob/COB096.html",
+    "prev_url": "/cob/COB095.html",
+    "next_url": "/cob/COB097.html",
+    "prev_title": "Chapter 95: Who Will Go? (2)",
+    "next_title": "Chapter 97: The Chairmen (2)"
+  },
+  {
+    "title": "Chapter 97: The Chairmen (2)",
+    "chapter_id": "COB097",
+    "chapter_num": 97,
+    "date": "2026-06-23 19:20:41 +0800",
+    "url": "/cob/COB097.html",
+    "prev_url": "/cob/COB096.html",
+    "next_url": "/cob/COB098.html",
+    "prev_title": "Chapter 96: The Chairmen (1)",
+    "next_title": "Chapter 98: The Chairmen (3)"
+  },
+  {
+    "title": "Chapter 98: The Chairmen (3)",
+    "chapter_id": "COB098",
+    "chapter_num": 98,
+    "date": "2026-06-23 19:21:15 +0800",
+    "url": "/cob/COB098.html",
+    "prev_url": "/cob/COB097.html",
+    "next_url": "/cob/COB099.html",
+    "prev_title": "Chapter 97: The Chairmen (2)",
+    "next_title": "Chapter 99: Tai Tianqi (1)"
+  },
+  {
+    "title": "Chapter 99: Tai Tianqi (1)",
+    "chapter_id": "COB099",
+    "chapter_num": 99,
+    "date": "2026-06-23 19:21:36 +0800",
+    "url": "/cob/COB099.html",
+    "prev_url": "/cob/COB098.html",
+    "next_url": "/cob/COB100.html",
+    "prev_title": "Chapter 98: The Chairmen (3)",
+    "next_title": "Chapter 100: Tai Tianqi (2)"
+  },
+  {
+    "title": "Chapter 100: Tai Tianqi (2)",
+    "chapter_id": "COB100",
+    "chapter_num": 100,
+    "date": "2026-06-23 19:22:04 +0800",
+    "url": "/cob/COB100.html",
+    "prev_url": "/cob/COB099.html",
+    "next_url": null,
+    "prev_title": "Chapter 99: Tai Tianqi (1)",
     "next_title": null
   }
 ]
