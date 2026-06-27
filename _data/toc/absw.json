@@ -933,8 +933,19 @@
     "date": "2026-06-19 16:02:00 +0800",
     "url": "/absw/ABSW79.html",
     "prev_url": "/absw/ABSW78.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW80.html",
     "prev_title": "V8C8: Crimson Tiger and Martial God",
+    "next_title": "V8C10: The Sword Wraiths"
+  },
+  {
+    "title": "V8C10: The Sword Wraiths",
+    "chapter_id": "ABSW80",
+    "chapter_num": 80,
+    "date": "2026-06-27 13:25:39 +0800",
+    "url": "/absw/ABSW80.html",
+    "prev_url": "/absw/ABSW79.html",
+    "next_url": null,
+    "prev_title": "V8C9: Feint to the East and Attack in the West",
     "next_title": null
   }
 ]
