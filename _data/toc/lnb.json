@@ -2638,8 +2638,19 @@
     "date": "2026-06-20 19:51:00 +0800",
     "url": "/lnb/LNB220.html",
     "prev_url": "/lnb/LNB219.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB221.html",
     "prev_title": "Chapter 219: Those Who Want to Fight Enter, Those Who Want to Sell Leave (1)",
+    "next_title": "Chapter 221: Those Who Wish to Fight Enter, Those Who Wish to Sell Leave (3)"
+  },
+  {
+    "title": "Chapter 221: Those Who Wish to Fight Enter, Those Who Wish to Sell Leave (3)",
+    "chapter_id": "LNB221",
+    "chapter_num": 221,
+    "date": "2026-06-29 20:44:33 +0800",
+    "url": "/lnb/LNB221.html",
+    "prev_url": "/lnb/LNB220.html",
+    "next_url": null,
+    "prev_title": "Chapter 220: Those Who Want to Fight Enter, Those Who Want to Sell Leave (2)",
     "next_title": null
   }
 ]
