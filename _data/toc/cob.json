@@ -1128,8 +1128,19 @@
     "date": "2026-06-29 19:57:22 +0800",
     "url": "/cob/COB103.html",
     "prev_url": "/cob/COB102.html",
-    "next_url": null,
+    "next_url": "/cob/COB104.html",
     "prev_title": "Chapter 102: Beyond the Door (2)",
+    "next_title": "Chapter 104: Beyond the Door (4)"
+  },
+  {
+    "title": "Chapter 104: Beyond the Door (4)",
+    "chapter_id": "COB104",
+    "chapter_num": 104,
+    "date": "2026-06-29 20:19:16 +0800",
+    "url": "/cob/COB104.html",
+    "prev_url": "/cob/COB103.html",
+    "next_url": null,
+    "prev_title": "Chapter 103: Beyond the Door (3)",
     "next_title": null
   }
 ]
