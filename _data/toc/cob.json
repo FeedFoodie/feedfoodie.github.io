@@ -1172,8 +1172,19 @@
     "date": "2026-06-29 20:43:11 +0800",
     "url": "/cob/COB107.html",
     "prev_url": "/cob/COB106.html",
-    "next_url": null,
+    "next_url": "/cob/COB108.html",
     "prev_title": "Chapter 106: Gambler (2)",
+    "next_title": "Chapter 108: Gambler (4)"
+  },
+  {
+    "title": "Chapter 108: Gambler (4)",
+    "chapter_id": "COB108",
+    "chapter_num": 108,
+    "date": "2026-06-29 20:43:33 +0800",
+    "url": "/cob/COB108.html",
+    "prev_url": "/cob/COB107.html",
+    "next_url": null,
+    "prev_title": "Chapter 107: Gambler (3)",
     "next_title": null
   }
 ]
