@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 29 Jun 2026 21:19:16 +0800</pubDate>
-        <lastBuildDate>Mon, 29 Jun 2026 21:19:16 +0800</lastBuildDate>
+        <pubDate>Mon, 29 Jun 2026 22:40:29 +0800</pubDate>
+        <lastBuildDate>Mon, 29 Jun 2026 22:40:29 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 222: Standing Tall Once More Beneath the Fallen Sky (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB222.html</description>
+            <pubDate>Mon, 29 Jun 2026 22:40:10 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB222.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB222.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>COB Chapter 110: The Winner of the Bet (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sat, 20 Jun 2026 19:51:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB220.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB220.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 219: Those Who Want to Fight Enter, Those Who Want to Sell Leave (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB219.html</description>
-            <pubDate>Sat, 20 Jun 2026 13:59:00 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB219.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB219.html</guid>
             <category>lnb</category>
         </item>
     </channel>

@@ -2649,8 +2649,19 @@
     "date": "2026-06-29 20:44:33 +0800",
     "url": "/lnb/LNB221.html",
     "prev_url": "/lnb/LNB220.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB222.html",
     "prev_title": "Chapter 220: Those Who Want to Fight Enter, Those Who Want to Sell Leave (2)",
+    "next_title": "Chapter 222: Standing Tall Once More Beneath the Fallen Sky (1)"
+  },
+  {
+    "title": "Chapter 222: Standing Tall Once More Beneath the Fallen Sky (1)",
+    "chapter_id": "LNB222",
+    "chapter_num": 222,
+    "date": "2026-06-29 22:40:10 +0800",
+    "url": "/lnb/LNB222.html",
+    "prev_url": "/lnb/LNB221.html",
+    "next_url": null,
+    "prev_title": "Chapter 221: Those Who Wish to Fight Enter, Those Who Wish to Sell Leave (3)",
     "next_title": null
   }
 ]
