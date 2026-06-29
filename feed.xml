@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 29 Jun 2026 19:57:48 +0800</pubDate>
-        <lastBuildDate>Mon, 29 Jun 2026 19:57:48 +0800</lastBuildDate>
+        <pubDate>Mon, 29 Jun 2026 20:07:48 +0800</pubDate>
+        <lastBuildDate>Mon, 29 Jun 2026 20:07:48 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 103: Beyond the Door (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB103.html</description>
+            <pubDate>Mon, 29 Jun 2026 19:57:22 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB103.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB103.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 102: Beyond the Door (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -64,15 +73,6 @@ layout: null
             <link>https://northbladetl.com/absw/ABSW80.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW80.html</guid>
             <category>absw</category>
-        </item>
-        <item>
-            <title>COB Chapter 100: Tai Tianqi (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB100.html</description>
-            <pubDate>Tue, 23 Jun 2026 19:22:04 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB100.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB100.html</guid>
-            <category>cob</category>
         </item>
         <item>
             <title>LNB Chapter 220: Those Who Want to Fight Enter, Those Who Want to Sell Leave (2)</title>
