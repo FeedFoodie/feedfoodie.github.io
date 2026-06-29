@@ -1106,8 +1106,19 @@
     "date": "2026-06-29 19:42:53 +0800",
     "url": "/cob/COB101.html",
     "prev_url": "/cob/COB100.html",
-    "next_url": null,
+    "next_url": "/cob/COB102.html",
     "prev_title": "Chapter 100: Tai Tianqi (2)",
+    "next_title": "Chapter 102: Beyond the Door (2)"
+  },
+  {
+    "title": "Chapter 102: Beyond the Door (2)",
+    "chapter_id": "COB102",
+    "chapter_num": 102,
+    "date": "2026-06-29 19:56:34 +0800",
+    "url": "/cob/COB102.html",
+    "prev_url": "/cob/COB101.html",
+    "next_url": null,
+    "prev_title": "Chapter 101: Beyond the Door (1)",
     "next_title": null
   }
 ]
