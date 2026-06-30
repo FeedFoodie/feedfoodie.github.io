@@ -2671,8 +2671,19 @@
     "date": "2026-06-29 23:44:00 +0800",
     "url": "/lnb/LNB223.html",
     "prev_url": "/lnb/LNB222.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB224.html",
     "prev_title": "Chapter 222: Standing Tall Once More Beneath the Fallen Sky (1)",
+    "next_title": "Chapter 224: Standing Tall Once More Beneath the Fallen Sky (3)"
+  },
+  {
+    "title": "Chapter 224: Standing Tall Once More Beneath the Fallen Sky (3)",
+    "chapter_id": "LNB224",
+    "chapter_num": 224,
+    "date": "2026-06-30 21:19:33 +0800",
+    "url": "/lnb/LNB224.html",
+    "prev_url": "/lnb/LNB223.html",
+    "next_url": null,
+    "prev_title": "Chapter 223: Standing Tall Once More Beneath the Fallen Sky (2)",
     "next_title": null
   }
 ]
