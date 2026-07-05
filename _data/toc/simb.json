@@ -6864,8 +6864,19 @@
     "date": "2026-07-05 20:03:26 +0800",
     "url": "/simb/SIMB581.html",
     "prev_url": "/simb/SIMB580.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB582.html",
     "prev_title": "Chapter 580: A Promise from Thirty Years Ago (1)",
+    "next_title": "Chapter 582: A Promise from Thirty Years Ago (3)"
+  },
+  {
+    "title": "Chapter 582: A Promise from Thirty Years Ago (3)",
+    "chapter_id": "SIMB582",
+    "chapter_num": 582,
+    "date": "2026-07-05 23:04:53 +0800",
+    "url": "/simb/SIMB582.html",
+    "prev_url": "/simb/SIMB581.html",
+    "next_url": null,
+    "prev_title": "Chapter 581: A Promise from Thirty Years Ago (2)",
     "next_title": null
   }
 ]
