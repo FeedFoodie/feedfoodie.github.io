@@ -2693,8 +2693,19 @@
     "date": "2026-06-30 23:40:21 +0800",
     "url": "/lnb/LNB225.html",
     "prev_url": "/lnb/LNB224.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB226.html",
     "prev_title": "Chapter 224: Standing Tall Once More Beneath the Fallen Sky (3)",
+    "next_title": "Chapter 226: Holding One's Breath, Gritting One's Teeth (1)"
+  },
+  {
+    "title": "Chapter 226: Holding One's Breath, Gritting One's Teeth (1)",
+    "chapter_id": "LNB226",
+    "chapter_num": 226,
+    "date": "2026-07-06 20:54:39 +0800",
+    "url": "/lnb/LNB226.html",
+    "prev_url": "/lnb/LNB225.html",
+    "next_url": null,
+    "prev_title": "Chapter 225: Standing Tall Once More Beneath the Fallen Sky (4)",
     "next_title": null
   }
 ]
