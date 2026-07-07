@@ -1205,8 +1205,19 @@
     "date": "2026-06-29 21:10:32 +0800",
     "url": "/cob/COB110.html",
     "prev_url": "/cob/COB109.html",
-    "next_url": null,
+    "next_url": "/cob/COB111.html",
     "prev_title": "Chapter 109: The Winner of the Bet (1)",
+    "next_title": "Chapter 111: The Winner of the Bet (3)"
+  },
+  {
+    "title": "Chapter 111: The Winner of the Bet (3)",
+    "chapter_id": "COB111",
+    "chapter_num": 111,
+    "date": "2026-07-07 22:39:31 +0800",
+    "url": "/cob/COB111.html",
+    "prev_url": "/cob/COB110.html",
+    "next_url": null,
+    "prev_title": "Chapter 110: The Winner of the Bet (2)",
     "next_title": null
   }
 ]
