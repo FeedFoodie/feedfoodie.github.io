@@ -8,11 +8,20 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 08 Jul 2026 07:16:44 +0800</pubDate>
-        <lastBuildDate>Wed, 08 Jul 2026 07:16:44 +0800</lastBuildDate>
+        <pubDate>Wed, 08 Jul 2026 07:58:58 +0800</pubDate>
+        <lastBuildDate>Wed, 08 Jul 2026 07:58:58 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
         <item>
-            <title>COB </title>
+            <title>COB Chapter 117: Queen’s Blade (5)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB117.html</description>
+            <pubDate>Wed, 08 Jul 2026 07:58:26 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB117.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB117.html</guid>
+            <category>cob</category>
+        </item>
+        <item>
+            <title>COB Chapter 116: Queen&apos;s Blade (4)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB116.html</description>
             <pubDate>Wed, 08 Jul 2026 07:01:02 +0800</pubDate>
@@ -27,15 +36,6 @@ layout: null
             <pubDate>Wed, 08 Jul 2026 06:58:31 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB115.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB115.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 114: Queen’s Blade (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB114.html</description>
-            <pubDate>Wed, 08 Jul 2026 06:55:07 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB114.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB114.html</guid>
             <category>cob</category>
         </item>
         <item>
