@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 08 Jul 2026 07:06:44 +0800</pubDate>
-        <lastBuildDate>Wed, 08 Jul 2026 07:06:44 +0800</lastBuildDate>
+        <pubDate>Wed, 08 Jul 2026 07:16:44 +0800</pubDate>
+        <lastBuildDate>Wed, 08 Jul 2026 07:16:44 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB </title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB116.html</description>
+            <pubDate>Wed, 08 Jul 2026 07:01:02 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB116.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB116.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 115: Queen’s Blade (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -27,15 +36,6 @@ layout: null
             <pubDate>Wed, 08 Jul 2026 06:55:07 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB114.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB114.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 113: Queen’s Blade (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB113.html</description>
-            <pubDate>Tue, 07 Jul 2026 22:40:20 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB113.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB113.html</guid>
             <category>cob</category>
         </item>
         <item>

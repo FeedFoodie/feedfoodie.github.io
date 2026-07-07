@@ -1260,8 +1260,19 @@
     "date": "2026-07-08 06:58:31 +0800",
     "url": "/cob/COB115.html",
     "prev_url": "/cob/COB114.html",
-    "next_url": null,
+    "next_url": "/cob/COB116.html",
     "prev_title": "Chapter 114: Queen’s Blade (2)",
+    "next_title": ""
+  },
+  {
+    "title": "",
+    "chapter_id": "COB116",
+    "chapter_num": 116,
+    "date": "2026-07-08 07:01:02 +0800",
+    "url": "/cob/COB116.html",
+    "prev_url": "/cob/COB115.html",
+    "next_url": null,
+    "prev_title": "Chapter 115: Queen’s Blade (3)",
     "next_title": null
   }
 ]
