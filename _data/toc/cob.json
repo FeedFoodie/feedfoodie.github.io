@@ -1304,8 +1304,19 @@
     "date": "2026-07-08 21:16:05 +0800",
     "url": "/cob/COB119.html",
     "prev_url": "/cob/COB118.html",
-    "next_url": null,
+    "next_url": "/cob/COB120.html",
     "prev_title": "Chapter 118: Constantine’s Trust (1)",
+    "next_title": "Chapter 120: Constantine’s Trust (3)"
+  },
+  {
+    "title": "Chapter 120: Constantine’s Trust (3)",
+    "chapter_id": "COB120",
+    "chapter_num": 120,
+    "date": "2026-07-08 21:16:27 +0800",
+    "url": "/cob/COB120.html",
+    "prev_url": "/cob/COB119.html",
+    "next_url": null,
+    "prev_title": "Chapter 119: Constantine’s Trust (2)",
     "next_title": null
   }
 ]
