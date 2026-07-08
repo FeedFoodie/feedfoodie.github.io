@@ -1293,8 +1293,19 @@
     "date": "2026-07-08 21:15:49 +0800",
     "url": "/cob/COB118.html",
     "prev_url": "/cob/COB117.html",
-    "next_url": null,
+    "next_url": "/cob/COB119.html",
     "prev_title": "Chapter 117: Queen’s Blade (5)",
+    "next_title": "Chapter 119: Constantine’s Trust (2)"
+  },
+  {
+    "title": "Chapter 119: Constantine’s Trust (2)",
+    "chapter_id": "COB119",
+    "chapter_num": 119,
+    "date": "2026-07-08 21:16:05 +0800",
+    "url": "/cob/COB119.html",
+    "prev_url": "/cob/COB118.html",
+    "next_url": null,
+    "prev_title": "Chapter 118: Constantine’s Trust (1)",
     "next_title": null
   }
 ]
