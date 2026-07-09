@@ -944,8 +944,19 @@
     "date": "2026-06-27 13:25:39 +0800",
     "url": "/absw/ABSW80.html",
     "prev_url": "/absw/ABSW79.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW81.html",
     "prev_title": "V8C9: Feint to the East and Attack in the West",
+    "next_title": "V9C1: Parting Ways"
+  },
+  {
+    "title": "V9C1: Parting Ways",
+    "chapter_id": "ABSW81",
+    "chapter_num": 81,
+    "date": "2026-07-10 17:01:00 +0800",
+    "url": "/absw/ABSW81.html",
+    "prev_url": "/absw/ABSW80.html",
+    "next_url": null,
+    "prev_title": "V8C10: The Sword Wraiths",
     "next_title": null
   }
 ]
