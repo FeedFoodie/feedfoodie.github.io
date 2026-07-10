@@ -6875,8 +6875,19 @@
     "date": "2026-07-05 23:04:53 +0800",
     "url": "/simb/SIMB582.html",
     "prev_url": "/simb/SIMB581.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB583.html",
     "prev_title": "Chapter 581: A Promise from Thirty Years Ago (2)",
+    "next_title": "Chapter 583: Ah, My Bad"
+  },
+  {
+    "title": "Chapter 583: Ah, My Bad",
+    "chapter_id": "SIMB583",
+    "chapter_num": 583,
+    "date": "2026-07-10 23:10:56 +0800",
+    "url": "/simb/SIMB583.html",
+    "prev_url": "/simb/SIMB582.html",
+    "next_url": null,
+    "prev_title": "Chapter 582: A Promise from Thirty Years Ago (3)",
     "next_title": null
   }
 ]
