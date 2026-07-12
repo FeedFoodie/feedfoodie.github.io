@@ -6897,8 +6897,19 @@
     "date": "2026-07-11 18:48:13 +0800",
     "url": "/simb/SIMB584.html",
     "prev_url": "/simb/SIMB583.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB585.html",
     "prev_title": "Chapter 583: Ah, My Bad",
+    "next_title": "Chapter 585: Well Done"
+  },
+  {
+    "title": "Chapter 585: Well Done",
+    "chapter_id": "SIMB585",
+    "chapter_num": 585,
+    "date": "2026-07-12 19:47:37 +0800",
+    "url": "/simb/SIMB585.html",
+    "prev_url": "/simb/SIMB584.html",
+    "next_url": null,
+    "prev_title": "Chapter 584: Just a Pushover",
     "next_title": null
   }
 ]

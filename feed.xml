@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 11 Jul 2026 18:48:38 +0800</pubDate>
-        <lastBuildDate>Sat, 11 Jul 2026 18:48:38 +0800</lastBuildDate>
+        <pubDate>Sun, 12 Jul 2026 19:55:57 +0800</pubDate>
+        <lastBuildDate>Sun, 12 Jul 2026 19:55:57 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 585: Well Done</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB585.html</description>
+            <pubDate>Sun, 12 Jul 2026 19:47:37 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB585.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB585.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>SIMB Chapter 584: Just a Pushover</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -73,15 +82,6 @@ layout: null
             <link>https://northbladetl.com/lnb/LNB226.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB226.html</guid>
             <category>lnb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 582: A Promise from Thirty Years Ago (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB582.html</description>
-            <pubDate>Sun, 05 Jul 2026 23:04:53 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB582.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB582.html</guid>
-            <category>simb</category>
         </item>
         <item>
             <title>LNB Chapter 225: Standing Tall Once More Beneath the Fallen Sky (4)</title>
