@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
         <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 13 Jul 2026 19:10:03 +0800</pubDate>
-        <lastBuildDate>Mon, 13 Jul 2026 19:10:03 +0800</lastBuildDate>
+        <pubDate>Mon, 13 Jul 2026 21:29:19 +0800</pubDate>
+        <lastBuildDate>Mon, 13 Jul 2026 21:29:19 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 228: Holding One&apos;s Breath, Gritting One&apos;s Teeth (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB228.html</description>
+            <pubDate>Mon, 13 Jul 2026 21:28:58 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB228.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB228.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 227: Holding One&apos;s Breath, Gritting One&apos;s Teeth (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sat, 20 Jun 2026 13:59:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB219.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB219.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 218: The World Changes, and People Easily Forget the Past (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB218.html</description>
-            <pubDate>Sat, 20 Jun 2026 13:24:00 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB218.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB218.html</guid>
             <category>lnb</category>
         </item>
     </channel>

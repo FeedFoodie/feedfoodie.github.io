@@ -2715,8 +2715,19 @@
     "date": "2026-07-13 19:09:42 +0800",
     "url": "/lnb/LNB227.html",
     "prev_url": "/lnb/LNB226.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB228.html",
     "prev_title": "Chapter 226: Holding One's Breath, Gritting One's Teeth (1)",
+    "next_title": "Chapter 228: Holding One's Breath, Gritting One's Teeth (3)"
+  },
+  {
+    "title": "Chapter 228: Holding One's Breath, Gritting One's Teeth (3)",
+    "chapter_id": "LNB228",
+    "chapter_num": 228,
+    "date": "2026-07-13 21:28:58 +0800",
+    "url": "/lnb/LNB228.html",
+    "prev_url": "/lnb/LNB227.html",
+    "next_url": null,
+    "prev_title": "Chapter 227: Holding One's Breath, Gritting One's Teeth (2)",
     "next_title": null
   }
 ]
