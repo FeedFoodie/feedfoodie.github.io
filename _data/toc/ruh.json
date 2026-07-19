@@ -665,8 +665,19 @@
     "date": "2026-06-01 11:29:00 +0800",
     "url": "/ruh/RUH057.html",
     "prev_url": "/ruh/RUH056.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH058.html",
     "prev_title": "Chapter 56: Cliff Wind",
+    "next_title": "Chapter 58: Traces"
+  },
+  {
+    "title": "Chapter 58: Traces",
+    "chapter_id": "RUH058",
+    "chapter_num": 58,
+    "date": "2026-07-19 17:02:50 +0800",
+    "url": "/ruh/RUH058.html",
+    "prev_url": "/ruh/RUH057.html",
+    "next_url": null,
+    "prev_title": "Chapter 57: Perpetual and Immutable",
     "next_title": null
   }
 ]
