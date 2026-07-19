@@ -676,8 +676,19 @@
     "date": "2026-07-19 17:02:50 +0800",
     "url": "/ruh/RUH058.html",
     "prev_url": "/ruh/RUH057.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH059.html",
     "prev_title": "Chapter 57: Perpetual and Immutable",
+    "next_title": "Chapter 59: Unreadable Scrawl"
+  },
+  {
+    "title": "Chapter 59: Unreadable Scrawl",
+    "chapter_id": "RUH059",
+    "chapter_num": 59,
+    "date": "2026-07-19 17:03:56 +0800",
+    "url": "/ruh/RUH059.html",
+    "prev_url": "/ruh/RUH058.html",
+    "next_url": null,
+    "prev_title": "Chapter 58: Traces",
     "next_title": null
   }
 ]

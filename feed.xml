@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 19 Jul 2026 17:03:52 +0800</pubDate>
-        <lastBuildDate>Sun, 19 Jul 2026 17:03:52 +0800</lastBuildDate>
+        <pubDate>Sun, 19 Jul 2026 17:05:05 +0800</pubDate>
+        <lastBuildDate>Sun, 19 Jul 2026 17:05:05 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>RUH Chapter 59: Unreadable Scrawl</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH059.html</description>
+            <pubDate>Sun, 19 Jul 2026 17:03:56 +0800</pubDate>
+            <link>https://northbladetl.com/ruh/RUH059.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH059.html</guid>
+            <category>ruh</category>
+        </item>
         <item>
             <title>RUH Chapter 58: Traces</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Wed, 08 Jul 2026 21:16:05 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB119.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB119.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 118: Constantine’s Trust (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB118.html</description>
-            <pubDate>Wed, 08 Jul 2026 21:15:49 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB118.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB118.html</guid>
             <category>cob</category>
         </item>
     </channel>
