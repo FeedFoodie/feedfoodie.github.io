@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Absolute Warrior Chapter Updates</description>
         <link>https://northbladetl.com/absw/</link>
         <atom:link href="https://northbladetl.com/feed.absw.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 10 Jul 2026 07:36:41 +0800</pubDate>
-        <lastBuildDate>Fri, 10 Jul 2026 07:36:41 +0800</lastBuildDate>
+        <pubDate>Sun, 19 Jul 2026 17:53:08 +0800</pubDate>
+        <lastBuildDate>Sun, 19 Jul 2026 17:53:08 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V9C2: Reunion</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW82.html</description>
+            <pubDate>Sun, 19 Jul 2026 17:52:28 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW82.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW82.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>ABSW V9C1: Parting Ways</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 01 May 2026 18:04:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW73.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW73.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V8C2: The Successor of the New Righteous Association</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW72.html</description>
-            <pubDate>Fri, 17 Apr 2026 21:21:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW72.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW72.html</guid>
             <category>absw</category>
         </item>
     </channel>

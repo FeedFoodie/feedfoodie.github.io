@@ -955,8 +955,19 @@
     "date": "2026-07-10 17:01:00 +0800",
     "url": "/absw/ABSW81.html",
     "prev_url": "/absw/ABSW80.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW82.html",
     "prev_title": "V8C10: The Sword Wraiths",
+    "next_title": "V9C2: Reunion"
+  },
+  {
+    "title": "V9C2: Reunion",
+    "chapter_id": "ABSW82",
+    "chapter_num": 82,
+    "date": "2026-07-19 17:52:28 +0800",
+    "url": "/absw/ABSW82.html",
+    "prev_url": "/absw/ABSW81.html",
+    "next_url": null,
+    "prev_title": "V9C1: Parting Ways",
     "next_title": null
   }
 ]
