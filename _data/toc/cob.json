@@ -1381,8 +1381,19 @@
     "date": "2026-07-23 17:41:39 +0800",
     "url": "/cob/COB126.html",
     "prev_url": "/cob/COB125.html",
-    "next_url": null,
+    "next_url": "/cob/COB127.html",
     "prev_title": "Chapter 125: Chairman (4)",
+    "next_title": "Chapter 127: The Bloody Birthday Banquet (2)"
+  },
+  {
+    "title": "Chapter 127: The Bloody Birthday Banquet (2)",
+    "chapter_id": "COB127",
+    "chapter_num": 127,
+    "date": "2026-07-23 19:39:06 +0800",
+    "url": "/cob/COB127.html",
+    "prev_url": "/cob/COB126.html",
+    "next_url": null,
+    "prev_title": "Chapter 126: The Bloody Birthday Banquet (1)",
     "next_title": null
   }
 ]
