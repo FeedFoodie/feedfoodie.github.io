@@ -1359,8 +1359,19 @@
     "date": "2026-07-23 17:40:52 +0800",
     "url": "/cob/COB124.html",
     "prev_url": "/cob/COB123.html",
-    "next_url": null,
+    "next_url": "/cob/COB125.html",
     "prev_title": "Chapter 123: Chairman (2)",
+    "next_title": "Chapter 125: Chairman (4)"
+  },
+  {
+    "title": "Chapter 125: Chairman (4)",
+    "chapter_id": "COB125",
+    "chapter_num": 125,
+    "date": "2026-07-23 17:41:13 +0800",
+    "url": "/cob/COB125.html",
+    "prev_url": "/cob/COB124.html",
+    "next_url": null,
+    "prev_title": "Chapter 124: Chairman (3)",
     "next_title": null
   }
 ]
