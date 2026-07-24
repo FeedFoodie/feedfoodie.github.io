@@ -6941,8 +6941,19 @@
     "date": "2026-07-19 22:58:26 +0800",
     "url": "/simb/SIMB588.html",
     "prev_url": "/simb/SIMB587.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB589.html",
     "prev_title": "Chapter 587: Now It's My Turn",
+    "next_title": "Chapter 589: This Feels Awesome"
+  },
+  {
+    "title": "Chapter 589: This Feels Awesome",
+    "chapter_id": "SIMB589",
+    "chapter_num": 589,
+    "date": "2026-07-24 22:18:21 +0800",
+    "url": "/simb/SIMB589.html",
+    "prev_url": "/simb/SIMB588.html",
+    "next_url": null,
+    "prev_title": "Chapter 588: Do Me A Favor, Don't Disappoint Me",
     "next_title": null
   }
 ]
