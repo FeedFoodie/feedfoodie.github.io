@@ -966,8 +966,19 @@
     "date": "2026-07-19 17:52:28 +0800",
     "url": "/absw/ABSW82.html",
     "prev_url": "/absw/ABSW81.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW83.html",
     "prev_title": "V9C1: Parting Ways",
+    "next_title": "V9C3: Growth"
+  },
+  {
+    "title": "V9C3: Growth",
+    "chapter_id": "ABSW83",
+    "chapter_num": 83,
+    "date": "2026-07-25 21:03:27 +0800",
+    "url": "/absw/ABSW83.html",
+    "prev_url": "/absw/ABSW82.html",
+    "next_url": null,
+    "prev_title": "V9C2: Reunion",
     "next_title": null
   }
 ]
