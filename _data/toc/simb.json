@@ -6963,8 +6963,19 @@
     "date": "2026-07-26 10:42:46 +0800",
     "url": "/simb/SIMB590.html",
     "prev_url": "/simb/SIMB589.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB591.html",
     "prev_title": "Chapter 589: This Feels Awesome",
+    "next_title": "Chapter 591: From Now On"
+  },
+  {
+    "title": "Chapter 591: From Now On",
+    "chapter_id": "SIMB591",
+    "chapter_num": 591,
+    "date": "2026-07-26 19:04:32 +0800",
+    "url": "/simb/SIMB591.html",
+    "prev_url": "/simb/SIMB590.html",
+    "next_url": null,
+    "prev_title": "Chapter 590: You've Changed a Lot Too",
     "next_title": null
   }
 ]
