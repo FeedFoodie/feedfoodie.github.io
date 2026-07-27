@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 27 Jul 2026 20:53:42 +0800</pubDate>
-        <lastBuildDate>Mon, 27 Jul 2026 20:53:42 +0800</lastBuildDate>
+        <pubDate>Mon, 27 Jul 2026 22:26:39 +0800</pubDate>
+        <lastBuildDate>Mon, 27 Jul 2026 22:26:39 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 230: An Unexpected Encounter (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB230.html</description>
+            <pubDate>Mon, 27 Jul 2026 22:26:17 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB230.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB230.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 229: An Unexpected Encounter (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/absw/ABSW82.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW82.html</guid>
             <category>absw</category>
-        </item>
-        <item>
-            <title>RUH Chapter 59: Unreadable Scrawl</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Reincarnated as an Unruly Heir Chapter Update - https://northbladetl.com/ruh/RUH059.html</description>
-            <pubDate>Sun, 19 Jul 2026 17:03:56 +0800</pubDate>
-            <link>https://northbladetl.com/ruh/RUH059.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/ruh/RUH059.html</guid>
-            <category>ruh</category>
         </item>
     </channel>
 </rss>

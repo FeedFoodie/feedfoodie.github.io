@@ -2737,8 +2737,19 @@
     "date": "2026-07-27 20:53:17 +0800",
     "url": "/lnb/LNB229.html",
     "prev_url": "/lnb/LNB228.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB230.html",
     "prev_title": "Chapter 228: Holding One's Breath, Gritting One's Teeth (3)",
+    "next_title": "Chapter 230: An Unexpected Encounter (2)"
+  },
+  {
+    "title": "Chapter 230: An Unexpected Encounter (2)",
+    "chapter_id": "LNB230",
+    "chapter_num": 230,
+    "date": "2026-07-27 22:26:17 +0800",
+    "url": "/lnb/LNB230.html",
+    "prev_url": "/lnb/LNB229.html",
+    "next_url": null,
+    "prev_title": "Chapter 229: An Unexpected Encounter (1)",
     "next_title": null
   }
 ]
