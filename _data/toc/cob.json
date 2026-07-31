@@ -1469,8 +1469,19 @@
     "date": "2026-07-31 23:05:37 +0800",
     "url": "/cob/COB134.html",
     "prev_url": "/cob/COB133.html",
-    "next_url": null,
+    "next_url": "/cob/COB135.html",
     "prev_title": "Chapter 133: With Queen (1)",
+    "next_title": "Chapter 135: With Queen (3)"
+  },
+  {
+    "title": "Chapter 135: With Queen (3)",
+    "chapter_id": "COB135",
+    "chapter_num": 135,
+    "date": "2026-07-31 23:08:31 +0800",
+    "url": "/cob/COB135.html",
+    "prev_url": "/cob/COB134.html",
+    "next_url": null,
+    "prev_title": "Chapter 134: With Queen (2)",
     "next_title": null
   }
 ]

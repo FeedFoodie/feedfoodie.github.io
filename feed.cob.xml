@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - City of Blades Chapter Updates</description>
         <link>https://northbladetl.com/cob/</link>
         <atom:link href="https://northbladetl.com/feed.cob.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 31 Jul 2026 23:07:34 +0800</pubDate>
-        <lastBuildDate>Fri, 31 Jul 2026 23:07:34 +0800</lastBuildDate>
+        <pubDate>Fri, 31 Jul 2026 23:09:04 +0800</pubDate>
+        <lastBuildDate>Fri, 31 Jul 2026 23:09:04 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 135: With Queen (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB135.html</description>
+            <pubDate>Fri, 31 Jul 2026 23:08:31 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB135.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB135.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 134: With Queen (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Thu, 23 Jul 2026 17:41:39 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB126.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB126.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 125: Chairman (4)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB125.html</description>
-            <pubDate>Thu, 23 Jul 2026 17:41:13 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB125.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB125.html</guid>
             <category>cob</category>
         </item>
     </channel>
