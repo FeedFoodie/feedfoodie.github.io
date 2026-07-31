@@ -1458,8 +1458,19 @@
     "date": "2026-07-31 23:03:43 +0800",
     "url": "/cob/COB133.html",
     "prev_url": "/cob/COB132.html",
-    "next_url": null,
+    "next_url": "/cob/COB134.html",
     "prev_title": "Chapter 132: The Bloody Birthday Banquet (7)",
+    "next_title": "Chapter 134: With Queen (2)"
+  },
+  {
+    "title": "Chapter 134: With Queen (2)",
+    "chapter_id": "COB134",
+    "chapter_num": 134,
+    "date": "2026-07-31 23:05:37 +0800",
+    "url": "/cob/COB134.html",
+    "prev_url": "/cob/COB133.html",
+    "next_url": null,
+    "prev_title": "Chapter 133: With Queen (1)",
     "next_title": null
   }
 ]
