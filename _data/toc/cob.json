@@ -1436,8 +1436,19 @@
     "date": "2026-07-31 22:37:54 +0800",
     "url": "/cob/COB131.html",
     "prev_url": "/cob/COB130.html",
-    "next_url": null,
+    "next_url": "/cob/COB132.html",
     "prev_title": "Chapter 130: The Bloody Birthday Banquet (5)",
+    "next_title": "Chapter 132: The Bloody Birthday Banquet (7)"
+  },
+  {
+    "title": "Chapter 132: The Bloody Birthday Banquet (7)",
+    "chapter_id": "COB132",
+    "chapter_num": 132,
+    "date": "2026-07-31 22:40:00 +0800",
+    "url": "/cob/COB132.html",
+    "prev_url": "/cob/COB131.html",
+    "next_url": null,
+    "prev_title": "Chapter 131: The Bloody Birthday Banquet (6)",
     "next_title": null
   }
 ]
