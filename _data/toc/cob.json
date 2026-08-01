@@ -1491,8 +1491,19 @@
     "date": "2026-08-01 11:34:44 +0800",
     "url": "/cob/COB136.html",
     "prev_url": "/cob/COB135.html",
-    "next_url": null,
+    "next_url": "/cob/COB137.html",
     "prev_title": "Chapter 135: With Queen (3)",
+    "next_title": "Chapter 137: The Greatest Commission of All Time (2)"
+  },
+  {
+    "title": "Chapter 137: The Greatest Commission of All Time (2)",
+    "chapter_id": "COB137",
+    "chapter_num": 137,
+    "date": "2026-08-01 11:39:20 +0800",
+    "url": "/cob/COB137.html",
+    "prev_url": "/cob/COB136.html",
+    "next_url": null,
+    "prev_title": "Chapter 136: The Greatest Commission of All Time (1)",
     "next_title": null
   }
 ]
