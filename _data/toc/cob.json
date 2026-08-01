@@ -1513,8 +1513,19 @@
     "date": "2026-08-01 13:26:52 +0800",
     "url": "/cob/COB138.html",
     "prev_url": "/cob/COB137.html",
-    "next_url": null,
+    "next_url": "/cob/COB139.html",
     "prev_title": "Chapter 137: The Greatest Commission of All Time (2)",
+    "next_title": "Chapter 139: The Greatest Commission of All Time (4)"
+  },
+  {
+    "title": "Chapter 139: The Greatest Commission of All Time (4)",
+    "chapter_id": "COB139",
+    "chapter_num": 139,
+    "date": "2026-08-01 13:30:28 +0800",
+    "url": "/cob/COB139.html",
+    "prev_url": "/cob/COB138.html",
+    "next_url": null,
+    "prev_title": "Chapter 138: The Greatest Commission of All Time (3)",
     "next_title": null
   }
 ]
