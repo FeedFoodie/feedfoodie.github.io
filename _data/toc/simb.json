@@ -7007,8 +7007,19 @@
     "date": "2026-08-01 11:33:20 +0800",
     "url": "/simb/SIMB594.html",
     "prev_url": "/simb/SIMB593.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB595.html",
     "prev_title": "Chapter 593: If We Win the Relay",
+    "next_title": "Chapter 595: So, I've Been Thinking..."
+  },
+  {
+    "title": "Chapter 595: So, I've Been Thinking...",
+    "chapter_id": "SIMB595",
+    "chapter_num": 595,
+    "date": "2026-08-01 13:17:55 +0800",
+    "url": "/simb/SIMB595.html",
+    "prev_url": "/simb/SIMB594.html",
+    "next_url": null,
+    "prev_title": "Chapter 594: The Winner of the Relay",
     "next_title": null
   }
 ]

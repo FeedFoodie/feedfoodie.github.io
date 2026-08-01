@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 01 Aug 2026 11:39:45 +0800</pubDate>
-        <lastBuildDate>Sat, 01 Aug 2026 11:39:45 +0800</lastBuildDate>
+        <pubDate>Sat, 01 Aug 2026 13:19:01 +0800</pubDate>
+        <lastBuildDate>Sat, 01 Aug 2026 13:19:01 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 595: So, I&apos;ve Been Thinking...</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB595.html</description>
+            <pubDate>Sat, 01 Aug 2026 13:17:55 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB595.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB595.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>COB Chapter 137: The Greatest Commission of All Time (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -73,15 +82,6 @@ layout: null
             <link>https://northbladetl.com/lnb/LNB229.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB229.html</guid>
             <category>lnb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 592: Do You Even Need Cheering?</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB592.html</description>
-            <pubDate>Sun, 26 Jul 2026 21:46:33 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB592.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB592.html</guid>
-            <category>simb</category>
         </item>
         <item>
             <title>ABSW V9C3: Growth</title>
