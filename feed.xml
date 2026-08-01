@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 01 Aug 2026 13:30:50 +0800</pubDate>
-        <lastBuildDate>Sat, 01 Aug 2026 13:30:50 +0800</lastBuildDate>
+        <pubDate>Sat, 01 Aug 2026 13:38:21 +0800</pubDate>
+        <lastBuildDate>Sat, 01 Aug 2026 13:38:21 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 140: When the Phone Rings (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB140.html</description>
+            <pubDate>Sat, 01 Aug 2026 13:37:56 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB140.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB140.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 139: The Greatest Commission of All Time (4)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -37,15 +46,6 @@ layout: null
             <link>https://northbladetl.com/simb/SIMB595.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB595.html</guid>
             <category>simb</category>
-        </item>
-        <item>
-            <title>COB Chapter 137: The Greatest Commission of All Time (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB137.html</description>
-            <pubDate>Sat, 01 Aug 2026 11:39:20 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB137.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB137.html</guid>
-            <category>cob</category>
         </item>
         <item>
             <title>SIMB Chapter 594: The Winner of the Relay</title>
