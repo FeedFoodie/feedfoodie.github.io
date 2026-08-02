@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 02 Aug 2026 11:26:44 +0800</pubDate>
-        <lastBuildDate>Sun, 02 Aug 2026 11:26:44 +0800</lastBuildDate>
+        <pubDate>Sun, 02 Aug 2026 19:05:26 +0800</pubDate>
+        <lastBuildDate>Sun, 02 Aug 2026 19:05:26 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V9C4: The Rousing of Evil</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW84.html</description>
+            <pubDate>Sun, 02 Aug 2026 19:04:07 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW84.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW84.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>SIMB Chapter 596: A Dedication to All of You</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sat, 25 Jul 2026 21:03:27 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW83.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW83.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V9C2: Reunion</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW82.html</description>
-            <pubDate>Sun, 19 Jul 2026 17:52:28 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW82.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW82.html</guid>
             <category>absw</category>
         </item>
     </channel>

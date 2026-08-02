@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Absolute Warrior Chapter Updates</description>
         <link>https://northbladetl.com/absw/</link>
         <atom:link href="https://northbladetl.com/feed.absw.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 25 Jul 2026 21:04:00 +0800</pubDate>
-        <lastBuildDate>Sat, 25 Jul 2026 21:04:00 +0800</lastBuildDate>
+        <pubDate>Sun, 02 Aug 2026 19:05:26 +0800</pubDate>
+        <lastBuildDate>Sun, 02 Aug 2026 19:05:26 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V9C4: The Rousing of Evil</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW84.html</description>
+            <pubDate>Sun, 02 Aug 2026 19:04:07 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW84.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW84.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>ABSW V9C3: Growth</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 15 May 2026 23:27:00 +0800</pubDate>
             <link>https://northbladetl.com/absw/ABSW75.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW75.html</guid>
-            <category>absw</category>
-        </item>
-        <item>
-            <title>ABSW V8C4: Human Affairs</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW74.html</description>
-            <pubDate>Fri, 08 May 2026 07:25:00 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW74.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW74.html</guid>
             <category>absw</category>
         </item>
     </channel>

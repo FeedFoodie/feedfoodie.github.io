@@ -977,8 +977,19 @@
     "date": "2026-07-25 21:03:27 +0800",
     "url": "/absw/ABSW83.html",
     "prev_url": "/absw/ABSW82.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW84.html",
     "prev_title": "V9C2: Reunion",
+    "next_title": "V9C4: The Rousing of Evil"
+  },
+  {
+    "title": "V9C4: The Rousing of Evil",
+    "chapter_id": "ABSW84",
+    "chapter_num": 84,
+    "date": "2026-08-02 19:04:07 +0800",
+    "url": "/absw/ABSW84.html",
+    "prev_url": "/absw/ABSW83.html",
+    "next_url": null,
+    "prev_title": "V9C3: Growth",
     "next_title": null
   }
 ]
