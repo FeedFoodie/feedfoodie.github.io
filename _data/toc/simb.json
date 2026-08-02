@@ -7018,8 +7018,19 @@
     "date": "2026-08-01 13:17:55 +0800",
     "url": "/simb/SIMB595.html",
     "prev_url": "/simb/SIMB594.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB596.html",
     "prev_title": "Chapter 594: The Winner of the Relay",
+    "next_title": "Chapter 596: A Dedication to All of You"
+  },
+  {
+    "title": "Chapter 596: A Dedication to All of You",
+    "chapter_id": "SIMB596",
+    "chapter_num": 596,
+    "date": "2026-08-02 11:24:26 +0800",
+    "url": "/simb/SIMB596.html",
+    "prev_url": "/simb/SIMB595.html",
+    "next_url": null,
+    "prev_title": "Chapter 595: So, I've Been Thinking...",
     "next_title": null
   }
 ]
