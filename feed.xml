@@ -8,11 +8,20 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 03 Aug 2026 00:02:50 +0800</pubDate>
-        <lastBuildDate>Mon, 03 Aug 2026 00:02:50 +0800</lastBuildDate>
+        <pubDate>Mon, 03 Aug 2026 21:39:08 +0800</pubDate>
+        <lastBuildDate>Mon, 03 Aug 2026 21:39:08 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
         <item>
-            <title>SIMB Chapter 597: That child, Yeo Min</title>
+            <title>LNB Chapter 231: An Unexpected Encounter (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB231.html</description>
+            <pubDate>Mon, 03 Aug 2026 21:35:20 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB231.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB231.html</guid>
+            <category>lnb</category>
+        </item>
+        <item>
+            <title>SIMB Chapter 597: That Child, Yeo Min</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB597.html</description>
             <pubDate>Mon, 03 Aug 2026 00:01:48 +0800</pubDate>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/lnb/LNB229.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB229.html</guid>
             <category>lnb</category>
-        </item>
-        <item>
-            <title>ABSW V9C3: Growth</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW83.html</description>
-            <pubDate>Sat, 25 Jul 2026 21:03:27 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW83.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW83.html</guid>
-            <category>absw</category>
         </item>
     </channel>
 </rss>

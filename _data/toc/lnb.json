@@ -2748,8 +2748,19 @@
     "date": "2026-07-27 22:26:17 +0800",
     "url": "/lnb/LNB230.html",
     "prev_url": "/lnb/LNB229.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB231.html",
     "prev_title": "Chapter 229: An Unexpected Encounter (1)",
+    "next_title": "Chapter 231: An Unexpected Encounter (3)"
+  },
+  {
+    "title": "Chapter 231: An Unexpected Encounter (3)",
+    "chapter_id": "LNB231",
+    "chapter_num": 231,
+    "date": "2026-08-03 21:35:20 +0800",
+    "url": "/lnb/LNB231.html",
+    "prev_url": "/lnb/LNB230.html",
+    "next_url": null,
+    "prev_title": "Chapter 230: An Unexpected Encounter (2)",
     "next_title": null
   }
 ]
