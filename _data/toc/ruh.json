@@ -687,8 +687,19 @@
     "date": "2026-07-19 17:03:56 +0800",
     "url": "/ruh/RUH059.html",
     "prev_url": "/ruh/RUH058.html",
-    "next_url": null,
+    "next_url": "/ruh/RUH060.html",
     "prev_title": "Chapter 58: Traces",
+    "next_title": "Chapter 60: An Untimely Commotion"
+  },
+  {
+    "title": "Chapter 60: An Untimely Commotion",
+    "chapter_id": "RUH060",
+    "chapter_num": 60,
+    "date": "2026-08-07 06:58:02 +0800",
+    "url": "/ruh/RUH060.html",
+    "prev_url": "/ruh/RUH059.html",
+    "next_url": null,
+    "prev_title": "Chapter 59: Unreadable Scrawl",
     "next_title": null
   }
 ]
