@@ -7040,8 +7040,19 @@
     "date": "2026-08-03 00:01:48 +0800",
     "url": "/simb/SIMB597.html",
     "prev_url": "/simb/SIMB596.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB598.html",
     "prev_title": "Chapter 596: A Dedication to All of You",
+    "next_title": "Chapter 598: An Interesting Story"
+  },
+  {
+    "title": "Chapter 598: An Interesting Story",
+    "chapter_id": "SIMB598",
+    "chapter_num": 598,
+    "date": "2026-08-08 12:48:47 +0800",
+    "url": "/simb/SIMB598.html",
+    "prev_url": "/simb/SIMB597.html",
+    "next_url": null,
+    "prev_title": "Chapter 597: That Child, Yeo Min",
     "next_title": null
   }
 ]

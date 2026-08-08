@@ -8,11 +8,20 @@ layout: null
         <description>NorthBladeTL - Star Instructor Master Baek Chapter Updates</description>
         <link>https://northbladetl.com/simb/</link>
         <atom:link href="https://northbladetl.com/feed.simb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 03 Aug 2026 00:02:50 +0800</pubDate>
-        <lastBuildDate>Mon, 03 Aug 2026 00:02:50 +0800</lastBuildDate>
+        <pubDate>Sat, 08 Aug 2026 12:49:17 +0800</pubDate>
+        <lastBuildDate>Sat, 08 Aug 2026 12:49:17 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
         <item>
-            <title>SIMB Chapter 597: That child, Yeo Min</title>
+            <title>SIMB Chapter 598: An Interesting Story</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB598.html</description>
+            <pubDate>Sat, 08 Aug 2026 12:48:47 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB598.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB598.html</guid>
+            <category>simb</category>
+        </item>
+        <item>
+            <title>SIMB Chapter 597: That Child, Yeo Min</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB597.html</description>
             <pubDate>Mon, 03 Aug 2026 00:01:48 +0800</pubDate>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Fri, 24 Jul 2026 22:18:21 +0800</pubDate>
             <link>https://northbladetl.com/simb/SIMB589.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB589.html</guid>
-            <category>simb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 588: Do Me A Favor, Don&apos;t Disappoint Me</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB588.html</description>
-            <pubDate>Sun, 19 Jul 2026 22:58:26 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB588.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB588.html</guid>
             <category>simb</category>
         </item>
     </channel>
