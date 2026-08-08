@@ -7062,8 +7062,19 @@
     "date": "2026-08-08 20:49:12 +0800",
     "url": "/simb/SIMB599.html",
     "prev_url": "/simb/SIMB598.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB600.html",
     "prev_title": "Chapter 598: An Interesting Story",
+    "next_title": "Chapter 600: The Misfits' Counterattack"
+  },
+  {
+    "title": "Chapter 600: The Misfits' Counterattack",
+    "chapter_id": "SIMB600",
+    "chapter_num": 600,
+    "date": "2026-08-08 23:27:27 +0800",
+    "url": "/simb/SIMB600.html",
+    "prev_url": "/simb/SIMB599.html",
+    "next_url": null,
+    "prev_title": "Chapter 599: I Have Never",
     "next_title": null
   }
 ]

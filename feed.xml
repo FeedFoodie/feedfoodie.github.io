@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 08 Aug 2026 20:49:44 +0800</pubDate>
-        <lastBuildDate>Sat, 08 Aug 2026 20:49:44 +0800</lastBuildDate>
+        <pubDate>Sat, 08 Aug 2026 23:28:09 +0800</pubDate>
+        <lastBuildDate>Sat, 08 Aug 2026 23:28:09 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 600: The Misfits&apos; Counterattack</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB600.html</description>
+            <pubDate>Sat, 08 Aug 2026 23:27:27 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB600.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB600.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>SIMB Chapter 599: I Have Never</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -46,15 +55,6 @@ layout: null
             <link>https://northbladetl.com/lnb/LNB231.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB231.html</guid>
             <category>lnb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 597: That Child, Yeo Min</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB597.html</description>
-            <pubDate>Mon, 03 Aug 2026 00:01:48 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB597.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB597.html</guid>
-            <category>simb</category>
         </item>
         <item>
             <title>ABSW V9C4: The Rousing of Evil</title>
