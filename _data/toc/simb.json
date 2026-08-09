@@ -7073,8 +7073,19 @@
     "date": "2026-08-08 23:27:27 +0800",
     "url": "/simb/SIMB600.html",
     "prev_url": "/simb/SIMB599.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB601.html",
     "prev_title": "Chapter 599: I Have Never",
+    "next_title": "Chapter 601: I'm Counting on You"
+  },
+  {
+    "title": "Chapter 601: I'm Counting on You",
+    "chapter_id": "SIMB601",
+    "chapter_num": 601,
+    "date": "2026-08-09 16:31:41 +0800",
+    "url": "/simb/SIMB601.html",
+    "prev_url": "/simb/SIMB600.html",
+    "next_url": null,
+    "prev_title": "Chapter 600: The Misfits' Counterattack",
     "next_title": null
   }
 ]
