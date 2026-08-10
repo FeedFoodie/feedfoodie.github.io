@@ -1535,8 +1535,19 @@
     "date": "2026-08-01 13:37:56 +0800",
     "url": "/cob/COB140.html",
     "prev_url": "/cob/COB139.html",
-    "next_url": null,
+    "next_url": "/cob/COB141.html",
     "prev_title": "Chapter 139: The Greatest Commission of All Time (4)",
+    "next_title": "Chapter 141: When the Phone Rings (2)"
+  },
+  {
+    "title": "Chapter 141: When the Phone Rings (2)",
+    "chapter_id": "COB141",
+    "chapter_num": 141,
+    "date": "2026-08-10 17:29:39 +0800",
+    "url": "/cob/COB141.html",
+    "prev_url": "/cob/COB140.html",
+    "next_url": null,
+    "prev_title": "Chapter 140: When the Phone Rings (1)",
     "next_title": null
   }
 ]
