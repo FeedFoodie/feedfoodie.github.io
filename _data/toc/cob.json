@@ -1579,8 +1579,19 @@
     "date": "2026-08-11 22:56:51 +0800",
     "url": "/cob/COB144.html",
     "prev_url": "/cob/COB143.html",
-    "next_url": null,
+    "next_url": "/cob/COB145.html",
     "prev_title": "Chapter 143: When the Phone Rings (4)",
+    "next_title": "Chapter 145: Ryan (2)"
+  },
+  {
+    "title": "Chapter 145: Ryan (2)",
+    "chapter_id": "COB145",
+    "chapter_num": 145,
+    "date": "2026-08-11 23:01:24 +0800",
+    "url": "/cob/COB145.html",
+    "prev_url": "/cob/COB144.html",
+    "next_url": null,
+    "prev_title": "Chapter 144: Ryan (1)",
     "next_title": null
   }
 ]
