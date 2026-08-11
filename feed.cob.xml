@@ -8,9 +8,27 @@ layout: null
         <description>NorthBladeTL - City of Blades Chapter Updates</description>
         <link>https://northbladetl.com/cob/</link>
         <atom:link href="https://northbladetl.com/feed.cob.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 10 Aug 2026 17:30:27 +0800</pubDate>
-        <lastBuildDate>Mon, 10 Aug 2026 17:30:27 +0800</lastBuildDate>
+        <pubDate>Tue, 11 Aug 2026 22:57:34 +0800</pubDate>
+        <lastBuildDate>Tue, 11 Aug 2026 22:57:34 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>COB Chapter 144: Ryan (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB144.html</description>
+            <pubDate>Tue, 11 Aug 2026 22:56:51 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB144.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB144.html</guid>
+            <category>cob</category>
+        </item>
+        <item>
+            <title>COB Chapter 143: When the Phone Rings (4)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB143.html</description>
+            <pubDate>Tue, 11 Aug 2026 22:56:45 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB143.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB143.html</guid>
+            <category>cob</category>
+        </item>
         <item>
             <title>COB Chapter 142: When the Phone Rings (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -81,24 +99,6 @@ layout: null
             <pubDate>Fri, 31 Jul 2026 23:08:31 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB135.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB135.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 134: With Queen (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB134.html</description>
-            <pubDate>Fri, 31 Jul 2026 23:05:37 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB134.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB134.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 133: With Queen (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB133.html</description>
-            <pubDate>Fri, 31 Jul 2026 23:03:43 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB133.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB133.html</guid>
             <category>cob</category>
         </item>
     </channel>
