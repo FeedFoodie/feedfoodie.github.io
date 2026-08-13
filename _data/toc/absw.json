@@ -988,8 +988,19 @@
     "date": "2026-08-02 19:04:07 +0800",
     "url": "/absw/ABSW84.html",
     "prev_url": "/absw/ABSW83.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW85.html",
     "prev_title": "V9C3: Growth",
+    "next_title": "V9C5: The Scorching Divine Pill"
+  },
+  {
+    "title": "V9C5: The Scorching Divine Pill",
+    "chapter_id": "ABSW85",
+    "chapter_num": 85,
+    "date": "2026-08-13 20:02:50 +0800",
+    "url": "/absw/ABSW85.html",
+    "prev_url": "/absw/ABSW84.html",
+    "next_url": null,
+    "prev_title": "V9C4: The Rousing of Evil",
     "next_title": null
   }
 ]
