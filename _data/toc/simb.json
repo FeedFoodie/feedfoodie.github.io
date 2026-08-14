@@ -7084,8 +7084,19 @@
     "date": "2026-08-09 16:31:41 +0800",
     "url": "/simb/SIMB601.html",
     "prev_url": "/simb/SIMB600.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB602.html",
     "prev_title": "Chapter 600: The Misfits' Counterattack",
+    "next_title": "Chapter 602: Psycho"
+  },
+  {
+    "title": "Chapter 602: Psycho",
+    "chapter_id": "SIMB602",
+    "chapter_num": 602,
+    "date": "2026-08-14 22:23:52 +0800",
+    "url": "/simb/SIMB602.html",
+    "prev_url": "/simb/SIMB601.html",
+    "next_url": null,
+    "prev_title": "Chapter 601: I'm Counting on You",
     "next_title": null
   }
 ]
