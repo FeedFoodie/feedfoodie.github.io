@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Star Instructor Master Baek Chapter Updates</description>
         <link>https://northbladetl.com/simb/</link>
         <atom:link href="https://northbladetl.com/feed.simb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 16 Aug 2026 16:11:25 +0800</pubDate>
-        <lastBuildDate>Sun, 16 Aug 2026 16:11:25 +0800</lastBuildDate>
+        <pubDate>Sun, 16 Aug 2026 20:52:46 +0800</pubDate>
+        <lastBuildDate>Sun, 16 Aug 2026 20:52:46 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 605: Were You Watching?</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB605.html</description>
+            <pubDate>Sun, 16 Aug 2026 20:52:26 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB605.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB605.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>SIMB Chapter 604: Who Should Be Punished?</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sun, 02 Aug 2026 11:24:26 +0800</pubDate>
             <link>https://northbladetl.com/simb/SIMB596.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB596.html</guid>
-            <category>simb</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 595: So, I&apos;ve Been Thinking...</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB595.html</description>
-            <pubDate>Sat, 01 Aug 2026 13:17:55 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB595.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB595.html</guid>
             <category>simb</category>
         </item>
     </channel>

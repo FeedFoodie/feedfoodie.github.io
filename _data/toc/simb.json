@@ -7117,8 +7117,19 @@
     "date": "2026-08-16 16:10:57 +0800",
     "url": "/simb/SIMB604.html",
     "prev_url": "/simb/SIMB603.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB605.html",
     "prev_title": "Chapter 603: Yeah, I'm Threatening You",
+    "next_title": "Chapter 605: Were You Watching?"
+  },
+  {
+    "title": "Chapter 605: Were You Watching?",
+    "chapter_id": "SIMB605",
+    "chapter_num": 605,
+    "date": "2026-08-16 20:52:26 +0800",
+    "url": "/simb/SIMB605.html",
+    "prev_url": "/simb/SIMB604.html",
+    "next_url": null,
+    "prev_title": "Chapter 604: Who Should Be Punished?",
     "next_title": null
   }
 ]
