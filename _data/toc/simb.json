@@ -7106,8 +7106,19 @@
     "date": "2026-08-15 15:42:32 +0800",
     "url": "/simb/SIMB603.html",
     "prev_url": "/simb/SIMB602.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB604.html",
     "prev_title": "Chapter 602: Psycho",
+    "next_title": "Chapter 604: Who Should Be Punished?"
+  },
+  {
+    "title": "Chapter 604: Who Should Be Punished?",
+    "chapter_id": "SIMB604",
+    "chapter_num": 604,
+    "date": "2026-08-16 16:10:57 +0800",
+    "url": "/simb/SIMB604.html",
+    "prev_url": "/simb/SIMB603.html",
+    "next_url": null,
+    "prev_title": "Chapter 603: Yeah, I'm Threatening You",
     "next_title": null
   }
 ]
