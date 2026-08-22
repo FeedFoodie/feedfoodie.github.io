@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<link href="/css/override.css?v=1.02" rel="stylesheet" type="text/css">
+<link href="/css/override.css?v=1.03" rel="stylesheet" type="text/css">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 {% assign url_parts = page.url | split: '/' %}
 {% assign series_tag = url_parts[1] | downcase %}
@@ -97,7 +97,7 @@ layout: default
 
     {% if series_data %}
       {% if series_data.needs_extra_height %}
-        <div class="centersel" style="height:100px">
+        <div class="centersel" style="min-height:100px">
       {% else %}
         <div class="centersel">
       {% endif %}
