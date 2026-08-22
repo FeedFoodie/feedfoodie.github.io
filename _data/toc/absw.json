@@ -999,8 +999,19 @@
     "date": "2026-08-13 20:02:50 +0800",
     "url": "/absw/ABSW85.html",
     "prev_url": "/absw/ABSW84.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW86.html",
     "prev_title": "V9C4: The Rousing of Evil",
+    "next_title": "V9C6: The Bloody Battle Begins"
+  },
+  {
+    "title": "V9C6: The Bloody Battle Begins",
+    "chapter_id": "ABSW86",
+    "chapter_num": 86,
+    "date": "2026-08-22 20:06:01 +0800",
+    "url": "/absw/ABSW86.html",
+    "prev_url": "/absw/ABSW85.html",
+    "next_url": null,
+    "prev_title": "V9C5: The Scorching Divine Pill",
     "next_title": null
   }
 ]
