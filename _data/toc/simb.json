@@ -7128,8 +7128,19 @@
     "date": "2026-08-16 20:52:26 +0800",
     "url": "/simb/SIMB605.html",
     "prev_url": "/simb/SIMB604.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB606.html",
     "prev_title": "Chapter 604: Who Should Be Punished?",
+    "next_title": "Chapter 606: The Most Important Thing"
+  },
+  {
+    "title": "Chapter 606: The Most Important Thing",
+    "chapter_id": "SIMB606",
+    "chapter_num": 606,
+    "date": "2026-08-22 12:02:12 +0800",
+    "url": "/simb/SIMB606.html",
+    "prev_url": "/simb/SIMB605.html",
+    "next_url": null,
+    "prev_title": "Chapter 605: Were You Watching?",
     "next_title": null
   }
 ]
