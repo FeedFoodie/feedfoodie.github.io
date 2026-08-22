@@ -8,18 +8,9 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 22 Aug 2026 23:40:28 +0800</pubDate>
-        <lastBuildDate>Sat, 22 Aug 2026 23:40:28 +0800</lastBuildDate>
+        <pubDate>Sat, 22 Aug 2026 20:06:53 +0800</pubDate>
+        <lastBuildDate>Sat, 22 Aug 2026 20:06:53 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
-        <item>
-            <title>SIMB Chapter 608: Today, I Learned Something From You</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB608.html</description>
-            <pubDate>Sat, 22 Aug 2026 23:39:43 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB608.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB608.html</guid>
-            <category>simb</category>
-        </item>
         <item>
             <title>ABSW V9C6: The Bloody Battle Begins</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -99,6 +90,15 @@ layout: null
             <pubDate>Tue, 11 Aug 2026 22:56:51 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB144.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB144.html</guid>
+            <category>cob</category>
+        </item>
+        <item>
+            <title>COB Chapter 143: When the Phone Rings (4)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB143.html</description>
+            <pubDate>Tue, 11 Aug 2026 22:56:45 +0800</pubDate>
+            <link>https://northbladetl.com/cob/COB143.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/cob/COB143.html</guid>
             <category>cob</category>
         </item>
     </channel>
