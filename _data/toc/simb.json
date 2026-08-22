@@ -7139,8 +7139,19 @@
     "date": "2026-08-22 12:02:12 +0800",
     "url": "/simb/SIMB606.html",
     "prev_url": "/simb/SIMB605.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB608.html",
     "prev_title": "Chapter 605: Were You Watching?",
+    "next_title": "Chapter 608: Today, I Learned Something From You"
+  },
+  {
+    "title": "Chapter 608: Today, I Learned Something From You",
+    "chapter_id": "SIMB608",
+    "chapter_num": 608,
+    "date": "2026-08-22 23:39:43 +0800",
+    "url": "/simb/SIMB608.html",
+    "prev_url": "/simb/SIMB606.html",
+    "next_url": null,
+    "prev_title": "Chapter 606: The Most Important Thing",
     "next_title": null
   }
 ]
