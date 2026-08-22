@@ -1,65 +1,39 @@
-# extra_html
-#   Optional markup appended to the subscribe block at the foot of every
-#   chapter page for this series (see _layouts/post.html).
-#
-# needs_extra_height
-#   Raises the minimum height of that subscribe block from 60px to 100px.
-#
-#   Why it exists: .centersel used to have a FIXED height (60px), sized for
-#   the default block — a spacer, the one-line subscribe sentence, another
-#   spacer. Any series with extra_html adds paragraphs that do not fit, and
-#   because the height was fixed the surplus text spilled out of the box and
-#   landed on top of the comment widget below. This flag was the manual
-#   per-series workaround: bump the box to 100px for the series that need it.
-#
-#   .centersel now uses min-height, so the box grows to fit its own content
-#   and can no longer overflow. The flag is therefore no longer required for
-#   correctness — leave it false unless you specifically want a series' block
-#   to reserve more vertical space than its content needs.
 simb:
   full_name: "Star Instructor Master Baek"
   nu_slug: "star-instructor-master-baek"
   extra_html: ""
-  needs_extra_height: false
   
 lnb:
   full_name: "Legend of the Northern Blade"
   nu_slug: "the-legend-of-the-northern-blade"
   extra_html: ""
-  needs_extra_height: false
   
 hero:
   full_name: "Heroes"
   nu_slug: "heroes"
   extra_html: ""
-  needs_extra_height: false
   
 absw:
   full_name: "Absolute Warrior"
   nu_slug: "absolute-warrior"
   extra_html: ""
-  needs_extra_height: false
   
 ruh:
   full_name: "Reincarnated as an Unruly Heir"
   nu_slug: "reincarnated-as-an-unruly-heir"
   extra_html: "<p>Visit the Editor's <a href=\"https://www.fanelorn.net\" target=\"_blank\">Website</a> or <a href=\"https://elanorpam.tumblr.com\" target=\"_blank\">Tumblr!</a></p>"
-  needs_extra_height: true
   
 lcs:
   full_name: "Chronicles of the Demon Faction — Lee Cheonsang"
   nu_slug: "chronicles-of-the-demon-faction"
   extra_html: ""
-  needs_extra_height: false
 
 pd:
   full_name: "Peerless Dad"
   nu_slug: "peerless-dad"
   extra_html: ""
-  needs_extra_height: false
 
 cob:
   full_name: "City of Blades"
   nu_slug: "city-of-blades"
   extra_html: ""
-  needs_extra_height: false
