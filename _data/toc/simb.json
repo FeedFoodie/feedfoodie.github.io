@@ -7139,8 +7139,19 @@
     "date": "2026-08-22 12:02:12 +0800",
     "url": "/simb/SIMB606.html",
     "prev_url": "/simb/SIMB605.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB607.html",
     "prev_title": "Chapter 605: Were You Watching?",
+    "next_title": "Chapter 607: The True Winner"
+  },
+  {
+    "title": "Chapter 607: The True Winner",
+    "chapter_id": "SIMB607",
+    "chapter_num": 607,
+    "date": "2026-08-23 17:17:41 +0800",
+    "url": "/simb/SIMB607.html",
+    "prev_url": "/simb/SIMB606.html",
+    "next_url": null,
+    "prev_title": "Chapter 606: The Most Important Thing",
     "next_title": null
   }
 ]
