@@ -8,9 +8,18 @@ layout: null
         <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
         <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 03 Aug 2026 21:39:07 +0800</pubDate>
-        <lastBuildDate>Mon, 03 Aug 2026 21:39:07 +0800</lastBuildDate>
+        <pubDate>Thu, 27 Aug 2026 19:47:40 +0800</pubDate>
+        <lastBuildDate>Thu, 27 Aug 2026 19:47:40 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 232: An Unwanted Companion Is Bound to Cause Trouble (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB232.html</description>
+            <pubDate>Thu, 27 Aug 2026 19:46:46 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB232.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB232.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 231: An Unexpected Encounter (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Mon, 29 Jun 2026 23:44:00 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB223.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB223.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 222: Standing Tall Once More Beneath the Fallen Sky (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB222.html</description>
-            <pubDate>Mon, 29 Jun 2026 22:40:10 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB222.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB222.html</guid>
             <category>lnb</category>
         </item>
     </channel>
