@@ -1590,8 +1590,63 @@
     "date": "2026-08-11 23:01:24 +0800",
     "url": "/cob/COB145.html",
     "prev_url": "/cob/COB144.html",
-    "next_url": null,
+    "next_url": "/cob/COB146.html",
     "prev_title": "Chapter 144: Ryan (1)",
+    "next_title": "Chapter 146: Awakening Desire (1)"
+  },
+  {
+    "title": "Chapter 146: Awakening Desire (1)",
+    "chapter_id": "COB146",
+    "chapter_num": 146,
+    "date": "2026-08-27 18:09:00 +0800",
+    "url": "/cob/COB146.html",
+    "prev_url": "/cob/COB145.html",
+    "next_url": "/cob/COB147.html",
+    "prev_title": "Chapter 145: Ryan (2)",
+    "next_title": "Chapter 147: Awakening Desire (2)"
+  },
+  {
+    "title": "Chapter 147: Awakening Desire (2)",
+    "chapter_id": "COB147",
+    "chapter_num": 147,
+    "date": "2026-08-27 18:09:48 +0800",
+    "url": "/cob/COB147.html",
+    "prev_url": "/cob/COB146.html",
+    "next_url": "/cob/COB148.html",
+    "prev_title": "Chapter 146: Awakening Desire (1)",
+    "next_title": "Chapter 148: Crusader Skulls (1)"
+  },
+  {
+    "title": "Chapter 148: Crusader Skulls (1)",
+    "chapter_id": "COB148",
+    "chapter_num": 148,
+    "date": "2026-08-27 18:11:55 +0800",
+    "url": "/cob/COB148.html",
+    "prev_url": "/cob/COB147.html",
+    "next_url": "/cob/COB149.html",
+    "prev_title": "Chapter 147: Awakening Desire (2)",
+    "next_title": "Chapter 149: Crusader Skulls (2)"
+  },
+  {
+    "title": "Chapter 149: Crusader Skulls (2)",
+    "chapter_id": "COB149",
+    "chapter_num": 149,
+    "date": "2026-08-27 18:15:01 +0800",
+    "url": "/cob/COB149.html",
+    "prev_url": "/cob/COB148.html",
+    "next_url": "/cob/COB150.html",
+    "prev_title": "Chapter 148: Crusader Skulls (1)",
+    "next_title": "Chapter 150: Spy (1)"
+  },
+  {
+    "title": "Chapter 150: Spy (1)",
+    "chapter_id": "COB150",
+    "chapter_num": 150,
+    "date": "2026-08-27 18:16:00 +0800",
+    "url": "/cob/COB150.html",
+    "prev_url": "/cob/COB149.html",
+    "next_url": null,
+    "prev_title": "Chapter 149: Crusader Skulls (2)",
     "next_title": null
   }
 ]
