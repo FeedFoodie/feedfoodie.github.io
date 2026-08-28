@@ -2770,8 +2770,19 @@
     "date": "2026-08-27 19:46:46 +0800",
     "url": "/lnb/LNB232.html",
     "prev_url": "/lnb/LNB231.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB233.html",
     "prev_title": "Chapter 231: An Unexpected Encounter (3)",
+    "next_title": "Chapter 233: An Unwanted Companion Is Bound to Cause Trouble (2)"
+  },
+  {
+    "title": "Chapter 233: An Unwanted Companion Is Bound to Cause Trouble (2)",
+    "chapter_id": "LNB233",
+    "chapter_num": 233,
+    "date": "2026-08-29 00:12:39 +0800",
+    "url": "/lnb/LNB233.html",
+    "prev_url": "/lnb/LNB232.html",
+    "next_url": null,
+    "prev_title": "Chapter 232: An Unwanted Companion Is Bound to Cause Trouble (1)",
     "next_title": null
   }
 ]

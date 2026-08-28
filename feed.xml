@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 28 Aug 2026 23:38:04 +0800</pubDate>
-        <lastBuildDate>Fri, 28 Aug 2026 23:38:04 +0800</lastBuildDate>
+        <pubDate>Sat, 29 Aug 2026 00:13:04 +0800</pubDate>
+        <lastBuildDate>Sat, 29 Aug 2026 00:13:04 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 233: An Unwanted Companion Is Bound to Cause Trouble (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB233.html</description>
+            <pubDate>Sat, 29 Aug 2026 00:12:39 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB233.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB233.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>COB Chapter 155: Charlotte (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Thu, 27 Aug 2026 18:15:01 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB149.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB149.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 148: Crusader Skulls (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB148.html</description>
-            <pubDate>Thu, 27 Aug 2026 18:11:55 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB148.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB148.html</guid>
             <category>cob</category>
         </item>
     </channel>
