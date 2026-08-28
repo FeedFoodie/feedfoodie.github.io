@@ -7161,8 +7161,19 @@
     "date": "2026-08-23 17:22:02 +0800",
     "url": "/simb/SIMB608.html",
     "prev_url": "/simb/SIMB607.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB609.html",
     "prev_title": "Chapter 607: The True Winner",
+    "next_title": "Chapter 609: Is There a Better Environment Than This?"
+  },
+  {
+    "title": "Chapter 609: Is There a Better Environment Than This?",
+    "chapter_id": "SIMB609",
+    "chapter_num": 609,
+    "date": "2026-08-28 23:11:18 +0800",
+    "url": "/simb/SIMB609.html",
+    "prev_url": "/simb/SIMB608.html",
+    "next_url": null,
+    "prev_title": "Chapter 608: Today, I Learned Something From You",
     "next_title": null
   }
 ]
