@@ -1700,8 +1700,63 @@
     "date": "2026-08-28 23:37:34 +0800",
     "url": "/cob/COB155.html",
     "prev_url": "/cob/COB154.html",
-    "next_url": null,
+    "next_url": "/cob/COB156.html",
     "prev_title": "Chapter 154: Charlotte (2)",
+    "next_title": "Chapter 156: Charlotte (4)"
+  },
+  {
+    "title": "Chapter 156: Charlotte (4)",
+    "chapter_id": "COB156",
+    "chapter_num": 156,
+    "date": "2026-08-29 10:29:10 +0800",
+    "url": "/cob/COB156.html",
+    "prev_url": "/cob/COB155.html",
+    "next_url": "/cob/COB157.html",
+    "prev_title": "Chapter 155: Charlotte (3)",
+    "next_title": "Chapter 157: D-Day (1)"
+  },
+  {
+    "title": "Chapter 157: D-Day (1)",
+    "chapter_id": "COB157",
+    "chapter_num": 157,
+    "date": "2026-08-29 10:29:52 +0800",
+    "url": "/cob/COB157.html",
+    "prev_url": "/cob/COB156.html",
+    "next_url": "/cob/COB158.html",
+    "prev_title": "Chapter 156: Charlotte (4)",
+    "next_title": "Chapter 158: D-Day (2)"
+  },
+  {
+    "title": "Chapter 158: D-Day (2)",
+    "chapter_id": "COB158",
+    "chapter_num": 158,
+    "date": "2026-08-29 10:30:16 +0800",
+    "url": "/cob/COB158.html",
+    "prev_url": "/cob/COB157.html",
+    "next_url": "/cob/COB159.html",
+    "prev_title": "Chapter 157: D-Day (1)",
+    "next_title": "Chapter 159: D-Day (3)"
+  },
+  {
+    "title": "Chapter 159: D-Day (3)",
+    "chapter_id": "COB159",
+    "chapter_num": 159,
+    "date": "2026-08-29 10:30:35 +0800",
+    "url": "/cob/COB159.html",
+    "prev_url": "/cob/COB158.html",
+    "next_url": "/cob/COB160.html",
+    "prev_title": "Chapter 158: D-Day (2)",
+    "next_title": "Chapter 160: D-Day (4)"
+  },
+  {
+    "title": "Chapter 160: D-Day (4)",
+    "chapter_id": "COB160",
+    "chapter_num": 160,
+    "date": "2026-08-29 10:31:06 +0800",
+    "url": "/cob/COB160.html",
+    "prev_url": "/cob/COB159.html",
+    "next_url": null,
+    "prev_title": "Chapter 159: D-Day (3)",
     "next_title": null
   }
 ]
