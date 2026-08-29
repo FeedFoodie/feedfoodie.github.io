@@ -7172,8 +7172,19 @@
     "date": "2026-08-28 23:11:18 +0800",
     "url": "/simb/SIMB609.html",
     "prev_url": "/simb/SIMB608.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB610.html",
     "prev_title": "Chapter 608: Today, I Learned Something From You",
+    "next_title": "Chapter 610: We'll Find Out Soon Enough"
+  },
+  {
+    "title": "Chapter 610: We'll Find Out Soon Enough",
+    "chapter_id": "SIMB610",
+    "chapter_num": 610,
+    "date": "2026-08-29 10:19:19 +0800",
+    "url": "/simb/SIMB610.html",
+    "prev_url": "/simb/SIMB609.html",
+    "next_url": null,
+    "prev_title": "Chapter 609: Is There a Better Environment Than This?",
     "next_title": null
   }
 ]
