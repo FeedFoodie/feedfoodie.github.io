@@ -8,11 +8,20 @@ layout: null
         <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
         <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 29 Aug 2026 00:13:04 +0800</pubDate>
-        <lastBuildDate>Sat, 29 Aug 2026 00:13:04 +0800</lastBuildDate>
+        <pubDate>Sat, 29 Aug 2026 12:27:08 +0800</pubDate>
+        <lastBuildDate>Sat, 29 Aug 2026 12:27:08 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
         <item>
-            <title>LNB Chapter 233: An Unwanted Companion Is Bound to Cause Trouble (2)</title>
+            <title>LNB Chapter 234: Unwanted Companions Are Bound to Cause Trouble (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB234.html</description>
+            <pubDate>Sat, 29 Aug 2026 12:25:36 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB234.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB234.html</guid>
+            <category>lnb</category>
+        </item>
+        <item>
+            <title>LNB Chapter 233: Unwanted Companions Are Bound to Cause Trouble (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB233.html</description>
             <pubDate>Sat, 29 Aug 2026 00:12:39 +0800</pubDate>
@@ -21,7 +30,7 @@ layout: null
             <category>lnb</category>
         </item>
         <item>
-            <title>LNB Chapter 232: An Unwanted Companion Is Bound to Cause Trouble (1)</title>
+            <title>LNB Chapter 232: Unwanted Companions Are Bound to Cause Trouble (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
             <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB232.html</description>
             <pubDate>Thu, 27 Aug 2026 19:46:46 +0800</pubDate>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Tue, 30 Jun 2026 23:40:21 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB225.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB225.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 224: Standing Tall Once More Beneath the Fallen Sky (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB224.html</description>
-            <pubDate>Tue, 30 Jun 2026 21:19:33 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB224.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB224.html</guid>
             <category>lnb</category>
         </item>
     </channel>
