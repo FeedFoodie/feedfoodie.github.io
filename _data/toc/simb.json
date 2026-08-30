@@ -7183,8 +7183,19 @@
     "date": "2026-08-29 10:19:19 +0800",
     "url": "/simb/SIMB610.html",
     "prev_url": "/simb/SIMB609.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB611.html",
     "prev_title": "Chapter 609: Is There a Better Environment Than This?",
+    "next_title": "Chapter 611: If I Go There"
+  },
+  {
+    "title": "Chapter 611: If I Go There",
+    "chapter_id": "SIMB611",
+    "chapter_num": 611,
+    "date": "2026-08-30 15:27:35 +0800",
+    "url": "/simb/SIMB611.html",
+    "prev_url": "/simb/SIMB610.html",
+    "next_url": null,
+    "prev_title": "Chapter 610: We'll Find Out Soon Enough",
     "next_title": null
   }
 ]
