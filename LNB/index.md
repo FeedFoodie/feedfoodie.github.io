@@ -3,6 +3,7 @@ layout: page
 title: Legend of the Northern Blade
 tag: [lnb]
 description: "Free English fan translation of the novel Legend of the Northern Blade. Read all chapters online with no ads or paywalls. Updated regularly."
+comments: true
 ---
 
 ![LNB](/Images/LNB.jpg)

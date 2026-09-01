@@ -3,6 +3,7 @@ layout: page
 title: City of Blades
 tag: [cob]
 description: "Free English fan translation of the novel City of Blades. Read all chapters online with no ads or paywalls. Updated regularly."
+comments: true
 ---
 
 ![COB](/Images/COB.jpg)

@@ -1,0 +1,84 @@
+<script type="text/javascript" src="/js/changeMode.js?v=1.11"></script>
+
+{% comment %}
+  Same as fastcomments.html, but loads the widget immediately instead of
+  waiting for the 'chapterLoadResult' event.
+
+  Chapter pages fetch their text at runtime, so there fastcomments.html holds
+  the widget back until the body has actually arrived. Ordinary pages (the
+  series index pages, ebook landing pages) have no such fetch, nothing ever
+  dispatches that event, and the gated version would sit empty forever.
+
+  Use this include from page layouts; use fastcomments.html from post.html.
+{% endcomment %}
+
+{% if page.comments %}
+<div id="fastcomments-widget"></div>
+<script>
+    const fastcommentsConfig = {
+        tenantId: 'eu-eFwXogixzsA',
+        urlId: "{{ site.url }}{{ page.url }}", // <-- The URL fix
+        pageReactConfig: {
+            showUsers: false,
+            reacts: [
+                {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
+                {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
+                {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
+                {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
+                {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
+                {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' },
+            ]
+        }
+    };
+
+    (function() {
+        let loaded = false;
+
+        function initFastComments() {
+            if (loaded) return;
+            loaded = true;
+
+            const script = document.createElement('script');
+            script.id = 'fastcomments';
+            script.src = 'https://cdn-eu.fastcomments.com/js/embed-v2.min.js';
+            script.onload = function() {
+                const setCommentMode = document.getElementById('setMode');
+                const instance = window.FastCommentsUI(document.getElementById('fastcomments-widget'), fastcommentsConfig);
+
+                if (setCommentMode) {
+                    setCommentMode.addEventListener('click', function() {
+                        if (document.body.classList.contains('day')) {
+                            document.body.classList.remove('day');
+                        } else {
+                            document.body.classList.add('day');
+                        }
+                        instance.update(fastcommentsConfig); // This forces the theme to refresh
+                    });
+                }
+
+                const wrapper = document.getElementById('wrappertext');
+                if (wrapper && wrapper.classList.contains('day-mode')) {
+                    document.body.classList.add('day');
+                }
+                instance.update(fastcommentsConfig);
+            };
+            document.head.appendChild(script);
+        }
+
+        // No chapter fetch on these pages, so load as soon as the DOM is ready.
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initFastComments);
+        } else {
+            initFastComments();
+        }
+    })();
+</script>
+
+<style>
+    .day {
+        background: #fff;
+        color: #222;
+    }
+</style>
+
+{% endif %}

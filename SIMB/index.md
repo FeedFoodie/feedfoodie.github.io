@@ -3,6 +3,7 @@ layout: page
 title: Star Instructor Master Baek
 tag: [simb]
 description: "Free English fan translation of the novel Star Instructor Master Baek. Read all chapters online with no ads or paywalls. Updated regularly."
+comments: true
 ---
 
 ![SIMB](/Images/SIMB.png)

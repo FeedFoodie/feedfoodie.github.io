@@ -3,6 +3,7 @@ layout: page
 title: Reincarnated as an Unruly Heir
 tag: [RUH]
 description: "Free English fan translation of the novel Reincarnated as an Unruly Heir. Read all chapters online with no ads or paywalls. Updated regularly."
+comments: true
 ---
 
 ![RUH](/Images/RUH.jpg)
