@@ -2792,8 +2792,19 @@
     "date": "2026-08-29 12:25:36 +0800",
     "url": "/lnb/LNB234.html",
     "prev_url": "/lnb/LNB233.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB235.html",
     "prev_title": "Chapter 233: Unwanted Companions Are Bound to Cause Trouble (2)",
+    "next_title": "Chapter 235: A True Warrior Always Recognizes A Kindred Spirit (1)"
+  },
+  {
+    "title": "Chapter 235: A True Warrior Always Recognizes A Kindred Spirit (1)",
+    "chapter_id": "LNB235",
+    "chapter_num": 235,
+    "date": "2026-09-02 20:35:00 +0800",
+    "url": "/lnb/LNB235.html",
+    "prev_url": "/lnb/LNB234.html",
+    "next_url": null,
+    "prev_title": "Chapter 234: Unwanted Companions Are Bound to Cause Trouble (3)",
     "next_title": null
   }
 ]
