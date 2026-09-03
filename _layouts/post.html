@@ -27,6 +27,10 @@ layout: default
 {% assign tz_minutes = tz_raw | slice: 3, 2 %}
 {% assign tz_formatted = tz_hours | append: ':' | append: tz_minutes %}
 
+<p><br /></p>
+{% include navigation.html %}
+<hr />
+
 <header id="chapter-title" class="post-header">
   <br />
   {% if series_data %}
@@ -44,8 +48,6 @@ layout: default
     </time>
   </p>
 </header>
-
-{% include navigation.html %}
 
   <div class="post-content e-content" itemprop="articleBody" lang="ko"> 
     <div style="font-size: 16px;" id="content">
