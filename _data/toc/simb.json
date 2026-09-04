@@ -7205,8 +7205,19 @@
     "date": "2026-08-30 22:19:25 +0800",
     "url": "/simb/SIMB612.html",
     "prev_url": "/simb/SIMB611.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB613.html",
     "prev_title": "Chapter 611: If I Go There",
+    "next_title": "Chapter 613: Why Must We Protest?"
+  },
+  {
+    "title": "Chapter 613: Why Must We Protest?",
+    "chapter_id": "SIMB613",
+    "chapter_num": 613,
+    "date": "2026-09-04 21:15:23 +0800",
+    "url": "/simb/SIMB613.html",
+    "prev_url": "/simb/SIMB612.html",
+    "next_url": null,
+    "prev_title": "Chapter 612: Did You See That?",
     "next_title": null
   }
 ]
