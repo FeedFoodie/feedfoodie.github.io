@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 05 Sep 2026 13:50:32 +0800</pubDate>
-        <lastBuildDate>Sat, 05 Sep 2026 13:50:32 +0800</lastBuildDate>
+        <pubDate>Sat, 05 Sep 2026 19:59:37 +0800</pubDate>
+        <lastBuildDate>Sat, 05 Sep 2026 19:59:37 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 614: Focus!</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB614.html</description>
+            <pubDate>Sat, 05 Sep 2026 19:59:15 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB614.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB614.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>COB Chapter 165: Shadow of Evil (2)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/absw/ABSW87.html</link>
             <guid isPermaLink="true">https://northbladetl.com/absw/ABSW87.html</guid>
             <category>absw</category>
-        </item>
-        <item>
-            <title>SIMB Chapter 612: Did You See That?</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB612.html</description>
-            <pubDate>Sun, 30 Aug 2026 22:19:25 +0800</pubDate>
-            <link>https://northbladetl.com/simb/SIMB612.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB612.html</guid>
-            <category>simb</category>
         </item>
     </channel>
 </rss>
