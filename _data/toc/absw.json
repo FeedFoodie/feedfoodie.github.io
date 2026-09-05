@@ -1021,8 +1021,19 @@
     "date": "2026-09-01 19:04:30 +0800",
     "url": "/absw/ABSW87.html",
     "prev_url": "/absw/ABSW86.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW88.html",
     "prev_title": "V9C6: The Bloody Battle Begins",
+    "next_title": "V9C8: The Strongest in the World"
+  },
+  {
+    "title": "V9C8: The Strongest in the World",
+    "chapter_id": "ABSW88",
+    "chapter_num": 88,
+    "date": "2026-09-05 10:24:47 +0800",
+    "url": "/absw/ABSW88.html",
+    "prev_url": "/absw/ABSW87.html",
+    "next_url": null,
+    "prev_title": "V9C7: A Mountain of Corpses, A Sea of Blood",
     "next_title": null
   }
 ]

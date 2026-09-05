@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 04 Sep 2026 21:17:05 +0800</pubDate>
-        <lastBuildDate>Fri, 04 Sep 2026 21:17:05 +0800</lastBuildDate>
+        <pubDate>Sat, 05 Sep 2026 10:25:11 +0800</pubDate>
+        <lastBuildDate>Sat, 05 Sep 2026 10:25:11 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>ABSW V9C8: The Strongest in the World</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW88.html</description>
+            <pubDate>Sat, 05 Sep 2026 10:24:47 +0800</pubDate>
+            <link>https://northbladetl.com/absw/ABSW88.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW88.html</guid>
+            <category>absw</category>
+        </item>
         <item>
             <title>SIMB Chapter 613: Why Must We Protest?</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sat, 29 Aug 2026 10:30:16 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB158.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB158.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 157: D-Day (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB157.html</description>
-            <pubDate>Sat, 29 Aug 2026 10:29:52 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB157.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB157.html</guid>
             <category>cob</category>
         </item>
     </channel>
