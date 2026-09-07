@@ -2803,8 +2803,41 @@
     "date": "2026-09-02 20:35:00 +0800",
     "url": "/lnb/LNB235.html",
     "prev_url": "/lnb/LNB234.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB236.html",
     "prev_title": "Chapter 234: Unwanted Companions Are Bound to Cause Trouble (3)",
+    "next_title": "Chapter 236: A True Warrior Always Recognizes A Kindred Spirit (2)"
+  },
+  {
+    "title": "Chapter 236: A True Warrior Always Recognizes A Kindred Spirit (2)",
+    "chapter_id": "LNB236",
+    "chapter_num": 236,
+    "date": "2026-09-07 21:55:20 +0800",
+    "url": "/lnb/LNB236.html",
+    "prev_url": "/lnb/LNB235.html",
+    "next_url": "/lnb/LNB237.html",
+    "prev_title": "Chapter 235: A True Warrior Always Recognizes A Kindred Spirit (1)",
+    "next_title": "Chapter 237: A True Warrior Always Recognizes A Kindred Spirit (3)"
+  },
+  {
+    "title": "Chapter 237: A True Warrior Always Recognizes A Kindred Spirit (3)",
+    "chapter_id": "LNB237",
+    "chapter_num": 237,
+    "date": "2026-09-07 21:55:38 +0800",
+    "url": "/lnb/LNB237.html",
+    "prev_url": "/lnb/LNB236.html",
+    "next_url": "/lnb/LNB238.html",
+    "prev_title": "Chapter 236: A True Warrior Always Recognizes A Kindred Spirit (2)",
+    "next_title": "Chapter 238: When Red Clouds Gather, a Rain of Blood Falls (1)"
+  },
+  {
+    "title": "Chapter 238: When Red Clouds Gather, a Rain of Blood Falls (1)",
+    "chapter_id": "LNB238",
+    "chapter_num": 238,
+    "date": "2026-09-07 21:56:00 +0800",
+    "url": "/lnb/LNB238.html",
+    "prev_url": "/lnb/LNB237.html",
+    "next_url": null,
+    "prev_title": "Chapter 237: A True Warrior Always Recognizes A Kindred Spirit (3)",
     "next_title": null
   }
 ]

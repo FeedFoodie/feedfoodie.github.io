@@ -8,9 +8,36 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 06 Sep 2026 23:20:05 +0800</pubDate>
-        <lastBuildDate>Sun, 06 Sep 2026 23:20:05 +0800</lastBuildDate>
+        <pubDate>Mon, 07 Sep 2026 21:56:35 +0800</pubDate>
+        <lastBuildDate>Mon, 07 Sep 2026 21:56:35 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 238: When Red Clouds Gather, a Rain of Blood Falls (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB238.html</description>
+            <pubDate>Mon, 07 Sep 2026 21:56:00 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB238.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB238.html</guid>
+            <category>lnb</category>
+        </item>
+        <item>
+            <title>LNB Chapter 237: A True Warrior Always Recognizes A Kindred Spirit (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB237.html</description>
+            <pubDate>Mon, 07 Sep 2026 21:55:38 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB237.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB237.html</guid>
+            <category>lnb</category>
+        </item>
+        <item>
+            <title>LNB Chapter 236: A True Warrior Always Recognizes A Kindred Spirit (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB236.html</description>
+            <pubDate>Mon, 07 Sep 2026 21:55:20 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB236.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB236.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>SIMB Chapter 617: Get Up</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -73,33 +100,6 @@ layout: null
             <link>https://northbladetl.com/cob/COB163.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB163.html</guid>
             <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 162: D-Day (6)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB162.html</description>
-            <pubDate>Sat, 05 Sep 2026 13:49:00 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB162.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB162.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 161: D-Day (5)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB161.html</description>
-            <pubDate>Sat, 05 Sep 2026 13:48:38 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB161.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB161.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>ABSW V9C8: The Strongest in the World</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Absolute Warrior Chapter Update - https://northbladetl.com/absw/ABSW88.html</description>
-            <pubDate>Sat, 05 Sep 2026 10:24:47 +0800</pubDate>
-            <link>https://northbladetl.com/absw/ABSW88.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/absw/ABSW88.html</guid>
-            <category>absw</category>
         </item>
     </channel>
 </rss>

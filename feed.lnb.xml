@@ -8,9 +8,36 @@ layout: null
         <description>NorthBladeTL - Legend of the Northern Blade Chapter Updates</description>
         <link>https://northbladetl.com/lnb/</link>
         <atom:link href="https://northbladetl.com/feed.lnb.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 02 Sep 2026 20:35:24 +0800</pubDate>
-        <lastBuildDate>Wed, 02 Sep 2026 20:35:24 +0800</lastBuildDate>
+        <pubDate>Mon, 07 Sep 2026 21:56:35 +0800</pubDate>
+        <lastBuildDate>Mon, 07 Sep 2026 21:56:35 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 238: When Red Clouds Gather, a Rain of Blood Falls (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB238.html</description>
+            <pubDate>Mon, 07 Sep 2026 21:56:00 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB238.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB238.html</guid>
+            <category>lnb</category>
+        </item>
+        <item>
+            <title>LNB Chapter 237: A True Warrior Always Recognizes A Kindred Spirit (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB237.html</description>
+            <pubDate>Mon, 07 Sep 2026 21:55:38 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB237.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB237.html</guid>
+            <category>lnb</category>
+        </item>
+        <item>
+            <title>LNB Chapter 236: A True Warrior Always Recognizes A Kindred Spirit (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB236.html</description>
+            <pubDate>Mon, 07 Sep 2026 21:55:20 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB236.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB236.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>LNB Chapter 235: A True Warrior Always Recognizes A Kindred Spirit (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -72,33 +99,6 @@ layout: null
             <pubDate>Mon, 27 Jul 2026 20:53:17 +0800</pubDate>
             <link>https://northbladetl.com/lnb/LNB229.html</link>
             <guid isPermaLink="true">https://northbladetl.com/lnb/LNB229.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 228: Holding One&apos;s Breath, Gritting One&apos;s Teeth (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB228.html</description>
-            <pubDate>Mon, 13 Jul 2026 21:28:58 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB228.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB228.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 227: Holding One&apos;s Breath, Gritting One&apos;s Teeth (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB227.html</description>
-            <pubDate>Mon, 13 Jul 2026 19:09:42 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB227.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB227.html</guid>
-            <category>lnb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 226: Holding One&apos;s Breath, Gritting One&apos;s Teeth (1)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB226.html</description>
-            <pubDate>Mon, 06 Jul 2026 20:54:39 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB226.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB226.html</guid>
             <category>lnb</category>
         </item>
     </channel>
