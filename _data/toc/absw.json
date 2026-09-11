@@ -1043,8 +1043,19 @@
     "date": "2026-09-11 16:27:22 +0800",
     "url": "/absw/ABSW89.html",
     "prev_url": "/absw/ABSW88.html",
-    "next_url": null,
+    "next_url": "/absw/ABSW90.html",
     "prev_title": "V9C8: The Strongest in the World",
+    "next_title": "V9C10: Absolute Warrior"
+  },
+  {
+    "title": "V9C10: Absolute Warrior",
+    "chapter_id": "ABSW90",
+    "chapter_num": 90,
+    "date": "2026-09-12 02:11:11 +0800",
+    "url": "/absw/ABSW90.html",
+    "prev_url": "/absw/ABSW89.html",
+    "next_url": null,
+    "prev_title": "V9C9: The People of the Jianghu",
     "next_title": null
   }
 ]
