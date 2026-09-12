@@ -24,6 +24,10 @@ Amid the fierce succession war between the First Young Lord and the Third Young 
 
 "I swear, if you lay a finger on my daughter... something unimaginable will befall you."
 
+## Ebooks
+
+[Complete Novel](/ABSW/epubs/Jang Yeonghun - Absolute Warrior.epub)
+
 ## Raws
 
 [Novel Raws](https://ridibooks.com/books/3586018598){:target="_blank"}
