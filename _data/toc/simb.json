@@ -7271,8 +7271,19 @@
     "date": "2026-09-11 22:59:36 +0800",
     "url": "/simb/SIMB618.html",
     "prev_url": "/simb/SIMB617.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB619.html",
     "prev_title": "Chapter 617: Get Up",
+    "next_title": "Chapter 619: A Long Night"
+  },
+  {
+    "title": "Chapter 619: A Long Night",
+    "chapter_id": "SIMB619",
+    "chapter_num": 619,
+    "date": "2026-09-12 10:11:58 +0800",
+    "url": "/simb/SIMB619.html",
+    "prev_url": "/simb/SIMB618.html",
+    "next_url": null,
+    "prev_title": "Chapter 618: If There Is Such a Thing as Destiny",
     "next_title": null
   }
 ]
