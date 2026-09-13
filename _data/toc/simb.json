@@ -7293,8 +7293,19 @@
     "date": "2026-09-13 12:37:10 +0800",
     "url": "/simb/SIMB620.html",
     "prev_url": "/simb/SIMB619.html",
-    "next_url": null,
+    "next_url": "/simb/SIMB621.html",
     "prev_title": "Chapter 619: A Long Night",
+    "next_title": "Chapter 621: The Perfect Answer, or the Truth?"
+  },
+  {
+    "title": "Chapter 621: The Perfect Answer, or the Truth?",
+    "chapter_id": "SIMB621",
+    "chapter_num": 621,
+    "date": "2026-09-13 16:12:24 +0800",
+    "url": "/simb/SIMB621.html",
+    "prev_url": "/simb/SIMB620.html",
+    "next_url": null,
+    "prev_title": "Chapter 620: Dragons and Phoenixes",
     "next_title": null
   }
 ]

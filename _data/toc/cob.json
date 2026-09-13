@@ -1810,8 +1810,63 @@
     "date": "2026-09-05 13:50:08 +0800",
     "url": "/cob/COB165.html",
     "prev_url": "/cob/COB164.html",
-    "next_url": null,
+    "next_url": "/cob/COB166.html",
     "prev_title": "Chapter 164: Shadow of Evil (1)",
+    "next_title": "Chapter 166: The Shadow of Evil (3)"
+  },
+  {
+    "title": "Chapter 166: The Shadow of Evil (3)",
+    "chapter_id": "COB166",
+    "chapter_num": 166,
+    "date": "2026-09-13 16:10:05 +0800",
+    "url": "/cob/COB166.html",
+    "prev_url": "/cob/COB165.html",
+    "next_url": "/cob/COB167.html",
+    "prev_title": "Chapter 165: Shadow of Evil (2)",
+    "next_title": "Chapter 167: Kaloyan (1)"
+  },
+  {
+    "title": "Chapter 167: Kaloyan (1)",
+    "chapter_id": "COB167",
+    "chapter_num": 167,
+    "date": "2026-09-13 16:10:29 +0800",
+    "url": "/cob/COB167.html",
+    "prev_url": "/cob/COB166.html",
+    "next_url": "/cob/COB168.html",
+    "prev_title": "Chapter 166: The Shadow of Evil (3)",
+    "next_title": "Chapter 168: Kaloyan (2)"
+  },
+  {
+    "title": "Chapter 168: Kaloyan (2)",
+    "chapter_id": "COB168",
+    "chapter_num": 168,
+    "date": "2026-09-13 16:10:50 +0800",
+    "url": "/cob/COB168.html",
+    "prev_url": "/cob/COB167.html",
+    "next_url": "/cob/COB169.html",
+    "prev_title": "Chapter 167: Kaloyan (1)",
+    "next_title": "Chapter 169: Kaloyan (3)"
+  },
+  {
+    "title": "Chapter 169: Kaloyan (3)",
+    "chapter_id": "COB169",
+    "chapter_num": 169,
+    "date": "2026-09-13 16:11:14 +0800",
+    "url": "/cob/COB169.html",
+    "prev_url": "/cob/COB168.html",
+    "next_url": "/cob/COB170.html",
+    "prev_title": "Chapter 168: Kaloyan (2)",
+    "next_title": "Chapter 170: Shadow of Betrayal (1)"
+  },
+  {
+    "title": "Chapter 170: Shadow of Betrayal (1)",
+    "chapter_id": "COB170",
+    "chapter_num": 170,
+    "date": "2026-09-13 16:11:38 +0800",
+    "url": "/cob/COB170.html",
+    "prev_url": "/cob/COB169.html",
+    "next_url": null,
+    "prev_title": "Chapter 169: Kaloyan (3)",
     "next_title": null
   }
 ]
