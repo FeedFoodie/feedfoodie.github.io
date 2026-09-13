@@ -1920,8 +1920,63 @@
     "date": "2026-09-13 22:38:38 +0800",
     "url": "/cob/COB175.html",
     "prev_url": "/cob/COB174.html",
-    "next_url": null,
+    "next_url": "/cob/COB176.html",
     "prev_title": "Chapter 174: Shadow of Betrayal (5)",
+    "next_title": "Chapter 176: The Murim Alliance Secret Vault (2)"
+  },
+  {
+    "title": "Chapter 176: The Murim Alliance Secret Vault (2)",
+    "chapter_id": "COB176",
+    "chapter_num": 176,
+    "date": "2026-09-13 23:27:57 +0800",
+    "url": "/cob/COB176.html",
+    "prev_url": "/cob/COB175.html",
+    "next_url": "/cob/COB177.html",
+    "prev_title": "Chapter 175: The Murim Alliance Secret Vault (1)",
+    "next_title": "Chapter 177: The Murim Alliance Secret Vault (3)"
+  },
+  {
+    "title": "Chapter 177: The Murim Alliance Secret Vault (3)",
+    "chapter_id": "COB177",
+    "chapter_num": 177,
+    "date": "2026-09-13 23:28:39 +0800",
+    "url": "/cob/COB177.html",
+    "prev_url": "/cob/COB176.html",
+    "next_url": "/cob/COB178.html",
+    "prev_title": "Chapter 176: The Murim Alliance Secret Vault (2)",
+    "next_title": "Chapter 178: Truth Is Cold and Lies Are Hot (1)"
+  },
+  {
+    "title": "Chapter 178: Truth Is Cold and Lies Are Hot (1)",
+    "chapter_id": "COB178",
+    "chapter_num": 178,
+    "date": "2026-09-13 23:29:07 +0800",
+    "url": "/cob/COB178.html",
+    "prev_url": "/cob/COB177.html",
+    "next_url": "/cob/COB179.html",
+    "prev_title": "Chapter 177: The Murim Alliance Secret Vault (3)",
+    "next_title": "Chapter 179: Truth Is Cold and Lies Are Hot (2)"
+  },
+  {
+    "title": "Chapter 179: Truth Is Cold and Lies Are Hot (2)",
+    "chapter_id": "COB179",
+    "chapter_num": 179,
+    "date": "2026-09-13 23:29:39 +0800",
+    "url": "/cob/COB179.html",
+    "prev_url": "/cob/COB178.html",
+    "next_url": "/cob/COB180.html",
+    "prev_title": "Chapter 178: Truth Is Cold and Lies Are Hot (1)",
+    "next_title": "Chapter 180: Truth Is Cold and Lies Are Hot (3)"
+  },
+  {
+    "title": "Chapter 180: Truth Is Cold and Lies Are Hot (3)",
+    "chapter_id": "COB180",
+    "chapter_num": 180,
+    "date": "2026-09-13 23:30:28 +0800",
+    "url": "/cob/COB180.html",
+    "prev_url": "/cob/COB179.html",
+    "next_url": null,
+    "prev_title": "Chapter 179: Truth Is Cold and Lies Are Hot (2)",
     "next_title": null
   }
 ]
