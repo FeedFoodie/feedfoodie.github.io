@@ -32,8 +32,7 @@ body { font: 400 16px/1.5 Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI 
 
 @font-face {
   font-family: 'NotoSans';
-  src: url('/assets/fonts/NotoSansF.ttf?v=1.00') format('truetype'),
-       url('/assets/fonts/NotoSansF.otf?v=1.02') format('opentype'),
+  src: url('/assets/fonts/NotoSansF.otf?v=1.02') format('opentype'),
        url('/assets/fonts/NotoSansF.woff?v=1.00') format('woff');
   font-weight: normal;
   font-style: normal;
