@@ -2836,8 +2836,30 @@
     "date": "2026-09-07 21:56:00 +0800",
     "url": "/lnb/LNB238.html",
     "prev_url": "/lnb/LNB237.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB239.html",
     "prev_title": "Chapter 237: A True Warrior Always Recognizes A Kindred Spirit (3)",
+    "next_title": "Chapter 239: When Red Clouds Gather, a Rain of Blood Falls (2)"
+  },
+  {
+    "title": "Chapter 239: When Red Clouds Gather, a Rain of Blood Falls (2)",
+    "chapter_id": "LNB239",
+    "chapter_num": 239,
+    "date": "2026-09-15 22:59:03 +0800",
+    "url": "/lnb/LNB239.html",
+    "prev_url": "/lnb/LNB238.html",
+    "next_url": "/lnb/LNB240.html",
+    "prev_title": "Chapter 238: When Red Clouds Gather, a Rain of Blood Falls (1)",
+    "next_title": "Chapter 240: When Red Clouds Gather, a Rain of Blood Falls (3)"
+  },
+  {
+    "title": "Chapter 240: When Red Clouds Gather, a Rain of Blood Falls (3)",
+    "chapter_id": "LNB240",
+    "chapter_num": 240,
+    "date": "2026-09-15 23:00:05 +0800",
+    "url": "/lnb/LNB240.html",
+    "prev_url": "/lnb/LNB239.html",
+    "next_url": null,
+    "prev_title": "Chapter 239: When Red Clouds Gather, a Rain of Blood Falls (2)",
     "next_title": null
   }
 ]

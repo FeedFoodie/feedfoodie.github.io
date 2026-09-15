@@ -8,9 +8,27 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 13 Sep 2026 23:31:17 +0800</pubDate>
-        <lastBuildDate>Sun, 13 Sep 2026 23:31:17 +0800</lastBuildDate>
+        <pubDate>Tue, 15 Sep 2026 23:00:37 +0800</pubDate>
+        <lastBuildDate>Tue, 15 Sep 2026 23:00:37 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 240: When Red Clouds Gather, a Rain of Blood Falls (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB240.html</description>
+            <pubDate>Tue, 15 Sep 2026 23:00:05 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB240.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB240.html</guid>
+            <category>lnb</category>
+        </item>
+        <item>
+            <title>LNB Chapter 239: When Red Clouds Gather, a Rain of Blood Falls (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB239.html</description>
+            <pubDate>Tue, 15 Sep 2026 22:59:03 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB239.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB239.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>COB Chapter 180: Truth Is Cold and Lies Are Hot (3)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -81,24 +99,6 @@ layout: null
             <pubDate>Sun, 13 Sep 2026 22:37:52 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB173.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB173.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 172: Shadow of Betrayal (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB172.html</description>
-            <pubDate>Sun, 13 Sep 2026 22:37:26 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB172.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB172.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 171: Shadow of Betrayal (2)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB171.html</description>
-            <pubDate>Sun, 13 Sep 2026 22:36:56 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB171.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB171.html</guid>
             <category>cob</category>
         </item>
     </channel>
