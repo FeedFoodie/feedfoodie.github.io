@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 18 Sep 2026 21:17:24 +0800</pubDate>
-        <lastBuildDate>Fri, 18 Sep 2026 21:17:24 +0800</lastBuildDate>
+        <pubDate>Fri, 18 Sep 2026 21:18:47 +0800</pubDate>
+        <lastBuildDate>Fri, 18 Sep 2026 21:18:47 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>LNB Chapter 241: Life is Not Always Smooth-Sailing (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB241.html</description>
+            <pubDate>Fri, 18 Sep 2026 21:18:24 +0800</pubDate>
+            <link>https://northbladetl.com/lnb/LNB241.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB241.html</guid>
+            <category>lnb</category>
+        </item>
         <item>
             <title>SIMB Chapter 623: Because of Him</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -90,15 +99,6 @@ layout: null
             <pubDate>Sun, 13 Sep 2026 22:38:38 +0800</pubDate>
             <link>https://northbladetl.com/cob/COB175.html</link>
             <guid isPermaLink="true">https://northbladetl.com/cob/COB175.html</guid>
-            <category>cob</category>
-        </item>
-        <item>
-            <title>COB Chapter 174: Shadow of Betrayal (5)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) City of Blades Chapter Update - https://northbladetl.com/cob/COB174.html</description>
-            <pubDate>Sun, 13 Sep 2026 22:38:16 +0800</pubDate>
-            <link>https://northbladetl.com/cob/COB174.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/cob/COB174.html</guid>
             <category>cob</category>
         </item>
     </channel>
