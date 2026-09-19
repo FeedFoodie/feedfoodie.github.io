@@ -6,8 +6,107 @@
     "date": "2026-09-19 23:53:00 +0800",
     "url": "/wlrg/WLRG401.html",
     "prev_url": null,
-    "next_url": null,
+    "next_url": "/wlrg/WLRG402.html",
     "prev_title": null,
+    "next_title": "Chapter 402: Dragon (1)"
+  },
+  {
+    "title": "Chapter 402: Dragon (1)",
+    "chapter_id": "WLRG402",
+    "chapter_num": 402,
+    "date": "2026-09-19 23:57:08 +0800",
+    "url": "/wlrg/WLRG402.html",
+    "prev_url": "/wlrg/WLRG401.html",
+    "next_url": "/wlrg/WLRG403.html",
+    "prev_title": "Chapter 401: Despair (10)",
+    "next_title": "Chapter 403: Dragon (2)"
+  },
+  {
+    "title": "Chapter 403: Dragon (2)",
+    "chapter_id": "WLRG403",
+    "chapter_num": 403,
+    "date": "2026-09-19 23:57:31 +0800",
+    "url": "/wlrg/WLRG403.html",
+    "prev_url": "/wlrg/WLRG402.html",
+    "next_url": "/wlrg/WLRG404.html",
+    "prev_title": "Chapter 402: Dragon (1)",
+    "next_title": "Chapter 404: Dragon (3)"
+  },
+  {
+    "title": "Chapter 404: Dragon (3)",
+    "chapter_id": "WLRG404",
+    "chapter_num": 404,
+    "date": "2026-09-19 23:57:52 +0800",
+    "url": "/wlrg/WLRG404.html",
+    "prev_url": "/wlrg/WLRG403.html",
+    "next_url": "/wlrg/WLRG405.html",
+    "prev_title": "Chapter 403: Dragon (2)",
+    "next_title": "Chapter 405: Dragon (4)"
+  },
+  {
+    "title": "Chapter 405: Dragon (4)",
+    "chapter_id": "WLRG405",
+    "chapter_num": 405,
+    "date": "2026-09-19 23:58:18 +0800",
+    "url": "/wlrg/WLRG405.html",
+    "prev_url": "/wlrg/WLRG404.html",
+    "next_url": "/wlrg/WLRG406.html",
+    "prev_title": "Chapter 404: Dragon (3)",
+    "next_title": "Chapter 406: Dragon (5)"
+  },
+  {
+    "title": "Chapter 406: Dragon (5)",
+    "chapter_id": "WLRG406",
+    "chapter_num": 406,
+    "date": "2026-09-19 23:58:45 +0800",
+    "url": "/wlrg/WLRG406.html",
+    "prev_url": "/wlrg/WLRG405.html",
+    "next_url": "/wlrg/WLRG407.html",
+    "prev_title": "Chapter 405: Dragon (4)",
+    "next_title": "Chapter 407: The Martial God (1)"
+  },
+  {
+    "title": "Chapter 407: The Martial God (1)",
+    "chapter_id": "WLRG407",
+    "chapter_num": 407,
+    "date": "2026-09-19 23:59:09 +0800",
+    "url": "/wlrg/WLRG407.html",
+    "prev_url": "/wlrg/WLRG406.html",
+    "next_url": "/wlrg/WLRG408.html",
+    "prev_title": "Chapter 406: Dragon (5)",
+    "next_title": "Chapter 408: The Martial God (2)"
+  },
+  {
+    "title": "Chapter 408: The Martial God (2)",
+    "chapter_id": "WLRG408",
+    "chapter_num": 408,
+    "date": "2026-09-19 23:59:30 +0800",
+    "url": "/wlrg/WLRG408.html",
+    "prev_url": "/wlrg/WLRG407.html",
+    "next_url": "/wlrg/WLRG409.html",
+    "prev_title": "Chapter 407: The Martial God (1)",
+    "next_title": "Chapter 409: The Martial God (3)"
+  },
+  {
+    "title": "Chapter 409: The Martial God (3)",
+    "chapter_id": "WLRG409",
+    "chapter_num": 409,
+    "date": "2026-09-19 23:59:57 +0800",
+    "url": "/wlrg/WLRG409.html",
+    "prev_url": "/wlrg/WLRG408.html",
+    "next_url": "/wlrg/WLRG410.html",
+    "prev_title": "Chapter 408: The Martial God (2)",
+    "next_title": "Chapter 410: The Martial God (4)"
+  },
+  {
+    "title": "Chapter 410: The Martial God (4)",
+    "chapter_id": "WLRG410",
+    "chapter_num": 410,
+    "date": "2026-09-20 00:00:24 +0800",
+    "url": "/wlrg/WLRG410.html",
+    "prev_url": "/wlrg/WLRG409.html",
+    "next_url": null,
+    "prev_title": "Chapter 409: The Martial God (3)",
     "next_title": null
   }
 ]

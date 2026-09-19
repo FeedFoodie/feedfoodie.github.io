@@ -41,3 +41,5 @@ I had nothing at all.
 
 ## Chapters
 
+Read the earlier chapters at [Betterdays Translations](https://betterdaystranslations.wordpress.com/)
+
