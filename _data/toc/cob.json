@@ -1975,8 +1975,63 @@
     "date": "2026-09-13 23:30:28 +0800",
     "url": "/cob/COB180.html",
     "prev_url": "/cob/COB179.html",
-    "next_url": null,
+    "next_url": "/cob/COB181.html",
     "prev_title": "Chapter 179: Truth Is Cold and Lies Are Hot (2)",
+    "next_title": "Chapter 181: The Order of Knights (1)"
+  },
+  {
+    "title": "Chapter 181: The Order of Knights (1)",
+    "chapter_id": "COB181",
+    "chapter_num": 181,
+    "date": "2026-09-19 21:58:17 +0800",
+    "url": "/cob/COB181.html",
+    "prev_url": "/cob/COB180.html",
+    "next_url": "/cob/COB182.html",
+    "prev_title": "Chapter 180: Truth Is Cold and Lies Are Hot (3)",
+    "next_title": "Chapter 182: The Order of Knights (2)"
+  },
+  {
+    "title": "Chapter 182: The Order of Knights (2)",
+    "chapter_id": "COB182",
+    "chapter_num": 182,
+    "date": "2026-09-19 21:58:38 +0800",
+    "url": "/cob/COB182.html",
+    "prev_url": "/cob/COB181.html",
+    "next_url": "/cob/COB183.html",
+    "prev_title": "Chapter 181: The Order of Knights (1)",
+    "next_title": "Chapter 183: The Order of Knights (3)"
+  },
+  {
+    "title": "Chapter 183: The Order of Knights (3)",
+    "chapter_id": "COB183",
+    "chapter_num": 183,
+    "date": "2026-09-19 21:59:02 +0800",
+    "url": "/cob/COB183.html",
+    "prev_url": "/cob/COB182.html",
+    "next_url": "/cob/COB184.html",
+    "prev_title": "Chapter 182: The Order of Knights (2)",
+    "next_title": "Chapter 184: The Order of Knights (4)"
+  },
+  {
+    "title": "Chapter 184: The Order of Knights (4)",
+    "chapter_id": "COB184",
+    "chapter_num": 184,
+    "date": "2026-09-19 21:59:44 +0800",
+    "url": "/cob/COB184.html",
+    "prev_url": "/cob/COB183.html",
+    "next_url": "/cob/COB185.html",
+    "prev_title": "Chapter 183: The Order of Knights (3)",
+    "next_title": "Chapter 185: Imitation (1)"
+  },
+  {
+    "title": "Chapter 185: Imitation (1)",
+    "chapter_id": "COB185",
+    "chapter_num": 185,
+    "date": "2026-09-19 22:01:38 +0800",
+    "url": "/cob/COB185.html",
+    "prev_url": "/cob/COB184.html",
+    "next_url": null,
+    "prev_title": "Chapter 184: The Order of Knights (4)",
     "next_title": null
   }
 ]
