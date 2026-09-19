@@ -2869,8 +2869,19 @@
     "date": "2026-09-18 21:18:24 +0800",
     "url": "/lnb/LNB241.html",
     "prev_url": "/lnb/LNB240.html",
-    "next_url": null,
+    "next_url": "/lnb/LNB242.html",
     "prev_title": "Chapter 240: When Red Clouds Gather, a Rain of Blood Falls (3)",
+    "next_title": "Chapter 242: Life is Not Always Smooth-Sailing (2)"
+  },
+  {
+    "title": "Chapter 242: Life is Not Always Smooth-Sailing (2)",
+    "chapter_id": "LNB242",
+    "chapter_num": 242,
+    "date": "2026-09-19 20:46:50 +0800",
+    "url": "/lnb/LNB242.html",
+    "prev_url": "/lnb/LNB241.html",
+    "next_url": null,
+    "prev_title": "Chapter 241: Life is Not Always Smooth-Sailing (1)",
     "next_title": null
   }
 ]
