@@ -37,3 +37,8 @@ cob:
   full_name: "City of Blades"
   nu_slug: "city-of-blades"
   extra_html: ""
+
+wlrg:
+  full_name: "Worthless Regression"
+  nu_slug: "possessing-nothing"
+  extra_html: ""

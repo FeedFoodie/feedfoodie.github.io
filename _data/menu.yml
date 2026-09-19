@@ -27,6 +27,10 @@
           weight: 2
         - name: "City of Blades"
           url: "/COB/"
+          weight: 2
+        - name: "Worthless Regression"
+          url: "/WLRG/"
+          weight: 2
     - name: "Notifications"
       url: "#"
       weight: 3

@@ -8,9 +8,18 @@ layout: null
         <description>Latest chapter updates from NorthBladeTL translations</description>
         <link>https://northbladetl.com/</link>
         <atom:link href="https://northbladetl.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 19 Sep 2026 22:02:05 +0800</pubDate>
-        <lastBuildDate>Sat, 19 Sep 2026 22:02:05 +0800</lastBuildDate>
+        <pubDate>Sat, 19 Sep 2026 23:27:01 +0800</pubDate>
+        <lastBuildDate>Sat, 19 Sep 2026 23:27:01 +0800</lastBuildDate>
         <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>SIMB Chapter 625: Let’s Remember This Moment for a Long Time</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Star Instructor Master Baek Chapter Update - https://northbladetl.com/simb/SIMB625.html</description>
+            <pubDate>Sat, 19 Sep 2026 23:26:31 +0800</pubDate>
+            <link>https://northbladetl.com/simb/SIMB625.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/simb/SIMB625.html</guid>
+            <category>simb</category>
+        </item>
         <item>
             <title>COB Chapter 185: Imitation (1)</title>
             <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
@@ -91,15 +100,6 @@ layout: null
             <link>https://northbladetl.com/simb/SIMB623.html</link>
             <guid isPermaLink="true">https://northbladetl.com/simb/SIMB623.html</guid>
             <category>simb</category>
-        </item>
-        <item>
-            <title>LNB Chapter 240: When Red Clouds Gather, a Rain of Blood Falls (3)</title>
-            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-            <description>(NorthBladeTL) Legend of the Northern Blade Chapter Update - https://northbladetl.com/lnb/LNB240.html</description>
-            <pubDate>Tue, 15 Sep 2026 23:00:05 +0800</pubDate>
-            <link>https://northbladetl.com/lnb/LNB240.html</link>
-            <guid isPermaLink="true">https://northbladetl.com/lnb/LNB240.html</guid>
-            <category>lnb</category>
         </item>
     </channel>
 </rss>
