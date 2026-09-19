@@ -1,0 +1,24 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Worthless Regression</title>
+        <description>NorthBladeTL - Worthless Regression Chapter Updates</description>
+        <link>https://northbladetl.com/wlrg/</link>
+        <atom:link href="https://northbladetl.com/feed.wlrg.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 19 Sep 2026 23:53:30 +0800</pubDate>
+        <lastBuildDate>Sat, 19 Sep 2026 23:53:30 +0800</lastBuildDate>
+        <generator>NorthBladeTL RSS Generator</generator>
+        <item>
+            <title>WLRG Chapter 401: Despair (10)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(NorthBladeTL) Worthless Regression Chapter Update - https://northbladetl.com/wlrg/WLRG401.html</description>
+            <pubDate>Sat, 19 Sep 2026 23:53:00 +0800</pubDate>
+            <link>https://northbladetl.com/wlrg/WLRG401.html</link>
+            <guid isPermaLink="true">https://northbladetl.com/wlrg/WLRG401.html</guid>
+            <category>wlrg</category>
+        </item>
+    </channel>
+</rss>
